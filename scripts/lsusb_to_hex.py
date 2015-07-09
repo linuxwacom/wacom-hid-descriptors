@@ -29,7 +29,7 @@ descriptor of some USB devices in a human-readable format. This output
 contains all the necessary information to translate it back into the
 original binary form for use with other tools.
 
-Note that this tool is not designed to be used as part of a pipeline. It
+Note that this tool is designed to be used as part of a pipeline. It
 cannot parse lsusb output in general and should only be fed the relevant
 descriptor from a single device; it also prints raw binary data so feeding
 the output to "hexdump" might also be useful. See the usage below for more
