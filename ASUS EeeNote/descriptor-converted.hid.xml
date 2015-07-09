@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>1</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>1</report_count>
+      <report_size>5</report_size>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>3</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_digitizer<!-- Digitizer (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>2</report_id>
+    <COLLECTION type="physical">
+      <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+      <usage>01</usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>-1</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <PUSH>
+        <unit_exponent>13</unit_exponent>
+        <unit>
+          <english_linear>
+            <inch>3</inch>
+          </english_linear>
+        </unit>
+        <physical_minimum>0</physical_minimum>
+        <physical_maximum>6488</physical_maximum>
+        <logical_maximum>16480</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <physical_maximum>4885</physical_maximum>
+        <logical_maximum>12410</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+      </PUSH>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>255</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+      <usage>01</usage>
+      <logical_maximum>-1</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+    <usage>01</usage>
+    <report_id>2</report_id>
+    <report_count>1</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>3</report_id>
+    <report_count>1</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>4</report_id>
+    <report_count>1</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>16</report_id>
+    <report_count>2</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>17</report_id>
+    <report_count>16</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>19</report_id>
+    <report_count>1</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>32</report_id>
+    <report_count>1</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <usage>01</usage>
+    <report_id>33</report_id>
+    <report_count>1</report_count>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+</descriptor>
