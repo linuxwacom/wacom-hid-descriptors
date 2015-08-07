@@ -1,0 +1,25 @@
+set timeout 35
+
+spawn /tmp/evemu-run.sh SUFFIX
+set evemu_id $spawn_id
+
+spawn /tmp/xinput-run.sh SUFFIX
+set xinput_id $spawn_id
+
+spawn /mnt/1/development/misc/hid-replay/src/hid-replay /tmp/pentouch
+set hidreplay_id $spawn_id
+expect "Hit enter"
+
+set spawn_id $evemu_id
+expect "READY"
+send "\n"
+
+set spawn_id $xinput_id
+expect "READY"
+send "\n"
+
+set spawn_id $hidreplay_id
+sleep 1
+send "\n"
+expect "Hit enter"
+close
