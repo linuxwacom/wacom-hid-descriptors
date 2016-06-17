@@ -18,7 +18,7 @@ Collection (Application),
         Usage (Tip Switch),             ; Tip switch (42h, momentary control)
         Input (Variable),
         Input (Constant, Variable),
-        Usage (Touch Valid),            ; Touch_valid (47h, momentary control)
+        Usage (Touch Valid),            ; Touch valid (47h, momentary control)
         Input (Variable),
         Report Count (5),
         Input (Constant, Variable),
@@ -53,7 +53,7 @@ Collection (Application),
         Logical Maximum (1),
         Input (Variable),
         Input (Constant, Variable),
-        Usage (Touch Valid),            ; Touch_valid (47h, momentary control)
+        Usage (Touch Valid),            ; Touch valid (47h, momentary control)
         Input (Variable),
         Report Count (5),
         Input (Constant, Variable),
@@ -88,7 +88,7 @@ Collection (Application),
         Logical Maximum (1),
         Input (Variable),
         Input (Constant, Variable),
-        Usage (Touch Valid),            ; Touch_valid (47h, momentary control)
+        Usage (Touch Valid),            ; Touch valid (47h, momentary control)
         Input (Variable),
         Report Count (5),
         Input (Constant, Variable),
@@ -123,7 +123,7 @@ Collection (Application),
         Logical Maximum (1),
         Input (Variable),
         Input (Constant, Variable),
-        Usage (Touch Valid),            ; Touch_valid (47h, momentary control)
+        Usage (Touch Valid),            ; Touch valid (47h, momentary control)
         Input (Variable),
         Report Count (5),
         Input (Constant, Variable),
@@ -158,7 +158,7 @@ Collection (Application),
         Logical Maximum (1),
         Input (Variable),
         Input (Constant, Variable),
-        Usage (Touch Valid),            ; Touch_valid (47h, momentary control)
+        Usage (Touch Valid),            ; Touch valid (47h, momentary control)
         Input (Variable),
         Report Count (5),
         Input (Constant, Variable),
@@ -252,66 +252,4 @@ Collection (Application),
     Usage (00h),
     Report Count (3),
     Feature (Variable),
-End Collection,
-Usage Page (Digitizer),                 ; Digitizer (0Dh)
-Usage (Pen),                            ; Pen (02h, application collection)
-Collection (Application),
-    Report ID (6),
-    Usage (Stylus),                     ; Stylus (20h, logical collection)
-    Collection (Physical),
-        Usage (Tip Switch),             ; Tip switch (42h, momentary control)
-        Usage (Barrel Switch),          ; Barrel switch (44h, momentary control)
-        Usage (Eraser),                 ; Eraser (45h, momentary control)
-        Usage (Invert),                 ; Invert (3Ch, momentary control)
-        Usage (00h),
-        Usage (In Range),               ; In range (32h, momentary control)
-        Logical Minimum (0),
-        Logical Maximum (1),
-        Report Size (1),
-        Report Count (6),
-        Input (Variable),
-        Report Count (2),
-        Input (Constant, Variable),
-        Usage Page (Desktop),           ; Generic desktop controls (01h)
-        Usage (X),                      ; X (30h, dynamic value)
-        Logical Maximum (29576),
-        Physical Maximum (29576),
-        Unit (Centimeter),
-        Unit Exponent (13),
-        Report Size (16),
-        Report Count (1),
-        Input (Variable),
-        Usage (Y),                      ; Y (31h, dynamic value)
-        Logical Maximum (16724),
-        Physical Maximum (16724),
-        Input (Variable),
-        Physical Maximum (0),
-        Unit,
-        Unit Exponent (0),
-        Usage Page (Digitizer),         ; Digitizer (0Dh)
-        Usage (Tip Pressure),           ; Tip pressure (30h, dynamic value)
-        Logical Maximum (1023),
-        Report Size (16),
-        Input (Variable),
-    End Collection,
-End Collection,
-Usage Page (FF09h),                     ; FF09h, vendor-defined
-Usage (13h),
-Collection (Application),
-    Report ID (11),
-    Collection (Physical),
-        Logical Minimum (0),
-        Logical Maximum (255),
-        Usage (00h),
-        Report Size (8),
-        Report Count (7),
-        Input (Variable),
-    End Collection,
-    Usage (00h),
-    Report Count (3),
-    Feature (Variable, Non Linear),
-    Report ID (5),
-    Usage (00h),
-    Report Count (8),
-    Feature (Variable, Non Linear),
 End Collection

@@ -12,7 +12,7 @@
       <constant/>
       <variable/>
     </input>
-    <usage>54</usage>
+    <usage>digitizer_contact_count<!-- Contact count (54h, dynamic value) --></usage>
     <input>
       <variable/>
     </input>
@@ -30,7 +30,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>47</usage>
+      <usage>digitizer_touch_valid<!-- Touch valid (47h, momentary control) --></usage>
       <input>
         <variable/>
       </input>
@@ -39,7 +39,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>51</usage>
+      <usage>digitizer_contact_identifier<!-- Contact identifier (51h, dynamic value) --></usage>
       <logical_maximum>255</logical_maximum>
       <report_size>16</report_size>
       <report_count>1</report_count>
@@ -89,7 +89,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>47</usage>
+      <usage>digitizer_touch_valid<!-- Touch valid (47h, momentary control) --></usage>
       <input>
         <variable/>
       </input>
@@ -98,7 +98,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>51</usage>
+      <usage>digitizer_contact_identifier<!-- Contact identifier (51h, dynamic value) --></usage>
       <logical_maximum>255</logical_maximum>
       <report_size>16</report_size>
       <report_count>1</report_count>
@@ -146,7 +146,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>47</usage>
+      <usage>digitizer_touch_valid<!-- Touch valid (47h, momentary control) --></usage>
       <input>
         <variable/>
       </input>
@@ -155,7 +155,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>51</usage>
+      <usage>digitizer_contact_identifier<!-- Contact identifier (51h, dynamic value) --></usage>
       <logical_maximum>255</logical_maximum>
       <report_size>16</report_size>
       <report_count>1</report_count>
@@ -203,7 +203,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>47</usage>
+      <usage>digitizer_touch_valid<!-- Touch valid (47h, momentary control) --></usage>
       <input>
         <variable/>
       </input>
@@ -212,7 +212,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>51</usage>
+      <usage>digitizer_contact_identifier<!-- Contact identifier (51h, dynamic value) --></usage>
       <logical_maximum>255</logical_maximum>
       <report_size>16</report_size>
       <report_count>1</report_count>
@@ -260,7 +260,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>47</usage>
+      <usage>digitizer_touch_valid<!-- Touch valid (47h, momentary control) --></usage>
       <input>
         <variable/>
       </input>
@@ -269,7 +269,7 @@
         <constant/>
         <variable/>
       </input>
-      <usage>51</usage>
+      <usage>digitizer_contact_identifier<!-- Contact identifier (51h, dynamic value) --></usage>
       <logical_maximum>255</logical_maximum>
       <report_size>16</report_size>
       <report_count>1</report_count>
@@ -304,11 +304,11 @@
     </COLLECTION>
     <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
     <logical_maximum>65535</logical_maximum>
-    <usage>56</usage>
+    <usage>digitizer_scan_time<!-- Scan time (56h, dynamic value) --></usage>
     <input>
       <variable/>
     </input>
-    <usage>55</usage>
+    <usage>digitizer_contact_count_maximum<!-- Contact count maximum (55h, static value) --></usage>
     <logical_maximum>255</logical_maximum>
     <report_size>8</report_size>
     <feature>
@@ -323,13 +323,13 @@
     </feature>
   </COLLECTION>
   <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
-  <usage>0E</usage>
+  <usage>digitizer_configuration<!-- Configuration (0Eh, application collection) --></usage>
   <COLLECTION type="application">
     <report_id>14</report_id>
-    <usage>23</usage>
+    <usage>digitizer_device_settings<!-- Device settings (23h, logical collection) --></usage>
     <COLLECTION type="logical">
-      <usage>52</usage>
-      <usage>53</usage>
+      <usage>digitizer_device_mode<!-- Device input mode (52h, dynamic value) --></usage>
+      <usage>digitizer_device_identifier<!-- Device identifier (53h, dynamic value) --></usage>
       <logical_minimum>0</logical_minimum>
       <logical_maximum>10</logical_maximum>
       <report_size>8</report_size>
@@ -394,93 +394,6 @@
     <report_count>3</report_count>
     <feature>
       <variable/>
-    </feature>
-  </COLLECTION>
-  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
-  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
-  <COLLECTION type="application">
-    <report_id>6</report_id>
-    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
-    <COLLECTION type="physical">
-      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
-      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
-      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
-      <usage>digitizer_invert<!-- Invert (3Ch, momentary control) --></usage>
-      <usage>0</usage>
-      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
-      <logical_minimum>0</logical_minimum>
-      <logical_maximum>1</logical_maximum>
-      <report_size>1</report_size>
-      <report_count>6</report_count>
-      <input>
-        <variable/>
-      </input>
-      <report_count>2</report_count>
-      <input>
-        <constant/>
-        <variable/>
-      </input>
-      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
-      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
-      <logical_maximum>29576</logical_maximum>
-      <physical_maximum>29576</physical_maximum>
-      <unit>
-        <si_linear>
-          <centimeter/>
-        </si_linear>
-      </unit>
-      <unit_exponent>13</unit_exponent>
-      <report_size>16</report_size>
-      <report_count>1</report_count>
-      <input>
-        <variable/>
-      </input>
-      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
-      <logical_maximum>16724</logical_maximum>
-      <physical_maximum>16724</physical_maximum>
-      <input>
-        <variable/>
-      </input>
-      <physical_maximum>0</physical_maximum>
-      <unit>
-        <none/>
-      </unit>
-      <unit_exponent>0</unit_exponent>
-      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
-      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
-      <logical_maximum>1023</logical_maximum>
-      <report_size>16</report_size>
-      <input>
-        <variable/>
-      </input>
-    </COLLECTION>
-  </COLLECTION>
-  <usage_page>FF09<!-- FF09h, vendor-defined --></usage_page>
-  <usage>13</usage>
-  <COLLECTION type="application">
-    <report_id>11</report_id>
-    <COLLECTION type="physical">
-      <logical_minimum>0</logical_minimum>
-      <logical_maximum>255</logical_maximum>
-      <usage>0</usage>
-      <report_size>8</report_size>
-      <report_count>7</report_count>
-      <input>
-        <variable/>
-      </input>
-    </COLLECTION>
-    <usage>0</usage>
-    <report_count>3</report_count>
-    <feature>
-      <variable/>
-      <non_linear/>
-    </feature>
-    <report_id>5</report_id>
-    <usage>0</usage>
-    <report_count>8</report_count>
-    <feature>
-      <variable/>
-      <non_linear/>
     </feature>
   </COLLECTION>
 </descriptor>
