@@ -22,7 +22,7 @@ uname -a >> host.txt 2>&1
 HOST=$(lsb_release -a 2>/dev/null || hostnamectl 2>/dev/null || cat /etc/*release 2>/dev/null)
 echo "$HOST" >> host.txt
 
-grep "" /sys/class/dmi/id/* >> machine.txt 2>&1
+grep "" /sys/class/dmi/id/* 2>&1 | grep -v -e "_serial:" -e "_uuid:" -e "asset_tag:" >> machine.txt
 
 
 ## Kernel driver information
