@@ -42,6 +42,13 @@ modinfo hid-wacom >> kernel_drivers.txt 2>&1
 
 
 ## Kernel device information
+DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*");
+for F in $DEVLIST; do
+	echo "*********" >> devtree.txt
+	find "$F" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
+	echo >> devtree.txt
+done
+
 for DEV in /sys/module/hid_generic/drivers/*/*056A* \
            /sys/module/hid_generic/drivers/*/*0531* \
            /sys/module/hid_generic/drivers/*/*2D1F* \
