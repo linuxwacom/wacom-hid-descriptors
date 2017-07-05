@@ -42,7 +42,10 @@ modinfo hid-wacom >> kernel_drivers.txt 2>&1
 
 
 ## Kernel device information
-for DEV in /sys/module/*wacom*/drivers/*/*; do
+for DEV in /sys/module/hid_generic/drivers/*/*056A* \
+           /sys/module/hid_generic/drivers/*/*0531* \
+           /sys/module/hid_generic/drivers/*/*2D1F* \
+           /sys/module/*wacom*/drivers/*/* ; do
 	if test -f "$DEV/report_descriptor"; then
 		cp "$DEV/report_descriptor" "$(basename "$DEV").hid.bin"
 	fi
