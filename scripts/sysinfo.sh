@@ -42,7 +42,7 @@ modinfo hid-wacom >> kernel_drivers.txt 2>&1
 
 
 ## Kernel device information
-DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*");
+DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*" -or -iname "*WACf*" -or -iname "FUJ*");
 for F in $DEVLIST; do
 	echo "*********" >> devtree.txt
 	find "$F" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
@@ -107,13 +107,14 @@ ls -l /usr/lib{,64}/xorg/modules/input/wacom_drv.so* \
       /usr/lib{,64}/libwacom.so* \
       /usr/lib{,64}/libinput.so* \
       /usr/lib{,64}/xorg/modules/input/libinput_drv.so* \
+      /usr/bin/inputattach* \
       >> userspace_drivers.txt 2>&1
 
-PACKAGES=$(pacman -Qi xf86-input-wacom libwacom libinput xf86-input-libinput 2>/dev/null || \
-           zypper info xf86-input-wacom libwacom libinput xf86-input-libinput 2>/dev/null || \
-           dpkg -s xserver-xorg-input-wacom libwacom2 libinput5 xserver-xorg-input-libinput 2>/dev/null || \
-           yum info xorg-x11-drv-wacom libwacom libinput xorg-x11-drv-libinput 2>/dev/null || \
-           dnf info xorg-x11-drv-wacom libwacom libinput xorg-x11-drv-libinput 2>/dev/null)
+PACKAGES=$(pacman -Qi xf86-input-wacom libwacom libinput xf86-input-libinput linuxconsole 2>/dev/null || \
+           zypper info xf86-input-wacom libwacom libinput xf86-input-libinput linuxconsoletools 2>/dev/null || \
+           dpkg -s xserver-xorg-input-wacom libwacom2 libinput5 xserver-xorg-input-libinput inputattach 2>/dev/null || \
+           yum info xorg-x11-drv-wacom libwacom libinput xorg-x11-drv-libinput linuxconsoletools 2>/dev/null || \
+           dnf info xorg-x11-drv-wacom libwacom libinput xorg-x11-drv-libinput linuxconsoletools 2>/dev/null)
 echo "$PACKAGES" >> packages.txt
 
 xsetwacom -V >> xsetwacom.txt 2>&1
