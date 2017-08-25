@@ -62,6 +62,12 @@ for DEV in /sys/module/hid_generic/drivers/*/*056A* \
 			udevadm info -a -p "$INPUT" >> "udevadm_$(basename "$DEV").txt" 2>&1
 		done
 	fi
+
+	if test -d "$DEV"; then
+		echo "*********" >> devtree.txt
+		find "$DEV" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
+		echo >> devtree.txt
+	fi
 done
 
 DO_PRINT=0
