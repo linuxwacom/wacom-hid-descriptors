@@ -47,6 +47,10 @@ for F in $DEVLIST; do
 	echo "*********" >> devtree.txt
 	find "$F" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 	echo >> devtree.txt
+
+	echo "*********" >> devtree_data.txt
+	grep -r "" "$F" >> devtree_data.txt 2>&1
+	echo >> devtree_data.txt
 done
 
 for DEV in /sys/module/hid_generic/drivers/*/*056A* \
@@ -67,6 +71,10 @@ for DEV in /sys/module/hid_generic/drivers/*/*056A* \
 		echo "*********" >> devtree.txt
 		find "$DEV" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 		echo >> devtree.txt
+
+		echo "*********" >> devtree_data.txt
+		grep -r "" "$DEV" >> devtree_data.txt 2>&1
+		echo >> devtree_data.txt
 	fi
 done
 
