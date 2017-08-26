@@ -18,6 +18,7 @@ trap finish $? EXIT
 
 
 ## General host information
+echo "  * General host information..."
 uname -a >> host.txt 2>&1
 HOST=$(lsb_release -a 2>/dev/null || hostnamectl 2>/dev/null || cat /etc/*release 2>/dev/null)
 echo "$HOST" >> host.txt
@@ -26,6 +27,7 @@ grep "" /sys/class/dmi/id/* 2>&1 | grep -v -e "_serial:" -e "_uuid:" -e "asset_t
 
 
 ## Kernel driver information
+echo "  * Kernel driver information..."
 find /lib/modules/$(uname -r) -type f -iname "*wacom*" | xargs ls -l >> kernel_drivers.txt
 echo >> kernel_drivers.txt
 find /sys/module/ -type f -ipath "*wacom*/*version*" | xargs grep "" >> kernel_drivers.txt
@@ -42,8 +44,10 @@ modinfo hid-wacom >> kernel_drivers.txt 2>&1
 
 
 ## Kernel device information
+echo "  * Kernel device information..."
 DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*" -or -iname "*WACf*" -or -iname "FUJ*");
 for F in $DEVLIST; do
+	echo "     - $F..."
 	echo "*********" >> devtree.txt
 	find "$F" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 	echo >> devtree.txt
@@ -57,6 +61,8 @@ for DEV in /sys/module/hid_generic/drivers/*/*056A* \
            /sys/module/hid_generic/drivers/*/*0531* \
            /sys/module/hid_generic/drivers/*/*2D1F* \
            /sys/module/*wacom*/drivers/*/* ; do
+	echo "     - $DEV..."
+
 	if test -f "$DEV/report_descriptor"; then
 		cp "$DEV/report_descriptor" "$(basename "$DEV").hid.bin"
 	fi
@@ -79,6 +85,7 @@ for DEV in /sys/module/hid_generic/drivers/*/*056A* \
 done
 
 DO_PRINT=0
+echo "     - udev..."
 udevadm info -e | while read -r LINE; do
 	if [[ "$LINE" == "P: "* ]]; then
 		DEVICE=$(echo "$LINE" | cut -d' ' -f 2-)
@@ -94,10 +101,12 @@ udevadm info -e | while read -r LINE; do
 done
 
 BINDLIST=""
+echo "  * Unbinding devices..."
 for D in /sys/module/wacom/drivers/usb:wacom/*; do
 	if test -d "$D/input"; then
 		# Temporarily unbind usb:wacom devices so lsusb
 		# can retrieve the HID descriptor
+		echo "     - $DEV..."
 		DEV=$(basename $D)
 		BINDLIST="$BINDLIST $DEV"
 		echo -n $DEV > /sys/module/wacom/drivers/usb:wacom/unbind
@@ -109,14 +118,17 @@ lsusb -v -d 0531: >> lsusb.txt 2>&1
 lsusb -v -d 2d1f: >> lsusb.txt 2>&1
 lsusb -t > lsusb_tree.txt 2>&1
 
+echo "  * Rebinding devices..."
 for DEV in $BINDLIST; do
 	# Rebind usb:wacom devices so that they function
 	# once again
+	echo "     - $DEV"
 	echo -n $DEV > /sys/module/wacom/drivers/usb:wacom/bind
 done
 
 
 ## Userspace driver information
+echo "  * Userspace driver information..."
 ls -l /usr/lib{,64}/xorg/modules/input/wacom_drv.so* \
       /usr/lib{,64}/libwacom.so* \
       /usr/lib{,64}/libinput.so* \
@@ -135,6 +147,7 @@ xsetwacom -V >> xsetwacom.txt 2>&1
 
 
 ## Userspace device information
+echo "  * Userspace device information..."
 xinput list >> xinput.txt 2>&1
 xsetwacom -v list >> xsetwacom.txt 2>&1
 libwacom-list-local-devices >> libwacom.txt 2>&1
@@ -142,5 +155,6 @@ libinput-list-devices >> libinput.txt 2>&1
 
 
 ## Tarball generation
+echo "  * Tarball generation..."
 tar czf "$OUTFILE" -C .. "$(basename "$TMPDIR")"
 echo "Finished. Data available in '$OUTFILE'"
