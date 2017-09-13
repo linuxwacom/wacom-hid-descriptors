@@ -49,7 +49,7 @@ DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1
 for F in $DEVLIST; do
 	echo "     - $F..."
 	echo "*********" >> devtree.txt
-	find "$F" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
+	find "$F" -not -type f -exec bash -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 	echo >> devtree.txt
 
 	echo "*********" >> devtree_data.txt
@@ -75,7 +75,7 @@ for DEV in /sys/module/hid_generic/drivers/*/*056A* \
 
 	if test -d "$DEV"; then
 		echo "*********" >> devtree.txt
-		find "$DEV" -not -type f -exec sh -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
+		find "$DEV" -not -type f -exec bash -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 		echo >> devtree.txt
 
 		echo "*********" >> devtree_data.txt
