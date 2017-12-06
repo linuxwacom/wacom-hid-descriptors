@@ -60,6 +60,9 @@ done
 for DEV in /sys/module/hid_generic/drivers/*/*056A* \
            /sys/module/hid_generic/drivers/*/*0531* \
            /sys/module/hid_generic/drivers/*/*2D1F* \
+           /sys/module/hid_multitouch/drivers/*/*056A* \
+           /sys/module/hid_multitouch/drivers/*/*0531* \
+           /sys/module/hid_multitouch/drivers/*/*2D1F* \
            /sys/module/*wacom*/drivers/*/* ; do
 	echo "     - $DEV..."
 
