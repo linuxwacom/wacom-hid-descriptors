@@ -45,7 +45,7 @@ modinfo hid-wacom >> kernel_drivers.txt 2>&1
 
 ## Kernel device information
 echo "  * Kernel device information..."
-DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*" -or -iname "*WACf*" -or -iname "FUJ*");
+DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*" -or -iname "*WACf*" -or -iname "*FUJ*" -or -iname "*04F3*" -or -iname "*ELAN*" -or -iname "*1B96*" -or -iname "*NTRG*" -or -iname "*045E*" -or -iname "*MSFT*");
 for F in $DEVLIST; do
 	echo "     - $F..."
 	echo "*********" >> devtree.txt
@@ -60,9 +60,15 @@ done
 for DEV in /sys/module/hid_generic/drivers/*/*056A* \
            /sys/module/hid_generic/drivers/*/*0531* \
            /sys/module/hid_generic/drivers/*/*2D1F* \
+           /sys/module/hid_generic/drivers/*/*04F3* \
+           /sys/module/hid_generic/drivers/*/*1B96* \
+           /sys/module/hid_generic/drivers/*/*045E* \
            /sys/module/hid_multitouch/drivers/*/*056A* \
            /sys/module/hid_multitouch/drivers/*/*0531* \
            /sys/module/hid_multitouch/drivers/*/*2D1F* \
+           /sys/module/hid_multitouch/drivers/*/*04F3* \
+           /sys/module/hid_multitouch/drivers/*/*1B96* \
+           /sys/module/hid_multitouch/drivers/*/*045E* \
            /sys/module/*wacom*/drivers/*/* ; do
 	echo "     - $DEV..."
 
@@ -119,6 +125,9 @@ done
 lsusb -v -d 056a: >> lsusb.txt 2>&1
 lsusb -v -d 0531: >> lsusb.txt 2>&1
 lsusb -v -d 2d1f: >> lsusb.txt 2>&1
+lsusb -v -d 04f3: >> lsusb.txt 2>&1
+lsusb -v -d 1b9b: >> lsusb.txt 2>&1
+lsusb -v -d 045e: >> lsusb.txt 2>&1
 lsusb -t > lsusb_tree.txt 2>&1
 
 echo "  * Rebinding devices..."
