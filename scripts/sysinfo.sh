@@ -29,6 +29,9 @@ grep "" /sys/class/dmi/id/* 2>&1 | grep -v -e "_serial:" -e "_uuid:" -e "asset_t
 ## Kernel driver information
 echo "  * Kernel driver information..."
 find /lib/modules/$(uname -r) -type f -iname "*wacom*" | xargs ls -l >> kernel_drivers.txt
+find /lib/modules/$(uname -r) -type f -iname "hid-generic.ko*" | xargs ls -l >> kernel_drivers.txt
+find /lib/modules/$(uname -r) -type f -iname "hid-multitouch.ko*" | xargs ls -l >> kernel_drivers.txt
+find /lib/modules/$(uname -r) -type f -iname "hid.ko*" | xargs ls -l >> kernel_drivers.txt
 echo >> kernel_drivers.txt
 find /sys/module/ -type f -ipath "*wacom*/*version*" | xargs grep "" >> kernel_drivers.txt
 echo >> kernel_drivers.txt
@@ -41,6 +44,12 @@ echo >> kernel_drivers.txt
 modinfo wacom_i2c >> kernel_drivers.txt 2>&1
 echo >> kernel_drivers.txt
 modinfo hid-wacom >> kernel_drivers.txt 2>&1
+echo >> kernel_drivers.txt
+modinfo hid-generic >> kernel_drivers.txt 2>&1
+echo >> kernel_drivers.txt
+modinfo hid-multitouch >> kernel_drivers.txt 2>&1
+echo >> kernel_drivers.txt
+modinfo hid >> kernel_drivers.txt 2>&1
 
 
 ## Kernel device information
