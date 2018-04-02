@@ -176,6 +176,13 @@ libwacom-list-local-devices >> libwacom.txt 2>&1
 libinput-list-devices >> libinput.txt 2>&1
 
 
+## Logfiles
+echo "  * System logs..."
+cp --preserve=timestamps /var/log/Xorg.*.log* ~/.local/share/xorg/Xorg.*.log* . 2>/dev/null
+journalctl -b0 _COMM=Xorg.bin _COMM=Xorg _COMM=gdm-x-session > journalctl.log 2>&1
+dmesg | grep -C5 -i -E "wacom|056a|0531|2d1f|04F3|1b96|045E|WACF|FUJ|ELAN|NTRG|MSFT" > dmesg.log
+
+
 ## Tarball generation
 echo "  * Tarball generation..."
 tar czf "$OUTFILE" -C .. "$(basename "$TMPDIR")"
