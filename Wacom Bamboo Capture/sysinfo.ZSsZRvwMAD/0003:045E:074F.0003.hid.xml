@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+    <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+    <COLLECTION type="logical">
+      <report_id>19</report_id>
+      <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+      <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+      <report_id>20</report_id>
+      <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+      <usage>FE01</usage>
+      <report_size>2</report_size>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>3</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <usage>FE02</usage>
+      <usage>FE00</usage>
+      <report_count>2</report_count>
+      <report_size>1</report_size>
+      <logical_maximum>1</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <usage>FF03</usage>
+      <report_count>1</report_count>
+      <report_size>2</report_size>
+      <logical_maximum>3</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <input>
+        <constant/>
+      </input>
+      <report_id>21</report_id>
+      <report_size>1</report_size>
+      <logical_maximum>1</logical_maximum>
+      <usage>FF0B</usage>
+      <input>
+        <variable/>
+      </input>
+      <report_size>7</report_size>
+      <input>
+        <constant/>
+      </input>
+      <usage>FF0D</usage>
+      <report_size>16</report_size>
+      <logical_maximum>65535</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <report_id>23</report_id>
+      <usage>FF06</usage>
+      <usage>FF0F</usage>
+      <logical_maximum>1</logical_maximum>
+      <physical_minimum>1</physical_minimum>
+      <physical_maximum>16</physical_maximum>
+      <report_count>2</report_count>
+      <report_size>2</report_size>
+      <feature>
+        <variable/>
+      </feature>
+      <usage>FF04</usage>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>0</physical_maximum>
+      <report_count>1</report_count>
+      <report_size>1</report_size>
+      <feature>
+        <variable/>
+      </feature>
+      <report_size>3</report_size>
+      <feature>
+        <constant/>
+      </feature>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+    <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+    <COLLECTION type="logical">
+      <report_id>17</report_id>
+      <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+      <COLLECTION type="physical">
+        <usage_page>button<!-- Button (09h) --></usage_page>
+        <usage_minimum>01</usage_minimum>
+        <usage_maximum>05</usage_maximum>
+        <report_count>5</report_count>
+        <report_size>1</report_size>
+        <logical_maximum>1</logical_maximum>
+        <input>
+          <variable/>
+        </input>
+        <report_size>3</report_size>
+        <report_count>1</report_count>
+        <input>
+          <constant/>
+        </input>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <report_count>2</report_count>
+        <report_size>8</report_size>
+        <logical_minimum>-127</logical_minimum>
+        <logical_maximum>127</logical_maximum>
+        <input>
+          <variable/>
+          <relative/>
+        </input>
+        <COLLECTION type="logical">
+          <report_id>18</report_id>
+          <usage>desktop_resolution_multiplier<!-- Resolution multiplier (48h, dynamic value) --></usage>
+          <report_count>1</report_count>
+          <report_size>2</report_size>
+          <logical_minimum>0</logical_minimum>
+          <logical_maximum>1</logical_maximum>
+          <physical_minimum>1</physical_minimum>
+          <physical_maximum>16</physical_maximum>
+          <feature>
+            <variable/>
+          </feature>
+          <report_id>17</report_id>
+          <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+          <physical_minimum>0</physical_minimum>
+          <physical_maximum>0</physical_maximum>
+          <logical_minimum>-127</logical_minimum>
+          <logical_maximum>127</logical_maximum>
+          <report_size>8</report_size>
+          <input>
+            <variable/>
+            <relative/>
+          </input>
+        </COLLECTION>
+        <COLLECTION type="logical">
+          <report_id>18</report_id>
+          <usage>desktop_resolution_multiplier<!-- Resolution multiplier (48h, dynamic value) --></usage>
+          <report_size>2</report_size>
+          <logical_minimum>0</logical_minimum>
+          <logical_maximum>1</logical_maximum>
+          <physical_minimum>1</physical_minimum>
+          <physical_maximum>16</physical_maximum>
+          <feature>
+            <variable/>
+          </feature>
+          <physical_minimum>0</physical_minimum>
+          <physical_maximum>0</physical_maximum>
+          <report_size>4</report_size>
+          <feature>
+            <constant/>
+          </feature>
+          <report_id>17</report_id>
+          <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+          <logical_minimum>-127</logical_minimum>
+          <logical_maximum>127</logical_maximum>
+          <report_size>8</report_size>
+          <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
+          <input>
+            <variable/>
+            <relative/>
+          </input>
+        </COLLECTION>
+      </COLLECTION>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
