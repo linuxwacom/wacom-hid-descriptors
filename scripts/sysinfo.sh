@@ -79,19 +79,20 @@ for DEV in /sys/module/hid_generic/drivers/*/*056A* \
            /sys/module/hid_multitouch/drivers/*/*1B96* \
            /sys/module/hid_multitouch/drivers/*/*045E* \
            /sys/module/*wacom*/drivers/*/* ; do
-	echo "     - $DEV..."
-
-	if test -f "$DEV/report_descriptor"; then
-		cp "$DEV/report_descriptor" "$(basename "$DEV").hid.bin"
-	fi
-
-	if test -d "$DEV/input"; then
-		for INPUT in $DEV/input/*; do
-			udevadm info -a -p "$INPUT" >> "udevadm_$(basename "$DEV").txt" 2>&1
-		done
-	fi
 
 	if test -d "$DEV"; then
+		echo "     - $DEV..."
+
+		if test -f "$DEV/report_descriptor"; then
+			cp "$DEV/report_descriptor" "$(basename "$DEV").hid.bin"
+		fi
+
+		if test -d "$DEV/input"; then
+			for INPUT in $DEV/input/*; do
+				udevadm info -a -p "$INPUT" >> "udevadm_$(basename "$DEV").txt" 2>&1
+			done
+		fi
+
 		echo "*********" >> devtree.txt
 		find "$DEV" -not -type f -exec bash -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 		echo >> devtree.txt
