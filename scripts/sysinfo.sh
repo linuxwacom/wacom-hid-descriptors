@@ -54,7 +54,7 @@ modinfo hid >> kernel_drivers.txt 2>&1
 
 ## Kernel device information
 echo "  * Kernel device information..."
-VENDORIDS="0531 056A 2D1F WACf FUJ 04F3 ELAN 1B96 NTRG 045E MSFT"
+VENDORIDS="0531 056A 2D1F WACf WCOM FUJ 04F3 ELAN 1B96 NTRG 045E MSFT"
 DEVFIND=$(eval find /sys/devices -type d $(for ID in $VENDORIDS; do echo -n "-iname \"*$ID*\" -or "; done | sed 's/ -or $//'))
 MODULEFIND=$(for DEV in /sys/module/*{hid_generic,hid_multitouch,wacom}*/drivers/*/{$(echo $VENDORIDS | sed 's/ /,/g')}; do test -d "$DEV" && echo "$DEV" || true; done)
 DEVLIST=$(for DEV in $DEVFIND $MODULEFIND; do readlink -f "$DEV"; done | sort | uniq)
