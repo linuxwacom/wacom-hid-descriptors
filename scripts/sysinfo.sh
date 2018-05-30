@@ -54,53 +54,31 @@ modinfo hid >> kernel_drivers.txt 2>&1
 
 ## Kernel device information
 echo "  * Kernel device information..."
-DEVLIST=$(find /sys/devices -iname "*0531*" -or -iname "*056A*" -or -iname "*2D1F*" -or -iname "*WACf*" -or -iname "*FUJ*" -or -iname "*04F3*" -or -iname "*ELAN*" -or -iname "*1B96*" -or -iname "*NTRG*" -or -iname "*045E*" -or -iname "*MSFT*");
-for F in $DEVLIST; do
-	echo "     - $F..."
-	echo "*********" >> devtree.txt
-	find "$F" -not -type f -exec bash -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
+VENDORIDS="0531 056A 2D1F WACf FUJ 04F3 ELAN 1B96 NTRG 045E MSFT"
+DEVFIND=$(eval find /sys/devices -type d $(for ID in $VENDORIDS; do echo -n "-iname \"*$ID*\" -or "; done | sed 's/ -or $//'))
+MODULEFIND=$(for DEV in /sys/module/*{hid_generic,hid_multitouch,wacom}*/drivers/*/{$(echo $VENDORIDS | sed 's/ /,/g')}; do test -d "$DEV" && echo "$DEV" || true; done)
+DEVLIST=$(for DEV in $DEVFIND $MODULEFIND; do readlink -f "$DEV"; done | sort | uniq)
+
+for DEV in $DEVLIST; do
+	echo "     - $DEV..."
+
+	if test -f "$DEV/report_descriptor"; then
+		cp "$DEV/report_descriptor" "$(basename "$DEV").hid.bin"
+	fi
+
+	if test -d "$DEV/input"; then
+		for INPUT in $DEV/input/*; do
+			udevadm info -a -p "$INPUT" >> "udevadm_$(basename "$DEV").txt" 2>&1
+		done
+	fi
+
+	echo "********* $DEV" >> devtree.txt
+	find "$DEV" -not -type f -exec bash -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
 	echo >> devtree.txt
 
-	echo "*********" >> devtree_data.txt
-	grep -r "" "$F" >> devtree_data.txt 2>&1
+	echo "********* $DEV" >> devtree_data.txt
+	grep -r "" "$DEV" >> devtree_data.txt 2>&1
 	echo >> devtree_data.txt
-done
-
-for DEV in /sys/module/hid_generic/drivers/*/*056A* \
-           /sys/module/hid_generic/drivers/*/*0531* \
-           /sys/module/hid_generic/drivers/*/*2D1F* \
-           /sys/module/hid_generic/drivers/*/*04F3* \
-           /sys/module/hid_generic/drivers/*/*1B96* \
-           /sys/module/hid_generic/drivers/*/*045E* \
-           /sys/module/hid_multitouch/drivers/*/*056A* \
-           /sys/module/hid_multitouch/drivers/*/*0531* \
-           /sys/module/hid_multitouch/drivers/*/*2D1F* \
-           /sys/module/hid_multitouch/drivers/*/*04F3* \
-           /sys/module/hid_multitouch/drivers/*/*1B96* \
-           /sys/module/hid_multitouch/drivers/*/*045E* \
-           /sys/module/*wacom*/drivers/*/* ; do
-
-	if test -d "$DEV"; then
-		echo "     - $DEV..."
-
-		if test -f "$DEV/report_descriptor"; then
-			cp "$DEV/report_descriptor" "$(basename "$DEV").hid.bin"
-		fi
-
-		if test -d "$DEV/input"; then
-			for INPUT in $DEV/input/*; do
-				udevadm info -a -p "$INPUT" >> "udevadm_$(basename "$DEV").txt" 2>&1
-			done
-		fi
-
-		echo "*********" >> devtree.txt
-		find "$DEV" -not -type f -exec bash -c 'N={}; D=`readlink -f $N`; echo -n $N; if [[ x"$N" != x"$D" ]]; then echo -n " -> $D"; fi; echo' \; >> devtree.txt
-		echo >> devtree.txt
-
-		echo "*********" >> devtree_data.txt
-		grep -r "" "$DEV" >> devtree_data.txt 2>&1
-		echo >> devtree_data.txt
-	fi
 done
 
 DO_PRINT=0
