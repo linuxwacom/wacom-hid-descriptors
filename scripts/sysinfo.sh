@@ -2,6 +2,15 @@
 
 if [[ "$EUID" -ne 0 ]]; then echo "NOTE: It is recommended to run this tool as root."; fi
 
+USBIDS="0531 056A 2D1F 04F3 1B96 045E"
+ACPIIDS="WACf WCOM FUJ ELAN NTRG MSFT"
+MODULES="hid_generic hid_multitouch hid_wacom wacom wacom_w8001 wacom_i2c wacom_serial4"
+
+REGEX_VENDORS=$(echo "$USBIDS $ACPIIDS" | sed 's/ /\\|/g')
+COMMA_VENDORS=$(echo "$USBIDS $ACPIIDS" | sed 's/ /,/g')
+REGEX_MODULES=$(echo "$MODULES $(echo $MODULES | sed 's/_/-/g')" | sed 's/ /\\|/g')
+COMMA_MODULES=$(echo "$MODULES $(echo $MODULES | sed 's/_/-/g')" | sed 's/ /,/g')
+
 echo "Gathering system and tablet information. This may take a few seconds."
 
 TMPDIR=$(mktemp -d --tmpdir sysinfo.XXXXXXXXXX) || { echo "Failed."; exit 1; }
@@ -28,35 +37,22 @@ grep "" /sys/class/dmi/id/* 2>&1 | grep -v -e "_serial:" -e "_uuid:" -e "asset_t
 
 ## Kernel driver information
 echo "  * Kernel driver information..."
-find /lib/modules/$(uname -r) -type f -iname "*wacom*" | xargs ls -l >> kernel_drivers.txt
-find /lib/modules/$(uname -r) -type f -iname "hid-generic.ko*" | xargs ls -l >> kernel_drivers.txt
-find /lib/modules/$(uname -r) -type f -iname "hid-multitouch.ko*" | xargs ls -l >> kernel_drivers.txt
+find /lib/modules/$(uname -r) -type f -iregex ".*/\(${REGEX_MODULES}\)\.ko.*" | xargs ls -l >> kernel_drivers.txt
 find /lib/modules/$(uname -r) -type f -iname "hid.ko*" | xargs ls -l >> kernel_drivers.txt
 echo >> kernel_drivers.txt
 find /sys/module/ -type f -ipath "*wacom*/*version*" | xargs grep "" >> kernel_drivers.txt
 echo >> kernel_drivers.txt
-modinfo wacom >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
-modinfo wacom_serial4 >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
-modinfo wacom_w8001 >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
-modinfo wacom_i2c >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
-modinfo hid-wacom >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
-modinfo hid-generic >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
-modinfo hid-multitouch >> kernel_drivers.txt 2>&1
-echo >> kernel_drivers.txt
+for MODULE in $MODULES; do
+	modinfo $MODULE >> kernel_drivers.txt 2>&1
+	echo >> kernel_drivers.txt
+done
 modinfo hid >> kernel_drivers.txt 2>&1
 
 
 ## Kernel device information
 echo "  * Kernel device information..."
-VENDORIDS="0531 056A 2D1F WACf WCOM FUJ 04F3 ELAN 1B96 NTRG 045E MSFT"
-DEVFIND=$(eval find /sys/devices -type d $(for ID in $VENDORIDS; do echo -n "-iname \"*$ID*\" -or "; done | sed 's/ -or $//'))
-MODULEFIND=$(for DEV in /sys/module/*{hid_generic,hid_multitouch,wacom}*/drivers/*/{$(echo $VENDORIDS | sed 's/ /,/g')}; do test -d "$DEV" && echo "$DEV" || true; done)
+DEVFIND=$(find /sys/devices -type d -iregex ".*\(${REGEX_VENDORS}\)[^/]*")
+MODFIND=$(for DEV in $(eval "echo /sys/module/*{$COMMA_MODULES}*/drivers/*/*{$COMMA_VENDORS}*"); do test -d "$DEV" && echo "$DEV" || true; done)
 DEVLIST=$(for DEV in $DEVFIND $MODULEFIND; do readlink -f "$DEV"; done | sort | uniq)
 
 for DEV in $DEVLIST; do
@@ -110,12 +106,9 @@ for D in /sys/module/wacom/drivers/usb:wacom/*; do
 	fi
 done
 
-lsusb -v -d 056a: >> lsusb.txt 2>&1
-lsusb -v -d 0531: >> lsusb.txt 2>&1
-lsusb -v -d 2d1f: >> lsusb.txt 2>&1
-lsusb -v -d 04f3: >> lsusb.txt 2>&1
-lsusb -v -d 1b9b: >> lsusb.txt 2>&1
-lsusb -v -d 045e: >> lsusb.txt 2>&1
+for D in $USBIDS; do
+	lsusb -v -d $D: >> lsusb.txt 2>&1
+done
 lsusb -t > lsusb_tree.txt 2>&1
 
 echo "  * Rebinding devices..."
