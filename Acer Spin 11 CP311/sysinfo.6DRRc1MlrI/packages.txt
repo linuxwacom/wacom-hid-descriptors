@@ -1,0 +1,36 @@
+Package: xserver-xorg-input-wacom
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 276
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Source: xf86-input-wacom
+Version: 1:0.32.0-0ubuntu3
+Replaces: wacom-tools (<< 0.10.0)
+Provides: xorg-driver-input
+Depends: xorg-input-abi-22, xserver-xorg-core (>= 2:1.17.99.902), libc6 (>= 2.14), libudev1 (>= 183), libx11-6, libxi6 (>= 2:1.2.0), libxinerama1, libxrandr2 (>= 2:1.2.0)
+Suggests: xinput
+Conflicts: wacom-tools (<< 0.10.0)
+Description: X.Org X server -- Wacom input driver
+ This package provides the X.Org driver for Wacom tablet devices.
+Homepage: http://linuxwacom.sf.net
+Original-Maintainer: Ron Lee <ron@debian.org>
+
+Package: libwacom2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 57
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwacom
+Version: 0.22-1~ubuntu16.04.1
+Depends: libc6 (>= 2.8), libglib2.0-0 (>= 2.24.0), libgudev-1.0-0 (>= 146), libwacom-common (= 0.22-1~ubuntu16.04.1)
+Recommends: libwacom-bin (= 0.22-1~ubuntu16.04.1)
+Description: Wacom model feature query library
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
