@@ -122,10 +122,10 @@ done
 
 ## Userspace driver information
 echo "  * Userspace driver information..."
-ls -l /usr/lib{,64}/xorg/modules/input/wacom_drv.so* \
+ls -l /usr/lib{,64}/xorg/modules/input/* \
       /usr/lib{,64}/libwacom.so* \
       /usr/lib{,64}/libinput.so* \
-      /usr/lib{,64}/xorg/modules/input/libinput_drv.so* \
+      /usr/lib{,64}/libevdev.so* \
       /usr/bin/inputattach* \
       >> userspace_drivers.txt 2>&1
 
