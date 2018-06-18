@@ -147,6 +147,11 @@ libwacom-list-local-devices >> libwacom.txt 2>&1
 libinput-list-devices >> libinput.txt 2>&1
 
 
+# RandR display information
+echo "  * Device display information..."
+xrandr --verbose >> xrandr.txt 2>&1
+
+
 ## Logfiles
 echo "  * System logs..."
 cp --preserve=timestamps /var/log/Xorg.*.log* ~/.local/share/xorg/Xorg.*.log* . 2>/dev/null
