@@ -12,6 +12,9 @@ TMPDIR=$(mktemp -d --tmpdir sysinfo.XXXXXXXXXX) || { echo "Failed."; exit 1; }
 OUTFILE=$(readlink -m "$TMPDIR/../$(basename "$TMPDIR").tar.gz")
 cd "$TMPDIR"
 
+exec 2> "sysinfo.log"
+set -v
+
 
 if [[ "$EUID" -ne 0 ]]; then echo "NOTE: It is recommended to run this tool as root."; fi
 
