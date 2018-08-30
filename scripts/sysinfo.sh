@@ -162,6 +162,17 @@ journalctl -b0 _COMM=Xorg.bin _COMM=Xorg _COMM=gdm-x-session > journalctl.log 2>
 dmesg | grep -C5 -i "$REGEX_VENDORS\|$REGEX_MODULES" > dmesg.log
 
 
+## Configuration Files
+echo "  * System config files..."
+tar czf xorg-configs.tar.gz --ignore-failed-read \
+    /etc/X11/xorg.conf /etc/xorg.conf /usr/etc/X11/xorg.conf \
+    /usr/lib/X11/xorg.conf /usr/share/X11/xorg.conf \
+    /etc/X11/xorg.conf.d /usr/lib/X11/xorg.conf.d \
+    /usr/share/X11/xorg.conf.d
+tar czf udev-configs.tar.gz --ignore-failed-read \
+    /usr/lib/udev/rules.d /etc/udev/rules.d
+
+
 ## Tarball generation
 echo "  * Tarball generation..."
 tar czf "$OUTFILE" -C .. "$(basename "$TMPDIR")"
