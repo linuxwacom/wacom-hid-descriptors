@@ -1,5 +1,18 @@
 #!/bin/bash
 
+function finish {
+	CODE=$1
+	cd ..
+	rm -rf "$TMPDIR"
+	exit $CODE
+}
+trap finish $? EXIT
+
+TMPDIR=$(mktemp -d --tmpdir sysinfo.XXXXXXXXXX) || { echo "Failed."; exit 1; }
+OUTFILE=$(readlink -m "$TMPDIR/../$(basename "$TMPDIR").tar.gz")
+cd "$TMPDIR"
+
+
 if [[ "$EUID" -ne 0 ]]; then echo "NOTE: It is recommended to run this tool as root."; fi
 
 USBIDS="0531 056A 2D1F 04F3 1B96 045E"
@@ -12,19 +25,6 @@ REGEX_MODULES=$(echo "$MODULES $(echo $MODULES | sed 's/_/-/g')" | sed 's/ /\\|/
 COMMA_MODULES=$(echo "$MODULES $(echo $MODULES | sed 's/_/-/g')" | sed 's/ /,/g')
 
 echo "Gathering system and tablet information. This may take a few seconds."
-
-TMPDIR=$(mktemp -d --tmpdir sysinfo.XXXXXXXXXX) || { echo "Failed."; exit 1; }
-OUTFILE=$(readlink -m "$TMPDIR/../$(basename "$TMPDIR").tar.gz")
-cd "$TMPDIR"
-
-function finish {
-	CODE=$1
-	cd ..
-	rm -rf "$TMPDIR"
-	exit $CODE
-}
-trap finish $? EXIT
-
 
 ## General host information
 echo "  * General host information..."
