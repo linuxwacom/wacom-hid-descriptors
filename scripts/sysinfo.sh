@@ -147,7 +147,11 @@ echo "  * Userspace device information..."
 xinput list >> xinput.txt 2>&1
 xsetwacom -v list >> xsetwacom.txt 2>&1
 libwacom-list-local-devices >> libwacom.txt 2>&1
-libinput-list-devices >> libinput.txt 2>&1
+if command -v libinput-list-devices; then
+	libinput-list-devices >> libinput.txt 2>&1
+else
+	libinput list-devices >> libinput.txt 2>&1
+fi
 
 
 # RandR display information
