@@ -5,14 +5,19 @@ Model Number:
 Notes:
 Pictures of this device show a pen that looks very similar to a Wacom
 AES-type pen, but the Linux kernel does not currently seem to detect
-any kind of Wacom hardware...
-
-The output of journalctl and some searching indicates that this device
-likely has an Intel Precise Touch controller which seems to be in charge
-of the pen and touch.
+any kind of Wacom hardware. The output of journalctl and some searching
+indicates that this device may have an Intel Precise Touch controller
+**or** an Elan controller which is in charge of the pen and touch. Hard
+to know which is doing it without additional debugging (e.g. from inside
+Windows).
 
 Source(s):
  * sysinfo.bMG7czIv8B
    kevinmarvin
    https://github.com/linuxwacom/wacom-hid-descriptors/issues/8
    2017-11-20
+
+ * sysinfo.Ft79325KH0
+   matsurihime
+   https://github.com/linuxwacom/wacom-hid-descriptors/issues/8
+   2018-12-03
