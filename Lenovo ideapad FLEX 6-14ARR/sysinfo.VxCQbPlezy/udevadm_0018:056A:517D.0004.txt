@@ -1,0 +1,90 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0011:00/i2c-8/i2c-WCOM517D:00/0018:056A:517D.0004/input/input23':
+    KERNEL=="input23"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="Wacom HID 517D Pen"
+    ATTR{phys}=="i2c-WCOM517D:00"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-8/i2c-WCOM517D:00/0018:056A:517D.0004':
+    KERNELS=="0018:056A:517D.0004"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-8/i2c-WCOM517D:00':
+    KERNELS=="i2c-WCOM517D:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="WCOM517D:00"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-8':
+    KERNELS=="i2c-8"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="AMD MP2 i2c bus 0"
+
+  looking at parent device '/devices/platform/AMDI0011:00':
+    KERNELS=="AMDI0011:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_amd_mp2"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0011:00/i2c-8/i2c-WCOM517D:00/0018:056A:517D.0004/input/input24':
+    KERNEL=="input24"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="Wacom HID 517D Finger"
+    ATTR{phys}=="i2c-WCOM517D:00"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-8/i2c-WCOM517D:00/0018:056A:517D.0004':
+    KERNELS=="0018:056A:517D.0004"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-8/i2c-WCOM517D:00':
+    KERNELS=="i2c-WCOM517D:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="WCOM517D:00"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-8':
+    KERNELS=="i2c-8"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="AMD MP2 i2c bus 0"
+
+  looking at parent device '/devices/platform/AMDI0011:00':
+    KERNELS=="AMDI0011:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_amd_mp2"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
