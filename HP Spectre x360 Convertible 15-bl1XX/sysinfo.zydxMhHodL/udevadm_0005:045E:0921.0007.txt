@@ -1,0 +1,27 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/virtual/misc/uhid/0005:045E:0921.0007/input/input27':
+    KERNEL=="input27"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="Surface Pen"
+    ATTR{phys}=="F8:59:71:EE:74:2D"
+    ATTR{properties}=="0"
+    ATTR{uniq}=="F5:84:D3:30:A2:27"
+
+  looking at parent device '/devices/virtual/misc/uhid/0005:045E:0921.0007':
+    KERNELS=="0005:045E:0921.0007"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-generic"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/virtual/misc/uhid':
+    KERNELS=="uhid"
+    SUBSYSTEMS=="misc"
+    DRIVERS==""
+
