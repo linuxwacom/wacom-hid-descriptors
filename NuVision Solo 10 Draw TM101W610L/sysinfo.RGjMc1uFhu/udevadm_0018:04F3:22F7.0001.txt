@@ -1,0 +1,92 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/808622C1:01/i2c-1/i2c-04F3200A:00/0018:04F3:22F7.0001/input/input11':
+    KERNEL=="input11"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="04F3200A:00 04F3:22F7"
+    ATTR{properties}=="2"
+    ATTR{phys}=="i2c-04F3200A:00"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/pci0000:00/808622C1:01/i2c-1/i2c-04F3200A:00/0018:04F3:22F7.0001':
+    KERNELS=="0018:04F3:22F7.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{country}=="00"
+    ATTRS{quirks}=="334864"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01/i2c-1/i2c-04F3200A:00':
+    KERNELS=="i2c-04F3200A:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="04F3200A:00"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01/i2c-1':
+    KERNELS=="i2c-1"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01':
+    KERNELS=="808622C1:01"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/808622C1:01/i2c-1/i2c-04F3200A:00/0018:04F3:22F7.0001/input/input14':
+    KERNEL=="input14"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="04F3200A:00 04F3:22F7"
+    ATTR{phys}=="i2c-04F3200A:00"
+    ATTR{uniq}==""
+    ATTR{properties}=="2"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01/i2c-1/i2c-04F3200A:00/0018:04F3:22F7.0001':
+    KERNELS=="0018:04F3:22F7.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{quirks}=="334864"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01/i2c-1/i2c-04F3200A:00':
+    KERNELS=="i2c-04F3200A:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="04F3200A:00"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01/i2c-1':
+    KERNELS=="i2c-1"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/pci0000:00/808622C1:01':
+    KERNELS=="808622C1:01"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
