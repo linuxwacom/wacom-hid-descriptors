@@ -1,0 +1,305 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001/input/input43':
+    KERNEL=="input43"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{uniq}==""
+    ATTR{name}=="ipts 045E:0021 UNKNOWN"
+    ATTR{properties}=="0"
+    ATTR{phys}=="heci3"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001':
+    KERNELS=="0044:045E:0021.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{country}=="00"
+    ATTRS{quirks}=="334864"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F':
+    KERNELS=="mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F"
+    SUBSYSTEMS=="mei"
+    DRIVERS=="ipts"
+    ATTRS{version}=="0F"
+    ATTRS{name}==""
+    ATTRS{sensor_mode}=="1"
+    ATTRS{uuid}=="3e8d0870-271a-4208-8eb5-9acb9402ae04"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4':
+    KERNELS=="0000:00:16.4"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="mei_me"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{revision}=="0x21"
+    ATTRS{subsystem_vendor}=="0x0000"
+    ATTRS{irq}=="137"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{msi_bus}=="1"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{devspec}==""
+    ATTRS{numa_node}=="-1"
+    ATTRS{class}=="0x078000"
+    ATTRS{subsystem_device}=="0x0000"
+    ATTRS{device}=="0x9d3e"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{dma_mask_bits}=="64"
+    ATTRS{enable}=="1"
+    ATTRS{local_cpulist}=="0-7"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001/input/input45':
+    KERNEL=="input45"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{properties}=="2"
+    ATTR{name}=="ipts 045E:0021"
+    ATTR{phys}=="heci3"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001':
+    KERNELS=="0044:045E:0021.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{quirks}=="334864"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F':
+    KERNELS=="mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F"
+    SUBSYSTEMS=="mei"
+    DRIVERS=="ipts"
+    ATTRS{version}=="0F"
+    ATTRS{name}==""
+    ATTRS{sensor_mode}=="1"
+    ATTRS{uuid}=="3e8d0870-271a-4208-8eb5-9acb9402ae04"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4':
+    KERNELS=="0000:00:16.4"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="mei_me"
+    ATTRS{msi_bus}=="1"
+    ATTRS{irq}=="137"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{class}=="0x078000"
+    ATTRS{dma_mask_bits}=="64"
+    ATTRS{device}=="0x9d3e"
+    ATTRS{devspec}==""
+    ATTRS{driver_override}=="(null)"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{subsystem_vendor}=="0x0000"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{revision}=="0x21"
+    ATTRS{numa_node}=="-1"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{subsystem_device}=="0x0000"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{enable}=="1"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001/input/input46':
+    KERNEL=="input46"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{phys}=="heci3"
+    ATTR{name}=="ipts 045E:0021 Touchscreen"
+    ATTR{uniq}==""
+    ATTR{properties}=="2"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001':
+    KERNELS=="0044:045E:0021.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{country}=="00"
+    ATTRS{quirks}=="334864"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F':
+    KERNELS=="mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F"
+    SUBSYSTEMS=="mei"
+    DRIVERS=="ipts"
+    ATTRS{sensor_mode}=="1"
+    ATTRS{name}==""
+    ATTRS{uuid}=="3e8d0870-271a-4208-8eb5-9acb9402ae04"
+    ATTRS{version}=="0F"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4':
+    KERNELS=="0000:00:16.4"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="mei_me"
+    ATTRS{dma_mask_bits}=="64"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{device}=="0x9d3e"
+    ATTRS{revision}=="0x21"
+    ATTRS{devspec}==""
+    ATTRS{numa_node}=="-1"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{class}=="0x078000"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{msi_bus}=="1"
+    ATTRS{subsystem_vendor}=="0x0000"
+    ATTRS{enable}=="1"
+    ATTRS{irq}=="137"
+    ATTRS{subsystem_device}=="0x0000"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001/input/input47':
+    KERNEL=="input47"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{properties}=="0"
+    ATTR{phys}=="heci3"
+    ATTR{name}=="ipts 045E:0021 Mouse"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001':
+    KERNELS=="0044:045E:0021.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{country}=="00"
+    ATTRS{quirks}=="334864"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F':
+    KERNELS=="mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F"
+    SUBSYSTEMS=="mei"
+    DRIVERS=="ipts"
+    ATTRS{uuid}=="3e8d0870-271a-4208-8eb5-9acb9402ae04"
+    ATTRS{sensor_mode}=="1"
+    ATTRS{name}==""
+    ATTRS{version}=="0F"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4':
+    KERNELS=="0000:00:16.4"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="mei_me"
+    ATTRS{enable}=="1"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{dma_mask_bits}=="64"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{numa_node}=="-1"
+    ATTRS{subsystem_vendor}=="0x0000"
+    ATTRS{class}=="0x078000"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{revision}=="0x21"
+    ATTRS{devspec}==""
+    ATTRS{msi_bus}=="1"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{subsystem_device}=="0x0000"
+    ATTRS{device}=="0x9d3e"
+    ATTRS{irq}=="137"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001/input/input50':
+    KERNEL=="input50"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="ipts 045E:0021 UNKNOWN"
+    ATTR{uniq}==""
+    ATTR{properties}=="0"
+    ATTR{phys}=="heci3"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F/0044:045E:0021.0001':
+    KERNELS=="0044:045E:0021.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{quirks}=="334864"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4/mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F':
+    KERNELS=="mei::3e8d0870-271a-4208-8eb5-9acb9402ae04:0F"
+    SUBSYSTEMS=="mei"
+    DRIVERS=="ipts"
+    ATTRS{uuid}=="3e8d0870-271a-4208-8eb5-9acb9402ae04"
+    ATTRS{name}==""
+    ATTRS{version}=="0F"
+    ATTRS{sensor_mode}=="1"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.4':
+    KERNELS=="0000:00:16.4"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="mei_me"
+    ATTRS{msi_bus}=="1"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{subsystem_vendor}=="0x0000"
+    ATTRS{dma_mask_bits}=="64"
+    ATTRS{revision}=="0x21"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{irq}=="137"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{enable}=="1"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{class}=="0x078000"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{numa_node}=="-1"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{subsystem_device}=="0x0000"
+    ATTRS{device}=="0x9d3e"
+    ATTRS{devspec}==""
+    ATTRS{broken_parity_status}=="0"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
