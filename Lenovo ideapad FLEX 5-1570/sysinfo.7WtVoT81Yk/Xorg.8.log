@@ -1,0 +1,252 @@
+[   612.236] 
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+[   612.236] Build Operating System:  4.20.13-200.fc29.x86_64 
+[   612.236] Current Operating System: Linux localhost-localdomain 5.1.11-300.fc30.x86_64 #1 SMP Mon Jun 17 19:33:15 UTC 2019 x86_64
+[   612.236] Kernel command line: BOOT_IMAGE=(hd1,gpt5)/vmlinuz-5.1.11-300.fc30.x86_64 root=/dev/mapper/fedora-root ro lvm.lv=fedora/root rd.rhgb quiet rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=1
+[   612.236] Build Date: 29 March 2019  05:04:12AM
+[   612.236] Build ID: xorg-x11-server 1.20.4-3.fc30 
+[   612.236] Current version of pixman: 0.38.0
+[   612.236] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   612.236] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   612.236] (==) Log file: "/var/log/Xorg.8.log", Time: Sun Jun 23 09:56:47 2019
+[   612.236] (++) Using config file: "/etc/bumblebee/xorg.conf.nvidia"
+[   612.236] (++) Using config directory: "/etc/bumblebee/xorg.conf.d"
+[   612.236] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   612.237] (==) ServerLayout "Layout0"
+[   612.237] (==) No screen section available. Using defaults.
+[   612.237] (**) |-->Screen "Default Screen Section" (0)
+[   612.237] (**) |   |-->Monitor "<default monitor>"
+[   612.237] (==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+[   612.237] (**) |   |-->Device "DiscreteNvidia"
+[   612.237] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   612.237] (**) Option "IgnoreABI" "True"
+[   612.237] (**) Option "AutoAddDevices" "false"
+[   612.237] (**) Option "AutoAddGPU" "false"
+[   612.237] (**) Ignoring ABI Version
+[   612.237] (**) Not automatically adding devices
+[   612.237] (==) Automatically enabling devices
+[   612.237] (**) Not automatically adding GPU devices
+[   612.237] (==) Automatically binding GPU devices
+[   612.237] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   612.237] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[   612.237] (++) ModulePath set to "/usr/lib64/nvidia/xorg,/usr/lib64/xorg/modules"
+[   612.237] (==) |-->Input Device "<default pointer>"
+[   612.237] (==) |-->Input Device "<default keyboard>"
+[   612.237] (==) The core pointer device wasn't specified explicitly in the layout.
+	Using the default mouse configuration.
+[   612.237] (==) The core keyboard device wasn't specified explicitly in the layout.
+	Using the default keyboard configuration.
+[   612.237] (II) Loader magic: 0x5581ec278e00
+[   612.237] (II) Module ABI versions:
+[   612.237] 	X.Org ANSI C Emulation: 0.4
+[   612.237] 	X.Org Video Driver: 24.0
+[   612.237] 	X.Org XInput driver : 24.1
+[   612.237] 	X.Org Server Extension : 10.0
+[   612.238] (--) using VT number 2
+
+[   612.238] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[   612.238] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   612.238] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[   612.242] (--) PCI:*(1@0:0:0) 10de:174d:17aa:39ce rev 162, Mem @ 0xa3000000/16777216, 0x90000000/268435456, 0xa0000000/33554432, I/O @ 0x00003000/128, BIOS @ 0x????????/65536
+[   612.242] (II) LoadModule: "glx"
+[   612.242] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[   612.244] (II) Module glx: vendor="X.Org Foundation"
+[   612.244] 	compiled for 1.20.4, module version = 1.0.0
+[   612.244] 	ABI class: X.Org Server Extension, version 10.0
+[   612.244] (II) LoadModule: "nvidia"
+[   612.244] (II) Loading /usr/lib64/xorg/modules/drivers/nvidia_drv.so
+[   612.244] (II) Module nvidia: vendor="NVIDIA Corporation"
+[   612.244] 	compiled for 1.6.99.901, module version = 1.0.0
+[   612.244] 	Module class: X.Org Video Driver
+[   612.244] (II) LoadModule: "mouse"
+[   612.244] (WW) Warning, couldn't open module mouse
+[   612.244] (EE) Failed to load module "mouse" (module does not exist, 0)
+[   612.244] (II) LoadModule: "kbd"
+[   612.244] (WW) Warning, couldn't open module kbd
+[   612.244] (EE) Failed to load module "kbd" (module does not exist, 0)
+[   612.244] (II) NVIDIA dlloader X Driver  430.26  Tue Jun  4 17:52:10 CDT 2019
+[   612.244] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[   612.245] (II) Loading sub module "fb"
+[   612.245] (II) LoadModule: "fb"
+[   612.245] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[   612.245] (II) Module fb: vendor="X.Org Foundation"
+[   612.245] 	compiled for 1.20.4, module version = 1.0.0
+[   612.245] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   612.245] (II) Loading sub module "wfb"
+[   612.245] (II) LoadModule: "wfb"
+[   612.245] (II) Loading /usr/lib64/xorg/modules/libwfb.so
+[   612.245] (II) Module wfb: vendor="X.Org Foundation"
+[   612.245] 	compiled for 1.20.4, module version = 1.0.0
+[   612.245] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   612.245] (II) Loading sub module "ramdac"
+[   612.245] (II) LoadModule: "ramdac"
+[   612.245] (II) Module "ramdac" already built-in
+[   612.246] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   612.246] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[   612.246] (==) NVIDIA(0): RGB weight 888
+[   612.246] (==) NVIDIA(0): Default visual is TrueColor
+[   612.246] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[   612.246] (**) NVIDIA(0): Option "ProbeAllGpus" "false"
+[   612.246] (**) NVIDIA(0): Option "UseEDID" "false"
+[   612.246] (**) NVIDIA(0): Option "UseDisplayDevice" "none"
+[   612.246] (**) NVIDIA(0): Enabling 2D acceleration
+[   612.246] (**) NVIDIA(0): Ignoring EDIDs
+[   612.246] (**) NVIDIA(0): Option "UseDisplayDevice" set to "none"; enabling NoScanout
+[   612.246] (**) NVIDIA(0):     mode
+[   612.246] (II) Loading sub module "glxserver_nvidia"
+[   612.246] (II) LoadModule: "glxserver_nvidia"
+[   612.246] (II) Loading /usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so
+[   612.246] (EE) Failed to load /usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so: libnvidia-tls.so.430.26: cannot open shared object file: No such file or directory
+[   612.246] (EE) NVIDIA: Failed to load module "glxserver_nvidia" (loader failed, 0)
+[   612.246] (EE) NVIDIA(0): Failed to initialize the GLX module; please check in your X
+[   612.246] (EE) NVIDIA(0):     log file that the GLX module has been loaded in your X
+[   612.246] (EE) NVIDIA(0):     server, and that the module is the NVIDIA GLX module.  If
+[   612.246] (EE) NVIDIA(0):     you continue to encounter problems, Please try
+[   612.246] (EE) NVIDIA(0):     reinstalling the NVIDIA driver.
+[   612.655] (II) NVIDIA(0): NVIDIA GPU GeForce MX130 (GM108-B) at PCI:1:0:0 (GPU-0)
+[   612.655] (--) NVIDIA(0): Memory: 2097152 kBytes
+[   612.655] (--) NVIDIA(0): VideoBIOS: 82.08.77.00.aa
+[   612.655] (II) NVIDIA(0): Detected PCI Express Link width: 4X
+[   612.655] (II) NVIDIA(0): Validated MetaModes:
+[   612.655] (II) NVIDIA(0):     "NULL"
+[   612.655] (II) NVIDIA(0): Virtual screen size determined to be 640 x 480
+[   612.655] (WW) NVIDIA(0): Unable to get display device for DPI computation.
+[   612.655] (==) NVIDIA(0): DPI set to (75, 75); computed from built-in default
+[   612.656] (II) NVIDIA: Using 6144.00 MB of virtual memory for indirect memory
+[   612.656] (II) NVIDIA:     access.
+[   612.664] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[   612.664] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[   612.664] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[   612.664] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[   612.664] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[   612.664] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[   612.664] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[   612.664] (II) NVIDIA(0):     Config Options in the README.
+[   612.699] (II) NVIDIA(0): Setting mode "NULL"
+[   612.703] (==) NVIDIA(0): Disabling shared memory pixmaps
+[   612.703] (==) NVIDIA(0): Backing store enabled
+[   612.703] (==) NVIDIA(0): Silken mouse enabled
+[   612.703] (==) NVIDIA(0): DPMS enabled
+[   612.703] (WW) NVIDIA(0): Option "NoLogo" is not used
+[   612.703] (II) Loading sub module "dri2"
+[   612.703] (II) LoadModule: "dri2"
+[   612.703] (II) Module "dri2" already built-in
+[   612.703] (II) NVIDIA(0): [DRI2] Setup complete
+[   612.703] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[   612.703] (II) Initializing extension Generic Event Extension
+[   612.703] (II) Initializing extension SHAPE
+[   612.704] (II) Initializing extension MIT-SHM
+[   612.704] (II) Initializing extension XInputExtension
+[   612.704] (II) Initializing extension XTEST
+[   612.704] (II) Initializing extension BIG-REQUESTS
+[   612.704] (II) Initializing extension SYNC
+[   612.704] (II) Initializing extension XKEYBOARD
+[   612.704] (II) Initializing extension XC-MISC
+[   612.704] (II) Initializing extension XFIXES
+[   612.704] (II) Initializing extension RENDER
+[   612.704] (II) Initializing extension RANDR
+[   612.705] (II) Initializing extension COMPOSITE
+[   612.705] (II) Initializing extension DAMAGE
+[   612.705] (II) Initializing extension MIT-SCREEN-SAVER
+[   612.705] (II) Initializing extension DOUBLE-BUFFER
+[   612.705] (II) Initializing extension RECORD
+[   612.705] (II) Initializing extension DPMS
+[   612.705] (II) Initializing extension Present
+[   612.705] (II) Initializing extension DRI3
+[   612.705] (II) Initializing extension X-Resource
+[   612.705] (II) Initializing extension XVideo
+[   612.705] (II) Initializing extension XVideo-MotionCompensation
+[   612.705] (II) Initializing extension SELinux
+[   612.706] (II) SELinux: Disabled by boolean
+[   612.706] (II) Initializing extension GLX
+[   612.706] (II) AIGLX: Screen 0 is not DRI2 capable
+[   612.761] (II) IGLX: Loaded and initialized swrast
+[   612.761] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[   612.761] (II) Initializing extension XFree86-VidModeExtension
+[   612.761] (II) Initializing extension XFree86-DGA
+[   612.761] (II) Initializing extension XFree86-DRI
+[   612.761] (II) Initializing extension DRI2
+[   612.761] (II) Initializing extension NV-GLX
+[   612.761] (II) Initializing extension NV-CONTROL
+[   612.780] (II) LoadModule: "mouse"
+[   612.780] (WW) Warning, couldn't open module mouse
+[   612.780] (EE) Failed to load module "mouse" (module does not exist, 0)
+[   612.780] (EE) No input driver matching `mouse'
+[   612.780] (II) Falling back to input driver `libinput'
+[   612.780] (II) LoadModule: "libinput"
+[   612.781] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[   612.784] (II) Module libinput: vendor="X.Org Foundation"
+[   612.784] 	compiled for 1.20.3, module version = 0.28.2
+[   612.784] 	Module class: X.Org XInput Driver
+[   612.784] 	ABI class: X.Org XInput driver, version 24.1
+[   612.784] (II) Using input driver 'libinput' for '<default pointer>'
+[   612.784] (**) Option "CorePointer" "on"
+[   612.784] (**) <default pointer>: always reports core events
+[   612.784] (EE) PreInit returned 2 for "<default pointer>"
+[   612.784] (II) UnloadModule: "libinput"
+[   612.784] (II) LoadModule: "kbd"
+[   612.784] (WW) Warning, couldn't open module kbd
+[   612.784] (EE) Failed to load module "kbd" (module does not exist, 0)
+[   612.784] (EE) No input driver matching `kbd'
+[   612.784] (II) Falling back to input driver `libinput'
+[   612.784] (II) Using input driver 'libinput' for '<default keyboard>'
+[   612.784] (**) Option "CoreKeyboard" "on"
+[   612.784] (**) <default keyboard>: always reports core events
+[   612.784] (EE) PreInit returned 2 for "<default keyboard>"
+[   612.784] (II) UnloadModule: "libinput"
+[   612.797] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[   612.797] (II) AutoAddDevices is off - not adding device.
+[   612.797] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[   612.797] (II) AutoAddDevices is off - not adding device.
+[   612.798] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   612.798] (II) AutoAddDevices is off - not adding device.
+[   612.798] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[   612.798] (II) AutoAddDevices is off - not adding device.
+[   612.799] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   612.799] (II) AutoAddDevices is off - not adding device.
+[   612.799] (II) config/udev: Adding drm device (/dev/dri/card0)
+[   612.799] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   612.799] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[   612.800] (II) config/udev: Adding input device EasyCamera: EasyCamera (/dev/input/event14)
+[   612.800] (II) AutoAddDevices is off - not adding device.
+[   612.800] (II) config/udev: Adding input device ELAN0650:01 04F3:304B Touchpad (/dev/input/event7)
+[   612.800] (II) AutoAddDevices is off - not adding device.
+[   612.801] (II) config/udev: Adding input device ELAN0650:01 04F3:304B Touchpad (/dev/input/mouse0)
+[   612.801] (II) AutoAddDevices is off - not adding device.
+[   612.801] (II) config/udev: Adding input device Wacom HID 50E9 Pen (/dev/input/event8)
+[   612.801] (II) AutoAddDevices is off - not adding device.
+[   612.802] (II) config/udev: Adding input device Wacom HID 50E9 Pen (/dev/input/mouse1)
+[   612.802] (II) AutoAddDevices is off - not adding device.
+[   612.802] (II) config/udev: Adding input device Wacom HID 50E9 Finger (/dev/input/event9)
+[   612.802] (II) AutoAddDevices is off - not adding device.
+[   612.803] (II) config/udev: Adding input device Wacom HID 50E9 Finger (/dev/input/mouse2)
+[   612.803] (II) AutoAddDevices is off - not adding device.
+[   612.803] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event6)
+[   612.803] (II) AutoAddDevices is off - not adding device.
+[   612.803] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event15)
+[   612.803] (II) AutoAddDevices is off - not adding device.
+[   612.804] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event16)
+[   612.804] (II) AutoAddDevices is off - not adding device.
+[   612.804] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event17)
+[   612.804] (II) AutoAddDevices is off - not adding device.
+[   612.804] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event18)
+[   612.804] (II) AutoAddDevices is off - not adding device.
+[   612.805] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event19)
+[   612.805] (II) AutoAddDevices is off - not adding device.
+[   612.805] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event20)
+[   612.805] (II) AutoAddDevices is off - not adding device.
+[   612.805] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event21)
+[   612.805] (II) AutoAddDevices is off - not adding device.
+[   612.805] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[   612.805] (II) AutoAddDevices is off - not adding device.
+[   613.113] (II) NVIDIA(GPU-0): Deleting GPU-0
+[   613.113] (II) Server terminated successfully (0). Closing log file.

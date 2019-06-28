@@ -1,0 +1,69 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-4/i2c-ELAN0650:01/0018:04F3:304B.0001/input/input23':
+    KERNEL=="input23"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{properties}=="5"
+    ATTR{phys}=="i2c-ELAN0650:01"
+    ATTR{uniq}==""
+    ATTR{name}=="ELAN0650:01 04F3:304B Touchpad"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-4/i2c-ELAN0650:01/0018:04F3:304B.0001':
+    KERNELS=="0018:04F3:304B.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{country}=="00"
+    ATTRS{quirks}=="334864"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-4/i2c-ELAN0650:01':
+    KERNELS=="i2c-ELAN0650:01"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="ELAN0650:01"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-4':
+    KERNELS=="i2c-4"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0':
+    KERNELS=="i2c_designware.0"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0':
+    KERNELS=="0000:00:15.0"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="intel-lpss"
+    ATTRS{subsystem_device}=="0x3837"
+    ATTRS{subsystem_vendor}=="0x17aa"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{numa_node}=="-1"
+    ATTRS{msi_bus}=="1"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{class}=="0x118000"
+    ATTRS{enable}=="1"
+    ATTRS{irq}=="16"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{device}=="0x9d60"
+    ATTRS{revision}=="0x21"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{dma_mask_bits}=="32"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
