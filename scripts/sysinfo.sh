@@ -8,6 +8,11 @@ function finish {
 }
 trap finish $? EXIT
 
+function sanitize {
+	KEYWORD=$(echo "$2" | sed 's/\([\/&]\)/\\\1/g')
+	if [[ -n "$KEYWORD" ]]; then sed -i "s/${KEYWORD}/$1/g" *; fi
+}
+
 TMPDIR=$(mktemp -d --tmpdir sysinfo.XXXXXXXXXX) || { echo "Failed."; exit 1; }
 OUTFILE=$(readlink -m "$TMPDIR/../$(basename "$TMPDIR").tar.gz")
 cd "$TMPDIR"
@@ -175,6 +180,15 @@ tar czf xorg-configs.tar.gz --ignore-failed-read \
     /usr/share/X11/xorg.conf.d
 tar czf udev-configs.tar.gz --ignore-failed-read \
     /usr/lib/udev/rules.d /etc/udev/rules.d
+
+
+## Sanitization
+echo "  * Removing identifying information..."
+sanitize HOSTNAME "$(uname -n)"
+sanitize USERNAME "$(whoami)"
+sanitize MACHINEID "$(cat /etc/machine-id)"
+sanitize BOOTID "$(cat /proc/sys/kernel/random/boot_id)"
+sanitize BOOTID "$(tr -d '-' < /proc/sys/kernel/random/boot_id)"
 
 
 ## Tarball generation
