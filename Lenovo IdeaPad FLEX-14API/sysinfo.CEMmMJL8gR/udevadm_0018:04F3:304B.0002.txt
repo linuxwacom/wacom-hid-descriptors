@@ -1,0 +1,46 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0010:01/i2c-1/i2c-ELN4690:00/0018:04F3:304B.0002/input/input18':
+    KERNEL=="input18"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="ELN4690:00 04F3:304B Touchpad"
+    ATTR{properties}=="5"
+    ATTR{uniq}==""
+    ATTR{phys}=="i2c-ELN4690:00"
+
+  looking at parent device '/devices/platform/AMDI0010:01/i2c-1/i2c-ELN4690:00/0018:04F3:304B.0002':
+    KERNELS=="0018:04F3:304B.0002"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="hid-multitouch"
+    ATTRS{country}=="00"
+    ATTRS{quirks}=="334864"
+
+  looking at parent device '/devices/platform/AMDI0010:01/i2c-1/i2c-ELN4690:00':
+    KERNELS=="i2c-ELN4690:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="ELN4690:00"
+
+  looking at parent device '/devices/platform/AMDI0010:01/i2c-1':
+    KERNELS=="i2c-1"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/platform/AMDI0010:01':
+    KERNELS=="AMDI0010:01"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
