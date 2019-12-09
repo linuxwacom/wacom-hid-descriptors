@@ -1,0 +1,430 @@
+-rw-r--r-- 1 USERNAME USERNAME   7996 Nov 19 03:43 /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/hid-generic.ko
+-rw-r--r-- 1 USERNAME USERNAME  48004 Nov 19 03:43 /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/hid-multitouch.ko
+-rw-r--r-- 1 USERNAME USERNAME 206204 Nov 19 03:43 /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/wacom.ko
+-rw-r--r-- 1 USERNAME USERNAME  19556 Nov 19 03:43 /lib/modules/5.3.0-2-amd64/kernel/drivers/input/tablet/wacom_serial4.ko
+-rw-r--r-- 1 USERNAME USERNAME  21980 Nov 19 03:43 /lib/modules/5.3.0-2-amd64/kernel/drivers/input/touchscreen/wacom_w8001.ko
+-rw-r--r-- 1 USERNAME USERNAME 239428 Nov 19 03:43 /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/hid.ko
+
+/sys/module/wacom/srcversion:062C0A7ABCB11F5F3A2C91A
+/sys/module/wacom/version:v2.00
+
+filename:       /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/hid-generic.ko
+license:        GPL
+description:    HID generic driver
+author:         Henrik Rydberg
+alias:          hid:b*g*v*p*
+depends:        hid
+retpoline:      Y
+intree:         Y
+name:           hid_generic
+vermagic:       5.3.0-2-amd64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Debian Secure Boot CA
+sig_key:        A7:46:8D:EF
+sig_hashalgo:   sha256
+signature:      21:44:D3:67:B7:13:5A:35:7F:BF:CB:36:EE:03:B3:F6:EC:D9:40:A9:
+		05:B4:23:A9:0D:8C:3D:5F:78:F8:4E:A6:F9:8A:0A:C6:C9:8D:BD:DC:
+		5E:5E:7F:F4:D9:68:FC:CC:02:18:5F:CF:A2:A7:3C:A4:3C:DD:01:24:
+		5E:01:1F:CE:DB:DB:AA:D3:8C:03:2F:C5:92:78:4E:D5:21:D2:51:F7:
+		91:60:0A:C1:82:7C:35:AC:FF:C9:88:1D:3F:CF:89:14:1A:1B:4E:5E:
+		42:32:D8:41:AF:CD:61:39:CC:C0:04:03:EB:0D:F9:58:61:79:A7:FB:
+		B9:64:B9:F6:17:D8:68:12:D9:02:92:1D:59:18:1E:EC:A4:9A:B0:89:
+		0D:7A:ED:45:07:7D:49:83:37:D8:88:57:B8:C1:3D:47:8B:C4:F4:F6:
+		43:93:FE:69:FA:55:C4:62:96:15:A8:66:4A:BF:B5:6F:A5:C1:79:81:
+		06:8A:3F:92:35:C2:39:37:22:7C:89:C7:A6:AF:D8:38:CD:D7:0F:99:
+		67:BD:A6:D9:B1:F3:FD:71:94:18:A5:60:27:2A:D1:57:2B:0F:C6:45:
+		F2:27:37:6D:4B:BE:63:8B:7C:4F:9D:A1:12:55:16:14:E8:95:6A:9C:
+		30:6F:81:B6:DE:2E:5D:0F:4E:7A:75:43:3E:90:B0:A4
+
+filename:       /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/hid-multitouch.ko
+license:        GPL
+description:    HID multitouch panels
+author:         Benjamin Tissoires <benjamin.tissoires@gmail.com>
+author:         Stephane Chatty <chatty@enac.fr>
+alias:          hid:b*g0004v*p*
+alias:          hid:b*g0002v*p*
+alias:          hid:b*g*v000018D1p00005028
+alias:          hid:b0003g0002v00001477p00001025
+alias:          hid:b0003g0002v00001477p00001026
+alias:          hid:b0003g0002v00001477p00001024
+alias:          hid:b0003g0002v00001477p00001022
+alias:          hid:b0003g0002v00001477p00001023
+alias:          hid:b0003g0002v00001477p00001021
+alias:          hid:b0003g0002v00001477p0000100E
+alias:          hid:b0003g0002v00001477p00001007
+alias:          hid:b0003g0002v00001477p00001006
+alias:          hid:b0003g0002v00002505p00000220
+alias:          hid:b0003g0002v00000FB8p00001109
+alias:          hid:b0003g0002v00000306p0000FF3F
+alias:          hid:b0003g0002v0000227Dp00000A19
+alias:          hid:b0003g0002v0000227Dp00000709
+alias:          hid:b0003g0002v00001E5Ep00000313
+alias:          hid:b0003g0002v00001784p00000016
+alias:          hid:b0003g0002v00000483p00003261
+alias:          hid:b0018g0004v000006CBp00008323
+alias:          hid:b0003g0002v00000408p00003001
+alias:          hid:b0003g0002v00002087p00000703
+alias:          hid:b0003g0002v0000093Ap00008003
+alias:          hid:b0003g0002v0000093Ap00008002
+alias:          hid:b0003g0002v0000093Ap00008001
+alias:          hid:b0003g0002v000004DAp0000104D
+alias:          hid:b0003g0002v000004DAp00001044
+alias:          hid:b0018g0004v00001B96p00001B05
+alias:          hid:b0003g0002v00000603p00000600
+alias:          hid:b0003g0002v0000062Ap00007100
+alias:          hid:b0003g0002v00000486p00000186
+alias:          hid:b0003g0002v00000486p00000185
+alias:          hid:b0003g*v00001FD2p00006007
+alias:          hid:b0003g0002v0000222Ap00000001
+alias:          hid:b0003g0002v000022EDp00001010
+alias:          hid:b0003g0002v00001AADp0000000F
+alias:          hid:b0005g0002v000025B6p00000002
+alias:          hid:b0003g0002v00000DFCp0000E100
+alias:          hid:b0003g0002v00000DFCp0000010A
+alias:          hid:b0003g0002v00000DFCp00000106
+alias:          hid:b0003g0002v00000DFCp00000102
+alias:          hid:b0003g0002v00000DFCp00000101
+alias:          hid:b0003g0002v00000DFCp00000100
+alias:          hid:b0003g0002v00000DFCp00000003
+alias:          hid:b0003g0002v000010C4p000081B9
+alias:          hid:b0003g0002v000025B5p00000002
+alias:          hid:b0003g0002v000003FCp000005D8
+alias:          hid:b0003g0002v00000EEFp0000A001
+alias:          hid:b0003g0002v00000EEFp000073F7
+alias:          hid:b0003g0002v00000EEFp00007349
+alias:          hid:b0003g0002v00000EEFp00007302
+alias:          hid:b0003g0002v00000EEFp000072FA
+alias:          hid:b0003g*v00000EEFp000072D0
+alias:          hid:b0003g*v00000EEFp000072C4
+alias:          hid:b0003g0002v00000EEFp000072AA
+alias:          hid:b0003g0002v00000EEFp000072A1
+alias:          hid:b0003g0002v00000EEFp0000726B
+alias:          hid:b0003g0002v00000EEFp00007262
+alias:          hid:b0003g0002v00000EEFp0000725E
+alias:          hid:b0003g0002v00000EEFp0000722A
+alias:          hid:b0003g0002v00000EEFp00007224
+alias:          hid:b0003g0002v00000EEFp0000720C
+alias:          hid:b0003g0002v00000EEFp00007207
+alias:          hid:b0003g0002v00000EEFp0000480E
+alias:          hid:b0003g0002v00000EEFp0000480D
+alias:          hid:b0003g0002v00001FF7p00000013
+alias:          hid:b0003g0002v000024B8p00000040
+alias:          hid:b0003g0002v000024B8p00000020
+alias:          hid:b0018g0004v00000488p0000121F
+alias:          hid:b0003g0002v00002247p00000001
+alias:          hid:b0003g0002v00002087p00000F01
+alias:          hid:b0003g0002v00002087p00000A01
+alias:          hid:b0003g0002v00002453p00000100
+alias:          hid:b0003g0002v000003EBp00002118
+alias:          hid:b0003g0004v00000B05p0000184A
+alias:          hid:b0003g0002v00001130p00003101
+alias:          hid:b0003g0004v000017EFp000060B5
+alias:          hid:b0003g0004v000017EFp000060A3
+alias:          hid:b0018g0004v0000044Ep00001222
+alias:          hid:b0018g0004v0000044Ep00001220
+alias:          hid:b0018g0004v0000044Ep0000121F
+alias:          hid:b0003g0002v00000596p00000506
+alias:          hid:b0003g0002v00000596p00000502
+alias:          hid:b0003g0002v00000596p00000500
+depends:        hid
+retpoline:      Y
+intree:         Y
+name:           hid_multitouch
+vermagic:       5.3.0-2-amd64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Debian Secure Boot CA
+sig_key:        A7:46:8D:EF
+sig_hashalgo:   sha256
+signature:      4F:FB:DC:7B:72:CB:F0:6B:82:A8:2E:09:03:75:13:32:A2:59:71:B7:
+		A3:5F:36:0B:8C:41:49:3A:93:5C:90:A6:38:5E:8B:63:F1:92:13:37:
+		6D:30:85:26:F8:AD:3A:CB:89:78:74:44:B8:C5:9D:F4:86:2B:5C:3B:
+		52:38:83:FC:86:A7:AC:5A:2A:FB:79:A2:E1:94:99:0E:D4:4C:B7:9D:
+		45:A6:65:EF:9D:7E:02:46:36:A6:41:DB:B5:17:DB:4F:A0:03:F0:F5:
+		39:E9:C2:E7:DA:E0:3B:57:F6:63:51:CB:2B:6A:CE:51:91:F2:51:91:
+		8B:DB:B6:24:4D:87:0D:A6:29:0F:C2:24:63:07:40:DB:D8:76:EF:8F:
+		B1:67:AB:1A:DE:E5:44:F7:86:21:83:E4:AD:29:FF:B2:6A:49:37:74:
+		46:67:7A:E8:5F:B0:52:EF:C3:B9:AF:6F:86:F9:5F:11:A7:B6:E3:F7:
+		3E:B8:64:E0:0D:40:F0:7B:00:23:4C:89:50:D3:19:AD:5C:70:C9:C9:
+		49:76:4D:07:6F:EF:3C:E9:C2:D1:2C:8C:29:63:F4:22:C6:B6:FA:A5:
+		DC:E5:AA:3E:C8:9F:DE:C8:20:E3:16:F2:EA:53:FE:FB:74:B0:35:5B:
+		E4:94:EB:8A:F1:F7:99:4F:04:40:2D:02:E9:5A:C8:B4
+
+modinfo: ERROR: Module hid_wacom not found.
+
+filename:       /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/wacom.ko
+license:        GPL
+description:    USB Wacom tablet driver
+author:         Vojtech Pavlik <vojtech@ucw.cz>
+version:        v2.00
+srcversion:     062C0A7ABCB11F5F3A2C91A
+alias:          hid:b0005g0101v0000056Ap*
+alias:          hid:b0018g0101v0000056Ap*
+alias:          hid:b0003g0101v0000056Ap*
+alias:          hid:b0003g*v000017EFp00006004
+alias:          hid:b0003g0101v0000056Ap00005002
+alias:          hid:b0003g0101v0000056Ap00005000
+alias:          hid:b0003g0101v0000056Ap00004004
+alias:          hid:b0003g0101v0000056Ap00004001
+alias:          hid:b0005g0101v0000056Ap00000393
+alias:          hid:b0003g0101v0000056Ap0000037B
+alias:          hid:b0003g0101v0000056Ap0000037A
+alias:          hid:b0005g0101v0000056Ap00000379
+alias:          hid:b0005g0101v0000056Ap00000377
+alias:          hid:b0005g0101v0000056Ap00000361
+alias:          hid:b0005g0101v0000056Ap00000360
+alias:          hid:b0003g0101v0000056Ap00000343
+alias:          hid:b0003g0101v0000056Ap0000033E
+alias:          hid:b0003g0101v0000056Ap0000033D
+alias:          hid:b0003g0101v0000056Ap0000033C
+alias:          hid:b0003g0101v0000056Ap0000033B
+alias:          hid:b0003g0101v0000056Ap00000336
+alias:          hid:b0003g0101v0000056Ap00000335
+alias:          hid:b0003g0101v0000056Ap00000333
+alias:          hid:b0003g0101v0000056Ap00000331
+alias:          hid:b0003g0101v0000056Ap0000032F
+alias:          hid:b0003g0101v0000056Ap0000032C
+alias:          hid:b0003g0101v0000056Ap0000032B
+alias:          hid:b0003g0101v0000056Ap0000032A
+alias:          hid:b0003g0101v0000056Ap00000326
+alias:          hid:b0003g0101v0000056Ap00000325
+alias:          hid:b0003g0101v0000056Ap00000323
+alias:          hid:b0003g0101v0000056Ap00000319
+alias:          hid:b0003g0101v0000056Ap00000318
+alias:          hid:b0003g0101v0000056Ap00000317
+alias:          hid:b0003g0101v0000056Ap00000315
+alias:          hid:b0003g0101v0000056Ap00000314
+alias:          hid:b0003g0101v0000056Ap0000030E
+alias:          hid:b0003g0101v0000056Ap0000030C
+alias:          hid:b0003g0101v0000056Ap0000030A
+alias:          hid:b0003g0101v0000056Ap00000309
+alias:          hid:b0003g0101v0000056Ap00000307
+alias:          hid:b0003g0101v0000056Ap00000304
+alias:          hid:b0003g0101v0000056Ap00000303
+alias:          hid:b0003g0101v0000056Ap00000302
+alias:          hid:b0003g0101v0000056Ap00000301
+alias:          hid:b0003g0101v0000056Ap00000300
+alias:          hid:b0003g0101v0000056Ap0000012C
+alias:          hid:b0003g0101v0000056Ap00000116
+alias:          hid:b0003g0101v0000056Ap0000010F
+alias:          hid:b0003g0101v0000056Ap0000010E
+alias:          hid:b0003g0101v0000056Ap0000010D
+alias:          hid:b0003g0101v0000056Ap00000101
+alias:          hid:b0003g0101v0000056Ap00000100
+alias:          hid:b0003g0101v0000056Ap000000FB
+alias:          hid:b0003g0101v0000056Ap000000FA
+alias:          hid:b0003g0101v0000056Ap000000F8
+alias:          hid:b0003g0101v0000056Ap000000F6
+alias:          hid:b0003g0101v0000056Ap000000F4
+alias:          hid:b0003g0101v0000056Ap000000F0
+alias:          hid:b0003g0101v0000056Ap000000EF
+alias:          hid:b0003g0101v0000056Ap000000ED
+alias:          hid:b0003g0101v0000056Ap000000EC
+alias:          hid:b0003g0101v0000056Ap000000E6
+alias:          hid:b0003g0101v0000056Ap000000E5
+alias:          hid:b0003g0101v0000056Ap000000E3
+alias:          hid:b0003g0101v0000056Ap000000E2
+alias:          hid:b0003g0101v0000056Ap000000DF
+alias:          hid:b0003g0101v0000056Ap000000DE
+alias:          hid:b0003g0101v0000056Ap000000DD
+alias:          hid:b0003g0101v0000056Ap000000DB
+alias:          hid:b0003g0101v0000056Ap000000DA
+alias:          hid:b0003g0101v0000056Ap000000D8
+alias:          hid:b0003g0101v0000056Ap000000D7
+alias:          hid:b0003g0101v0000056Ap000000D6
+alias:          hid:b0003g0101v0000056Ap000000D5
+alias:          hid:b0003g0101v0000056Ap000000D4
+alias:          hid:b0003g0101v0000056Ap000000D3
+alias:          hid:b0003g0101v0000056Ap000000D2
+alias:          hid:b0003g0101v0000056Ap000000D1
+alias:          hid:b0003g0101v0000056Ap000000D0
+alias:          hid:b0003g0101v0000056Ap000000CE
+alias:          hid:b0003g0101v0000056Ap000000CC
+alias:          hid:b0003g0101v0000056Ap000000C7
+alias:          hid:b0003g0101v0000056Ap000000C6
+alias:          hid:b0003g0101v0000056Ap000000C5
+alias:          hid:b0003g0101v0000056Ap000000C4
+alias:          hid:b0003g0101v0000056Ap000000C2
+alias:          hid:b0003g0101v0000056Ap000000C0
+alias:          hid:b0005g0101v0000056Ap000000BD
+alias:          hid:b0003g0101v0000056Ap000000BC
+alias:          hid:b0003g0101v0000056Ap000000BB
+alias:          hid:b0003g0101v0000056Ap000000BA
+alias:          hid:b0003g0101v0000056Ap000000B9
+alias:          hid:b0003g0101v0000056Ap000000B8
+alias:          hid:b0003g0101v0000056Ap000000B7
+alias:          hid:b0003g0101v0000056Ap000000B5
+alias:          hid:b0003g0101v0000056Ap000000B4
+alias:          hid:b0003g0101v0000056Ap000000B3
+alias:          hid:b0003g0101v0000056Ap000000B2
+alias:          hid:b0003g0101v0000056Ap000000B1
+alias:          hid:b0003g0101v0000056Ap000000B0
+alias:          hid:b0003g0101v0000056Ap0000009F
+alias:          hid:b0003g0101v0000056Ap0000009A
+alias:          hid:b0003g0101v0000056Ap00000097
+alias:          hid:b0003g0101v0000056Ap00000093
+alias:          hid:b0003g0101v0000056Ap00000090
+alias:          hid:b0003g0101v0000056Ap00000084
+alias:          hid:b0005g0101v0000056Ap00000081
+alias:          hid:b0003g0101v0000056Ap0000006B
+alias:          hid:b0003g0101v0000056Ap0000006A
+alias:          hid:b0003g0101v0000056Ap00000069
+alias:          hid:b0003g0101v0000056Ap00000065
+alias:          hid:b0003g0101v0000056Ap00000064
+alias:          hid:b0003g0101v0000056Ap00000063
+alias:          hid:b0003g0101v0000056Ap00000062
+alias:          hid:b0003g0101v0000056Ap00000061
+alias:          hid:b0003g0101v0000056Ap00000060
+alias:          hid:b0003g0101v0000056Ap0000005E
+alias:          hid:b0003g0101v0000056Ap0000005D
+alias:          hid:b0003g0101v0000056Ap0000005B
+alias:          hid:b0003g0101v0000056Ap00000059
+alias:          hid:b0003g0101v0000056Ap00000057
+alias:          hid:b0003g0101v0000056Ap00000047
+alias:          hid:b0003g0101v0000056Ap00000045
+alias:          hid:b0003g0101v0000056Ap00000044
+alias:          hid:b0003g0101v0000056Ap00000043
+alias:          hid:b0003g0101v0000056Ap00000042
+alias:          hid:b0003g0101v0000056Ap00000041
+alias:          hid:b0003g0101v0000056Ap0000003F
+alias:          hid:b0003g0101v0000056Ap00000039
+alias:          hid:b0003g0101v0000056Ap00000038
+alias:          hid:b0003g0101v0000056Ap00000037
+alias:          hid:b0003g0101v0000056Ap00000035
+alias:          hid:b0003g0101v0000056Ap00000034
+alias:          hid:b0003g0101v0000056Ap00000033
+alias:          hid:b0003g0101v0000056Ap00000032
+alias:          hid:b0003g0101v0000056Ap00000031
+alias:          hid:b0003g0101v0000056Ap00000030
+alias:          hid:b0003g0101v0000056Ap0000002A
+alias:          hid:b0003g0101v0000056Ap00000029
+alias:          hid:b0003g0101v0000056Ap00000028
+alias:          hid:b0003g0101v0000056Ap00000027
+alias:          hid:b0003g0101v0000056Ap00000026
+alias:          hid:b0003g0101v0000056Ap00000024
+alias:          hid:b0003g0101v0000056Ap00000023
+alias:          hid:b0003g0101v0000056Ap00000022
+alias:          hid:b0003g0101v0000056Ap00000021
+alias:          hid:b0003g0101v0000056Ap00000020
+alias:          hid:b0003g0101v0000056Ap00000019
+alias:          hid:b0003g0101v0000056Ap00000018
+alias:          hid:b0003g0101v0000056Ap00000017
+alias:          hid:b0003g0101v0000056Ap00000016
+alias:          hid:b0003g0101v0000056Ap00000015
+alias:          hid:b0003g0101v0000056Ap00000014
+alias:          hid:b0003g0101v0000056Ap00000013
+alias:          hid:b0003g0101v0000056Ap00000012
+alias:          hid:b0003g0101v0000056Ap00000011
+alias:          hid:b0003g0101v0000056Ap00000010
+alias:          hid:b0003g0101v0000056Ap00000003
+alias:          hid:b0003g0101v0000056Ap00000000
+depends:        hid,usbhid
+retpoline:      Y
+intree:         Y
+name:           wacom
+vermagic:       5.3.0-2-amd64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Debian Secure Boot CA
+sig_key:        A7:46:8D:EF
+sig_hashalgo:   sha256
+signature:      75:E2:4D:C4:56:2D:28:25:81:33:98:E0:6C:C9:6B:A2:FF:ED:8F:B0:
+		18:04:5F:D1:FF:A7:C2:D8:70:A9:D5:60:C8:AD:3F:EE:39:68:58:C9:
+		40:AA:89:AC:65:7F:B3:4E:12:19:F4:D4:9E:B7:9A:C7:FE:3A:B5:47:
+		83:74:A6:FD:42:F9:E1:57:10:AF:0F:85:F5:3E:93:E9:CE:76:C2:09:
+		B3:F3:43:D2:D4:98:34:99:E2:6C:00:70:42:E0:7C:53:32:93:DD:C9:
+		42:E0:B5:90:5D:D6:F8:7B:E6:34:9D:CF:FA:3D:88:C3:E4:81:1A:86:
+		66:FF:AC:D1:C7:78:BD:C6:67:08:7D:D2:04:2A:64:C0:AB:63:4D:6B:
+		1E:42:84:0D:01:50:9C:70:2B:FF:4F:41:74:2B:B7:46:8C:DF:D5:0D:
+		B7:A9:29:3A:D2:E6:0B:06:8F:30:1C:EE:DD:3B:7B:78:39:64:77:E8:
+		C8:79:19:6A:4A:4B:F3:DB:9E:C7:FE:D6:99:7E:9A:B7:4E:21:3F:F7:
+		62:6E:D0:23:BE:BD:2D:FE:5C:62:7D:84:89:59:44:62:6F:7C:F2:94:
+		03:E9:C5:8A:3A:11:A6:71:DB:0A:65:F5:1E:2B:4A:CA:8D:90:A0:4B:
+		E2:BF:A9:EF:B0:44:FA:73:F5:1D:41:FF:FA:50:24:49
+parm:           touch_arbitration: on (Y) off (N) (bool)
+
+filename:       /lib/modules/5.3.0-2-amd64/kernel/drivers/input/touchscreen/wacom_w8001.ko
+license:        GPL
+description:    Wacom W8001 serial touchscreen driver
+author:         Jaya Kumar <jayakumar.lkml@gmail.com>
+alias:          serio:ty02pr39id*ex*
+depends:        
+retpoline:      Y
+intree:         Y
+name:           wacom_w8001
+vermagic:       5.3.0-2-amd64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Debian Secure Boot CA
+sig_key:        A7:46:8D:EF
+sig_hashalgo:   sha256
+signature:      36:72:69:A9:26:5E:8B:35:DF:57:DF:40:B2:81:B9:1B:6C:8A:39:9A:
+		43:AA:8E:96:85:42:8E:C0:D7:E5:04:DA:35:95:D8:C4:E4:39:25:C5:
+		FC:05:08:A0:82:F4:0A:D6:43:E8:EE:1D:F0:C4:35:66:E2:81:B1:76:
+		F8:81:4E:C1:8E:17:1D:BF:3C:A3:23:0B:21:D9:19:BD:65:CC:83:C4:
+		4A:D2:4A:91:52:2B:26:D5:D3:3F:64:73:F8:F2:E8:86:92:CA:30:B4:
+		B7:D2:35:4F:6E:3C:3F:61:8A:21:23:F5:41:9E:9A:5B:98:49:8D:03:
+		9C:59:16:75:55:90:59:EF:66:4B:90:1E:3E:0A:48:F4:25:61:01:A8:
+		0A:50:21:A8:5C:5D:28:B0:B1:06:64:1E:4D:E8:CD:AE:8D:EC:DF:6C:
+		D4:3E:76:10:5F:82:45:48:3D:64:EC:D3:61:5A:68:51:7F:CE:DB:29:
+		91:F1:D2:BF:30:8C:62:DD:83:21:2D:F8:3E:4F:E1:51:F7:AD:7D:06:
+		23:85:FB:5F:4F:1A:C3:52:0B:F6:02:F6:5A:D7:27:62:4C:3C:78:B6:
+		98:AD:71:BF:37:EE:29:3B:74:5F:25:0E:17:50:62:54:45:EA:96:E4:
+		3E:D5:AE:0D:09:43:3E:D6:00:EE:5C:88:01:78:59:29
+
+modinfo: ERROR: Module wacom_i2c not found.
+
+filename:       /lib/modules/5.3.0-2-amd64/kernel/drivers/input/tablet/wacom_serial4.ko
+license:        GPL
+description:    Wacom protocol 4 serial tablet driver
+author:         Julian Squires <julian@cipht.net>, Hans de Goede <hdegoede@redhat.com>
+alias:          serio:ty02pr3Eid*ex*
+depends:        
+retpoline:      Y
+intree:         Y
+name:           wacom_serial4
+vermagic:       5.3.0-2-amd64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Debian Secure Boot CA
+sig_key:        A7:46:8D:EF
+sig_hashalgo:   sha256
+signature:      69:12:4E:B3:35:D1:38:DD:C7:F7:1F:22:83:DC:EB:D1:A6:24:E8:81:
+		A6:8D:DE:3C:76:C7:F1:43:C4:FD:87:4A:D8:B1:C9:A0:79:86:D5:C5:
+		00:1D:60:39:8C:3A:23:E1:5D:69:31:D1:13:8A:5A:30:83:F6:6F:28:
+		EA:C1:7D:44:62:31:7C:27:04:B4:52:B4:6F:B4:02:D7:93:B4:E2:0A:
+		45:51:99:47:FA:67:ED:0A:CA:25:C5:B6:A2:C7:E4:43:01:D9:57:F3:
+		41:A9:2F:61:AB:52:32:C5:75:A6:33:59:3A:5C:68:37:36:07:CB:F7:
+		33:9D:AC:53:DE:A4:65:AD:09:5E:54:E2:4B:BE:30:3C:A3:48:47:7E:
+		A0:44:1C:53:F8:FC:FC:C3:CB:87:02:A8:C0:A9:01:6F:1A:99:AF:06:
+		84:33:69:CA:EF:34:C4:9C:B6:B8:40:27:C6:43:7B:14:C1:DC:6D:A8:
+		51:B7:CB:08:CC:7A:F9:F2:D4:88:08:71:22:12:2F:15:F2:74:55:D3:
+		97:65:CC:F0:55:C9:81:7C:6C:18:68:F3:0A:D1:07:E9:DA:A1:B9:CF:
+		97:71:00:5D:93:5F:C1:68:DE:8F:69:5A:EB:39:6F:C7:E6:21:21:D9:
+		48:F7:D5:34:68:3E:79:8C:04:0C:24:24:80:AD:05:30
+
+filename:       /lib/modules/5.3.0-2-amd64/kernel/drivers/hid/hid.ko
+license:        GPL
+author:         Jiri Kosina
+author:         Vojtech Pavlik
+author:         Andreas Gal
+depends:        
+retpoline:      Y
+intree:         Y
+name:           hid
+vermagic:       5.3.0-2-amd64 SMP mod_unload modversions 
+sig_id:         PKCS#7
+signer:         Debian Secure Boot CA
+sig_key:        A7:46:8D:EF
+sig_hashalgo:   sha256
+signature:      73:D8:80:70:41:F8:6D:D7:47:C5:11:EE:E7:5A:76:E4:BB:EF:E5:9B:
+		AC:9F:78:69:53:AC:5D:4F:0E:E8:8D:75:50:3A:20:29:3C:A8:68:E8:
+		68:63:D0:B5:B2:FD:2D:3E:12:A8:11:35:C3:C8:19:CD:84:16:CE:6E:
+		11:70:AA:0A:9F:C2:2D:34:A4:AB:B3:00:CA:25:FB:27:B8:2D:93:D1:
+		CD:80:E9:3D:DE:97:18:5F:31:C3:6E:5F:E7:6D:F0:F8:5B:23:2F:E4:
+		75:1F:45:8F:9B:6F:4D:CB:E4:42:72:A2:D4:EA:C9:F2:A3:27:38:D5:
+		33:74:2C:79:94:4D:C2:D9:9B:0D:0E:67:EF:7C:7C:F7:E5:34:BD:00:
+		D3:6E:61:7A:67:6F:A2:B5:DE:21:C3:80:97:22:FB:DC:0C:DF:77:2E:
+		15:90:79:DB:D5:B5:A9:C1:AC:90:8A:D0:72:45:5B:AE:6D:9B:22:6A:
+		3C:58:D8:97:03:DC:9F:CC:29:08:65:44:AE:57:86:8B:4F:ED:60:8F:
+		01:0D:D2:4B:29:C1:9E:6C:41:93:32:50:58:FA:3D:32:A8:0E:67:5E:
+		3C:DC:FE:D5:8B:FE:3C:10:9C:A2:A0:6A:FD:D1:7F:F4:40:2C:55:F3:
+		6D:C6:B7:53:D2:40:87:01:CE:67:F7:4B:63:BE:0E:43
+parm:           debug:toggle HID debugging messages (int)
+parm:           ignore_special_drivers:Ignore any special drivers and handle all devices by generic driver (int)
