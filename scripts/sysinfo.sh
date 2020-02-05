@@ -183,6 +183,10 @@ tar czf xorg-configs.tar.gz --ignore-failed-read \
 tar czf udev-configs.tar.gz --ignore-failed-read \
     /usr/lib/udev/rules.d /etc/udev/rules.d
 
+## Desktop configuration
+echo "  * Desktop configuration data..."
+for D in gnome cinnamon mate; do for X in desktop settings-daemon; do DIR=/org/$D/$X/peripherals/; echo "==== $DIR ===="; dconf dump $DIR; done; done > dconf-dump.txt
+
 
 ## Sanitization
 echo "  * Removing identifying information..."
