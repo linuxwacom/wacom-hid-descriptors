@@ -206,8 +206,8 @@ PEN_Y=$(awk -vFS='\t' '/Digitizer Pen\tDesktop Y/ {print $6-$5}' <<< "${PEN_DATA
 PEN_RESX=$(awk -vFS='\t' '/Digitizer Pen\tDesktop X/ {printf("%.0f", ($6-$5) / ($12-$11))}' <<< "${PEN_DATA}")
 PEN_RESY=$(awk -vFS='\t' '/Digitizer Pen\tDesktop Y/ {printf("%.0f", ($6-$5) / ($12-$11))}' <<< "${PEN_DATA}")
 SENSORTYPE=$(grep "Digitizer Battery Strength" <<< "${PEN_DATA}" > /dev/null && echo "AES" || echo "EMR")
-TILT_SUPPORT=$(grep "Digitizer X Tilt" <<< "${PEN_DATA}" > /dev/null && echo "Tilt")
-TOUCH_SUPPORT=$(test -n "${TOUCHSCREEN_FILE}" && echo "Touch")
+TILT_SUPPORT=$(grep "Digitizer X Tilt" <<< "${PEN_DATA}" > /dev/null && echo "Tilt" || true)
+TOUCH_SUPPORT=$(test -n "${TOUCHSCREEN_FILE}" && echo "Touch" || true)
 if [[ -n "${TOUCH_SUPPORT}" ]]; then
     TOUCH_SUPPORT="${TOUCH_SUPPORT} "$(test "${PEN_ID}" == "${TOUCHSCREEN_ID}" && echo "(Integrated)" || echo "(External)")
 fi
