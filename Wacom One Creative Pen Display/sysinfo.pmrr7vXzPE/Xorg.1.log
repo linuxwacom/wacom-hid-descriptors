@@ -1,0 +1,561 @@
+[ 53261.831] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[ 53261.831] _XSERVTransMakeAllCOTSServerListeners: server already running
+[ 53261.831] (--) Log file renamed from "/var/log/Xorg.pid-10899.log" to "/var/log/Xorg.1.log"
+[ 53261.832] 
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+[ 53261.832] Build Operating System: Linux 4.4.0-143-generic x86_64 Ubuntu
+[ 53261.832] Current Operating System: Linux HOSTNAME 5.0.0-15-generic #16-Ubuntu SMP Mon May 6 17:41:33 UTC 2019 x86_64
+[ 53261.832] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.0.0-15-generic root=UUID=ac1a9d9f-5a54-4e31-b332-503d35bb0357 ro
+[ 53261.832] Build Date: 03 April 2019  09:03:57AM
+[ 53261.832] xorg-server 2:1.20.4-1ubuntu3 (For technical support please see http://www.ubuntu.com/support) 
+[ 53261.832] Current version of pixman: 0.36.0
+[ 53261.832] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[ 53261.832] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[ 53261.832] (==) Log file: "/var/log/Xorg.1.log", Time: Thu May 23 07:09:22 2019
+[ 53261.832] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 53261.833] (==) No Layout section.  Using the first Screen section.
+[ 53261.833] (==) No screen section available. Using defaults.
+[ 53261.833] (**) |-->Screen "Default Screen Section" (0)
+[ 53261.833] (**) |   |-->Monitor "<default monitor>"
+[ 53261.834] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[ 53261.834] (==) Automatically adding devices
+[ 53261.834] (==) Automatically enabling devices
+[ 53261.834] (==) Automatically adding GPU devices
+[ 53261.834] (==) Automatically binding GPU devices
+[ 53261.834] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 53261.834] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[ 53261.834] 	Entry deleted from font path.
+[ 53261.834] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[ 53261.834] 	Entry deleted from font path.
+[ 53261.834] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[ 53261.834] 	Entry deleted from font path.
+[ 53261.834] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[ 53261.834] 	Entry deleted from font path.
+[ 53261.834] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[ 53261.834] 	Entry deleted from font path.
+[ 53261.834] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[ 53261.834] (==) ModulePath set to "/usr/lib/xorg/modules"
+[ 53261.834] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[ 53261.834] (II) Loader magic: 0x55ab80d56020
+[ 53261.834] (II) Module ABI versions:
+[ 53261.834] 	X.Org ANSI C Emulation: 0.4
+[ 53261.834] 	X.Org Video Driver: 24.0
+[ 53261.834] 	X.Org XInput driver : 24.1
+[ 53261.834] 	X.Org Server Extension : 10.0
+[ 53261.834] (++) using VT number 1
+
+[ 53261.834] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[ 53261.834] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 53261.836] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/x86_64-linux-gnu/xorg,/usr/lib/xorg/modules"
+[ 53261.837] (--) PCI:*(8@0:0:0) 10de:1b81:19da:1445 rev 161, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[ 53261.837] (II) LoadModule: "glx"
+[ 53261.837] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[ 53261.838] (II) Module glx: vendor="X.Org Foundation"
+[ 53261.838] 	compiled for 1.20.4, module version = 1.0.0
+[ 53261.838] 	ABI class: X.Org Server Extension, version 10.0
+[ 53261.838] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[ 53261.838] 	loading driver: nvidia
+[ 53262.070] (==) Matched nvidia as autoconfigured driver 0
+[ 53262.070] (==) Matched nouveau as autoconfigured driver 1
+[ 53262.070] (==) Matched modesetting as autoconfigured driver 2
+[ 53262.070] (==) Matched fbdev as autoconfigured driver 3
+[ 53262.070] (==) Matched vesa as autoconfigured driver 4
+[ 53262.070] (==) Assigned the driver to the xf86ConfigLayout
+[ 53262.070] (II) LoadModule: "nvidia"
+[ 53262.070] (II) Loading /usr/lib/x86_64-linux-gnu/xorg/nvidia_drv.so
+[ 53262.072] (II) Module nvidia: vendor="NVIDIA Corporation"
+[ 53262.072] 	compiled for 4.0.2, module version = 1.0.0
+[ 53262.073] 	Module class: X.Org Video Driver
+[ 53262.073] (II) LoadModule: "nouveau"
+[ 53262.073] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[ 53262.074] (II) Module nouveau: vendor="X.Org Foundation"
+[ 53262.074] 	compiled for 1.20.3, module version = 1.0.16
+[ 53262.074] 	Module class: X.Org Video Driver
+[ 53262.074] 	ABI class: X.Org Video Driver, version 24.0
+[ 53262.074] (II) LoadModule: "modesetting"
+[ 53262.074] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[ 53262.075] (II) Module modesetting: vendor="X.Org Foundation"
+[ 53262.075] 	compiled for 1.20.4, module version = 1.20.4
+[ 53262.075] 	Module class: X.Org Video Driver
+[ 53262.075] 	ABI class: X.Org Video Driver, version 24.0
+[ 53262.075] (II) LoadModule: "fbdev"
+[ 53262.075] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[ 53262.076] (II) Module fbdev: vendor="X.Org Foundation"
+[ 53262.076] 	compiled for 1.20.1, module version = 0.5.0
+[ 53262.076] 	Module class: X.Org Video Driver
+[ 53262.076] 	ABI class: X.Org Video Driver, version 24.0
+[ 53262.076] (II) LoadModule: "vesa"
+[ 53262.076] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[ 53262.077] (II) Module vesa: vendor="X.Org Foundation"
+[ 53262.077] 	compiled for 1.20.4, module version = 2.4.0
+[ 53262.077] 	Module class: X.Org Video Driver
+[ 53262.077] 	ABI class: X.Org Video Driver, version 24.0
+[ 53262.077] (II) NVIDIA dlloader X Driver  418.67  Sat Apr  6 02:51:17 CDT 2019
+[ 53262.077] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[ 53262.077] (II) NOUVEAU driver Date:   Mon Jan 28 23:25:58 2019 -0500
+[ 53262.077] (II) NOUVEAU driver for NVIDIA chipset families :
+[ 53262.077] 	RIVA TNT            (NV04)
+[ 53262.077] 	RIVA TNT2           (NV05)
+[ 53262.077] 	GeForce 256         (NV10)
+[ 53262.077] 	GeForce 2           (NV11, NV15)
+[ 53262.077] 	GeForce 4MX         (NV17, NV18)
+[ 53262.077] 	GeForce 3           (NV20)
+[ 53262.077] 	GeForce 4Ti         (NV25, NV28)
+[ 53262.077] 	GeForce FX          (NV3x)
+[ 53262.077] 	GeForce 6           (NV4x)
+[ 53262.077] 	GeForce 7           (G7x)
+[ 53262.077] 	GeForce 8           (G8x)
+[ 53262.077] 	GeForce 9           (G9x)
+[ 53262.077] 	GeForce GTX 2xx/3xx (GT2xx)
+[ 53262.077] 	GeForce GTX 4xx/5xx (GFxxx)
+[ 53262.077] 	GeForce GTX 6xx/7xx (GKxxx)
+[ 53262.077] 	GeForce GTX 9xx     (GMxxx)
+[ 53262.077] 	GeForce GTX 10xx    (GPxxx)
+[ 53262.077] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[ 53262.077] (II) FBDEV: driver for framebuffer: fbdev
+[ 53262.077] (II) VESA: driver for VESA chipsets: vesa
+[ 53262.078] (II) Loading sub module "fb"
+[ 53262.078] (II) LoadModule: "fb"
+[ 53262.078] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 53262.078] (II) Module fb: vendor="X.Org Foundation"
+[ 53262.078] 	compiled for 1.20.4, module version = 1.0.0
+[ 53262.078] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 53262.078] (II) Loading sub module "wfb"
+[ 53262.078] (II) LoadModule: "wfb"
+[ 53262.078] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[ 53262.079] (II) Module wfb: vendor="X.Org Foundation"
+[ 53262.079] 	compiled for 1.20.4, module version = 1.0.0
+[ 53262.079] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 53262.079] (II) Loading sub module "ramdac"
+[ 53262.079] (II) LoadModule: "ramdac"
+[ 53262.079] (II) Module "ramdac" already built-in
+[ 53262.079] (WW) Falling back to old probe method for modesetting
+[ 53262.079] (WW) Falling back to old probe method for fbdev
+[ 53262.079] (II) Loading sub module "fbdevhw"
+[ 53262.079] (II) LoadModule: "fbdevhw"
+[ 53262.079] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[ 53262.080] (II) Module fbdevhw: vendor="X.Org Foundation"
+[ 53262.080] 	compiled for 1.20.4, module version = 0.0.2
+[ 53262.080] 	ABI class: X.Org Video Driver, version 24.0
+[ 53262.080] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[ 53262.080] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[ 53262.080] (==) NVIDIA(0): RGB weight 888
+[ 53262.080] (==) NVIDIA(0): Default visual is TrueColor
+[ 53262.080] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 53262.080] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[ 53262.080] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[ 53262.080] (**) NVIDIA(0): Enabling 2D acceleration
+[ 53262.080] (II) Loading sub module "glxserver_nvidia"
+[ 53262.080] (II) LoadModule: "glxserver_nvidia"
+[ 53262.080] (II) Loading /usr/lib/x86_64-linux-gnu/xorg/libglxserver_nvidia.so
+[ 53262.094] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[ 53262.094] 	compiled for 4.0.2, module version = 1.0.0
+[ 53262.094] 	Module class: X.Org Server Extension
+[ 53262.094] (II) NVIDIA GLX Module  418.67  Sat Apr  6 02:49:59 CDT 2019
+[ 53262.472] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:8:0:0
+[ 53262.472] (--) NVIDIA(0):     DFP-0
+[ 53262.472] (--) NVIDIA(0):     DFP-1
+[ 53262.472] (--) NVIDIA(0):     DFP-2
+[ 53262.472] (--) NVIDIA(0):     DFP-3
+[ 53262.472] (--) NVIDIA(0):     DFP-4
+[ 53262.472] (--) NVIDIA(0):     DFP-5
+[ 53262.472] (--) NVIDIA(0):     DFP-6 (boot)
+[ 53262.472] (--) NVIDIA(0):     DFP-7
+[ 53262.474] (II) NVIDIA(0): NVIDIA GPU GeForce GTX 1070 (GP104-A) at PCI:8:0:0 (GPU-0)
+[ 53262.474] (--) NVIDIA(0): Memory: 8388608 kBytes
+[ 53262.474] (--) NVIDIA(0): VideoBIOS: 86.04.50.00.65
+[ 53262.474] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-0: 330.0 MHz maximum pixel clock
+[ 53262.474] (--) NVIDIA(GPU-0): 
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-1: Internal DisplayPort
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-1: 1440.0 MHz maximum pixel clock
+[ 53262.474] (--) NVIDIA(GPU-0): 
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[ 53262.474] (--) NVIDIA(GPU-0): 
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[ 53262.474] (--) NVIDIA(GPU-0): 
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-4: Internal DisplayPort
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-4: 1440.0 MHz maximum pixel clock
+[ 53262.474] (--) NVIDIA(GPU-0): 
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-5: Internal TMDS
+[ 53262.474] (--) NVIDIA(GPU-0): DFP-5: 165.0 MHz maximum pixel clock
+[ 53262.474] (--) NVIDIA(GPU-0): 
+[ 53262.475] (--) NVIDIA(GPU-0): DELL UP2716D (DFP-6): connected
+[ 53262.475] (--) NVIDIA(GPU-0): DELL UP2716D (DFP-6): Internal DisplayPort
+[ 53262.475] (--) NVIDIA(GPU-0): DELL UP2716D (DFP-6): 1440.0 MHz maximum pixel clock
+[ 53262.475] (--) NVIDIA(GPU-0): 
+[ 53262.477] (--) NVIDIA(GPU-0): DFP-7: disconnected
+[ 53262.477] (--) NVIDIA(GPU-0): DFP-7: Internal TMDS
+[ 53262.477] (--) NVIDIA(GPU-0): DFP-7: 165.0 MHz maximum pixel clock
+[ 53262.477] (--) NVIDIA(GPU-0): 
+[ 53262.483] (==) NVIDIA(0): 
+[ 53262.483] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[ 53262.483] (==) NVIDIA(0):     will be used as the requested mode.
+[ 53262.483] (==) NVIDIA(0): 
+[ 53262.483] (II) NVIDIA(0): Validated MetaModes:
+[ 53262.483] (II) NVIDIA(0):     "DFP-6:nvidia-auto-select"
+[ 53262.483] (II) NVIDIA(0): Virtual screen size determined to be 2560 x 1440
+[ 53262.490] (--) NVIDIA(0): DPI set to (108, 107); computed from "UseEdidDpi" X config
+[ 53262.490] (--) NVIDIA(0):     option
+[ 53262.490] (II) UnloadModule: "nouveau"
+[ 53262.490] (II) Unloading nouveau
+[ 53262.490] (II) UnloadModule: "modesetting"
+[ 53262.490] (II) Unloading modesetting
+[ 53262.490] (II) UnloadModule: "fbdev"
+[ 53262.490] (II) Unloading fbdev
+[ 53262.490] (II) UnloadSubModule: "fbdevhw"
+[ 53262.490] (II) Unloading fbdevhw
+[ 53262.490] (II) UnloadModule: "vesa"
+[ 53262.491] (II) Unloading vesa
+[ 53262.491] (II) NVIDIA: Using 24576.00 MB of virtual memory for indirect memory
+[ 53262.491] (II) NVIDIA:     access.
+[ 53262.518] (II) NVIDIA(0): Setting mode "DFP-6:nvidia-auto-select"
+[ 53262.676] (==) NVIDIA(0): Disabling shared memory pixmaps
+[ 53262.676] (==) NVIDIA(0): Backing store enabled
+[ 53262.676] (==) NVIDIA(0): Silken mouse enabled
+[ 53262.676] (==) NVIDIA(0): DPMS enabled
+[ 53262.676] (II) Loading sub module "dri2"
+[ 53262.676] (II) LoadModule: "dri2"
+[ 53262.676] (II) Module "dri2" already built-in
+[ 53262.676] (II) NVIDIA(0): [DRI2] Setup complete
+[ 53262.676] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[ 53262.676] (II) Initializing extension Generic Event Extension
+[ 53262.676] (II) Initializing extension SHAPE
+[ 53262.676] (II) Initializing extension MIT-SHM
+[ 53262.676] (II) Initializing extension XInputExtension
+[ 53262.677] (II) Initializing extension XTEST
+[ 53262.677] (II) Initializing extension BIG-REQUESTS
+[ 53262.677] (II) Initializing extension SYNC
+[ 53262.677] (II) Initializing extension XKEYBOARD
+[ 53262.677] (II) Initializing extension XC-MISC
+[ 53262.677] (II) Initializing extension SECURITY
+[ 53262.677] (II) Initializing extension XFIXES
+[ 53262.677] (II) Initializing extension RENDER
+[ 53262.677] (II) Initializing extension RANDR
+[ 53262.677] (II) Initializing extension COMPOSITE
+[ 53262.677] (II) Initializing extension DAMAGE
+[ 53262.678] (II) Initializing extension MIT-SCREEN-SAVER
+[ 53262.678] (II) Initializing extension DOUBLE-BUFFER
+[ 53262.678] (II) Initializing extension RECORD
+[ 53262.678] (II) Initializing extension DPMS
+[ 53262.678] (II) Initializing extension Present
+[ 53262.678] (II) Initializing extension DRI3
+[ 53262.678] (II) Initializing extension X-Resource
+[ 53262.678] (II) Initializing extension XVideo
+[ 53262.678] (II) Initializing extension XVideo-MotionCompensation
+[ 53262.678] (II) Initializing extension SELinux
+[ 53262.678] (II) SELinux: Disabled on system
+[ 53262.678] (II) Initializing extension GLX
+[ 53262.679] (II) Initializing extension GLX
+[ 53262.679] (II) Indirect GLX disabled.
+[ 53262.679] (II) GLX: Another vendor is already registered for screen 0
+[ 53262.679] (II) Initializing extension XFree86-VidModeExtension
+[ 53262.679] (II) Initializing extension XFree86-DGA
+[ 53262.679] (II) Initializing extension XFree86-DRI
+[ 53262.679] (II) Initializing extension DRI2
+[ 53262.679] (II) Initializing extension NV-GLX
+[ 53262.679] (II) Initializing extension NV-CONTROL
+[ 53262.679] (II) Initializing extension XINERAMA
+[ 53262.731] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[ 53262.731] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 53262.731] (II) LoadModule: "libinput"
+[ 53262.732] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[ 53262.733] (II) Module libinput: vendor="X.Org Foundation"
+[ 53262.733] 	compiled for 1.20.4, module version = 0.28.2
+[ 53262.733] 	Module class: X.Org XInput Driver
+[ 53262.733] 	ABI class: X.Org XInput driver, version 24.1
+[ 53262.733] (II) Using input driver 'libinput' for 'Power Button'
+[ 53262.733] (**) Power Button: always reports core events
+[ 53262.733] (**) Option "Device" "/dev/input/event1"
+[ 53262.733] (**) Option "_source" "server/udev"
+[ 53262.736] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 53262.736] (II) event1  - Power Button: device is a keyboard
+[ 53262.736] (II) event1  - Power Button: device removed
+[ 53262.764] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[ 53262.764] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[ 53262.764] (**) Option "xkb_model" "pc105"
+[ 53262.764] (**) Option "xkb_layout" "us"
+[ 53262.766] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 53262.766] (II) event1  - Power Button: device is a keyboard
+[ 53262.766] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[ 53262.766] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 53262.766] (II) Using input driver 'libinput' for 'Power Button'
+[ 53262.766] (**) Power Button: always reports core events
+[ 53262.766] (**) Option "Device" "/dev/input/event0"
+[ 53262.766] (**) Option "_source" "server/udev"
+[ 53262.767] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 53262.767] (II) event0  - Power Button: device is a keyboard
+[ 53262.767] (II) event0  - Power Button: device removed
+[ 53262.788] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[ 53262.788] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[ 53262.788] (**) Option "xkb_model" "pc105"
+[ 53262.788] (**) Option "xkb_layout" "us"
+[ 53262.789] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 53262.789] (II) event0  - Power Button: device is a keyboard
+[ 53262.790] (II) config/udev: Adding input device UVC Camera (046d:0809) (/dev/input/event16)
+[ 53262.790] (**) UVC Camera (046d:0809): Applying InputClass "libinput keyboard catchall"
+[ 53262.790] (II) Using input driver 'libinput' for 'UVC Camera (046d:0809)'
+[ 53262.790] (**) UVC Camera (046d:0809): always reports core events
+[ 53262.790] (**) Option "Device" "/dev/input/event16"
+[ 53262.790] (**) Option "_source" "server/udev"
+[ 53262.792] (II) event16 - UVC Camera (046d:0809): is tagged by udev as: Keyboard
+[ 53262.792] (II) event16 - UVC Camera (046d:0809): device is a keyboard
+[ 53262.792] (II) event16 - UVC Camera (046d:0809): device removed
+[ 53262.848] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-1/1-1:1.0/input/input19/event16"
+[ 53262.848] (II) XINPUT: Adding extended input device "UVC Camera (046d:0809)" (type: KEYBOARD, id 8)
+[ 53262.848] (**) Option "xkb_model" "pc105"
+[ 53262.848] (**) Option "xkb_layout" "us"
+[ 53262.849] (II) event16 - UVC Camera (046d:0809): is tagged by udev as: Keyboard
+[ 53262.849] (II) event16 - UVC Camera (046d:0809): device is a keyboard
+[ 53262.849] (II) config/udev: Adding input device Yubico YubiKey OTP+FIDO+CCID (/dev/input/event5)
+[ 53262.849] (**) Yubico YubiKey OTP+FIDO+CCID: Applying InputClass "libinput keyboard catchall"
+[ 53262.849] (II) Using input driver 'libinput' for 'Yubico YubiKey OTP+FIDO+CCID'
+[ 53262.849] (**) Yubico YubiKey OTP+FIDO+CCID: always reports core events
+[ 53262.849] (**) Option "Device" "/dev/input/event5"
+[ 53262.849] (**) Option "_source" "server/udev"
+[ 53262.850] (II) event5  - Yubico YubiKey OTP+FIDO+CCID: is tagged by udev as: Keyboard
+[ 53262.850] (II) event5  - Yubico YubiKey OTP+FIDO+CCID: device is a keyboard
+[ 53262.850] (II) event5  - Yubico YubiKey OTP+FIDO+CCID: device removed
+[ 53262.904] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-5/1-5:1.0/0003:1050:0407.0004/input/input6/event5"
+[ 53262.904] (II) XINPUT: Adding extended input device "Yubico YubiKey OTP+FIDO+CCID" (type: KEYBOARD, id 9)
+[ 53262.904] (**) Option "xkb_model" "pc105"
+[ 53262.904] (**) Option "xkb_layout" "us"
+[ 53262.906] (II) event5  - Yubico YubiKey OTP+FIDO+CCID: is tagged by udev as: Keyboard
+[ 53262.906] (II) event5  - Yubico YubiKey OTP+FIDO+CCID: device is a keyboard
+[ 53262.907] (II) config/udev: Adding input device Logitech USB Receiver (/dev/input/event6)
+[ 53262.907] (**) Logitech USB Receiver: Applying InputClass "libinput keyboard catchall"
+[ 53262.907] (II) Using input driver 'libinput' for 'Logitech USB Receiver'
+[ 53262.907] (**) Logitech USB Receiver: always reports core events
+[ 53262.907] (**) Option "Device" "/dev/input/event6"
+[ 53262.907] (**) Option "_source" "server/udev"
+[ 53262.909] (II) event6  - Logitech USB Receiver: is tagged by udev as: Keyboard
+[ 53262.909] (II) event6  - Logitech USB Receiver: device is a keyboard
+[ 53262.909] (II) event6  - Logitech USB Receiver: device removed
+[ 53262.924] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-6/1-6:1.0/0003:046D:C534.0006/input/input7/event6"
+[ 53262.924] (II) XINPUT: Adding extended input device "Logitech USB Receiver" (type: KEYBOARD, id 10)
+[ 53262.924] (**) Option "xkb_model" "pc105"
+[ 53262.924] (**) Option "xkb_layout" "us"
+[ 53262.926] (II) event6  - Logitech USB Receiver: is tagged by udev as: Keyboard
+[ 53262.926] (II) event6  - Logitech USB Receiver: device is a keyboard
+[ 53262.927] (II) config/udev: Adding input device Logitech USB Receiver System Control (/dev/input/event9)
+[ 53262.927] (**) Logitech USB Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[ 53262.927] (II) Using input driver 'libinput' for 'Logitech USB Receiver System Control'
+[ 53262.927] (**) Logitech USB Receiver System Control: always reports core events
+[ 53262.927] (**) Option "Device" "/dev/input/event9"
+[ 53262.927] (**) Option "_source" "server/udev"
+[ 53262.928] (II) event9  - Logitech USB Receiver System Control: is tagged by udev as: Keyboard
+[ 53262.928] (II) event9  - Logitech USB Receiver System Control: device is a keyboard
+[ 53262.928] (II) event9  - Logitech USB Receiver System Control: device removed
+[ 53262.964] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-6/1-6:1.1/0003:046D:C534.0007/input/input10/event9"
+[ 53262.964] (II) XINPUT: Adding extended input device "Logitech USB Receiver System Control" (type: KEYBOARD, id 11)
+[ 53262.964] (**) Option "xkb_model" "pc105"
+[ 53262.964] (**) Option "xkb_layout" "us"
+[ 53262.966] (II) event9  - Logitech USB Receiver System Control: is tagged by udev as: Keyboard
+[ 53262.966] (II) event9  - Logitech USB Receiver System Control: device is a keyboard
+[ 53262.967] (II) config/udev: Adding input device Logitech USB Receiver Mouse (/dev/input/event7)
+[ 53262.967] (**) Logitech USB Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[ 53262.967] (II) Using input driver 'libinput' for 'Logitech USB Receiver Mouse'
+[ 53262.967] (**) Logitech USB Receiver Mouse: always reports core events
+[ 53262.967] (**) Option "Device" "/dev/input/event7"
+[ 53262.967] (**) Option "_source" "server/udev"
+[ 53262.968] (II) event7  - Logitech USB Receiver Mouse: is tagged by udev as: Mouse
+[ 53262.969] (II) event7  - Logitech USB Receiver Mouse: device is a pointer
+[ 53262.969] (II) event7  - Logitech USB Receiver Mouse: device removed
+[ 53263.012] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-6/1-6:1.1/0003:046D:C534.0007/input/input8/event7"
+[ 53263.012] (II) XINPUT: Adding extended input device "Logitech USB Receiver Mouse" (type: MOUSE, id 12)
+[ 53263.012] (**) Option "AccelerationScheme" "none"
+[ 53263.012] (**) Logitech USB Receiver Mouse: (accel) selected scheme none/0
+[ 53263.012] (**) Logitech USB Receiver Mouse: (accel) acceleration factor: 2.000
+[ 53263.012] (**) Logitech USB Receiver Mouse: (accel) acceleration threshold: 4
+[ 53263.013] (II) event7  - Logitech USB Receiver Mouse: is tagged by udev as: Mouse
+[ 53263.013] (II) event7  - Logitech USB Receiver Mouse: device is a pointer
+[ 53263.013] (II) config/udev: Adding input device Logitech USB Receiver Mouse (/dev/input/mouse1)
+[ 53263.013] (II) No input driver specified, ignoring this device.
+[ 53263.013] (II) This device may have been added with another device file.
+[ 53263.013] (II) config/udev: Adding input device Logitech USB Receiver Consumer Control (/dev/input/event8)
+[ 53263.013] (**) Logitech USB Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[ 53263.013] (II) Using input driver 'libinput' for 'Logitech USB Receiver Consumer Control'
+[ 53263.013] (**) Logitech USB Receiver Consumer Control: always reports core events
+[ 53263.013] (**) Option "Device" "/dev/input/event8"
+[ 53263.013] (**) Option "_source" "server/udev"
+[ 53263.014] (II) event8  - Logitech USB Receiver Consumer Control: is tagged by udev as: Keyboard
+[ 53263.014] (II) event8  - Logitech USB Receiver Consumer Control: device is a keyboard
+[ 53263.014] (II) event8  - Logitech USB Receiver Consumer Control: device removed
+[ 53263.040] (II) libinput: Logitech USB Receiver Consumer Control: needs a virtual subdevice
+[ 53263.040] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-6/1-6:1.1/0003:046D:C534.0007/input/input9/event8"
+[ 53263.040] (II) XINPUT: Adding extended input device "Logitech USB Receiver Consumer Control" (type: MOUSE, id 13)
+[ 53263.040] (**) Option "AccelerationScheme" "none"
+[ 53263.040] (**) Logitech USB Receiver Consumer Control: (accel) selected scheme none/0
+[ 53263.040] (**) Logitech USB Receiver Consumer Control: (accel) acceleration factor: 2.000
+[ 53263.040] (**) Logitech USB Receiver Consumer Control: (accel) acceleration threshold: 4
+[ 53263.041] (II) event8  - Logitech USB Receiver Consumer Control: is tagged by udev as: Keyboard
+[ 53263.041] (II) event8  - Logitech USB Receiver Consumer Control: device is a keyboard
+[ 53263.041] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event17)
+[ 53263.041] (II) No input driver specified, ignoring this device.
+[ 53263.041] (II) This device may have been added with another device file.
+[ 53263.041] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event18)
+[ 53263.042] (II) No input driver specified, ignoring this device.
+[ 53263.042] (II) This device may have been added with another device file.
+[ 53263.042] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event19)
+[ 53263.042] (II) No input driver specified, ignoring this device.
+[ 53263.042] (II) This device may have been added with another device file.
+[ 53263.042] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event20)
+[ 53263.042] (II) No input driver specified, ignoring this device.
+[ 53263.042] (II) This device may have been added with another device file.
+[ 53263.042] (II) config/udev: Adding input device Logitech USB-PS/2 Optical Mouse (/dev/input/event2)
+[ 53263.042] (**) Logitech USB-PS/2 Optical Mouse: Applying InputClass "libinput pointer catchall"
+[ 53263.042] (II) Using input driver 'libinput' for 'Logitech USB-PS/2 Optical Mouse'
+[ 53263.042] (**) Logitech USB-PS/2 Optical Mouse: always reports core events
+[ 53263.042] (**) Option "Device" "/dev/input/event2"
+[ 53263.042] (**) Option "_source" "server/udev"
+[ 53263.101] (II) event2  - Logitech USB-PS/2 Optical Mouse: is tagged by udev as: Mouse
+[ 53263.101] (II) event2  - Logitech USB-PS/2 Optical Mouse: device set to 800 DPI
+[ 53263.101] (II) event2  - Logitech USB-PS/2 Optical Mouse: device is a pointer
+[ 53263.101] (II) event2  - Logitech USB-PS/2 Optical Mouse: device removed
+[ 53263.148] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:09:00.3/usb3/3-3/3-3:1.0/0003:046D:C040.0001/input/input2/event2"
+[ 53263.148] (II) XINPUT: Adding extended input device "Logitech USB-PS/2 Optical Mouse" (type: MOUSE, id 14)
+[ 53263.148] (**) Option "AccelerationScheme" "none"
+[ 53263.148] (**) Logitech USB-PS/2 Optical Mouse: (accel) selected scheme none/0
+[ 53263.148] (**) Logitech USB-PS/2 Optical Mouse: (accel) acceleration factor: 2.000
+[ 53263.148] (**) Logitech USB-PS/2 Optical Mouse: (accel) acceleration threshold: 4
+[ 53263.209] (II) event2  - Logitech USB-PS/2 Optical Mouse: is tagged by udev as: Mouse
+[ 53263.209] (II) event2  - Logitech USB-PS/2 Optical Mouse: device set to 800 DPI
+[ 53263.209] (II) event2  - Logitech USB-PS/2 Optical Mouse: device is a pointer
+[ 53263.209] (II) config/udev: Adding input device Logitech USB-PS/2 Optical Mouse (/dev/input/mouse0)
+[ 53263.209] (II) No input driver specified, ignoring this device.
+[ 53263.209] (II) This device may have been added with another device file.
+[ 53263.209] (II) config/udev: Adding input device Logitech Logitech Illuminated Keyboard (/dev/input/event3)
+[ 53263.209] (**) Logitech Logitech Illuminated Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 53263.210] (II) Using input driver 'libinput' for 'Logitech Logitech Illuminated Keyboard'
+[ 53263.210] (**) Logitech Logitech Illuminated Keyboard: always reports core events
+[ 53263.210] (**) Option "Device" "/dev/input/event3"
+[ 53263.210] (**) Option "_source" "server/udev"
+[ 53263.210] (II) event3  - Logitech Logitech Illuminated Keyboard: is tagged by udev as: Keyboard
+[ 53263.210] (II) event3  - Logitech Logitech Illuminated Keyboard: device is a keyboard
+[ 53263.210] (II) event3  - Logitech Logitech Illuminated Keyboard: device removed
+[ 53263.232] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:09:00.3/usb3/3-4/3-4:1.0/0003:046D:C318.0002/input/input3/event3"
+[ 53263.232] (II) XINPUT: Adding extended input device "Logitech Logitech Illuminated Keyboard" (type: KEYBOARD, id 15)
+[ 53263.232] (**) Option "xkb_model" "pc105"
+[ 53263.232] (**) Option "xkb_layout" "us"
+[ 53263.233] (II) event3  - Logitech Logitech Illuminated Keyboard: is tagged by udev as: Keyboard
+[ 53263.233] (II) event3  - Logitech Logitech Illuminated Keyboard: device is a keyboard
+[ 53263.233] (II) config/udev: Adding input device Logitech Logitech Illuminated Keyboard Consumer Control (/dev/input/event4)
+[ 53263.233] (**) Logitech Logitech Illuminated Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[ 53263.233] (II) Using input driver 'libinput' for 'Logitech Logitech Illuminated Keyboard Consumer Control'
+[ 53263.233] (**) Logitech Logitech Illuminated Keyboard Consumer Control: always reports core events
+[ 53263.233] (**) Option "Device" "/dev/input/event4"
+[ 53263.233] (**) Option "_source" "server/udev"
+[ 53263.234] (II) event4  - Logitech Logitech Illuminated Keyboard Consumer Control: is tagged by udev as: Keyboard
+[ 53263.234] (II) event4  - Logitech Logitech Illuminated Keyboard Consumer Control: device is a keyboard
+[ 53263.234] (II) event4  - Logitech Logitech Illuminated Keyboard Consumer Control: device removed
+[ 53263.256] (II) libinput: Logitech Logitech Illuminated Keyboard Consumer Control: needs a virtual subdevice
+[ 53263.256] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:09:00.3/usb3/3-4/3-4:1.1/0003:046D:C318.0003/input/input4/event4"
+[ 53263.256] (II) XINPUT: Adding extended input device "Logitech Logitech Illuminated Keyboard Consumer Control" (type: MOUSE, id 16)
+[ 53263.256] (**) Option "AccelerationScheme" "none"
+[ 53263.256] (**) Logitech Logitech Illuminated Keyboard Consumer Control: (accel) selected scheme none/0
+[ 53263.256] (**) Logitech Logitech Illuminated Keyboard Consumer Control: (accel) acceleration factor: 2.000
+[ 53263.256] (**) Logitech Logitech Illuminated Keyboard Consumer Control: (accel) acceleration threshold: 4
+[ 53263.258] (II) event4  - Logitech Logitech Illuminated Keyboard Consumer Control: is tagged by udev as: Keyboard
+[ 53263.258] (II) event4  - Logitech Logitech Illuminated Keyboard Consumer Control: device is a keyboard
+[ 53263.259] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event11)
+[ 53263.259] (II) No input driver specified, ignoring this device.
+[ 53263.259] (II) This device may have been added with another device file.
+[ 53263.259] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event12)
+[ 53263.259] (II) No input driver specified, ignoring this device.
+[ 53263.259] (II) This device may have been added with another device file.
+[ 53263.260] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event13)
+[ 53263.260] (II) No input driver specified, ignoring this device.
+[ 53263.260] (II) This device may have been added with another device file.
+[ 53263.260] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event14)
+[ 53263.260] (II) No input driver specified, ignoring this device.
+[ 53263.260] (II) This device may have been added with another device file.
+[ 53263.260] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event15)
+[ 53263.260] (II) No input driver specified, ignoring this device.
+[ 53263.260] (II) This device may have been added with another device file.
+[ 53263.261] (II) config/udev: Adding input device Eee PC WMI hotkeys (/dev/input/event10)
+[ 53263.261] (**) Eee PC WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[ 53263.261] (II) Using input driver 'libinput' for 'Eee PC WMI hotkeys'
+[ 53263.261] (**) Eee PC WMI hotkeys: always reports core events
+[ 53263.261] (**) Option "Device" "/dev/input/event10"
+[ 53263.261] (**) Option "_source" "server/udev"
+[ 53263.262] (II) event10 - Eee PC WMI hotkeys: is tagged by udev as: Keyboard
+[ 53263.262] (II) event10 - Eee PC WMI hotkeys: device is a keyboard
+[ 53263.262] (II) event10 - Eee PC WMI hotkeys: device removed
+[ 53263.304] (**) Option "config_info" "udev:/sys/devices/platform/eeepc-wmi/input/input13/event10"
+[ 53263.304] (II) XINPUT: Adding extended input device "Eee PC WMI hotkeys" (type: KEYBOARD, id 17)
+[ 53263.304] (**) Option "xkb_model" "pc105"
+[ 53263.304] (**) Option "xkb_layout" "us"
+[ 53263.305] (II) event10 - Eee PC WMI hotkeys: is tagged by udev as: Keyboard
+[ 53263.305] (II) event10 - Eee PC WMI hotkeys: device is a keyboard
+[ 53263.313] (**) Logitech USB Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[ 53263.313] (II) Using input driver 'libinput' for 'Logitech USB Receiver Consumer Control'
+[ 53263.313] (**) Logitech USB Receiver Consumer Control: always reports core events
+[ 53263.313] (**) Option "Device" "/dev/input/event8"
+[ 53263.313] (**) Option "_source" "_driver/libinput"
+[ 53263.313] (II) libinput: Logitech USB Receiver Consumer Control: is a virtual subdevice
+[ 53263.313] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-6/1-6:1.1/0003:046D:C534.0007/input/input9/event8"
+[ 53263.313] (II) XINPUT: Adding extended input device "Logitech USB Receiver Consumer Control" (type: KEYBOARD, id 18)
+[ 53263.313] (**) Option "xkb_model" "pc105"
+[ 53263.313] (**) Option "xkb_layout" "us"
+[ 53263.313] (**) Logitech Logitech Illuminated Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[ 53263.313] (II) Using input driver 'libinput' for 'Logitech Logitech Illuminated Keyboard Consumer Control'
+[ 53263.313] (**) Logitech Logitech Illuminated Keyboard Consumer Control: always reports core events
+[ 53263.313] (**) Option "Device" "/dev/input/event4"
+[ 53263.313] (**) Option "_source" "_driver/libinput"
+[ 53263.313] (II) libinput: Logitech Logitech Illuminated Keyboard Consumer Control: is a virtual subdevice
+[ 53263.313] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:09:00.3/usb3/3-4/3-4:1.1/0003:046D:C318.0003/input/input4/event4"
+[ 53263.313] (II) XINPUT: Adding extended input device "Logitech Logitech Illuminated Keyboard Consumer Control" (type: KEYBOARD, id 19)
+[ 53263.313] (**) Option "xkb_model" "pc105"
+[ 53263.313] (**) Option "xkb_layout" "us"
+[ 53263.314] (--) NVIDIA(GPU-0): DELL UP2716D (DFP-6): connected
+[ 53263.314] (--) NVIDIA(GPU-0): DELL UP2716D (DFP-6): Internal DisplayPort
+[ 53263.314] (--) NVIDIA(GPU-0): DELL UP2716D (DFP-6): 1440.0 MHz maximum pixel clock
+[ 53263.314] (--) NVIDIA(GPU-0): 
+[ 53263.315] (EE) Failed to open authorization file "/var/run/sddm/{f93cb924-bbc1-40cc-b5b7-4508e3938ce0}": No such file or directory
+[ 53263.382] (II) event1  - Power Button: device removed
+[ 53263.416] (II) event0  - Power Button: device removed
+[ 53263.444] (II) event16 - UVC Camera (046d:0809): device removed
+[ 53263.484] (II) event5  - Yubico YubiKey OTP+FIDO+CCID: device removed
+[ 53263.520] (II) event6  - Logitech USB Receiver: device removed
+[ 53263.540] (II) event9  - Logitech USB Receiver System Control: device removed
+[ 53263.564] (II) event7  - Logitech USB Receiver Mouse: device removed
+[ 53263.612] (II) event2  - Logitech USB-PS/2 Optical Mouse: device removed
+[ 53263.660] (II) event3  - Logitech Logitech Illuminated Keyboard: device removed
+[ 53263.684] (II) event10 - Eee PC WMI hotkeys: device removed
+[ 53263.732] (II) event8  - Logitech USB Receiver Consumer Control: device removed
+[ 53263.756] (II) event4  - Logitech Logitech Illuminated Keyboard Consumer Control: device removed
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.790] (II) UnloadModule: "libinput"
+[ 53263.791] (II) UnloadModule: "libinput"
+[ 53265.058] (II) NVIDIA(GPU-0): Deleting GPU-0
+[ 53265.059] (II) Server terminated successfully (0). Closing log file.
