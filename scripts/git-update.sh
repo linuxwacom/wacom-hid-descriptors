@@ -16,6 +16,8 @@
 
 set -e
 
+SCRIPTDIR=$(dirname $(readlink -f "$0"))
+
 ####################
 # Argument parsing
 #
@@ -197,7 +199,7 @@ PEN_PID=$(cut -d: -f3 <<< "${PEN_ID}")
 TOUCHSCREEN_ID=$(cut -d. -f1 <<< "${TOUCHSCREEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/')
 TOUCHSCREEN_PID=$(cut -d: -f2 <<< "${TOUCHSCREEN_ID}")
 
-PEN_DATA=$(awk -f $(dirname "$0")/hid-data.awk "${PEN_FILE}" 2>/dev/null)
+PEN_DATA=$(awk -f ${SCRIPTDIR}/hid-data.awk "${PEN_FILE}" 2>/dev/null)
 
 PEN_WIDTH=$(awk -vFS='\t' '/Digitizer Pen\tDesktop X/ {print $12-$11}' <<< "${PEN_DATA}")
 PEN_HEIGHT=$(awk -vFS='\t' '/Digitizer Pen\tDesktop Y/ {print $12-$11}' <<< "${PEN_DATA}")
