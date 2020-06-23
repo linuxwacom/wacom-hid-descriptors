@@ -47,8 +47,8 @@ grep "" /sys/class/dmi/id/* 2>&1 | grep -v -e "_serial:" -e "_uuid:" -e "asset_t
 
 ## Kernel driver information
 echo "  * Kernel driver information..."
-find /lib/modules/$(uname -r) -type f -iregex ".*/\(${REGEX_MODULES}\)\.ko.*" | xargs ls -l >> kernel_drivers.txt
-find /lib/modules/$(uname -r) -type f -iname "hid.ko*" | xargs ls -l >> kernel_drivers.txt
+find /lib/modules -type f -iregex ".*/\(${REGEX_MODULES}\)\.ko.*" | xargs ls -l >> kernel_drivers.txt
+find /lib/modules -type f -iname "hid.ko*" | xargs ls -l >> kernel_drivers.txt
 echo >> kernel_drivers.txt
 find /sys/module/ -type f -ipath "*wacom*/*version*" | xargs grep "" >> kernel_drivers.txt
 echo >> kernel_drivers.txt
