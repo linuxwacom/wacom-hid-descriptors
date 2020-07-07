@@ -74,7 +74,7 @@ trap "{ rm -f \"$SRC_TEMP\" \"$OBJ_TEMP\" \"$BIN_TEMP\"; }" EXIT
 
 IFS=$(echo -en "\n\b"); cat >> "$SRC_TEMP" <<EOF-EOF-EOF
 #define BYTEX(X,N) ((N>>(X*8))&0xff)
-#define LE32(N)    BYTEX(0,N), BYTEX(1,N), BYTEX(2,N) BYTEX(3,N)
+#define LE32(N)    BYTEX(0,N), BYTEX(1,N), BYTEX(2,N), BYTEX(3,N)
 #define LE16(N)    BYTEX(0,N), BYTEX(1,N)
 #define LE8(N)     BYTEX(0,N)
 
