@@ -59,6 +59,7 @@ if [[ -z "${OEM}" ]]; then
     "Motion Computing")      OEM="Motion Computing";;
     "MOTION")                OEM="Motion Computing";;
     "ASUSTeK COMPUTER INC.") OEM="ASUS";;
+    "HUAWEI")                OEM="Huawei";;
     *)                       echo "Unknown OEM '${OEM}'. Please specify one with the --oem=<name> argument."; exit 1;;
   esac
 fi
