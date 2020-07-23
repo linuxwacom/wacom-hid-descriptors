@@ -185,6 +185,8 @@ tar czf xorg-configs.tar.gz --ignore-failed-read \
     /usr/share/X11/xorg.conf.d
 tar czf udev-configs.tar.gz --ignore-failed-read \
     /usr/lib/udev/rules.d /etc/udev/rules.d
+tar czf libwacom-configs.tar.gz --ignore-failed-read \
+    /usr/share/libwacom
 
 ## Desktop configuration
 echo "  * Desktop configuration data..."
