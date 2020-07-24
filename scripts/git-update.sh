@@ -233,6 +233,7 @@ LIBWACOM_FILE=$(tr A-Z a-z <<<"isdv4-${PEN_PID}.tablet")
 LIBWACOM_NAME="ISDv4 ${PEN_PID}"
 LIBWACOM_MATCH=${PEN_ID}
 LIBWACOM_CLASS="ISDV4"
+LIBWACOM_STYLI="@isdv4-aes;"
 LIBWACOM_WIDTH=$(printf '%.0f\n' ${PEN_WIDTH})
 LIBWACOM_HEIGHT=$(printf '%.0f\n' ${PEN_HEIGHT})
 LIBACOM_INTEGRATION="Display;System"
@@ -259,7 +260,8 @@ cat <<-EOF > "${LIBWACOM_FILE}"
 	Width=${LIBWACOM_WIDTH}
 	Height=${LIBWACOM_HEIGHT}
 	IntegratedIn=${LIBACOM_INTEGRATION}
-	
+	Styli=${LIBWACOM_STYLI}
+
 	[Features]
 	Stylus=true
 	Touch=${LIBWACOM_HASTOUCH}
