@@ -107,10 +107,12 @@ tar xf "${ARCHIVE}"
 #
 ARCHIVE_DATE=$(date -r "${IDENT}" +%Y-%m-%d)
 
-for F in "${IDENT}/"*.hid.bin; do
-  hidrd-convert -i natv -o spec "${F}" > "${F%bin}txt"
-  hidrd-convert -i natv -o xml "${F}" > "${F%bin}xml"
-done
+if test $(ls "${IDENT}/"*.hid.bin 2>/dev/null | wc -l) -gt 0; then
+  for F in "${IDENT}/"*.hid.bin; do
+    hidrd-convert -i natv -o spec "${F}" > "${F%bin}txt"
+    hidrd-convert -i natv -o xml "${F}" > "${F%bin}xml"
+  done
+fi
 
 # Find the Wacom pen sensor
 # Create a device ID (e.g. "i2c:056a:1234")
@@ -166,6 +168,11 @@ fi
 #
 
 cd "${IDENT}"
+
+if test $(ls "${IDENT}/"*.hid.txt 2>/dev/null | wc -l) -eq 0; then
+  echo "No converted HID data found"
+  exit 0
+fi
 
 PEN_FILE=$(grep -l "Usage (Pen)" *.hid.txt)
 TOUCHSCREEN_FILE=$(grep -l "Usage (Touchscreen)" *.hid.txt)
