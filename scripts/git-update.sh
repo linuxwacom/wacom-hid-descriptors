@@ -169,7 +169,7 @@ fi
 
 cd "${IDENT}"
 
-if test $(ls "${IDENT}/"*.hid.txt 2>/dev/null | wc -l) -eq 0; then
+if test $(ls *.hid.txt 2>/dev/null | wc -l) -eq 0; then
   echo "No converted HID data found"
   exit 0
 fi
