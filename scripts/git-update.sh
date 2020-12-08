@@ -37,6 +37,7 @@ MACHINE=$(tar xf "${ARCHIVE}" -O ${IDENT}/machine.txt)
 
 if [[ -n "${NOURL}" ]]; then
   echo "Treating as a private bug..."
+  ISSUE_URL="From private bug report"
 elif [[ -z "${ISSUE_URL}" ]]; then
   echo "The --url=<issue> parameter is required."
   exit 1
@@ -156,7 +157,7 @@ if [[ -z "${NOURL}" ]]; then
 else
   cat <<-EOF >> README
 	* ${IDENT}
-	  Private bug report
+	  ${ISSUE_URL}
 	  ${ARCHIVE_DATE}
 	
 	EOF
