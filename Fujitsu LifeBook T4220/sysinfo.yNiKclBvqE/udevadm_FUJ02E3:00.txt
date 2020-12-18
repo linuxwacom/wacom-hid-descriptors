@@ -1,0 +1,38 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/LNXSYSTM:00/LNXSYBUS:00/FUJ02E3:00/input/input12':
+    KERNEL=="input12"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{uniq}==""
+    ATTR{properties}=="0"
+    ATTR{name}=="Fujitsu FUJ02E3"
+    ATTR{phys}=="FUJ02E3/input0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/FUJ02E3:00':
+    KERNELS=="FUJ02E3:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS=="Fujitsu laptop FUJ02E3 ACPI hotkeys driver"
+    ATTRS{path}=="\_SB_.FEXT"
+    ATTRS{hid}=="FUJ02E3"
+    ATTRS{status}=="15"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00':
+    KERNELS=="LNXSYBUS:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{path}=="\_SB_"
+    ATTRS{hid}=="LNXSYBUS"
+
+  looking at parent device '/devices/LNXSYSTM:00':
+    KERNELS=="LNXSYSTM:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{path}=="\"
+    ATTRS{hid}=="LNXSYSTM"
+

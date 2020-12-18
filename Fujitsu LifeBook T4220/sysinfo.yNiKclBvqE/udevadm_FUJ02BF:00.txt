@@ -1,0 +1,52 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1e/FUJ02BF:00/input/input13':
+    KERNEL=="input13"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{properties}=="0"
+    ATTR{uniq}==""
+    ATTR{phys}=="FUJ02BF/input0"
+    ATTR{name}=="Fujitsu FUJ02BF"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1e/FUJ02BF:00':
+    KERNELS=="FUJ02BF:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS=="fujitsu-tablet"
+    ATTRS{hid}=="FUJ02BF"
+    ATTRS{status}=="15"
+    ATTRS{path}=="\_SB_.PCI0.LPCB.BTNS"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1e':
+    KERNELS=="device:1e"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{adr}=="0x001f0000"
+    ATTRS{path}=="\_SB_.PCI0.LPCB"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00':
+    KERNELS=="PNP0A08:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="PNP0A08"
+    ATTRS{path}=="\_SB_.PCI0"
+
+  looking at parent device '/devices/LNXSYSTM:00/LNXSYBUS:00':
+    KERNELS=="LNXSYBUS:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYBUS"
+    ATTRS{path}=="\_SB_"
+
+  looking at parent device '/devices/LNXSYSTM:00':
+    KERNELS=="LNXSYSTM:00"
+    SUBSYSTEMS=="acpi"
+    DRIVERS==""
+    ATTRS{hid}=="LNXSYSTM"
+    ATTRS{path}=="\"
+
