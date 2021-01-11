@@ -25,7 +25,7 @@ set -v
 
 if [[ "$EUID" -ne 0 ]]; then echo "NOTE: It is recommended to run this tool as root."; fi
 
-USBIDS="0531 056A 2D1F 04F3 1B96 045E 27C6"
+USBIDS="0531 056A 2D1F 04F3 1B96 045E 27C6 256C 0458 099A 5543 2179 5543 2FEB 172F 28BD"
 ACPIIDS="WACf WCOM FUJ ELAN NTRG MSFT GXTP"
 MODULES="hid_generic hid_multitouch hid_wacom wacom wacom_w8001 wacom_i2c wacom_serial4"
 
