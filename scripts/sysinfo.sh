@@ -44,6 +44,8 @@ echo "$HOST" >> host.txt
 
 grep "" /sys/class/dmi/id/* 2>&1 | grep -v -e "_serial:" -e "_uuid:" -e "asset_tag:" >> machine.txt
 
+cat /proc/uptime >> uptime.txt
+
 
 ## Kernel driver information
 echo "  * Kernel driver information..."
