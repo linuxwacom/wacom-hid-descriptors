@@ -1,0 +1,25 @@
+[    1.095184] idma64 idma64.1: Found Intel integrated DMA 64-bit
+[    1.098223] idma64 idma64.2: Found Intel integrated DMA 64-bit
+[    1.100824] i2c_hid i2c-ACPI0C50:00: supply vdd not found, using dummy regulator
+[    1.100841] i2c_hid i2c-ACPI0C50:00: supply vddl not found, using dummy regulator
+[    1.267001] idma64 idma64.5: Found Intel integrated DMA 64-bit
+[    1.288725] input: ACPI0C50:00 2D1F:0163 as /devices/pci0000:00/0000:00:15.2/i2c_designware.2/i2c-3/i2c-ACPI0C50:00/0018:2D1F:0163.0001/input/input4
+[    1.289303] input: ACPI0C50:00 2D1F:0163 as /devices/pci0000:00/0000:00:15.2/i2c_designware.2/i2c-3/i2c-ACPI0C50:00/0018:2D1F:0163.0001/input/input5
+[    1.289807] hid-generic 0018:2D1F:0163.0001: input,hidraw0: I2C HID v1.00 Device [ACPI0C50:00 2D1F:0163] on i2c-ACPI0C50:00
+[    1.291214] mmc0: new HS400 MMC card at address 0001
+[    1.300944] mmcblk0: mmc0:0001 DF4032 29.1 GiB 
+[    1.301355] mmcblk0boot0: mmc0:0001 DF4032 partition 1 4.00 MiB
+[    1.301626] mmcblk0boot1: mmc0:0001 DF4032 partition 2 4.00 MiB
+[    1.301796] mmcblk0rpmb: mmc0:0001 DF4032 partition 3 4.00 MiB, chardev (240:0)
+--
+[  188.936540] ACPI: EC: interrupt unblocked
+[  188.973332] ------------[ cut here ]------------
+[  188.973334] i2c_designware i2c_designware.4: Transfer while suspended
+[  188.973355] WARNING: CPU: 0 PID: 405 at drivers/i2c/busses/i2c-designware-master.c:465 i2c_dw_xfer+0x198/0x1e0
+[  188.973356] Modules linked in: uas usb_storage rfcomm ccm cmac algif_hash algif_skcipher af_alg bnep nls_iso8859_1 cros_ec_light_prox cros_ec_sensors cros_ec_sensors_core industrialio_triggered_buffer kfifo_buf industrialio x86_pkg_temp_thermal intel_powerclamp coretemp kvm_intel intel_rapl_msr kvm crct10dif_pclmul ghash_clmulni_intel aesni_intel crypto_simd chromeos_laptop snd_hda_intel snd_intel_dspcfg cryptd glue_helper iwlmvm rapl mac80211 snd_hda_codec libarc4 intel_cstate snd_soc_nau8825 snd_soc_ssm4567 snd_soc_core iwlwifi btusb snd_compress btrtl input_leds snd_seq_midi snd_hda_core ac97_bus btbcm efi_pstore snd_hwdep snd_pcm_dmaengine serio_raw btintel snd_seq_midi_event snd_rawmidi cros_usbpd_logger cros_ec_sensorhub cros_usbpd_charger snd_pcm cros_ec_lightbar cros_ec_sysfs cros_ec_chardev cros_ec_debugfs bluetooth cfg80211 snd_seq i915 uvcvideo joydev ecdh_generic 8250_dw ecc snd_seq_device snd_timer drm_kms_helper processor_thermal_device cec rc_core intel_rapl_common
+[  188.973387]  i2c_algo_bit fb_sys_fops intel_soc_dts_iosf intel_pch_thermal atmel_mxt_ts syscopyarea int3403_thermal sysfillrect videobuf2_vmalloc int340x_thermal_zone videobuf2_memops intel_xhci_usb_role_switch videobuf2_v4l2 sysimgblt roles snd videobuf2_common int3400_thermal acpi_thermal_rel videodev cros_usbpd_notify soundcore mc mac_hid sch_fq_codel parport_pc ppdev lp parport drm ip_tables x_tables autofs4 mmc_block hid_generic cros_ec_dev sdhci_pci cqhci i2c_i801 crc32_pclmul i2c_smbus sdhci intel_lpss_pci intel_lpss idma64 xhci_pci virt_dma xhci_pci_renesas gpio_keys i2c_hid hid cros_ec_lpcs cros_ec pinctrl_sunrisepoint pinctrl_intel video
+[  188.973409] CPU: 0 PID: 405 Comm: irq/58-nau8825 Not tainted 5.8.0-44-generic #50-Ubuntu
+[  188.973410] Hardware name: Google Caroline/Caroline, BIOS MrChromebox-4.11.2 03/17/2020
+[  188.973414] RIP: 0010:i2c_dw_xfer+0x198/0x1e0
+[  188.973416] Code: c6 05 76 2f 33 01 01 4d 85 e4 75 04 4d 8b 65 00 4c 89 ef e8 7a fb e7 ff 4c 89 e2 48 c7 c7 a8 8d 06 a9 48 89 c6 e8 35 d3 26 00 <0f> 0b 41 bc 94 ff ff ff 4c 8b 2b e9 f5 fe ff ff e9 e4 58 2b 00 83
+[  188.973417] RSP: 0018:ffff96d9c077fc80 EFLAGS: 00010282
