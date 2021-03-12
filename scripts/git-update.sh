@@ -207,7 +207,8 @@ PEN_ID=$(cut -d. -f1 <<< "${PEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/' | tr '
 PEN_VID=$(cut -d: -f2 <<< "${PEN_ID}")
 PEN_PID=$(cut -d: -f3 <<< "${PEN_ID}")
 TOUCHSCREEN_ID=$(cut -d. -f1 <<< "${TOUCHSCREEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/' | tr 'A-F' 'a-f')
-TOUCHSCREEN_PID=$(cut -d: -f2 <<< "${TOUCHSCREEN_ID}")
+TOUCHSCREEN_VID=$(cut -d: -f2 <<< "${TOUCHSCREEN_ID}")
+TOUCHSCREEN_PID=$(cut -d: -f3 <<< "${TOUCHSCREEN_ID}")
 
 PEN_DATA=$(awk -f ${SCRIPTDIR}/hid-data.awk "${PEN_FILE}" 2>/dev/null)
 
