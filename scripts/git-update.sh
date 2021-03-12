@@ -175,8 +175,8 @@ if test $(ls *.hid.txt 2>/dev/null | wc -l) -eq 0; then
   exit 0
 fi
 
-PEN_FILE=$(grep -l "Usage (Pen)" *.hid.txt)
-TOUCHSCREEN_FILE=$(grep -l "Usage (Touchscreen)" *.hid.txt)
+PEN_FILE=$(grep -l "Usage (Pen)" *.hid.txt || true)
+TOUCHSCREEN_FILE=$(grep -l "Usage (Touchscreen)" *.hid.txt || true)
 
 SKIP=0
 if [[ $(wc -l <<< "${PEN_FILE}") -eq 0 ]]; then
