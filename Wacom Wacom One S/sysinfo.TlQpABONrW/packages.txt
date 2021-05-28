@@ -1,0 +1,113 @@
+
+Package: libwacom2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 57
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwacom
+Version: 0.29-1
+Depends: libc6 (>= 2.8), libglib2.0-0 (>= 2.24.0), libgudev-1.0-0 (>= 146), libwacom-common (= 0.29-1)
+Recommends: libwacom-bin (= 0.29-1)
+Description: Wacom model feature query library
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
+
+Package: libwacom-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 574
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libwacom
+Version: 0.29-1
+Replaces: libwacom0 (<= 0.2-1)
+Description: Wacom model feature query library (common files)
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+ .
+ This package contains common data files for libwacom.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
+
+Package: libwacom-bin
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 22
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: libwacom
+Version: 0.29-1
+Depends: libc6 (>= 2.8), libglib2.0-0 (>= 2.12.0), libwacom2 (>= 0.5)
+Description: Wacom model feature query library -- binaries
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+ .
+ This package contains the utilities which are used by the libraries.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
+
+
+Package: libinput10
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 267
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libinput
+Version: 1.10.4-1ubuntu0.18.04.2
+Depends: libc6 (>= 2.9), libevdev2 (>= 1.5.8+dfsg-1ubuntu0.1), libmtdev1 (>= 1.1.0), libudev1 (>= 183), libwacom2 (>= 0.20), libinput-bin (>= 1.10.4-1ubuntu0.18.04.2)
+Description: input device management and event handling library - shared library
+ libinput is a library that handles input devices for display servers and
+ other applications that need to directly deal with input devices.
+ .
+ It provides device detection, device handling, input device event
+ processing and abstraction so minimize the amount of custom input
+ code the user of libinput need to provide the common set of
+ functionality that users expect.
+ .
+ This package includes the shared library.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: http://www.freedesktop.org/wiki/Software/libinput/
+
+
+Package: inputattach
+Status: install ok installed
+Priority: extra
+Section: utils
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: joystick
+Version: 1:1.6.0-2
+Depends: libc6 (>= 2.15), libsystemd0
+Breaks: joystick (<< 20051019-6)
+Description: utility to connect serial-attached peripherals to the input subsystem
+ inputattach connects legacy serial-attached input peripherals to the input
+ subsystem: keyboards, mice, joysticks, touch-screens...
+ .
+ Amongst other things this allows legacy mice to be accessed via the
+ /dev/input/mice multiplexer.
+ .
+ Supported devices include:
+  * Serial-attached keyboards including the Apple Newton keyboard, DEC LK201
+    / LK401 keyboards, the Stowaway keyboard, Sun type 4 and 5 keyboards,
+    standard PS/2 keyboards with a serial adapter
+  * Serial mice using Genius, Logitech, Microsoft or Mouse Systems protocols
+  * Serial-attached touchscreens including those manufactured by 3M, ELO,
+    Fujitsu, Penmount, Touchright, Touchwindow
+  * Serial-attached joysticks including I-Force, SpaceBall, SpaceOrb, Gravis
+    Stinger, WingMan Warrior
+  * The Handykey Twiddler used as a joystick or a chording keyboard
+Original-Maintainer: Stephen Kitt <skitt@debian.org>
+Homepage: https://sourceforge.net/projects/linuxconsole/
