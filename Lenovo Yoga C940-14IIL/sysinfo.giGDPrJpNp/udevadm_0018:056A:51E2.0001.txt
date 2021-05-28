@@ -1,0 +1,136 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-WCOM51E2:00/0018:056A:51E2.0001/input/input12':
+    KERNEL=="input12"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{phys}=="i2c-WCOM51E2:00"
+    ATTR{uniq}==""
+    ATTR{properties}=="2"
+    ATTR{name}=="Wacom HID 51E2 Pen"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-WCOM51E2:00/0018:056A:51E2.0001':
+    KERNELS=="0018:056A:51E2.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-WCOM51E2:00':
+    KERNELS=="i2c-WCOM51E2:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="WCOM51E2:00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1':
+    KERNELS=="i2c-1"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0':
+    KERNELS=="i2c_designware.0"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0':
+    KERNELS=="0000:00:15.0"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="intel-lpss"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{device}=="0x34e8"
+    ATTRS{class}=="0x0c8000"
+    ATTRS{irq}=="16"
+    ATTRS{numa_node}=="-1"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{msi_bus}=="1"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{subsystem_device}=="0x3840"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{revision}=="0x30"
+    ATTRS{subsystem_vendor}=="0x17aa"
+    ATTRS{enable}=="1"
+    ATTRS{dma_mask_bits}=="32"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-WCOM51E2:00/0018:056A:51E2.0001/input/input13':
+    KERNEL=="input13"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+    ATTR{name}=="Wacom HID 51E2 Finger"
+    ATTR{phys}=="i2c-WCOM51E2:00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-WCOM51E2:00/0018:056A:51E2.0001':
+    KERNELS=="0018:056A:51E2.0001"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-WCOM51E2:00':
+    KERNELS=="i2c-WCOM51E2:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid"
+    ATTRS{name}=="WCOM51E2:00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1':
+    KERNELS=="i2c-1"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0/i2c_designware.0':
+    KERNELS=="i2c_designware.0"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00/0000:00:15.0':
+    KERNELS=="0000:00:15.0"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="intel-lpss"
+    ATTRS{vendor}=="0x8086"
+    ATTRS{local_cpulist}=="0-7"
+    ATTRS{consistent_dma_mask_bits}=="64"
+    ATTRS{irq}=="16"
+    ATTRS{device}=="0x34e8"
+    ATTRS{dma_mask_bits}=="32"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{local_cpus}=="ff"
+    ATTRS{ari_enabled}=="0"
+    ATTRS{enable}=="1"
+    ATTRS{subsystem_vendor}=="0x17aa"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{revision}=="0x30"
+    ATTRS{class}=="0x0c8000"
+    ATTRS{numa_node}=="-1"
+    ATTRS{msi_bus}=="1"
+    ATTRS{subsystem_device}=="0x3840"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
