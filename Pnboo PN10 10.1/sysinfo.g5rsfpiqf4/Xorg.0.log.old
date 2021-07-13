@@ -1,0 +1,985 @@
+[    30.392] 
+X.Org X Server 1.20.11
+X Protocol Version 11, Revision 0
+[    30.392] Build Operating System: Linux Manjaro Linux
+[    30.392] Current Operating System: Linux HOSTNAME 5.10.42-1-MANJARO #1 SMP PREEMPT Thu Jun 3 14:37:11 UTC 2021 x86_64
+[    30.392] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.10-x86_64 root=UUID=a17bfd89-430e-4e80-9af8-e624276a888e rw quiet apparmor=1 security=apparmor resume=UUID=749a2d3f-b851-4969-b8f7-b6d2a352006e udev.log_priority=3
+[    30.393] Build Date: 13 April 2021  04:11:08PM
+[    30.393]  
+[    30.393] Current version of pixman: 0.40.0
+[    30.393] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    30.393] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    30.394] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Jun 15 10:40:12 2021
+[    30.411] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    30.412] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    30.418] (==) ServerLayout "layout"
+[    30.418] (==) No screen section available. Using defaults.
+[    30.418] (**) |-->Screen "Default Screen Section" (0)
+[    30.418] (**) |   |-->Monitor "<default monitor>"
+[    30.420] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    30.420] (==) Automatically adding devices
+[    30.420] (==) Automatically enabling devices
+[    30.420] (==) Automatically adding GPU devices
+[    30.420] (==) Automatically binding GPU devices
+[    30.420] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    30.427] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    30.427] 	Entry deleted from font path.
+[    30.427] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[    30.427] 	Entry deleted from font path.
+[    30.427] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[    30.427] 	Entry deleted from font path.
+[    30.427] (==) FontPath set to:
+	/usr/share/fonts/misc,
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF
+[    30.427] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    30.427] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    30.427] (II) Module ABI versions:
+[    30.427] 	X.Org ANSI C Emulation: 0.4
+[    30.427] 	X.Org Video Driver: 24.1
+[    30.427] 	X.Org XInput driver : 24.1
+[    30.427] 	X.Org Server Extension : 10.0
+[    30.432] (++) using VT number 7
+
+[    30.432] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    30.436] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    30.515] (--) PCI:*(0@0:1:0) 1002:9802:103c:188b rev 0, Mem @ 0xe0000000/268435456, 0xf0400000/262144, I/O @ 0x00003000/256, BIOS @ 0x????????/131072
+[    30.546] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    30.546] (II) LoadModule: "glx"
+[    30.564] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    30.600] (II) Module glx: vendor="X.Org Foundation"
+[    30.609] 	compiled for 1.20.11, module version = 1.0.0
+[    30.609] 	ABI class: X.Org Server Extension, version 10.0
+[    30.609] (==) Matched ati as autoconfigured driver 0
+[    30.609] (==) Matched modesetting as autoconfigured driver 1
+[    30.609] (==) Matched fbdev as autoconfigured driver 2
+[    30.609] (==) Matched vesa as autoconfigured driver 3
+[    30.609] (==) Assigned the driver to the xf86ConfigLayout
+[    30.609] (II) LoadModule: "ati"
+[    30.617] (WW) Warning, couldn't open module ati
+[    30.617] (EE) Failed to load module "ati" (module does not exist, 0)
+[    30.617] (II) LoadModule: "modesetting"
+[    30.618] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    30.636] (II) Module modesetting: vendor="X.Org Foundation"
+[    30.636] 	compiled for 1.20.11, module version = 1.20.11
+[    30.636] 	Module class: X.Org Video Driver
+[    30.636] 	ABI class: X.Org Video Driver, version 24.1
+[    30.636] (II) LoadModule: "fbdev"
+[    30.645] (WW) Warning, couldn't open module fbdev
+[    30.645] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    30.645] (II) LoadModule: "vesa"
+[    30.646] (WW) Warning, couldn't open module vesa
+[    30.646] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    30.646] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    30.680] (II) modeset(0): using drv /dev/dri/card0
+[    30.680] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    30.680] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    30.680] (==) modeset(0): RGB weight 888
+[    30.681] (==) modeset(0): Default visual is TrueColor
+[    30.681] (II) Loading sub module "glamoregl"
+[    30.681] (II) LoadModule: "glamoregl"
+[    30.681] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    30.761] (II) Module glamoregl: vendor="X.Org Foundation"
+[    30.765] 	compiled for 1.20.11, module version = 1.0.1
+[    30.766] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    32.396] (II) modeset(0): glamor X acceleration enabled on AMD PALM (DRM 2.50.0 / 5.10.42-1-MANJARO, LLVM 12.0.0)
+[    32.396] (II) modeset(0): glamor initialized
+[    32.397] (II) modeset(0): Output LVDS-1 has no monitor section
+[    32.551] (II) modeset(0): Output HDMI-1 has no monitor section
+[    32.565] (II) modeset(0): Output VGA-1 has no monitor section
+[    32.570] (II) modeset(0): EDID for output LVDS-1
+[    32.570] (II) modeset(0): Manufacturer: SEC  Model: 315a  Serial#: 0
+[    32.570] (II) modeset(0): Year: 2012  Week: 0
+[    32.570] (II) modeset(0): EDID Version: 1.4
+[    32.571] (II) modeset(0): Digital Display Input
+[    32.571] (II) modeset(0): 6 bits per channel
+[    32.571] (II) modeset(0): Digital interface is undefined
+[    32.571] (II) modeset(0): Max Image Size [cm]: horiz.: 34  vert.: 19
+[    32.571] (II) modeset(0): Gamma: 2.20
+[    32.571] (II) modeset(0): No DPMS capabilities specified
+[    32.571] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    32.571] (II) modeset(0): First detailed timing is preferred mode
+[    32.571] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[    32.571] (II) modeset(0): redX: 0.580 redY: 0.340   greenX: 0.310 greenY: 0.550
+[    32.571] (II) modeset(0): blueX: 0.155 blueY: 0.155   whiteX: 0.313 whiteY: 0.329
+[    32.571] (II) modeset(0): Manufacturer's mask: 0
+[    32.572] (II) modeset(0): Supported detailed timing:
+[    32.572] (II) modeset(0): clock: 76.3 MHz   Image Size:  344 x 194 mm
+[    32.572] (II) modeset(0): h_active: 1366  h_sync: 1430  h_sync_end 1478 h_blank_end 1606 h_border: 0
+[    32.572] (II) modeset(0): v_active: 768  v_sync: 770  v_sync_end 775 v_blanking: 792 v_border: 0
+[    32.572] (II) modeset(0): Supported detailed timing:
+[    32.572] (II) modeset(0): clock: 50.8 MHz   Image Size:  344 x 194 mm
+[    32.572] (II) modeset(0): h_active: 1366  h_sync: 1430  h_sync_end 1478 h_blank_end 1606 h_border: 0
+[    32.572] (II) modeset(0): v_active: 768  v_sync: 770  v_sync_end 775 v_blanking: 792 v_border: 0
+[    32.572] (II) modeset(0): Unknown vendor-specific block 2
+[    32.572] (II) modeset(0): EDID (in hex):
+[    32.572] (II) modeset(0): 	00ffffffffffff004ca35a3100000000
+[    32.572] (II) modeset(0): 	00160104902213780a87f594574f8c27
+[    32.572] (II) modeset(0): 	27505400000001010101010101010101
+[    32.573] (II) modeset(0): 	010101010101ce1d56f0500018304030
+[    32.573] (II) modeset(0): 	250058c210000019d81356f050001830
+[    32.573] (II) modeset(0): 	4030250058c210000019000000000000
+[    32.573] (II) modeset(0): 	00000000000000000000000000000002
+[    32.573] (II) modeset(0): 	000c42f20c4c641318296e00000000e4
+[    32.574] (II) modeset(0): Printing probed modes for output LVDS-1
+[    32.574] (II) modeset(0): Modeline "1366x768"x60.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    32.574] (II) modeset(0): Modeline "1366x768"x39.9   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    32.574] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[    32.574] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[    32.574] (II) modeset(0): Modeline "1280x720"x60.0   74.65  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.9 kHz)
+[    32.574] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[    32.574] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[    32.575] (II) modeset(0): Modeline "1152x768"x59.9   71.95  1152 1216 1328 1504  768 771 781 798 -hsync +vsync (47.8 kHz)
+[    32.575] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[    32.575] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[    32.575] (II) modeset(0): Modeline "1024x768"x59.9   63.53  1024 1072 1176 1328  768 771 775 798 -hsync +vsync (47.8 kHz)
+[    32.575] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[    32.575] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[    32.575] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[    32.575] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[    32.575] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[    32.575] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[    32.575] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[    32.575] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[    32.575] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[    32.576] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[    32.576] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[    32.576] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[    32.576] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[    32.576] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[    32.576] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[    32.576] (II) modeset(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz)
+[    32.576] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[    32.576] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[    32.576] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[    32.576] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[    32.576] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[    32.576] (II) modeset(0): Modeline "848x480"x59.9   31.65  848 872 952 1056  480 483 493 500 -hsync +vsync (30.0 kHz)
+[    32.576] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[    32.577] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[    32.577] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[    32.577] (II) modeset(0): Modeline "720x480"x59.9   26.85  720 744 808 896  480 483 493 500 -hsync +vsync (30.0 kHz)
+[    32.577] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[    32.577] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[    32.577] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[    32.577] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[    32.577] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[    32.577] (II) modeset(0): Modeline "640x480"x59.9   23.98  640 664 720 800  480 483 487 500 -hsync +vsync (30.0 kHz)
+[    32.577] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[    32.577] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[    32.577] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[    32.577] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[    32.577] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[    32.578] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[    32.578] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[    32.578] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[    32.578] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[    32.581] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[    32.581] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[    32.582] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[    32.582] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[    32.582] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[    32.582] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[    32.582] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[    32.582] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[    32.582] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[    32.582] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[    32.582] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[    32.582] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[    32.582] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[    32.583] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[    32.583] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[    32.721] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    32.730] (II) modeset(0): EDID for output HDMI-1
+[    32.730] (II) modeset(0): Manufacturer: ART  Model: 1001  Serial#: 201601001
+[    32.730] (II) modeset(0): Year: 2016  Week: 1
+[    32.730] (II) modeset(0): EDID Version: 1.3
+[    32.730] (II) modeset(0): Digital Display Input
+[    32.730] (II) modeset(0): Max Image Size [cm]: horiz.: 29  vert.: 17
+[    32.731] (II) modeset(0): Gamma: 2.20
+[    32.731] (II) modeset(0): DPMS capabilities: StandBy Suspend Off
+[    32.731] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    32.731] (II) modeset(0): First detailed timing is preferred mode
+[    32.731] (II) modeset(0): redX: 0.648 redY: 0.338   greenX: 0.327 greenY: 0.606
+[    32.731] (II) modeset(0): blueX: 0.146 blueY: 0.047   whiteX: 0.312 whiteY: 0.327
+[    32.731] (II) modeset(0): Supported established timings:
+[    32.731] (II) modeset(0): 720x400@70Hz
+[    32.731] (II) modeset(0): 640x480@60Hz
+[    32.731] (II) modeset(0): 640x480@67Hz
+[    32.731] (II) modeset(0): 800x600@56Hz
+[    32.731] (II) modeset(0): 800x600@60Hz
+[    32.731] (II) modeset(0): 1024x768@60Hz
+[    32.732] (II) modeset(0): Manufacturer's mask: 0
+[    32.732] (II) modeset(0): Supported detailed timing:
+[    32.732] (II) modeset(0): clock: 71.0 MHz   Image Size:  217 x 136 mm
+[    32.732] (II) modeset(0): h_active: 1280  h_sync: 1328  h_sync_end 1360 h_blank_end 1440 h_border: 0
+[    32.732] (II) modeset(0): v_active: 800  v_sync: 803  v_sync_end 809 v_blanking: 823 v_border: 0
+[    32.732] (II) modeset(0): Monitor name: PenDisplay 10
+[    32.732] (II) modeset(0): Ranges: V min: 56 V max: 70 Hz, H min: 30 H max: 48 kHz, PixClock max 149 MHz
+[    32.732] (II) modeset(0): Supported detailed timing:
+[    32.732] (II) modeset(0): clock: 148.5 MHz   Image Size:  293 x 165 mm
+[    32.732] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    32.732] (II) modeset(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[    32.732] (II) modeset(0): Supported detailed timing:
+[    32.732] (II) modeset(0): clock: 74.2 MHz   Image Size:  293 x 165 mm
+[    32.732] (II) modeset(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[    32.733] (II) modeset(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[    32.733] (II) modeset(0): Supported detailed timing:
+[    32.733] (II) modeset(0): clock: 85.5 MHz   Image Size:  293 x 165 mm
+[    32.733] (II) modeset(0): h_active: 1360  h_sync: 1424  h_sync_end 1536 h_blank_end 1792 h_border: 0
+[    32.733] (II) modeset(0): v_active: 768  v_sync: 771  v_sync_end 777 v_blanking: 795 v_border: 0
+[    32.733] (II) modeset(0): Number of EDID sections to follow: 1
+[    32.733] (II) modeset(0): EDID (in hex):
+[    32.733] (II) modeset(0): 	00ffffffffffff0006540110e92f040c
+[    32.733] (II) modeset(0): 	011a0103801d1178ea2d8fa656539b25
+[    32.733] (II) modeset(0): 	0c4f53b3080001010101010101010101
+[    32.733] (II) modeset(0): 	010101010101bc1b00a0502017303020
+[    32.733] (II) modeset(0): 	3600d9880000001a000000fc0050656e
+[    32.733] (II) modeset(0): 	446973706c6179203130000000100034
+[    32.733] (II) modeset(0): 	4743483030303036330a2020000000fd
+[    32.734] (II) modeset(0): 	0038461e3008000a2020202020200136
+[    32.734] (II) modeset(0): 	020204b0023a801871382d40582c4500
+[    32.734] (II) modeset(0): 	25a51000001e011d007251d01e206e28
+[    32.734] (II) modeset(0): 	550025a51000001e662150b051001b30
+[    32.734] (II) modeset(0): 	4070360025a51000001e000000100000
+[    32.734] (II) modeset(0): 	1e304080370025a51000001c00000000
+[    32.734] (II) modeset(0): 	00000000000000000000000000000000
+[    32.734] (II) modeset(0): 	00000000000000000000000000000000
+[    32.734] (II) modeset(0): 	0000000000000000000000000000007f
+[    32.735] (II) modeset(0): Not using default mode "1280x720" (bad mode clock/interlace/doublescan)
+[    32.735] (II) modeset(0): Printing probed modes for output HDMI-1
+[    32.735] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz eP)
+[    32.735] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    32.735] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    32.741] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[    32.741] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[    32.742] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[    32.742] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[    32.746] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[    32.746] (II) modeset(0): Modeline "1360x768"x60.0   85.50  1360 1424 1536 1792  768 771 777 795 +hsync +vsync (47.7 kHz e)
+[    32.746] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[    32.746] (II) modeset(0): Modeline "1280x720"x60.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[    32.746] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[    32.746] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    32.746] (II) modeset(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    32.746] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[    32.746] (II) modeset(0): Modeline "1024x768"x60.0  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[    32.746] (II) modeset(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz d)
+[    32.747] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    32.747] (II) modeset(0): Modeline "960x720"x60.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[    32.747] (II) modeset(0): Modeline "928x696"x60.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[    32.747] (II) modeset(0): Modeline "896x672"x60.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[    32.747] (II) modeset(0): Modeline "1024x576"x60.0   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[    32.747] (II) modeset(0): Modeline "1024x576"x60.0   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[    32.747] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[    32.747] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[    32.747] (II) modeset(0): Modeline "960x600"x59.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[    32.747] (II) modeset(0): Modeline "960x600"x60.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[    32.747] (II) modeset(0): Modeline "960x540"x60.0   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[    32.747] (II) modeset(0): Modeline "960x540"x60.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[    32.747] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[    32.748] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[    32.748] (II) modeset(0): Modeline "800x600"x70.0   94.50  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (87.5 kHz d)
+[    32.748] (II) modeset(0): Modeline "800x600"x65.0   87.75  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (81.2 kHz d)
+[    32.748] (II) modeset(0): Modeline "800x600"x60.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[    32.748] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    32.748] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[    32.748] (II) modeset(0): Modeline "840x525"x60.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[    32.748] (II) modeset(0): Modeline "840x525"x59.9   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[    32.748] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[    32.748] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[    32.748] (II) modeset(0): Modeline "700x525"x60.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[    32.748] (II) modeset(0): Modeline "800x450"x59.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[    32.748] (II) modeset(0): Modeline "800x450"x59.8   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[    32.749] (II) modeset(0): Modeline "640x512"x60.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[    32.749] (II) modeset(0): Modeline "700x450"x60.0   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[    32.749] (II) modeset(0): Modeline "700x450"x59.9   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[    32.749] (II) modeset(0): Modeline "640x480"x60.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[    32.749] (II) modeset(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[    32.749] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    32.749] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    32.749] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[    32.749] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[    32.749] (II) modeset(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[    32.749] (II) modeset(0): Modeline "684x384"x59.9   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[    32.749] (II) modeset(0): Modeline "684x384"x59.9   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[    32.749] (II) modeset(0): Modeline "640x400"x59.9   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[    32.749] (II) modeset(0): Modeline "640x400"x60.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[    32.750] (II) modeset(0): Modeline "640x360"x59.9   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[    32.750] (II) modeset(0): Modeline "640x360"x59.8   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[    32.750] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[    32.750] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[    32.750] (II) modeset(0): Modeline "512x384"x70.1   37.50  512 524 592 664  384 385 388 403 doublescan -hsync -vsync (56.5 kHz d)
+[    32.750] (II) modeset(0): Modeline "512x384"x60.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[    32.750] (II) modeset(0): Modeline "512x288"x60.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[    32.750] (II) modeset(0): Modeline "512x288"x59.9   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[    32.750] (II) modeset(0): Modeline "480x270"x59.6   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[    32.750] (II) modeset(0): Modeline "480x270"x59.8   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[    32.750] (II) modeset(0): Modeline "400x300"x60.3   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[    32.750] (II) modeset(0): Modeline "400x300"x56.3   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[    32.750] (II) modeset(0): Modeline "432x243"x59.9   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[    32.750] (II) modeset(0): Modeline "432x243"x59.6   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[    32.751] (II) modeset(0): Modeline "320x240"x60.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[    32.751] (II) modeset(0): Modeline "360x202"x59.5   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[    32.751] (II) modeset(0): Modeline "360x202"x59.1   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[    32.751] (II) modeset(0): Modeline "320x180"x59.8    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[    32.751] (II) modeset(0): Modeline "320x180"x59.3    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[    32.778] (II) modeset(0): EDID for output VGA-1
+[    32.778] (II) modeset(0): Output LVDS-1 connected
+[    32.778] (II) modeset(0): Output HDMI-1 connected
+[    32.778] (II) modeset(0): Output VGA-1 disconnected
+[    32.778] (II) modeset(0): Using spanning desktop for initial modes
+[    32.779] (II) modeset(0): Output LVDS-1 using initial mode 1366x768 +0+0
+[    32.779] (II) modeset(0): Output HDMI-1 using initial mode 1280x800 +1366+0
+[    32.779] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    32.779] (==) modeset(0): DPI set to (96, 96)
+[    32.779] (II) Loading sub module "fb"
+[    32.779] (II) LoadModule: "fb"
+[    32.780] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    32.786] (II) Module fb: vendor="X.Org Foundation"
+[    32.786] 	compiled for 1.20.11, module version = 1.0.0
+[    32.786] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    32.913] (==) modeset(0): Backing store enabled
+[    32.913] (==) modeset(0): Silken mouse disabled
+[    32.915] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    32.916] (==) modeset(0): DPMS enabled
+[    32.916] (II) modeset(0): [DRI2] Setup complete
+[    32.917] (II) modeset(0): [DRI2]   DRI driver: r600
+[    32.917] (II) modeset(0): [DRI2]   VDPAU driver: r600
+[    32.917] (II) Initializing extension Generic Event Extension
+[    32.918] (II) Initializing extension SHAPE
+[    32.918] (II) Initializing extension MIT-SHM
+[    32.919] (II) Initializing extension XInputExtension
+[    32.920] (II) Initializing extension XTEST
+[    32.928] (II) Initializing extension BIG-REQUESTS
+[    32.929] (II) Initializing extension SYNC
+[    32.930] (II) Initializing extension XKEYBOARD
+[    32.931] (II) Initializing extension XC-MISC
+[    32.931] (II) Initializing extension SECURITY
+[    32.932] (II) Initializing extension XFIXES
+[    32.933] (II) Initializing extension RENDER
+[    32.934] (II) Initializing extension RANDR
+[    32.936] (II) Initializing extension COMPOSITE
+[    32.936] (II) Initializing extension DAMAGE
+[    32.937] (II) Initializing extension MIT-SCREEN-SAVER
+[    32.944] (II) Initializing extension DOUBLE-BUFFER
+[    32.945] (II) Initializing extension RECORD
+[    32.946] (II) Initializing extension DPMS
+[    32.947] (II) Initializing extension Present
+[    32.948] (II) Initializing extension DRI3
+[    32.949] (II) Initializing extension X-Resource
+[    32.949] (II) Initializing extension XVideo
+[    32.962] (II) Initializing extension XVideo-MotionCompensation
+[    32.962] (II) Initializing extension GLX
+[    33.044] (II) AIGLX: Loaded and initialized r600
+[    33.045] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    33.045] (II) Initializing extension XFree86-VidModeExtension
+[    33.046] (II) Initializing extension XFree86-DGA
+[    33.046] (II) Initializing extension XFree86-DRI
+[    33.046] (II) Initializing extension DRI2
+[    33.056] (II) modeset(0): Damage tracking initialized
+[    33.057] (II) modeset(0): Setting screen physical size to 700 x 211
+[    34.022] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    34.023] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    34.023] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    34.024] (**) Power Button: Applying InputClass "system-keyboard"
+[    34.024] (II) LoadModule: "libinput"
+[    34.024] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    34.066] (II) Module libinput: vendor="X.Org Foundation"
+[    34.071] 	compiled for 1.20.11, module version = 1.0.1
+[    34.071] 	Module class: X.Org XInput Driver
+[    34.071] 	ABI class: X.Org XInput driver, version 24.1
+[    34.071] (II) Using input driver 'libinput' for 'Power Button'
+[    34.071] (**) Power Button: always reports core events
+[    34.072] (**) Option "Device" "/dev/input/event2"
+[    34.072] (**) Option "_source" "server/udev"
+[    34.126] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    34.127] (II) event2  - Power Button: device is a keyboard
+[    34.128] (II) event2  - Power Button: device removed
+[    34.157] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[    34.157] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    34.157] (**) Option "xkb_layout" "us"
+[    34.168] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    34.168] (II) event2  - Power Button: device is a keyboard
+[    34.172] (II) config/udev: Adding input device Video Bus (/dev/input/event14)
+[    34.173] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    34.173] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    34.173] (**) Video Bus: Applying InputClass "system-keyboard"
+[    34.173] (II) Using input driver 'libinput' for 'Video Bus'
+[    34.179] (**) Video Bus: always reports core events
+[    34.179] (**) Option "Device" "/dev/input/event14"
+[    34.179] (**) Option "_source" "server/udev"
+[    34.202] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[    34.203] (II) event14 - Video Bus: device is a keyboard
+[    34.203] (II) event14 - Video Bus: device removed
+[    34.245] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input25/event14"
+[    34.245] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    34.245] (**) Option "xkb_layout" "us"
+[    34.254] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[    34.255] (II) event14 - Video Bus: device is a keyboard
+[    34.258] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    34.259] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    34.259] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    34.259] (**) Power Button: Applying InputClass "system-keyboard"
+[    34.259] (II) Using input driver 'libinput' for 'Power Button'
+[    34.259] (**) Power Button: always reports core events
+[    34.259] (**) Option "Device" "/dev/input/event0"
+[    34.259] (**) Option "_source" "server/udev"
+[    34.269] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    34.270] (II) event0  - Power Button: device is a keyboard
+[    34.271] (II) event0  - Power Button: device removed
+[    34.282] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    34.282] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    34.282] (**) Option "xkb_layout" "us"
+[    34.288] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    34.297] (II) event0  - Power Button: device is a keyboard
+[    34.304] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[    34.304] (II) No input driver specified, ignoring this device.
+[    34.304] (II) This device may have been added with another device file.
+[    34.328] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event17)
+[    34.328] (II) No input driver specified, ignoring this device.
+[    34.328] (II) This device may have been added with another device file.
+[    34.346] (II) config/udev: Adding input device Logitech Wireless Device PID:4055 (/dev/input/event6)
+[    34.346] (**) Logitech Wireless Device PID:4055: Applying InputClass "evdev pointer catchall"
+[    34.346] (**) Logitech Wireless Device PID:4055: Applying InputClass "libinput pointer catchall"
+[    34.346] (II) Using input driver 'libinput' for 'Logitech Wireless Device PID:4055'
+[    34.347] (**) Logitech Wireless Device PID:4055: always reports core events
+[    34.347] (**) Option "Device" "/dev/input/event6"
+[    34.347] (**) Option "_source" "server/udev"
+[    34.366] (II) event6  - Logitech Wireless Device PID:4055: is tagged by udev as: Mouse
+[    34.367] (II) event6  - Logitech Wireless Device PID:4055: device is a pointer
+[    34.382] (II) event6  - Logitech Wireless Device PID:4055: device removed
+[    34.461] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-2/3-2:1.2/0003:046D:C52B.0005/0003:046D:4055.0006/input/input17/event6"
+[    34.462] (II) XINPUT: Adding extended input device "Logitech Wireless Device PID:4055" (type: MOUSE, id 9)
+[    34.463] (**) Option "AccelerationScheme" "none"
+[    34.463] (**) Logitech Wireless Device PID:4055: (accel) selected scheme none/0
+[    34.463] (**) Logitech Wireless Device PID:4055: (accel) acceleration factor: 2.000
+[    34.463] (**) Logitech Wireless Device PID:4055: (accel) acceleration threshold: 4
+[    34.479] (II) event6  - Logitech Wireless Device PID:4055: is tagged by udev as: Mouse
+[    34.480] (II) event6  - Logitech Wireless Device PID:4055: device is a pointer
+[    34.496] (II) config/udev: Adding input device Logitech Wireless Device PID:4055 (/dev/input/mouse1)
+[    34.496] (II) No input driver specified, ignoring this device.
+[    34.496] (II) This device may have been added with another device file.
+[    34.523] (II) config/udev: Adding input device UC-Logic Pnboo PN10 (/dev/input/event7)
+[    34.523] (**) UC-Logic Pnboo PN10: Applying InputClass "evdev tablet catchall"
+[    34.523] (**) UC-Logic Pnboo PN10: Applying InputClass "libinput tablet catchall"
+[    34.523] (**) UC-Logic Pnboo PN10: Applying InputClass "Yiynova tablets with Wacom driver"
+[    34.523] (**) UC-Logic Pnboo PN10: Applying InputClass "Tablet"
+[    34.523] (II) LoadModule: "wacom"
+[    34.525] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[    34.530] (II) Module wacom: vendor="X.Org Foundation"
+[    34.531] 	compiled for 1.20.10, module version = 0.40.0
+[    34.531] 	Module class: X.Org XInput Driver
+[    34.531] 	ABI class: X.Org XInput driver, version 24.1
+[    34.531] (II) Build version: 0.40.0
+[    34.531] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[    34.564] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10'
+[    34.564] (**) UC-Logic Pnboo PN10: always reports core events
+[    34.564] (**) Option "Device" "/dev/input/event7"
+[    34.621] (II) UC-Logic Pnboo PN10: type not specified, assuming 'stylus'.
+[    34.621] (II) UC-Logic Pnboo PN10: other types will be automatically added.
+[    34.622] (--) UC-Logic Pnboo PN10 stylus: using pressure threshold of 851 for button 1
+[    34.622] (**) UC-Logic Pnboo PN10 stylus: panscroll is 0
+[    34.622] (**) UC-Logic Pnboo PN10 stylus: panscroll modified to 1300
+[    34.622] (--) UC-Logic Pnboo PN10 stylus: maxX=21694 maxY=13558 maxZ=2047 resX=100000 resY=100000  tilt=enabled
+[    34.622] (II) UC-Logic Pnboo PN10 stylus: hotplugging dependent devices.
+[    34.622] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'eraser' for this device.
+[    34.622] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'cursor' for this device.
+[    34.622] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'touch' for this device.
+[    34.622] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'pad' for this device.
+[    34.622] (II) UC-Logic Pnboo PN10 stylus: hotplugging completed.
+[    34.661] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-3/3-3:1.0/0003:5543:004D.0007/input/input32/event7"
+[    34.662] (II) XINPUT: Adding extended input device "UC-Logic Pnboo PN10 stylus" (type: STYLUS, id 10)
+[    34.663] (**) UC-Logic Pnboo PN10 stylus: (accel) keeping acceleration scheme 1
+[    34.663] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration profile 0
+[    34.663] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration factor: 2.000
+[    34.663] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration threshold: 4
+[    34.722] (II) config/udev: Adding input device UC-Logic Pnboo PN10 (/dev/input/mouse2)
+[    34.723] (II) No input driver specified, ignoring this device.
+[    34.723] (II) This device may have been added with another device file.
+[    34.734] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Pad (/dev/input/event8)
+[    34.736] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "evdev tablet catchall"
+[    34.736] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "libinput tablet catchall"
+[    34.736] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "Yiynova tablets with Wacom driver"
+[    34.736] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "Tablet"
+[    34.736] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10 Pad'
+[    34.737] (**) UC-Logic Pnboo PN10 Pad: always reports core events
+[    34.737] (**) Option "Device" "/dev/input/event8"
+[    34.737] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'stylus' for this device.
+[    34.737] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'eraser' for this device.
+[    34.737] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'cursor' for this device.
+[    34.737] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'touch' for this device.
+[    34.737] (II) UC-Logic Pnboo PN10 Pad: type not specified, assuming 'pad'.
+[    34.737] (II) UC-Logic Pnboo PN10 Pad: other types will be automatically added.
+[    34.738] (**) UC-Logic Pnboo PN10 Pad pad: panscroll is 0
+[    34.738] (**) UC-Logic Pnboo PN10 Pad pad: panscroll modified to 13
+[    34.738] (II) UC-Logic Pnboo PN10 Pad pad: hotplugging dependent devices.
+[    34.738] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'stylus' for this device.
+[    34.738] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'eraser' for this device.
+[    34.738] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'cursor' for this device.
+[    34.738] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'touch' for this device.
+[    34.738] (II) UC-Logic Pnboo PN10 Pad pad: hotplugging completed.
+[    34.765] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-3/3-3:1.0/0003:5543:004D.0007/input/input33/event8"
+[    34.765] (II) XINPUT: Adding extended input device "UC-Logic Pnboo PN10 Pad pad" (type: PAD, id 11)
+[    34.767] (**) UC-Logic Pnboo PN10 Pad pad: (accel) keeping acceleration scheme 1
+[    34.767] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration profile 0
+[    34.767] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration factor: 2.000
+[    34.767] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration threshold: 4
+[    34.778] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Pad (/dev/input/js0)
+[    34.779] (II) No input driver specified, ignoring this device.
+[    34.779] (II) This device may have been added with another device file.
+[    34.783] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Mouse (/dev/input/event9)
+[    34.784] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "evdev pointer catchall"
+[    34.784] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "libinput pointer catchall"
+[    34.784] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "Yiynova tablets with Wacom driver"
+[    34.784] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "Tablet"
+[    34.784] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10 Mouse'
+[    34.784] (**) UC-Logic Pnboo PN10 Mouse: always reports core events
+[    34.784] (**) Option "Device" "/dev/input/event9"
+[    34.841] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'stylus' for this device.
+[    34.842] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'eraser' for this device.
+[    34.842] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'cursor' for this device.
+[    34.842] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'touch' for this device.
+[    34.842] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'pad' for this device.
+[    34.842] (EE) UC-Logic Pnboo PN10 Mouse: No type specified
+[    34.865] (EE) PreInit returned 8 for "UC-Logic Pnboo PN10 Mouse"
+[    34.865] (II) UnloadModule: "wacom"
+[    34.869] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Mouse (/dev/input/mouse3)
+[    34.869] (II) No input driver specified, ignoring this device.
+[    34.869] (II) This device may have been added with another device file.
+[    34.874] (II) config/udev: Adding input device HP TrueVision HD: HP TrueVision (/dev/input/event10)
+[    34.874] (**) HP TrueVision HD: HP TrueVision: Applying InputClass "evdev keyboard catchall"
+[    34.875] (**) HP TrueVision HD: HP TrueVision: Applying InputClass "libinput keyboard catchall"
+[    34.875] (**) HP TrueVision HD: HP TrueVision: Applying InputClass "system-keyboard"
+[    34.875] (II) Using input driver 'libinput' for 'HP TrueVision HD: HP TrueVision'
+[    34.875] (**) HP TrueVision HD: HP TrueVision: always reports core events
+[    34.875] (**) Option "Device" "/dev/input/event10"
+[    34.875] (**) Option "_source" "server/udev"
+[    34.903] (II) event10 - HP TrueVision HD: HP TrueVision: is tagged by udev as: Keyboard
+[    34.903] (II) event10 - HP TrueVision HD: HP TrueVision: device is a keyboard
+[    34.904] (II) event10 - HP TrueVision HD: HP TrueVision: device removed
+[    34.928] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:13.2/usb2/2-1/2-1:1.0/input/input35/event10"
+[    34.928] (II) XINPUT: Adding extended input device "HP TrueVision HD: HP TrueVision" (type: KEYBOARD, id 12)
+[    34.928] (**) Option "xkb_layout" "us"
+[    34.945] (II) event10 - HP TrueVision HD: HP TrueVision: is tagged by udev as: Keyboard
+[    34.946] (II) event10 - HP TrueVision HD: HP TrueVision: device is a keyboard
+[    34.949] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event18)
+[    34.950] (II) No input driver specified, ignoring this device.
+[    34.950] (II) This device may have been added with another device file.
+[    34.952] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event19)
+[    34.952] (II) No input driver specified, ignoring this device.
+[    34.952] (II) This device may have been added with another device file.
+[    34.966] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[    34.966] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[    34.966] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    34.966] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[    34.966] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    34.967] (**) AT Translated Set 2 keyboard: always reports core events
+[    34.967] (**) Option "Device" "/dev/input/event3"
+[    34.967] (**) Option "_source" "server/udev"
+[    34.972] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    34.973] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[    34.981] (II) event3  - AT Translated Set 2 keyboard: device removed
+[    34.985] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[    34.985] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
+[    34.985] (**) Option "xkb_layout" "us"
+[    34.995] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    34.996] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[    35.009] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event16)
+[    35.009] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "evdev touchpad catchall"
+[    35.009] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
+[    35.009] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[    35.009] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[    35.009] (**) Option "Device" "/dev/input/event16"
+[    35.009] (**) Option "_source" "server/udev"
+[    35.022] (II) event16 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[    35.036] (II) event16 - SynPS/2 Synaptics TouchPad: device is a touchpad
+[    35.039] (II) event16 - SynPS/2 Synaptics TouchPad: device removed
+[    35.066] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input27/event16"
+[    35.067] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 14)
+[    35.071] (**) Option "AccelerationScheme" "none"
+[    35.071] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[    35.071] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[    35.071] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[    35.084] (II) event16 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[    35.098] (II) event16 - SynPS/2 Synaptics TouchPad: device is a touchpad
+[    35.111] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse5)
+[    35.112] (II) No input driver specified, ignoring this device.
+[    35.112] (II) This device may have been added with another device file.
+[    35.114] (II) config/udev: Adding input device PC Speaker (/dev/input/event15)
+[    35.114] (II) No input driver specified, ignoring this device.
+[    35.114] (II) This device may have been added with another device file.
+[    35.153] (II) config/udev: Adding input device HP Wireless hotkeys (/dev/input/event13)
+[    35.162] (**) HP Wireless hotkeys: Applying InputClass "evdev keyboard catchall"
+[    35.162] (**) HP Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[    35.162] (**) HP Wireless hotkeys: Applying InputClass "system-keyboard"
+[    35.162] (II) Using input driver 'libinput' for 'HP Wireless hotkeys'
+[    35.162] (**) HP Wireless hotkeys: always reports core events
+[    35.162] (**) Option "Device" "/dev/input/event13"
+[    35.162] (**) Option "_source" "server/udev"
+[    35.166] (II) event13 - HP Wireless hotkeys: is tagged by udev as: Keyboard
+[    35.166] (II) event13 - HP Wireless hotkeys: device is a keyboard
+[    35.167] (II) event13 - HP Wireless hotkeys: device removed
+[    35.195] (**) Option "config_info" "udev:/sys/devices/virtual/input/input24/event13"
+[    35.195] (II) XINPUT: Adding extended input device "HP Wireless hotkeys" (type: KEYBOARD, id 15)
+[    35.195] (**) Option "xkb_layout" "us"
+[    35.199] (II) event13 - HP Wireless hotkeys: is tagged by udev as: Keyboard
+[    35.200] (II) event13 - HP Wireless hotkeys: device is a keyboard
+[    35.208] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event20)
+[    35.208] (**) HP WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[    35.208] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    35.208] (**) HP WMI hotkeys: Applying InputClass "system-keyboard"
+[    35.208] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[    35.208] (**) HP WMI hotkeys: always reports core events
+[    35.208] (**) Option "Device" "/dev/input/event20"
+[    35.208] (**) Option "_source" "server/udev"
+[    35.219] (II) event20 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    35.219] (II) event20 - HP WMI hotkeys: device is a keyboard
+[    35.220] (II) event20 - HP WMI hotkeys: device removed
+[    35.241] (**) Option "config_info" "udev:/sys/devices/virtual/input/input31/event20"
+[    35.242] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 16)
+[    35.242] (**) Option "xkb_layout" "us"
+[    35.246] (II) event20 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    35.247] (II) event20 - HP WMI hotkeys: device is a keyboard
+[    35.439] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    35.440] (II) modeset(0): Printing DDC gathered Modelines:
+[    35.440] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    35.440] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    35.535] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    35.560] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Mouse (/dev/input/event9)
+[    35.560] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "evdev pointer catchall"
+[    35.560] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "libinput pointer catchall"
+[    35.560] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "Yiynova tablets with Wacom driver"
+[    35.560] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "Tablet"
+[    35.560] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10 Mouse'
+[    35.560] (**) UC-Logic Pnboo PN10 Mouse: always reports core events
+[    35.561] (**) Option "Device" "/dev/input/event9"
+[    35.615] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'stylus' for this device.
+[    35.615] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'eraser' for this device.
+[    35.615] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'cursor' for this device.
+[    35.615] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'touch' for this device.
+[    35.615] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'pad' for this device.
+[    35.615] (EE) UC-Logic Pnboo PN10 Mouse: No type specified
+[    35.668] (EE) PreInit returned 8 for "UC-Logic Pnboo PN10 Mouse"
+[    35.668] (II) UnloadModule: "wacom"
+[    35.672] (II) config/udev: Adding input device UC-Logic Pnboo PN10 (/dev/input/mouse2)
+[    35.672] (II) No input driver specified, ignoring this device.
+[    35.673] (II) This device may have been added with another device file.
+[    35.676] (II) config/udev: removing device UC-Logic Pnboo PN10 Pad pad
+[    35.705] (II) UnloadModule: "wacom"
+[    35.708] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Pad (/dev/input/event8)
+[    35.708] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "evdev tablet catchall"
+[    35.709] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "libinput tablet catchall"
+[    35.709] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "Yiynova tablets with Wacom driver"
+[    35.709] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "Tablet"
+[    35.709] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10 Pad'
+[    35.709] (**) UC-Logic Pnboo PN10 Pad: always reports core events
+[    35.709] (**) Option "Device" "/dev/input/event8"
+[    35.709] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'stylus' for this device.
+[    35.709] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'eraser' for this device.
+[    35.709] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'cursor' for this device.
+[    35.710] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'touch' for this device.
+[    35.710] (II) UC-Logic Pnboo PN10 Pad: type not specified, assuming 'pad'.
+[    35.710] (II) UC-Logic Pnboo PN10 Pad: other types will be automatically added.
+[    35.710] (**) UC-Logic Pnboo PN10 Pad pad: panscroll is 0
+[    35.710] (**) UC-Logic Pnboo PN10 Pad pad: panscroll modified to 13
+[    35.710] (II) UC-Logic Pnboo PN10 Pad pad: hotplugging dependent devices.
+[    35.710] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'stylus' for this device.
+[    35.710] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'eraser' for this device.
+[    35.710] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'cursor' for this device.
+[    35.710] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'touch' for this device.
+[    35.710] (II) UC-Logic Pnboo PN10 Pad pad: hotplugging completed.
+[    35.738] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-3/3-3:1.0/0003:5543:004D.0007/input/input33/event8"
+[    35.738] (II) XINPUT: Adding extended input device "UC-Logic Pnboo PN10 Pad pad" (type: PAD, id 11)
+[    35.740] (**) UC-Logic Pnboo PN10 Pad pad: (accel) keeping acceleration scheme 1
+[    35.740] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration profile 0
+[    35.740] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration factor: 2.000
+[    35.740] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration threshold: 4
+[    35.741] (II) config/udev: removing device UC-Logic Pnboo PN10 stylus
+[    35.779] (II) UnloadModule: "wacom"
+[    35.782] (II) config/udev: Adding input device UC-Logic Pnboo PN10 (/dev/input/event7)
+[    35.782] (**) UC-Logic Pnboo PN10: Applying InputClass "evdev tablet catchall"
+[    35.782] (**) UC-Logic Pnboo PN10: Applying InputClass "libinput tablet catchall"
+[    35.782] (**) UC-Logic Pnboo PN10: Applying InputClass "Yiynova tablets with Wacom driver"
+[    35.782] (**) UC-Logic Pnboo PN10: Applying InputClass "Tablet"
+[    35.783] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10'
+[    35.783] (**) UC-Logic Pnboo PN10: always reports core events
+[    35.783] (**) Option "Device" "/dev/input/event7"
+[    35.783] (II) UC-Logic Pnboo PN10: type not specified, assuming 'stylus'.
+[    35.783] (II) UC-Logic Pnboo PN10: other types will be automatically added.
+[    35.784] (--) UC-Logic Pnboo PN10 stylus: using pressure threshold of 851 for button 1
+[    35.784] (**) UC-Logic Pnboo PN10 stylus: panscroll is 0
+[    35.784] (**) UC-Logic Pnboo PN10 stylus: panscroll modified to 1300
+[    35.784] (--) UC-Logic Pnboo PN10 stylus: maxX=21694 maxY=13558 maxZ=2047 resX=100000 resY=100000  tilt=enabled
+[    35.784] (II) UC-Logic Pnboo PN10 stylus: hotplugging dependent devices.
+[    35.784] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'eraser' for this device.
+[    35.784] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'cursor' for this device.
+[    35.784] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'touch' for this device.
+[    35.784] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'pad' for this device.
+[    35.784] (II) UC-Logic Pnboo PN10 stylus: hotplugging completed.
+[    35.821] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-3/3-3:1.0/0003:5543:004D.0007/input/input32/event7"
+[    35.822] (II) XINPUT: Adding extended input device "UC-Logic Pnboo PN10 stylus" (type: STYLUS, id 10)
+[    35.823] (**) UC-Logic Pnboo PN10 stylus: (accel) keeping acceleration scheme 1
+[    35.823] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration profile 0
+[    35.823] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration factor: 2.000
+[    35.823] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration threshold: 4
+[    35.834] (II) config/udev: Adding input device HID 0a5c:4503 Mouse (/dev/input/mouse0)
+[    35.834] (II) No input driver specified, ignoring this device.
+[    35.834] (II) This device may have been added with another device file.
+[    35.839] (II) config/udev: Adding input device HID 0a5c:4503 Mouse (/dev/input/event5)
+[    35.839] (**) HID 0a5c:4503 Mouse: Applying InputClass "evdev pointer catchall"
+[    35.840] (**) HID 0a5c:4503 Mouse: Applying InputClass "libinput pointer catchall"
+[    35.840] (II) Using input driver 'libinput' for 'HID 0a5c:4503 Mouse'
+[    35.840] (**) HID 0a5c:4503 Mouse: always reports core events
+[    35.840] (**) Option "Device" "/dev/input/event5"
+[    35.840] (**) Option "_source" "server/udev"
+[    35.920] (II) event5  - HID 0a5c:4503 Mouse: is tagged by udev as: Mouse
+[    35.924] (II) event5  - HID 0a5c:4503 Mouse: device is a pointer
+[    35.931] (II) event5  - HID 0a5c:4503 Mouse: device removed
+[    35.965] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-1/3-1.2/3-1.2:1.0/0003:0A5C:4503.0002/input/input6/event5"
+[    35.965] (II) XINPUT: Adding extended input device "HID 0a5c:4503 Mouse" (type: MOUSE, id 17)
+[    35.966] (**) Option "AccelerationScheme" "none"
+[    35.966] (**) HID 0a5c:4503 Mouse: (accel) selected scheme none/0
+[    35.966] (**) HID 0a5c:4503 Mouse: (accel) acceleration factor: 2.000
+[    35.966] (**) HID 0a5c:4503 Mouse: (accel) acceleration threshold: 4
+[    36.040] (II) event5  - HID 0a5c:4503 Mouse: is tagged by udev as: Mouse
+[    36.041] (II) event5  - HID 0a5c:4503 Mouse: device is a pointer
+[    36.062] (II) config/udev: Adding input device HID 0a5c:4502 (/dev/input/event4)
+[    36.069] (**) HID 0a5c:4502: Applying InputClass "evdev keyboard catchall"
+[    36.069] (**) HID 0a5c:4502: Applying InputClass "libinput keyboard catchall"
+[    36.069] (**) HID 0a5c:4502: Applying InputClass "system-keyboard"
+[    36.069] (II) Using input driver 'libinput' for 'HID 0a5c:4502'
+[    36.069] (**) HID 0a5c:4502: always reports core events
+[    36.069] (**) Option "Device" "/dev/input/event4"
+[    36.069] (**) Option "_source" "server/udev"
+[    36.109] (II) event4  - HID 0a5c:4502: is tagged by udev as: Keyboard
+[    36.110] (II) event4  - HID 0a5c:4502: device is a keyboard
+[    36.112] (II) event4  - HID 0a5c:4502: device removed
+[    36.121] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-1/3-1.1/3-1.1:1.0/0003:0A5C:4502.0001/input/input5/event4"
+[    36.122] (II) XINPUT: Adding extended input device "HID 0a5c:4502" (type: KEYBOARD, id 18)
+[    36.122] (**) Option "xkb_layout" "us"
+[    36.135] (II) event4  - HID 0a5c:4502: is tagged by udev as: Keyboard
+[    36.136] (II) event4  - HID 0a5c:4502: device is a keyboard
+[    36.323] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    36.323] (II) modeset(0): Printing DDC gathered Modelines:
+[    36.323] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    36.323] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    36.450] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    37.786] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    37.786] (II) modeset(0): Printing DDC gathered Modelines:
+[    37.786] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    37.786] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    37.951] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    38.226] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    38.226] (II) modeset(0): Printing DDC gathered Modelines:
+[    38.226] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    38.226] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    38.305] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    40.314] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    40.314] (II) modeset(0): Printing DDC gathered Modelines:
+[    40.314] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    40.314] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    40.381] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    40.397] (II) modeset(0): Disabling kernel dirty updates, not required.
+[    41.322] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    41.322] (II) modeset(0): Printing DDC gathered Modelines:
+[    41.322] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    41.322] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    41.388] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    42.134] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    42.134] (II) modeset(0): Printing DDC gathered Modelines:
+[    42.134] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    42.134] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    42.217] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    42.302] (II) modeset(0): Allocate new frame buffer 1366x800 stride
+[    60.829] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    60.829] (II) modeset(0): Printing DDC gathered Modelines:
+[    60.830] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    60.830] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    60.928] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    67.942] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    67.943] (II) modeset(0): Printing DDC gathered Modelines:
+[    67.943] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    67.943] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    68.182] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[    78.261] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[    78.261] (II) modeset(0): Printing DDC gathered Modelines:
+[    78.261] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[    78.261] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[    78.376] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[   102.181] (II) modeset(0): EDID vendor "SEC", prod id 12634
+[   102.182] (II) modeset(0): Printing DDC gathered Modelines:
+[   102.182] (II) modeset(0): Modeline "1366x768"x0.0   76.30  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (47.5 kHz eP)
+[   102.182] (II) modeset(0): Modeline "1366x768"x0.0   50.80  1366 1430 1478 1606  768 770 775 792 -hsync -vsync (31.6 kHz e)
+[   102.250] (WW) EDID timing clock 148.50 exceeds claimed max 85MHz, fixing
+[   254.346] (EE) event6  - Logitech Wireless Device PID:4055: client bug: event processing lagging behind by 51ms, your system is too slow
+[   256.242] (EE) event6  - Logitech Wireless Device PID:4055: client bug: event processing lagging behind by 20ms, your system is too slow
+[   256.242] (EE) client bug: timer event6 debounce short: scheduled expiry is in the past (-8ms), your system is too slow
+[   265.311] (EE) UC-Logic Pnboo PN10 stylus: Error reading wacom device : No such device
+[   265.332] (II) config/udev: removing device UC-Logic Pnboo PN10 stylus
+[   265.382] (II) UnloadModule: "wacom"
+[   265.383] (EE) UC-Logic Pnboo PN10 Pad pad: Error reading wacom device : No such device
+[   265.388] (II) config/udev: removing device UC-Logic Pnboo PN10 Pad pad
+[   265.450] (II) UnloadModule: "wacom"
+[   271.453] (EE) client bug: timer event6 debounce: scheduled expiry is in the past (-41ms), your system is too slow
+[   271.972] (EE) client bug: timer event6 debounce: scheduled expiry is in the past (-70ms), your system is too slow
+[   272.323] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Mouse (/dev/input/mouse3)
+[   272.324] (II) No input driver specified, ignoring this device.
+[   272.324] (II) This device may have been added with another device file.
+[   272.332] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Pad (/dev/input/js0)
+[   272.333] (II) No input driver specified, ignoring this device.
+[   272.333] (II) This device may have been added with another device file.
+[   272.401] (II) config/udev: Adding input device UC-Logic Pnboo PN10 (/dev/input/mouse2)
+[   272.401] (II) No input driver specified, ignoring this device.
+[   272.401] (II) This device may have been added with another device file.
+[   272.418] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Mouse (/dev/input/event9)
+[   272.418] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "evdev pointer catchall"
+[   272.418] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "libinput pointer catchall"
+[   272.418] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "Yiynova tablets with Wacom driver"
+[   272.418] (**) UC-Logic Pnboo PN10 Mouse: Applying InputClass "Tablet"
+[   272.418] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10 Mouse'
+[   272.418] (**) UC-Logic Pnboo PN10 Mouse: always reports core events
+[   272.418] (**) Option "Device" "/dev/input/event9"
+[   272.475] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'stylus' for this device.
+[   272.475] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'eraser' for this device.
+[   272.475] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'cursor' for this device.
+[   272.475] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'touch' for this device.
+[   272.475] (EE) UC-Logic Pnboo PN10 Mouse: Invalid type 'pad' for this device.
+[   272.475] (EE) UC-Logic Pnboo PN10 Mouse: No type specified
+[   272.501] (EE) PreInit returned 8 for "UC-Logic Pnboo PN10 Mouse"
+[   272.501] (II) UnloadModule: "wacom"
+[   272.506] (II) config/udev: Adding input device UC-Logic Pnboo PN10 (/dev/input/event7)
+[   272.506] (**) UC-Logic Pnboo PN10: Applying InputClass "evdev tablet catchall"
+[   272.506] (**) UC-Logic Pnboo PN10: Applying InputClass "libinput tablet catchall"
+[   272.506] (**) UC-Logic Pnboo PN10: Applying InputClass "Yiynova tablets with Wacom driver"
+[   272.506] (**) UC-Logic Pnboo PN10: Applying InputClass "Tablet"
+[   272.506] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10'
+[   272.506] (**) UC-Logic Pnboo PN10: always reports core events
+[   272.506] (**) Option "Device" "/dev/input/event7"
+[   272.561] (II) UC-Logic Pnboo PN10: type not specified, assuming 'stylus'.
+[   272.562] (II) UC-Logic Pnboo PN10: other types will be automatically added.
+[   272.562] (--) UC-Logic Pnboo PN10 stylus: using pressure threshold of 851 for button 1
+[   272.562] (**) UC-Logic Pnboo PN10 stylus: panscroll is 0
+[   272.562] (**) UC-Logic Pnboo PN10 stylus: panscroll modified to 1300
+[   272.562] (--) UC-Logic Pnboo PN10 stylus: maxX=21694 maxY=13558 maxZ=2047 resX=100000 resY=100000  tilt=enabled
+[   272.562] (II) UC-Logic Pnboo PN10 stylus: hotplugging dependent devices.
+[   272.562] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'eraser' for this device.
+[   272.562] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'cursor' for this device.
+[   272.562] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'touch' for this device.
+[   272.562] (EE) UC-Logic Pnboo PN10 stylus: Invalid type 'pad' for this device.
+[   272.562] (II) UC-Logic Pnboo PN10 stylus: hotplugging completed.
+[   272.585] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-3/3-3:1.0/0003:5543:004D.000A/input/input36/event7"
+[   272.585] (II) XINPUT: Adding extended input device "UC-Logic Pnboo PN10 stylus" (type: STYLUS, id 10)
+[   272.592] (**) UC-Logic Pnboo PN10 stylus: (accel) keeping acceleration scheme 1
+[   272.592] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration profile 0
+[   272.592] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration factor: 2.000
+[   272.592] (**) UC-Logic Pnboo PN10 stylus: (accel) acceleration threshold: 4
+[   272.662] (II) config/udev: Adding input device UC-Logic Pnboo PN10 Pad (/dev/input/event8)
+[   272.663] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "evdev tablet catchall"
+[   272.663] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "libinput tablet catchall"
+[   272.663] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "Yiynova tablets with Wacom driver"
+[   272.663] (**) UC-Logic Pnboo PN10 Pad: Applying InputClass "Tablet"
+[   272.663] (II) Using input driver 'wacom' for 'UC-Logic Pnboo PN10 Pad'
+[   272.663] (**) UC-Logic Pnboo PN10 Pad: always reports core events
+[   272.663] (**) Option "Device" "/dev/input/event8"
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'stylus' for this device.
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'eraser' for this device.
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'cursor' for this device.
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad: Invalid type 'touch' for this device.
+[   272.664] (II) UC-Logic Pnboo PN10 Pad: type not specified, assuming 'pad'.
+[   272.664] (II) UC-Logic Pnboo PN10 Pad: other types will be automatically added.
+[   272.664] (**) UC-Logic Pnboo PN10 Pad pad: panscroll is 0
+[   272.664] (**) UC-Logic Pnboo PN10 Pad pad: panscroll modified to 13
+[   272.664] (II) UC-Logic Pnboo PN10 Pad pad: hotplugging dependent devices.
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'stylus' for this device.
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'eraser' for this device.
+[   272.664] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'cursor' for this device.
+[   272.666] (EE) UC-Logic Pnboo PN10 Pad pad: Invalid type 'touch' for this device.
+[   272.666] (II) UC-Logic Pnboo PN10 Pad pad: hotplugging completed.
+[   272.688] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb3/3-3/3-3:1.0/0003:5543:004D.000A/input/input37/event8"
+[   272.689] (II) XINPUT: Adding extended input device "UC-Logic Pnboo PN10 Pad pad" (type: PAD, id 11)
+[   272.693] (**) UC-Logic Pnboo PN10 Pad pad: (accel) keeping acceleration scheme 1
+[   272.693] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration profile 0
+[   272.694] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration factor: 2.000
+[   272.694] (**) UC-Logic Pnboo PN10 Pad pad: (accel) acceleration threshold: 4
+[   287.013] (EE) event6  - Logitech Wireless Device PID:4055: client bug: event processing lagging behind by 42ms, your system is too slow
+[   288.338] (EE) event6  - Logitech Wireless Device PID:4055: client bug: event processing lagging behind by 45ms, your system is too slow
+[   288.885] (EE) event6  - Logitech Wireless Device PID:4055: client bug: event processing lagging behind by 40ms, your system is too slow
+[   288.885] (EE) event6  - Logitech Wireless Device PID:4055: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[   294.826] (EE) client bug: timer event6 debounce: scheduled expiry is in the past (-3ms), your system is too slow
+[   294.827] (EE) client bug: timer event6 debounce short: scheduled expiry is in the past (-16ms), your system is too slow
+[   340.627] (EE) client bug: timer event6 debounce: scheduled expiry is in the past (-12ms), your system is too slow
+[   348.868] (EE) client bug: timer event6 debounce: scheduled expiry is in the past (-10ms), your system is too slow
+[   348.868] (EE) client bug: timer event6 debounce short: scheduled expiry is in the past (-23ms), your system is too slow
+[   681.028] (EE) client bug: timer event6 debounce: scheduled expiry is in the past (-21ms), your system is too slow
+[   681.028] (EE) client bug: timer event6 debounce short: scheduled expiry is in the past (-34ms), your system is too slow
+[   996.796] (EE) event3  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 14ms, your system is too slow
+[  1592.135] (II) event2  - Power Button: device removed
+[  1592.152] (II) event14 - Video Bus: device removed
+[  1592.202] (II) event0  - Power Button: device removed
+[  1592.242] (II) event6  - Logitech Wireless Device PID:4055: device removed
+[  1592.279] (II) event10 - HP TrueVision HD: HP TrueVision: device removed
+[  1592.315] (II) event3  - AT Translated Set 2 keyboard: device removed
+[  1592.332] (II) event16 - SynPS/2 Synaptics TouchPad: device removed
+[  1592.355] (II) event13 - HP Wireless hotkeys: device removed
+[  1592.382] (II) event20 - HP WMI hotkeys: device removed
+[  1592.412] (II) event5  - HID 0a5c:4503 Mouse: device removed
+[  1592.464] (II) event4  - HID 0a5c:4502: device removed
+[  1592.537] (II) UnloadModule: "wacom"
+[  1592.538] (II) UnloadModule: "wacom"
+[  1592.538] (II) UnloadModule: "libinput"
+[  1592.538] (II) UnloadModule: "libinput"
+[  1592.539] (II) UnloadModule: "libinput"
+[  1592.539] (II) UnloadModule: "libinput"
+[  1592.539] (II) UnloadModule: "libinput"
+[  1592.539] (II) UnloadModule: "libinput"
+[  1592.539] (II) UnloadModule: "libinput"
+[  1592.540] (II) UnloadModule: "libinput"
+[  1592.540] (II) UnloadModule: "libinput"
+[  1592.540] (II) UnloadModule: "libinput"
+[  1592.542] (II) UnloadModule: "libinput"
+[  1593.994] (II) Server terminated successfully (0). Closing log file.
