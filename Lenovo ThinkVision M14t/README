@@ -1,0 +1,33 @@
+Manufacturer: Lenovo
+Model Name: ThinkVision M14t
+Model Number:
+
+Notes: 
+This device's touch sensor can be configured to operate in either "Android /
+Chrome" mode or "Windows" mode in its OSD. Toggling the switch does not
+appear to trigger any changes in how the device appears to the system. The
+same VID:PID and HID descriptor are used in both cases. See an additional pair
+of sysinfo data at https://github.com/linuxwacom/xf86-input-wacom/issues/174#issuecomment-867810514
+
+VID:PID = 0003:2D1F:524C
+
+The hardware exposes two USB HID endpoints: one with a combination of standard
+multitouch and pen descriptors, and the second with a multitouch-like descriptor
+that only has room for a single contact per report. The two touch descriptors
+use different physical and logical sizes: 309.3mm x 174.0mm (12372 x 6960 points)
+and 309.31mm x 173.99mm (30931 x 17399 points) respectively. The pen descriptor
+appears to be for a tilt-capable AES sensor.
+
+
+Source(s):
+* sysinfo.xBFmtL95fP
+  Jaydon-chai [https://github.com/Jaydon-chai]
+  https://github.com/linuxwacom/wacom-hid-descriptors/issues/157#issuecomment-868952719
+  2021-06-25
+  ANDROID / CHROME MODE
+
+* sysinfo.4trjkKChOo
+  Jaydon-chai [https://github.com/Jaydon-chai]
+  https://github.com/linuxwacom/wacom-hid-descriptors/issues/157#issuecomment-855588271
+  2021-06-06
+  WINDOWS MODE

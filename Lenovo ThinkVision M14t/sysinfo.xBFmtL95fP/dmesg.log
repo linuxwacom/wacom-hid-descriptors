@@ -1,0 +1,212 @@
+[    0.000000] Linux version 5.12.11-300.fc34.x86_64 (mockbuild@bkernel01.iad2.fedoraproject.org) (gcc (GCC) 11.1.1 20210531 (Red Hat 11.1.1-3), GNU ld version 2.35.1-41.fc34) #1 SMP Wed Jun 16 15:47:58 UTC 2021
+[    0.000000] Command line: BOOT_IMAGE=(hd0,gpt5)/vmlinuz-5.12.11-300.fc34.x86_64 USERNAME=UUID=10ce1b66-8d8b-450c-82b3-db51a4b8637b ro USERNAMEflags=subvol=USERNAME00 rhgb quiet
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+--
+[    0.004632] ACPI: XSDT 0x00000000CC5FB188 0000FC (v01 LENOVO TP-R1A   00001090 PTEC 00000002)
+[    0.004636] ACPI: FACP 0x00000000BE69B000 000114 (v06 LENOVO TP-R1A   00001090 PTEC 00000002)
+[    0.004640] ACPI: DSDT 0x00000000BE688000 00D719 (v01 LENOVO TP-R1A   00001090 INTL 20180313)
+[    0.004642] ACPI: FACS 0x00000000CC419000 000040
+[    0.004644] ACPI: SSDT 0x00000000BF951000 000C8C (v01 LENOVO UsbCTabl 00000001 INTL 20180313)
+[    0.004646] ACPI: SSDT 0x00000000BF944000 007216 (v02 LENOVO TP-R1A   00000002 MSFT 04000000)
+[    0.004648] ACPI: IVRS 0x00000000BF943000 0001A4 (v02 LENOVO TP-R1A   00001090 PTEC 00000002)
+[    0.004650] ACPI: SSDT 0x00000000BF905000 000266 (v01 LENOVO STD3     00000001 INTL 20180313)
+[    0.004652] ACPI: SSDT 0x00000000BF8F1000 000632 (v02 LENOVO Tpm2Tabl 00001000 INTL 20180313)
+[    0.004654] ACPI: TPM2 0x00000000BF8F0000 000034 (v03 LENOVO TP-R1A   00001090 PTEC 00000002)
+[    0.004656] ACPI: SSDT 0x00000000BF8EF000 000924 (v01 LENOVO WmiTable 00000001 INTL 20180313)
+--
+[    0.045147] On node 0 totalpages: 5695341
+[    0.045149]   DMA zone: 64 pages used for memmap
+[    0.045149]   DMA zone: 23 pages reserved
+[    0.045150]   DMA zone: 3998 pages, LIFO batch:0
+[    0.045455]   DMA zone: 28770 pages in unavailable ranges
+[    0.045456]   DMA32 zone: 12179 pages used for memmap
+[    0.045457]   DMA32 zone: 779407 pages, LIFO batch:63
+[    0.051567]   DMA32 zone: 35697 pages in unavailable ranges
+[    0.051571]   Normal zone: 76749 pages used for memmap
+[    0.051572]   Normal zone: 4911936 pages, LIFO batch:63
+[    0.089152]   Normal zone: 3264 pages in unavailable ranges
+--
+[    0.280472] ... generic registers:      6
+[    0.280472] ... value mask:             0000ffffffffffff
+[    0.280473] ... max period:             00007fffffffffff
+[    0.280473] ... fixed-purpose events:   0
+[    0.280473] ... event mask:             000000000000003f
+[    0.280531] rcu: Hierarchical SRCU implementation.
+[    0.280895] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.281070] smp: Bringing up secondary CPUs ...
+[    0.281145] x86: Booting SMP configuration:
+[    0.281145] .... node  #0, CPUs:        #1
+[    0.282196] TSC synchronization [CPU#0 -> CPU#1]:
+--
+[    0.728110] amd_uncore: 6  amd_l3 counters detected
+[    0.728519] LVT offset 0 assigned for vector 0x400
+[    0.728741] perf: AMD IBS detected (0x000003ff)
+[    0.728745] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+[    0.730518] Initialise system trusted keyrings
+[    0.730531] Key type blacklist registered
+[    0.730619] workingset: timestamp_bits=36 max_order=23 bucket_order=0
+[    0.731715] zbud: loaded
+[    0.732484] integrity: Platform Keyring initialized
+[    0.735095] NET: Registered protocol family 38
+[    0.735097] xor: automatically using best checksumming function   avx       
+--
+[    1.015959] audit: type=1130 audit(1624645564.745:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    1.022231] audit: type=1130 audit(1624645564.751:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-vconsole-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    1.023847] audit: type=1130 audit(1624645564.753:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    1.039344] audit: type=1130 audit(1624645564.769:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-cmdline-ask comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    1.085468] audit: type=1130 audit(1624645564.815:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-cmdline comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    1.139083] usb 3-3: New USB device found, idVendor=27c6, idProduct=55a4, bcdDevice= 1.00
+[    1.139090] usb 3-3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.139092] usb 3-3: Product: Goodix FingerPrint Device
+[    1.139093] usb 3-3: Manufacturer: Generic
+[    1.162661] usb 1-3: New USB device found, idVendor=30c9, idProduct=0014, bcdDevice= 0.07
+[    1.162671] usb 1-3: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+--
+[    1.256502] usb 3-4: new full-speed USB device number 3 using xhci_hcd
+[    1.279181] r8169 0000:02:00.0 enp2s0: renamed from eth0
+[    1.294540] BTRFS: device label fedora_localhost-live devid 1 transid 87092 /dev/nvme0n1p7 scanned by systemd-udevd (369)
+[    1.296128] BTRFS: device label fedora_localhost-live devid 1 transid 329784 /dev/nvme0n1p8 scanned by systemd-udevd (357)
+[    1.321326] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+[    1.389714] psmouse serio1: elantech: assuming hardware version 4 (with firmware version 0x5f3001)
+[    1.402544] psmouse serio1: elantech: Synaptics capabilities query result 0x90, 0x18, 0x0d.
+[    1.413507] usb 3-4: New USB device found, idVendor=8087, idProduct=0029, bcdDevice= 0.01
+[    1.413517] usb 3-4: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    1.415542] psmouse serio1: elantech: Elan sample query result 00, 0d, a7
+[    1.428618] psmouse serio1: elantech: Elan ic body: 0x11, current fw version: 0x2
+[    1.504618] psmouse serio1: elantech: Trying to set up SMBus access
+[    1.504628] psmouse serio1: elantech: SMbus companion is not ready yet
+[    1.533964] input: ETPS/2 Elantech TrackPoint as /devices/platform/i8042/serio1/input/input8
+[    1.549145] input: ETPS/2 Elantech Touchpad as /devices/platform/i8042/serio1/input/input6
+[    1.690345] [drm] amdgpu kernel modesetting enabled.
+[    1.690436] Virtual CRAT table created for CPU
+[    1.690447] amdgpu: Topology: Add CPU node
+[    1.690517] checking generic (660000000 7e9000) vs hw (660000000 10000000)
+[    1.690520] fb0: switching to amdgpudrmfb from EFI VGA
+--
+[    8.224519] Bluetooth: hci0: Waiting for device to boot
+[    8.240808] Bluetooth: hci0: Device booted in 15935 usecs
+[    8.241987] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-20-1-3.ddc
+[    8.247557] Bluetooth: hci0: Applying Intel DDC parameters completed
+[    8.256628] Bluetooth: hci0: Firmware revision 0.0 build 118 week 15 2021
+[    8.412805] Bluetooth: hci0: MSFT filter_enable is already on
+[   15.220683] rfkill: input handler disabled
+[   15.339995] Bluetooth: RFCOMM TTY layer initialized
+[   15.340011] Bluetooth: RFCOMM socket layer initialized
+[   15.340098] Bluetooth: RFCOMM ver 1.11
+[19019.488172] rfkill: input handler enabled
+--
+[21661.552208] LVT offset 0 assigned for vector 0x400
+[21661.553305] Enabling non-boot CPUs ...
+[21661.553344] x86: Booting SMP configuration:
+[21661.553345] smpboot: Booting Node 0 Processor 1 APIC 0x1
+[21661.536728] microcode: CPU1: patch_level=0x08600103
+[21661.554376] ACPI: \_SB_.PLTF.C001: Found 3 idle states
+[21661.554652] CPU1 is up
+[21661.554682] smpboot: Booting Node 0 Processor 2 APIC 0x2
+[21661.553993] microcode: CPU2: patch_level=0x08600103
+[21661.555421] ACPI: \_SB_.PLTF.C002: Found 3 idle states
+[21661.555638] CPU2 is up
+--
+[21664.596691] Bluetooth: hci0: Waiting for device to boot
+[21664.611636] Bluetooth: hci0: Device booted in 14665 usecs
+[21664.611654] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-20-1-3.ddc
+[21664.617813] Bluetooth: hci0: Applying Intel DDC parameters completed
+[21664.626736] Bluetooth: hci0: Firmware revision 0.0 build 118 week 15 2021
+[21664.782849] Bluetooth: hci0: MSFT filter_enable is already on
+[21669.355794] wlp3s0: authenticate with 64:66:24:32:19:bd
+[21669.376107] wlp3s0: send auth to 64:66:24:32:19:bd (try 1/3)
+[21669.614343] wlp3s0: send auth to 64:66:24:32:19:bd (try 2/3)
+[21669.616639] wlp3s0: authenticated
+[21669.617226] wlp3s0: associate with 64:66:24:32:19:bd (try 1/3)
+--
+[22462.151879] Bluetooth: hci0: Waiting for device to boot
+[22462.167127] Bluetooth: hci0: Device booted in 14960 usecs
+[22462.168165] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-20-1-3.ddc
+[22462.173877] Bluetooth: hci0: Applying Intel DDC parameters completed
+[22462.182877] Bluetooth: hci0: Firmware revision 0.0 build 118 week 15 2021
+[22462.339037] Bluetooth: hci0: MSFT filter_enable is already on
+[22466.998115] wlp3s0: authenticate with 64:66:24:32:19:bd
+[22467.017545] wlp3s0: send auth to 64:66:24:32:19:bd (try 1/3)
+[22467.136469] wlp3s0: authenticated
+[22467.137231] wlp3s0: associate with 64:66:24:32:19:bd (try 1/3)
+[22467.139191] wlp3s0: RX AssocResp from 64:66:24:32:19:bd (capab=0x1011 status=0 aid=4)
+--
+[25125.531790] Bluetooth: hci0: Waiting for device to boot
+[25125.546799] Bluetooth: hci0: Device booted in 14712 usecs
+[25125.546817] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-20-1-3.ddc
+[25125.552898] Bluetooth: hci0: Applying Intel DDC parameters completed
+[25125.561894] Bluetooth: hci0: Firmware revision 0.0 build 118 week 15 2021
+[25125.717958] Bluetooth: hci0: MSFT filter_enable is already on
+[25127.506125] wlp3s0: authenticate with 64:66:24:32:19:bd
+[25127.517474] wlp3s0: send auth to 64:66:24:32:19:bd (try 1/3)
+[25127.547791] wlp3s0: authenticated
+[25127.548233] wlp3s0: associate with 64:66:24:32:19:bd (try 1/3)
+[25127.550012] wlp3s0: RX AssocResp from 64:66:24:32:19:bd (capab=0x1011 status=0 aid=4)
+--
+[26327.198543] Bluetooth: hci0: Waiting for device to boot
+[26327.213674] Bluetooth: hci0: Device booted in 14849 usecs
+[26327.214746] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-20-1-3.ddc
+[26327.220461] Bluetooth: hci0: Applying Intel DDC parameters completed
+[26327.229529] Bluetooth: hci0: Firmware revision 0.0 build 118 week 15 2021
+[26327.385447] Bluetooth: hci0: MSFT filter_enable is already on
+[26332.426867] wlp3s0: authenticate with 64:66:24:32:19:bd
+[26332.443478] wlp3s0: send auth to 64:66:24:32:19:bd (try 1/3)
+[26332.565545] wlp3s0: authenticated
+[26332.566245] wlp3s0: associate with 64:66:24:32:19:bd (try 1/3)
+[26332.568039] wlp3s0: RX AssocResp from 64:66:24:32:19:bd (capab=0x1011 status=0 aid=5)
+--
+[27080.814618] Bluetooth: hci0: Waiting for device to boot
+[27080.829880] Bluetooth: hci0: Device booted in 14963 usecs
+[27080.829899] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-20-1-3.ddc
+[27080.835807] Bluetooth: hci0: Applying Intel DDC parameters completed
+[27080.844699] Bluetooth: hci0: Firmware revision 0.0 build 118 week 15 2021
+[27081.000603] Bluetooth: hci0: MSFT filter_enable is already on
+[27084.472112] wlp3s0: authenticate with 64:66:24:32:19:bd
+[27084.488666] wlp3s0: send auth to 64:66:24:32:19:bd (try 1/3)
+[27084.603648] wlp3s0: authenticated
+[27084.604240] wlp3s0: associate with 64:66:24:32:19:bd (try 1/3)
+[27084.605997] wlp3s0: RX AssocResp from 64:66:24:32:19:bd (capab=0x1011 status=0 aid=5)
+--
+[29417.954169] usb 1-1: Product: USB2.1 Hub
+[29417.954172] usb 1-1: Manufacturer: Generic
+[29417.995554] hub 1-1:1.0: USB hub found
+[29417.997029] hub 1-1:1.0: 4 ports detected
+[29419.342283] usb 1-1.1: new full-speed USB device number 4 using xhci_hcd
+[29419.452607] usb 1-1.1: New USB device found, idVendor=2d1f, idProduct=524c, bcdDevice= 0.01
+[29419.452620] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[29419.452624] usb 1-1.1: Product: Pen and multitouch sensor
+[29419.452627] usb 1-1.1: Manufacturer: Wacom Co.,Ltd.
+[29419.541620] input: Wacom Co.,Ltd. Pen and multitouch sensor Touchscreen as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input17
+[29419.541901] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input18
+[29419.541976] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input19
+[29419.542160] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input20
+[29419.542882] input: Wacom Co.,Ltd. Pen and multitouch sensor Mouse as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input21
+[29419.543337] hid-generic 0003:2D1F:524C.0001: input,hiddev96,hidraw0: USB HID v1.11 Mouse [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:04:00.3-1.1/input0
+[29419.549097] input: Wacom Co.,Ltd. Pen and multitouch sensor Touchscreen as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.1/0003:2D1F:524C.0002/input/input22
+[29419.549538] hid-generic 0003:2D1F:524C.0002: input,hiddev97,hidraw1: USB HID v1.11 Device [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:04:00.3-1.1/input1
+[29419.691361] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input23
+[29419.691737] input: Wacom Co.,Ltd. Pen and multitouch sensor UNKNOWN as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input24
+[29419.691948] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input25
+[29419.692231] input: Wacom Co.,Ltd. Pen and multitouch sensor UNKNOWN as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input26
+[29419.692406] input: Wacom Co.,Ltd. Pen and multitouch sensor Mouse as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0001/input/input27
+[29419.692711] hid-multitouch 0003:2D1F:524C.0001: input,hiddev96,hidraw0: USB HID v1.11 Mouse [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:04:00.3-1.1/input0
+[29419.716882] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.1/0003:2D1F:524C.0002/input/input28
+[29419.717257] hid-multitouch 0003:2D1F:524C.0002: input,hiddev97,hidraw1: USB HID v1.11 Device [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:04:00.3-1.1/input1
+[29424.588852] usb 1-1.1: USB disconnect, device number 4
+[29525.677234] usb 1-1.1: new full-speed USB device number 5 using xhci_hcd
+[29525.789341] usb 1-1.1: New USB device found, idVendor=2d1f, idProduct=524c, bcdDevice= 0.01
+[29525.789353] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[29525.789357] usb 1-1.1: Product: Pen and multitouch sensor
+[29525.789360] usb 1-1.1: Manufacturer: Wacom Co.,Ltd.
+[29525.885563] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0003/input/input29
+[29525.885927] input: Wacom Co.,Ltd. Pen and multitouch sensor UNKNOWN as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0003/input/input30
+[29525.886119] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0003/input/input31
+[29525.886754] input: Wacom Co.,Ltd. Pen and multitouch sensor UNKNOWN as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0003/input/input32
+[29525.887076] input: Wacom Co.,Ltd. Pen and multitouch sensor Mouse as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.0/0003:2D1F:524C.0003/input/input33
+[29525.887880] hid-multitouch 0003:2D1F:524C.0003: input,hiddev96,hidraw0: USB HID v1.11 Mouse [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:04:00.3-1.1/input0
+[29525.903303] input: Wacom Co.,Ltd. Pen and multitouch sensor as /devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.1/1-1.1:1.1/0003:2D1F:524C.0004/input/input34
+[29525.903864] hid-multitouch 0003:2D1F:524C.0004: input,hiddev97,hidraw1: USB HID v1.11 Device [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:04:00.3-1.1/input1
+[29535.837748] WARNING! power/level is deprecated; use power/control instead
