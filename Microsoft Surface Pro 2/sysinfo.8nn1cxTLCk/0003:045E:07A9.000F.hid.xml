@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>2</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, application collection, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
+      <usage>digitizer_invert<!-- Invert (3Ch, momentary control) --></usage>
+      <usage>0</usage>
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>6</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>2</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <logical_maximum>23472</logical_maximum>
+      <physical_maximum>23472</physical_maximum>
+      <unit>
+        <si_linear>
+          <centimeter/>
+        </si_linear>
+      </unit>
+      <unit_exponent>13</unit_exponent>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_maximum>13203</logical_maximum>
+      <physical_maximum>13203</physical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <physical_maximum>0</physical_maximum>
+      <unit>
+        <none/>
+      </unit>
+      <unit_exponent>0</unit_exponent>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>1023</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+    <usage>0</usage>
+    <report_size>8</report_size>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>3</report_id>
+    <usage>0</usage>
+    <report_count>16</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>5</report_id>
+    <usage>0</usage>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>7</report_id>
+    <usage>0</usage>
+    <report_count>72</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>8</report_id>
+    <usage>0</usage>
+    <report_count>3</report_count>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_id>9</report_id>
+    <usage>consumer_volume_inc<!-- Volume increment (E9h, re-trigger control) --></usage>
+    <usage>consumer_volume_dec<!-- Volume decrement (EAh, re-trigger control) --></usage>
+    <report_size>1</report_size>
+    <report_count>2</report_count>
+    <input>
+      <variable/>
+    </input>
+    <usage>consumer_mute<!-- Mute (E2h, on/off control) --></usage>
+    <report_count>1</report_count>
+    <input>
+      <variable/>
+      <relative/>
+    </input>
+    <report_count>5</report_count>
+    <input>
+      <constant/>
+      <variable/>
+      <relative/>
+    </input>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>10</report_id>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage>keyboard_kb_delete_forward<!-- Keyboard Delete Forward (4Ch, selector) --></usage>
+    <usage>keyboard_kb_f14<!-- Keyboard F14 (69h, selector) --></usage>
+    <usage>keyboard_kb_f15<!-- Keyboard F15 (6Ah, selector) --></usage>
+    <usage>keyboard_kb_leftcontrol<!-- Keyboard left control (E0h, dynamic value) --></usage>
+    <usage>keyboard_kb_leftalt<!-- Keyboard left alt (E2h, dynamic value) --></usage>
+    <usage>keyboard_kb_left_gui<!-- Keyboard left GUI (E3h, dynamic value) --></usage>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>6</report_count>
+    <input>
+      <variable/>
+    </input>
+    <report_count>26</report_count>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>12</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>02</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>6</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
