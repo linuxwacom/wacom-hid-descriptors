@@ -1,0 +1,1366 @@
+[    46.564] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[    46.564] _XSERVTransMakeAllCOTSServerListeners: server already running
+[    46.565] (--) Log file renamed from "/var/log/Xorg.pid-3325.log" to "/var/log/Xorg.1.log"
+[    46.566] 
+X.Org X Server 1.20.11
+X Protocol Version 11, Revision 0
+[    46.566] Build Operating System: linux Ubuntu
+[    46.566] Current Operating System: Linux HOSTNAME 5.4.0-91-generic #102-Ubuntu SMP Fri Nov 5 16:31:28 UTC 2021 x86_64
+[    46.566] Kernel command line: BOOT_IMAGE=/vmlinuz-5.4.0-91-generic root=/dev/mapper/ubuntu--vg-root ro quiet splash
+[    46.566] Build Date: 06 July 2021  10:17:51AM
+[    46.566] xorg-server 2:1.20.11-1ubuntu1~20.04.2 (For technical support please see http://www.ubuntu.com/support) 
+[    46.566] Current version of pixman: 0.38.4
+[    46.566] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    46.566] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    46.566] (==) Log file: "/var/log/Xorg.1.log", Time: Sat Dec  4 08:35:42 2021
+[    46.566] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    46.567] (==) No Layout section.  Using the first Screen section.
+[    46.567] (==) No screen section available. Using defaults.
+[    46.567] (**) |-->Screen "Default Screen Section" (0)
+[    46.567] (**) |   |-->Monitor "<default monitor>"
+[    46.567] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    46.567] (==) Automatically adding devices
+[    46.567] (==) Automatically enabling devices
+[    46.567] (==) Automatically adding GPU devices
+[    46.567] (==) Automatically binding GPU devices
+[    46.567] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    46.567] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    46.567] 	Entry deleted from font path.
+[    46.567] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    46.567] 	Entry deleted from font path.
+[    46.567] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    46.567] 	Entry deleted from font path.
+[    46.567] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    46.567] 	Entry deleted from font path.
+[    46.567] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    46.567] 	Entry deleted from font path.
+[    46.567] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[    46.567] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    46.567] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    46.567] (II) Loader magic: 0x55aff0360020
+[    46.567] (II) Module ABI versions:
+[    46.567] 	X.Org ANSI C Emulation: 0.4
+[    46.567] 	X.Org Video Driver: 24.1
+[    46.567] 	X.Org XInput driver : 24.1
+[    46.567] 	X.Org Server Extension : 10.0
+[    46.569] (++) using VT number 2
+
+[    46.572] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_32
+[    46.572] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    46.573] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
+[    46.575] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/x86_64-linux-gnu/nvidia/xorg,/usr/lib/xorg/modules"
+[    46.577] (--) PCI:*(8@0:0:0) 10de:13d8:19da:b282 rev 161, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[    46.577] (II) LoadModule: "glx"
+[    46.577] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    46.578] (II) Module glx: vendor="X.Org Foundation"
+[    46.578] 	compiled for 1.20.11, module version = 1.0.0
+[    46.578] 	ABI class: X.Org Server Extension, version 10.0
+[    46.578] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[    46.578] 	loading driver: nvidia
+[    46.836] (==) Matched nvidia as autoconfigured driver 0
+[    46.836] (==) Matched nouveau as autoconfigured driver 1
+[    46.836] (==) Matched modesetting as autoconfigured driver 2
+[    46.836] (==) Matched fbdev as autoconfigured driver 3
+[    46.836] (==) Matched vesa as autoconfigured driver 4
+[    46.836] (==) Assigned the driver to the xf86ConfigLayout
+[    46.836] (II) LoadModule: "nvidia"
+[    46.837] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/nvidia_drv.so
+[    46.837] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    46.838] 	compiled for 1.6.99.901, module version = 1.0.0
+[    46.838] 	Module class: X.Org Video Driver
+[    46.838] (II) LoadModule: "nouveau"
+[    46.838] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[    46.839] (II) Module nouveau: vendor="X.Org Foundation"
+[    46.839] 	compiled for 1.20.3, module version = 1.0.16
+[    46.839] 	Module class: X.Org Video Driver
+[    46.839] 	ABI class: X.Org Video Driver, version 24.0
+[    46.839] (II) LoadModule: "modesetting"
+[    46.839] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    46.840] (II) Module modesetting: vendor="X.Org Foundation"
+[    46.840] 	compiled for 1.20.11, module version = 1.20.11
+[    46.840] 	Module class: X.Org Video Driver
+[    46.840] 	ABI class: X.Org Video Driver, version 24.1
+[    46.840] (II) LoadModule: "fbdev"
+[    46.840] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    46.840] (II) Module fbdev: vendor="X.Org Foundation"
+[    46.840] 	compiled for 1.20.1, module version = 0.5.0
+[    46.840] 	Module class: X.Org Video Driver
+[    46.841] 	ABI class: X.Org Video Driver, version 24.0
+[    46.841] (II) LoadModule: "vesa"
+[    46.841] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    46.841] (II) Module vesa: vendor="X.Org Foundation"
+[    46.841] 	compiled for 1.20.4, module version = 2.4.0
+[    46.841] 	Module class: X.Org Video Driver
+[    46.841] 	ABI class: X.Org Video Driver, version 24.0
+[    46.841] (II) NVIDIA dlloader X Driver  460.91.03  Fri Jul  2 05:48:55 UTC 2021
+[    46.841] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    46.841] (II) NOUVEAU driver Date:   Mon Jan 28 23:25:58 2019 -0500
+[    46.841] (II) NOUVEAU driver for NVIDIA chipset families :
+[    46.841] 	RIVA TNT            (NV04)
+[    46.842] 	RIVA TNT2           (NV05)
+[    46.842] 	GeForce 256         (NV10)
+[    46.842] 	GeForce 2           (NV11, NV15)
+[    46.842] 	GeForce 4MX         (NV17, NV18)
+[    46.842] 	GeForce 3           (NV20)
+[    46.842] 	GeForce 4Ti         (NV25, NV28)
+[    46.842] 	GeForce FX          (NV3x)
+[    46.842] 	GeForce 6           (NV4x)
+[    46.843] 	GeForce 7           (G7x)
+[    46.843] 	GeForce 8           (G8x)
+[    46.843] 	GeForce 9           (G9x)
+[    46.843] 	GeForce GTX 2xx/3xx (GT2xx)
+[    46.843] 	GeForce GTX 4xx/5xx (GFxxx)
+[    46.843] 	GeForce GTX 6xx/7xx (GKxxx)
+[    46.843] 	GeForce GTX 9xx     (GMxxx)
+[    46.843] 	GeForce GTX 10xx    (GPxxx)
+[    46.843] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    46.843] (II) FBDEV: driver for framebuffer: fbdev
+[    46.843] (II) VESA: driver for VESA chipsets: vesa
+[    46.843] (II) systemd-logind: releasing fd for 226:0
+[    46.844] (II) Loading sub module "fb"
+[    46.844] (II) LoadModule: "fb"
+[    46.844] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    46.844] (II) Module fb: vendor="X.Org Foundation"
+[    46.844] 	compiled for 1.20.11, module version = 1.0.0
+[    46.844] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    46.844] (II) Loading sub module "wfb"
+[    46.844] (II) LoadModule: "wfb"
+[    46.844] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[    46.845] (II) Module wfb: vendor="X.Org Foundation"
+[    46.845] 	compiled for 1.20.11, module version = 1.0.0
+[    46.845] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    46.845] (II) Loading sub module "ramdac"
+[    46.845] (II) LoadModule: "ramdac"
+[    46.845] (II) Module "ramdac" already built-in
+[    46.845] (WW) Falling back to old probe method for modesetting
+[    46.845] (WW) Falling back to old probe method for fbdev
+[    46.846] (II) Loading sub module "fbdevhw"
+[    46.846] (II) LoadModule: "fbdevhw"
+[    46.846] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    46.846] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    46.846] 	compiled for 1.20.11, module version = 0.0.2
+[    46.846] 	ABI class: X.Org Video Driver, version 24.1
+[    46.846] (EE) open /dev/fb0: No such file or directory
+[    46.846] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    46.846] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[    46.846] (==) NVIDIA(0): RGB weight 888
+[    46.846] (==) NVIDIA(0): Default visual is TrueColor
+[    46.846] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    46.846] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[    46.846] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[    46.846] (**) NVIDIA(0): Enabling 2D acceleration
+[    46.846] (II) Loading sub module "glxserver_nvidia"
+[    46.847] (II) LoadModule: "glxserver_nvidia"
+[    46.847] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/libglxserver_nvidia.so
+[    46.855] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    46.855] 	compiled for 1.6.99.901, module version = 1.0.0
+[    46.855] 	Module class: X.Org Server Extension
+[    46.855] (II) NVIDIA GLX Module  460.91.03  Fri Jul  2 05:46:33 UTC 2021
+[    46.855] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    46.857] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:8:0:0
+[    46.857] (--) NVIDIA(0):     DFP-0
+[    46.857] (--) NVIDIA(0):     DFP-1
+[    46.857] (--) NVIDIA(0):     DFP-2 (boot)
+[    46.857] (--) NVIDIA(0):     DFP-3
+[    46.858] (II) NVIDIA(0): NVIDIA GPU GeForce GTX 960 (GM204-A) at PCI:8:0:0 (GPU-0)
+[    46.858] (--) NVIDIA(0): Memory: 3145728 kBytes
+[    46.858] (--) NVIDIA(0): VideoBIOS: 84.04.35.00.07
+[    46.858] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[    46.858] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    46.858] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    46.858] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    46.858] (--) NVIDIA(GPU-0): 
+[    46.889] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    46.889] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    46.889] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    46.889] (--) NVIDIA(GPU-0): 
+[    46.920] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    46.920] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    46.920] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    46.920] (--) NVIDIA(GPU-0): 
+[    46.951] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    46.951] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    46.951] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    46.951] (--) NVIDIA(GPU-0): 
+[    46.964] (==) NVIDIA(0): 
+[    46.965] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[    46.965] (==) NVIDIA(0):     will be used as the requested mode.
+[    46.965] (==) NVIDIA(0): 
+[    46.965] (II) NVIDIA(0): Validated MetaModes:
+[    46.965] (II) NVIDIA(0):    
+[    46.965] (II) NVIDIA(0):     "DFP-2:nvidia-auto-select,DFP-1:nvidia-auto-select,DFP-3:nvidia-auto-select"
+[    46.965] (II) NVIDIA(0): Virtual screen size determined to be 5760 x 1080
+[    46.970] (--) NVIDIA(0): DPI set to (92, 91); computed from "UseEdidDpi" X config
+[    46.970] (--) NVIDIA(0):     option
+[    46.970] (II) UnloadModule: "nouveau"
+[    46.970] (II) Unloading nouveau
+[    46.970] (II) UnloadModule: "modesetting"
+[    46.970] (II) Unloading modesetting
+[    46.970] (II) UnloadModule: "fbdev"
+[    46.970] (II) Unloading fbdev
+[    46.970] (II) UnloadSubModule: "fbdevhw"
+[    46.970] (II) Unloading fbdevhw
+[    46.970] (II) UnloadModule: "vesa"
+[    46.970] (II) Unloading vesa
+[    46.971] (II) NVIDIA: Using 6144.00 MB of virtual memory for indirect memory
+[    46.971] (II) NVIDIA:     access.
+[    46.974] (WW) NVIDIA(0): ACPI: AC power state information is not available under
+[    46.974] (WW) NVIDIA(0):     /sys/class/power_supply/ , nor under
+[    46.974] (WW) NVIDIA(0):     /proc/acpi/ac_adapter/
+[    47.005] (II) NVIDIA(0): Setting mode "DFP-2:nvidia-auto-select,DFP-1:nvidia-auto-select,DFP-3:nvidia-auto-select"
+[    47.163] (==) NVIDIA(0): Disabling shared memory pixmaps
+[    47.163] (==) NVIDIA(0): Backing store enabled
+[    47.163] (==) NVIDIA(0): Silken mouse enabled
+[    47.163] (==) NVIDIA(0): DPMS enabled
+[    47.163] (II) Loading sub module "dri2"
+[    47.163] (II) LoadModule: "dri2"
+[    47.163] (II) Module "dri2" already built-in
+[    47.163] (II) NVIDIA(0): [DRI2] Setup complete
+[    47.163] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[    47.163] (II) Initializing extension Generic Event Extension
+[    47.164] (II) Initializing extension SHAPE
+[    47.164] (II) Initializing extension MIT-SHM
+[    47.164] (II) Initializing extension XInputExtension
+[    47.164] (II) Initializing extension XTEST
+[    47.164] (II) Initializing extension BIG-REQUESTS
+[    47.164] (II) Initializing extension SYNC
+[    47.164] (II) Initializing extension XKEYBOARD
+[    47.164] (II) Initializing extension XC-MISC
+[    47.165] (II) Initializing extension SECURITY
+[    47.165] (II) Initializing extension XFIXES
+[    47.165] (II) Initializing extension RENDER
+[    47.165] (II) Initializing extension RANDR
+[    47.165] (II) Initializing extension COMPOSITE
+[    47.165] (II) Initializing extension DAMAGE
+[    47.165] (II) Initializing extension MIT-SCREEN-SAVER
+[    47.165] (II) Initializing extension DOUBLE-BUFFER
+[    47.166] (II) Initializing extension RECORD
+[    47.166] (II) Initializing extension DPMS
+[    47.166] (II) Initializing extension Present
+[    47.166] (II) Initializing extension DRI3
+[    47.166] (II) Initializing extension X-Resource
+[    47.166] (II) Initializing extension XVideo
+[    47.166] (II) Initializing extension XVideo-MotionCompensation
+[    47.166] (II) Initializing extension SELinux
+[    47.166] (II) SELinux: Disabled on system
+[    47.166] (II) Initializing extension GLX
+[    47.166] (II) Initializing extension GLX
+[    47.166] (II) Indirect GLX disabled.
+[    47.166] (II) GLX: Another vendor is already registered for screen 0
+[    47.166] (II) Initializing extension XFree86-VidModeExtension
+[    47.167] (II) Initializing extension XFree86-DGA
+[    47.167] (II) Initializing extension XFree86-DRI
+[    47.167] (II) Initializing extension DRI2
+[    47.167] (II) Initializing extension NV-GLX
+[    47.167] (II) Initializing extension NV-CONTROL
+[    47.167] (II) Initializing extension XINERAMA
+[    47.210] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    47.210] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    47.210] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    47.210] (II) LoadModule: "libinput"
+[    47.210] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    47.211] (II) Module libinput: vendor="X.Org Foundation"
+[    47.211] 	compiled for 1.20.4, module version = 0.29.0
+[    47.211] 	Module class: X.Org XInput Driver
+[    47.211] 	ABI class: X.Org XInput driver, version 24.1
+[    47.211] (II) Using input driver 'libinput' for 'Power Button'
+[    47.212] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 42 paused 0
+[    47.213] (**) Power Button: always reports core events
+[    47.213] (**) Option "Device" "/dev/input/event2"
+[    47.213] (**) Option "_source" "server/udev"
+[    47.215] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    47.215] (II) event2  - Power Button: device is a keyboard
+[    47.215] (II) event2  - Power Button: device removed
+[    47.215] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[    47.215] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    47.216] (**) Option "xkb_model" "pc105"
+[    47.216] (**) Option "xkb_layout" "ch"
+[    47.236] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    47.236] (II) event2  - Power Button: device is a keyboard
+[    47.237] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[    47.237] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    47.237] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    47.237] (II) Using input driver 'libinput' for 'Video Bus'
+[    47.238] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 45 paused 0
+[    47.238] (**) Video Bus: always reports core events
+[    47.238] (**) Option "Device" "/dev/input/event3"
+[    47.238] (**) Option "_source" "server/udev"
+[    47.240] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[    47.240] (II) event3  - Video Bus: device is a keyboard
+[    47.240] (II) event3  - Video Bus: device removed
+[    47.240] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:22/LNXVIDEO:01/input/input3/event3"
+[    47.240] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    47.240] (**) Option "xkb_model" "pc105"
+[    47.240] (**) Option "xkb_layout" "ch"
+[    47.242] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[    47.242] (II) event3  - Video Bus: device is a keyboard
+[    47.243] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    47.243] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    47.243] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    47.243] (II) Using input driver 'libinput' for 'Power Button'
+[    47.244] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 46 paused 0
+[    47.244] (**) Power Button: always reports core events
+[    47.244] (**) Option "Device" "/dev/input/event1"
+[    47.244] (**) Option "_source" "server/udev"
+[    47.245] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    47.245] (II) event1  - Power Button: device is a keyboard
+[    47.245] (II) event1  - Power Button: device removed
+[    47.245] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    47.245] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    47.245] (**) Option "xkb_model" "pc105"
+[    47.245] (**) Option "xkb_layout" "ch"
+[    47.247] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    47.247] (II) event1  - Power Button: device is a keyboard
+[    47.247] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[    47.247] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[    47.247] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    47.247] (II) Using input driver 'libinput' for 'Sleep Button'
+[    47.249] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 47 paused 0
+[    47.249] (**) Sleep Button: always reports core events
+[    47.249] (**) Option "Device" "/dev/input/event0"
+[    47.249] (**) Option "_source" "server/udev"
+[    47.250] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[    47.250] (II) event0  - Sleep Button: device is a keyboard
+[    47.250] (II) event0  - Sleep Button: device removed
+[    47.250] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[    47.250] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[    47.250] (**) Option "xkb_model" "pc105"
+[    47.250] (**) Option "xkb_layout" "ch"
+[    47.251] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[    47.252] (II) event0  - Sleep Button: device is a keyboard
+[    47.253] (II) config/udev: Adding input device Jabra Link 380 (/dev/input/event5)
+[    47.253] (**) Jabra Link 380: Ignoring device from InputClass "Jabra"
+[    47.254] (II) config/udev: Adding input device unspecified ErgoDox ergonomic keyboard (/dev/input/event4)
+[    47.254] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "evdev keyboard catchall"
+[    47.254] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "libinput keyboard catchall"
+[    47.254] (II) Using input driver 'libinput' for 'unspecified ErgoDox ergonomic keyboard'
+[    47.255] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 48 paused 0
+[    47.255] (**) unspecified ErgoDox ergonomic keyboard: always reports core events
+[    47.255] (**) Option "Device" "/dev/input/event4"
+[    47.255] (**) Option "_source" "server/udev"
+[    47.257] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[    47.257] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[    47.257] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[    47.257] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3.3/2-3.3:1.0/0003:1D50:6028.0002/input/input4/event4"
+[    47.257] (II) XINPUT: Adding extended input device "unspecified ErgoDox ergonomic keyboard" (type: KEYBOARD, id 10)
+[    47.257] (**) Option "xkb_model" "pc105"
+[    47.257] (**) Option "xkb_layout" "ch"
+[    47.260] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[    47.260] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[    47.262] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event6)
+[    47.262] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[    47.262] (**) Logitech USB Optical Mouse: Applying InputClass "libinput pointer catchall"
+[    47.262] (II) Using input driver 'libinput' for 'Logitech USB Optical Mouse'
+[    47.264] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 49 paused 0
+[    47.264] (**) Logitech USB Optical Mouse: always reports core events
+[    47.264] (**) Option "Device" "/dev/input/event6"
+[    47.264] (**) Option "_source" "server/udev"
+[    47.265] (II) event6  - Logitech USB Optical Mouse: is tagged by udev as: Mouse
+[    47.265] (II) event6  - Logitech USB Optical Mouse: device is a pointer
+[    47.266] (II) event6  - Logitech USB Optical Mouse: device removed
+[    47.266] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3.4/2-3.4:1.0/0003:046D:C077.0003/input/input6/event6"
+[    47.266] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 11)
+[    47.266] (**) Option "AccelerationScheme" "none"
+[    47.266] (**) Logitech USB Optical Mouse: (accel) selected scheme none/0
+[    47.266] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[    47.266] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[    47.268] (II) event6  - Logitech USB Optical Mouse: is tagged by udev as: Mouse
+[    47.268] (II) event6  - Logitech USB Optical Mouse: device is a pointer
+[    47.269] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[    47.269] (II) No input driver specified, ignoring this device.
+[    47.269] (II) This device may have been added with another device file.
+[    47.269] (II) config/udev: Adding input device UVC Camera (046d:0990) (/dev/input/event8)
+[    47.269] (**) UVC Camera (046d:0990): Applying InputClass "evdev keyboard catchall"
+[    47.269] (**) UVC Camera (046d:0990): Applying InputClass "libinput keyboard catchall"
+[    47.269] (II) Using input driver 'libinput' for 'UVC Camera (046d:0990)'
+[    47.271] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 50 paused 0
+[    47.271] (**) UVC Camera (046d:0990): always reports core events
+[    47.271] (**) Option "Device" "/dev/input/event8"
+[    47.271] (**) Option "_source" "server/udev"
+[    47.273] (II) event8  - UVC Camera (046d:0990): is tagged by udev as: Keyboard
+[    47.273] (II) event8  - UVC Camera (046d:0990): device is a keyboard
+[    47.273] (II) event8  - UVC Camera (046d:0990): device removed
+[    47.273] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-5/2-5:1.0/input/input8/event8"
+[    47.273] (II) XINPUT: Adding extended input device "UVC Camera (046d:0990)" (type: KEYBOARD, id 12)
+[    47.273] (**) Option "xkb_model" "pc105"
+[    47.273] (**) Option "xkb_layout" "ch"
+[    47.274] (II) event8  - UVC Camera (046d:0990): is tagged by udev as: Keyboard
+[    47.275] (II) event8  - UVC Camera (046d:0990): device is a keyboard
+[    47.275] (II) config/udev: Adding input device HDA Intel PCH Line Out (/dev/input/event10)
+[    47.275] (II) No input driver specified, ignoring this device.
+[    47.275] (II) This device may have been added with another device file.
+[    47.276] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event9)
+[    47.276] (II) No input driver specified, ignoring this device.
+[    47.276] (II) This device may have been added with another device file.
+[    47.276] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event11)
+[    47.276] (II) No input driver specified, ignoring this device.
+[    47.276] (II) This device may have been added with another device file.
+[    47.277] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event12)
+[    47.277] (II) No input driver specified, ignoring this device.
+[    47.277] (II) This device may have been added with another device file.
+[    47.277] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event13)
+[    47.277] (II) No input driver specified, ignoring this device.
+[    47.277] (II) This device may have been added with another device file.
+[    47.278] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event14)
+[    47.278] (II) No input driver specified, ignoring this device.
+[    47.278] (II) This device may have been added with another device file.
+[    47.278] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event15)
+[    47.278] (II) No input driver specified, ignoring this device.
+[    47.279] (II) This device may have been added with another device file.
+[    47.279] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event16)
+[    47.279] (II) No input driver specified, ignoring this device.
+[    47.279] (II) This device may have been added with another device file.
+[    47.280] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=12 (/dev/input/event17)
+[    47.280] (II) No input driver specified, ignoring this device.
+[    47.280] (II) This device may have been added with another device file.
+[    47.284] (II) config/udev: Adding input device Nuvoton w836x7hg Infrared Remote Transceiver (/dev/input/event7)
+[    47.284] (**) Nuvoton w836x7hg Infrared Remote Transceiver: Applying InputClass "evdev keyboard catchall"
+[    47.284] (**) Nuvoton w836x7hg Infrared Remote Transceiver: Applying InputClass "libinput keyboard catchall"
+[    47.284] (II) Using input driver 'libinput' for 'Nuvoton w836x7hg Infrared Remote Transceiver'
+[    47.286] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 51 paused 0
+[    47.286] (**) Nuvoton w836x7hg Infrared Remote Transceiver: always reports core events
+[    47.286] (**) Option "Device" "/dev/input/event7"
+[    47.286] (**) Option "_source" "server/udev"
+[    47.287] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: is tagged by udev as: Keyboard Pointingstick
+[    47.287] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: device is a pointer
+[    47.287] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: device is a keyboard
+[    47.288] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: device removed
+[    47.288] (II) libinput: Nuvoton w836x7hg Infrared Remote Transceiver: needs a virtual subdevice
+[    47.288] (**) Option "config_info" "udev:/sys/devices/pnp0/00:02/rc/rc0/input7/event7"
+[    47.288] (II) XINPUT: Adding extended input device "Nuvoton w836x7hg Infrared Remote Transceiver" (type: MOUSE, id 13)
+[    47.288] (**) Option "AccelerationScheme" "none"
+[    47.288] (**) Nuvoton w836x7hg Infrared Remote Transceiver: (accel) selected scheme none/0
+[    47.288] (**) Nuvoton w836x7hg Infrared Remote Transceiver: (accel) acceleration factor: 2.000
+[    47.288] (**) Nuvoton w836x7hg Infrared Remote Transceiver: (accel) acceleration threshold: 4
+[    47.290] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: is tagged by udev as: Keyboard Pointingstick
+[    47.290] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: device is a pointer
+[    47.290] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: device is a keyboard
+[    47.296] (**) Nuvoton w836x7hg Infrared Remote Transceiver: Applying InputClass "evdev keyboard catchall"
+[    47.296] (**) Nuvoton w836x7hg Infrared Remote Transceiver: Applying InputClass "libinput keyboard catchall"
+[    47.296] (II) Using input driver 'libinput' for 'Nuvoton w836x7hg Infrared Remote Transceiver'
+[    47.296] (II) systemd-logind: returning pre-existing fd for /dev/input/event7 13:71
+[    47.296] (**) Nuvoton w836x7hg Infrared Remote Transceiver: always reports core events
+[    47.296] (**) Option "Device" "/dev/input/event7"
+[    47.296] (**) Option "_source" "_driver/libinput"
+[    47.296] (II) libinput: Nuvoton w836x7hg Infrared Remote Transceiver: is a virtual subdevice
+[    47.296] (**) Option "config_info" "udev:/sys/devices/pnp0/00:02/rc/rc0/input7/event7"
+[    47.296] (II) XINPUT: Adding extended input device "Nuvoton w836x7hg Infrared Remote Transceiver" (type: KEYBOARD, id 14)
+[    47.296] (**) Option "xkb_model" "pc105"
+[    47.296] (**) Option "xkb_layout" "ch"
+[    47.796] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    47.796] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    47.796] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    47.796] (--) NVIDIA(GPU-0): 
+[    47.827] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    47.827] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    47.827] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    47.827] (--) NVIDIA(GPU-0): 
+[    47.859] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    47.859] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    47.859] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    47.859] (--) NVIDIA(GPU-0): 
+[    47.891] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    47.891] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    47.891] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    47.891] (--) NVIDIA(GPU-0): 
+[    47.963] (II) NVIDIA(0): Setting mode "HDMI-2: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[    48.230] (II) NVIDIA(0): Setting mode "HDMI-2: nvidia-auto-select @1920x1080 +1080+415 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[    48.414] (II) NVIDIA(0): Setting mode "HDMI-2: nvidia-auto-select @1920x1080 +1080+415 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-3: nvidia-auto-select @1080x1920 +3000+0 {ViewPortIn=1080x1920, ViewPortOut=1920x1080+0+0, Rotation=270}"
+[    48.635] (II) NVIDIA(0): Setting mode "HDMI-2: nvidia-auto-select @1920x1080 +1080+415 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-1: nvidia-auto-select @1080x1920 +0+43 {ViewPortIn=1080x1920, ViewPortOut=1920x1080+0+0, Rotation=90}, HDMI-3: nvidia-auto-select @1080x1920 +3000+0 {ViewPortIn=1080x1920, ViewPortOut=1920x1080+0+0, Rotation=270}"
+[    50.529] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    50.529] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    50.529] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    50.529] (--) NVIDIA(GPU-0): 
+[    50.561] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    50.561] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    50.561] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    50.561] (--) NVIDIA(GPU-0): 
+[    50.593] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    50.593] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    50.593] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    50.593] (--) NVIDIA(GPU-0): 
+[    50.625] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    50.625] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    50.625] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    50.625] (--) NVIDIA(GPU-0): 
+[    53.495] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    53.495] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    53.495] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    53.495] (--) NVIDIA(GPU-0): 
+[    53.527] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    53.527] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    53.527] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    53.527] (--) NVIDIA(GPU-0): 
+[    53.559] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    53.559] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    53.559] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    53.559] (--) NVIDIA(GPU-0): 
+[    53.591] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    53.591] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    53.591] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    53.591] (--) NVIDIA(GPU-0): 
+[    53.592] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    53.592] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    53.592] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    53.592] (--) NVIDIA(GPU-0): 
+[    53.623] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    53.623] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    53.623] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    53.623] (--) NVIDIA(GPU-0): 
+[    53.655] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    53.655] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    53.655] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    53.655] (--) NVIDIA(GPU-0): 
+[    53.688] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    53.688] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    53.688] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    53.688] (--) NVIDIA(GPU-0): 
+[    55.972] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    55.972] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    55.972] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    55.972] (--) NVIDIA(GPU-0): 
+[    56.004] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    56.004] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    56.004] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    56.004] (--) NVIDIA(GPU-0): 
+[    56.036] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    56.036] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    56.036] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    56.036] (--) NVIDIA(GPU-0): 
+[    56.068] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    56.068] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    56.068] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    56.068] (--) NVIDIA(GPU-0): 
+[    63.227] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    63.228] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    63.228] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    63.228] (--) NVIDIA(GPU-0): 
+[    63.259] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    63.259] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    63.259] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    63.259] (--) NVIDIA(GPU-0): 
+[    63.293] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    63.293] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    63.293] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    63.293] (--) NVIDIA(GPU-0): 
+[    63.326] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    63.326] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    63.326] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    63.326] (--) NVIDIA(GPU-0): 
+[    63.334] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    63.334] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    63.334] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    63.334] (--) NVIDIA(GPU-0): 
+[    63.365] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    63.365] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    63.365] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    63.365] (--) NVIDIA(GPU-0): 
+[    63.398] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    63.398] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    63.398] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    63.398] (--) NVIDIA(GPU-0): 
+[    63.430] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    63.430] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    63.430] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    63.430] (--) NVIDIA(GPU-0): 
+[    63.439] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    63.439] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    63.439] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    63.439] (--) NVIDIA(GPU-0): 
+[    63.476] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    63.476] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    63.476] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    63.476] (--) NVIDIA(GPU-0): 
+[    63.508] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    63.508] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    63.508] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    63.508] (--) NVIDIA(GPU-0): 
+[    63.540] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    63.540] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    63.540] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    63.540] (--) NVIDIA(GPU-0): 
+[    63.544] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    63.544] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    63.544] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    63.544] (--) NVIDIA(GPU-0): 
+[    63.576] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    63.576] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    63.576] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    63.576] (--) NVIDIA(GPU-0): 
+[    63.608] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    63.608] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    63.608] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    63.608] (--) NVIDIA(GPU-0): 
+[    63.641] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    63.641] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    63.641] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    63.641] (--) NVIDIA(GPU-0): 
+[    68.648] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    68.648] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[    68.648] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[    68.648] (--) NVIDIA(GPU-0): 
+[    68.680] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[    68.680] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[    68.680] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[    68.680] (--) NVIDIA(GPU-0): 
+[    68.711] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[    68.712] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[    68.712] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[    68.712] (--) NVIDIA(GPU-0): 
+[    68.743] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[    68.744] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[    68.744] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[    68.744] (--) NVIDIA(GPU-0): 
+[  4213.230] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4213.230] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4213.230] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4213.230] (--) NVIDIA(GPU-0): 
+[  4213.261] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4213.261] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4213.261] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4213.261] (--) NVIDIA(GPU-0): 
+[  4213.294] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4213.294] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4213.294] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4213.294] (--) NVIDIA(GPU-0): 
+[  4213.326] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4213.326] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4213.326] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4213.326] (--) NVIDIA(GPU-0): 
+[  4214.280] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4214.280] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4214.280] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4214.280] (--) NVIDIA(GPU-0): 
+[  4214.311] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4214.311] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4214.312] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4214.312] (--) NVIDIA(GPU-0): 
+[  4214.344] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4214.344] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4214.344] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4214.344] (--) NVIDIA(GPU-0): 
+[  4214.376] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4214.376] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4214.376] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4214.376] (--) NVIDIA(GPU-0): 
+[  4217.128] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4217.128] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4217.128] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4217.128] (--) NVIDIA(GPU-0): 
+[  4217.160] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4217.160] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4217.160] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4217.160] (--) NVIDIA(GPU-0): 
+[  4217.192] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4217.192] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4217.192] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4217.192] (--) NVIDIA(GPU-0): 
+[  4217.224] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4217.224] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4217.224] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4217.224] (--) NVIDIA(GPU-0): 
+[  4217.229] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4217.229] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4217.229] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4217.229] (--) NVIDIA(GPU-0): 
+[  4217.260] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4217.260] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4217.260] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4217.260] (--) NVIDIA(GPU-0): 
+[  4217.293] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4217.293] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4217.293] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4217.293] (--) NVIDIA(GPU-0): 
+[  4217.325] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4217.325] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4217.325] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4217.325] (--) NVIDIA(GPU-0): 
+[  4217.326] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4217.326] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4217.326] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4217.326] (--) NVIDIA(GPU-0): 
+[  4217.358] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4217.358] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4217.358] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4217.358] (--) NVIDIA(GPU-0): 
+[  4217.389] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4217.389] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4217.389] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4217.390] (--) NVIDIA(GPU-0): 
+[  4217.422] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4217.422] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4217.422] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4217.422] (--) NVIDIA(GPU-0): 
+[  4217.424] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4217.424] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4217.424] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4217.424] (--) NVIDIA(GPU-0): 
+[  4217.456] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4217.456] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4217.456] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4217.456] (--) NVIDIA(GPU-0): 
+[  4217.489] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4217.489] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4217.489] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4217.489] (--) NVIDIA(GPU-0): 
+[  4217.521] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4217.521] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4217.521] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4217.521] (--) NVIDIA(GPU-0): 
+[  4217.755] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4217.755] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4217.755] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4217.755] (--) NVIDIA(GPU-0): 
+[  4217.786] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4217.786] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4217.786] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4217.786] (--) NVIDIA(GPU-0): 
+[  4217.818] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4217.818] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4217.818] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4217.818] (--) NVIDIA(GPU-0): 
+[  4217.851] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4217.851] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4217.851] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4217.851] (--) NVIDIA(GPU-0): 
+[  4218.076] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4218.076] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4218.076] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4218.076] (--) NVIDIA(GPU-0): 
+[  4218.108] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4218.108] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4218.108] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4218.108] (--) NVIDIA(GPU-0): 
+[  4218.140] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4218.140] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4218.140] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4218.140] (--) NVIDIA(GPU-0): 
+[  4218.172] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4218.172] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4218.172] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4218.172] (--) NVIDIA(GPU-0): 
+[  4218.465] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[  4218.465] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[  4218.465] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[  4218.465] (--) NVIDIA(GPU-0): 
+[  4218.497] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  4218.497] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  4218.497] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  4218.497] (--) NVIDIA(GPU-0): 
+[  4218.529] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  4218.529] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  4218.529] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  4218.529] (--) NVIDIA(GPU-0): 
+[  4218.562] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  4218.562] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  4218.562] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  4218.562] (--) NVIDIA(GPU-0): 
+[  8780.116] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  8780.118] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  8780.118] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  8780.118] (--) NVIDIA(GPU-0): 
+[  8780.151] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[  8780.151] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[  8780.151] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[  8780.151] (--) NVIDIA(GPU-0): 
+[  8780.215] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  8780.215] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  8780.215] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  8780.215] (--) NVIDIA(GPU-0): 
+[  8780.248] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[  8780.248] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[  8780.248] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[  8780.248] (--) NVIDIA(GPU-0): 
+[  8781.140] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  8781.140] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  8781.140] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  8781.140] (--) NVIDIA(GPU-0): 
+[  8781.172] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[  8781.172] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[  8781.172] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[  8781.172] (--) NVIDIA(GPU-0): 
+[ 11029.108] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 11029.108] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 11029.108] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 11029.108] (--) NVIDIA(GPU-0): 
+[ 11029.140] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 11029.140] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 11029.140] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 11029.140] (--) NVIDIA(GPU-0): 
+[ 11029.173] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 11029.173] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 11029.173] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 11029.173] (--) NVIDIA(GPU-0): 
+[ 11029.205] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 11029.205] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 11029.205] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 11029.205] (--) NVIDIA(GPU-0): 
+[ 11030.152] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 11030.152] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 11030.152] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 11030.152] (--) NVIDIA(GPU-0): 
+[ 11030.183] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 11030.183] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 11030.183] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 11030.183] (--) NVIDIA(GPU-0): 
+[ 11571.106] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 11571.106] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 11571.106] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 11571.106] (--) NVIDIA(GPU-0): 
+[ 11571.139] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 11571.139] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 11571.139] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 11571.139] (--) NVIDIA(GPU-0): 
+[ 11571.171] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 11571.171] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 11571.171] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 11571.171] (--) NVIDIA(GPU-0): 
+[ 11571.204] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 11571.204] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 11571.204] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 11571.204] (--) NVIDIA(GPU-0): 
+[ 11572.085] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 11572.085] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 11572.085] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 11572.085] (--) NVIDIA(GPU-0): 
+[ 11572.117] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 11572.117] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 11572.117] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 11572.117] (--) NVIDIA(GPU-0): 
+[ 12804.063] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 12804.063] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 12804.063] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 12804.063] (--) NVIDIA(GPU-0): 
+[ 12804.095] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 12804.095] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 12804.096] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 12804.096] (--) NVIDIA(GPU-0): 
+[ 12804.159] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 12804.159] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 12804.159] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 12804.159] (--) NVIDIA(GPU-0): 
+[ 12804.190] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 12804.190] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 12804.190] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 12804.191] (--) NVIDIA(GPU-0): 
+[ 12805.071] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 12805.071] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 12805.071] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 12805.071] (--) NVIDIA(GPU-0): 
+[ 12805.103] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 12805.103] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 12805.103] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 12805.103] (--) NVIDIA(GPU-0): 
+[ 14639.110] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 14639.110] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 14639.110] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 14639.110] (--) NVIDIA(GPU-0): 
+[ 14639.142] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 14639.142] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 14639.142] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 14639.142] (--) NVIDIA(GPU-0): 
+[ 14639.175] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 14639.175] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 14639.175] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 14639.175] (--) NVIDIA(GPU-0): 
+[ 14639.207] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 14639.207] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 14639.207] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 14639.207] (--) NVIDIA(GPU-0): 
+[ 14640.104] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 14640.104] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 14640.104] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 14640.104] (--) NVIDIA(GPU-0): 
+[ 14640.136] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 14640.136] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 14640.136] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 14640.136] (--) NVIDIA(GPU-0): 
+[ 16444.099] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 16444.099] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 16444.099] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 16444.099] (--) NVIDIA(GPU-0): 
+[ 16444.131] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 16444.131] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 16444.131] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 16444.131] (--) NVIDIA(GPU-0): 
+[ 16444.161] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 16444.161] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 16444.161] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 16444.161] (--) NVIDIA(GPU-0): 
+[ 16444.176] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 16444.176] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 16444.176] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 16444.176] (--) NVIDIA(GPU-0): 
+[ 16445.046] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 16445.046] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 16445.046] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 16445.046] (--) NVIDIA(GPU-0): 
+[ 16445.079] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 16445.079] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 16445.079] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 16445.079] (--) NVIDIA(GPU-0): 
+[ 18700.083] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 18700.083] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 18700.083] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 18700.083] (--) NVIDIA(GPU-0): 
+[ 18700.116] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 18700.116] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 18700.116] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 18700.116] (--) NVIDIA(GPU-0): 
+[ 18700.146] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 18700.147] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 18700.147] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 18700.147] (--) NVIDIA(GPU-0): 
+[ 18700.162] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 18700.162] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 18700.162] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 18700.162] (--) NVIDIA(GPU-0): 
+[ 18701.101] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 18701.101] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 18701.101] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 18701.101] (--) NVIDIA(GPU-0): 
+[ 18701.132] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 18701.132] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 18701.132] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 18701.132] (--) NVIDIA(GPU-0): 
+[ 19061.083] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 19061.083] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 19061.083] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 19061.083] (--) NVIDIA(GPU-0): 
+[ 19061.115] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 19061.115] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 19061.115] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 19061.115] (--) NVIDIA(GPU-0): 
+[ 19061.131] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 19061.131] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 19061.131] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 19061.131] (--) NVIDIA(GPU-0): 
+[ 19061.162] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 19061.162] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 19061.162] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 19061.162] (--) NVIDIA(GPU-0): 
+[ 19062.112] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 19062.112] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 19062.112] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 19062.112] (--) NVIDIA(GPU-0): 
+[ 19062.144] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 19062.144] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 19062.144] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 19062.144] (--) NVIDIA(GPU-0): 
+[ 20235.070] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 20235.070] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 20235.070] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 20235.070] (--) NVIDIA(GPU-0): 
+[ 20235.102] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 20235.102] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 20235.102] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 20235.102] (--) NVIDIA(GPU-0): 
+[ 20235.134] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 20235.134] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 20235.134] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 20235.134] (--) NVIDIA(GPU-0): 
+[ 20235.150] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 20235.150] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 20235.150] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 20235.150] (--) NVIDIA(GPU-0): 
+[ 20236.197] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 20236.197] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 20236.197] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 20236.197] (--) NVIDIA(GPU-0): 
+[ 20236.231] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 20236.231] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 20236.231] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 20236.231] (--) NVIDIA(GPU-0): 
+[ 22340.037] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 22340.038] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 22340.038] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 22340.038] (--) NVIDIA(GPU-0): 
+[ 22340.053] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 22340.053] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 22340.053] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 22340.053] (--) NVIDIA(GPU-0): 
+[ 22340.082] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 22340.082] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 22340.082] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 22340.082] (--) NVIDIA(GPU-0): 
+[ 22340.097] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 22340.097] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 22340.097] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 22340.097] (--) NVIDIA(GPU-0): 
+[ 22341.073] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 22341.073] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 22341.073] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 22341.073] (--) NVIDIA(GPU-0): 
+[ 22341.105] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 22341.105] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 22341.105] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 22341.105] (--) NVIDIA(GPU-0): 
+[ 23273.022] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 23273.022] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 23273.022] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 23273.022] (--) NVIDIA(GPU-0): 
+[ 23273.036] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 23273.036] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 23273.036] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 23273.036] (--) NVIDIA(GPU-0): 
+[ 23273.066] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 23273.066] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 23273.067] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 23273.067] (--) NVIDIA(GPU-0): 
+[ 23273.081] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 23273.081] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 23273.081] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 23273.081] (--) NVIDIA(GPU-0): 
+[ 23274.079] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 23274.080] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 23274.080] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 23274.080] (--) NVIDIA(GPU-0): 
+[ 23274.111] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 23274.112] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 23274.112] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 23274.112] (--) NVIDIA(GPU-0): 
+[ 24448.064] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 24448.064] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 24448.064] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 24448.064] (--) NVIDIA(GPU-0): 
+[ 24448.079] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 24448.079] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 24448.079] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 24448.079] (--) NVIDIA(GPU-0): 
+[ 24448.095] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 24448.095] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 24448.095] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 24448.095] (--) NVIDIA(GPU-0): 
+[ 24448.110] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 24448.110] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 24448.110] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 24448.110] (--) NVIDIA(GPU-0): 
+[ 24449.099] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 24449.099] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 24449.099] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 24449.099] (--) NVIDIA(GPU-0): 
+[ 24449.131] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 24449.131] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 24449.131] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 24449.131] (--) NVIDIA(GPU-0): 
+[ 27220.062] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 27220.062] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 27220.062] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 27220.062] (--) NVIDIA(GPU-0): 
+[ 27220.078] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 27220.078] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 27220.078] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 27220.078] (--) NVIDIA(GPU-0): 
+[ 27220.093] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 27220.093] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 27220.093] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 27220.093] (--) NVIDIA(GPU-0): 
+[ 27220.107] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 27220.107] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 27220.107] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 27220.108] (--) NVIDIA(GPU-0): 
+[ 27221.113] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 27221.113] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 27221.113] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 27221.113] (--) NVIDIA(GPU-0): 
+[ 27221.145] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 27221.145] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 27221.145] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 27221.145] (--) NVIDIA(GPU-0): 
+[ 29792.067] (II) config/udev: Adding input device (unnamed) (/dev/input/event18)
+[ 29792.078] (**) (unnamed): Applying InputClass "evdev tablet catchall"
+[ 29792.078] (**) (unnamed): Applying InputClass "libinput tablet catchall"
+[ 29792.079] (II) Using input driver 'libinput' for '(unnamed)'
+[ 29792.122] (II) systemd-logind: got fd for /dev/input/event18 13:82 fd 66 paused 0
+[ 29792.124] (**) (unnamed): always reports core events
+[ 29792.124] (**) Option "Device" "/dev/input/event18"
+[ 29792.124] (**) Option "_source" "server/udev"
+[ 29792.302] (II) event18 - Wacom Intuos2 9x12 Pen: is tagged by udev as: Tablet
+[ 29792.319] (II) event18 - Wacom Intuos2 9x12 Pen: device is a tablet
+[ 29792.319] (II) event18 - Wacom Intuos2 9x12 Pen: device removed
+[ 29792.319] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4:1.0/0003:056A:0043.0004/input/input18/event18"
+[ 29792.319] (II) XINPUT: Adding extended input device "(unnamed)" (type: TABLET, id 15)
+[ 29792.322] (II) event18 - Wacom Intuos2 9x12 Pen: is tagged by udev as: Tablet
+[ 29792.323] (II) event18 - Wacom Intuos2 9x12 Pen: device is a tablet
+[ 29792.324] (II) config/udev: removing device (unnamed)
+[ 29792.324] (**) Option "fd" "66"
+[ 29792.324] (II) event18 - Wacom Intuos2 9x12 Pen: device removed
+[ 29792.326] (II) UnloadModule: "libinput"
+[ 29792.326] (II) systemd-logind: releasing fd for 13:82
+[ 29792.344] (II) config/udev: Adding input device Wacom Intuos2 9x12 Pen (/dev/input/mouse1)
+[ 29792.344] (II) No input driver specified, ignoring this device.
+[ 29792.344] (II) This device may have been added with another device file.
+[ 29792.344] (II) config/udev: Adding input device Wacom Intuos2 9x12 Pen (/dev/input/event18)
+[ 29792.344] (**) Wacom Intuos2 9x12 Pen: Applying InputClass "evdev tablet catchall"
+[ 29792.344] (**) Wacom Intuos2 9x12 Pen: Applying InputClass "libinput tablet catchall"
+[ 29792.344] (**) Wacom Intuos2 9x12 Pen: Applying InputClass "Wacom USB tablet class"
+[ 29792.344] (**) Wacom Intuos2 9x12 Pen: Applying InputClass "Wacom tablet class"
+[ 29792.344] (II) LoadModule: "wacom"
+[ 29792.350] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[ 29792.352] (II) Module wacom: vendor="X.Org Foundation"
+[ 29792.352] 	compiled for 1.20.7, module version = 0.39.0
+[ 29792.352] 	Module class: X.Org XInput Driver
+[ 29792.352] 	ABI class: X.Org XInput driver, version 24.1
+[ 29792.352] (II) Build version: 0.39.0
+[ 29792.352] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Intuos2 4x5, Intuos2 6x8, Intuos2 9x12, Intuos2 12x12, Intuos2 12x18,
+	Intuos2 6x8 , Volito, PenStation, Volito2 4x5, Volito2 2x3,
+	PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6, Bamboo1 5x8, Intuos3 4x5,
+	Intuos3 6x8, Intuos3 9x12, Intuos3 12x12, Intuos3 12x19,
+	Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9, Intuos4 8x13,
+	Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[ 29792.355] (II) Using input driver 'wacom' for 'Wacom Intuos2 9x12 Pen'
+[ 29792.356] (II) systemd-logind: got fd for /dev/input/event18 13:82 fd 68 paused 0
+[ 29792.356] (**) Wacom Intuos2 9x12 Pen: always reports core events
+[ 29792.356] (**) Option "Device" "/dev/input/event18"
+[ 29792.356] (II) Wacom Intuos2 9x12 Pen: type not specified, assuming 'stylus'.
+[ 29792.356] (II) Wacom Intuos2 9x12 Pen: other types will be automatically added.
+[ 29792.356] (--) Wacom Intuos2 9x12 Pen stylus: using pressure threshold of 851 for button 1
+[ 29792.356] (**) Wacom Intuos2 9x12 Pen stylus: panscroll is 0
+[ 29792.356] (**) Wacom Intuos2 9x12 Pen stylus: panscroll modified to 1300
+[ 29792.356] (--) Wacom Intuos2 9x12 Pen stylus: maxX=30480 maxY=24060 maxZ=1023 resX=100000 resY=100000  tilt=enabled
+[ 29792.356] (II) Wacom Intuos2 9x12 Pen stylus: hotplugging dependent devices.
+[ 29792.356] (EE) Wacom Intuos2 9x12 Pen stylus: Invalid type 'touch' for this device.
+[ 29792.356] (EE) Wacom Intuos2 9x12 Pen stylus: Invalid type 'pad' for this device.
+[ 29792.356] (II) Wacom Intuos2 9x12 Pen stylus: hotplugging completed.
+[ 29792.356] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4:1.0/0003:056A:0043.0004/input/input20/event18"
+[ 29792.356] (II) XINPUT: Adding extended input device "Wacom Intuos2 9x12 Pen stylus" (type: STYLUS, id 15)
+[ 29792.357] (**) Wacom Intuos2 9x12 Pen stylus: (accel) keeping acceleration scheme 1
+[ 29792.357] (**) Wacom Intuos2 9x12 Pen stylus: (accel) acceleration profile 0
+[ 29792.357] (**) Wacom Intuos2 9x12 Pen stylus: (accel) acceleration factor: 2.000
+[ 29792.357] (**) Wacom Intuos2 9x12 Pen stylus: (accel) acceleration threshold: 4
+[ 29792.357] (**) Wacom Intuos2 9x12 Pen eraser: Applying InputClass "evdev tablet catchall"
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: Applying InputClass "libinput tablet catchall"
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: Applying InputClass "Wacom USB tablet class"
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: Applying InputClass "Wacom tablet class"
+[ 29792.358] (II) Using input driver 'wacom' for 'Wacom Intuos2 9x12 Pen eraser'
+[ 29792.358] (II) systemd-logind: returning pre-existing fd for /dev/input/event18 13:82
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: always reports core events
+[ 29792.358] (**) Option "Device" "/dev/input/event18"
+[ 29792.358] (**) Option "Type" "eraser"
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: panscroll is 1300
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: panscroll modified to 1300
+[ 29792.358] (--) Wacom Intuos2 9x12 Pen eraser: maxX=30480 maxY=24060 maxZ=1023 resX=100000 resY=100000  tilt=enabled
+[ 29792.358] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4:1.0/0003:056A:0043.0004/input/input20/event18"
+[ 29792.358] (II) XINPUT: Adding extended input device "Wacom Intuos2 9x12 Pen eraser" (type: ERASER, id 16)
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: (accel) keeping acceleration scheme 1
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: (accel) acceleration profile 0
+[ 29792.358] (**) Wacom Intuos2 9x12 Pen eraser: (accel) acceleration factor: 2.000
+[ 29792.359] (**) Wacom Intuos2 9x12 Pen eraser: (accel) acceleration threshold: 4
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: Applying InputClass "evdev tablet catchall"
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: Applying InputClass "libinput tablet catchall"
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: Applying InputClass "Wacom USB tablet class"
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: Applying InputClass "Wacom tablet class"
+[ 29792.360] (II) Using input driver 'wacom' for 'Wacom Intuos2 9x12 Pen cursor'
+[ 29792.360] (II) systemd-logind: returning pre-existing fd for /dev/input/event18 13:82
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: always reports core events
+[ 29792.360] (**) Option "Device" "/dev/input/event18"
+[ 29792.360] (**) Option "Type" "cursor"
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: panscroll is 1300
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: panscroll modified to 1300
+[ 29792.360] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4:1.0/0003:056A:0043.0004/input/input20/event18"
+[ 29792.360] (II) XINPUT: Adding extended input device "Wacom Intuos2 9x12 Pen cursor" (type: CURSOR, id 17)
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: (accel) keeping acceleration scheme 1
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: (accel) acceleration profile 0
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: (accel) acceleration factor: 2.000
+[ 29792.360] (**) Wacom Intuos2 9x12 Pen cursor: (accel) acceleration threshold: 4
+[ 29840.022] (II) config/udev: removing device Logitech USB Optical Mouse
+[ 29840.022] (**) Option "fd" "49"
+[ 29840.022] (II) event6  - Logitech USB Optical Mouse: device removed
+[ 29840.031] (II) UnloadModule: "libinput"
+[ 29840.031] (II) systemd-logind: releasing fd for 13:70
+[ 32167.970] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[ 32167.970] (--) NVIDIA(GPU-0): DFP-0: Internal TMDS
+[ 32167.970] (--) NVIDIA(GPU-0): DFP-0: 165.0 MHz maximum pixel clock
+[ 32167.970] (--) NVIDIA(GPU-0): 
+[ 32167.985] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): connected
+[ 32167.985] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): Internal TMDS
+[ 32167.985] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-1): 600.0 MHz maximum pixel clock
+[ 32167.985] (--) NVIDIA(GPU-0): 
+[ 32168.017] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): connected
+[ 32168.017] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): Internal TMDS
+[ 32168.017] (--) NVIDIA(GPU-0): BenQ GW2480 (DFP-2): 600.0 MHz maximum pixel clock
+[ 32168.017] (--) NVIDIA(GPU-0): 
+[ 32168.033] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): connected
+[ 32168.033] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): Internal TMDS
+[ 32168.033] (--) NVIDIA(GPU-0): BenQ GL2480 (DFP-3): 600.0 MHz maximum pixel clock
+[ 32168.033] (--) NVIDIA(GPU-0): 
+[ 32389.083] (II) config/udev: removing device unspecified ErgoDox ergonomic keyboard
+[ 32389.083] (**) Option "fd" "48"
+[ 32389.083] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32389.084] (II) UnloadModule: "libinput"
+[ 32389.085] (II) systemd-logind: releasing fd for 13:68
+[ 32390.674] (II) config/udev: Adding input device unspecified ErgoDox ergonomic keyboard (/dev/input/event4)
+[ 32390.674] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "evdev keyboard catchall"
+[ 32390.674] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "libinput keyboard catchall"
+[ 32390.674] (II) Using input driver 'libinput' for 'unspecified ErgoDox ergonomic keyboard'
+[ 32390.682] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 65 paused 0
+[ 32390.682] (**) unspecified ErgoDox ergonomic keyboard: always reports core events
+[ 32390.682] (**) Option "Device" "/dev/input/event4"
+[ 32390.682] (**) Option "_source" "server/udev"
+[ 32390.685] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32390.685] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32390.686] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32390.686] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3.3/2-3.3:1.0/0003:1D50:6028.0005/input/input23/event4"
+[ 32390.686] (II) XINPUT: Adding extended input device "unspecified ErgoDox ergonomic keyboard" (type: KEYBOARD, id 10)
+[ 32390.686] (**) Option "xkb_model" "pc105"
+[ 32390.686] (**) Option "xkb_layout" "ch"
+[ 32390.686] (WW) Option "xkb_variant" requires a string value
+[ 32390.686] (WW) Option "xkb_options" requires a string value
+[ 32390.691] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32390.691] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32413.909] (II) config/udev: removing device unspecified ErgoDox ergonomic keyboard
+[ 32413.909] (**) Option "fd" "65"
+[ 32413.910] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32413.915] (II) UnloadModule: "libinput"
+[ 32413.915] (II) systemd-logind: releasing fd for 13:68
+[ 32414.417] (II) config/udev: Adding input device unspecified ErgoDox ergonomic keyboard (/dev/input/event4)
+[ 32414.417] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "evdev keyboard catchall"
+[ 32414.417] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "libinput keyboard catchall"
+[ 32414.417] (II) Using input driver 'libinput' for 'unspecified ErgoDox ergonomic keyboard'
+[ 32414.419] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 65 paused 0
+[ 32414.419] (**) unspecified ErgoDox ergonomic keyboard: always reports core events
+[ 32414.419] (**) Option "Device" "/dev/input/event4"
+[ 32414.419] (**) Option "_source" "server/udev"
+[ 32414.422] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32414.422] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32414.427] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32414.427] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3.3/2-3.3:1.0/0003:1D50:6028.0006/input/input24/event4"
+[ 32414.427] (II) XINPUT: Adding extended input device "unspecified ErgoDox ergonomic keyboard" (type: KEYBOARD, id 10)
+[ 32414.427] (**) Option "xkb_model" "pc105"
+[ 32414.427] (**) Option "xkb_layout" "ch"
+[ 32414.427] (WW) Option "xkb_variant" requires a string value
+[ 32414.427] (WW) Option "xkb_options" requires a string value
+[ 32414.432] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32414.432] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32415.958] (II) config/udev: removing device unspecified ErgoDox ergonomic keyboard
+[ 32415.958] (**) Option "fd" "65"
+[ 32415.958] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32415.960] (II) UnloadModule: "libinput"
+[ 32415.960] (II) systemd-logind: releasing fd for 13:68
+[ 32417.366] (II) config/udev: Adding input device unspecified ErgoDox ergonomic keyboard (/dev/input/event4)
+[ 32417.366] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "evdev keyboard catchall"
+[ 32417.366] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "libinput keyboard catchall"
+[ 32417.366] (II) Using input driver 'libinput' for 'unspecified ErgoDox ergonomic keyboard'
+[ 32417.368] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 65 paused 0
+[ 32417.368] (**) unspecified ErgoDox ergonomic keyboard: always reports core events
+[ 32417.368] (**) Option "Device" "/dev/input/event4"
+[ 32417.368] (**) Option "_source" "server/udev"
+[ 32417.372] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32417.373] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32417.373] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32417.373] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3.3/2-3.3:1.0/0003:1D50:6028.0007/input/input25/event4"
+[ 32417.373] (II) XINPUT: Adding extended input device "unspecified ErgoDox ergonomic keyboard" (type: KEYBOARD, id 10)
+[ 32417.373] (**) Option "xkb_model" "pc105"
+[ 32417.373] (**) Option "xkb_layout" "ch"
+[ 32417.373] (WW) Option "xkb_variant" requires a string value
+[ 32417.373] (WW) Option "xkb_options" requires a string value
+[ 32417.380] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32417.380] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32442.588] (II) config/udev: removing device unspecified ErgoDox ergonomic keyboard
+[ 32442.588] (**) Option "fd" "65"
+[ 32442.588] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32442.589] (II) UnloadModule: "libinput"
+[ 32442.589] (II) systemd-logind: releasing fd for 13:68
+[ 32445.049] (II) config/udev: Adding input device unspecified ErgoDox ergonomic keyboard (/dev/input/event4)
+[ 32445.049] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "evdev keyboard catchall"
+[ 32445.049] (**) unspecified ErgoDox ergonomic keyboard: Applying InputClass "libinput keyboard catchall"
+[ 32445.049] (II) Using input driver 'libinput' for 'unspecified ErgoDox ergonomic keyboard'
+[ 32445.054] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 65 paused 0
+[ 32445.054] (**) unspecified ErgoDox ergonomic keyboard: always reports core events
+[ 32445.054] (**) Option "Device" "/dev/input/event4"
+[ 32445.054] (**) Option "_source" "server/udev"
+[ 32445.057] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32445.057] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 32445.058] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 32445.058] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3.3/2-3.3:1.0/0003:1D50:6028.0008/input/input26/event4"
+[ 32445.058] (II) XINPUT: Adding extended input device "unspecified ErgoDox ergonomic keyboard" (type: KEYBOARD, id 10)
+[ 32445.058] (**) Option "xkb_model" "pc105"
+[ 32445.058] (**) Option "xkb_layout" "ch"
+[ 32445.058] (WW) Option "xkb_variant" requires a string value
+[ 32445.058] (WW) Option "xkb_options" requires a string value
+[ 32445.071] (II) event4  - unspecified ErgoDox ergonomic keyboard: is tagged by udev as: Keyboard
+[ 32445.071] (II) event4  - unspecified ErgoDox ergonomic keyboard: device is a keyboard
+[ 38894.688] (**) Option "fd" "42"
+[ 38894.695] (II) event2  - Power Button: device removed
+[ 38894.697] (**) Option "fd" "45"
+[ 38894.697] (II) event3  - Video Bus: device removed
+[ 38894.699] (**) Option "fd" "46"
+[ 38894.699] (II) event1  - Power Button: device removed
+[ 38894.699] (**) Option "fd" "47"
+[ 38894.699] (II) event0  - Sleep Button: device removed
+[ 38894.700] (**) Option "fd" "50"
+[ 38894.700] (II) event8  - UVC Camera (046d:0990): device removed
+[ 38894.703] (**) Option "fd" "51"
+[ 38894.703] (**) Option "fd" "51"
+[ 38894.703] (II) event7  - Nuvoton w836x7hg Infrared Remote Transceiver: device removed
+[ 38894.708] (**) Option "fd" "65"
+[ 38894.708] (II) event4  - unspecified ErgoDox ergonomic keyboard: device removed
+[ 38894.754] (II) UnloadModule: "libinput"
+[ 38894.754] (II) systemd-logind: releasing fd for 13:68
+[ 38894.782] (II) UnloadModule: "wacom"
+[ 38894.782] (II) systemd-logind: not releasing fd for 13:82, still in use
+[ 38894.783] (II) UnloadModule: "wacom"
+[ 38894.783] (II) systemd-logind: not releasing fd for 13:82, still in use
+[ 38894.784] (II) UnloadModule: "wacom"
+[ 38894.784] (II) systemd-logind: releasing fd for 13:82
+[ 38894.838] (II) UnloadModule: "libinput"
+[ 38894.838] (II) systemd-logind: not releasing fd for 13:71, still in use
+[ 38894.838] (II) UnloadModule: "libinput"
+[ 38894.838] (II) systemd-logind: releasing fd for 13:71
+[ 38894.871] (II) UnloadModule: "libinput"
+[ 38894.871] (II) systemd-logind: releasing fd for 13:72
+[ 38894.918] (II) UnloadModule: "libinput"
+[ 38894.918] (II) systemd-logind: releasing fd for 13:64
+[ 38894.934] (II) UnloadModule: "libinput"
+[ 38894.934] (II) systemd-logind: releasing fd for 13:65
+[ 38894.950] (II) UnloadModule: "libinput"
+[ 38894.950] (II) systemd-logind: releasing fd for 13:67
+[ 38894.987] (II) UnloadModule: "libinput"
+[ 38894.987] (II) systemd-logind: releasing fd for 13:66
+[ 38895.377] (II) NVIDIA(GPU-0): Deleting GPU-0
+[ 38895.393] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[ 38895.393] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[ 38895.393] (WW) xf86CloseConsole: VT_ACTIVATE failed: Input/output error
+[ 38895.396] (II) Server terminated successfully (0). Closing log file.
