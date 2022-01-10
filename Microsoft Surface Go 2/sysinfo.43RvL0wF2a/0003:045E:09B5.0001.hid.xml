@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <COLLECTION type="application">
+    <usage_page>led<!-- LEDs (08h) --></usage_page>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <usage_minimum>01</usage_minimum>
+    <usage_maximum>03</usage_maximum>
+    <report_size>1</report_size>
+    <report_count>3</report_count>
+    <output>
+      <variable/>
+    </output>
+    <report_count>5</report_count>
+    <output>
+      <constant/>
+    </output>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_kb_leftcontrol<!-- Keyboard left control (E0h, dynamic value) --></usage_minimum>
+    <usage_maximum>keyboard_kb_right_gui<!-- Keyboard right GUI (E7h, dynamic value) --></usage_maximum>
+    <report_size>1</report_size>
+    <report_count>8</report_count>
+    <input>
+      <variable/>
+    </input>
+    <report_count>8</report_count>
+    <input>
+      <constant/>
+    </input>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <usage_minimum>keyboard_none<!-- No event (00h, selector) --></usage_minimum>
+    <usage_maximum>FF</usage_maximum>
+    <report_size>8</report_size>
+    <report_count>6</report_count>
+    <input/>
+    <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+    <usage>02C0</usage>
+    <COLLECTION type="logical">
+      <usage_minimum>02C1</usage_minimum>
+      <usage_maximum>02C6</usage_maximum>
+      <report_count>6</report_count>
+      <report_size>8</report_size>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
