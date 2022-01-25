@@ -78,7 +78,13 @@ if [[ -z "${PRODUCT}" ]]; then
   fi
 fi
 
-echo "Found: ${OEM} ${PRODUCT}"
+if [[ "${PRODUCT}" =~ "${OEM} "* ]]; then
+    echo "NOTE: Removing manufacturer from product name..."
+    PRODUCT=${PRODUCT#"${OEM} "}
+fi
+
+echo "Manufacturer: \"${OEM}\""
+echo "Product: \"${PRODUCT}\""
 while true; do
   read -p "Is this correct? (Y/N) " yn
   case $yn in
