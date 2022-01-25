@@ -247,7 +247,11 @@ LIBWACOM_FILE=$(tr A-Z a-z <<<"${LIBWACOM_PREFIX}${PEN_PID}.tablet")
 LIBWACOM_NAME="ISDv4 ${PEN_PID}"
 LIBWACOM_MATCH=${PEN_ID}
 LIBWACOM_CLASS="ISDV4"
-LIBWACOM_STYLI="@isdv4-aes;"
+if [[ ${SENSORTYPE} == "AES" ]]; then
+    LIBWACOM_STYLI="@isdv4-aes;"
+elif [[ ${SENSORTYPE} == "EMR" ]]; then
+    LIBWACOM_STYLI="0xfffff;0xffffe;"
+fi
 LIBWACOM_WIDTH=$(printf '%.0f\n' ${PEN_WIDTH})
 LIBWACOM_HEIGHT=$(printf '%.0f\n' ${PEN_HEIGHT})
 LIBACOM_INTEGRATION="Display;System"
