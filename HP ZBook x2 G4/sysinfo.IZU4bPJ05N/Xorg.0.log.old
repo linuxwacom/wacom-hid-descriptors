@@ -1,0 +1,619 @@
+[  1099.041] (--) Log file renamed from "/var/log/Xorg.pid-24745.log" to "/var/log/Xorg.0.log"
+[  1099.041] 
+X.Org X Server 1.21.1.3
+X Protocol Version 11, Revision 0
+[  1099.041] Current Operating System: Linux HOSTNAME 5.15.13-arch1-1 #1 SMP PREEMPT Wed, 05 Jan 2022 16:20:59 +0000 x86_64
+[  1099.041] Kernel command line: loglevel=3 quiet splash cryptdevice=UUID=b04b1238-146b-4e86-9362-84ab3a442163:cryptdh root=/dev/cryptdh/root rootflags=subvol=rootfs video=3840x2160 log_buf_len=100M resume=/dev/cryptdh/swap rd.udev.log_priority=3 vt.global_cursor_default=0 pcie_port_pm=off
+
+[  1099.041]  
+[  1099.041] Current version of pixman: 0.40.0
+[  1099.041] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  1099.041] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  1099.041] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Jan 11 09:39:21 2022
+[  1099.042] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  1099.042] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  1099.042] (==) No Layout section.  Using the first Screen section.
+[  1099.042] (==) No screen section available. Using defaults.
+[  1099.042] (**) |-->Screen "Default Screen Section" (0)
+[  1099.042] (**) |   |-->Monitor "<default monitor>"
+[  1099.042] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  1099.042] (==) Automatically adding devices
+[  1099.042] (==) Automatically enabling devices
+[  1099.042] (==) Automatically adding GPU devices
+[  1099.042] (==) Automatically binding GPU devices
+[  1099.042] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  1099.042] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[  1099.042] 	Entry deleted from font path.
+[  1099.042] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/TTF".
+[  1099.042] 	Entry deleted from font path.
+[  1099.042] 	(Run 'mkfontdir' on "/usr/share/fonts/TTF").
+[  1099.042] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  1099.042] 	Entry deleted from font path.
+[  1099.042] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  1099.042] 	Entry deleted from font path.
+[  1099.042] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[  1099.042] 	Entry deleted from font path.
+[  1099.042] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[  1099.042] 	Entry deleted from font path.
+[  1099.042] (==) FontPath set to:
+	
+[  1099.042] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  1099.042] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  1099.042] (II) Module ABI versions:
+[  1099.042] 	X.Org ANSI C Emulation: 0.4
+[  1099.042] 	X.Org Video Driver: 25.2
+[  1099.042] 	X.Org XInput driver : 24.4
+[  1099.042] 	X.Org Server Extension : 10.0
+[  1099.043] (++) using VT number 1
+
+[  1099.043] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[  1099.044] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  1099.044] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[  1099.054] (--) PCI:*(0@0:2:0) 8086:5917:103c:824c rev 7, Mem @ 0x1ffa000000/16777216, 0x1fa0000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[  1099.054] (--) PCI: (1@0:0:0) 10de:13b4:103c:824c rev 162, Mem @ 0xc3000000/16777216, 0x80000000/268435456, 0x90000000/33554432, I/O @ 0x00003000/128, BIOS @ 0x????????/524288
+[  1099.054] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  1099.054] (II) LoadModule: "glx"
+[  1099.054] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  1099.056] (II) Module glx: vendor="X.Org Foundation"
+[  1099.056] 	compiled for 1.21.1.3, module version = 1.0.0
+[  1099.056] 	ABI class: X.Org Server Extension, version 10.0
+[  1099.056] (==) Matched intel as autoconfigured driver 0
+[  1099.056] (==) Matched modesetting as autoconfigured driver 1
+[  1099.056] (==) Matched fbdev as autoconfigured driver 2
+[  1099.056] (==) Matched vesa as autoconfigured driver 3
+[  1099.056] (==) Assigned the driver to the xf86ConfigLayout
+[  1099.056] (II) LoadModule: "intel"
+[  1099.056] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[  1099.056] (II) Module intel: vendor="X.Org Foundation"
+[  1099.056] 	compiled for 1.21.1.1, module version = 2.99.917
+[  1099.057] 	Module class: X.Org Video Driver
+[  1099.057] 	ABI class: X.Org Video Driver, version 25.2
+[  1099.057] (II) LoadModule: "modesetting"
+[  1099.057] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  1099.061] (II) Module modesetting: vendor="X.Org Foundation"
+[  1099.061] 	compiled for 1.21.1.3, module version = 1.21.1
+[  1099.061] 	Module class: X.Org Video Driver
+[  1099.061] 	ABI class: X.Org Video Driver, version 25.2
+[  1099.061] (II) LoadModule: "fbdev"
+[  1099.061] (WW) Warning, couldn't open module fbdev
+[  1099.061] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[  1099.061] (II) LoadModule: "vesa"
+[  1099.061] (WW) Warning, couldn't open module vesa
+[  1099.061] (EE) Failed to load module "vesa" (module does not exist, 0)
+[  1099.061] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[  1099.062] (II) intel: Driver for Intel(R) HD Graphics
+[  1099.062] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[  1099.062] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[  1099.062] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  1099.062] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20201103
+[  1099.062] (II) intel(0): SNA compiled from 2.99.917-916-g31486f40
+[  1099.078] (WW) Falling back to old probe method for modesetting
+[  1099.078] (--) intel(0): gen9 engineering sample
+[  1099.078] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 4 threads
+[  1099.078] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  1099.078] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[  1099.078] (==) intel(0): RGB weight 888
+[  1099.078] (==) intel(0): Default visual is TrueColor
+[  1099.079] (II) intel(0): Output eDP1 has no monitor section
+[  1099.079] (**) intel(0): Found backlight control interface intel_backlight (type 'raw') for output eDP1
+[  1099.079] (II) intel(0): Enabled output eDP1
+[  1099.079] (II) intel(0): Output DP1 has no monitor section
+[  1099.079] (II) intel(0): Enabled output DP1
+[  1099.079] (II) intel(0): Output HDMI1 has no monitor section
+[  1099.080] (II) intel(0): Enabled output HDMI1
+[  1099.080] (II) intel(0): Output DP2 has no monitor section
+[  1099.080] (II) intel(0): Enabled output DP2
+[  1099.080] (II) intel(0): Output HDMI2 has no monitor section
+[  1099.080] (II) intel(0): Enabled output HDMI2
+[  1099.080] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[  1099.080] (II) intel(0): Output VIRTUAL1 has no monitor section
+[  1099.080] (II) intel(0): Enabled output VIRTUAL1
+[  1099.080] (--) intel(0): Output eDP1 using initial mode 3840x2160 on pipe 0
+[  1099.080] (==) intel(0): TearFree enabled
+[  1099.080] (==) intel(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1099.080] (++) intel(0): DPI set to (180, 180)
+[  1099.080] (II) Loading sub module "dri3"
+[  1099.080] (II) LoadModule: "dri3"
+[  1099.080] (II) Module "dri3" already built-in
+[  1099.080] (II) Loading sub module "dri2"
+[  1099.080] (II) LoadModule: "dri2"
+[  1099.080] (II) Module "dri2" already built-in
+[  1099.080] (II) Loading sub module "present"
+[  1099.080] (II) LoadModule: "present"
+[  1099.080] (II) Module "present" already built-in
+[  1099.080] (II) UnloadModule: "modesetting"
+[  1099.080] (II) Unloading modesetting
+[  1099.081] (II) intel(0): SNA initialized with Kabylake (gen9) backend
+[  1099.081] (==) intel(0): Backing store enabled
+[  1099.081] (==) intel(0): Silken mouse enabled
+[  1099.081] (II) intel(0): HW Cursor enabled
+[  1099.081] (==) intel(0): DPMS enabled
+[  1099.081] (==) intel(0): Display hotplug detection enabled
+[  1099.081] (II) intel(0): [DRI2] Setup complete
+[  1099.081] (II) intel(0): [DRI2]   DRI driver: i965
+[  1099.081] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[  1099.081] (II) intel(0): direct rendering: DRI2 DRI3 enabled
+[  1099.081] (II) intel(0): hardware support for Present enabled
+[  1099.081] (II) Initializing extension Generic Event Extension
+[  1099.082] (II) Initializing extension SHAPE
+[  1099.082] (II) Initializing extension MIT-SHM
+[  1099.082] (II) Initializing extension XInputExtension
+[  1099.082] (II) Initializing extension XTEST
+[  1099.082] (II) Initializing extension BIG-REQUESTS
+[  1099.082] (II) Initializing extension SYNC
+[  1099.082] (II) Initializing extension XKEYBOARD
+[  1099.083] (II) Initializing extension XC-MISC
+[  1099.083] (II) Initializing extension SECURITY
+[  1099.083] (II) Initializing extension XFIXES
+[  1099.083] (II) Initializing extension RENDER
+[  1099.083] (II) Initializing extension RANDR
+[  1099.083] (II) Initializing extension COMPOSITE
+[  1099.084] (II) Initializing extension DAMAGE
+[  1099.084] (II) Initializing extension MIT-SCREEN-SAVER
+[  1099.084] (II) Initializing extension DOUBLE-BUFFER
+[  1099.084] (II) Initializing extension RECORD
+[  1099.084] (II) Initializing extension DPMS
+[  1099.084] (II) Initializing extension Present
+[  1099.084] (II) Initializing extension DRI3
+[  1099.085] (II) Initializing extension X-Resource
+[  1099.085] (II) Initializing extension XVideo
+[  1099.085] (II) Initializing extension XVideo-MotionCompensation
+[  1099.085] (II) Initializing extension GLX
+[  1099.091] (II) AIGLX: Loaded and initialized i965
+[  1099.091] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  1099.091] (II) Initializing extension XFree86-VidModeExtension
+[  1099.091] (II) Initializing extension XFree86-DGA
+[  1099.091] (II) Initializing extension XFree86-DRI
+[  1099.091] (II) Initializing extension DRI2
+[  1099.103] (II) intel(0): switch to mode 3840x2160@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[  1099.117] (II) intel(0): Setting screen physical size to 541 x 304
+[  1099.169] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[  1099.169] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  1099.169] (II) LoadModule: "libinput"
+[  1099.169] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  1099.171] (II) Module libinput: vendor="X.Org Foundation"
+[  1099.171] 	compiled for 1.21.1, module version = 1.2.0
+[  1099.171] 	Module class: X.Org XInput Driver
+[  1099.171] 	ABI class: X.Org XInput driver, version 24.4
+[  1099.171] (II) Using input driver 'libinput' for 'Power Button'
+[  1099.171] (**) Power Button: always reports core events
+[  1099.171] (**) Option "Device" "/dev/input/event3"
+[  1099.171] (**) Option "_source" "server/udev"
+[  1099.173] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  1099.174] (II) event3  - Power Button: device is a keyboard
+[  1099.174] (II) event3  - Power Button: device removed
+[  1099.202] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[  1099.202] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  1099.203] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  1099.203] (II) event3  - Power Button: device is a keyboard
+[  1099.204] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[  1099.204] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  1099.204] (II) Using input driver 'libinput' for 'Video Bus'
+[  1099.204] (**) Video Bus: always reports core events
+[  1099.204] (**) Option "Device" "/dev/input/event12"
+[  1099.204] (**) Option "_source" "server/udev"
+[  1099.205] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[  1099.205] (II) event12 - Video Bus: device is a keyboard
+[  1099.205] (II) event12 - Video Bus: device removed
+[  1099.237] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input13/event12"
+[  1099.237] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[  1099.239] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[  1099.239] (II) event12 - Video Bus: device is a keyboard
+[  1099.241] (II) config/udev: Adding input device Video Bus (/dev/input/event13)
+[  1099.241] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  1099.241] (II) Using input driver 'libinput' for 'Video Bus'
+[  1099.241] (**) Video Bus: always reports core events
+[  1099.241] (**) Option "Device" "/dev/input/event13"
+[  1099.241] (**) Option "_source" "server/udev"
+[  1099.243] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[  1099.243] (II) event13 - Video Bus: device is a keyboard
+[  1099.243] (II) event13 - Video Bus: device removed
+[  1099.331] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:38/LNXVIDEO:01/input/input14/event13"
+[  1099.331] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[  1099.332] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[  1099.332] (II) event13 - Video Bus: device is a keyboard
+[  1099.333] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[  1099.333] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  1099.333] (II) Using input driver 'libinput' for 'Power Button'
+[  1099.333] (**) Power Button: always reports core events
+[  1099.333] (**) Option "Device" "/dev/input/event2"
+[  1099.333] (**) Option "_source" "server/udev"
+[  1099.334] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  1099.334] (II) event2  - Power Button: device is a keyboard
+[  1099.334] (II) event2  - Power Button: device removed
+[  1099.371] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input2/event2"
+[  1099.371] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[  1099.372] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  1099.372] (II) event2  - Power Button: device is a keyboard
+[  1099.373] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[  1099.373] (II) No input driver specified, ignoring this device.
+[  1099.373] (II) This device may have been added with another device file.
+[  1099.374] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[  1099.374] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  1099.374] (II) Using input driver 'libinput' for 'Sleep Button'
+[  1099.374] (**) Sleep Button: always reports core events
+[  1099.374] (**) Option "Device" "/dev/input/event0"
+[  1099.374] (**) Option "_source" "server/udev"
+[  1099.375] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[  1099.375] (II) event0  - Sleep Button: device is a keyboard
+[  1099.375] (II) event0  - Sleep Button: device removed
+[  1099.424] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[  1099.424] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[  1099.427] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[  1099.427] (II) event0  - Sleep Button: device is a keyboard
+[  1099.431] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  (/dev/input/event5)
+[  1099.431] (**) NXP Semiconductors LPC I2C HID : Applying InputClass "libinput keyboard catchall"
+[  1099.431] (II) Using input driver 'libinput' for 'NXP Semiconductors LPC I2C HID '
+[  1099.431] (**) NXP Semiconductors LPC I2C HID : always reports core events
+[  1099.431] (**) Option "Device" "/dev/input/event5"
+[  1099.431] (**) Option "_source" "server/udev"
+[  1099.434] (II) event5  - NXP Semiconductors LPC I2C HID : is tagged by udev as: Keyboard
+[  1099.434] (II) event5  - NXP Semiconductors LPC I2C HID : device is a keyboard
+[  1099.435] (II) event5  - NXP Semiconductors LPC I2C HID : device removed
+[  1099.478] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:1FC9:0088.0003/input/input5/event5"
+[  1099.478] (II) XINPUT: Adding extended input device "NXP Semiconductors LPC I2C HID " (type: KEYBOARD, id 11)
+[  1099.482] (II) event5  - NXP Semiconductors LPC I2C HID : is tagged by udev as: Keyboard
+[  1099.482] (II) event5  - NXP Semiconductors LPC I2C HID : device is a keyboard
+[  1099.485] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  System Control (/dev/input/event6)
+[  1099.485] (**) NXP Semiconductors LPC I2C HID  System Control: Applying InputClass "libinput keyboard catchall"
+[  1099.485] (II) Using input driver 'libinput' for 'NXP Semiconductors LPC I2C HID  System Control'
+[  1099.485] (**) NXP Semiconductors LPC I2C HID  System Control: always reports core events
+[  1099.485] (**) Option "Device" "/dev/input/event6"
+[  1099.485] (**) Option "_source" "server/udev"
+[  1099.488] (II) event6  - NXP Semiconductors LPC I2C HID  System Control: is tagged by udev as: Keyboard
+[  1099.489] (II) event6  - NXP Semiconductors LPC I2C HID  System Control: device is a keyboard
+[  1099.489] (II) event6  - NXP Semiconductors LPC I2C HID  System Control: device removed
+[  1099.518] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.2/0003:1FC9:0088.0004/input/input6/event6"
+[  1099.518] (II) XINPUT: Adding extended input device "NXP Semiconductors LPC I2C HID  System Control" (type: KEYBOARD, id 12)
+[  1099.522] (II) event6  - NXP Semiconductors LPC I2C HID  System Control: is tagged by udev as: Keyboard
+[  1099.522] (II) event6  - NXP Semiconductors LPC I2C HID  System Control: device is a keyboard
+[  1099.525] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  Consumer Control (/dev/input/event7)
+[  1099.525] (**) NXP Semiconductors LPC I2C HID  Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  1099.525] (II) Using input driver 'libinput' for 'NXP Semiconductors LPC I2C HID  Consumer Control'
+[  1099.525] (**) NXP Semiconductors LPC I2C HID  Consumer Control: always reports core events
+[  1099.525] (**) Option "Device" "/dev/input/event7"
+[  1099.525] (**) Option "_source" "server/udev"
+[  1099.528] (II) event7  - NXP Semiconductors LPC I2C HID  Consumer Control: is tagged by udev as: Keyboard
+[  1099.529] (II) event7  - NXP Semiconductors LPC I2C HID  Consumer Control: device is a keyboard
+[  1099.529] (II) event7  - NXP Semiconductors LPC I2C HID  Consumer Control: device removed
+[  1099.558] (II) libinput: NXP Semiconductors LPC I2C HID  Consumer Control: needs a virtual subdevice
+[  1099.558] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.2/0003:1FC9:0088.0004/input/input7/event7"
+[  1099.558] (II) XINPUT: Adding extended input device "NXP Semiconductors LPC I2C HID  Consumer Control" (type: MOUSE, id 13)
+[  1099.558] (**) Option "AccelerationScheme" "none"
+[  1099.558] (**) NXP Semiconductors LPC I2C HID  Consumer Control: (accel) selected scheme none/0
+[  1099.558] (**) NXP Semiconductors LPC I2C HID  Consumer Control: (accel) acceleration factor: 2.000
+[  1099.558] (**) NXP Semiconductors LPC I2C HID  Consumer Control: (accel) acceleration threshold: 4
+[  1099.562] (II) event7  - NXP Semiconductors LPC I2C HID  Consumer Control: is tagged by udev as: Keyboard
+[  1099.562] (II) event7  - NXP Semiconductors LPC I2C HID  Consumer Control: device is a keyboard
+[  1099.565] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  (/dev/input/event8)
+[  1099.565] (II) No input driver specified, ignoring this device.
+[  1099.565] (II) This device may have been added with another device file.
+[  1099.567] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  (/dev/input/event9)
+[  1099.567] (II) No input driver specified, ignoring this device.
+[  1099.567] (II) This device may have been added with another device file.
+[  1099.569] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  Mouse (/dev/input/event10)
+[  1099.569] (**) NXP Semiconductors LPC I2C HID  Mouse: Applying InputClass "libinput pointer catchall"
+[  1099.569] (II) Using input driver 'libinput' for 'NXP Semiconductors LPC I2C HID  Mouse'
+[  1099.569] (**) NXP Semiconductors LPC I2C HID  Mouse: always reports core events
+[  1099.569] (**) Option "Device" "/dev/input/event10"
+[  1099.569] (**) Option "_source" "server/udev"
+[  1099.627] (II) event10 - NXP Semiconductors LPC I2C HID  Mouse: is tagged by udev as: Mouse
+[  1099.628] (II) event10 - NXP Semiconductors LPC I2C HID  Mouse: device is a pointer
+[  1099.628] (II) event10 - NXP Semiconductors LPC I2C HID  Mouse: device removed
+[  1099.691] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.3/0003:1FC9:0088.0005/input/input11/event10"
+[  1099.691] (II) XINPUT: Adding extended input device "NXP Semiconductors LPC I2C HID  Mouse" (type: MOUSE, id 14)
+[  1099.691] (**) Option "AccelerationScheme" "none"
+[  1099.692] (**) NXP Semiconductors LPC I2C HID  Mouse: (accel) selected scheme none/0
+[  1099.692] (**) NXP Semiconductors LPC I2C HID  Mouse: (accel) acceleration factor: 2.000
+[  1099.692] (**) NXP Semiconductors LPC I2C HID  Mouse: (accel) acceleration threshold: 4
+[  1099.751] (II) event10 - NXP Semiconductors LPC I2C HID  Mouse: is tagged by udev as: Mouse
+[  1099.751] (II) event10 - NXP Semiconductors LPC I2C HID  Mouse: device is a pointer
+[  1099.754] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  Mouse (/dev/input/mouse0)
+[  1099.754] (II) No input driver specified, ignoring this device.
+[  1099.754] (II) This device may have been added with another device file.
+[  1099.756] (II) config/udev: Adding input device NXP Semiconductors LPC I2C HID  (/dev/input/event11)
+[  1099.756] (II) No input driver specified, ignoring this device.
+[  1099.756] (II) This device may have been added with another device file.
+[  1099.758] (II) config/udev: Adding input device HP HD Camera: HP HD Camera (/dev/input/event26)
+[  1099.758] (**) HP HD Camera: HP HD Camera: Applying InputClass "libinput keyboard catchall"
+[  1099.758] (II) Using input driver 'libinput' for 'HP HD Camera: HP HD Camera'
+[  1099.758] (**) HP HD Camera: HP HD Camera: always reports core events
+[  1099.758] (**) Option "Device" "/dev/input/event26"
+[  1099.758] (**) Option "_source" "server/udev"
+[  1099.761] (II) event26 - HP HD Camera: HP HD Camera: is tagged by udev as: Keyboard
+[  1099.761] (II) event26 - HP HD Camera: HP HD Camera: device is a keyboard
+[  1099.761] (II) event26 - HP HD Camera: HP HD Camera: device removed
+[  1099.811] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.0/input/input37/event26"
+[  1099.811] (II) XINPUT: Adding extended input device "HP HD Camera: HP HD Camera" (type: KEYBOARD, id 15)
+[  1099.815] (II) event26 - HP HD Camera: HP HD Camera: is tagged by udev as: Keyboard
+[  1099.815] (II) event26 - HP HD Camera: HP HD Camera: device is a keyboard
+[  1099.817] (II) config/udev: Adding input device HP HD Camera: HP IR Camera (/dev/input/event27)
+[  1099.817] (**) HP HD Camera: HP IR Camera: Applying InputClass "libinput keyboard catchall"
+[  1099.817] (II) Using input driver 'libinput' for 'HP HD Camera: HP IR Camera'
+[  1099.817] (**) HP HD Camera: HP IR Camera: always reports core events
+[  1099.817] (**) Option "Device" "/dev/input/event27"
+[  1099.817] (**) Option "_source" "server/udev"
+[  1099.820] (II) event27 - HP HD Camera: HP IR Camera: is tagged by udev as: Keyboard
+[  1099.820] (II) event27 - HP HD Camera: HP IR Camera: device is a keyboard
+[  1099.821] (II) event27 - HP HD Camera: HP IR Camera: device removed
+[  1099.878] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.2/input/input38/event27"
+[  1099.878] (II) XINPUT: Adding extended input device "HP HD Camera: HP IR Camera" (type: KEYBOARD, id 16)
+[  1099.881] (II) event27 - HP HD Camera: HP IR Camera: is tagged by udev as: Keyboard
+[  1099.882] (II) event27 - HP HD Camera: HP IR Camera: device is a keyboard
+[  1099.884] (II) config/udev: Adding input device HP 8MP Camera: HP 8MP Camera (/dev/input/event22)
+[  1099.884] (**) HP 8MP Camera: HP 8MP Camera: Applying InputClass "libinput keyboard catchall"
+[  1099.884] (II) Using input driver 'libinput' for 'HP 8MP Camera: HP 8MP Camera'
+[  1099.884] (**) HP 8MP Camera: HP 8MP Camera: always reports core events
+[  1099.884] (**) Option "Device" "/dev/input/event22"
+[  1099.884] (**) Option "_source" "server/udev"
+[  1099.887] (II) event22 - HP 8MP Camera: HP 8MP Camera: is tagged by udev as: Keyboard
+[  1099.887] (II) event22 - HP 8MP Camera: HP 8MP Camera: device is a keyboard
+[  1099.887] (II) event22 - HP 8MP Camera: HP 8MP Camera: device removed
+[  1099.958] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0/input/input36/event22"
+[  1099.958] (II) XINPUT: Adding extended input device "HP 8MP Camera: HP 8MP Camera" (type: KEYBOARD, id 17)
+[  1099.961] (II) event22 - HP 8MP Camera: HP 8MP Camera: is tagged by udev as: Keyboard
+[  1099.962] (II) event22 - HP 8MP Camera: HP 8MP Camera: device is a keyboard
+[  1099.964] (II) config/udev: Adding input device ATML1000:00 03EB:8ABB (/dev/input/event20)
+[  1099.964] (**) ATML1000:00 03EB:8ABB: Applying InputClass "libinput touchscreen catchall"
+[  1099.964] (II) Using input driver 'libinput' for 'ATML1000:00 03EB:8ABB'
+[  1099.964] (**) ATML1000:00 03EB:8ABB: always reports core events
+[  1099.964] (**) Option "Device" "/dev/input/event20"
+[  1099.964] (**) Option "_source" "server/udev"
+[  1099.967] (II) event20 - ATML1000:00 03EB:8ABB: is tagged by udev as: Touchscreen
+[  1099.967] (II) event20 - ATML1000:00 03EB:8ABB: device is a touch device
+[  1099.968] (II) event20 - ATML1000:00 03EB:8ABB: device removed
+[  1100.038] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-6/i2c-ATML1000:00/0018:03EB:8ABB.0006/input/input34/event20"
+[  1100.038] (II) XINPUT: Adding extended input device "ATML1000:00 03EB:8ABB" (type: TOUCHSCREEN, id 18)
+[  1100.038] (**) Option "AccelerationScheme" "none"
+[  1100.038] (**) ATML1000:00 03EB:8ABB: (accel) selected scheme none/0
+[  1100.038] (**) ATML1000:00 03EB:8ABB: (accel) acceleration factor: 2.000
+[  1100.038] (**) ATML1000:00 03EB:8ABB: (accel) acceleration threshold: 4
+[  1100.041] (II) event20 - ATML1000:00 03EB:8ABB: is tagged by udev as: Touchscreen
+[  1100.042] (II) event20 - ATML1000:00 03EB:8ABB: device is a touch device
+[  1100.044] (II) config/udev: Adding input device ATML1000:00 03EB:8ABB (/dev/input/mouse2)
+[  1100.044] (II) No input driver specified, ignoring this device.
+[  1100.044] (II) This device may have been added with another device file.
+[  1100.045] (II) config/udev: Adding input device ATML1000:00 03EB:8ABB UNKNOWN (/dev/input/event21)
+[  1100.046] (**) ATML1000:00 03EB:8ABB UNKNOWN: Applying InputClass "libinput tablet catchall"
+[  1100.046] (II) Using input driver 'libinput' for 'ATML1000:00 03EB:8ABB UNKNOWN'
+[  1100.046] (**) ATML1000:00 03EB:8ABB UNKNOWN: always reports core events
+[  1100.046] (**) Option "Device" "/dev/input/event21"
+[  1100.046] (**) Option "_source" "server/udev"
+[  1100.049] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: is tagged by udev as: Tablet
+[  1100.082] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: tablet 'ATML1000:00 03EB:8ABB UNKNOWN' unknown to libwacom
+[  1100.082] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: device is a tablet
+[  1100.082] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: device removed
+[  1100.144] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-6/i2c-ATML1000:00/0018:03EB:8ABB.0006/input/input35/event21"
+[  1100.144] (II) XINPUT: Adding extended input device "ATML1000:00 03EB:8ABB UNKNOWN" (type: TABLET, id 19)
+[  1100.148] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: is tagged by udev as: Tablet
+[  1100.149] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: tablet 'ATML1000:00 03EB:8ABB UNKNOWN' unknown to libwacom
+[  1100.150] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: device is a tablet
+[  1100.151] (II) config/udev: Adding input device ATML1000:00 03EB:8ABB UNKNOWN (/dev/input/mouse3)
+[  1100.151] (II) No input driver specified, ignoring this device.
+[  1100.151] (II) This device may have been added with another device file.
+[  1100.153] (II) config/udev: Adding input device Wacom HID 16C Pen (/dev/input/event19)
+[  1100.153] (**) Wacom HID 16C Pen: Applying InputClass "libinput tablet catchall"
+[  1100.153] (**) Wacom HID 16C Pen: Applying InputClass "Wacom USB tablet class"
+[  1100.153] (**) Wacom HID 16C Pen: Applying InputClass "Wacom tablet class"
+[  1100.153] (II) LoadModule: "wacom"
+[  1100.153] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[  1100.154] (II) Module wacom: vendor="X.Org Foundation"
+[  1100.154] 	compiled for 1.21.1.1, module version = 0.40.0
+[  1100.154] 	Module class: X.Org XInput Driver
+[  1100.154] 	ABI class: X.Org XInput driver, version 24.4
+[  1100.154] (II) Build version: 0.40.0
+[  1100.154] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[  1100.158] (II) Using input driver 'wacom' for 'Wacom HID 16C Pen'
+[  1100.158] (**) Wacom HID 16C Pen: always reports core events
+[  1100.158] (**) Option "Device" "/dev/input/event19"
+[  1100.158] (II) Wacom HID 16C Pen: type not specified, assuming 'stylus'.
+[  1100.158] (II) Wacom HID 16C Pen: other types will be automatically added.
+[  1100.158] (--) Wacom HID 16C Pen stylus: using pressure threshold of 851 for button 1
+[  1100.158] (**) Wacom HID 16C Pen stylus: panscroll is 0
+[  1100.158] (**) Wacom HID 16C Pen stylus: panscroll modified to 1300
+[  1100.158] (--) Wacom HID 16C Pen stylus: maxX=30931 maxY=17399 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[  1100.158] (II) Wacom HID 16C Pen stylus: hotplugging dependent devices.
+[  1100.158] (EE) Wacom HID 16C Pen stylus: Invalid type 'cursor' for this device.
+[  1100.158] (EE) Wacom HID 16C Pen stylus: Invalid type 'touch' for this device.
+[  1100.158] (EE) Wacom HID 16C Pen stylus: Invalid type 'pad' for this device.
+[  1100.158] (II) Wacom HID 16C Pen stylus: hotplugging completed.
+[  1100.211] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-7/i2c-WCOM002E:00/0018:056A:016C.0007/input/input30/event19"
+[  1100.211] (II) XINPUT: Adding extended input device "Wacom HID 16C Pen stylus" (type: STYLUS, id 20)
+[  1100.212] (**) Wacom HID 16C Pen stylus: (accel) keeping acceleration scheme 1
+[  1100.212] (**) Wacom HID 16C Pen stylus: (accel) acceleration profile 0
+[  1100.212] (**) Wacom HID 16C Pen stylus: (accel) acceleration factor: 2.000
+[  1100.212] (**) Wacom HID 16C Pen stylus: (accel) acceleration threshold: 4
+[  1100.213] (II) config/udev: Adding input device Wacom HID 16C Pen (/dev/input/mouse1)
+[  1100.214] (II) No input driver specified, ignoring this device.
+[  1100.214] (II) This device may have been added with another device file.
+[  1100.215] (II) config/udev: Adding input device Intel Virtual Buttons (/dev/input/event16)
+[  1100.215] (**) Intel Virtual Buttons: Applying InputClass "libinput keyboard catchall"
+[  1100.215] (II) Using input driver 'libinput' for 'Intel Virtual Buttons'
+[  1100.215] (**) Intel Virtual Buttons: always reports core events
+[  1100.215] (**) Option "Device" "/dev/input/event16"
+[  1100.215] (**) Option "_source" "server/udev"
+[  1100.218] (II) event16 - Intel Virtual Buttons: is tagged by udev as: Keyboard
+[  1100.218] (II) event16 - Intel Virtual Buttons: device is a keyboard
+[  1100.218] (II) event16 - Intel Virtual Buttons: device removed
+[  1100.251] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/INT33D6:00/input/input17/event16"
+[  1100.251] (II) XINPUT: Adding extended input device "Intel Virtual Buttons" (type: KEYBOARD, id 21)
+[  1100.254] (II) event16 - Intel Virtual Buttons: is tagged by udev as: Keyboard
+[  1100.254] (II) event16 - Intel Virtual Buttons: device is a keyboard
+[  1100.256] (II) config/udev: Adding input device Intel Virtual Switches (/dev/input/event17)
+[  1100.256] (II) No input driver specified, ignoring this device.
+[  1100.256] (II) This device may have been added with another device file.
+[  1100.257] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event24)
+[  1100.257] (II) No input driver specified, ignoring this device.
+[  1100.257] (II) This device may have been added with another device file.
+[  1100.258] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event25)
+[  1100.258] (II) No input driver specified, ignoring this device.
+[  1100.258] (II) This device may have been added with another device file.
+[  1100.259] (II) config/udev: Adding input device Intel HID events (/dev/input/event15)
+[  1100.259] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[  1100.259] (II) Using input driver 'libinput' for 'Intel HID events'
+[  1100.259] (**) Intel HID events: always reports core events
+[  1100.259] (**) Option "Device" "/dev/input/event15"
+[  1100.259] (**) Option "_source" "server/udev"
+[  1100.261] (II) event15 - Intel HID events: is tagged by udev as: Keyboard
+[  1100.261] (II) event15 - Intel HID events: device is a keyboard
+[  1100.262] (II) event15 - Intel HID events: device removed
+[  1100.304] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input16/event15"
+[  1100.304] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 22)
+[  1100.307] (II) event15 - Intel HID events: is tagged by udev as: Keyboard
+[  1100.307] (II) event15 - Intel HID events: device is a keyboard
+[  1100.309] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[  1100.309] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  1100.309] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  1100.309] (**) AT Translated Set 2 keyboard: always reports core events
+[  1100.309] (**) Option "Device" "/dev/input/event4"
+[  1100.309] (**) Option "_source" "server/udev"
+[  1100.311] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  1100.312] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  1100.315] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  1100.331] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[  1100.331] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 23)
+[  1100.334] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  1100.334] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  1100.339] (II) config/udev: Adding input device PC Speaker (/dev/input/event18)
+[  1100.339] (II) No input driver specified, ignoring this device.
+[  1100.339] (II) This device may have been added with another device file.
+[  1100.346] (II) config/udev: Adding input device Wireless hotkeys (/dev/input/event14)
+[  1100.346] (**) Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[  1100.346] (II) Using input driver 'libinput' for 'Wireless hotkeys'
+[  1100.346] (**) Wireless hotkeys: always reports core events
+[  1100.346] (**) Option "Device" "/dev/input/event14"
+[  1100.346] (**) Option "_source" "server/udev"
+[  1100.348] (II) event14 - Wireless hotkeys: is tagged by udev as: Keyboard
+[  1100.348] (II) event14 - Wireless hotkeys: device is a keyboard
+[  1100.348] (II) event14 - Wireless hotkeys: device removed
+[  1100.408] (**) Option "config_info" "udev:/sys/devices/virtual/input/input15/event14"
+[  1100.408] (II) XINPUT: Adding extended input device "Wireless hotkeys" (type: KEYBOARD, id 24)
+[  1100.410] (II) event14 - Wireless hotkeys: is tagged by udev as: Keyboard
+[  1100.410] (II) event14 - Wireless hotkeys: device is a keyboard
+[  1100.411] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event23)
+[  1100.412] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[  1100.412] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[  1100.412] (**) HP WMI hotkeys: always reports core events
+[  1100.412] (**) Option "Device" "/dev/input/event23"
+[  1100.412] (**) Option "_source" "server/udev"
+[  1100.413] (II) event23 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[  1100.413] (II) event23 - HP WMI hotkeys: device is a keyboard
+[  1100.414] (II) event23 - HP WMI hotkeys: device removed
+[  1100.464] (**) Option "config_info" "udev:/sys/devices/virtual/input/input27/event23"
+[  1100.464] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 25)
+[  1100.466] (II) event23 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[  1100.467] (II) event23 - HP WMI hotkeys: device is a keyboard
+[  1100.518] (**) NXP Semiconductors LPC I2C HID  Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  1100.518] (II) Using input driver 'libinput' for 'NXP Semiconductors LPC I2C HID  Consumer Control'
+[  1100.518] (**) NXP Semiconductors LPC I2C HID  Consumer Control: always reports core events
+[  1100.518] (**) Option "Device" "/dev/input/event7"
+[  1100.518] (**) Option "_source" "_driver/libinput"
+[  1100.518] (II) libinput: NXP Semiconductors LPC I2C HID  Consumer Control: is a virtual subdevice
+[  1100.519] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.2/0003:1FC9:0088.0004/input/input7/event7"
+[  1100.519] (II) XINPUT: Adding extended input device "NXP Semiconductors LPC I2C HID  Consumer Control" (type: KEYBOARD, id 26)
+[  1100.519] (**) Wacom HID 16C Pen eraser: Applying InputClass "libinput tablet catchall"
+[  1100.519] (**) Wacom HID 16C Pen eraser: Applying InputClass "Wacom USB tablet class"
+[  1100.519] (**) Wacom HID 16C Pen eraser: Applying InputClass "Wacom tablet class"
+[  1100.519] (II) Using input driver 'wacom' for 'Wacom HID 16C Pen eraser'
+[  1100.519] (**) Wacom HID 16C Pen eraser: always reports core events
+[  1100.519] (**) Option "Device" "/dev/input/event19"
+[  1100.519] (**) Option "Type" "eraser"
+[  1100.519] (**) Wacom HID 16C Pen eraser: panscroll is 1300
+[  1100.520] (**) Wacom HID 16C Pen eraser: panscroll modified to 1300
+[  1100.520] (--) Wacom HID 16C Pen eraser: maxX=30931 maxY=17399 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[  1100.558] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-7/i2c-WCOM002E:00/0018:056A:016C.0007/input/input30/event19"
+[  1100.558] (II) XINPUT: Adding extended input device "Wacom HID 16C Pen eraser" (type: ERASER, id 27)
+[  1100.558] (**) Wacom HID 16C Pen eraser: (accel) keeping acceleration scheme 1
+[  1100.558] (**) Wacom HID 16C Pen eraser: (accel) acceleration profile 0
+[  1100.558] (**) Wacom HID 16C Pen eraser: (accel) acceleration factor: 2.000
+[  1100.558] (**) Wacom HID 16C Pen eraser: (accel) acceleration threshold: 4
+[  1100.574] (II) event3  - Power Button: device removed
+[  1100.604] (II) event12 - Video Bus: device removed
+[  1100.678] (II) event13 - Video Bus: device removed
+[  1100.731] (II) event2  - Power Button: device removed
+[  1100.758] (II) event0  - Sleep Button: device removed
+[  1100.784] (II) event5  - NXP Semiconductors LPC I2C HID : device removed
+[  1100.811] (II) event6  - NXP Semiconductors LPC I2C HID  System Control: device removed
+[  1100.838] (II) event10 - NXP Semiconductors LPC I2C HID  Mouse: device removed
+[  1100.904] (II) event26 - HP HD Camera: HP HD Camera: device removed
+[  1100.971] (II) event27 - HP HD Camera: HP IR Camera: device removed
+[  1101.024] (II) event22 - HP 8MP Camera: HP 8MP Camera: device removed
+[  1101.077] (II) event20 - ATML1000:00 03EB:8ABB: device removed
+[  1101.130] (II) event21 - ATML1000:00 03EB:8ABB UNKNOWN: device removed
+[  1101.171] (II) event16 - Intel Virtual Buttons: device removed
+[  1101.197] (II) event15 - Intel HID events: device removed
+[  1101.224] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  1101.251] (II) event14 - Wireless hotkeys: device removed
+[  1101.304] (II) event23 - HP WMI hotkeys: device removed
+[  1101.357] (II) event7  - NXP Semiconductors LPC I2C HID  Consumer Control: device removed
+[  1101.438] (II) UnloadModule: "wacom"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "wacom"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.438] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.439] (II) UnloadModule: "libinput"
+[  1101.441] (II) UnloadModule: "libinput"
+[  1101.451] (II) Server terminated successfully (0). Closing log file.
