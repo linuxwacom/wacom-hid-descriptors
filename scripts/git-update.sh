@@ -36,13 +36,13 @@ IDENT=${IDENT%/}
 MACHINE=$(tar xf "${ARCHIVE}" -O ${IDENT}/machine.txt)
 
 if [[ -n "${NOURL}" ]]; then
-  echo "Treating as a private bug..."
+  echo "NOTE: Treating as a private bug..."
   ISSUE_URL="From private bug report"
 elif [[ -z "${ISSUE_URL}" ]]; then
-  echo "The --url=<issue> parameter is required."
+  echo "ERROR: The --url=<issue> parameter is required."
   exit 1
 elif [[ "${ISSUE_URL}" != *"github"* ]]; then
-  echo "This script can only handle Github issues."
+  echo "ERROR: This script can only handle Github issues."
   exit 1
 fi
 
@@ -61,7 +61,7 @@ if [[ -z "${OEM}" ]]; then
     "MOTION")                OEM="Motion Computing";;
     "ASUSTeK COMPUTER INC.") OEM="ASUS";;
     "HUAWEI")                OEM="Huawei";;
-    *)                       echo "Unknown OEM '${OEM}'. Please specify one with the --oem=<name> argument."; exit 1;;
+    *)                       echo "ERROR: Unknown OEM '${OEM}'. Please specify one with the --oem=<name> argument."; exit 1;;
   esac
 fi
 
@@ -73,7 +73,7 @@ if [[ -z "${PRODUCT}" ]]; then
   fi
 
   if [[ -z "${PRODUCT}" ]]; then
-    echo "Unable to determine product name. Please specify one with the --product=<name> argument."
+    echo "ERROR: Unable to determine product name. Please specify one with the --product=<name> argument."
     exit 1
   fi
 fi
@@ -90,7 +90,7 @@ while true; do
   case $yn in
     [Yy]*) break;;
     [Nn]*)
-      echo "Please specify OEM and/or product with the --oem=<name> and --product=<name> arguments."
+      echo "ERROR: Please specify OEM and/or product with the --oem=<name> and --product=<name> arguments."
       exit 1;;
     *);;
   esac
@@ -177,8 +177,8 @@ fi
 cd "${IDENT}"
 
 if test $(ls *.hid.txt 2>/dev/null | wc -l) -eq 0; then
-  echo "No converted HID data found"
-  exit 0
+  echo "ERROR: No converted HID data found. Was the sensor detected?"
+  exit 1
 fi
 
 PEN_FILE=$(grep -l "Usage (Pen)" *.hid.txt || true)
@@ -186,24 +186,24 @@ TOUCHSCREEN_FILE=$(grep -l "Usage (Touchscreen)" *.hid.txt || true)
 
 SKIP=0
 if [[ $(wc -l <<< "${PEN_FILE}") -eq 0 ]]; then
-    echo "No pen devices found."
+    echo "WARNING: No pen devices found."
     SKIP=1
 fi
 if [[ $(wc -l <<< "${PEN_FILE}") -gt 1 ]]; then
-    echo "Multiple pen devices found."
+    echo "WARNING: Multiple pen devices found."
     SKIP=1
 fi
 if [[ $(wc -l <<< "${TOUCHSCREEN_FILE}") -gt 1 ]]; then
-    echo "Multiple touchscreens found."
+    echo "WARNING: Multiple touchscreens found."
     SKIP=1
 fi
 if [[ "${PEN_FILE}" != *:056A:* && "${PEN_FILE}" != *:2D1F:* ]]; then
-    echo "Pen device is not a Wacom sensor"
+    echo "NOTE: Pen device is not a Wacom sensor. Tablet definition cannot be auto-generated."
     SKIP=1
 fi
 
 if [[ ${SKIP} -ne 0 ]]; then
-    echo "Unable to parse HID data. Skipping creation of libwacom tablet definition."
+    echo "NOTE: Unable to parse HID data. Skipping creation of libwacom tablet definition."
     exit 0
 else
     echo "Attempting to parse HID data and create libwacom tablet definition..."
