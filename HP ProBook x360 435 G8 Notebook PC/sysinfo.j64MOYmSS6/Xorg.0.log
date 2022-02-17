@@ -1,0 +1,515 @@
+[    25.977] (--) Log file renamed from "/var/log/Xorg.pid-1253.log" to "/var/log/Xorg.0.log"
+[    25.978] 
+X.Org X Server 1.21.1.3
+X Protocol Version 11, Revision 0
+[    25.978] Current Operating System: Linux HOSTNAME 5.16.8-arch1-1 #1 SMP PREEMPT Tue, 08 Feb 2022 21:21:08 +0000 x86_64
+[    25.978] Kernel command line: initrd=\amd-ucode.img initrd=\initramfs-linux.img cryptdevice=PARTUUID=333dfda1-0f68-4844-aabc-39d2f0e30d3a:luksdev USERNAME=/dev/mapper/luksdev zswap.enabled=0 USERNAMEflags=subvol=/@ rw lang=de locale=de_DE.UTF-8 intel_pstate=no_hwp USERNAMEfstype=btrfs
+[    25.978]  
+[    25.978] Current version of pixman: 0.40.0
+[    25.978] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    25.978] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    25.978] (==) Log file: "/var/log/Xorg.0.log", Time: Mon Feb 14 09:45:10 2022
+[    25.979] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    25.979] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    25.979] (==) No Layout section.  Using the first Screen section.
+[    25.979] (==) No screen section available. Using defaults.
+[    25.979] (**) |-->Screen "Default Screen Section" (0)
+[    25.979] (**) |   |-->Monitor "<default monitor>"
+[    25.979] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    25.979] (==) Automatically adding devices
+[    25.979] (==) Automatically enabling devices
+[    25.979] (==) Automatically adding GPU devices
+[    25.979] (==) Automatically binding GPU devices
+[    25.979] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    25.980] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    25.980] 	Entry deleted from font path.
+[    25.980] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/TTF".
+[    25.980] 	Entry deleted from font path.
+[    25.980] 	(Run 'mkfontdir' on "/usr/share/fonts/TTF").
+[    25.980] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    25.980] 	Entry deleted from font path.
+[    25.980] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    25.980] 	Entry deleted from font path.
+[    25.980] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[    25.980] 	Entry deleted from font path.
+[    25.980] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[    25.980] 	Entry deleted from font path.
+[    25.980] (==) FontPath set to:
+	
+[    25.980] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    25.980] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    25.980] (II) Module ABI versions:
+[    25.980] 	X.Org ANSI C Emulation: 0.4
+[    25.980] 	X.Org Video Driver: 25.2
+[    25.980] 	X.Org XInput driver : 24.4
+[    25.980] 	X.Org Server Extension : 10.0
+[    25.980] (++) using VT number 1
+
+[    25.980] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    25.981] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    25.981] (II) Platform probe for /sys/devices/pci0000:00/0000:00:08.1/0000:04:00.0/drm/card0
+[    25.992] (--) PCI:*(4@0:0:0) 1002:1638:103c:8886 rev 193, Mem @ 0x460000000/268435456, 0x470000000/2097152, 0xfb400000/524288, I/O @ 0x00001000/256
+[    25.992] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    25.992] (II) LoadModule: "glx"
+[    25.992] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    25.999] (II) Module glx: vendor="X.Org Foundation"
+[    25.999] 	compiled for 1.21.1.3, module version = 1.0.0
+[    25.999] 	ABI class: X.Org Server Extension, version 10.0
+[    25.999] (II) Applying OutputClass "AMDgpu" to /dev/dri/card0
+[    25.999] 	loading driver: amdgpu
+[    25.999] (==) Matched amdgpu as autoconfigured driver 0
+[    25.999] (==) Matched ati as autoconfigured driver 1
+[    25.999] (==) Matched modesetting as autoconfigured driver 2
+[    25.999] (==) Matched fbdev as autoconfigured driver 3
+[    25.999] (==) Matched vesa as autoconfigured driver 4
+[    25.999] (==) Assigned the driver to the xf86ConfigLayout
+[    25.999] (II) LoadModule: "amdgpu"
+[    25.999] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[    26.002] (II) Module amdgpu: vendor="X.Org Foundation"
+[    26.002] 	compiled for 1.21.1, module version = 21.0.0
+[    26.002] 	Module class: X.Org Video Driver
+[    26.002] 	ABI class: X.Org Video Driver, version 25.2
+[    26.002] (II) LoadModule: "ati"
+[    26.002] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[    26.003] (II) Module ati: vendor="X.Org Foundation"
+[    26.003] 	compiled for 1.21.1.1, module version = 19.1.0
+[    26.003] 	Module class: X.Org Video Driver
+[    26.003] 	ABI class: X.Org Video Driver, version 25.2
+[    26.006] (II) LoadModule: "modesetting"
+[    26.006] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    26.007] (II) Module modesetting: vendor="X.Org Foundation"
+[    26.007] 	compiled for 1.21.1.3, module version = 1.21.1
+[    26.007] 	Module class: X.Org Video Driver
+[    26.007] 	ABI class: X.Org Video Driver, version 25.2
+[    26.007] (II) LoadModule: "fbdev"
+[    26.007] (WW) Warning, couldn't open module fbdev
+[    26.007] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    26.007] (II) LoadModule: "vesa"
+[    26.007] (WW) Warning, couldn't open module vesa
+[    26.007] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    26.007] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[    26.007] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    26.011] (WW) Falling back to old probe method for modesetting
+[    26.011] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    26.011] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[    26.011] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[    26.011] (==) AMDGPU(0): Default visual is TrueColor
+[    26.011] (==) AMDGPU(0): RGB weight 888
+[    26.011] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[    26.011] (--) AMDGPU(0): Chipset: "Unknown AMD Radeon GPU" (ChipID = 0x1638)
+[    26.011] (II) Loading sub module "fb"
+[    26.011] (II) LoadModule: "fb"
+[    26.011] (II) Module "fb" already built-in
+[    26.011] (II) Loading sub module "dri2"
+[    26.011] (II) LoadModule: "dri2"
+[    26.011] (II) Module "dri2" already built-in
+[    26.321] (II) Loading sub module "glamoregl"
+[    26.321] (II) LoadModule: "glamoregl"
+[    26.322] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    26.326] (II) Module glamoregl: vendor="X.Org Foundation"
+[    26.326] 	compiled for 1.21.1.3, module version = 1.0.1
+[    26.327] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    26.335] (II) AMDGPU(0): glamor X acceleration enabled on AMD RENOIR (DRM 3.44.0, 5.16.8-arch1-1, LLVM 13.0.0)
+[    26.335] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[    26.335] (==) AMDGPU(0): TearFree property default: auto
+[    26.335] (==) AMDGPU(0): VariableRefresh: disabled
+[    26.335] (II) AMDGPU(0): KMS Pageflipping: enabled
+[    26.337] (II) AMDGPU(0): Output eDP has no monitor section
+[    26.337] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[    26.337] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[    26.337] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[    26.341] (II) AMDGPU(0): EDID for output eDP
+[    26.341] (II) AMDGPU(0): Manufacturer: LGD  Model: 69f  Serial#: 0
+[    26.341] (II) AMDGPU(0): Year: 2020  Week: 0
+[    26.341] (II) AMDGPU(0): EDID Version: 1.4
+[    26.341] (II) AMDGPU(0): Digital Display Input
+[    26.341] (II) AMDGPU(0): 8 bits per channel
+[    26.341] (II) AMDGPU(0): Digital interface is DisplayPort
+[    26.341] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 29  vert.: 17
+[    26.341] (II) AMDGPU(0): Gamma: 2.20
+[    26.341] (II) AMDGPU(0): No DPMS capabilities specified
+[    26.341] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 
+[    26.341] (II) AMDGPU(0): Default color space is primary color space
+[    26.341] (II) AMDGPU(0): First detailed timing is preferred mode
+[    26.341] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    26.341] (II) AMDGPU(0): Display is continuous-frequency
+[    26.341] (II) AMDGPU(0): redX: 0.632 redY: 0.326   greenX: 0.298 greenY: 0.615
+[    26.341] (II) AMDGPU(0): blueX: 0.155 blueY: 0.051   whiteX: 0.313 whiteY: 0.329
+[    26.341] (II) AMDGPU(0): Manufacturer's mask: 0
+[    26.341] (II) AMDGPU(0): Supported detailed timing:
+[    26.341] (II) AMDGPU(0): clock: 138.7 MHz   Image Size:  294 x 165 mm
+[    26.341] (II) AMDGPU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[    26.341] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1111 v_border: 0
+[    26.341] (II) AMDGPU(0): Supported detailed timing:
+[    26.341] (II) AMDGPU(0): clock: 92.5 MHz   Image Size:  294 x 165 mm
+[    26.341] (II) AMDGPU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[    26.341] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1111 v_border: 0
+[    26.341] (II) AMDGPU(0): Unknown vendor-specific block 2
+[    26.341] (II) AMDGPU(0): EDID (in hex):
+[    26.341] (II) AMDGPU(0): 	00ffffffffffff0030e49f0600000000
+[    26.341] (II) AMDGPU(0): 	001e0104a51d117807e6c5a1534c9d27
+[    26.341] (II) AMDGPU(0): 	0d505400000001010101010101010101
+[    26.341] (II) AMDGPU(0): 	0101010101012e3680a070381f403020
+[    26.341] (II) AMDGPU(0): 	350026a5100000191f2480a070381f40
+[    26.341] (II) AMDGPU(0): 	3020350026a510000019000000000000
+[    26.341] (II) AMDGPU(0): 	00000000000000000000000000000002
+[    26.341] (II) AMDGPU(0): 	000726ff0a3cc80b1214c8000000004c
+[    26.341] (II) AMDGPU(0): Printing probed modes for output eDP
+[    26.341] (II) AMDGPU(0): Modeline "1920x1080"x60.0  138.70  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.7 kHz eP)
+[    26.341] (II) AMDGPU(0): Modeline "1920x1080"x40.0   92.47  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (44.5 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "1680x1050"x60.0  138.70  1680 1968 2000 2080  1050 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "1280x1024"x60.0  138.70  1280 1968 2000 2080  1024 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "1440x900"x60.0  138.70  1440 1968 2000 2080  900 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "1280x800"x60.0  138.70  1280 1968 2000 2080  800 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "1280x720"x60.0  138.70  1280 1968 2000 2080  720 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "1024x768"x60.0  138.70  1024 1968 2000 2080  768 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "800x600"x60.0  138.70  800 1968 2000 2080  600 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): Modeline "640x480"x60.0  138.70  640 1968 2000 2080  480 1083 1088 1111 -hsync -vsync (66.7 kHz e)
+[    26.341] (II) AMDGPU(0): EDID for output HDMI-A-0
+[    26.341] (II) AMDGPU(0): EDID for output DisplayPort-0
+[    26.341] (II) AMDGPU(0): EDID for output DisplayPort-1
+[    26.341] (II) AMDGPU(0): Output eDP connected
+[    26.341] (II) AMDGPU(0): Output HDMI-A-0 disconnected
+[    26.341] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[    26.341] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[    26.341] (II) AMDGPU(0): Using exact sizes for initial modes
+[    26.341] (II) AMDGPU(0): Output eDP using initial mode 1920x1080 +0+0
+[    26.341] (II) AMDGPU(0): mem size init: gart size :bf5cf000 vram size: s:1df2c000 visible:1df2c000
+[    26.341] (==) AMDGPU(0): DPI set to (96, 96)
+[    26.341] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    26.341] (II) Loading sub module "ramdac"
+[    26.341] (II) LoadModule: "ramdac"
+[    26.341] (II) Module "ramdac" already built-in
+[    26.341] (II) UnloadModule: "modesetting"
+[    26.341] (II) Unloading modesetting
+[    26.341] (II) AMDGPU(0): [DRI2] Setup complete
+[    26.341] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[    26.341] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[    26.348] (II) AMDGPU(0): Front buffer pitch: 7680 bytes
+[    26.348] (II) AMDGPU(0): SYNC extension fences enabled
+[    26.348] (II) AMDGPU(0): Present extension enabled
+[    26.348] (==) AMDGPU(0): DRI3 enabled
+[    26.348] (==) AMDGPU(0): Backing store enabled
+[    26.348] (II) AMDGPU(0): Direct rendering enabled
+[    26.353] (II) AMDGPU(0): Use GLAMOR acceleration.
+[    26.353] (II) AMDGPU(0): Acceleration enabled
+[    26.353] (==) AMDGPU(0): DPMS enabled
+[    26.353] (==) AMDGPU(0): Silken mouse enabled
+[    26.353] (II) AMDGPU(0): Set up textured video (glamor)
+[    26.356] (II) Initializing extension Generic Event Extension
+[    26.356] (II) Initializing extension SHAPE
+[    26.356] (II) Initializing extension MIT-SHM
+[    26.356] (II) Initializing extension XInputExtension
+[    26.356] (II) Initializing extension XTEST
+[    26.356] (II) Initializing extension BIG-REQUESTS
+[    26.356] (II) Initializing extension SYNC
+[    26.356] (II) Initializing extension XKEYBOARD
+[    26.356] (II) Initializing extension XC-MISC
+[    26.356] (II) Initializing extension SECURITY
+[    26.356] (II) Initializing extension XFIXES
+[    26.356] (II) Initializing extension RENDER
+[    26.356] (II) Initializing extension RANDR
+[    26.357] (II) Initializing extension COMPOSITE
+[    26.357] (II) Initializing extension DAMAGE
+[    26.357] (II) Initializing extension MIT-SCREEN-SAVER
+[    26.357] (II) Initializing extension DOUBLE-BUFFER
+[    26.357] (II) Initializing extension RECORD
+[    26.357] (II) Initializing extension DPMS
+[    26.357] (II) Initializing extension Present
+[    26.357] (II) Initializing extension DRI3
+[    26.357] (II) Initializing extension X-Resource
+[    26.357] (II) Initializing extension XVideo
+[    26.357] (II) Initializing extension XVideo-MotionCompensation
+[    26.357] (II) Initializing extension GLX
+[    26.360] (II) AIGLX: Loaded and initialized radeonsi
+[    26.360] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    26.360] (II) Initializing extension XFree86-VidModeExtension
+[    26.360] (II) Initializing extension XFree86-DGA
+[    26.360] (II) Initializing extension XFree86-DRI
+[    26.360] (II) Initializing extension DRI2
+[    26.361] (II) AMDGPU(0): Setting screen physical size to 508 x 285
+[    26.371] (EE) AMDGPU(0): Failed to make import prime FD as pixmap: 22
+[    26.434] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    26.434] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    26.434] (**) Power Button: Applying InputClass "system-keyboard"
+[    26.434] (II) LoadModule: "libinput"
+[    26.434] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    26.438] (II) Module libinput: vendor="X.Org Foundation"
+[    26.438] 	compiled for 1.21.1.3, module version = 1.2.1
+[    26.438] 	Module class: X.Org XInput Driver
+[    26.438] 	ABI class: X.Org XInput driver, version 24.4
+[    26.438] (II) Using input driver 'libinput' for 'Power Button'
+[    26.438] (**) Power Button: always reports core events
+[    26.438] (**) Option "Device" "/dev/input/event3"
+[    26.440] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    26.440] (II) event3  - Power Button: device is a keyboard
+[    26.440] (II) event3  - Power Button: device removed
+[    26.477] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[    26.477] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    26.477] (**) Option "xkb_model" "pc105"
+[    26.477] (**) Option "xkb_layout" "de"
+[    26.477] (**) Option "xkb_variant" "nodeadkeys"
+[    26.477] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    26.493] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    26.493] (II) event3  - Power Button: device is a keyboard
+[    26.493] (II) config/udev: Adding input device Video Bus (/dev/input/event6)
+[    26.493] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    26.493] (**) Video Bus: Applying InputClass "system-keyboard"
+[    26.493] (II) Using input driver 'libinput' for 'Video Bus'
+[    26.493] (**) Video Bus: always reports core events
+[    26.493] (**) Option "Device" "/dev/input/event6"
+[    26.493] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[    26.493] (II) event6  - Video Bus: device is a keyboard
+[    26.494] (II) event6  - Video Bus: device removed
+[    26.556] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0d/LNXVIDEO:00/input/input6/event6"
+[    26.556] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    26.556] (**) Option "xkb_model" "pc105"
+[    26.556] (**) Option "xkb_layout" "de"
+[    26.556] (**) Option "xkb_variant" "nodeadkeys"
+[    26.556] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    26.557] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[    26.557] (II) event6  - Video Bus: device is a keyboard
+[    26.558] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    26.558] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    26.558] (**) Power Button: Applying InputClass "system-keyboard"
+[    26.558] (II) Using input driver 'libinput' for 'Power Button'
+[    26.558] (**) Power Button: always reports core events
+[    26.558] (**) Option "Device" "/dev/input/event0"
+[    26.559] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    26.559] (II) event0  - Power Button: device is a keyboard
+[    26.559] (II) event0  - Power Button: device removed
+[    26.597] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    26.597] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    26.597] (**) Option "xkb_model" "pc105"
+[    26.597] (**) Option "xkb_layout" "de"
+[    26.597] (**) Option "xkb_variant" "nodeadkeys"
+[    26.597] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    26.598] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    26.598] (II) event0  - Power Button: device is a keyboard
+[    26.599] (II) config/udev: Adding input device Lid Switch (/dev/input/event2)
+[    26.599] (II) No input driver specified, ignoring this device.
+[    26.599] (II) This device may have been added with another device file.
+[    26.600] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[    26.600] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    26.600] (**) Sleep Button: Applying InputClass "system-keyboard"
+[    26.600] (II) Using input driver 'libinput' for 'Sleep Button'
+[    26.600] (**) Sleep Button: always reports core events
+[    26.600] (**) Option "Device" "/dev/input/event1"
+[    26.600] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[    26.601] (II) event1  - Sleep Button: device is a keyboard
+[    26.601] (II) event1  - Sleep Button: device removed
+[    26.637] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1/event1"
+[    26.637] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[    26.637] (**) Option "xkb_model" "pc105"
+[    26.637] (**) Option "xkb_layout" "de"
+[    26.637] (**) Option "xkb_variant" "nodeadkeys"
+[    26.637] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    26.638] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[    26.638] (II) event1  - Sleep Button: device is a keyboard
+[    26.639] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event14)
+[    26.639] (II) No input driver specified, ignoring this device.
+[    26.639] (II) This device may have been added with another device file.
+[    26.639] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=7 (/dev/input/event15)
+[    26.639] (II) No input driver specified, ignoring this device.
+[    26.639] (II) This device may have been added with another device file.
+[    26.640] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=8 (/dev/input/event16)
+[    26.640] (II) No input driver specified, ignoring this device.
+[    26.640] (II) This device may have been added with another device file.
+[    26.640] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=9 (/dev/input/event17)
+[    26.640] (II) No input driver specified, ignoring this device.
+[    26.640] (II) This device may have been added with another device file.
+[    26.641] (II) config/udev: Adding input device HP HD Camera: HP HD Camera (/dev/input/event8)
+[    26.641] (**) HP HD Camera: HP HD Camera: Applying InputClass "libinput keyboard catchall"
+[    26.641] (**) HP HD Camera: HP HD Camera: Applying InputClass "system-keyboard"
+[    26.641] (II) Using input driver 'libinput' for 'HP HD Camera: HP HD Camera'
+[    26.641] (**) HP HD Camera: HP HD Camera: always reports core events
+[    26.641] (**) Option "Device" "/dev/input/event8"
+[    26.642] (II) event8  - HP HD Camera: HP HD Camera: is tagged by udev as: Keyboard
+[    26.642] (II) event8  - HP HD Camera: HP HD Camera: device is a keyboard
+[    26.642] (II) event8  - HP HD Camera: HP HD Camera: device removed
+[    26.717] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.4/usb3/3-3/3-3:1.0/input/input22/event8"
+[    26.717] (II) XINPUT: Adding extended input device "HP HD Camera: HP HD Camera" (type: KEYBOARD, id 10)
+[    26.717] (**) Option "xkb_model" "pc105"
+[    26.717] (**) Option "xkb_layout" "de"
+[    26.717] (**) Option "xkb_variant" "nodeadkeys"
+[    26.717] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    26.719] (II) event8  - HP HD Camera: HP HD Camera: is tagged by udev as: Keyboard
+[    26.719] (II) event8  - HP HD Camera: HP HD Camera: device is a keyboard
+[    26.720] (II) config/udev: Adding input device HP HD Camera: HP IR Camera (/dev/input/event12)
+[    26.720] (**) HP HD Camera: HP IR Camera: Applying InputClass "libinput keyboard catchall"
+[    26.720] (**) HP HD Camera: HP IR Camera: Applying InputClass "system-keyboard"
+[    26.720] (II) Using input driver 'libinput' for 'HP HD Camera: HP IR Camera'
+[    26.720] (**) HP HD Camera: HP IR Camera: always reports core events
+[    26.720] (**) Option "Device" "/dev/input/event12"
+[    26.721] (II) event12 - HP HD Camera: HP IR Camera: is tagged by udev as: Keyboard
+[    26.721] (II) event12 - HP HD Camera: HP IR Camera: device is a keyboard
+[    26.721] (II) event12 - HP HD Camera: HP IR Camera: device removed
+[    26.797] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.4/usb3/3-3/3-3:1.2/input/input28/event12"
+[    26.797] (II) XINPUT: Adding extended input device "HP HD Camera: HP IR Camera" (type: KEYBOARD, id 11)
+[    26.797] (**) Option "xkb_model" "pc105"
+[    26.797] (**) Option "xkb_layout" "de"
+[    26.797] (**) Option "xkb_variant" "nodeadkeys"
+[    26.797] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    26.799] (II) event12 - HP HD Camera: HP IR Camera: is tagged by udev as: Keyboard
+[    26.799] (II) event12 - HP HD Camera: HP IR Camera: device is a keyboard
+[    26.799] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event18)
+[    26.799] (II) No input driver specified, ignoring this device.
+[    26.799] (II) This device may have been added with another device file.
+[    26.800] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event11)
+[    26.800] (II) No input driver specified, ignoring this device.
+[    26.800] (II) This device may have been added with another device file.
+[    26.800] (II) config/udev: Adding input device ELAN0746:00 04F3:318B Mouse (/dev/input/event9)
+[    26.800] (**) ELAN0746:00 04F3:318B Mouse: Applying InputClass "libinput pointer catchall"
+[    26.800] (II) Using input driver 'libinput' for 'ELAN0746:00 04F3:318B Mouse'
+[    26.800] (**) ELAN0746:00 04F3:318B Mouse: always reports core events
+[    26.800] (**) Option "Device" "/dev/input/event9"
+[    26.801] (II) event9  - ELAN0746:00 04F3:318B Mouse: is tagged by udev as: Mouse Pointingstick
+[    26.802] (II) event9  - ELAN0746:00 04F3:318B Mouse: device is a pointer
+[    26.803] (II) event9  - ELAN0746:00 04F3:318B Mouse: device removed
+[    26.863] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN0746:00/0018:04F3:318B.0001/input/input25/event9"
+[    26.864] (II) XINPUT: Adding extended input device "ELAN0746:00 04F3:318B Mouse" (type: MOUSE, id 12)
+[    26.864] (**) Option "AccelerationScheme" "none"
+[    26.864] (**) ELAN0746:00 04F3:318B Mouse: (accel) selected scheme none/0
+[    26.864] (**) ELAN0746:00 04F3:318B Mouse: (accel) acceleration factor: 2.000
+[    26.864] (**) ELAN0746:00 04F3:318B Mouse: (accel) acceleration threshold: 4
+[    26.865] (II) event9  - ELAN0746:00 04F3:318B Mouse: is tagged by udev as: Mouse Pointingstick
+[    26.866] (II) event9  - ELAN0746:00 04F3:318B Mouse: device is a pointer
+[    26.867] (II) config/udev: Adding input device ELAN0746:00 04F3:318B Mouse (/dev/input/mouse0)
+[    26.867] (II) No input driver specified, ignoring this device.
+[    26.867] (II) This device may have been added with another device file.
+[    26.868] (II) config/udev: Adding input device ELAN0746:00 04F3:318B Touchpad (/dev/input/event10)
+[    26.868] (**) ELAN0746:00 04F3:318B Touchpad: Applying InputClass "libinput touchpad catchall"
+[    26.868] (II) Using input driver 'libinput' for 'ELAN0746:00 04F3:318B Touchpad'
+[    26.868] (**) ELAN0746:00 04F3:318B Touchpad: always reports core events
+[    26.868] (**) Option "Device" "/dev/input/event10"
+[    26.869] (II) event10 - ELAN0746:00 04F3:318B Touchpad: is tagged by udev as: Touchpad
+[    26.870] (II) event10 - ELAN0746:00 04F3:318B Touchpad: device is a touchpad
+[    26.871] (II) event10 - ELAN0746:00 04F3:318B Touchpad: device removed
+[    26.931] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN0746:00/0018:04F3:318B.0001/input/input27/event10"
+[    26.931] (II) XINPUT: Adding extended input device "ELAN0746:00 04F3:318B Touchpad" (type: TOUCHPAD, id 13)
+[    26.933] (**) Option "AccelerationScheme" "none"
+[    26.933] (**) ELAN0746:00 04F3:318B Touchpad: (accel) selected scheme none/0
+[    26.933] (**) ELAN0746:00 04F3:318B Touchpad: (accel) acceleration factor: 2.000
+[    26.933] (**) ELAN0746:00 04F3:318B Touchpad: (accel) acceleration threshold: 4
+[    26.933] (II) event10 - ELAN0746:00 04F3:318B Touchpad: is tagged by udev as: Touchpad
+[    26.935] (II) event10 - ELAN0746:00 04F3:318B Touchpad: device is a touchpad
+[    26.935] (II) config/udev: Adding input device ELAN0746:00 04F3:318B Touchpad (/dev/input/mouse1)
+[    26.936] (II) No input driver specified, ignoring this device.
+[    26.936] (II) This device may have been added with another device file.
+[    26.936] (II) config/udev: Adding input device ELAN2513:00 04F3:2DA1 (/dev/input/event19)
+[    26.936] (**) ELAN2513:00 04F3:2DA1: Applying InputClass "libinput touchscreen catchall"
+[    26.936] (II) Using input driver 'libinput' for 'ELAN2513:00 04F3:2DA1'
+[    26.936] (**) ELAN2513:00 04F3:2DA1: always reports core events
+[    26.936] (**) Option "Device" "/dev/input/event19"
+[    26.937] (II) event19 - ELAN2513:00 04F3:2DA1: is tagged by udev as: Touchscreen
+[    26.937] (II) event19 - ELAN2513:00 04F3:2DA1: device is a touch device
+[    26.938] (II) event19 - ELAN2513:00 04F3:2DA1: device removed
+[    27.023] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:02/i2c-2/i2c-ELAN2513:00/0018:04F3:2DA1.0002/input/input29/event19"
+[    27.024] (II) XINPUT: Adding extended input device "ELAN2513:00 04F3:2DA1" (type: TOUCHSCREEN, id 14)
+[    27.024] (**) Option "AccelerationScheme" "none"
+[    27.024] (**) ELAN2513:00 04F3:2DA1: (accel) selected scheme none/0
+[    27.024] (**) ELAN2513:00 04F3:2DA1: (accel) acceleration factor: 2.000
+[    27.024] (**) ELAN2513:00 04F3:2DA1: (accel) acceleration threshold: 4
+[    27.025] (II) event19 - ELAN2513:00 04F3:2DA1: is tagged by udev as: Touchscreen
+[    27.025] (II) event19 - ELAN2513:00 04F3:2DA1: device is a touch device
+[    27.026] (II) config/udev: Adding input device ELAN2513:00 04F3:2DA1 (/dev/input/mouse2)
+[    27.026] (II) No input driver specified, ignoring this device.
+[    27.026] (II) This device may have been added with another device file.
+[    27.027] (II) config/udev: Adding input device ELAN2513:00 04F3:2DA1 UNKNOWN (/dev/input/event20)
+[    27.027] (II) No input driver specified, ignoring this device.
+[    27.027] (II) This device may have been added with another device file.
+[    27.027] (II) config/udev: Adding input device ELAN2513:00 04F3:2DA1 UNKNOWN (/dev/input/event21)
+[    27.027] (II) No input driver specified, ignoring this device.
+[    27.027] (II) This device may have been added with another device file.
+[    27.027] (II) config/udev: Adding input device ELAN2513:00 04F3:2DA1 Stylus (/dev/input/event22)
+[    27.027] (**) ELAN2513:00 04F3:2DA1 Stylus: Applying InputClass "libinput tablet catchall"
+[    27.027] (II) Using input driver 'libinput' for 'ELAN2513:00 04F3:2DA1 Stylus'
+[    27.027] (**) ELAN2513:00 04F3:2DA1 Stylus: always reports core events
+[    27.027] (**) Option "Device" "/dev/input/event22"
+[    27.028] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: is tagged by udev as: Tablet
+[    27.053] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: tablet 'ELAN2513:00 04F3:2DA1 Stylus' unknown to libwacom
+[    27.054] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: device is a tablet
+[    27.054] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: device removed
+[    27.130] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:02/i2c-2/i2c-ELAN2513:00/0018:04F3:2DA1.0002/input/input32/event22"
+[    27.130] (II) XINPUT: Adding extended input device "ELAN2513:00 04F3:2DA1 Stylus" (type: TABLET, id 15)
+[    27.132] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: is tagged by udev as: Tablet
+[    27.139] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: tablet 'ELAN2513:00 04F3:2DA1 Stylus' unknown to libwacom
+[    27.139] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: device is a tablet
+[    27.140] (II) config/udev: Adding input device ELAN2513:00 04F3:2DA1 Stylus (/dev/input/mouse3)
+[    27.140] (II) No input driver specified, ignoring this device.
+[    27.140] (II) This device may have been added with another device file.
+[    27.140] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[    27.140] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    27.140] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[    27.140] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    27.140] (**) AT Translated Set 2 keyboard: always reports core events
+[    27.140] (**) Option "Device" "/dev/input/event4"
+[    27.141] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    27.141] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[    27.143] (II) event4  - AT Translated Set 2 keyboard: device removed
+[    27.184] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[    27.184] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 16)
+[    27.184] (**) Option "xkb_model" "pc105"
+[    27.184] (**) Option "xkb_layout" "de"
+[    27.184] (**) Option "xkb_variant" "nodeadkeys"
+[    27.184] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    27.185] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    27.185] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[    27.187] (II) config/udev: Adding input device PC Speaker (/dev/input/event13)
+[    27.187] (II) No input driver specified, ignoring this device.
+[    27.187] (II) This device may have been added with another device file.
+[    27.190] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event7)
+[    27.190] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    27.190] (**) HP WMI hotkeys: Applying InputClass "system-keyboard"
+[    27.190] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[    27.190] (**) HP WMI hotkeys: always reports core events
+[    27.190] (**) Option "Device" "/dev/input/event7"
+[    27.190] (II) event7  - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    27.191] (II) event7  - HP WMI hotkeys: device is a keyboard
+[    27.191] (II) event7  - HP WMI hotkeys: device removed
+[    27.250] (**) Option "config_info" "udev:/sys/devices/virtual/input/input21/event7"
+[    27.250] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 17)
+[    27.250] (**) Option "xkb_model" "pc105"
+[    27.250] (**) Option "xkb_layout" "de"
+[    27.250] (**) Option "xkb_variant" "nodeadkeys"
+[    27.250] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    27.251] (II) event7  - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    27.251] (II) event7  - HP WMI hotkeys: device is a keyboard
+[    27.252] (II) config/udev: Adding input device Wireless hotkeys (/dev/input/event5)
+[    27.252] (**) Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[    27.252] (**) Wireless hotkeys: Applying InputClass "system-keyboard"
+[    27.252] (II) Using input driver 'libinput' for 'Wireless hotkeys'
+[    27.252] (**) Wireless hotkeys: always reports core events
+[    27.252] (**) Option "Device" "/dev/input/event5"
+[    27.253] (II) event5  - Wireless hotkeys: is tagged by udev as: Keyboard
+[    27.253] (II) event5  - Wireless hotkeys: device is a keyboard
+[    27.253] (II) event5  - Wireless hotkeys: device removed
+[    27.339] (**) Option "config_info" "udev:/sys/devices/virtual/input/input5/event5"
+[    27.339] (II) XINPUT: Adding extended input device "Wireless hotkeys" (type: KEYBOARD, id 18)
+[    27.339] (**) Option "xkb_model" "pc105"
+[    27.339] (**) Option "xkb_layout" "de"
+[    27.339] (**) Option "xkb_variant" "nodeadkeys"
+[    27.339] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    27.340] (II) event5  - Wireless hotkeys: is tagged by udev as: Keyboard
+[    27.340] (II) event5  - Wireless hotkeys: device is a keyboard
+[    34.470] (II) event3  - Power Button: device removed
+[    34.493] (II) event6  - Video Bus: device removed
+[    34.553] (II) event0  - Power Button: device removed
+[    34.597] (II) event1  - Sleep Button: device removed
+[    34.624] (II) event8  - HP HD Camera: HP HD Camera: device removed
+[    34.677] (II) event12 - HP HD Camera: HP IR Camera: device removed
+[    34.730] (II) event9  - ELAN0746:00 04F3:318B Mouse: device removed
+[    34.797] (II) event10 - ELAN0746:00 04F3:318B Touchpad: device removed
+[    34.864] (II) event19 - ELAN2513:00 04F3:2DA1: device removed
+[    34.917] (II) event22 - ELAN2513:00 04F3:2DA1 Stylus: device removed
+[    34.984] (II) event4  - AT Translated Set 2 keyboard: device removed
+[    35.003] (II) event7  - HP WMI hotkeys: device removed
+[    35.078] (II) event5  - Wireless hotkeys: device removed
+[    35.120] (II) AIGLX: Suspending AIGLX clients for VT switch
