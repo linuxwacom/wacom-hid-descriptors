@@ -51,6 +51,7 @@ if [[ -z "${OEM}" ]]; then
   case "${OEM}" in
     "Acer")                  OEM="Acer";;
     "Dell Inc.")             OEM="Dell";;
+    "FUJITSU")               OEM="Fujitsu";;
     "Google")                OEM="Google";;
     "Hewlett-Packard")       OEM="HP";;
     "HP")                    OEM="HP";;
