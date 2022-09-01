@@ -148,7 +148,7 @@ fi
 
 if [[ -z "${NOURL}" ]]; then
   ANCHOR="#${ISSUE_URL#*#}"
-  if [[ "$ANCHOR" = "#" ]]; then
+  if [[ "$ANCHOR" = "#${ISSUE_URL}" ]]; then
     USERNAME=$(curl "${ISSUE_URL}" | sed -En 's!.*>([^<]*)</a>\s+opened this issue.*!\1!p' | head -n1)
   else
     USERNAME=$(curl "${ISSUE_URL}" | grep -C10 "$ANCHOR" | sed -En 's!^.+>([^<]+)</a>$!\1!p' | head -n1)
