@@ -52,6 +52,7 @@ function extract(s) {
 		case "Degrees":    DISPLAY_FACTOR*=1;      DISPLAY_UNIT="Degrees"; break;
 		case "Radians":    DISPLAY_FACTOR*=57.3;   DISPLAY_UNIT="Degrees"; break;
 		case "Centimeter * Gram * Seconds^-2": DISPLAY_FACTOR*=1/980.7; DISPLAY_UNIT="Grams"; break;
+		case "Seconds":    DISPLAY_FACTOR=1;       DISPLAY_UNIT="";        break;
 		case "":           DISPLAY_FACTOR=1;       DISPLAY_UNIT="";        break;
 		default: print "Unknown unit " UNIT "! Exiting."; exit 1;
 	}
