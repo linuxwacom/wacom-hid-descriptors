@@ -1,0 +1,668 @@
+[    0.000000] BIOS-e820: [mem 0x000000003a899000-0x00000000434aefff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000434af000-0x00000000452fefff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000452ff000-0x0000000045b2efff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000045b2f000-0x0000000045bfefff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x0000000045bff000-0x0000000045bfffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000045c00000-0x000000004f3fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff400000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000003b0bfffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+--
+[    0.044188] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.044433] percpu: Embedded 62 pages/cpu s217088 r8192 d28672 u262144
+[    0.044438] pcpu-alloc: s217088 r8192 d28672 u262144 alloc=1*2097152
+[    0.044439] pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[    0.044457] Fallback order for Node 0: 0 
+[    0.044459] Built 1 zonelists, mobility grouping on.  Total pages: 3045841
+[    0.044460] Policy zone: Normal
+[    0.044461] Kernel command line: BOOT_IMAGE=(hd0,gpt2)/vmlinuz-6.2.11-300.fc38.x86_64 USERNAME=UUID=fc5ba180-24ff-4684-8d17-0d0e53b7024d ro USERNAMEflags=subvol=USERNAME rhgb quiet
+[    0.044517] Unknown kernel command line parameters "rhgb BOOT_IMAGE=(hd0,gpt2)/vmlinuz-6.2.11-300.fc38.x86_64", will be passed to user space.
+[    0.045978] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[    0.046613] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+--
+[    0.084091] DMAR: dmar3: reg_base_addr fed86000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.084092] DMAR: DRHD base: 0x000000fed87000 flags: 0x0
+[    0.084095] DMAR: dmar4: reg_base_addr fed87000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.084096] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.084101] DMAR: dmar5: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.084102] DMAR: RMRR base: 0x0000004b000000 end: 0x0000004f3fffff
+[    0.084104] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 5
+[    0.084105] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.084106] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.086421] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.086423] x2apic enabled
+--
+[    2.539851] pci 10000:e1:00.0: Adding to iommu group 9
+[    2.539896] pci 10000:e0:1d.0: PCI bridge to [bus e1]
+[    2.539899] pci 10000:e0:1d.0:   bridge window [io  0x0000-0x0fff]
+[    2.539902] pci 10000:e0:1d.0:   bridge window [mem 0x50000000-0x500fffff]
+[    2.539909] pci 10000:e0:1d.0: Primary bus is hard wired to 0
+[    2.624588] input: MSFT0001:01 04F3:3138 Mouse as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-MSFT0001:01/0018:04F3:3138.0001/input/input3
+[    2.624751] input: MSFT0001:01 04F3:3138 Touchpad as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-MSFT0001:01/0018:04F3:3138.0001/input/input5
+[    2.624786] hid-generic 0018:04F3:3138.0001: input,hidraw0: I2C HID v1.00 Mouse [MSFT0001:01 04F3:3138] on i2c-MSFT0001:01
+[    2.663822] input: MSFT0001:01 04F3:3138 Mouse as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-MSFT0001:01/0018:04F3:3138.0001/input/input6
+[    2.663908] input: MSFT0001:01 04F3:3138 Touchpad as /devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-MSFT0001:01/0018:04F3:3138.0001/input/input8
+[    2.664185] hid-multitouch 0018:04F3:3138.0001: input,hidraw0: I2C HID v1.00 Mouse [MSFT0001:01 04F3:3138] on i2c-MSFT0001:01
+[    2.691181] pci 10000:e0:1d.0: BAR 14: assigned [mem 0x50000000-0x500fffff]
+[    2.691185] pci 10000:e0:1d.0: BAR 13: no space for [io  size 0x1000]
+[    2.691186] pci 10000:e0:1d.0: BAR 13: failed to assign [io  size 0x1000]
+[    2.691200] pci 10000:e1:00.0: BAR 0: assigned [mem 0x50000000-0x50003fff 64bit]
+[    2.691213] pci 10000:e0:1d.0: PCI bridge to [bus e1]
+[    2.691218] pci 10000:e0:1d.0:   bridge window [mem 0x50000000-0x500fffff]
+[    2.691242] pcieport 10000:e0:1d.0: can't derive routing for PCI INT A
+[    2.691243] pcieport 10000:e0:1d.0: PCI INT A: no GSI
+[    2.691312] pcieport 10000:e0:1d.0: PME: Signaling with IRQ 153
+[    2.691421] vmd 0000:00:0e.0: Bound to PCI domain 10000
+[    2.705556] input: WACF2200:00 056A:524D Touchscreen as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input9
+[    2.705610] input: WACF2200:00 056A:524D as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input10
+[    2.705639] input: WACF2200:00 056A:524D Stylus as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input11
+[    2.705672] input: WACF2200:00 056A:524D as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input12
+[    2.705704] input: WACF2200:00 056A:524D Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input13
+[    2.705742] hid-generic 0018:056A:524D.0002: input,hidraw1: I2C HID v1.00 Mouse [WACF2200:00 056A:524D] on i2c-WACF2200:00
+[    2.720095] pxa2xx-spi pxa2xx-spi.3: no DMA channels available, using PIO
+[    2.733456] nvme nvme0: pci function 10000:e1:00.0
+[    2.733468] pcieport 10000:e0:1d.0: can't derive routing for PCI INT A
+[    2.733469] nvme 10000:e1:00.0: PCI INT A: no GSI
+[    2.785036] input: Wacom HID 524D Pen as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input14
+[    2.785115] input: Wacom HID 524D Finger as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-WACF2200:00/0018:056A:524D.0002/input/input15
+[    2.785153] wacom 0018:056A:524D.0002: hidraw1: I2C HID v1.00 Mouse [WACF2200:00 056A:524D] on i2c-WACF2200:00
+[    2.802899] nvme nvme0: 8/0/0 default/read/poll queues
+[    2.805616]  nvme0n1: p1 p2 p3
+[    2.816274] BTRFS: device label fedora_localhost-live devid 1 transid 15819 /dev/nvme0n1p3 scanned by (udev-worker) (417)
+[    3.045205] i915 0000:00:02.0: [drm] VT-d active for gfx access
+[    3.064392] i915 0000:00:02.0: vgaarb: deactivate vga console
+--
+[    3.199985] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input17
+[    3.201455] fbcon: i915drmfb (fb0) is primary device
+[    3.201457] fbcon: Deferring console take-over
+[    3.201458] i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+[    3.452656] ish-hid {33AECD58-B679-4E54-9BD9-A04D34F0C226}: [hid-ish]: enum_devices_done OK, num_hid_devices=2
+[    3.459412] hid-generic 001F:8087:0AC2.0003: hidraw2: SENSOR HUB HID v2.00 Device [hid-ishtp 8087:0AC2] on 
+[    3.461132] hid-generic 001F:8087:0AC2.0004: hidraw3: SENSOR HUB HID v2.00 Device [hid-ishtp 8087:0AC2] on 
+[    4.011382] BTRFS info (device nvme0n1p3): using crc32c (crc32c-intel) checksum algorithm
+[    4.011388] BTRFS info (device nvme0n1p3): using free space tree
+[    4.033057] BTRFS info (device nvme0n1p3): enabling ssd optimizations
+[    4.033059] BTRFS info (device nvme0n1p3): auto enabling async discard
+[    4.530681] systemd-journald[268]: Received SIGTERM from PID 1 (systemd).
+--
+[    7.557203] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    8.174801] Bluetooth: hci0: Waiting for firmware download to complete
+[    8.175814] Bluetooth: hci0: Firmware loaded in 1653753 usecs
+[    8.175878] Bluetooth: hci0: Waiting for device to boot
+[    8.190803] Bluetooth: hci0: Device booted in 14601 usecs
+[    8.190813] Bluetooth: hci0: Malformed MSFT vendor event: 0x02
+[    8.191625] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-19-0-4.ddc
+[    8.193832] Bluetooth: hci0: Applying Intel DDC parameters completed
+[    8.194829] Bluetooth: hci0: Firmware revision 0.4 build 15 week 45 2022
+[    8.272338] Bluetooth: MGMT ver 1.22
+[   10.476145] rfkill: input handler disabled
+--
+[  185.189958] wlp0s20f3: associate with 86:71:b1:49:b6:b3 (try 1/3)
+[  185.193128] wlp0s20f3: RX AssocResp from 86:71:b1:49:b6:b3 (capab=0x511 status=0 aid=53)
+[  185.198192] wlp0s20f3: associated
+[  185.227750] wlp0s20f3: Limiting TX power to 30 (30 - 0) dBm as advertised by 86:71:b1:49:b6:b3
+[  185.347414] IPv6: ADDRCONF(NETDEV_CHANGE): wlp0s20f3: link becomes ready
+[  298.086989] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  300.329975] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  306.860933] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  315.013894] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  380.277469] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  381.812448] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  384.885439] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  387.219405] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  406.116265] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  407.244357] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  411.900231] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  418.548168] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  419.080259] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  422.220262] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  427.204105] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  454.243910] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  457.995877] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  459.130869] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  459.843863] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  461.815850] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  463.235836] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  467.027888] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  467.939795] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  470.642780] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  472.779867] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  485.971649] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  499.566541] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  520.907473] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  524.939354] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  527.548324] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  530.379398] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  542.987281] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  547.104277] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  552.395224] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  557.003088] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  559.043064] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  560.246057] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  566.347110] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  567.472005] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  567.632002] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  568.436020] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  572.602975] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  576.203017] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  579.495904] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  580.800894] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  587.458871] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  587.746843] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  605.995731] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  619.594748] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  638.139516] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  645.450540] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  648.097445] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  660.091363] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  663.922366] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  664.266448] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  673.943271] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  678.458337] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  679.496257] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  686.474286] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  706.754049] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  748.753888] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  749.652754] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  750.625747] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  753.483729] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  759.367690] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  760.002685] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  761.506695] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  762.849663] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  764.234666] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  764.681682] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  770.601707] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  770.737609] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  773.833695] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  776.107572] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  781.113549] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  795.249442] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  798.465418] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  799.881523] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  812.377332] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  813.433317] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  822.290281] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  831.051196] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  838.304160] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  849.495091] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  850.505088] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  862.083001] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  862.888969] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  866.614949] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  868.457015] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  871.363936] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  881.225008] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  883.024968] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  884.048832] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  884.434844] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  906.632683] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  912.579728] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  924.638547] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  924.936659] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  925.744548] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  926.080660] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  938.528518] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  938.920565] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  939.720585] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  939.994469] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  942.536554] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  942.994446] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  945.988417] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  947.296523] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  947.579462] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  947.920480] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  948.244405] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  950.832502] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  954.422362] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  954.743340] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  955.336376] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  956.597318] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  956.888430] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  963.080390] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  963.304401] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  965.320279] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  975.494264] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  976.932273] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  977.495302] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  979.735163] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  979.994187] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  980.785187] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  981.096275] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  984.236148] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[  984.494160] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 1235.026287] traps: nautilus[8237] general protection fault ip:556fc7d4388d sp:7ffff0362920 error:0 in nautilus[556fc7cb2000+c1000]
+[ 1507.171729] bijiben-shell-s[9402]: segfault at 7f73f4008 ip 00007f742355dbf1 sp 00007ffcaefb5f28 error 4 in libgobject-2.0.so.0.7600.1[7f7423532000+36000] likely on CPU 7 (core 3, socket 0)
+[ 1507.171756] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 1574.765256] bijiben-shell-s[9875]: segfault at 7f02c051046f ip 00007f05585d4bf1 sp 00007ffe1309d3a8 error 4 in libgobject-2.0.so.0.7600.1[7f05585a9000+36000] likely on CPU 0 (core 0, socket 0)
+[ 1574.765289] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 1599.119340] bijiben-shell-s[10240]: segfault at 7f46441af6f5 ip 00007f41d3f3abf1 sp 00007ffd53c28d98 error 4 in libgobject-2.0.so.0.7600.1[7f41d3f0f000+36000] likely on CPU 4 (core 0, socket 0)
+[ 1599.119369] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 1702.406082] bijiben-shell-s[10737]: segfault at 7fc9bce5d706 ip 00007fce64f2fbf1 sp 00007fffbb04e1a8 error 4 in libgobject-2.0.so.0.7600.1[7fce64f04000+36000] likely on CPU 3 (core 3, socket 0)
+[ 1702.406113] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 2030.128024] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2030.467015] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2039.873031] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2040.161926] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2040.465930] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2040.748928] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2042.608917] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2045.529010] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2045.849897] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2097.184538] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2097.480540] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2099.169533] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2099.431525] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2099.543521] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2099.847521] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2108.834463] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2109.148460] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2113.856555] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2114.161426] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2128.231328] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2128.524326] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2130.120331] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2130.430312] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2134.010302] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2134.306285] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2143.847221] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2144.144231] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2145.982209] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2146.579201] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2149.430183] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2149.728176] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2160.624119] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2160.928204] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2176.783991] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2179.446979] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2179.744007] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2342.733915] bijiben-shell-s[13039]: segfault at 7fb1e7604be2 ip 00007fb63ff2dbf1 sp 00007fffda1a9f48 error 4 in libgobject-2.0.so.0.7600.1[7fb63ff02000+36000] likely on CPU 2 (core 2, socket 0)
+[ 2342.733945] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 2844.535437] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2845.012440] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2845.316437] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2847.579514] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2847.888423] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2850.867471] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2851.171454] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2855.437386] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2855.744370] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2867.436284] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2867.746281] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2876.871226] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2877.123329] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2883.660179] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2885.078166] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2885.408161] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2891.003146] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2892.205137] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2892.504132] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2905.955032] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2907.588012] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2907.892003] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2918.666949] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2918.979930] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2921.803913] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2922.067927] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2927.906892] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2928.218867] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2930.420853] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2932.301844] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2932.602918] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2939.105796] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2939.408790] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2944.370761] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2944.682756] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2953.889692] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2954.204698] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2958.379670] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2958.694668] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2981.762503] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2989.804452] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2990.083566] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2990.698441] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2991.004464] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2991.506444] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2995.820405] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2996.122517] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2997.307405] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 2997.611485] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3008.787317] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3009.097325] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3010.058410] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3010.356309] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3011.972302] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3012.287297] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3022.594219] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3022.890253] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3028.146266] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3028.454219] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3029.795199] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3030.103172] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3032.083173] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3034.135153] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3038.349122] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3040.792099] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3041.079104] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3043.738091] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3044.720088] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3044.979074] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3046.666064] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3052.370032] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3052.670021] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3053.763026] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3054.010133] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3056.999994] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3058.433035] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3059.244977] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3075.092874] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3075.414868] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3081.557837] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3081.859822] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3085.385794] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3085.690789] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3094.261759] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3094.425744] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3098.345729] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3098.793734] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3100.187701] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3100.473758] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3111.849628] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3113.569603] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3113.886602] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3117.470594] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3117.769575] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3118.370587] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3118.721586] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3119.025655] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3120.906582] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3121.209663] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3126.252517] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3126.553516] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3129.751496] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3129.891488] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3130.185509] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3131.521482] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3134.059470] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3134.363479] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3139.202428] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3139.693447] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3146.448386] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3147.919370] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3148.162366] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3158.065301] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3158.365300] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3164.515256] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3164.812252] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3170.928221] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3171.228215] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3181.336233] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3181.662142] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3187.578122] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3187.881109] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3193.069061] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3196.713052] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3197.020054] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3228.639820] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3228.938819] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3230.786809] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3231.443907] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3231.637802] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3231.857809] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3232.227795] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3233.000793] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3233.304821] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3235.317783] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3235.624797] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3242.050740] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3242.337724] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3244.664780] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3252.616657] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3252.978681] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3264.051581] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3264.344596] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3271.464527] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3274.749524] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3275.032509] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3275.737574] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3276.848591] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3277.114491] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3277.747489] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3278.127486] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3279.144493] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3279.285475] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3284.112441] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3284.417435] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3296.310369] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3296.560360] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3296.876358] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3300.540333] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3300.834326] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3311.185257] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3311.351258] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3311.640255] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3312.055250] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3312.355255] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3320.642191] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3320.921201] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3323.424191] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3330.507129] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3330.816127] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3348.408027] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3348.717010] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3350.520022] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3350.834987] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3351.905977] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3352.195001] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3357.039968] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3358.199951] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3359.660932] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3359.951934] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3364.151913] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3364.476894] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3372.908835] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3373.206837] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3377.213814] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3381.100786] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3381.396781] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3383.948761] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3384.631794] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3387.999732] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3388.362739] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3420.567516] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3420.884509] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3426.450474] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3426.764470] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3437.787403] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3438.108400] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3439.103393] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3439.384396] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3446.377337] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3446.672341] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3456.991375] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3457.299265] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3479.703110] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3480.323127] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3492.013026] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3492.317026] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3493.545019] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3494.062011] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3495.860008] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3496.521002] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3497.452991] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3497.895997] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3508.086910] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3508.390912] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3517.950847] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3518.446858] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3518.734875] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3526.262791] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3526.572788] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3532.326772] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3532.630750] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3534.380736] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3534.627737] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3534.927734] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3535.966749] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3536.263725] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3537.982809] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3538.287716] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3541.207688] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3541.484695] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3543.630686] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3543.948670] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3553.923608] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3554.225603] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3571.582484] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3578.406443] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3578.704440] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3588.844371] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3589.164365] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3592.726422] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3593.036344] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3607.535251] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3607.835244] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3617.608171] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3626.882117] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3627.182127] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3627.499112] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3627.790209] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3637.631042] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3637.944045] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3641.881030] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3642.630006] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3652.743937] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3653.030954] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3658.413983] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3659.854011] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3660.165987] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3660.471885] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3661.043899] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3665.336957] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3665.641857] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3676.226775] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3676.504865] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3683.799719] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3684.533751] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3690.390675] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3690.590694] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3697.032641] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3702.775596] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3703.061708] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3709.645569] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3709.944623] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3711.965536] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3713.166532] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3713.368531] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3713.666521] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3723.665456] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3724.279450] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3724.567449] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3725.848455] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3726.167435] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3726.931442] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3727.230431] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3731.079401] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3731.398406] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3731.685466] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3732.822393] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3733.729388] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3734.021400] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3736.963362] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3737.687371] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3739.117363] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3739.746364] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3741.745325] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3742.389325] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3742.564320] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3748.557382] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3748.881289] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3752.565365] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3752.975268] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3766.581194] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3771.308046] wlp0s20f3: deauthenticating from 86:71:b1:49:b6:b3 by local choice (Reason: 3=DEAUTH_LEAVING)
+[ 3774.261617] PM: suspend entry (s2idle)
+[ 3774.277492] Filesystems sync: 0.015 seconds
+[ 3774.348583] Freezing user space processes
+[ 3774.350947] Freezing user space processes completed (elapsed 0.002 seconds)
+--
+[ 3794.185297] krita[16209]: segfault at 7f7d6baa8bfb ip 00007f7b10be1f06 sp 00007fff8d0a7910 error 6 in libkritaimage.so.18.0.0[7f7b10af8000+3a8000] likely on CPU 4 (core 0, socket 0)
+[ 3794.185328] Code: 8b 04 25 28 00 00 00 48 89 45 d8 48 8b 06 8b 40 10 83 f8 01 77 4e 48 8b 3a 48 39 3b 74 25 48 8b 47 08 48 8b 17 be 20 00 00 00 <48> 89 42 08 48 89 10 4c 8b 27 e8 db 43 f2 ff 48 8b 03 4c 89 e7 83
+[ 3797.588953] rfkill: input handler disabled
+[ 3806.150619] rfkill: input handler enabled
+[ 3808.593141] rfkill: input handler disabled
+[ 3817.414570] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3818.638564] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3824.894522] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3828.085522] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3838.422579] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3839.638580] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3842.671399] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3881.858214] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3901.430074] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3905.464150] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3910.182020] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3911.780008] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3912.382997] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3916.016064] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3916.479100] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3922.307694] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3924.067705] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3925.366637] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3927.195530] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3927.514569] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3939.515447] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3940.475462] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3941.299445] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3957.363324] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3958.891308] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3959.107312] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3963.862292] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3964.051290] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3969.795338] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 3994.662972] bijiben-shell-s[21090]: segfault at 7f245a3b0be5 ip 00007f23d84c1bf1 sp 00007ffc2f8ed528 error 4 in libgobject-2.0.so.0.7600.1[7f23d8496000+36000] likely on CPU 6 (core 2, socket 0)
+[ 3994.662998] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4004.060881] bijiben-shell-s[21331]: segfault at 7f251001f ip 00007f25418dbbf1 sp 00007ffd5ed010a8 error 4 in libgobject-2.0.so.0.7600.1[7f25418b0000+36000] likely on CPU 0 (core 0, socket 0)
+[ 4004.060902] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4019.446620] bijiben-shell-s[21506]: segfault at 7f1c60025 ip 00007f1c8f297bf1 sp 00007ffef30d60a8 error 4 in libgobject-2.0.so.0.7600.1[7f1c8f26c000+36000] likely on CPU 6 (core 2, socket 0)
+[ 4019.446646] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4041.697802] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 4042.785755] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 4044.017614] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 4145.487797] bijiben-shell-s[22394]: segfault at 7f056c2b96d5 ip 00007f02d3d5abf1 sp 00007ffddb330eb8 error 4 in libgobject-2.0.so.0.7600.1[7f02d3d2f000+36000] likely on CPU 1 (core 1, socket 0)
+[ 4145.487825] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4411.226763] bijiben-shell-s[23510]: segfault at 7f94453998e6 ip 00007f93ead85bf1 sp 00007ffd32201798 error 4 in libgobject-2.0.so.0.7600.1[7f93ead5a000+36000] likely on CPU 5 (core 1, socket 0)
+[ 4411.226792] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4412.879599] bijiben-shell-s[23677]: segfault at 7f94193c588a ip 00007f940f30ebf1 sp 00007ffe9a771388 error 4 in libgobject-2.0.so.0.7600.1[7f940f2e3000+36000] likely on CPU 1 (core 1, socket 0)
+[ 4412.879627] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4415.634483] bijiben-shell-s[23817]: segfault at 7f79d400b ip 00007f7a06d3cbf1 sp 00007ffd341a2318 error 4 in libgobject-2.0.so.0.7600.1[7f7a06d11000+36000] likely on CPU 2 (core 2, socket 0)
+[ 4415.634511] Code: 01 00 00 00 4c 89 ce 48 89 e5 e8 4a ca ff ff 5d 85 c0 0f 95 c0 0f b6 c0 c3 f3 0f 1e fa 48 85 ff 74 47 48 8b 07 48 85 c0 74 3f <48> 8b 00 48 3d fc 03 00 00 77 2c 48 8d 15 1d 55 02 00 48 c1 e8 02
+[ 4426.258423] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 4427.974339] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 4430.044327] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 4436.241306] wacom 0018:056A:524D.0002: wacom_idleprox_timeout: tool appears to be hung in-prox. forcing it out.
+[ 5780.483766] wlp0s20f3: deauthenticating from 86:71:b1:49:b6:b3 by local choice (Reason: 3=DEAUTH_LEAVING)
+[ 5781.914568] PM: suspend entry (s2idle)
+[ 5781.950628] Filesystems sync: 0.036 seconds
+[ 5782.017665] Freezing user space processes
+[ 5782.019490] Freezing user space processes completed (elapsed 0.001 seconds)
+--
+[87378.111058] usb 3-1: New USB device found, idVendor=1532, idProduct=0084, bcdDevice= 2.00
+[87378.111067] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[87378.111070] usb 3-1: Product: Razer DeathAdder V2
+[87378.111072] usb 3-1: Manufacturer: Razer
+[87378.114742] input: Razer Razer DeathAdder V2 as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1:1.0/0003:1532:0084.0005/input/input26
+[87378.115024] hid-generic 0003:1532:0084.0005: input,hidraw2: USB HID v1.00 Mouse [Razer Razer DeathAdder V2] on usb-0000:00:14.0-1/input0
+[87378.115907] input: Razer Razer DeathAdder V2 Keyboard as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1:1.1/0003:1532:0084.0006/input/input27
+[87378.168755] input: Razer Razer DeathAdder V2 as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1:1.1/0003:1532:0084.0006/input/input28
+[87378.168960] hid-generic 0003:1532:0084.0006: input,hidraw3: USB HID v1.00 Keyboard [Razer Razer DeathAdder V2] on usb-0000:00:14.0-1/input1
+[87378.169916] input: Razer Razer DeathAdder V2 as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1:1.2/0003:1532:0084.0007/input/input29
+[87378.221855] hid-generic 0003:1532:0084.0007: input,hidraw4: USB HID v1.00 Keyboard [Razer Razer DeathAdder V2] on usb-0000:00:14.0-1/input2
+[87378.224700] hid-generic 0003:1532:0084.0008: hiddev96,hidraw5: USB HID v1.11 Device [Razer Razer DeathAdder V2] on usb-0000:00:14.0-1/input3
+[87378.270686] razermouse: loading out-of-tree module taints kernel.
+[87378.270875] razermouse: module verification failed: signature and/or required key missing - tainting kernel
+[87378.292972] input: Razer Razer DeathAdder V2 as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1:1.0/0003:1532:0084.0005/input/input30
+[87378.293203] razermouse 0003:1532:0084.0005: input,hidraw2: USB HID v1.00 Mouse [Razer Razer DeathAdder V2] on usb-0000:00:14.0-1/input0
+[87378.336015] input: Razer Razer DeathAdder V2 as /devices/pci0000:00/0000:00:14.0/usb3/3-1/3-1:1.1/0003:1532:0084.0006/input/input31
