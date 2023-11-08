@@ -1,0 +1,53 @@
+Package: xserver-xorg-input-wacom
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 284
+Maintainer: Ron Lee <ron@debian.org>
+Architecture: amd64
+Source: xf86-input-wacom
+Version: 0.34.99.1-1
+Replaces: wacom-tools (<< 0.10.0)
+Provides: xorg-driver-input
+Depends: xorg-input-abi-24, xserver-xorg-core (>= 2:1.18.99.901), libc6 (>= 2.14), libudev1 (>= 183), libx11-6, libxext6, libxi6 (>= 2:1.2.0), libxinerama1, libxrandr2 (>= 2:1.2.0)
+Suggests: xinput
+Conflicts: wacom-tools (<< 0.10.0)
+Description: X.Org X server -- Wacom input driver
+ This package provides the X.Org driver for Wacom tablet devices.
+Homepage: http://linuxwacom.sf.net
+
+Package: libwacom2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 62
+Maintainer: Timo Aaltonen <tjaalton@debian.org>
+Architecture: amd64
+Multi-Arch: same
+Source: libwacom
+Version: 0.31-1
+Depends: libc6 (>= 2.8), libglib2.0-0 (>= 2.24.0), libgudev-1.0-0 (>= 146), libwacom-common (= 0.31-1)
+Recommends: libwacom-bin (= 0.31-1)
+Description: Wacom model feature query library
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+
+
+Package: xserver-xorg-input-libinput
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 137
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: amd64
+Version: 0.28.1-1
+Provides: xorg-driver-input
+Depends: libc6 (>= 2.7), libinput10 (>= 1.11.1), xorg-input-abi-24, xserver-xorg-core (>= 2:1.18.99.901)
+Description: X.Org X server -- libinput input driver
+ This package provides the driver for input devices using libinput library.
+ It can handle keyboards, mice and touchpads, and essentially replaces the
+ separate -evdev and -synaptics drivers.
+ .
+ This package is built from the X.org xf86-input-libinput driver module.
+Homepage: https://www.x.org

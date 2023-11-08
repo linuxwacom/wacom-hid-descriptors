@@ -1,0 +1,1474 @@
+[    10.283] (--) Log file renamed from "/var/log/Xorg.pid-1174.log" to "/var/log/Xorg.0.log"
+[    10.284] 
+X.Org X Server 1.20.5
+X Protocol Version 11, Revision 0
+[    10.284] Build Operating System:  5.1.11-200.fc29.x86_64 
+[    10.284] Current Operating System: Linux hewitt.brownstone 5.1.15-300.fc30.x86_64 #1 SMP Tue Jun 25 14:07:22 UTC 2019 x86_64
+[    10.284] Kernel command line: BOOT_IMAGE=(hd0,gpt5)/vmlinuz-5.1.15-300.fc30.x86_64 root=/dev/mapper/fedora_hewitt-root ro resume=/dev/mapper/fedora_hewitt-swap rd.lvm.lv=fedora_hewitt/root rd.lvm.lv=fedora_hewitt/swap rhgb quiet
+[    10.284] Build Date: 28 June 2019  04:54:49PM
+[    10.284] Build ID: xorg-x11-server 1.20.5-3.fc30 
+[    10.284] Current version of pixman: 0.38.0
+[    10.284] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    10.284] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    10.284] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Jul 12 09:59:50 2019
+[    10.285] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    10.285] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    10.286] (==) No Layout section.  Using the first Screen section.
+[    10.286] (==) No screen section available. Using defaults.
+[    10.286] (**) |-->Screen "Default Screen Section" (0)
+[    10.286] (**) |   |-->Monitor "<default monitor>"
+[    10.286] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    10.286] (==) Automatically adding devices
+[    10.286] (==) Automatically enabling devices
+[    10.286] (==) Automatically adding GPU devices
+[    10.287] (==) Automatically binding GPU devices
+[    10.287] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    10.287] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[    10.287] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[    10.287] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    10.287] (II) Loader magic: 0x55f2434d6e00
+[    10.287] (II) Module ABI versions:
+[    10.287] 	X.Org ANSI C Emulation: 0.4
+[    10.287] 	X.Org Video Driver: 24.0
+[    10.287] 	X.Org XInput driver : 24.1
+[    10.287] 	X.Org Server Extension : 10.0
+[    10.287] (++) using VT number 1
+
+[    10.287] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    10.288] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    10.297] (--) PCI:*(0@0:2:0) 8086:5917:17aa:397a rev 7, Mem @ 0xa1000000/16777216, 0x90000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[    10.297] (II) LoadModule: "glx"
+[    10.300] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[    10.306] (II) Module glx: vendor="X.Org Foundation"
+[    10.306] 	compiled for 1.20.5, module version = 1.0.0
+[    10.306] 	ABI class: X.Org Server Extension, version 10.0
+[    10.307] (==) Matched modesetting as autoconfigured driver 0
+[    10.307] (==) Matched fbdev as autoconfigured driver 1
+[    10.307] (==) Matched vesa as autoconfigured driver 2
+[    10.307] (==) Assigned the driver to the xf86ConfigLayout
+[    10.307] (II) LoadModule: "modesetting"
+[    10.307] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[    10.309] (II) Module modesetting: vendor="X.Org Foundation"
+[    10.309] 	compiled for 1.20.5, module version = 1.20.5
+[    10.309] 	Module class: X.Org Video Driver
+[    10.309] 	ABI class: X.Org Video Driver, version 24.0
+[    10.309] (II) LoadModule: "fbdev"
+[    10.309] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[    10.310] (II) Module fbdev: vendor="X.Org Foundation"
+[    10.310] 	compiled for 1.20.3, module version = 0.5.0
+[    10.310] 	Module class: X.Org Video Driver
+[    10.310] 	ABI class: X.Org Video Driver, version 24.0
+[    10.310] (II) LoadModule: "vesa"
+[    10.310] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[    10.310] (II) Module vesa: vendor="X.Org Foundation"
+[    10.310] 	compiled for 1.20.4, module version = 2.4.0
+[    10.310] 	Module class: X.Org Video Driver
+[    10.310] 	ABI class: X.Org Video Driver, version 24.0
+[    10.310] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    10.310] (II) FBDEV: driver for framebuffer: fbdev
+[    10.310] (II) VESA: driver for VESA chipsets: vesa
+[    10.326] (II) modeset(0): using drv /dev/dri/card0
+[    10.326] (WW) Falling back to old probe method for fbdev
+[    10.326] (II) Loading sub module "fbdevhw"
+[    10.326] (II) LoadModule: "fbdevhw"
+[    10.326] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[    10.326] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    10.326] 	compiled for 1.20.5, module version = 0.0.2
+[    10.326] 	ABI class: X.Org Video Driver, version 24.0
+[    10.326] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    10.326] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    10.326] (==) modeset(0): RGB weight 888
+[    10.326] (==) modeset(0): Default visual is TrueColor
+[    10.326] (II) Loading sub module "glamoregl"
+[    10.326] (II) LoadModule: "glamoregl"
+[    10.326] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[    10.334] (II) Module glamoregl: vendor="X.Org Foundation"
+[    10.335] 	compiled for 1.20.5, module version = 1.0.1
+[    10.335] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    10.404] (II) modeset(0): glamor X acceleration enabled on Mesa DRI Intel(R) UHD Graphics 620 (Kabylake GT2) 
+[    10.404] (II) modeset(0): glamor initialized
+[    10.407] (II) modeset(0): Output eDP-1 has no monitor section
+[    10.407] (II) modeset(0): Output DP-1 has no monitor section
+[    10.517] (II) modeset(0): Output HDMI-1 has no monitor section
+[    10.520] (II) modeset(0): EDID for output eDP-1
+[    10.520] (II) modeset(0): Manufacturer: KDC  Model: 0  Serial#: 0
+[    10.520] (II) modeset(0): Year: 2015  Week: 20
+[    10.520] (II) modeset(0): EDID Version: 1.4
+[    10.520] (II) modeset(0): Digital Display Input
+[    10.520] (II) modeset(0): 8 bits per channel
+[    10.520] (II) modeset(0): Digital interface is DisplayPort
+[    10.520] (II) modeset(0): Max Image Size [cm]: horiz.: 26  vert.: 16
+[    10.520] (II) modeset(0): Gamma: 2.20
+[    10.520] (II) modeset(0): No DPMS capabilities specified
+[    10.520] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    10.520] (II) modeset(0): First detailed timing is preferred mode
+[    10.520] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[    10.520] (II) modeset(0): redX: 0.625 redY: 0.364   greenX: 0.315 greenY: 0.616
+[    10.520] (II) modeset(0): blueX: 0.146 blueY: 0.062   whiteX: 0.313 whiteY: 0.329
+[    10.520] (II) modeset(0): Manufacturer's mask: 0
+[    10.520] (II) modeset(0): Supported detailed timing:
+[    10.520] (II) modeset(0): clock: 152.8 MHz   Image Size:  263 x 164 mm
+[    10.520] (II) modeset(0): h_active: 1920  h_sync: 1936  h_sync_end 1952 h_blank_end 2062 h_border: 0
+[    10.520] (II) modeset(0): v_active: 1200  v_sync: 1215  v_sync_end 1217 v_blanking: 1235 v_border: 0
+[    10.520] (II) modeset(0): EDID (in hex):
+[    10.520] (II) modeset(0): 	00ffffffffffff002c83000000000000
+[    10.520] (II) modeset(0): 	14190104a51a10780a1fb5a05d509d25
+[    10.520] (II) modeset(0): 	0f505400000001010101010101010101
+[    10.520] (II) modeset(0): 	010101010101b43b808e70b023401010
+[    10.520] (II) modeset(0): 	f20007a41000001a0000001000000000
+[    10.520] (II) modeset(0): 	00000000000000000000000000100000
+[    10.520] (II) modeset(0): 	00000000000000000000000000000010
+[    10.520] (II) modeset(0): 	00000000000000000000000000000097
+[    10.520] (II) modeset(0): Printing probed modes for output eDP-1
+[    10.520] (II) modeset(0): Modeline "1920x1200"x60.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[    10.520] (II) modeset(0): Modeline "1920x1200"x59.9  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz d)
+[    10.520] (II) modeset(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1920x1080"x120.0  356.38  1920 2080 2288 2656  1080 1081 1084 1118 doublescan -hsync +vsync (134.2 kHz d)
+[    10.520] (II) modeset(0): Modeline "1920x1080"x119.9  266.50  1920 1944 1960 2000  1080 1081 1084 1111 doublescan +hsync -vsync (133.2 kHz d)
+[    10.520] (II) modeset(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz d)
+[    10.520] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[    10.520] (II) modeset(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[    10.520] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[    10.520] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[    10.520] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[    10.520] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[    10.520] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[    10.520] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[    10.520] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[    10.520] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[    10.520] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[    10.521] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[    10.521] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[    10.521] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[    10.521] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[    10.521] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[    10.521] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[    10.521] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[    10.521] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[    10.521] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[    10.521] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[    10.521] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[    10.521] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[    10.521] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[    10.521] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[    10.521] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[    10.521] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[    10.521] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[    10.521] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[    10.521] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[    10.521] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[    10.521] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[    10.521] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[    10.521] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[    10.521] (II) modeset(0): EDID for output DP-1
+[    10.631] (II) modeset(0): EDID for output HDMI-1
+[    10.631] (II) modeset(0): Output eDP-1 connected
+[    10.631] (II) modeset(0): Output DP-1 disconnected
+[    10.631] (II) modeset(0): Output HDMI-1 disconnected
+[    10.631] (II) modeset(0): Using exact sizes for initial modes
+[    10.631] (II) modeset(0): Output eDP-1 using initial mode 1920x1200 +0+0
+[    10.631] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    10.631] (==) modeset(0): DPI set to (96, 96)
+[    10.631] (II) Loading sub module "fb"
+[    10.631] (II) LoadModule: "fb"
+[    10.632] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[    10.633] (II) Module fb: vendor="X.Org Foundation"
+[    10.633] 	compiled for 1.20.5, module version = 1.0.0
+[    10.633] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    10.633] (II) UnloadModule: "fbdev"
+[    10.633] (II) Unloading fbdev
+[    10.633] (II) UnloadSubModule: "fbdevhw"
+[    10.633] (II) Unloading fbdevhw
+[    10.633] (II) UnloadModule: "vesa"
+[    10.633] (II) Unloading vesa
+[    10.642] (==) modeset(0): Backing store enabled
+[    10.642] (==) modeset(0): Silken mouse enabled
+[    10.709] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    10.709] (==) modeset(0): DPMS enabled
+[    10.710] (II) modeset(0): [DRI2] Setup complete
+[    10.710] (II) modeset(0): [DRI2]   DRI driver: i965
+[    10.710] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[    10.710] (II) Initializing extension Generic Event Extension
+[    10.710] (II) Initializing extension SHAPE
+[    10.710] (II) Initializing extension MIT-SHM
+[    10.710] (II) Initializing extension XInputExtension
+[    10.711] (II) Initializing extension XTEST
+[    10.711] (II) Initializing extension BIG-REQUESTS
+[    10.711] (II) Initializing extension SYNC
+[    10.711] (II) Initializing extension XKEYBOARD
+[    10.711] (II) Initializing extension XC-MISC
+[    10.711] (II) Initializing extension XFIXES
+[    10.711] (II) Initializing extension RENDER
+[    10.712] (II) Initializing extension RANDR
+[    10.712] (II) Initializing extension COMPOSITE
+[    10.712] (II) Initializing extension DAMAGE
+[    10.712] (II) Initializing extension MIT-SCREEN-SAVER
+[    10.712] (II) Initializing extension DOUBLE-BUFFER
+[    10.712] (II) Initializing extension RECORD
+[    10.712] (II) Initializing extension DPMS
+[    10.713] (II) Initializing extension Present
+[    10.713] (II) Initializing extension DRI3
+[    10.713] (II) Initializing extension X-Resource
+[    10.713] (II) Initializing extension XVideo
+[    10.713] (II) Initializing extension XVideo-MotionCompensation
+[    10.713] (II) Initializing extension SELinux
+[    10.713] (II) SELinux: Disabled by boolean
+[    10.713] (II) Initializing extension GLX
+[    10.721] (II) AIGLX: Loaded and initialized i965
+[    10.721] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    10.721] (II) Initializing extension XFree86-VidModeExtension
+[    10.721] (II) Initializing extension XFree86-DGA
+[    10.721] (II) Initializing extension XFree86-DRI
+[    10.721] (II) Initializing extension DRI2
+[    10.729] (II) modeset(0): Damage tracking initialized
+[    10.729] (II) modeset(0): Setting screen physical size to 508 x 317
+[    10.794] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    10.794] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    10.794] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    10.794] (**) Power Button: Applying InputClass "system-keyboard"
+[    10.794] (II) LoadModule: "libinput"
+[    10.794] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[    10.801] (II) Module libinput: vendor="X.Org Foundation"
+[    10.801] 	compiled for 1.20.3, module version = 0.28.2
+[    10.801] 	Module class: X.Org XInput Driver
+[    10.801] 	ABI class: X.Org XInput driver, version 24.1
+[    10.801] (II) Using input driver 'libinput' for 'Power Button'
+[    10.801] (**) Power Button: always reports core events
+[    10.801] (**) Option "Device" "/dev/input/event1"
+[    10.801] (**) Option "_source" "server/udev"
+[    10.805] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    10.805] (II) event1  - Power Button: device is a keyboard
+[    10.805] (II) event1  - Power Button: device removed
+[    10.817] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    10.817] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    10.817] (**) Option "xkb_layout" "us"
+[    10.818] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    10.818] (II) event1  - Power Button: device is a keyboard
+[    10.818] (II) config/udev: Adding input device Video Bus (/dev/input/event7)
+[    10.818] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    10.818] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    10.818] (**) Video Bus: Applying InputClass "system-keyboard"
+[    10.818] (II) Using input driver 'libinput' for 'Video Bus'
+[    10.818] (**) Video Bus: always reports core events
+[    10.818] (**) Option "Device" "/dev/input/event7"
+[    10.818] (**) Option "_source" "server/udev"
+[    10.819] (II) event7  - Video Bus: is tagged by udev as: Keyboard
+[    10.819] (II) event7  - Video Bus: device is a keyboard
+[    10.819] (II) event7  - Video Bus: device removed
+[    10.833] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input16/event7"
+[    10.833] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    10.833] (**) Option "xkb_layout" "us"
+[    10.834] (II) event7  - Video Bus: is tagged by udev as: Keyboard
+[    10.834] (II) event7  - Video Bus: device is a keyboard
+[    10.835] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    10.835] (II) No input driver specified, ignoring this device.
+[    10.835] (II) This device may have been added with another device file.
+[    10.836] (II) config/udev: Adding input device SIPODEV Lenovo HID Device (/dev/input/event3)
+[    10.836] (**) SIPODEV Lenovo HID Device: Applying InputClass "evdev keyboard catchall"
+[    10.836] (**) SIPODEV Lenovo HID Device: Applying InputClass "libinput keyboard catchall"
+[    10.836] (**) SIPODEV Lenovo HID Device: Applying InputClass "system-keyboard"
+[    10.836] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device'
+[    10.836] (**) SIPODEV Lenovo HID Device: always reports core events
+[    10.836] (**) Option "Device" "/dev/input/event3"
+[    10.836] (**) Option "_source" "server/udev"
+[    10.838] (II) event3  - SIPODEV Lenovo HID Device: is tagged by udev as: Keyboard
+[    10.838] (II) event3  - SIPODEV Lenovo HID Device: device is a keyboard
+[    10.838] (II) event3  - SIPODEV Lenovo HID Device: device removed
+[    10.845] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:17EF:60BB.0001/input/input3/event3"
+[    10.845] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device" (type: KEYBOARD, id 8)
+[    10.845] (**) Option "xkb_layout" "us"
+[    10.846] (II) event3  - SIPODEV Lenovo HID Device: is tagged by udev as: Keyboard
+[    10.846] (II) event3  - SIPODEV Lenovo HID Device: device is a keyboard
+[    10.847] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Consumer Control (/dev/input/event4)
+[    10.847] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    10.847] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    10.847] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "system-keyboard"
+[    10.847] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Consumer Control'
+[    10.847] (**) SIPODEV Lenovo HID Device Consumer Control: always reports core events
+[    10.847] (**) Option "Device" "/dev/input/event4"
+[    10.847] (**) Option "_source" "server/udev"
+[    10.849] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: is tagged by udev as: Keyboard
+[    10.849] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device is a keyboard
+[    10.849] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device removed
+[    10.860] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0002/input/input11/event4"
+[    10.860] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Consumer Control" (type: KEYBOARD, id 9)
+[    10.860] (**) Option "xkb_layout" "us"
+[    10.861] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: is tagged by udev as: Keyboard
+[    10.861] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device is a keyboard
+[    10.862] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Touchpad (/dev/input/event5)
+[    10.862] (**) SIPODEV Lenovo HID Device Touchpad: Applying InputClass "evdev touchpad catchall"
+[    10.862] (**) SIPODEV Lenovo HID Device Touchpad: Applying InputClass "libinput touchpad catchall"
+[    10.862] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Touchpad'
+[    10.862] (**) SIPODEV Lenovo HID Device Touchpad: always reports core events
+[    10.862] (**) Option "Device" "/dev/input/event5"
+[    10.862] (**) Option "_source" "server/udev"
+[    10.863] (II) event5  - SIPODEV Lenovo HID Device Touchpad: is tagged by udev as: Touchpad
+[    10.872] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device is a touchpad
+[    10.872] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device removed
+[    10.894] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0002/input/input12/event5"
+[    10.894] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Touchpad" (type: TOUCHPAD, id 10)
+[    10.895] (**) Option "AccelerationScheme" "none"
+[    10.895] (**) SIPODEV Lenovo HID Device Touchpad: (accel) selected scheme none/0
+[    10.895] (**) SIPODEV Lenovo HID Device Touchpad: (accel) acceleration factor: 2.000
+[    10.895] (**) SIPODEV Lenovo HID Device Touchpad: (accel) acceleration threshold: 4
+[    10.896] (II) event5  - SIPODEV Lenovo HID Device Touchpad: is tagged by udev as: Touchpad
+[    10.905] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device is a touchpad
+[    10.906] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Touchpad (/dev/input/mouse0)
+[    10.906] (II) No input driver specified, ignoring this device.
+[    10.906] (II) This device may have been added with another device file.
+[    10.907] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Wireless Radio Control (/dev/input/event6)
+[    10.907] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "evdev keyboard catchall"
+[    10.907] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "libinput keyboard catchall"
+[    10.907] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "system-keyboard"
+[    10.907] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Wireless Radio Control'
+[    10.907] (**) SIPODEV Lenovo HID Device Wireless Radio Control: always reports core events
+[    10.907] (**) Option "Device" "/dev/input/event6"
+[    10.907] (**) Option "_source" "server/udev"
+[    10.908] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: is tagged by udev as: Keyboard
+[    10.908] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device is a keyboard
+[    10.908] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device removed
+[    10.929] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0002/input/input14/event6"
+[    10.929] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Wireless Radio Control" (type: KEYBOARD, id 11)
+[    10.929] (**) Option "xkb_layout" "us"
+[    10.930] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: is tagged by udev as: Keyboard
+[    10.930] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device is a keyboard
+[    10.931] (II) config/udev: Adding input device Wacom HID 513B Pen (/dev/input/event9)
+[    10.931] (**) Wacom HID 513B Pen: Applying InputClass "evdev tablet catchall"
+[    10.931] (**) Wacom HID 513B Pen: Applying InputClass "libinput tablet catchall"
+[    10.931] (**) Wacom HID 513B Pen: Applying InputClass "Wacom USB tablet class"
+[    10.931] (**) Wacom HID 513B Pen: Applying InputClass "Wacom tablet class"
+[    10.931] (II) LoadModule: "wacom"
+[    10.931] (II) Loading /usr/lib64/xorg/modules/input/wacom_drv.so
+[    10.932] (II) Module wacom: vendor="X.Org Foundation"
+[    10.932] 	compiled for 1.20.3, module version = 0.36.1
+[    10.932] 	Module class: X.Org XInput Driver
+[    10.932] 	ABI class: X.Org XInput driver, version 24.1
+[    10.932] (II) Build version: 0.36.1
+[    10.932] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Intuos2 4x5, Intuos2 6x8, Intuos2 9x12, Intuos2 12x12, Intuos2 12x18,
+	Intuos2 6x8 , Volito, PenStation, Volito2 4x5, Volito2 2x3,
+	PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6, Bamboo1 5x8, Intuos3 4x5,
+	Intuos3 6x8, Intuos3 9x12, Intuos3 12x12, Intuos3 12x19,
+	Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9, Intuos4 8x13,
+	Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[    10.933] (II) Using input driver 'wacom' for 'Wacom HID 513B Pen'
+[    10.933] (**) Wacom HID 513B Pen: always reports core events
+[    10.933] (**) Option "Device" "/dev/input/event9"
+[    11.043] (II) Wacom HID 513B Pen: type not specified, assuming 'stylus'.
+[    11.043] (II) Wacom HID 513B Pen: other types will be automatically added.
+[    11.043] (--) Wacom HID 513B Pen stylus: using pressure threshold of 851 for button 1
+[    11.043] (**) Wacom HID 513B Pen stylus: panscroll is 0
+[    11.043] (**) Wacom HID 513B Pen stylus: panscroll modified to 1300
+[    11.043] (--) Wacom HID 513B Pen stylus: maxX=26277 maxY=16423 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    11.043] (II) Wacom HID 513B Pen stylus: hotplugging dependent devices.
+[    11.043] (EE) Wacom HID 513B Pen stylus: Invalid type 'cursor' for this device.
+[    11.043] (EE) Wacom HID 513B Pen stylus: Invalid type 'touch' for this device.
+[    11.043] (EE) Wacom HID 513B Pen stylus: Invalid type 'pad' for this device.
+[    11.043] (II) Wacom HID 513B Pen stylus: hotplugging completed.
+[    11.059] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-6/i2c-WCOM513B:00/0018:056A:513B.0004/input/input30/event9"
+[    11.059] (II) XINPUT: Adding extended input device "Wacom HID 513B Pen stylus" (type: STYLUS, id 12)
+[    11.059] (**) Wacom HID 513B Pen stylus: (accel) keeping acceleration scheme 1
+[    11.059] (**) Wacom HID 513B Pen stylus: (accel) acceleration profile 0
+[    11.059] (**) Wacom HID 513B Pen stylus: (accel) acceleration factor: 2.000
+[    11.059] (**) Wacom HID 513B Pen stylus: (accel) acceleration threshold: 4
+[    11.060] (II) config/udev: Adding input device Wacom HID 513B Pen (/dev/input/mouse1)
+[    11.060] (II) No input driver specified, ignoring this device.
+[    11.060] (II) This device may have been added with another device file.
+[    11.060] (II) config/udev: Adding input device Wacom HID 513B Finger (/dev/input/event10)
+[    11.060] (**) Wacom HID 513B Finger: Applying InputClass "evdev touchscreen catchall"
+[    11.060] (**) Wacom HID 513B Finger: Applying InputClass "libinput touchscreen catchall"
+[    11.060] (**) Wacom HID 513B Finger: Applying InputClass "Wacom USB touchscreen class"
+[    11.060] (**) Wacom HID 513B Finger: Applying InputClass "Wacom touchscreen class"
+[    11.060] (II) Using input driver 'wacom' for 'Wacom HID 513B Finger'
+[    11.060] (**) Wacom HID 513B Finger: always reports core events
+[    11.061] (**) Option "Device" "/dev/input/event10"
+[    11.061] (EE) Wacom HID 513B Finger: Invalid type 'stylus' for this device.
+[    11.061] (EE) Wacom HID 513B Finger: Invalid type 'eraser' for this device.
+[    11.061] (EE) Wacom HID 513B Finger: Invalid type 'cursor' for this device.
+[    11.061] (II) Wacom HID 513B Finger: type not specified, assuming 'touch'.
+[    11.061] (II) Wacom HID 513B Finger: other types will be automatically added.
+[    11.061] (**) Wacom HID 513B Finger touch: panscroll is 0
+[    11.061] (**) Wacom HID 513B Finger touch: panscroll modified to 13
+[    11.061] (--) Wacom HID 513B Finger touch: maxX=10508 maxY=6564 maxZ=0 resX=40000 resY=40000 
+[    11.061] (II) Wacom HID 513B Finger touch: hotplugging dependent devices.
+[    11.061] (EE) Wacom HID 513B Finger touch: Invalid type 'stylus' for this device.
+[    11.061] (EE) Wacom HID 513B Finger touch: Invalid type 'eraser' for this device.
+[    11.061] (EE) Wacom HID 513B Finger touch: Invalid type 'cursor' for this device.
+[    11.061] (EE) Wacom HID 513B Finger touch: Invalid type 'pad' for this device.
+[    11.061] (II) Wacom HID 513B Finger touch: hotplugging completed.
+[    11.080] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-6/i2c-WCOM513B:00/0018:056A:513B.0004/input/input31/event10"
+[    11.080] (II) XINPUT: Adding extended input device "Wacom HID 513B Finger touch" (type: TOUCH, id 13)
+[    11.080] (**) Wacom HID 513B Finger touch: (accel) keeping acceleration scheme 1
+[    11.080] (**) Wacom HID 513B Finger touch: (accel) acceleration profile 0
+[    11.080] (**) Wacom HID 513B Finger touch: (accel) acceleration factor: 2.000
+[    11.080] (**) Wacom HID 513B Finger touch: (accel) acceleration threshold: 4
+[    11.080] (II) config/udev: Adding input device Wacom HID 513B Finger (/dev/input/mouse2)
+[    11.080] (II) No input driver specified, ignoring this device.
+[    11.080] (II) This device may have been added with another device file.
+[    11.081] (II) config/udev: Adding input device Intel Virtual Button driver (/dev/input/event8)
+[    11.081] (**) Intel Virtual Button driver: Applying InputClass "evdev keyboard catchall"
+[    11.081] (**) Intel Virtual Button driver: Applying InputClass "libinput keyboard catchall"
+[    11.081] (**) Intel Virtual Button driver: Applying InputClass "system-keyboard"
+[    11.081] (II) Using input driver 'libinput' for 'Intel Virtual Button driver'
+[    11.081] (**) Intel Virtual Button driver: always reports core events
+[    11.081] (**) Option "Device" "/dev/input/event8"
+[    11.081] (**) Option "_source" "server/udev"
+[    11.082] (II) event8  - Intel Virtual Button driver: is tagged by udev as: Keyboard Switch
+[    11.082] (II) event8  - Intel Virtual Button driver: device is a keyboard
+[    11.082] (II) event8  - Intel Virtual Button driver: device is a switch device
+[    11.082] (II) event8  - Intel Virtual Button driver: device removed
+[    11.096] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/INT33D6:00/input/input17/event8"
+[    11.096] (II) XINPUT: Adding extended input device "Intel Virtual Button driver" (type: KEYBOARD, id 14)
+[    11.096] (**) Option "xkb_layout" "us"
+[    11.097] (II) event8  - Intel Virtual Button driver: is tagged by udev as: Keyboard Switch
+[    11.097] (II) event8  - Intel Virtual Button driver: device is a keyboard
+[    11.097] (II) event8  - Intel Virtual Button driver: device is a switch device
+[    11.097] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event14)
+[    11.097] (II) No input driver specified, ignoring this device.
+[    11.097] (II) This device may have been added with another device file.
+[    11.098] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event15)
+[    11.098] (II) No input driver specified, ignoring this device.
+[    11.098] (II) This device may have been added with another device file.
+[    11.098] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event16)
+[    11.098] (II) No input driver specified, ignoring this device.
+[    11.098] (II) This device may have been added with another device file.
+[    11.098] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event17)
+[    11.098] (II) No input driver specified, ignoring this device.
+[    11.098] (II) This device may have been added with another device file.
+[    11.099] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event18)
+[    11.099] (II) No input driver specified, ignoring this device.
+[    11.099] (II) This device may have been added with another device file.
+[    11.099] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event19)
+[    11.099] (II) No input driver specified, ignoring this device.
+[    11.099] (II) This device may have been added with another device file.
+[    11.099] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event20)
+[    11.099] (II) No input driver specified, ignoring this device.
+[    11.099] (II) This device may have been added with another device file.
+[    11.100] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[    11.100] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[    11.100] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    11.100] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[    11.100] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    11.100] (**) AT Translated Set 2 keyboard: always reports core events
+[    11.100] (**) Option "Device" "/dev/input/event2"
+[    11.100] (**) Option "_source" "server/udev"
+[    11.101] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    11.101] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    11.101] (II) event2  - AT Translated Set 2 keyboard: device removed
+[    11.108] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[    11.108] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 15)
+[    11.108] (**) Option "xkb_layout" "us"
+[    11.109] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    11.109] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    11.117] (**) Wacom HID 513B Pen eraser: Applying InputClass "evdev tablet catchall"
+[    11.117] (**) Wacom HID 513B Pen eraser: Applying InputClass "libinput tablet catchall"
+[    11.117] (**) Wacom HID 513B Pen eraser: Applying InputClass "Wacom USB tablet class"
+[    11.117] (**) Wacom HID 513B Pen eraser: Applying InputClass "Wacom tablet class"
+[    11.117] (II) Using input driver 'wacom' for 'Wacom HID 513B Pen eraser'
+[    11.117] (**) Wacom HID 513B Pen eraser: always reports core events
+[    11.117] (**) Option "Device" "/dev/input/event9"
+[    11.117] (**) Option "Type" "eraser"
+[    11.117] (**) Wacom HID 513B Pen eraser: panscroll is 1300
+[    11.117] (**) Wacom HID 513B Pen eraser: panscroll modified to 1300
+[    11.117] (--) Wacom HID 513B Pen eraser: maxX=26277 maxY=16423 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    11.133] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-6/i2c-WCOM513B:00/0018:056A:513B.0004/input/input30/event9"
+[    11.133] (II) XINPUT: Adding extended input device "Wacom HID 513B Pen eraser" (type: ERASER, id 16)
+[    11.133] (**) Wacom HID 513B Pen eraser: (accel) keeping acceleration scheme 1
+[    11.133] (**) Wacom HID 513B Pen eraser: (accel) acceleration profile 0
+[    11.133] (**) Wacom HID 513B Pen eraser: (accel) acceleration factor: 2.000
+[    11.133] (**) Wacom HID 513B Pen eraser: (accel) acceleration threshold: 4
+[    11.159] (EE) Failed to open authorization file "/var/run/sddm/{d47d3a94-1af4-47fd-8ba0-8099aad3992a}": No such file or directory
+[    41.887] (II) modeset(0): EDID vendor "KDC", prod id 0
+[    41.887] (II) modeset(0): Printing DDC gathered Modelines:
+[    41.887] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[    42.185] (II) modeset(0): EDID vendor "KDC", prod id 0
+[    42.185] (II) modeset(0): Printing DDC gathered Modelines:
+[    42.185] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[    42.653] (II) modeset(0): EDID vendor "KDC", prod id 0
+[    42.653] (II) modeset(0): Printing DDC gathered Modelines:
+[    42.653] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[    42.996] (II) modeset(0): EDID vendor "KDC", prod id 0
+[    42.996] (II) modeset(0): Printing DDC gathered Modelines:
+[    42.996] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[   212.489] (II) modeset(0): EDID vendor "KDC", prod id 0
+[   212.489] (II) modeset(0): Printing DDC gathered Modelines:
+[   212.489] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  1465.944] (II) config/udev: removing device SIPODEV Lenovo HID Device
+[  1465.944] (II) event3  - SIPODEV Lenovo HID Device: device removed
+[  1465.961] (II) UnloadModule: "libinput"
+[  1465.966] (II) config/udev: removing device SIPODEV Lenovo HID Device Consumer Control
+[  1465.966] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device removed
+[  1465.983] (II) UnloadModule: "libinput"
+[  1465.985] (II) config/udev: removing device SIPODEV Lenovo HID Device Touchpad
+[  1465.985] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device removed
+[  1466.013] (II) UnloadModule: "libinput"
+[  1466.013] (II) config/udev: removing device SIPODEV Lenovo HID Device Wireless Radio Control
+[  1466.013] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device removed
+[  1466.022] (II) UnloadModule: "libinput"
+[  4412.692] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Touchpad (/dev/input/mouse0)
+[  4412.692] (II) No input driver specified, ignoring this device.
+[  4412.692] (II) This device may have been added with another device file.
+[  4412.728] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Consumer Control (/dev/input/event4)
+[  4412.728] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  4412.728] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  4412.728] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "system-keyboard"
+[  4412.728] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Consumer Control'
+[  4412.728] (**) SIPODEV Lenovo HID Device Consumer Control: always reports core events
+[  4412.728] (**) Option "Device" "/dev/input/event4"
+[  4412.728] (**) Option "_source" "server/udev"
+[  4412.735] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: is tagged by udev as: Keyboard
+[  4412.735] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device is a keyboard
+[  4412.735] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device removed
+[  4412.759] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0006/input/input35/event4"
+[  4412.759] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Consumer Control" (type: KEYBOARD, id 8)
+[  4412.759] (**) Option "xkb_layout" "us"
+[  4412.762] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: is tagged by udev as: Keyboard
+[  4412.762] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device is a keyboard
+[  4412.765] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Wireless Radio Control (/dev/input/event6)
+[  4412.765] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "evdev keyboard catchall"
+[  4412.765] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "libinput keyboard catchall"
+[  4412.765] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "system-keyboard"
+[  4412.765] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Wireless Radio Control'
+[  4412.765] (**) SIPODEV Lenovo HID Device Wireless Radio Control: always reports core events
+[  4412.765] (**) Option "Device" "/dev/input/event6"
+[  4412.765] (**) Option "_source" "server/udev"
+[  4412.767] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: is tagged by udev as: Keyboard
+[  4412.767] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device is a keyboard
+[  4412.767] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device removed
+[  4412.786] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0006/input/input38/event6"
+[  4412.786] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Wireless Radio Control" (type: KEYBOARD, id 9)
+[  4412.786] (**) Option "xkb_layout" "us"
+[  4412.788] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: is tagged by udev as: Keyboard
+[  4412.788] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device is a keyboard
+[  4412.791] (II) config/udev: Adding input device SIPODEV Lenovo HID Device (/dev/input/event3)
+[  4412.791] (**) SIPODEV Lenovo HID Device: Applying InputClass "evdev keyboard catchall"
+[  4412.791] (**) SIPODEV Lenovo HID Device: Applying InputClass "libinput keyboard catchall"
+[  4412.791] (**) SIPODEV Lenovo HID Device: Applying InputClass "system-keyboard"
+[  4412.791] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device'
+[  4412.791] (**) SIPODEV Lenovo HID Device: always reports core events
+[  4412.791] (**) Option "Device" "/dev/input/event3"
+[  4412.791] (**) Option "_source" "server/udev"
+[  4412.793] (II) event3  - SIPODEV Lenovo HID Device: is tagged by udev as: Keyboard
+[  4412.793] (II) event3  - SIPODEV Lenovo HID Device: device is a keyboard
+[  4412.793] (II) event3  - SIPODEV Lenovo HID Device: device removed
+[  4412.802] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:17EF:60BB.0005/input/input33/event3"
+[  4412.802] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device" (type: KEYBOARD, id 10)
+[  4412.802] (**) Option "xkb_layout" "us"
+[  4412.807] (II) event3  - SIPODEV Lenovo HID Device: is tagged by udev as: Keyboard
+[  4412.807] (II) event3  - SIPODEV Lenovo HID Device: device is a keyboard
+[  4412.811] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Touchpad (/dev/input/event5)
+[  4412.811] (**) SIPODEV Lenovo HID Device Touchpad: Applying InputClass "evdev touchpad catchall"
+[  4412.811] (**) SIPODEV Lenovo HID Device Touchpad: Applying InputClass "libinput touchpad catchall"
+[  4412.811] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Touchpad'
+[  4412.811] (**) SIPODEV Lenovo HID Device Touchpad: always reports core events
+[  4412.811] (**) Option "Device" "/dev/input/event5"
+[  4412.811] (**) Option "_source" "server/udev"
+[  4412.815] (II) event5  - SIPODEV Lenovo HID Device Touchpad: is tagged by udev as: Touchpad
+[  4412.830] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device is a touchpad
+[  4412.846] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device removed
+[  4412.846] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0006/input/input36/event5"
+[  4412.846] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Touchpad" (type: TOUCHPAD, id 11)
+[  4412.848] (**) Option "AccelerationScheme" "none"
+[  4412.849] (**) SIPODEV Lenovo HID Device Touchpad: (accel) selected scheme none/0
+[  4412.849] (**) SIPODEV Lenovo HID Device Touchpad: (accel) acceleration factor: 2.000
+[  4412.849] (**) SIPODEV Lenovo HID Device Touchpad: (accel) acceleration threshold: 4
+[  4412.850] (II) event5  - SIPODEV Lenovo HID Device Touchpad: is tagged by udev as: Touchpad
+[  4412.859] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device is a touchpad
+[  4423.255] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  4423.256] (II) modeset(0): Printing DDC gathered Modelines:
+[  4423.256] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  4423.637] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  4494.063] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  4494.063] (II) modeset(0): Printing DDC gathered Modelines:
+[  4494.063] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  4494.442] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  4495.392] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  4495.392] (II) modeset(0): Printing DDC gathered Modelines:
+[  4495.392] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  4495.777] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  5026.878] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  5026.878] (II) modeset(0): Printing DDC gathered Modelines:
+[  5026.878] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  5026.995] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  5075.055] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  5075.056] (II) modeset(0): Printing DDC gathered Modelines:
+[  5075.056] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  5172.525] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  5172.525] (II) modeset(0): Printing DDC gathered Modelines:
+[  5172.525] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  5172.902] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  5178.878] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  5178.878] (II) modeset(0): Printing DDC gathered Modelines:
+[  5178.878] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  5179.265] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  5386.403] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[  6929.820] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  6929.820] (II) modeset(0): Printing DDC gathered Modelines:
+[  6929.820] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  6930.210] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  6959.866] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  6959.867] (II) modeset(0): Printing DDC gathered Modelines:
+[  6959.867] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  6960.251] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  6961.970] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  6961.970] (II) modeset(0): Printing DDC gathered Modelines:
+[  6961.970] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  6962.355] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  7055.925] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  7055.925] (II) modeset(0): Printing DDC gathered Modelines:
+[  7055.925] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  7056.303] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  7057.208] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  7057.208] (II) modeset(0): Printing DDC gathered Modelines:
+[  7057.208] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  7057.600] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  7634.119] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  7634.119] (II) modeset(0): Printing DDC gathered Modelines:
+[  7634.119] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  7634.251] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  8601.050] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  8601.050] (II) modeset(0): Printing DDC gathered Modelines:
+[  8601.050] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  8601.430] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  8602.452] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  8602.452] (II) modeset(0): Printing DDC gathered Modelines:
+[  8602.452] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  8602.835] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  8611.728] (II) config/udev: removing device SIPODEV Lenovo HID Device
+[  8611.729] (II) event3  - SIPODEV Lenovo HID Device: device removed
+[  8611.743] (II) UnloadModule: "libinput"
+[  8611.748] (II) config/udev: removing device SIPODEV Lenovo HID Device Consumer Control
+[  8611.748] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device removed
+[  8611.759] (II) UnloadModule: "libinput"
+[  8611.763] (II) config/udev: removing device SIPODEV Lenovo HID Device Touchpad
+[  8611.763] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device removed
+[  8611.786] (II) UnloadModule: "libinput"
+[  8611.786] (II) config/udev: removing device SIPODEV Lenovo HID Device Wireless Radio Control
+[  8611.786] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device removed
+[  8611.795] (II) UnloadModule: "libinput"
+[  8819.071] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  8819.071] (II) modeset(0): Printing DDC gathered Modelines:
+[  8819.071] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  8819.459] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[  8821.173] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  8821.173] (II) modeset(0): Printing DDC gathered Modelines:
+[  8821.173] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  8851.320] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  8851.321] (II) modeset(0): Printing DDC gathered Modelines:
+[  8851.321] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  8851.711] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[  8869.541] (II) modeset(0): EDID vendor "KDC", prod id 0
+[  8869.541] (II) modeset(0): Printing DDC gathered Modelines:
+[  8869.541] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[  8869.921] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 12844.142] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 12844.142] (II) modeset(0): Printing DDC gathered Modelines:
+[ 12844.142] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 12844.260] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 14280.860] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 14280.861] (II) modeset(0): Printing DDC gathered Modelines:
+[ 14280.861] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 14281.251] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 14283.664] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 14283.664] (II) modeset(0): Printing DDC gathered Modelines:
+[ 14283.664] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 14284.061] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 16816.645] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 16816.645] (II) modeset(0): Printing DDC gathered Modelines:
+[ 16816.645] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 16817.022] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 16865.716] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 16865.716] (II) modeset(0): Printing DDC gathered Modelines:
+[ 16865.716] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 16866.090] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 16888.153] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 16888.153] (II) modeset(0): Printing DDC gathered Modelines:
+[ 16888.153] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 16888.537] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 17071.804] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 17071.804] (II) modeset(0): Printing DDC gathered Modelines:
+[ 17071.804] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 17072.183] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 17073.107] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 17073.107] (II) modeset(0): Printing DDC gathered Modelines:
+[ 17073.107] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 17073.489] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 17997.136] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 17997.136] (II) modeset(0): Printing DDC gathered Modelines:
+[ 17997.136] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 17997.530] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 18031.489] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 18031.489] (II) modeset(0): Printing DDC gathered Modelines:
+[ 18031.489] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 18031.873] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 18441.013] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 18441.013] (II) modeset(0): Printing DDC gathered Modelines:
+[ 18441.013] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 18441.403] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 18446.621] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 18446.621] (II) modeset(0): Printing DDC gathered Modelines:
+[ 18446.621] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 18447.005] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 18448.023] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 18448.023] (II) modeset(0): Printing DDC gathered Modelines:
+[ 18448.023] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 18448.403] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 18451.409] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Touchpad (/dev/input/mouse0)
+[ 18451.409] (II) No input driver specified, ignoring this device.
+[ 18451.409] (II) This device may have been added with another device file.
+[ 18451.419] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Consumer Control (/dev/input/event4)
+[ 18451.419] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "evdev keyboard catchall"
+[ 18451.419] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[ 18451.419] (**) SIPODEV Lenovo HID Device Consumer Control: Applying InputClass "system-keyboard"
+[ 18451.419] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Consumer Control'
+[ 18451.419] (**) SIPODEV Lenovo HID Device Consumer Control: always reports core events
+[ 18451.419] (**) Option "Device" "/dev/input/event4"
+[ 18451.419] (**) Option "_source" "server/udev"
+[ 18451.421] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: is tagged by udev as: Keyboard
+[ 18451.421] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device is a keyboard
+[ 18451.421] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device removed
+[ 18451.435] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0008/input/input42/event4"
+[ 18451.435] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Consumer Control" (type: KEYBOARD, id 8)
+[ 18451.435] (**) Option "xkb_layout" "us"
+[ 18451.436] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: is tagged by udev as: Keyboard
+[ 18451.436] (II) event4  - SIPODEV Lenovo HID Device Consumer Control: device is a keyboard
+[ 18451.437] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Wireless Radio Control (/dev/input/event6)
+[ 18451.438] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "evdev keyboard catchall"
+[ 18451.438] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "libinput keyboard catchall"
+[ 18451.438] (**) SIPODEV Lenovo HID Device Wireless Radio Control: Applying InputClass "system-keyboard"
+[ 18451.438] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Wireless Radio Control'
+[ 18451.438] (**) SIPODEV Lenovo HID Device Wireless Radio Control: always reports core events
+[ 18451.438] (**) Option "Device" "/dev/input/event6"
+[ 18451.438] (**) Option "_source" "server/udev"
+[ 18451.443] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: is tagged by udev as: Keyboard
+[ 18451.443] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device is a keyboard
+[ 18451.444] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device removed
+[ 18451.466] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0008/input/input45/event6"
+[ 18451.466] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Wireless Radio Control" (type: KEYBOARD, id 9)
+[ 18451.466] (**) Option "xkb_layout" "us"
+[ 18451.467] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: is tagged by udev as: Keyboard
+[ 18451.468] (II) event6  - SIPODEV Lenovo HID Device Wireless Radio Control: device is a keyboard
+[ 18451.469] (II) config/udev: Adding input device SIPODEV Lenovo HID Device (/dev/input/event3)
+[ 18451.469] (**) SIPODEV Lenovo HID Device: Applying InputClass "evdev keyboard catchall"
+[ 18451.469] (**) SIPODEV Lenovo HID Device: Applying InputClass "libinput keyboard catchall"
+[ 18451.469] (**) SIPODEV Lenovo HID Device: Applying InputClass "system-keyboard"
+[ 18451.469] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device'
+[ 18451.469] (**) SIPODEV Lenovo HID Device: always reports core events
+[ 18451.469] (**) Option "Device" "/dev/input/event3"
+[ 18451.469] (**) Option "_source" "server/udev"
+[ 18451.470] (II) event3  - SIPODEV Lenovo HID Device: is tagged by udev as: Keyboard
+[ 18451.470] (II) event3  - SIPODEV Lenovo HID Device: device is a keyboard
+[ 18451.470] (II) event3  - SIPODEV Lenovo HID Device: device removed
+[ 18451.482] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:17EF:60BB.0007/input/input40/event3"
+[ 18451.482] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device" (type: KEYBOARD, id 10)
+[ 18451.482] (**) Option "xkb_layout" "us"
+[ 18451.488] (II) event3  - SIPODEV Lenovo HID Device: is tagged by udev as: Keyboard
+[ 18451.488] (II) event3  - SIPODEV Lenovo HID Device: device is a keyboard
+[ 18451.493] (II) config/udev: Adding input device SIPODEV Lenovo HID Device Touchpad (/dev/input/event5)
+[ 18451.493] (**) SIPODEV Lenovo HID Device Touchpad: Applying InputClass "evdev touchpad catchall"
+[ 18451.493] (**) SIPODEV Lenovo HID Device Touchpad: Applying InputClass "libinput touchpad catchall"
+[ 18451.493] (II) Using input driver 'libinput' for 'SIPODEV Lenovo HID Device Touchpad'
+[ 18451.493] (**) SIPODEV Lenovo HID Device Touchpad: always reports core events
+[ 18451.493] (**) Option "Device" "/dev/input/event5"
+[ 18451.493] (**) Option "_source" "server/udev"
+[ 18451.497] (II) event5  - SIPODEV Lenovo HID Device Touchpad: is tagged by udev as: Touchpad
+[ 18451.512] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device is a touchpad
+[ 18451.532] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device removed
+[ 18451.532] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:17EF:60BB.0008/input/input43/event5"
+[ 18451.532] (II) XINPUT: Adding extended input device "SIPODEV Lenovo HID Device Touchpad" (type: TOUCHPAD, id 11)
+[ 18451.534] (**) Option "AccelerationScheme" "none"
+[ 18451.535] (**) SIPODEV Lenovo HID Device Touchpad: (accel) selected scheme none/0
+[ 18451.535] (**) SIPODEV Lenovo HID Device Touchpad: (accel) acceleration factor: 2.000
+[ 18451.535] (**) SIPODEV Lenovo HID Device Touchpad: (accel) acceleration threshold: 4
+[ 18451.536] (II) event5  - SIPODEV Lenovo HID Device Touchpad: is tagged by udev as: Touchpad
+[ 18451.543] (II) event5  - SIPODEV Lenovo HID Device Touchpad: device is a touchpad
+[ 18468.361] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18468.570] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.140] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.196] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.494] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.578] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.594] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.908] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.924] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18469.995] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18471.164] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18495.585] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18496.637] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18498.209] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18498.469] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18499.901] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18581.744] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18582.148] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18597.083] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18598.929] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18613.904] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18614.273] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18614.317] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18616.810] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18619.497] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18662.891] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18663.530] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18663.678] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18663.874] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18665.136] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18665.662] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18666.480] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18667.726] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18668.111] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18668.395] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18668.622] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18669.277] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18669.490] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18693.164] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18693.438] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18700.465] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18724.337] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18725.830] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18727.342] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18728.148] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18742.618] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18743.329] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18745.900] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18756.360] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18756.647] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18757.054] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18780.856] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18783.772] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18784.456] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18807.448] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18811.890] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18827.068] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18828.279] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18838.002] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18839.555] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18840.841] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18841.385] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18847.999] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18865.046] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18868.057] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18905.089] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18906.686] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18906.711] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18907.971] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18908.012] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18912.235] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18976.303] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18978.036] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18978.194] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18978.240] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18986.028] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18993.715] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18993.969] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18994.062] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18994.304] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18994.553] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18994.666] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18995.687] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18995.757] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18995.773] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 18995.803] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19000.999] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19017.169] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19018.800] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19019.722] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19020.666] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19027.813] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19027.906] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19028.810] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19028.832] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19028.832] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19028.848] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19029.026] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19042.539] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19042.646] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19042.766] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19182.969] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19349.316] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19349.759] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19350.686] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19351.935] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19352.174] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19352.835] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19353.529] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19396.148] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19396.623] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19397.865] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19397.886] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19413.337] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19413.677] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19414.438] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19417.002] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19417.537] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19418.726] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19419.347] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19419.447] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19421.243] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19422.120] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19423.398] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19424.067] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19424.879] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19425.046] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19428.054] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19428.217] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19429.063] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19445.693] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19446.004] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19446.111] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19446.748] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19447.833] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19448.762] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19448.808] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19449.472] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19449.808] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19481.707] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19482.327] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19484.913] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19486.208] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19486.738] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19488.515] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19489.816] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19491.215] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19492.124] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19492.852] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19493.222] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19494.486] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19527.231] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19527.780] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19561.023] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19561.230] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19567.503] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19570.045] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19570.045] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19570.455] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19570.600] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19580.520] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19586.142] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19586.608] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19647.117] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19647.384] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19668.802] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19669.226] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19673.417] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19673.432] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19673.439] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19703.513] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19703.603] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19704.065] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19723.141] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19723.649] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19723.711] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19725.272] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19730.295] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19732.038] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19732.089] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19734.494] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19734.662] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19734.714] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19734.749] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19735.351] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19737.037] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19738.021] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19738.146] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19738.419] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19738.512] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19760.468] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19761.009] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19762.634] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19763.559] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19763.618] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19764.201] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19764.218] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19764.249] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19766.668] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19785.740] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19789.808] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 19790.434] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20062.398] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20126.775] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20127.007] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20127.514] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20129.127] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20170.997] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20171.208] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20171.314] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20171.431] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20171.882] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20171.954] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20172.479] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20559.902] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20560.620] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20563.427] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20567.055] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20568.339] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20659.378] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20659.727] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20659.792] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20660.051] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20660.308] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20751.128] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20751.974] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20752.137] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20752.153] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20752.880] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20876.100] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 20897.006] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21126.226] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21126.525] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21126.765] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21126.878] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21127.065] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21437.601] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21438.153] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 21438.935] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 23613.332] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38412.756] (EE) client bug: timer event5 tap: offset negative (-27ms)
+[ 38412.757] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38412.916] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38412.930] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38413.275] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38413.386] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38413.457] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38480.877] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38480.892] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38481.451] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38481.650] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38483.325] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38483.645] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38484.401] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38615.598] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38615.688] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38616.078] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38800.414] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38800.533] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38897.750] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38898.742] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38902.241] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38902.799] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 38903.337] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39062.636] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39159.723] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39324.313] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39353.133] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39353.824] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39354.864] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39355.363] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39500.517] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 39700.562] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 39700.562] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39700.562] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 39700.952] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 39701.963] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 39701.963] (II) modeset(0): Printing DDC gathered Modelines:
+[ 39701.963] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 39702.354] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 42514.996] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42515.315] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42515.553] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42515.959] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42516.844] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42517.040] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42517.054] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42517.077] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42517.171] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 42701.480] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43523.296] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43523.373] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43590.685] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43591.204] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43591.665] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43592.172] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43769.088] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43769.273] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43769.568] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43770.649] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43771.416] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 43772.307] (EE) event5  - SIPODEV Lenovo HID Device Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.13.4/touchpad-jumping-cursors.html for details
+[ 45360.542] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 45360.542] (II) modeset(0): Printing DDC gathered Modelines:
+[ 45360.542] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 45360.927] (II) modeset(0): Allocate new frame buffer 1200x1920 stride
+[ 45379.359] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 45379.359] (II) modeset(0): Printing DDC gathered Modelines:
+[ 45379.359] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)
+[ 45379.744] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 45691.792] (II) modeset(0): EDID vendor "KDC", prod id 0
+[ 45691.792] (II) modeset(0): Printing DDC gathered Modelines:
+[ 45691.792] (II) modeset(0): Modeline "1920x1200"x0.0  152.84  1920 1936 1952 2062  1200 1215 1217 1235 +hsync -vsync (74.1 kHz eP)

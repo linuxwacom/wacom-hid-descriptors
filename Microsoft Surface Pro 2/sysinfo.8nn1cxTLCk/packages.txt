@@ -1,0 +1,67 @@
+Name            : libwacom-surface
+Version         : 1.12-1
+Description     : Patched libwacom for Microsoft Surface devices
+Architecture    : x86_64
+URL             : https://github.com/linux-surface/libwacom
+Licenses        : MIT
+Groups          : None
+Provides        : libwacom=1.12
+Depends On      : glib2  systemd  libgudev
+Optional Deps   : None
+Required By     : gnome-settings-daemon  libinput
+Optional For    : None
+Conflicts With  : libwacom
+Replaces        : None
+Installed Size  : 642.55 KiB
+Packager        : Unknown Packager
+Build Date      : Sat Oct 30 15:26:05 2021
+Install Date    : Tue Nov  2 19:41:05 2021
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : None
+
+Name            : libinput
+Version         : 1.19.2-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://www.freedesktop.org/wiki/Software/libinput/
+Licenses        : custom:X11
+Groups          : None
+Provides        : None
+Depends On      : mtdev  systemd  libevdev  libwacom
+Optional Deps   : gtk3: libinput debug-gui [installed]
+                  python-pyudev: libinput measure [installed]
+                  python-libevdev: libinput measure [installed]
+Required By     : clutter  mutter  qt5-base  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1361.68 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Thu Oct 21 16:01:34 2021
+Install Date    : Wed Oct 27 09:13:42 2021
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.2.0-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : custom:MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 95.51 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Sun Sep 19 19:01:14 2021
+Install Date    : Wed Oct 27 09:13:42 2021
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature

@@ -1,0 +1,29 @@
+Usage Page (Digitizer),             ; Digitizer (0Dh)
+Usage (Touchscreen),                ; Touch screen (04h, application collection)
+Collection (Application),
+    Usage (Finger),                 ; Finger (22h, logical collection)
+    Collection (Physical),
+        Usage (Tip Switch),         ; Tip switch (42h, momentary control)
+        Usage (In Range),           ; In range (32h, momentary control)
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Report Size (1),
+        Report Count (2),
+        Input (Variable),
+        Report Count (1),
+        Report Size (6),
+        Input (Constant, Variable),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Logical Maximum (4095),
+        Physical Maximum (26212),
+        Unit (Centimeter),
+        Unit Exponent (13),
+        Report Size (16),
+        Report Count (1),
+        Input (Variable),
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Physical Maximum (16420),
+        Input (Variable),
+    End Collection,
+End Collection

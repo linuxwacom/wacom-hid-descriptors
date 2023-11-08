@@ -1,0 +1,68 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-9/i2c-ELAN0001:00/input/input8':
+    KERNEL=="input8"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{inhibited}=="0"
+    ATTR{name}=="Elan Touchscreen"
+    ATTR{phys}==""
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-9/i2c-ELAN0001:00':
+    KERNELS=="i2c-ELAN0001:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="elants_i2c"
+    ATTRS{bc_version}=="67"
+    ATTRS{fw_version}=="5601"
+    ATTRS{hw_version}=="1d8c"
+    ATTRS{iap_mode}=="Normal"
+    ATTRS{iap_version}=="24"
+    ATTRS{name}=="ELAN0001:00"
+    ATTRS{solution_version}=="04"
+    ATTRS{test_version}=="00"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-9':
+    KERNELS=="i2c-9"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.3/i2c_designware.3':
+    KERNELS=="i2c_designware.3"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/pci0000:00/0000:00:16.3':
+    KERNELS=="0000:00:16.3"
+    SUBSYSTEMS=="pci"
+    DRIVERS=="intel-lpss"
+    ATTRS{broken_parity_status}=="0"
+    ATTRS{class}=="0x118000"
+    ATTRS{consistent_dma_mask_bits}=="32"
+    ATTRS{d3cold_allowed}=="1"
+    ATTRS{device}=="0x5ab2"
+    ATTRS{devspec}==""
+    ATTRS{dma_mask_bits}=="32"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{enable}=="1"
+    ATTRS{irq}=="30"
+    ATTRS{local_cpulist}=="0-1"
+    ATTRS{local_cpus}=="3"
+    ATTRS{msi_bus}=="1"
+    ATTRS{subsystem_device}=="0x7270"
+    ATTRS{subsystem_vendor}=="0x8086"
+    ATTRS{vendor}=="0x8086"
+
+  looking at parent device '/devices/pci0000:00':
+    KERNELS=="pci0000:00"
+    SUBSYSTEMS==""
+    DRIVERS==""
+

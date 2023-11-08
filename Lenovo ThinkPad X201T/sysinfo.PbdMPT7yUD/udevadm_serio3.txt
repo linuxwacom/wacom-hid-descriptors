@@ -1,0 +1,106 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pnp0/00:05/tty/ttyS4/serio3/input/input15':
+    KERNEL=="input15"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="Wacom Serial Penabled 2FG Touchscreen Pen"
+    ATTR{phys}=="ttyS4/serio0/input0"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/pnp0/00:05/tty/ttyS4/serio3':
+    KERNELS=="serio3"
+    SUBSYSTEMS=="serio"
+    DRIVERS=="w8001"
+    ATTRS{bind_mode}=="auto"
+    ATTRS{description}=="Serial port"
+    ATTRS{firmware_id}==""
+
+  looking at parent device '/devices/pnp0/00:05/tty/ttyS4':
+    KERNELS=="ttyS4"
+    SUBSYSTEMS=="tty"
+    DRIVERS==""
+    ATTRS{close_delay}=="50"
+    ATTRS{closing_wait}=="3000"
+    ATTRS{custom_divisor}=="0"
+    ATTRS{flags}=="0x10000040"
+    ATTRS{io_type}=="0"
+    ATTRS{iomem_base}=="0x0"
+    ATTRS{iomem_reg_shift}=="0"
+    ATTRS{irq}=="5"
+    ATTRS{line}=="4"
+    ATTRS{port}=="0x200"
+    ATTRS{type}=="14"
+    ATTRS{uartclk}=="14745600"
+    ATTRS{xmit_fifo_size}=="16"
+
+  looking at parent device '/devices/pnp0/00:05':
+    KERNELS=="00:05"
+    SUBSYSTEMS=="pnp"
+    DRIVERS=="serial"
+    ATTRS{id}=="WACf00c"
+
+  looking at parent device '/devices/pnp0':
+    KERNELS=="pnp0"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/pnp0/00:05/tty/ttyS4/serio3/input/input16':
+    KERNEL=="input16"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{name}=="Wacom Serial Penabled 2FG Touchscreen Finger"
+    ATTR{phys}=="ttyS4/serio0/input0"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/pnp0/00:05/tty/ttyS4/serio3':
+    KERNELS=="serio3"
+    SUBSYSTEMS=="serio"
+    DRIVERS=="w8001"
+    ATTRS{bind_mode}=="auto"
+    ATTRS{description}=="Serial port"
+    ATTRS{firmware_id}==""
+
+  looking at parent device '/devices/pnp0/00:05/tty/ttyS4':
+    KERNELS=="ttyS4"
+    SUBSYSTEMS=="tty"
+    DRIVERS==""
+    ATTRS{close_delay}=="50"
+    ATTRS{closing_wait}=="3000"
+    ATTRS{custom_divisor}=="0"
+    ATTRS{flags}=="0x10000040"
+    ATTRS{io_type}=="0"
+    ATTRS{iomem_base}=="0x0"
+    ATTRS{iomem_reg_shift}=="0"
+    ATTRS{irq}=="5"
+    ATTRS{line}=="4"
+    ATTRS{port}=="0x200"
+    ATTRS{type}=="14"
+    ATTRS{uartclk}=="14745600"
+    ATTRS{xmit_fifo_size}=="16"
+
+  looking at parent device '/devices/pnp0/00:05':
+    KERNELS=="00:05"
+    SUBSYSTEMS=="pnp"
+    DRIVERS=="serial"
+    ATTRS{id}=="WACf00c"
+
+  looking at parent device '/devices/pnp0':
+    KERNELS=="pnp0"
+    SUBSYSTEMS==""
+    DRIVERS==""
+

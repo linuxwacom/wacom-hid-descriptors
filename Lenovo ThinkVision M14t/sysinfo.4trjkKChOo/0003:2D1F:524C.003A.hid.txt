@@ -1,0 +1,76 @@
+Usage Page (Digitizer),             ; Digitizer (0Dh)
+Usage (Touchscreen),                ; Touch screen (04h, application collection)
+Collection (Application),
+    Report ID (32),
+    Report Count (1),
+    Report Size (8),
+    Logical Maximum (255),
+    Logical Minimum (0),
+    Input (Constant, Variable),
+    Usage (Contact Count),          ; Contact count (54h, dynamic value)
+    Input (Variable),
+    Usage Page (Digitizer),         ; Digitizer (0Dh)
+    Usage (Finger),                 ; Finger (22h, logical collection)
+    Collection (Logical),
+        Usage (Tip Switch),         ; Tip switch (42h, momentary control)
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Report Size (1),
+        Report Count (1),
+        Input (Variable),
+        Input (Constant, Variable),
+        Usage (Touch Valid),        ; Touch valid (47h, momentary control)
+        Input (Variable),
+        Report Count (5),
+        Input (Constant, Variable),
+        Report Size (8),
+        Usage (Contact Identifier), ; Contact identifier (51h, dynamic value)
+        Report Count (1),
+        Input (Variable),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Logical Maximum (30931),
+        Physical Maximum (30931),
+        Unit (Centimeter),
+        Unit Exponent (13),
+        Report Size (16),
+        Report Count (1),
+        Input (Variable),
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Logical Maximum (17399),
+        Physical Maximum (17399),
+        Input (Variable),
+    End Collection,
+    Usage Page (Digitizer),         ; Digitizer (0Dh)
+    Logical Maximum (65535),
+    Report Size (16),
+    Report Count (1),
+    Usage (Scan Time),              ; Scan time (56h, dynamic value)
+    Input (Variable),
+    Report ID (33),
+    Usage (Contact Count Maximum),  ; Contact count maximum (55h, static value)
+    Report Size (8),
+    Report Count (1),
+    Logical Maximum (255),
+    Feature (Variable),
+    Report ID (34),
+    Usage Page (FF00h),             ; FF00h, vendor-defined
+    Usage (C5h),
+    Report Count (256),
+    Feature (Variable),
+End Collection,
+Usage Page (Digitizer),             ; Digitizer (0Dh)
+Usage (Configuration),              ; Configuration (0Eh, application collection)
+Collection (Application),
+    Report ID (35),
+    Usage (Device Settings),        ; Device settings (23h, logical collection)
+    Collection (Logical),
+        Usage (Device Mode),        ; Device input mode (52h, dynamic value)
+        Usage (Device Identifier),  ; Device identifier (53h, dynamic value)
+        Logical Minimum (0),
+        Logical Maximum (10),
+        Report Size (8),
+        Report Count (2),
+        Feature (Variable),
+    End Collection,
+End Collection

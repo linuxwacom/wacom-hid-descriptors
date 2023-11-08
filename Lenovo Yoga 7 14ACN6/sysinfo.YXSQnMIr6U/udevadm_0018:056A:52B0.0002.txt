@@ -1,0 +1,94 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00/0018:056A:52B0.0002/input/input12':
+    KERNEL=="input12"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{properties}=="2"
+    ATTR{inhibited}=="0"
+    ATTR{phys}=="i2c-WACF2200:00"
+    ATTR{name}=="Wacom HID 52B0 Pen"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00/0018:056A:52B0.0002':
+    KERNELS=="0018:056A:52B0.0002"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00':
+    KERNELS=="i2c-WACF2200:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid_acpi"
+    ATTRS{name}=="WACF2200:00"
+
+  looking at parent device '/devices/platform/AMDI0010:02/i2c-2':
+    KERNELS=="i2c-2"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{waiting_for_supplier}=="0"
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+
+  looking at parent device '/devices/platform/AMDI0010:02':
+    KERNELS=="AMDI0010:02"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00/0018:056A:52B0.0002/input/input13':
+    KERNEL=="input13"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{inhibited}=="0"
+    ATTR{phys}=="i2c-WACF2200:00"
+    ATTR{uniq}==""
+    ATTR{name}=="Wacom HID 52B0 Finger"
+    ATTR{properties}=="2"
+
+  looking at parent device '/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00/0018:056A:52B0.0002':
+    KERNELS=="0018:056A:52B0.0002"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+
+  looking at parent device '/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00':
+    KERNELS=="i2c-WACF2200:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid_acpi"
+    ATTRS{name}=="WACF2200:00"
+
+  looking at parent device '/devices/platform/AMDI0010:02/i2c-2':
+    KERNELS=="i2c-2"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+    ATTRS{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:02':
+    KERNELS=="AMDI0010:02"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+

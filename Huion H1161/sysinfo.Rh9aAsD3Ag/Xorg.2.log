@@ -1,0 +1,944 @@
+[ 41483.711] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[ 41483.711] _XSERVTransMakeAllCOTSServerListeners: server already running
+[ 41483.711] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[ 41483.711] _XSERVTransMakeAllCOTSServerListeners: server already running
+[ 41483.712] (--) Log file renamed from "/var/log/Xorg.pid-174881.log" to "/var/log/Xorg.2.log"
+[ 41483.712] 
+X.Org X Server 1.20.9
+X Protocol Version 11, Revision 0
+[ 41483.712] Build Operating System: Linux 4.15.0-132-generic x86_64 Ubuntu
+[ 41483.712] Current Operating System: Linux HOSTNAME 5.8.0-45-generic #51-Ubuntu SMP Fri Feb 19 13:24:51 UTC 2021 x86_64
+[ 41483.712] Kernel command line: BOOT_IMAGE=/vmlinuz-5.8.0-45-generic USERNAME=/dev/mapper/ubuntu--vg-USERNAME ro quiet splash vt.handoff=7
+[ 41483.712] Build Date: 30 November 2020  11:53:47AM
+[ 41483.712] xorg-server 2:1.20.9-2ubuntu1.2 (For technical support please see http://www.ubuntu.com/support) 
+[ 41483.712] Current version of pixman: 0.38.4
+[ 41483.712] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[ 41483.712] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[ 41483.713] (==) Log file: "/var/log/Xorg.2.log", Time: Sat Mar 13 00:35:41 2021
+[ 41483.713] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 41483.714] (==) No Layout section.  Using the first Screen section.
+[ 41483.714] (==) No screen section available. Using defaults.
+[ 41483.714] (**) |-->Screen "Default Screen Section" (0)
+[ 41483.714] (**) |   |-->Monitor "<default monitor>"
+[ 41483.714] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[ 41483.714] (==) Automatically adding devices
+[ 41483.714] (==) Automatically enabling devices
+[ 41483.714] (==) Automatically adding GPU devices
+[ 41483.714] (==) Automatically binding GPU devices
+[ 41483.714] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 41483.714] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[ 41483.714] 	Entry deleted from font path.
+[ 41483.714] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[ 41483.714] 	Entry deleted from font path.
+[ 41483.714] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[ 41483.714] 	Entry deleted from font path.
+[ 41483.714] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[ 41483.714] 	Entry deleted from font path.
+[ 41483.714] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[ 41483.714] 	Entry deleted from font path.
+[ 41483.714] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[ 41483.714] (==) ModulePath set to "/usr/lib/xorg/modules"
+[ 41483.714] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[ 41483.714] (II) Loader magic: 0x564448ab3020
+[ 41483.714] (II) Module ABI versions:
+[ 41483.714] 	X.Org ANSI C Emulation: 0.4
+[ 41483.714] 	X.Org Video Driver: 24.1
+[ 41483.714] 	X.Org XInput driver : 24.1
+[ 41483.714] 	X.Org Server Extension : 10.0
+[ 41483.715] (++) using VT number 4
+
+[ 41483.716] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_3754
+[ 41483.717] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 41483.717] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 16 paused 0
+[ 41483.718] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/x86_64-linux-gnu/nvidia/xorg,/usr/lib/xorg/modules"
+[ 41483.719] (--) PCI:*(1@0:0:0) 10de:1c03:1462:3283 rev 161, Mem @ 0xde000000/16777216, 0x2fe0000000/268435456, 0x2ff0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[ 41483.719] (II) LoadModule: "glx"
+[ 41483.720] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[ 41483.722] (II) Module glx: vendor="X.Org Foundation"
+[ 41483.722] 	compiled for 1.20.9, module version = 1.0.0
+[ 41483.722] 	ABI class: X.Org Server Extension, version 10.0
+[ 41483.722] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[ 41483.722] 	loading driver: nvidia
+[ 41483.993] (==) Matched nvidia as autoconfigured driver 0
+[ 41483.993] (==) Matched nouveau as autoconfigured driver 1
+[ 41483.993] (==) Matched modesetting as autoconfigured driver 2
+[ 41483.993] (==) Matched fbdev as autoconfigured driver 3
+[ 41483.993] (==) Matched vesa as autoconfigured driver 4
+[ 41483.993] (==) Assigned the driver to the xf86ConfigLayout
+[ 41483.993] (II) LoadModule: "nvidia"
+[ 41483.993] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/nvidia_drv.so
+[ 41483.994] (II) Module nvidia: vendor="NVIDIA Corporation"
+[ 41483.994] 	compiled for 1.6.99.901, module version = 1.0.0
+[ 41483.994] 	Module class: X.Org Video Driver
+[ 41483.994] (II) LoadModule: "nouveau"
+[ 41483.994] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[ 41483.996] (II) Module nouveau: vendor="X.Org Foundation"
+[ 41483.996] 	compiled for 1.20.3, module version = 1.0.16
+[ 41483.996] 	Module class: X.Org Video Driver
+[ 41483.996] 	ABI class: X.Org Video Driver, version 24.0
+[ 41483.996] (II) LoadModule: "modesetting"
+[ 41483.996] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[ 41483.997] (II) Module modesetting: vendor="X.Org Foundation"
+[ 41483.997] 	compiled for 1.20.9, module version = 1.20.9
+[ 41483.997] 	Module class: X.Org Video Driver
+[ 41483.997] 	ABI class: X.Org Video Driver, version 24.1
+[ 41483.997] (II) LoadModule: "fbdev"
+[ 41483.997] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[ 41483.997] (II) Module fbdev: vendor="X.Org Foundation"
+[ 41483.998] 	compiled for 1.20.1, module version = 0.5.0
+[ 41483.998] 	Module class: X.Org Video Driver
+[ 41483.998] 	ABI class: X.Org Video Driver, version 24.0
+[ 41483.998] (II) LoadModule: "vesa"
+[ 41483.998] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[ 41483.998] (II) Module vesa: vendor="X.Org Foundation"
+[ 41483.998] 	compiled for 1.20.8, module version = 2.5.0
+[ 41483.998] 	Module class: X.Org Video Driver
+[ 41483.998] 	ABI class: X.Org Video Driver, version 24.1
+[ 41483.998] (II) NVIDIA dlloader X Driver  460.56  Tue Feb 23 23:25:58 UTC 2021
+[ 41483.998] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[ 41483.998] (II) NOUVEAU driver Date:   Mon Jan 28 23:25:58 2019 -0500
+[ 41483.998] (II) NOUVEAU driver for NVIDIA chipset families :
+[ 41483.998] 	RIVA TNT            (NV04)
+[ 41483.998] 	RIVA TNT2           (NV05)
+[ 41483.998] 	GeForce 256         (NV10)
+[ 41483.998] 	GeForce 2           (NV11, NV15)
+[ 41483.998] 	GeForce 4MX         (NV17, NV18)
+[ 41483.998] 	GeForce 3           (NV20)
+[ 41483.999] 	GeForce 4Ti         (NV25, NV28)
+[ 41483.999] 	GeForce FX          (NV3x)
+[ 41483.999] 	GeForce 6           (NV4x)
+[ 41483.999] 	GeForce 7           (G7x)
+[ 41483.999] 	GeForce 8           (G8x)
+[ 41483.999] 	GeForce 9           (G9x)
+[ 41483.999] 	GeForce GTX 2xx/3xx (GT2xx)
+[ 41483.999] 	GeForce GTX 4xx/5xx (GFxxx)
+[ 41483.999] 	GeForce GTX 6xx/7xx (GKxxx)
+[ 41483.999] 	GeForce GTX 9xx     (GMxxx)
+[ 41483.999] 	GeForce GTX 10xx    (GPxxx)
+[ 41483.999] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[ 41483.999] (II) FBDEV: driver for framebuffer: fbdev
+[ 41483.999] (II) VESA: driver for VESA chipsets: vesa
+[ 41483.999] (II) systemd-logind: releasing fd for 226:0
+[ 41484.000] (II) Loading sub module "fb"
+[ 41484.000] (II) LoadModule: "fb"
+[ 41484.000] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 41484.001] (II) Module fb: vendor="X.Org Foundation"
+[ 41484.001] 	compiled for 1.20.9, module version = 1.0.0
+[ 41484.001] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 41484.001] (II) Loading sub module "wfb"
+[ 41484.001] (II) LoadModule: "wfb"
+[ 41484.001] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[ 41484.001] (II) Module wfb: vendor="X.Org Foundation"
+[ 41484.001] 	compiled for 1.20.9, module version = 1.0.0
+[ 41484.001] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 41484.001] (II) Loading sub module "ramdac"
+[ 41484.001] (II) LoadModule: "ramdac"
+[ 41484.001] (II) Module "ramdac" already built-in
+[ 41484.001] (WW) Falling back to old probe method for modesetting
+[ 41484.001] (WW) Falling back to old probe method for fbdev
+[ 41484.001] (II) Loading sub module "fbdevhw"
+[ 41484.001] (II) LoadModule: "fbdevhw"
+[ 41484.002] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[ 41484.002] (II) Module fbdevhw: vendor="X.Org Foundation"
+[ 41484.002] 	compiled for 1.20.9, module version = 0.0.2
+[ 41484.002] 	ABI class: X.Org Video Driver, version 24.1
+[ 41484.002] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[ 41484.002] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[ 41484.002] (==) NVIDIA(0): RGB weight 888
+[ 41484.002] (==) NVIDIA(0): Default visual is TrueColor
+[ 41484.002] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 41484.002] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[ 41484.002] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[ 41484.002] (**) NVIDIA(0): Enabling 2D acceleration
+[ 41484.002] (II) Loading sub module "glxserver_nvidia"
+[ 41484.002] (II) LoadModule: "glxserver_nvidia"
+[ 41484.002] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/libglxserver_nvidia.so
+[ 41484.009] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[ 41484.009] 	compiled for 1.6.99.901, module version = 1.0.0
+[ 41484.009] 	Module class: X.Org Server Extension
+[ 41484.009] (II) NVIDIA GLX Module  460.56  Tue Feb 23 23:23:21 UTC 2021
+[ 41484.009] (II) NVIDIA: The X server supports PRIME Render Offload.
+[ 41484.010] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[ 41484.010] (--) NVIDIA(0):     DFP-0 (boot)
+[ 41484.010] (--) NVIDIA(0):     DFP-1
+[ 41484.010] (--) NVIDIA(0):     DFP-2
+[ 41484.010] (--) NVIDIA(0):     DFP-3
+[ 41484.010] (--) NVIDIA(0):     DFP-4
+[ 41484.010] (--) NVIDIA(0):     DFP-5
+[ 41484.010] (--) NVIDIA(0):     DFP-6
+[ 41484.011] (II) NVIDIA(0): NVIDIA GPU GeForce GTX 1060 6GB (GP106-A) at PCI:1:0:0
+[ 41484.011] (II) NVIDIA(0):     (GPU-0)
+[ 41484.011] (--) NVIDIA(0): Memory: 6291456 kBytes
+[ 41484.012] (--) NVIDIA(0): VideoBIOS: 86.06.0e.00.a4
+[ 41484.012] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[ 41484.027] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41484.027] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41484.027] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41484.027] (--) NVIDIA(GPU-0): 
+[ 41484.027] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41484.027] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41484.027] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41484.027] (--) NVIDIA(GPU-0): 
+[ 41484.056] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41484.056] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41484.056] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41484.056] (--) NVIDIA(GPU-0): 
+[ 41484.057] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41484.057] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41484.057] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41484.057] (--) NVIDIA(GPU-0): 
+[ 41484.058] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41484.058] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41484.058] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41484.058] (--) NVIDIA(GPU-0): 
+[ 41484.058] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41484.058] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41484.058] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41484.058] (--) NVIDIA(GPU-0): 
+[ 41484.059] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41484.059] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41484.059] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41484.059] (--) NVIDIA(GPU-0): 
+[ 41484.070] (==) NVIDIA(0): 
+[ 41484.070] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[ 41484.070] (==) NVIDIA(0):     will be used as the requested mode.
+[ 41484.070] (==) NVIDIA(0): 
+[ 41484.071] (II) NVIDIA(0): Validated MetaModes:
+[ 41484.071] (II) NVIDIA(0):    
+[ 41484.071] (II) NVIDIA(0):     "DFP-0:nvidia-auto-select,DFP-2:nvidia-auto-select,DFP-3:nvidia-auto-select"
+[ 41484.071] (II) NVIDIA(0): Virtual screen size determined to be 5520 x 1200
+[ 41484.074] (--) NVIDIA(0): DPI set to (90, 88); computed from "UseEdidDpi" X config
+[ 41484.074] (--) NVIDIA(0):     option
+[ 41484.074] (II) UnloadModule: "nouveau"
+[ 41484.074] (II) Unloading nouveau
+[ 41484.074] (II) UnloadModule: "modesetting"
+[ 41484.074] (II) Unloading modesetting
+[ 41484.074] (II) UnloadModule: "fbdev"
+[ 41484.074] (II) Unloading fbdev
+[ 41484.074] (II) UnloadSubModule: "fbdevhw"
+[ 41484.074] (II) Unloading fbdevhw
+[ 41484.074] (II) UnloadModule: "vesa"
+[ 41484.074] (II) Unloading vesa
+[ 41484.075] (II) NVIDIA: Using 24576.00 MB of virtual memory for indirect memory
+[ 41484.075] (II) NVIDIA:     access.
+[ 41484.094] (II) NVIDIA(0): Setting mode "DFP-0:nvidia-auto-select,DFP-2:nvidia-auto-select,DFP-3:nvidia-auto-select"
+[ 41484.211] (==) NVIDIA(0): Disabling shared memory pixmaps
+[ 41484.211] (==) NVIDIA(0): Backing store enabled
+[ 41484.212] (==) NVIDIA(0): Silken mouse enabled
+[ 41484.213] (==) NVIDIA(0): DPMS enabled
+[ 41484.213] (II) Loading sub module "dri2"
+[ 41484.213] (II) LoadModule: "dri2"
+[ 41484.213] (II) Module "dri2" already built-in
+[ 41484.213] (II) NVIDIA(0): [DRI2] Setup complete
+[ 41484.213] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[ 41484.213] (II) Initializing extension Generic Event Extension
+[ 41484.214] (II) Initializing extension SHAPE
+[ 41484.219] (II) Initializing extension MIT-SHM
+[ 41484.219] (II) Initializing extension XInputExtension
+[ 41484.219] (II) Initializing extension XTEST
+[ 41484.219] (II) Initializing extension BIG-REQUESTS
+[ 41484.219] (II) Initializing extension SYNC
+[ 41484.220] (II) Initializing extension XKEYBOARD
+[ 41484.220] (II) Initializing extension XC-MISC
+[ 41484.220] (II) Initializing extension SECURITY
+[ 41484.220] (II) Initializing extension XFIXES
+[ 41484.220] (II) Initializing extension RENDER
+[ 41484.220] (II) Initializing extension RANDR
+[ 41484.220] (II) Initializing extension COMPOSITE
+[ 41484.220] (II) Initializing extension DAMAGE
+[ 41484.220] (II) Initializing extension MIT-SCREEN-SAVER
+[ 41484.220] (II) Initializing extension DOUBLE-BUFFER
+[ 41484.220] (II) Initializing extension RECORD
+[ 41484.220] (II) Initializing extension DPMS
+[ 41484.220] (II) Initializing extension Present
+[ 41484.220] (II) Initializing extension DRI3
+[ 41484.220] (II) Initializing extension X-Resource
+[ 41484.221] (II) Initializing extension XVideo
+[ 41484.221] (II) Initializing extension XVideo-MotionCompensation
+[ 41484.221] (II) Initializing extension SELinux
+[ 41484.221] (II) SELinux: Disabled on system
+[ 41484.221] (II) Initializing extension GLX
+[ 41484.221] (II) Initializing extension GLX
+[ 41484.221] (II) Indirect GLX disabled.
+[ 41484.221] (II) GLX: Another vendor is already registered for screen 0
+[ 41484.221] (II) Initializing extension XFree86-VidModeExtension
+[ 41484.221] (II) Initializing extension XFree86-DGA
+[ 41484.221] (II) Initializing extension XFree86-DRI
+[ 41484.221] (II) Initializing extension DRI2
+[ 41484.221] (II) Initializing extension NV-GLX
+[ 41484.221] (II) Initializing extension NV-CONTROL
+[ 41484.221] (II) Initializing extension XINERAMA
+[ 41484.295] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[ 41484.307] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 41484.307] (II) LoadModule: "libinput"
+[ 41484.307] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[ 41484.312] (II) Module libinput: vendor="X.Org Foundation"
+[ 41484.312] 	compiled for 1.20.8, module version = 0.30.0
+[ 41484.312] 	Module class: X.Org XInput Driver
+[ 41484.312] 	ABI class: X.Org XInput driver, version 24.1
+[ 41484.313] (II) Using input driver 'libinput' for 'Power Button'
+[ 41484.315] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 45 paused 0
+[ 41484.315] (**) Power Button: always reports core events
+[ 41484.315] (**) Option "Device" "/dev/input/event2"
+[ 41484.323] (**) Option "_source" "server/udev"
+[ 41484.324] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 41484.324] (II) event2  - Power Button: device is a keyboard
+[ 41484.324] (II) event2  - Power Button: device removed
+[ 41484.324] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[ 41484.324] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[ 41484.324] (**) Option "xkb_model" "pc105"
+[ 41484.324] (**) Option "xkb_layout" "pl"
+[ 41484.408] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 41484.408] (II) event2  - Power Button: device is a keyboard
+[ 41484.408] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[ 41484.408] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 41484.408] (II) Using input driver 'libinput' for 'Power Button'
+[ 41484.415] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 48 paused 0
+[ 41484.415] (**) Power Button: always reports core events
+[ 41484.415] (**) Option "Device" "/dev/input/event1"
+[ 41484.415] (**) Option "_source" "server/udev"
+[ 41484.415] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 41484.415] (II) event1  - Power Button: device is a keyboard
+[ 41484.415] (II) event1  - Power Button: device removed
+[ 41484.415] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[ 41484.415] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[ 41484.415] (**) Option "xkb_model" "pc105"
+[ 41484.415] (**) Option "xkb_layout" "pl"
+[ 41484.416] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 41484.416] (II) event1  - Power Button: device is a keyboard
+[ 41484.416] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[ 41484.416] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[ 41484.416] (II) Using input driver 'libinput' for 'Sleep Button'
+[ 41484.420] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 49 paused 0
+[ 41484.420] (**) Sleep Button: always reports core events
+[ 41484.420] (**) Option "Device" "/dev/input/event0"
+[ 41484.420] (**) Option "_source" "server/udev"
+[ 41484.420] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[ 41484.420] (II) event0  - Sleep Button: device is a keyboard
+[ 41484.420] (II) event0  - Sleep Button: device removed
+[ 41484.420] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[ 41484.420] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[ 41484.420] (**) Option "xkb_model" "pc105"
+[ 41484.420] (**) Option "xkb_layout" "pl"
+[ 41484.421] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[ 41484.421] (II) event0  - Sleep Button: device is a keyboard
+[ 41484.422] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event5)
+[ 41484.422] (II) No input driver specified, ignoring this device.
+[ 41484.422] (II) This device may have been added with another device file.
+[ 41484.422] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event6)
+[ 41484.422] (II) No input driver specified, ignoring this device.
+[ 41484.422] (II) This device may have been added with another device file.
+[ 41484.422] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event7)
+[ 41484.422] (II) No input driver specified, ignoring this device.
+[ 41484.422] (II) This device may have been added with another device file.
+[ 41484.422] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event8)
+[ 41484.422] (II) No input driver specified, ignoring this device.
+[ 41484.422] (II) This device may have been added with another device file.
+[ 41484.423] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event9)
+[ 41484.423] (II) No input driver specified, ignoring this device.
+[ 41484.423] (II) This device may have been added with another device file.
+[ 41484.437] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event10)
+[ 41484.437] (II) No input driver specified, ignoring this device.
+[ 41484.437] (II) This device may have been added with another device file.
+[ 41484.437] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=12 (/dev/input/event11)
+[ 41484.437] (II) No input driver specified, ignoring this device.
+[ 41484.437] (II) This device may have been added with another device file.
+[ 41484.438] (II) config/udev: Adding input device Logitech MX Master (/dev/input/event3)
+[ 41484.438] (**) Logitech MX Master: Applying InputClass "libinput pointer catchall"
+[ 41484.438] (**) Logitech MX Master: Applying InputClass "libinput keyboard catchall"
+[ 41484.438] (II) Using input driver 'libinput' for 'Logitech MX Master'
+[ 41484.446] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 50 paused 0
+[ 41484.446] (**) Logitech MX Master: always reports core events
+[ 41484.446] (**) Option "Device" "/dev/input/event3"
+[ 41484.446] (**) Option "_source" "server/udev"
+[ 41484.448] (II) event3  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 41484.453] (II) event3  - Logitech MX Master: device set to 1000 DPI
+[ 41484.453] (II) event3  - Logitech MX Master: device is a pointer
+[ 41484.453] (II) event3  - Logitech MX Master: device is a keyboard
+[ 41484.453] (II) event3  - Logitech MX Master: device removed
+[ 41484.453] (II) libinput: Logitech MX Master: needs a virtual subdevice
+[ 41484.453] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0003/0003:046D:4041.0004/input/input22/event3"
+[ 41484.453] (II) XINPUT: Adding extended input device "Logitech MX Master" (type: MOUSE, id 9)
+[ 41484.454] (**) Option "AccelerationScheme" "none"
+[ 41484.454] (**) Logitech MX Master: (accel) selected scheme none/0
+[ 41484.454] (**) Logitech MX Master: (accel) acceleration factor: 2.000
+[ 41484.454] (**) Logitech MX Master: (accel) acceleration threshold: 4
+[ 41484.455] (II) event3  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 41484.455] (II) event3  - Logitech MX Master: device set to 1000 DPI
+[ 41484.459] (II) event3  - Logitech MX Master: device is a pointer
+[ 41484.459] (II) event3  - Logitech MX Master: device is a keyboard
+[ 41484.459] (II) config/udev: Adding input device Logitech MX Master (/dev/input/mouse0)
+[ 41484.459] (II) No input driver specified, ignoring this device.
+[ 41484.459] (II) This device may have been added with another device file.
+[ 41484.460] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event4)
+[ 41484.460] (**) Logitech MX Keys: Applying InputClass "libinput pointer catchall"
+[ 41484.460] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[ 41484.460] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[ 41484.470] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 51 paused 0
+[ 41484.470] (**) Logitech MX Keys: always reports core events
+[ 41484.470] (**) Option "Device" "/dev/input/event4"
+[ 41484.470] (**) Option "_source" "server/udev"
+[ 41484.475] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard Mouse
+[ 41484.475] (II) event4  - Logitech MX Keys: device is a pointer
+[ 41484.475] (II) event4  - Logitech MX Keys: device is a keyboard
+[ 41484.475] (II) event4  - Logitech MX Keys: device removed
+[ 41484.475] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[ 41484.475] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0003/0003:046D:408A.0005/input/input23/event4"
+[ 41484.475] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 10)
+[ 41484.475] (**) Option "AccelerationScheme" "none"
+[ 41484.475] (**) Logitech MX Keys: (accel) selected scheme none/0
+[ 41484.476] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[ 41484.476] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[ 41484.477] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard Mouse
+[ 41484.477] (II) event4  - Logitech MX Keys: device is a pointer
+[ 41484.477] (II) event4  - Logitech MX Keys: device is a keyboard
+[ 41484.477] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse1)
+[ 41484.477] (II) No input driver specified, ignoring this device.
+[ 41484.477] (II) This device may have been added with another device file.
+[ 41484.499] (II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event12)
+[ 41484.499] (II) No input driver specified, ignoring this device.
+[ 41484.499] (II) This device may have been added with another device file.
+[ 41484.500] (II) config/udev: Adding input device HDA Intel PCH Rear Mic (/dev/input/event13)
+[ 41484.500] (II) No input driver specified, ignoring this device.
+[ 41484.500] (II) This device may have been added with another device file.
+[ 41484.500] (II) config/udev: Adding input device HDA Intel PCH Line (/dev/input/event14)
+[ 41484.500] (II) No input driver specified, ignoring this device.
+[ 41484.500] (II) This device may have been added with another device file.
+[ 41484.500] (II) config/udev: Adding input device HDA Intel PCH Line Out Front (/dev/input/event15)
+[ 41484.500] (II) No input driver specified, ignoring this device.
+[ 41484.500] (II) This device may have been added with another device file.
+[ 41484.500] (II) config/udev: Adding input device HDA Intel PCH Line Out Surround (/dev/input/event16)
+[ 41484.500] (II) No input driver specified, ignoring this device.
+[ 41484.500] (II) This device may have been added with another device file.
+[ 41484.501] (II) config/udev: Adding input device HDA Intel PCH Line Out CLFE (/dev/input/event17)
+[ 41484.501] (II) No input driver specified, ignoring this device.
+[ 41484.501] (II) This device may have been added with another device file.
+[ 41484.501] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event18)
+[ 41484.501] (II) No input driver specified, ignoring this device.
+[ 41484.501] (II) This device may have been added with another device file.
+[ 41484.506] (**) Logitech MX Master: Applying InputClass "libinput pointer catchall"
+[ 41484.506] (**) Logitech MX Master: Applying InputClass "libinput keyboard catchall"
+[ 41484.506] (II) Using input driver 'libinput' for 'Logitech MX Master'
+[ 41484.506] (II) systemd-logind: returning pre-existing fd for /dev/input/event3 13:67
+[ 41484.506] (**) Logitech MX Master: always reports core events
+[ 41484.506] (**) Option "Device" "/dev/input/event3"
+[ 41484.506] (**) Option "_source" "_driver/libinput"
+[ 41484.506] (II) libinput: Logitech MX Master: is a virtual subdevice
+[ 41484.506] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0003/0003:046D:4041.0004/input/input22/event3"
+[ 41484.506] (II) XINPUT: Adding extended input device "Logitech MX Master" (type: KEYBOARD, id 11)
+[ 41484.506] (**) Option "xkb_model" "pc105"
+[ 41484.506] (**) Option "xkb_layout" "pl"
+[ 41484.506] (**) Logitech MX Keys: Applying InputClass "libinput pointer catchall"
+[ 41484.506] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[ 41484.506] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[ 41484.506] (II) systemd-logind: returning pre-existing fd for /dev/input/event4 13:68
+[ 41484.506] (**) Logitech MX Keys: always reports core events
+[ 41484.506] (**) Option "Device" "/dev/input/event4"
+[ 41484.506] (**) Option "_source" "_driver/libinput"
+[ 41484.506] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[ 41484.506] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0003/0003:046D:408A.0005/input/input23/event4"
+[ 41484.506] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 12)
+[ 41484.506] (**) Option "xkb_model" "pc105"
+[ 41484.506] (**) Option "xkb_layout" "pl"
+[ 41485.260] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41485.260] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41485.260] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41485.260] (--) NVIDIA(GPU-0): 
+[ 41485.260] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41485.260] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41485.260] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41485.260] (--) NVIDIA(GPU-0): 
+[ 41485.289] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41485.289] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41485.289] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41485.289] (--) NVIDIA(GPU-0): 
+[ 41485.290] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41485.290] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41485.290] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41485.290] (--) NVIDIA(GPU-0): 
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41485.291] (--) NVIDIA(GPU-0): 
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41485.291] (--) NVIDIA(GPU-0): 
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41485.291] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41485.291] (--) NVIDIA(GPU-0): 
+[ 41485.340] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1680+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +1680+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 41485.507] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +3600+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +1680+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 41486.765] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41486.765] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41486.765] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41486.765] (--) NVIDIA(GPU-0): 
+[ 41486.765] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41486.765] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41486.765] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41486.765] (--) NVIDIA(GPU-0): 
+[ 41486.795] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41486.795] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41486.795] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41486.795] (--) NVIDIA(GPU-0): 
+[ 41486.795] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41486.795] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41486.795] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41486.795] (--) NVIDIA(GPU-0): 
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41486.796] (--) NVIDIA(GPU-0): 
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41486.796] (--) NVIDIA(GPU-0): 
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41486.796] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41486.796] (--) NVIDIA(GPU-0): 
+[ 41487.429] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41487.429] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41487.429] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41487.429] (--) NVIDIA(GPU-0): 
+[ 41487.429] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41487.430] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41487.430] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41487.430] (--) NVIDIA(GPU-0): 
+[ 41487.460] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41487.460] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41487.460] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41487.460] (--) NVIDIA(GPU-0): 
+[ 41487.460] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41487.460] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41487.460] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41487.460] (--) NVIDIA(GPU-0): 
+[ 41487.461] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41487.461] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41487.461] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41487.461] (--) NVIDIA(GPU-0): 
+[ 41487.461] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41487.461] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41487.461] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41487.461] (--) NVIDIA(GPU-0): 
+[ 41487.462] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41487.462] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41487.462] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41487.462] (--) NVIDIA(GPU-0): 
+[ 41496.190] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41496.190] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41496.190] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41496.190] (--) NVIDIA(GPU-0): 
+[ 41496.190] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41496.190] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41496.190] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41496.190] (--) NVIDIA(GPU-0): 
+[ 41496.219] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41496.219] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41496.219] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41496.219] (--) NVIDIA(GPU-0): 
+[ 41496.220] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41496.220] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41496.220] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41496.220] (--) NVIDIA(GPU-0): 
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41496.221] (--) NVIDIA(GPU-0): 
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41496.221] (--) NVIDIA(GPU-0): 
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41496.221] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41496.221] (--) NVIDIA(GPU-0): 
+[ 41499.487] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 41522.802] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 34ms, your system is too slow
+[ 41522.802] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-9ms), your system is too slow
+[ 41522.802] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-22ms), your system is too slow
+[ 41545.209] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 41545.209] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-2ms), your system is too slow
+[ 41652.438] (**) Option "fd" "45"
+[ 41652.438] (II) event2  - Power Button: device removed
+[ 41652.439] (**) Option "fd" "48"
+[ 41652.439] (II) event1  - Power Button: device removed
+[ 41652.439] (**) Option "fd" "49"
+[ 41652.439] (II) event0  - Sleep Button: device removed
+[ 41652.439] (**) Option "fd" "50"
+[ 41652.440] (**) Option "fd" "51"
+[ 41652.440] (**) Option "fd" "50"
+[ 41652.440] (II) event3  - Logitech MX Master: device removed
+[ 41652.440] (**) Option "fd" "51"
+[ 41652.440] (II) event4  - Logitech MX Keys: device removed
+[ 41652.676] (II) systemd-logind: got pause for 13:64
+[ 41652.676] (II) systemd-logind: got pause for 13:68
+[ 41652.676] (II) systemd-logind: got pause for 13:65
+[ 41652.676] (II) systemd-logind: got pause for 13:66
+[ 41652.676] (II) systemd-logind: got pause for 13:67
+[ 41668.447] (II) systemd-logind: got resume for 13:64
+[ 41668.462] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41668.462] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41668.462] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41668.462] (--) NVIDIA(GPU-0): 
+[ 41668.462] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41668.462] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41668.462] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41668.462] (--) NVIDIA(GPU-0): 
+[ 41668.492] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41668.492] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41668.492] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41668.492] (--) NVIDIA(GPU-0): 
+[ 41668.492] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41668.492] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41668.492] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41668.492] (--) NVIDIA(GPU-0): 
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41668.493] (--) NVIDIA(GPU-0): 
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41668.493] (--) NVIDIA(GPU-0): 
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41668.493] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41668.493] (--) NVIDIA(GPU-0): 
+[ 41668.507] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +3600+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +1680+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 41668.726] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[ 41668.726] (II) event0  - Sleep Button: device is a keyboard
+[ 41668.727] (II) systemd-logind: got resume for 13:68
+[ 41668.731] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard Mouse
+[ 41668.731] (II) event4  - Logitech MX Keys: device is a pointer
+[ 41668.731] (II) event4  - Logitech MX Keys: device is a keyboard
+[ 41668.732] (II) systemd-logind: got resume for 13:65
+[ 41668.733] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 41668.733] (II) event1  - Power Button: device is a keyboard
+[ 41668.733] (II) systemd-logind: got resume for 13:66
+[ 41668.734] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 41668.734] (II) event2  - Power Button: device is a keyboard
+[ 41668.734] (II) systemd-logind: got resume for 13:67
+[ 41668.736] (II) event3  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 41668.736] (II) event3  - Logitech MX Master: device set to 1000 DPI
+[ 41668.736] (II) event3  - Logitech MX Master: device is a pointer
+[ 41668.736] (II) event3  - Logitech MX Master: device is a keyboard
+[ 41694.175] (**) Option "fd" "49"
+[ 41694.175] (II) event2  - Power Button: device removed
+[ 41694.177] (**) Option "fd" "29"
+[ 41694.177] (II) event1  - Power Button: device removed
+[ 41694.177] (**) Option "fd" "31"
+[ 41694.178] (II) event0  - Sleep Button: device removed
+[ 41694.178] (**) Option "fd" "50"
+[ 41694.178] (**) Option "fd" "69"
+[ 41694.179] (**) Option "fd" "50"
+[ 41694.179] (II) event3  - Logitech MX Master: device removed
+[ 41694.180] (**) Option "fd" "69"
+[ 41694.180] (II) event4  - Logitech MX Keys: device removed
+[ 41694.445] (II) systemd-logind: got pause for 13:64
+[ 41694.445] (II) systemd-logind: got pause for 13:68
+[ 41694.445] (II) systemd-logind: got pause for 13:65
+[ 41694.445] (II) systemd-logind: got pause for 13:66
+[ 41694.445] (II) systemd-logind: got pause for 13:67
+[ 41702.999] (II) systemd-logind: got resume for 13:64
+[ 41703.014] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41703.014] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41703.014] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41703.014] (--) NVIDIA(GPU-0): 
+[ 41703.014] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41703.014] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41703.014] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41703.014] (--) NVIDIA(GPU-0): 
+[ 41703.043] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41703.043] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41703.043] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41703.043] (--) NVIDIA(GPU-0): 
+[ 41703.043] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41703.043] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41703.043] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41703.043] (--) NVIDIA(GPU-0): 
+[ 41703.044] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41703.044] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41703.044] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41703.044] (--) NVIDIA(GPU-0): 
+[ 41703.044] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41703.044] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41703.044] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41703.044] (--) NVIDIA(GPU-0): 
+[ 41703.045] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41703.045] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41703.045] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41703.045] (--) NVIDIA(GPU-0): 
+[ 41703.058] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +3600+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +1680+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 41703.277] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[ 41703.277] (II) event0  - Sleep Button: device is a keyboard
+[ 41703.278] (II) systemd-logind: got resume for 13:68
+[ 41703.279] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard Mouse
+[ 41703.279] (II) event4  - Logitech MX Keys: device is a pointer
+[ 41703.279] (II) event4  - Logitech MX Keys: device is a keyboard
+[ 41703.280] (II) systemd-logind: got resume for 13:65
+[ 41703.281] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 41703.281] (II) event1  - Power Button: device is a keyboard
+[ 41703.281] (II) systemd-logind: got resume for 13:66
+[ 41703.282] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 41703.282] (II) event2  - Power Button: device is a keyboard
+[ 41703.282] (II) systemd-logind: got resume for 13:67
+[ 41703.283] (II) event3  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 41703.283] (II) event3  - Logitech MX Master: device set to 1000 DPI
+[ 41703.283] (II) event3  - Logitech MX Master: device is a pointer
+[ 41703.283] (II) event3  - Logitech MX Master: device is a keyboard
+[ 41707.935] (**) Option "fd" "49"
+[ 41707.935] (II) event2  - Power Button: device removed
+[ 41707.936] (**) Option "fd" "29"
+[ 41707.936] (II) event1  - Power Button: device removed
+[ 41707.936] (**) Option "fd" "31"
+[ 41707.936] (II) event0  - Sleep Button: device removed
+[ 41707.937] (**) Option "fd" "50"
+[ 41707.938] (**) Option "fd" "69"
+[ 41707.941] (**) Option "fd" "50"
+[ 41707.941] (II) event3  - Logitech MX Master: device removed
+[ 41707.942] (**) Option "fd" "69"
+[ 41707.942] (II) event4  - Logitech MX Keys: device removed
+[ 41708.131] (II) systemd-logind: got pause for 13:64
+[ 41708.131] (II) systemd-logind: got pause for 13:68
+[ 41708.131] (II) systemd-logind: got pause for 13:65
+[ 41708.131] (II) systemd-logind: got pause for 13:66
+[ 41708.131] (II) systemd-logind: got pause for 13:67
+[ 41742.167] (II) systemd-logind: got resume for 13:64
+[ 41742.182] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 41742.182] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 41742.182] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 41742.182] (--) NVIDIA(GPU-0): 
+[ 41742.182] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 41742.182] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 41742.182] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 41742.182] (--) NVIDIA(GPU-0): 
+[ 41742.212] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 41742.212] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 41742.212] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 41742.212] (--) NVIDIA(GPU-0): 
+[ 41742.212] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 41742.212] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 41742.212] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 41742.212] (--) NVIDIA(GPU-0): 
+[ 41742.213] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 41742.213] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 41742.213] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 41742.213] (--) NVIDIA(GPU-0): 
+[ 41742.213] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 41742.213] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 41742.213] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 41742.213] (--) NVIDIA(GPU-0): 
+[ 41742.214] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 41742.214] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 41742.214] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 41742.214] (--) NVIDIA(GPU-0): 
+[ 41742.227] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +3600+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +1680+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 41742.448] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[ 41742.448] (II) event0  - Sleep Button: device is a keyboard
+[ 41742.449] (II) systemd-logind: got resume for 13:68
+[ 41742.450] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard Mouse
+[ 41742.450] (II) event4  - Logitech MX Keys: device is a pointer
+[ 41742.450] (II) event4  - Logitech MX Keys: device is a keyboard
+[ 41742.451] (II) systemd-logind: got resume for 13:65
+[ 41742.452] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 41742.452] (II) event1  - Power Button: device is a keyboard
+[ 41742.452] (II) systemd-logind: got resume for 13:66
+[ 41742.452] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 41742.453] (II) event2  - Power Button: device is a keyboard
+[ 41742.453] (II) systemd-logind: got resume for 13:67
+[ 41742.454] (II) event3  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 41742.454] (II) event3  - Logitech MX Master: device set to 1000 DPI
+[ 41742.454] (II) event3  - Logitech MX Master: device is a pointer
+[ 41742.454] (II) event3  - Logitech MX Master: device is a keyboard
+[ 41782.262] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-7ms), your system is too slow
+[ 42186.061] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 37ms, your system is too slow
+[ 42186.374] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-6ms), your system is too slow
+[ 42186.374] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-19ms), your system is too slow
+[ 42261.559] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-11ms), your system is too slow
+[ 42261.559] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-24ms), your system is too slow
+[ 42349.587] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-2ms), your system is too slow
+[ 42349.587] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-15ms), your system is too slow
+[ 42352.612] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-8ms), your system is too slow
+[ 42352.612] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-21ms), your system is too slow
+[ 42434.596] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 42434.596] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 42434.596] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 42434.596] (--) NVIDIA(GPU-0): 
+[ 42434.596] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 42434.596] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 42434.596] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 42434.596] (--) NVIDIA(GPU-0): 
+[ 42434.626] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 42434.626] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 42434.626] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 42434.626] (--) NVIDIA(GPU-0): 
+[ 42434.626] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 42434.626] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 42434.626] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 42434.626] (--) NVIDIA(GPU-0): 
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 42434.627] (--) NVIDIA(GPU-0): 
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 42434.627] (--) NVIDIA(GPU-0): 
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 42434.627] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 42434.627] (--) NVIDIA(GPU-0): 
+[ 42444.445] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-10ms), your system is too slow
+[ 42446.855] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-3ms), your system is too slow
+[ 42457.383] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1680+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +1680+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 42457.602] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1680+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +3600+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 42457.785] (II) NVIDIA(0): Setting mode "DVI-D-0: nvidia-auto-select @1680x1050 +0+0 {ViewPortIn=1680x1050, ViewPortOut=1680x1050+0+0}, HDMI-1: nvidia-auto-select @1920x1080 +1680+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DP-0: nvidia-auto-select @1920x1200 +3600+0 {ViewPortIn=1920x1200, ViewPortOut=1920x1200+0+0}"
+[ 42458.058] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 42458.058] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 42458.058] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 42458.058] (--) NVIDIA(GPU-0): 
+[ 42458.058] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 42458.058] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 42458.058] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 42458.058] (--) NVIDIA(GPU-0): 
+[ 42458.088] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 42458.088] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 42458.088] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 42458.088] (--) NVIDIA(GPU-0): 
+[ 42458.088] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 42458.088] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 42458.088] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 42458.088] (--) NVIDIA(GPU-0): 
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 42458.089] (--) NVIDIA(GPU-0): 
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 42458.089] (--) NVIDIA(GPU-0): 
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 42458.089] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 42458.089] (--) NVIDIA(GPU-0): 
+[ 42458.325] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 42458.325] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 42458.325] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 42458.325] (--) NVIDIA(GPU-0): 
+[ 42458.325] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 42458.325] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 42458.325] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 42458.325] (--) NVIDIA(GPU-0): 
+[ 42458.354] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 42458.354] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 42458.354] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 42458.354] (--) NVIDIA(GPU-0): 
+[ 42458.355] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 42458.355] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 42458.355] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 42458.355] (--) NVIDIA(GPU-0): 
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 42458.356] (--) NVIDIA(GPU-0): 
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 42458.356] (--) NVIDIA(GPU-0): 
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 42458.356] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 42458.356] (--) NVIDIA(GPU-0): 
+[ 42468.537] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-8ms), your system is too slow
+[ 42468.537] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-22ms), your system is too slow
+[ 42701.780] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-11ms), your system is too slow
+[ 42701.780] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-24ms), your system is too slow
+[ 42866.792] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): connected
+[ 42866.792] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): Internal TMDS
+[ 42866.793] (--) NVIDIA(GPU-0): DELL P2210 (DFP-0): 330.0 MHz maximum pixel clock
+[ 42866.793] (--) NVIDIA(GPU-0): 
+[ 42866.793] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[ 42866.793] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[ 42866.793] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[ 42866.793] (--) NVIDIA(GPU-0): 
+[ 42866.822] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[ 42866.823] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[ 42866.824] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[ 42866.824] (--) NVIDIA(GPU-0): 
+[ 42866.824] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[ 42866.824] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[ 42866.824] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[ 42866.824] (--) NVIDIA(GPU-0): 
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[ 42866.825] (--) NVIDIA(GPU-0): 
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[ 42866.825] (--) NVIDIA(GPU-0): 
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[ 42866.825] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[ 42866.825] (--) NVIDIA(GPU-0): 
+[ 43278.158] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-6ms), your system is too slow
+[ 43278.158] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-19ms), your system is too slow
+[ 43588.123] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 16ms, your system is too slow
+[ 43588.968] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-9ms), your system is too slow
+[ 44526.208] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 44883.797] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 19ms, your system is too slow
+[ 45289.721] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 17ms, your system is too slow
+[ 45290.696] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 17ms, your system is too slow
+[ 45290.697] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-5ms), your system is too slow
+[ 45887.072] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-5ms), your system is too slow
+[ 45914.448] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-4ms), your system is too slow
+[ 45914.448] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-17ms), your system is too slow
+[ 46116.081] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-6ms), your system is too slow
+[ 71105.455] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-7ms), your system is too slow
+[ 71105.455] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-20ms), your system is too slow
+[ 71526.283] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 28ms, your system is too slow
+[ 74310.126] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 74311.084] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-11ms), your system is too slow
+[ 74311.084] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-24ms), your system is too slow
+[ 74313.522] (EE) client bug: timer event3 debounce: scheduled expiry is in the past (-13ms), your system is too slow
+[ 74313.522] (EE) client bug: timer event3 debounce short: scheduled expiry is in the past (-26ms), your system is too slow
+[ 74315.726] (EE) event3  - Logitech MX Master: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 76807.169] (**) Option "fd" "31"
+[ 76807.169] (II) event0  - Sleep Button: device removed
+[ 76807.169] (**) Option "fd" "69"
+[ 76807.169] (**) Option "fd" "69"
+[ 76807.169] (II) event4  - Logitech MX Keys: device removed
+[ 76807.169] (**) Option "fd" "29"
+[ 76807.169] (II) event1  - Power Button: device removed
+[ 76807.169] (**) Option "fd" "49"
+[ 76807.169] (II) event2  - Power Button: device removed
+[ 76807.169] (**) Option "fd" "50"
+[ 76807.169] (**) Option "fd" "50"
+[ 76807.169] (II) event3  - Logitech MX Master: device removed
+[ 76807.196] (II) UnloadModule: "libinput"
+[ 76807.196] (II) systemd-logind: not releasing fd for 13:67, still in use
+[ 76807.196] (II) UnloadModule: "libinput"
+[ 76807.196] (II) systemd-logind: releasing fd for 13:67
+[ 76807.207] (II) UnloadModule: "libinput"
+[ 76807.207] (II) systemd-logind: releasing fd for 13:66
+[ 76807.235] (II) UnloadModule: "libinput"
+[ 76807.235] (II) systemd-logind: releasing fd for 13:65
+[ 76807.255] (II) UnloadModule: "libinput"
+[ 76807.255] (II) systemd-logind: not releasing fd for 13:68, still in use
+[ 76807.255] (II) UnloadModule: "libinput"
+[ 76807.255] (II) systemd-logind: releasing fd for 13:68
+[ 76807.275] (II) UnloadModule: "libinput"
+[ 76807.275] (II) systemd-logind: releasing fd for 13:64
+[ 76807.510] (II) NVIDIA(GPU-0): Deleting GPU-0
+[ 76807.514] (II) Server terminated successfully (0). Closing log file.

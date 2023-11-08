@@ -1,0 +1,53 @@
+Package: xserver-xorg-input-wacom
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 566
+Maintainer: Boyuan Yang <byang@debian.org>
+Architecture: amd64
+Source: xf86-input-wacom
+Version: 1.0.0-3
+Replaces: wacom-tools (<< 0.10.0)
+Provides: xorg-driver-input
+Depends: libc6 (>= 2.33), libudev1 (>= 183), libx11-6, libxi6 (>= 2:1.2.0), libxinerama1 (>= 2:1.1.4), libxrandr2 (>= 2:1.2.0), xorg-input-abi-24, xserver-xorg-core (>= 2:21.1.1)
+Suggests: xinput
+Conflicts: wacom-tools (<< 0.10.0)
+Description: X.Org X server -- Wacom input driver
+ This package provides the X.Org driver for Wacom tablet devices.
+Homepage: https://linuxwacom.github.io/
+
+
+Package: libwacom-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 805
+Maintainer: Timo Aaltonen <tjaalton@debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: libwacom
+Version: 2.2.0-1
+Description: Wacom model feature query library (common files)
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+ .
+ This package contains common data files for libwacom.
+
+Package: libwacom-bin
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 65
+Maintainer: Timo Aaltonen <tjaalton@debian.org>
+Architecture: amd64
+Multi-Arch: foreign
+Source: libwacom
+Version: 2.2.0-1
+Depends: libc6 (>= 2.8), libglib2.0-0 (>= 2.28.0), libgudev-1.0-0 (>= 146), libwacom9 (>= 2.0.0), python3:any
+Description: Wacom model feature query library -- binaries
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+ .
+ This package contains the utilities which are used by the libraries.

@@ -1,0 +1,437 @@
+[ 11593.397] 
+X.Org X Server 1.20.6
+X Protocol Version 11, Revision 0
+[ 11593.397] Build Operating System:  5.0.6-200.fc29.x86_64 
+[ 11593.397] Current Operating System: Linux HOSTNAME 5.4.8-200.fc31.x86_64 #1 SMP Mon Jan 6 16:44:18 UTC 2020 x86_64
+[ 11593.397] Kernel command line: BOOT_IMAGE=(hd1,gpt5)/vmlinuz-5.4.8-200.fc31.x86_64 USERNAME=UUID=028749fb-f9f2-4a0e-b0fc-31762db24730 ro rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=1 resume=/dev/mapper/luks-7ed365ee-0ee0-42d2-8992-fdeba6400c16 rd.luks.uuid=luks-2ad064b6-eeac-4301-a0f4-3d989a3418cf rd.luks.uuid=luks-7ed365ee-0ee0-42d2-8992-fdeba6400c16 rhgb quiet
+[ 11593.397] Build Date: 25 November 2019  12:00:00AM
+[ 11593.397] Build ID: xorg-x11-server 1.20.6-1.fc31 
+[ 11593.397] Current version of pixman: 0.38.4
+[ 11593.397] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[ 11593.397] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[ 11593.398] (==) Log file: "/var/log/Xorg.8.log", Time: Wed Jan  8 02:57:28 2020
+[ 11593.398] (++) Using config file: "/etc/bumblebee/xorg.conf.nvidia"
+[ 11593.398] (++) Using config directory: "/etc/bumblebee/xorg.conf.d"
+[ 11593.398] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 11593.399] (==) ServerLayout "layout"
+[ 11593.399] (==) No screen section available. Using defaults.
+[ 11593.399] (**) |-->Screen "Default Screen Section" (0)
+[ 11593.399] (**) |   |-->Monitor "<default monitor>"
+[ 11593.399] (==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+[ 11593.399] (**) |   |-->Device "DiscreteNvidia"
+[ 11593.399] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[ 11593.399] (**) Option "IgnoreABI" "True"
+[ 11593.399] (**) Ignoring ABI Version
+[ 11593.399] (==) Automatically adding devices
+[ 11593.399] (==) Automatically enabling devices
+[ 11593.399] (==) Automatically adding GPU devices
+[ 11593.399] (==) Automatically binding GPU devices
+[ 11593.399] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 11593.399] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[ 11593.399] (++) ModulePath set to "/usr/lib64/nvidia/xorg,/usr/lib64/xorg/modules"
+[ 11593.399] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[ 11593.399] (II) Loader magic: 0x56510a584e20
+[ 11593.399] (II) Module ABI versions:
+[ 11593.399] 	X.Org ANSI C Emulation: 0.4
+[ 11593.399] 	X.Org Video Driver: 24.0
+[ 11593.399] 	X.Org XInput driver : 24.1
+[ 11593.399] 	X.Org Server Extension : 10.0
+[ 11593.401] (--) using VT number 2
+
+[ 11593.401] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[ 11593.404] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 11593.404] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[ 11593.407] (--) PCI:*(1@0:0:0) 10de:1c8c:17aa:39d0 rev 161, Mem @ 0xa3000000/16777216, 0x90000000/268435456, 0xa0000000/33554432, I/O @ 0x00004000/128, BIOS @ 0x????????/65536
+[ 11593.407] (II) LoadModule: "glx"
+[ 11593.408] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[ 11593.410] (II) Module glx: vendor="X.Org Foundation"
+[ 11593.410] 	compiled for 1.20.6, module version = 1.0.0
+[ 11593.410] 	ABI class: X.Org Server Extension, version 10.0
+[ 11593.410] (II) LoadModule: "nvidia"
+[ 11593.410] (II) Loading /usr/lib64/xorg/modules/drivers/nvidia_drv.so
+[ 11593.416] (II) Module nvidia: vendor="NVIDIA Corporation"
+[ 11593.416] 	compiled for 1.6.99.901, module version = 1.0.0
+[ 11593.416] 	Module class: X.Org Video Driver
+[ 11593.417] (II) NVIDIA dlloader X Driver  440.44  Sun Dec  8 03:38:31 UTC 2019
+[ 11593.417] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[ 11593.419] (II) Loading sub module "fb"
+[ 11593.419] (II) LoadModule: "fb"
+[ 11593.419] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[ 11593.419] (II) Module fb: vendor="X.Org Foundation"
+[ 11593.419] 	compiled for 1.20.6, module version = 1.0.0
+[ 11593.419] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 11593.419] (II) Loading sub module "wfb"
+[ 11593.419] (II) LoadModule: "wfb"
+[ 11593.420] (II) Loading /usr/lib64/xorg/modules/libwfb.so
+[ 11593.421] (II) Module wfb: vendor="X.Org Foundation"
+[ 11593.421] 	compiled for 1.20.6, module version = 1.0.0
+[ 11593.421] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 11593.421] (II) Loading sub module "ramdac"
+[ 11593.421] (II) LoadModule: "ramdac"
+[ 11593.421] (II) Module "ramdac" already built-in
+[ 11593.423] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[ 11593.423] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[ 11593.423] (==) NVIDIA(0): RGB weight 888
+[ 11593.423] (==) NVIDIA(0): Default visual is TrueColor
+[ 11593.423] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 11593.423] (**) Option "AllowNVIDIAGpuScreens"
+[ 11593.423] (**) NVIDIA(0): Option "ProbeAllGpus" "false"
+[ 11593.423] (**) NVIDIA(0): Option "UseEDID" "false"
+[ 11593.423] (**) NVIDIA(0): Option "UseDisplayDevice" "none"
+[ 11593.423] (**) NVIDIA(0): Enabling 2D acceleration
+[ 11593.423] (**) NVIDIA(0): Ignoring EDIDs
+[ 11593.423] (**) NVIDIA(0): Option "UseDisplayDevice" set to "none"; enabling NoScanout
+[ 11593.423] (**) NVIDIA(0):     mode
+[ 11593.423] (II) Loading sub module "glxserver_nvidia"
+[ 11593.423] (II) LoadModule: "glxserver_nvidia"
+[ 11593.424] (II) Loading /usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so
+[ 11593.474] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[ 11593.474] 	compiled for 1.6.99.901, module version = 1.0.0
+[ 11593.474] 	Module class: X.Org Server Extension
+[ 11593.474] (II) NVIDIA GLX Module  440.44  Sun Dec  8 03:36:07 UTC 2019
+[ 11593.477] (II) NVIDIA: The X server supports PRIME Render Offload.
+[ 11594.256] (II) NVIDIA(0): NVIDIA GPU GeForce GTX 1050 Ti (GP107-A) at PCI:1:0:0 (GPU-0)
+[ 11594.256] (--) NVIDIA(0): Memory: 4194304 kBytes
+[ 11594.256] (--) NVIDIA(0): VideoBIOS: 86.07.3a.00.27
+[ 11594.256] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[ 11594.256] (II) NVIDIA(0): Validated MetaModes:
+[ 11594.256] (II) NVIDIA(0):     "NULL"
+[ 11594.256] (II) NVIDIA(0): Virtual screen size determined to be 640 x 480
+[ 11594.256] (WW) NVIDIA(0): Unable to get display device for DPI computation.
+[ 11594.256] (==) NVIDIA(0): DPI set to (75, 75); computed from built-in default
+[ 11594.257] (II) NVIDIA: Using 24576.00 MB of virtual memory for indirect memory
+[ 11594.257] (II) NVIDIA:     access.
+[ 11594.261] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[ 11594.261] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[ 11594.262] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[ 11594.262] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[ 11594.262] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[ 11594.262] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[ 11594.262] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[ 11594.262] (II) NVIDIA(0):     Config Options in the README.
+[ 11594.285] (II) NVIDIA(0): Setting mode "NULL"
+[ 11594.287] (==) NVIDIA(0): Disabling shared memory pixmaps
+[ 11594.287] (==) NVIDIA(0): Backing store enabled
+[ 11594.287] (==) NVIDIA(0): Silken mouse enabled
+[ 11594.288] (==) NVIDIA(0): DPMS enabled
+[ 11594.288] (WW) NVIDIA(0): Option "NoLogo" is not used
+[ 11594.288] (II) Loading sub module "dri2"
+[ 11594.288] (II) LoadModule: "dri2"
+[ 11594.288] (II) Module "dri2" already built-in
+[ 11594.288] (II) NVIDIA(0): [DRI2] Setup complete
+[ 11594.288] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[ 11594.288] (II) Initializing extension Generic Event Extension
+[ 11594.288] (II) Initializing extension SHAPE
+[ 11594.288] (II) Initializing extension MIT-SHM
+[ 11594.288] (II) Initializing extension XInputExtension
+[ 11594.288] (II) Initializing extension XTEST
+[ 11594.288] (II) Initializing extension BIG-REQUESTS
+[ 11594.288] (II) Initializing extension SYNC
+[ 11594.288] (II) Initializing extension XKEYBOARD
+[ 11594.288] (II) Initializing extension XC-MISC
+[ 11594.288] (II) Initializing extension XFIXES
+[ 11594.289] (II) Initializing extension RENDER
+[ 11594.289] (II) Initializing extension RANDR
+[ 11594.289] (II) Initializing extension COMPOSITE
+[ 11594.289] (II) Initializing extension DAMAGE
+[ 11594.289] (II) Initializing extension MIT-SCREEN-SAVER
+[ 11594.289] (II) Initializing extension DOUBLE-BUFFER
+[ 11594.289] (II) Initializing extension RECORD
+[ 11594.289] (II) Initializing extension DPMS
+[ 11594.289] (II) Initializing extension Present
+[ 11594.289] (II) Initializing extension DRI3
+[ 11594.289] (II) Initializing extension X-Resource
+[ 11594.289] (II) Initializing extension XVideo
+[ 11594.289] (II) Initializing extension XVideo-MotionCompensation
+[ 11594.289] (II) Initializing extension SELinux
+[ 11594.290] (II) SELinux: Disabled by boolean
+[ 11594.290] (II) Initializing extension GLX
+[ 11594.290] (II) Initializing extension GLX
+[ 11594.290] (II) Indirect GLX disabled.
+[ 11594.290] (II) GLX: Another vendor is already registered for screen 0
+[ 11594.290] (II) Initializing extension XFree86-VidModeExtension
+[ 11594.290] (II) Initializing extension XFree86-DGA
+[ 11594.290] (II) Initializing extension XFree86-DRI
+[ 11594.290] (II) Initializing extension DRI2
+[ 11594.290] (II) Initializing extension NV-GLX
+[ 11594.290] (II) Initializing extension NV-CONTROL
+[ 11594.358] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[ 11594.359] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[ 11594.359] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 11594.359] (II) LoadModule: "libinput"
+[ 11594.359] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[ 11594.362] (II) Module libinput: vendor="X.Org Foundation"
+[ 11594.362] 	compiled for 1.20.5, module version = 0.29.0
+[ 11594.362] 	Module class: X.Org XInput Driver
+[ 11594.362] 	ABI class: X.Org XInput driver, version 24.1
+[ 11594.362] (II) Using input driver 'libinput' for 'Power Button'
+[ 11594.362] (**) Power Button: always reports core events
+[ 11594.362] (**) Option "Device" "/dev/input/event2"
+[ 11594.362] (**) Option "_source" "server/udev"
+[ 11594.364] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 11594.364] (II) event2  - Power Button: device is a keyboard
+[ 11594.364] (II) event2  - Power Button: device removed
+[ 11594.374] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[ 11594.374] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[ 11594.375] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[ 11594.375] (II) event2  - Power Button: device is a keyboard
+[ 11594.375] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[ 11594.375] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[ 11594.375] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[ 11594.375] (II) Using input driver 'libinput' for 'Video Bus'
+[ 11594.375] (**) Video Bus: always reports core events
+[ 11594.375] (**) Option "Device" "/dev/input/event5"
+[ 11594.375] (**) Option "_source" "server/udev"
+[ 11594.376] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 11594.376] (II) event5  - Video Bus: device is a keyboard
+[ 11594.376] (II) event5  - Video Bus: device removed
+[ 11594.387] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input12/event5"
+[ 11594.387] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[ 11594.388] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 11594.388] (II) event5  - Video Bus: device is a keyboard
+[ 11594.388] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[ 11594.389] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[ 11594.389] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[ 11594.389] (II) Using input driver 'libinput' for 'Video Bus'
+[ 11594.389] (**) Video Bus: always reports core events
+[ 11594.389] (**) Option "Device" "/dev/input/event4"
+[ 11594.389] (**) Option "_source" "server/udev"
+[ 11594.390] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[ 11594.390] (II) event4  - Video Bus: device is a keyboard
+[ 11594.390] (II) event4  - Video Bus: device removed
+[ 11594.403] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:00/LNXVIDEO:00/input/input11/event4"
+[ 11594.403] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[ 11594.404] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[ 11594.404] (II) event4  - Video Bus: device is a keyboard
+[ 11594.405] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[ 11594.405] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[ 11594.405] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 11594.405] (II) Using input driver 'libinput' for 'Power Button'
+[ 11594.405] (**) Power Button: always reports core events
+[ 11594.405] (**) Option "Device" "/dev/input/event1"
+[ 11594.405] (**) Option "_source" "server/udev"
+[ 11594.406] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 11594.406] (II) event1  - Power Button: device is a keyboard
+[ 11594.406] (II) event1  - Power Button: device removed
+[ 11594.417] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[ 11594.417] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[ 11594.418] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 11594.418] (II) event1  - Power Button: device is a keyboard
+[ 11594.419] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[ 11594.419] (II) No input driver specified, ignoring this device.
+[ 11594.419] (II) This device may have been added with another device file.
+[ 11594.419] (II) config/udev: Adding drm device (/dev/dri/card0)
+[ 11594.419] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 11594.419] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[ 11594.421] (II) config/udev: Adding input device Logitech MX Master (/dev/input/event6)
+[ 11594.421] (**) Logitech MX Master: Applying InputClass "evdev pointer catchall"
+[ 11594.421] (**) Logitech MX Master: Applying InputClass "evdev keyboard catchall"
+[ 11594.421] (**) Logitech MX Master: Applying InputClass "libinput pointer catchall"
+[ 11594.421] (**) Logitech MX Master: Applying InputClass "libinput keyboard catchall"
+[ 11594.421] (II) Using input driver 'libinput' for 'Logitech MX Master'
+[ 11594.421] (**) Logitech MX Master: always reports core events
+[ 11594.421] (**) Option "Device" "/dev/input/event6"
+[ 11594.421] (**) Option "_source" "server/udev"
+[ 11594.423] (II) event6  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 11594.423] (II) event6  - Logitech MX Master: device set to 1000 DPI
+[ 11594.424] (II) event6  - Logitech MX Master: device is a pointer
+[ 11594.424] (II) event6  - Logitech MX Master: device is a keyboard
+[ 11594.424] (II) event6  - Logitech MX Master: device removed
+[ 11594.433] (II) libinput: Logitech MX Master: needs a virtual subdevice
+[ 11594.433] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/0003:046D:4060.0004/input/input20/event6"
+[ 11594.433] (II) XINPUT: Adding extended input device "Logitech MX Master" (type: MOUSE, id 10)
+[ 11594.433] (**) Option "AccelerationScheme" "none"
+[ 11594.433] (**) Logitech MX Master: (accel) selected scheme none/0
+[ 11594.433] (**) Logitech MX Master: (accel) acceleration factor: 2.000
+[ 11594.433] (**) Logitech MX Master: (accel) acceleration threshold: 4
+[ 11594.435] (II) event6  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[ 11594.435] (II) event6  - Logitech MX Master: device set to 1000 DPI
+[ 11594.436] (II) event6  - Logitech MX Master: device is a pointer
+[ 11594.436] (II) event6  - Logitech MX Master: device is a keyboard
+[ 11594.437] (II) config/udev: Adding input device Logitech MX Master (/dev/input/mouse0)
+[ 11594.437] (II) No input driver specified, ignoring this device.
+[ 11594.437] (II) This device may have been added with another device file.
+[ 11594.438] (II) config/udev: Adding input device EasyCamera: EasyCamera (/dev/input/event10)
+[ 11594.438] (**) EasyCamera: EasyCamera: Applying InputClass "evdev keyboard catchall"
+[ 11594.438] (**) EasyCamera: EasyCamera: Applying InputClass "libinput keyboard catchall"
+[ 11594.438] (II) Using input driver 'libinput' for 'EasyCamera: EasyCamera'
+[ 11594.438] (**) EasyCamera: EasyCamera: always reports core events
+[ 11594.438] (**) Option "Device" "/dev/input/event10"
+[ 11594.438] (**) Option "_source" "server/udev"
+[ 11594.440] (II) event10 - EasyCamera: EasyCamera: is tagged by udev as: Keyboard
+[ 11594.440] (II) event10 - EasyCamera: EasyCamera: device is a keyboard
+[ 11594.440] (II) event10 - EasyCamera: EasyCamera: device removed
+[ 11594.449] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/input/input23/event10"
+[ 11594.449] (II) XINPUT: Adding extended input device "EasyCamera: EasyCamera" (type: KEYBOARD, id 11)
+[ 11594.451] (II) event10 - EasyCamera: EasyCamera: is tagged by udev as: Keyboard
+[ 11594.451] (II) event10 - EasyCamera: EasyCamera: device is a keyboard
+[ 11594.452] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event7)
+[ 11594.452] (**) Ideapad extra buttons: Applying InputClass "evdev keyboard catchall"
+[ 11594.452] (**) Ideapad extra buttons: Applying InputClass "libinput keyboard catchall"
+[ 11594.452] (II) Using input driver 'libinput' for 'Ideapad extra buttons'
+[ 11594.452] (**) Ideapad extra buttons: always reports core events
+[ 11594.452] (**) Option "Device" "/dev/input/event7"
+[ 11594.452] (**) Option "_source" "server/udev"
+[ 11594.454] (II) event7  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[ 11594.454] (II) event7  - Ideapad extra buttons: device is a keyboard
+[ 11594.454] (II) event7  - Ideapad extra buttons: device removed
+[ 11594.465] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.0/PNP0C09:00/VPC2004:00/input/input21/event7"
+[ 11594.465] (II) XINPUT: Adding extended input device "Ideapad extra buttons" (type: KEYBOARD, id 12)
+[ 11594.466] (II) event7  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[ 11594.466] (II) event7  - Ideapad extra buttons: device is a keyboard
+[ 11594.467] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event11)
+[ 11594.467] (II) No input driver specified, ignoring this device.
+[ 11594.467] (II) This device may have been added with another device file.
+[ 11594.468] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event12)
+[ 11594.468] (II) No input driver specified, ignoring this device.
+[ 11594.468] (II) This device may have been added with another device file.
+[ 11594.468] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event13)
+[ 11594.468] (II) No input driver specified, ignoring this device.
+[ 11594.468] (II) This device may have been added with another device file.
+[ 11594.469] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event14)
+[ 11594.469] (II) No input driver specified, ignoring this device.
+[ 11594.469] (II) This device may have been added with another device file.
+[ 11594.469] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event15)
+[ 11594.469] (II) No input driver specified, ignoring this device.
+[ 11594.469] (II) This device may have been added with another device file.
+[ 11594.470] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event16)
+[ 11594.470] (II) No input driver specified, ignoring this device.
+[ 11594.470] (II) This device may have been added with another device file.
+[ 11594.470] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event17)
+[ 11594.470] (II) No input driver specified, ignoring this device.
+[ 11594.470] (II) This device may have been added with another device file.
+[ 11594.471] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[ 11594.471] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[ 11594.471] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[ 11594.471] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[ 11594.471] (**) AT Translated Set 2 keyboard: always reports core events
+[ 11594.471] (**) Option "Device" "/dev/input/event3"
+[ 11594.471] (**) Option "_source" "server/udev"
+[ 11594.472] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 11594.473] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[ 11594.474] (II) event3  - AT Translated Set 2 keyboard: device removed
+[ 11594.481] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[ 11594.481] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
+[ 11594.482] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 11594.483] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[ 11594.484] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event8)
+[ 11594.484] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "evdev touchpad catchall"
+[ 11594.484] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
+[ 11594.484] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[ 11594.484] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[ 11594.484] (**) Option "Device" "/dev/input/event8"
+[ 11594.484] (**) Option "_source" "server/udev"
+[ 11594.486] (II) event8  - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[ 11594.488] (II) event8  - SynPS/2 Synaptics TouchPad: device is a touchpad
+[ 11594.488] (II) event8  - SynPS/2 Synaptics TouchPad: device removed
+[ 11594.501] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input5/event8"
+[ 11594.501] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 14)
+[ 11594.502] (**) Option "AccelerationScheme" "none"
+[ 11594.502] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[ 11594.502] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[ 11594.502] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[ 11594.503] (II) event8  - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[ 11594.505] (II) event8  - SynPS/2 Synaptics TouchPad: device is a touchpad
+[ 11594.506] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse1)
+[ 11594.506] (II) No input driver specified, ignoring this device.
+[ 11594.506] (II) This device may have been added with another device file.
+[ 11594.507] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[ 11594.507] (II) No input driver specified, ignoring this device.
+[ 11594.507] (II) This device may have been added with another device file.
+[ 11594.510] (II) config/udev: Adding input device remap-keyboard (/dev/input/event18)
+[ 11594.510] (**) remap-keyboard: Applying InputClass "evdev keyboard catchall"
+[ 11594.510] (**) remap-keyboard: Applying InputClass "libinput keyboard catchall"
+[ 11594.510] (II) Using input driver 'libinput' for 'remap-keyboard'
+[ 11594.510] (**) remap-keyboard: always reports core events
+[ 11594.510] (**) Option "Device" "/dev/input/event18"
+[ 11594.510] (**) Option "_source" "server/udev"
+[ 11594.511] (II) event18 - remap-keyboard: is tagged by udev as: Keyboard
+[ 11594.511] (II) event18 - remap-keyboard: device is a keyboard
+[ 11594.511] (II) event18 - remap-keyboard: device removed
+[ 11594.521] (**) Option "config_info" "udev:/sys/devices/virtual/input/input31/event18"
+[ 11594.521] (II) XINPUT: Adding extended input device "remap-keyboard" (type: KEYBOARD, id 15)
+[ 11594.522] (II) event18 - remap-keyboard: is tagged by udev as: Keyboard
+[ 11594.522] (II) event18 - remap-keyboard: device is a keyboard
+[ 11594.523] (II) config/udev: Adding input device remap-mxmaster (/dev/input/event19)
+[ 11594.523] (**) remap-mxmaster: Applying InputClass "evdev pointer catchall"
+[ 11594.523] (**) remap-mxmaster: Applying InputClass "evdev keyboard catchall"
+[ 11594.523] (**) remap-mxmaster: Applying InputClass "libinput pointer catchall"
+[ 11594.523] (**) remap-mxmaster: Applying InputClass "libinput keyboard catchall"
+[ 11594.523] (II) Using input driver 'libinput' for 'remap-mxmaster'
+[ 11594.523] (**) remap-mxmaster: always reports core events
+[ 11594.523] (**) Option "Device" "/dev/input/event19"
+[ 11594.523] (**) Option "_source" "server/udev"
+[ 11594.524] (II) event19 - remap-mxmaster: is tagged by udev as: Keyboard Mouse
+[ 11594.524] (II) event19 - remap-mxmaster: device is a pointer
+[ 11594.524] (II) event19 - remap-mxmaster: device is a keyboard
+[ 11594.525] (II) event19 - remap-mxmaster: device removed
+[ 11594.532] (II) libinput: remap-mxmaster: needs a virtual subdevice
+[ 11594.532] (**) Option "config_info" "udev:/sys/devices/virtual/input/input32/event19"
+[ 11594.532] (II) XINPUT: Adding extended input device "remap-mxmaster" (type: MOUSE, id 16)
+[ 11594.532] (**) Option "AccelerationScheme" "none"
+[ 11594.532] (**) remap-mxmaster: (accel) selected scheme none/0
+[ 11594.532] (**) remap-mxmaster: (accel) acceleration factor: 2.000
+[ 11594.532] (**) remap-mxmaster: (accel) acceleration threshold: 4
+[ 11594.533] (II) event19 - remap-mxmaster: is tagged by udev as: Keyboard Mouse
+[ 11594.533] (II) event19 - remap-mxmaster: device is a pointer
+[ 11594.533] (II) event19 - remap-mxmaster: device is a keyboard
+[ 11594.534] (II) config/udev: Adding input device remap-mxmaster (/dev/input/mouse2)
+[ 11594.534] (II) No input driver specified, ignoring this device.
+[ 11594.534] (II) This device may have been added with another device file.
+[ 11594.540] (**) Logitech MX Master: Applying InputClass "evdev pointer catchall"
+[ 11594.540] (**) Logitech MX Master: Applying InputClass "evdev keyboard catchall"
+[ 11594.540] (**) Logitech MX Master: Applying InputClass "libinput pointer catchall"
+[ 11594.540] (**) Logitech MX Master: Applying InputClass "libinput keyboard catchall"
+[ 11594.540] (II) Using input driver 'libinput' for 'Logitech MX Master'
+[ 11594.540] (**) Logitech MX Master: always reports core events
+[ 11594.540] (**) Option "Device" "/dev/input/event6"
+[ 11594.540] (**) Option "_source" "_driver/libinput"
+[ 11594.540] (II) libinput: Logitech MX Master: is a virtual subdevice
+[ 11594.540] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/0003:046D:4060.0004/input/input20/event6"
+[ 11594.540] (II) XINPUT: Adding extended input device "Logitech MX Master" (type: KEYBOARD, id 17)
+[ 11594.541] (**) remap-mxmaster: Applying InputClass "evdev pointer catchall"
+[ 11594.541] (**) remap-mxmaster: Applying InputClass "evdev keyboard catchall"
+[ 11594.541] (**) remap-mxmaster: Applying InputClass "libinput pointer catchall"
+[ 11594.541] (**) remap-mxmaster: Applying InputClass "libinput keyboard catchall"
+[ 11594.541] (II) Using input driver 'libinput' for 'remap-mxmaster'
+[ 11594.541] (**) remap-mxmaster: always reports core events
+[ 11594.541] (**) Option "Device" "/dev/input/event19"
+[ 11594.541] (**) Option "_source" "_driver/libinput"
+[ 11594.541] (II) libinput: remap-mxmaster: is a virtual subdevice
+[ 11594.541] (**) Option "config_info" "udev:/sys/devices/virtual/input/input32/event19"
+[ 11594.541] (II) XINPUT: Adding extended input device "remap-mxmaster" (type: KEYBOARD, id 18)
+[ 11665.424] (II) event2  - Power Button: device removed
+[ 11665.436] (II) event5  - Video Bus: device removed
+[ 11665.447] (II) event4  - Video Bus: device removed
+[ 11665.455] (II) event1  - Power Button: device removed
+[ 11665.461] (II) event10 - EasyCamera: EasyCamera: device removed
+[ 11665.476] (II) event7  - Ideapad extra buttons: device removed
+[ 11665.485] (II) event3  - AT Translated Set 2 keyboard: device removed
+[ 11665.498] (II) event8  - SynPS/2 Synaptics TouchPad: device removed
+[ 11665.506] (II) event18 - remap-keyboard: device removed
+[ 11665.514] (II) event6  - Logitech MX Master: device removed
+[ 11665.522] (II) event19 - remap-mxmaster: device removed
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.533] (II) UnloadModule: "libinput"
+[ 11665.534] (II) UnloadModule: "libinput"
+[ 11665.534] (II) UnloadModule: "libinput"
+[ 11665.534] (II) UnloadModule: "libinput"
+[ 11665.534] (II) UnloadModule: "libinput"
+[ 11665.534] (II) UnloadModule: "libinput"
+[ 11665.534] (II) UnloadModule: "libinput"
+[ 11665.594] (II) NVIDIA(GPU-0): Deleting GPU-0
+[ 11665.594] (II) Server terminated successfully (0). Closing log file.

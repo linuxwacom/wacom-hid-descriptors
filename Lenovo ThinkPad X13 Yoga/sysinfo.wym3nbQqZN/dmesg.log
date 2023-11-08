@@ -1,0 +1,51 @@
+[    2.768207] thunderbolt 0000:09:00.0:  Port 5: 8086:15c0 (Revision: 1, TB Version: 1, Type: DP/HDMI (0xe0101))
+[    2.768207] thunderbolt 0000:09:00.0:   Max hop id (in/out): 9/9
+[    2.768208] thunderbolt 0000:09:00.0:   Max counters: 2
+[    2.768208] thunderbolt 0000:09:00.0:   NFC Credits: 0x1000000
+[    2.824048] usb 1-6: new full-speed USB device number 4 using xhci_hcd
+[    2.973613] usb 1-6: New USB device found, idVendor=056a, idProduct=51b0
+[    2.973614] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    2.973615] usb 1-6: Product: Pen and multitouch sensor
+[    2.973615] usb 1-6: Manufacturer: Wacom Co.,Ltd.
+[    3.052302] usb 2-3.4: new SuperSpeed USB device number 3 using xhci_hcd
+[    3.078292] usb 2-3.4: New USB device found, idVendor=0b95, idProduct=1790
+[    3.078293] usb 2-3.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    3.078293] usb 2-3.4: Product: AX88179
+[    3.078294] usb 2-3.4: Manufacturer: ASIX Elec. Corp.
+--
+[    3.854311] usb 1-9: New USB device strings: Mfr=0, Product=0, SerialNumber=1
+[    3.854312] usb 1-9: SerialNumber: 851a33b23725
+[    3.864304] usbcore: registered new interface driver usbhid
+[    3.864304] usbhid: USB HID core driver
+[    3.865717] input: PixArt Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:17EF:608D.0005/input/input8
+[    3.865846] hid-generic 0003:17EF:608D.0005: input,hidraw0: USB HID v1.11 Mouse [PixArt Lenovo USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[    3.868335] input: Wacom Pen and multitouch sensor Finger as /devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/0003:056A:51B0.0003/input/input10
+[    3.868444] wacom 0003:056A:51B0.0003: hidraw1: USB HID v1.11 Device [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:00:14.0-6/input0
+[    3.868611] input: Wacom Pen and multitouch sensor Pen as /devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:056A:51B0.0004/input/input12
+[    3.868652] wacom 0003:056A:51B0.0004: hidraw2: USB HID v1.11 Mouse [Wacom Co.,Ltd. Pen and multitouch sensor] on usb-0000:00:14.0-6/input1
+[    3.960039] raid6: sse2x1   gen() 14308 MB/s
+[    4.008043] raid6: sse2x1   xor() 10353 MB/s
+[    4.056063] raid6: sse2x2   gen() 17589 MB/s
+[    4.067936] psmouse serio2: trackpoint: Elan TrackPoint firmware: 0x11, buttons: 3/3
+[    4.104081] raid6: sse2x2   xor() 11883 MB/s
+[    4.152065] raid6: sse2x4   gen() 20428 MB/s
+[    4.200063] raid6: sse2x4   xor() 13082 MB/s
+[    4.248037] raid6: avx2x1   gen() 28784 MB/s
+[    4.273118] input: TPPS/2 Elan TrackPoint as /devices/platform/i8042/serio1/serio2/input/input7
+[    4.296042] raid6: avx2x1   xor() 19847 MB/s
+[    4.344068] raid6: avx2x2   gen() 33053 MB/s
+[    4.392040] raid6: avx2x2   xor() 22377 MB/s
+[    4.440069] raid6: avx2x4   gen() 38630 MB/s
+[    4.488031] raid6: avx2x4   xor() 24647 MB/s
+--
+[ 2029.418785] e1000e: EEE TX LPI TIMER: 00000011
+[ 2040.152255] ------------[ cut here ]------------
+[ 2040.152259] NETDEV WATCHDOG: enx00249b14eb21 (ax88179_178a): transmit queue 0 timed out
+[ 2040.152289] WARNING: CPU: 0 PID: 0 at /build/linux-oem-_n45dH/linux-oem-4.15.0/net/sched/sch_generic.c:323 dev_watchdog+0x221/0x230
+[ 2040.152291] Modules linked in: pinctrl_geminilake binfmt_misc nls_iso8859_1 snd_hda_codec_hdmi intel_rapl x86_pkg_temp_thermal intel_powerclamp snd_hda_codec_realtek coretemp snd_hda_codec_generic kvm irqbypass crct10dif_pclmul crc32_pclmul ghash_clmulni_intel pcbc aesni_intel snd_seq_midi snd_hda_intel snd_seq_midi_event aes_x86_64 snd_hda_codec crypto_simd glue_helper input_leds cryptd snd_hda_core intel_cstate intel_rapl_perf serio_raw snd_hwdep snd_rawmidi thinkpad_acpi ax88179_178a idma64 snd_pcm wmi_bmof nvram virt_dma uvcvideo intel_wmi_thunderbolt videobuf2_vmalloc videobuf2_memops usbnet videobuf2_v4l2 snd_seq videobuf2_core videodev mii snd_seq_device rtsx_pci_ms joydev memstick media intel_lpss_pci intel_lpss snd_timer processor_thermal_device ucsi_acpi intel_soc_dts_iosf typec_ucsi typec
+[ 2040.152362]  snd soundcore int3403_thermal int340x_thermal_zone int3400_thermal acpi_pad acpi_thermal_rel mac_hid sch_fq_codel parport_pc ppdev lp parport ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq libcrc32c raid1 raid0 multipath linear wacom hid_generic usbhid hid_sensor_custom hid_sensor_hub intel_ishtp_hid hid rtsx_pci_sdmmc i915 i2c_algo_bit drm_kms_helper e1000e psmouse syscopyarea ptp sysfillrect pps_core sysimgblt fb_sys_fops intel_ish_ipc thunderbolt rtsx_pci drm intel_ishtp wmi video
+[ 2040.152425] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 4.15.0-1066-oem #76-Ubuntu
+[ 2040.152427] Hardware name: LENOVO 4810JH0100/4810JH0100, BIOS N2UET20W (1.00 ) 02/26/2020
+[ 2040.152433] RIP: 0010:dev_watchdog+0x221/0x230
+[ 2040.152435] RSP: 0018:ffff92dd8c403e58 EFLAGS: 00010286
+[ 2040.152438] RAX: 0000000000000000 RBX: 0000000000000000 RCX: ffffffff98a63a28

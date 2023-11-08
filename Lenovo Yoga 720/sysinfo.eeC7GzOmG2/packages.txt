@@ -1,0 +1,65 @@
+Name            : libwacom
+Version         : 0.24-1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://sourceforge.net/apps/mediawiki/linuxwacom/index.php?title=Libwacom
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  systemd  libgudev
+Optional Deps   : None
+Required By     : libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 448,00 KiB
+Packager        : Jan de Groot <jgc@archlinux.org>
+Build Date      : ven 24 fév 2017 21:29:18 CET
+Install Date    : mar 28 fév 2017 04:49:48 CET
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : libinput
+Version         : 1.7.2-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://www.freedesktop.org/wiki/Software/libinput/
+Licenses        : custom:X11
+Groups          : None
+Provides        : None
+Depends On      : mtdev  systemd  libevdev  libwacom
+Optional Deps   : None
+Required By     : clutter  qt5-base  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 4,54 MiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : ven 05 mai 2017 14:22:08 CEST
+Install Date    : ven 19 mai 2017 01:13:07 CEST
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 0.25.1-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : custom
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput>=1.2.0
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 156,00 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : ven 05 mai 2017 14:24:35 CEST
+Install Date    : ven 19 mai 2017 01:14:33 CEST
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature

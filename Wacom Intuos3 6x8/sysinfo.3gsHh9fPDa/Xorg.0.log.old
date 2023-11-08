@@ -1,0 +1,517 @@
+[  4194.477] 
+X.Org X Server 1.20.9
+X Protocol Version 11, Revision 0
+[  4194.477] Build Operating System: Linux 5.4.0-3-amd64 x86_64 Debian
+[  4194.477] Current Operating System: Linux HOSTNAME 5.8.0-3-amd64 #1 SMP Debian 5.8.14-1~HOSTNAME19+2 (2020-10-25) x86_64
+[  4194.477] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.8.0-3-amd64 USERNAME=UUID=091a9593-8267-4cf4-8265-ac8ca3071c26 ro quiet splash
+[  4194.477] Build Date: 24 September 2020  05:54:34PM
+[  4194.477] xorg-server 2:1.20.9-2~HOSTNAME19ahs+1 (https://www.debian.org/support) 
+[  4194.477] Current version of pixman: 0.36.0
+[  4194.477] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  4194.477] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  4194.477] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Apr  9 19:46:53 2021
+[  4194.477] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  4194.477] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  4194.477] (==) No Layout section.  Using the first Screen section.
+[  4194.477] (==) No screen section available. Using defaults.
+[  4194.477] (**) |-->Screen "Default Screen Section" (0)
+[  4194.477] (**) |   |-->Monitor "<default monitor>"
+[  4194.478] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  4194.478] (==) Automatically adding devices
+[  4194.478] (==) Automatically enabling devices
+[  4194.478] (==) Automatically adding GPU devices
+[  4194.478] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  4194.478] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[  4194.478] 	Entry deleted from font path.
+[  4194.478] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[  4194.478] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  4194.478] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  4194.478] (II) Loader magic: 0x55dc0d5e7e40
+[  4194.478] (II) Module ABI versions:
+[  4194.478] 	X.Org ANSI C Emulation: 0.4
+[  4194.478] 	X.Org Video Driver: 24.1
+[  4194.478] 	X.Org XInput driver : 24.1
+[  4194.478] 	X.Org Server Extension : 10.0
+[  4194.478] (++) using VT number 7
+
+[  4194.478] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[  4194.479] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  4194.480] (--) PCI:*(1@0:0:0) 10de:1199:1458:d001 rev 161, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[  4194.480] (II) LoadModule: "glx"
+[  4194.480] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  4194.481] (II) Module glx: vendor="X.Org Foundation"
+[  4194.481] 	compiled for 1.20.9, module version = 1.0.0
+[  4194.481] 	ABI class: X.Org Server Extension, version 10.0
+[  4194.481] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[  4194.481] 	loading driver: nvidia
+[  4194.708] (==) Matched nvidia as autoconfigured driver 0
+[  4194.708] (==) Matched nouveau as autoconfigured driver 1
+[  4194.708] (==) Matched nv as autoconfigured driver 2
+[  4194.710] (==) Matched modesetting as autoconfigured driver 3
+[  4194.710] (==) Matched fbdev as autoconfigured driver 4
+[  4194.710] (==) Matched vesa as autoconfigured driver 5
+[  4194.710] (==) Assigned the driver to the xf86ConfigLayout
+[  4194.710] (II) LoadModule: "nvidia"
+[  4194.710] (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+[  4194.710] (II) Module nvidia: vendor="NVIDIA Corporation"
+[  4194.710] 	compiled for 1.6.99.901, module version = 1.0.0
+[  4194.710] 	Module class: X.Org Video Driver
+[  4194.710] (II) LoadModule: "nouveau"
+[  4194.710] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[  4194.711] (II) Module nouveau: vendor="X.Org Foundation"
+[  4194.711] 	compiled for 1.20.3, module version = 1.0.16
+[  4194.711] 	Module class: X.Org Video Driver
+[  4194.711] 	ABI class: X.Org Video Driver, version 24.0
+[  4194.711] (II) LoadModule: "nv"
+[  4194.711] (WW) Warning, couldn't open module nv
+[  4194.711] (EE) Failed to load module "nv" (module does not exist, 0)
+[  4194.711] (II) LoadModule: "modesetting"
+[  4194.711] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  4194.711] (II) Module modesetting: vendor="X.Org Foundation"
+[  4194.711] 	compiled for 1.20.9, module version = 1.20.9
+[  4194.711] 	Module class: X.Org Video Driver
+[  4194.711] 	ABI class: X.Org Video Driver, version 24.1
+[  4194.711] (II) LoadModule: "fbdev"
+[  4194.711] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[  4194.711] (II) Module fbdev: vendor="X.Org Foundation"
+[  4194.711] 	compiled for 1.20.0, module version = 0.5.0
+[  4194.711] 	Module class: X.Org Video Driver
+[  4194.711] 	ABI class: X.Org Video Driver, version 24.0
+[  4194.711] (II) LoadModule: "vesa"
+[  4194.711] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[  4194.711] (II) Module vesa: vendor="X.Org Foundation"
+[  4194.711] 	compiled for 1.20.4, module version = 2.5.0
+[  4194.711] 	Module class: X.Org Video Driver
+[  4194.711] 	ABI class: X.Org Video Driver, version 24.0
+[  4194.711] (II) NVIDIA dlloader X Driver  450.80.02  Wed Sep 23 00:53:01 UTC 2020
+[  4194.711] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[  4194.711] (II) NOUVEAU driver Date:   Mon Jan 28 23:25:58 2019 -0500
+[  4194.711] (II) NOUVEAU driver for NVIDIA chipset families :
+[  4194.711] 	RIVA TNT            (NV04)
+[  4194.711] 	RIVA TNT2           (NV05)
+[  4194.711] 	GeForce 256         (NV10)
+[  4194.711] 	GeForce 2           (NV11, NV15)
+[  4194.711] 	GeForce 4MX         (NV17, NV18)
+[  4194.711] 	GeForce 3           (NV20)
+[  4194.711] 	GeForce 4Ti         (NV25, NV28)
+[  4194.711] 	GeForce FX          (NV3x)
+[  4194.711] 	GeForce 6           (NV4x)
+[  4194.712] 	GeForce 7           (G7x)
+[  4194.712] 	GeForce 8           (G8x)
+[  4194.712] 	GeForce 9           (G9x)
+[  4194.712] 	GeForce GTX 2xx/3xx (GT2xx)
+[  4194.712] 	GeForce GTX 4xx/5xx (GFxxx)
+[  4194.712] 	GeForce GTX 6xx/7xx (GKxxx)
+[  4194.712] 	GeForce GTX 9xx     (GMxxx)
+[  4194.712] 	GeForce GTX 10xx    (GPxxx)
+[  4194.712] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  4194.712] (II) FBDEV: driver for framebuffer: fbdev
+[  4194.712] (II) VESA: driver for VESA chipsets: vesa
+[  4194.718] (II) Loading sub module "fb"
+[  4194.718] (II) LoadModule: "fb"
+[  4194.718] (II) Loading /usr/lib/xorg/modules/libfb.so
+[  4194.718] (II) Module fb: vendor="X.Org Foundation"
+[  4194.718] 	compiled for 1.20.9, module version = 1.0.0
+[  4194.718] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  4194.718] (II) Loading sub module "wfb"
+[  4194.718] (II) LoadModule: "wfb"
+[  4194.718] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[  4194.718] (II) Module wfb: vendor="X.Org Foundation"
+[  4194.718] 	compiled for 1.20.9, module version = 1.0.0
+[  4194.718] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  4194.718] (II) Loading sub module "ramdac"
+[  4194.718] (II) LoadModule: "ramdac"
+[  4194.718] (II) Module "ramdac" already built-in
+[  4194.719] (WW) Falling back to old probe method for modesetting
+[  4194.719] (WW) Falling back to old probe method for fbdev
+[  4194.719] (II) Loading sub module "fbdevhw"
+[  4194.719] (II) LoadModule: "fbdevhw"
+[  4194.719] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  4194.719] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  4194.719] 	compiled for 1.20.9, module version = 0.0.2
+[  4194.719] 	ABI class: X.Org Video Driver, version 24.1
+[  4194.719] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  4194.719] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[  4194.719] (==) NVIDIA(0): RGB weight 888
+[  4194.719] (==) NVIDIA(0): Default visual is TrueColor
+[  4194.719] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[  4194.719] (**) NVIDIA(0): Enabling 2D acceleration
+[  4194.719] (II) Loading sub module "glxserver_nvidia"
+[  4194.719] (II) LoadModule: "glxserver_nvidia"
+[  4194.719] (II) Loading /usr/lib/xorg/modules/extensions/libglxserver_nvidia.so
+[  4194.725] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[  4194.725] 	compiled for 1.6.99.901, module version = 1.0.0
+[  4194.725] 	Module class: X.Org Server Extension
+[  4194.725] (II) NVIDIA GLX Module  450.80.02  Wed Sep 23 00:51:32 UTC 2020
+[  4194.725] (II) NVIDIA: The X server supports PRIME Render Offload.
+[  4194.970] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[  4194.971] (--) NVIDIA(0):     DFP-0 (boot)
+[  4194.971] (--) NVIDIA(0):     DFP-1
+[  4194.971] (--) NVIDIA(0):     DFP-2
+[  4194.971] (--) NVIDIA(0):     DFP-3
+[  4194.971] (II) NVIDIA(0): NVIDIA GPU GeForce GTX 760 (GK104) at PCI:1:0:0 (GPU-0)
+[  4194.971] (--) NVIDIA(0): Memory: 3145728 kBytes
+[  4194.971] (--) NVIDIA(0): VideoBIOS: 80.04.ef.00.25
+[  4194.971] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[  4195.004] (--) NVIDIA(GPU-0): STD HDMI TV (DFP-0): connected
+[  4195.004] (--) NVIDIA(GPU-0): STD HDMI TV (DFP-0): Internal TMDS
+[  4195.004] (--) NVIDIA(GPU-0): STD HDMI TV (DFP-0): 340.0 MHz maximum pixel clock
+[  4195.004] (--) NVIDIA(GPU-0): 
+[  4195.004] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[  4195.004] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[  4195.004] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[  4195.004] (--) NVIDIA(GPU-0): 
+[  4195.004] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[  4195.004] (--) NVIDIA(GPU-0): DFP-2: Internal TMDS
+[  4195.004] (--) NVIDIA(GPU-0): DFP-2: 165.0 MHz maximum pixel clock
+[  4195.004] (--) NVIDIA(GPU-0): 
+[  4195.004] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[  4195.004] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[  4195.004] (--) NVIDIA(GPU-0): DFP-3: 960.0 MHz maximum pixel clock
+[  4195.004] (--) NVIDIA(GPU-0): 
+[  4195.007] (==) NVIDIA(0): 
+[  4195.007] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[  4195.007] (==) NVIDIA(0):     will be used as the requested mode.
+[  4195.007] (==) NVIDIA(0): 
+[  4195.007] (II) NVIDIA(0): Validated MetaModes:
+[  4195.007] (II) NVIDIA(0):     "DFP-0:nvidia-auto-select"
+[  4195.007] (II) NVIDIA(0): Virtual screen size determined to be 1920 x 1080
+[  4195.010] (--) NVIDIA(0): DPI set to (118, 105); computed from "UseEdidDpi" X config
+[  4195.010] (--) NVIDIA(0):     option
+[  4195.010] (II) UnloadModule: "nouveau"
+[  4195.010] (II) Unloading nouveau
+[  4195.010] (II) UnloadModule: "modesetting"
+[  4195.010] (II) Unloading modesetting
+[  4195.010] (II) UnloadModule: "fbdev"
+[  4195.010] (II) Unloading fbdev
+[  4195.010] (II) UnloadSubModule: "fbdevhw"
+[  4195.010] (II) Unloading fbdevhw
+[  4195.010] (II) UnloadModule: "vesa"
+[  4195.010] (II) Unloading vesa
+[  4195.010] (II) NVIDIA: Using 6144.00 MB of virtual memory for indirect memory
+[  4195.010] (II) NVIDIA:     access.
+[  4195.012] (WW) NVIDIA(0): ACPI: AC power state information is not available under
+[  4195.012] (WW) NVIDIA(0):     /sys/class/power_supply/ , nor under
+[  4195.012] (WW) NVIDIA(0):     /proc/acpi/ac_adapter/
+[  4195.034] (II) NVIDIA(0): Setting mode "DFP-0:nvidia-auto-select"
+[  4195.069] (==) NVIDIA(0): Disabling shared memory pixmaps
+[  4195.069] (==) NVIDIA(0): Backing store enabled
+[  4195.069] (==) NVIDIA(0): Silken mouse enabled
+[  4195.069] (==) NVIDIA(0): DPMS enabled
+[  4195.069] (II) Loading sub module "dri2"
+[  4195.069] (II) LoadModule: "dri2"
+[  4195.069] (II) Module "dri2" already built-in
+[  4195.069] (II) NVIDIA(0): [DRI2] Setup complete
+[  4195.069] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[  4195.069] (II) Initializing extension Generic Event Extension
+[  4195.069] (II) Initializing extension SHAPE
+[  4195.069] (II) Initializing extension MIT-SHM
+[  4195.069] (II) Initializing extension XInputExtension
+[  4195.069] (II) Initializing extension XTEST
+[  4195.069] (II) Initializing extension BIG-REQUESTS
+[  4195.069] (II) Initializing extension SYNC
+[  4195.069] (II) Initializing extension XKEYBOARD
+[  4195.070] (II) Initializing extension XC-MISC
+[  4195.070] (II) Initializing extension SECURITY
+[  4195.070] (II) Initializing extension XFIXES
+[  4195.070] (II) Initializing extension RENDER
+[  4195.070] (II) Initializing extension RANDR
+[  4195.070] (II) Initializing extension COMPOSITE
+[  4195.070] (II) Initializing extension DAMAGE
+[  4195.070] (II) Initializing extension MIT-SCREEN-SAVER
+[  4195.070] (II) Initializing extension DOUBLE-BUFFER
+[  4195.070] (II) Initializing extension RECORD
+[  4195.070] (II) Initializing extension DPMS
+[  4195.070] (II) Initializing extension Present
+[  4195.070] (II) Initializing extension DRI3
+[  4195.070] (II) Initializing extension X-Resource
+[  4195.071] (II) Initializing extension XVideo
+[  4195.071] (II) Initializing extension XVideo-MotionCompensation
+[  4195.071] (II) Initializing extension SELinux
+[  4195.071] (II) SELinux: Disabled on system
+[  4195.071] (II) Initializing extension GLX
+[  4195.071] (II) Initializing extension GLX
+[  4195.071] (II) Indirect GLX disabled.
+[  4195.071] (II) GLX: Another vendor is already registered for screen 0
+[  4195.071] (II) Initializing extension XFree86-VidModeExtension
+[  4195.071] (II) Initializing extension XFree86-DGA
+[  4195.071] (II) Initializing extension XFree86-DRI
+[  4195.071] (II) Initializing extension DRI2
+[  4195.071] (II) Initializing extension NV-GLX
+[  4195.071] (II) Initializing extension NV-CONTROL
+[  4195.071] (II) Initializing extension XINERAMA
+[  4195.103] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  4195.103] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  4195.103] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  4195.103] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  4195.103] (II) LoadModule: "evdev"
+[  4195.103] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[  4195.103] (II) Module evdev: vendor="X.Org Foundation"
+[  4195.103] 	compiled for 1.20.4, module version = 2.10.6
+[  4195.103] 	Module class: X.Org XInput Driver
+[  4195.103] 	ABI class: X.Org XInput driver, version 24.1
+[  4195.103] (II) Using input driver 'evdev' for 'Power Button'
+[  4195.103] (**) Power Button: always reports core events
+[  4195.103] (**) evdev: Power Button: Device: "/dev/input/event1"
+[  4195.103] (--) evdev: Power Button: Vendor 0 Product 0x1
+[  4195.103] (--) evdev: Power Button: Found keys
+[  4195.103] (II) evdev: Power Button: Configuring as keyboard
+[  4195.103] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[  4195.103] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  4195.103] (**) Option "xkb_rules" "evdev"
+[  4195.103] (**) Option "xkb_model" "pc105"
+[  4195.103] (**) Option "xkb_layout" "us"
+[  4195.103] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp_led:scroll"
+[  4195.116] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[  4195.116] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  4195.116] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  4195.116] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  4195.116] (II) Using input driver 'evdev' for 'Power Button'
+[  4195.116] (**) Power Button: always reports core events
+[  4195.116] (**) evdev: Power Button: Device: "/dev/input/event0"
+[  4195.116] (--) evdev: Power Button: Vendor 0 Product 0x1
+[  4195.116] (--) evdev: Power Button: Found keys
+[  4195.116] (II) evdev: Power Button: Configuring as keyboard
+[  4195.116] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[  4195.116] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[  4195.116] (**) Option "xkb_rules" "evdev"
+[  4195.116] (**) Option "xkb_model" "pc105"
+[  4195.116] (**) Option "xkb_layout" "us"
+[  4195.116] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp_led:scroll"
+[  4195.116] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event8)
+[  4195.116] (II) No input driver specified, ignoring this device.
+[  4195.116] (II) This device may have been added with another device file.
+[  4195.117] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event9)
+[  4195.117] (II) No input driver specified, ignoring this device.
+[  4195.117] (II) This device may have been added with another device file.
+[  4195.117] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event10)
+[  4195.117] (II) No input driver specified, ignoring this device.
+[  4195.117] (II) This device may have been added with another device file.
+[  4195.117] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event5)
+[  4195.117] (II) No input driver specified, ignoring this device.
+[  4195.117] (II) This device may have been added with another device file.
+[  4195.117] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event6)
+[  4195.117] (II) No input driver specified, ignoring this device.
+[  4195.117] (II) This device may have been added with another device file.
+[  4195.118] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event7)
+[  4195.118] (II) No input driver specified, ignoring this device.
+[  4195.118] (II) This device may have been added with another device file.
+[  4195.118] (II) config/udev: Adding input device CHICONY HP Basic USB Keyboard (/dev/input/event2)
+[  4195.118] (**) CHICONY HP Basic USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[  4195.118] (**) CHICONY HP Basic USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[  4195.118] (**) CHICONY HP Basic USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[  4195.118] (II) Using input driver 'evdev' for 'CHICONY HP Basic USB Keyboard'
+[  4195.118] (**) CHICONY HP Basic USB Keyboard: always reports core events
+[  4195.118] (**) evdev: CHICONY HP Basic USB Keyboard: Device: "/dev/input/event2"
+[  4195.118] (--) evdev: CHICONY HP Basic USB Keyboard: Vendor 0x3f0 Product 0x24
+[  4195.118] (--) evdev: CHICONY HP Basic USB Keyboard: Found keys
+[  4195.118] (II) evdev: CHICONY HP Basic USB Keyboard: Configuring as keyboard
+[  4195.118] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.0/0003:03F0:0024.0001/input/input2/event2"
+[  4195.118] (II) XINPUT: Adding extended input device "CHICONY HP Basic USB Keyboard" (type: KEYBOARD, id 8)
+[  4195.118] (**) Option "xkb_rules" "evdev"
+[  4195.118] (**) Option "xkb_model" "pc105"
+[  4195.118] (**) Option "xkb_layout" "us"
+[  4195.118] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp_led:scroll"
+[  4195.119] (II) config/udev: Adding input device Logitech USB Laser Mouse (/dev/input/event3)
+[  4195.119] (**) Logitech USB Laser Mouse: Applying InputClass "evdev pointer catchall"
+[  4195.119] (**) Logitech USB Laser Mouse: Applying InputClass "libinput pointer catchall"
+[  4195.119] (**) Logitech USB Laser Mouse: Applying InputClass "evdev pointer catchall"
+[  4195.119] (II) Using input driver 'evdev' for 'Logitech USB Laser Mouse'
+[  4195.119] (**) Logitech USB Laser Mouse: always reports core events
+[  4195.119] (**) evdev: Logitech USB Laser Mouse: Device: "/dev/input/event3"
+[  4195.171] (--) evdev: Logitech USB Laser Mouse: Vendor 0x46d Product 0xc069
+[  4195.171] (--) evdev: Logitech USB Laser Mouse: Found 12 mouse buttons
+[  4195.171] (--) evdev: Logitech USB Laser Mouse: Found scroll wheel(s)
+[  4195.171] (--) evdev: Logitech USB Laser Mouse: Found relative axes
+[  4195.171] (--) evdev: Logitech USB Laser Mouse: Found x and y relative axes
+[  4195.171] (II) evdev: Logitech USB Laser Mouse: Configuring as mouse
+[  4195.171] (II) evdev: Logitech USB Laser Mouse: Adding scrollwheel support
+[  4195.171] (**) evdev: Logitech USB Laser Mouse: YAxisMapping: buttons 4 and 5
+[  4195.171] (**) evdev: Logitech USB Laser Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  4195.171] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2/2-2:1.0/0003:046D:C069.0002/input/input3/event3"
+[  4195.171] (II) XINPUT: Adding extended input device "Logitech USB Laser Mouse" (type: MOUSE, id 9)
+[  4195.171] (II) evdev: Logitech USB Laser Mouse: initialized for relative axes.
+[  4195.172] (**) Logitech USB Laser Mouse: (accel) keeping acceleration scheme 1
+[  4195.172] (**) Logitech USB Laser Mouse: (accel) acceleration profile 0
+[  4195.172] (**) Logitech USB Laser Mouse: (accel) acceleration factor: 2.000
+[  4195.172] (**) Logitech USB Laser Mouse: (accel) acceleration threshold: 4
+[  4195.173] (II) config/udev: Adding input device Logitech USB Laser Mouse (/dev/input/mouse0)
+[  4195.173] (II) No input driver specified, ignoring this device.
+[  4195.173] (II) This device may have been added with another device file.
+[  4195.175] (II) config/udev: Adding input device Wacom Intuos3 6x8 Pen (/dev/input/event4)
+[  4195.175] (**) Wacom Intuos3 6x8 Pen: Applying InputClass "evdev tablet catchall"
+[  4195.175] (**) Wacom Intuos3 6x8 Pen: Applying InputClass "libinput tablet catchall"
+[  4195.175] (**) Wacom Intuos3 6x8 Pen: Applying InputClass "Wacom USB tablet class"
+[  4195.175] (**) Wacom Intuos3 6x8 Pen: Applying InputClass "Wacom tablet class"
+[  4195.175] (II) LoadModule: "wacom"
+[  4195.175] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[  4195.175] (II) Module wacom: vendor="X.Org Foundation"
+[  4195.175] 	compiled for 1.19.3, module version = 0.34.99
+[  4195.175] 	Module class: X.Org XInput Driver
+[  4195.175] 	ABI class: X.Org XInput driver, version 24.1
+[  4195.175] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Mobilestudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 13, MobileStudio Pro 16,
+	Cintiq 13 FHD Pro, Cintiq 16 UHD Pro, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, TabletPC 0x90, TabletPC 0x93, TabletPC 0x97,
+	TabletPC 0x9A, CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3,
+	TabletPC 0xE5, TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED,
+	TabletPC 0xEF, TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D,
+	TabletPC 0x116, TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004,
+	TabletPC 0x5000, TabletPC 0x5002, usb:172f:0024, usb:172f:0025,
+	usb:172f:0026, usb:172f:0027, usb:172f:0028, usb:172f:0030,
+	usb:172f:0031, usb:172f:0032, usb:172f:0033, usb:172f:0034,
+	usb:172f:0035, usb:172f:0036, usb:172f:0037, usb:172f:0038,
+	usb:172f:0039, usb:172f:0051, usb:172f:0052, usb:172f:0053,
+	usb:172f:0054, usb:172f:0055, usb:172f:0056, usb:172f:0057,
+	usb:172f:0058, usb:172f:0500, usb:172f:0501, usb:172f:0502,
+	usb:172f:0503, usb:1b96:0001, usb:17ef:6004
+[  4195.176] (II) Using input driver 'wacom' for 'Wacom Intuos3 6x8 Pen'
+[  4195.176] (**) Wacom Intuos3 6x8 Pen: always reports core events
+[  4195.176] (**) Option "Device" "/dev/input/event4"
+[  4195.228] (II) Wacom Intuos3 6x8 Pen: type not specified, assuming 'stylus'.
+[  4195.228] (II) Wacom Intuos3 6x8 Pen: other types will be automatically added.
+[  4195.228] (--) Wacom Intuos3 6x8 Pen stylus: using pressure threshold of 851 for button 1
+[  4195.228] (--) Wacom Intuos3 6x8 Pen stylus: maxX=40640 maxY=30480 maxZ=1023 resX=200000 resY=200000  tilt=enabled
+[  4195.228] (II) Wacom Intuos3 6x8 Pen stylus: hotplugging dependent devices.
+[  4195.228] (EE) Wacom Intuos3 6x8 Pen stylus: Invalid type 'touch' for this device.
+[  4195.228] (EE) Wacom Intuos3 6x8 Pen stylus: Invalid type 'pad' for this device.
+[  4195.228] (II) Wacom Intuos3 6x8 Pen stylus: hotplugging completed.
+[  4195.251] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/0003:056A:00B1.0003/input/input15/event4"
+[  4195.251] (II) XINPUT: Adding extended input device "Wacom Intuos3 6x8 Pen stylus" (type: STYLUS, id 10)
+[  4195.251] (**) Wacom Intuos3 6x8 Pen stylus: (accel) keeping acceleration scheme 1
+[  4195.251] (**) Wacom Intuos3 6x8 Pen stylus: (accel) acceleration profile 0
+[  4195.251] (**) Wacom Intuos3 6x8 Pen stylus: (accel) acceleration factor: 2.000
+[  4195.251] (**) Wacom Intuos3 6x8 Pen stylus: (accel) acceleration threshold: 4
+[  4195.303] (II) config/udev: Adding input device Wacom Intuos3 6x8 Pen (/dev/input/mouse1)
+[  4195.303] (II) No input driver specified, ignoring this device.
+[  4195.303] (II) This device may have been added with another device file.
+[  4195.304] (II) config/udev: Adding input device Wacom Intuos3 6x8 Pad (/dev/input/event14)
+[  4195.304] (**) Wacom Intuos3 6x8 Pad: Applying InputClass "evdev tablet catchall"
+[  4195.304] (**) Wacom Intuos3 6x8 Pad: Applying InputClass "libinput tablet catchall"
+[  4195.304] (**) Wacom Intuos3 6x8 Pad: Applying InputClass "Wacom USB tablet class"
+[  4195.304] (**) Wacom Intuos3 6x8 Pad: Applying InputClass "Wacom tablet class"
+[  4195.304] (II) Using input driver 'wacom' for 'Wacom Intuos3 6x8 Pad'
+[  4195.304] (**) Wacom Intuos3 6x8 Pad: always reports core events
+[  4195.304] (**) Option "Device" "/dev/input/event14"
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad: Invalid type 'stylus' for this device.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad: Invalid type 'eraser' for this device.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad: Invalid type 'cursor' for this device.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad: Invalid type 'touch' for this device.
+[  4195.304] (II) Wacom Intuos3 6x8 Pad: type not specified, assuming 'pad'.
+[  4195.304] (II) Wacom Intuos3 6x8 Pad: other types will be automatically added.
+[  4195.304] (II) Wacom Intuos3 6x8 Pad pad: hotplugging dependent devices.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad pad: Invalid type 'stylus' for this device.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad pad: Invalid type 'eraser' for this device.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad pad: Invalid type 'cursor' for this device.
+[  4195.304] (EE) Wacom Intuos3 6x8 Pad pad: Invalid type 'touch' for this device.
+[  4195.304] (II) Wacom Intuos3 6x8 Pad pad: hotplugging completed.
+[  4195.322] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/0003:056A:00B1.0003/input/input17/event14"
+[  4195.322] (II) XINPUT: Adding extended input device "Wacom Intuos3 6x8 Pad pad" (type: PAD, id 11)
+[  4195.322] (**) Wacom Intuos3 6x8 Pad pad: (accel) keeping acceleration scheme 1
+[  4195.322] (**) Wacom Intuos3 6x8 Pad pad: (accel) acceleration profile 0
+[  4195.322] (**) Wacom Intuos3 6x8 Pad pad: (accel) acceleration factor: 2.000
+[  4195.322] (**) Wacom Intuos3 6x8 Pad pad: (accel) acceleration threshold: 4
+[  4195.322] (II) config/udev: Adding input device Wacom Intuos3 6x8 Pad (/dev/input/js0)
+[  4195.322] (II) No input driver specified, ignoring this device.
+[  4195.322] (II) This device may have been added with another device file.
+[  4195.323] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event12)
+[  4195.323] (II) No input driver specified, ignoring this device.
+[  4195.323] (II) This device may have been added with another device file.
+[  4195.323] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event13)
+[  4195.323] (II) No input driver specified, ignoring this device.
+[  4195.323] (II) This device may have been added with another device file.
+[  4195.323] (II) config/udev: Adding input device HDA Digital PCBeep (/dev/input/event11)
+[  4195.323] (II) No input driver specified, ignoring this device.
+[  4195.323] (II) This device may have been added with another device file.
+[  4195.324] (II) config/udev: Adding input device ACPI Virtual Keyboard Device (/dev/input/event15)
+[  4195.324] (**) ACPI Virtual Keyboard Device: Applying InputClass "evdev keyboard catchall"
+[  4195.324] (**) ACPI Virtual Keyboard Device: Applying InputClass "libinput keyboard catchall"
+[  4195.324] (**) ACPI Virtual Keyboard Device: Applying InputClass "evdev keyboard catchall"
+[  4195.324] (II) Using input driver 'evdev' for 'ACPI Virtual Keyboard Device'
+[  4195.324] (**) ACPI Virtual Keyboard Device: always reports core events
+[  4195.324] (**) evdev: ACPI Virtual Keyboard Device: Device: "/dev/input/event15"
+[  4195.324] (--) evdev: ACPI Virtual Keyboard Device: Vendor 0 Product 0
+[  4195.324] (--) evdev: ACPI Virtual Keyboard Device: Found keys
+[  4195.324] (II) evdev: ACPI Virtual Keyboard Device: Configuring as keyboard
+[  4195.324] (**) Option "config_info" "udev:/sys/devices/virtual/input/input18/event15"
+[  4195.324] (II) XINPUT: Adding extended input device "ACPI Virtual Keyboard Device" (type: KEYBOARD, id 12)
+[  4195.324] (**) Option "xkb_rules" "evdev"
+[  4195.324] (**) Option "xkb_model" "pc105"
+[  4195.324] (**) Option "xkb_layout" "us"
+[  4195.324] (**) Option "xkb_options" "terminate:ctrl_alt_bksp,grp_led:scroll"
+[  4195.327] (**) Wacom Intuos3 6x8 Pen eraser: Applying InputClass "evdev tablet catchall"
+[  4195.327] (**) Wacom Intuos3 6x8 Pen eraser: Applying InputClass "libinput tablet catchall"
+[  4195.327] (**) Wacom Intuos3 6x8 Pen eraser: Applying InputClass "Wacom USB tablet class"
+[  4195.327] (**) Wacom Intuos3 6x8 Pen eraser: Applying InputClass "Wacom tablet class"
+[  4195.327] (II) Using input driver 'wacom' for 'Wacom Intuos3 6x8 Pen eraser'
+[  4195.328] (**) Wacom Intuos3 6x8 Pen eraser: always reports core events
+[  4195.328] (**) Option "Device" "/dev/input/event4"
+[  4195.328] (**) Option "Type" "eraser"
+[  4195.328] (--) Wacom Intuos3 6x8 Pen eraser: maxX=40640 maxY=30480 maxZ=1023 resX=200000 resY=200000  tilt=enabled
+[  4195.338] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/0003:056A:00B1.0003/input/input15/event4"
+[  4195.338] (II) XINPUT: Adding extended input device "Wacom Intuos3 6x8 Pen eraser" (type: ERASER, id 13)
+[  4195.338] (**) Wacom Intuos3 6x8 Pen eraser: (accel) keeping acceleration scheme 1
+[  4195.338] (**) Wacom Intuos3 6x8 Pen eraser: (accel) acceleration profile 0
+[  4195.338] (**) Wacom Intuos3 6x8 Pen eraser: (accel) acceleration factor: 2.000
+[  4195.338] (**) Wacom Intuos3 6x8 Pen eraser: (accel) acceleration threshold: 4
+[  4195.338] (**) Wacom Intuos3 6x8 Pen cursor: Applying InputClass "evdev tablet catchall"
+[  4195.338] (**) Wacom Intuos3 6x8 Pen cursor: Applying InputClass "libinput tablet catchall"
+[  4195.338] (**) Wacom Intuos3 6x8 Pen cursor: Applying InputClass "Wacom USB tablet class"
+[  4195.338] (**) Wacom Intuos3 6x8 Pen cursor: Applying InputClass "Wacom tablet class"
+[  4195.338] (II) Using input driver 'wacom' for 'Wacom Intuos3 6x8 Pen cursor'
+[  4195.338] (**) Wacom Intuos3 6x8 Pen cursor: always reports core events
+[  4195.338] (**) Option "Device" "/dev/input/event4"
+[  4195.338] (**) Option "Type" "cursor"
+[  4195.346] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/0003:056A:00B1.0003/input/input15/event4"
+[  4195.346] (II) XINPUT: Adding extended input device "Wacom Intuos3 6x8 Pen cursor" (type: CURSOR, id 14)
+[  4195.346] (**) Wacom Intuos3 6x8 Pen cursor: (accel) keeping acceleration scheme 1
+[  4195.346] (**) Wacom Intuos3 6x8 Pen cursor: (accel) acceleration profile 0
+[  4195.346] (**) Wacom Intuos3 6x8 Pen cursor: (accel) acceleration factor: 2.000
+[  4195.346] (**) Wacom Intuos3 6x8 Pen cursor: (accel) acceleration threshold: 4
+[  4195.485] (II) UnloadModule: "wacom"
+[  4195.485] (II) UnloadModule: "wacom"
+[  4195.485] (II) evdev: ACPI Virtual Keyboard Device: Close
+[  4195.485] (II) UnloadModule: "evdev"
+[  4195.485] (II) UnloadModule: "wacom"
+[  4195.485] (II) UnloadModule: "wacom"
+[  4195.485] (II) evdev: Logitech USB Laser Mouse: Close
+[  4195.485] (II) UnloadModule: "evdev"
+[  4195.485] (II) evdev: CHICONY HP Basic USB Keyboard: Close
+[  4195.485] (II) UnloadModule: "evdev"
+[  4195.485] (II) evdev: Power Button: Close
+[  4195.485] (II) UnloadModule: "evdev"
+[  4195.485] (II) evdev: Power Button: Close
+[  4195.485] (II) UnloadModule: "evdev"
+[  4195.592] (II) NVIDIA(GPU-0): Deleting GPU-0
+[  4195.600] (II) Server terminated successfully (0). Closing log file.

@@ -1,0 +1,89 @@
+Name            : xf86-input-wacom
+Version         : 0.40.0-2
+Description     : X.Org Wacom tablet driver
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/xf86-input-wacom
+Licenses        : GPL
+Groups          : None
+Provides        : None
+Depends On      : libxi  libxinerama  libxrandr  systemd-libs
+Optional Deps   : None
+Required By     : kcm-wacomtablet
+Optional For    : None
+Conflicts With  : xorg-server<21.1.1  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 257.31 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Sun Nov  7 17:17:50 2021
+Install Date    : Wed Nov 10 22:37:36 2021
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : libwacom
+Version         : 1.12-1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/libwacom/wiki
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  systemd  libgudev
+Optional Deps   : None
+Required By     : libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 640.31 KiB
+Packager        : Antonio Rojas <arojas@archlinux.org>
+Build Date      : Thu Sep  2 16:45:28 2021
+Install Date    : Tue Sep  7 18:36:53 2021
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : libinput
+Version         : 1.19.3-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://www.freedesktop.org/wiki/Software/libinput/
+Licenses        : custom:X11
+Groups          : None
+Provides        : None
+Depends On      : mtdev  systemd  libevdev  libwacom
+Optional Deps   : gtk3: libinput debug-gui [installed]
+                  python-pyudev: libinput measure
+                  python-libevdev: libinput measure
+Required By     : detect-tablet-mode-git  qt5-base  qt6-base  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1362.07 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Mon Dec 13 18:16:47 2021
+Install Date    : Thu Dec 16 02:55:01 2021
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.2.0-2
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : custom:MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 95.51 KiB
+Packager        : Laurent Carlier <lordheavym@gmail.com>
+Build Date      : Sat Nov  6 10:10:10 2021
+Install Date    : Wed Nov 10 22:37:34 2021
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature

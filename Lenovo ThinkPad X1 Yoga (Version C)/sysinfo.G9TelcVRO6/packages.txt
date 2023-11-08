@@ -1,0 +1,38 @@
+
+Package: libwacom2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 57
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libwacom
+Version: 0.22-1
+Depends: libc6 (>= 2.8), libglib2.0-0 (>= 2.24.0), libgudev-1.0-0 (>= 146), libwacom-common (= 0.22-1)
+Recommends: libwacom-bin (= 0.22-1)
+Description: Wacom model feature query library
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
+
+
+Package: xserver-xorg-input-libinput
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 105
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.25.0-0ubuntu1
+Provides: xorg-driver-input
+Depends: libc6 (>= 2.7), libinput10 (>= 1.5.0), xorg-input-abi-24, xserver-xorg-core (>= 2:1.18.99.901)
+Description: X.Org X server -- libinput input driver
+ This package provides the driver for input devices using libinput library.
+ It can handle keyboards, mice and touchpads, and essentially replaces the
+ separate -evdev and -synaptics drivers.
+ .
+ This package is built from the X.org xf86-input-libinput driver module.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: https://www.x.org

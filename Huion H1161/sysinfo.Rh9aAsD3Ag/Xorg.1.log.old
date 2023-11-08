@@ -1,0 +1,805 @@
+[    17.463] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[    17.463] _XSERVTransMakeAllCOTSServerListeners: server already running
+[    17.467] (--) Log file renamed from "/var/log/Xorg.pid-2552.log" to "/var/log/Xorg.1.log"
+[    17.467] 
+X.Org X Server 1.20.13
+X Protocol Version 11, Revision 0
+[    17.467] Build Operating System: linux Ubuntu
+[    17.467] Current Operating System: Linux HOSTNAME 5.13.0-22-generic #22-Ubuntu SMP Fri Nov 5 13:21:36 UTC 2021 x86_64
+[    17.467] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.13.0-22-generic USERNAME=/dev/mapper/ubuntu--vg-USERNAME ro quiet splash vt.handoff=7
+[    17.467] Build Date: 10 August 2021  09:32:48AM
+[    17.467] xorg-server 2:1.20.13-1ubuntu1 (For technical support please see http://www.ubuntu.com/support) 
+[    17.467] Current version of pixman: 0.40.0
+[    17.467] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    17.467] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    17.467] (==) Log file: "/var/log/Xorg.1.log", Time: Wed Dec  8 01:10:01 2021
+[    17.467] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    17.467] (==) No Layout section.  Using the first Screen section.
+[    17.467] (==) No screen section available. Using defaults.
+[    17.467] (**) |-->Screen "Default Screen Section" (0)
+[    17.467] (**) |   |-->Monitor "<default monitor>"
+[    17.468] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    17.468] (==) Automatically adding devices
+[    17.468] (==) Automatically enabling devices
+[    17.468] (==) Automatically adding GPU devices
+[    17.468] (==) Automatically binding GPU devices
+[    17.468] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    17.468] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    17.468] 	Entry deleted from font path.
+[    17.468] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    17.468] 	Entry deleted from font path.
+[    17.468] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    17.468] 	Entry deleted from font path.
+[    17.468] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    17.468] 	Entry deleted from font path.
+[    17.468] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    17.468] 	Entry deleted from font path.
+[    17.468] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[    17.468] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    17.468] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    17.468] (II) Loader magic: 0x55ba5e06c020
+[    17.468] (II) Module ABI versions:
+[    17.468] 	X.Org ANSI C Emulation: 0.4
+[    17.468] 	X.Org Video Driver: 24.1
+[    17.468] 	X.Org XInput driver : 24.1
+[    17.468] 	X.Org Server Extension : 10.0
+[    17.474] (++) using VT number 2
+
+[    17.479] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_32
+[    17.479] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    17.480] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 15 paused 0
+[    17.481] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/x86_64-linux-gnu/nvidia/xorg,/usr/lib/xorg/modules"
+[    17.482] (--) PCI:*(1@0:0:0) 10de:1c03:1462:3283 rev 161, Mem @ 0xde000000/16777216, 0xc0000000/268435456, 0xd0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[    17.482] (II) LoadModule: "glx"
+[    17.482] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    17.483] (II) Module glx: vendor="X.Org Foundation"
+[    17.483] 	compiled for 1.20.13, module version = 1.0.0
+[    17.483] 	ABI class: X.Org Server Extension, version 10.0
+[    17.483] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[    17.483] 	loading driver: nvidia
+[    17.763] (==) Matched nvidia as autoconfigured driver 0
+[    17.763] (==) Matched nouveau as autoconfigured driver 1
+[    17.763] (==) Matched modesetting as autoconfigured driver 2
+[    17.763] (==) Matched fbdev as autoconfigured driver 3
+[    17.763] (==) Matched vesa as autoconfigured driver 4
+[    17.763] (==) Assigned the driver to the xf86ConfigLayout
+[    17.763] (II) LoadModule: "nvidia"
+[    17.764] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/nvidia_drv.so
+[    17.764] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    17.764] 	compiled for 1.6.99.901, module version = 1.0.0
+[    17.764] 	Module class: X.Org Video Driver
+[    17.764] (II) LoadModule: "nouveau"
+[    17.764] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[    17.764] (II) Module nouveau: vendor="X.Org Foundation"
+[    17.764] 	compiled for 1.20.13, module version = 1.0.17
+[    17.764] 	Module class: X.Org Video Driver
+[    17.764] 	ABI class: X.Org Video Driver, version 24.1
+[    17.764] (II) LoadModule: "modesetting"
+[    17.764] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    17.764] (II) Module modesetting: vendor="X.Org Foundation"
+[    17.764] 	compiled for 1.20.13, module version = 1.20.13
+[    17.764] 	Module class: X.Org Video Driver
+[    17.764] 	ABI class: X.Org Video Driver, version 24.1
+[    17.764] (II) LoadModule: "fbdev"
+[    17.764] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    17.764] (II) Module fbdev: vendor="X.Org Foundation"
+[    17.764] 	compiled for 1.20.13, module version = 0.5.0
+[    17.764] 	Module class: X.Org Video Driver
+[    17.764] 	ABI class: X.Org Video Driver, version 24.1
+[    17.764] (II) LoadModule: "vesa"
+[    17.764] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    17.765] (II) Module vesa: vendor="X.Org Foundation"
+[    17.765] 	compiled for 1.20.13, module version = 2.5.0
+[    17.765] 	Module class: X.Org Video Driver
+[    17.765] 	ABI class: X.Org Video Driver, version 24.1
+[    17.765] (II) NVIDIA dlloader X Driver  470.86  Tue Oct 26 21:53:29 UTC 2021
+[    17.765] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    17.765] (II) NOUVEAU driver Date:   Sat Jan 23 12:24:42 2021 -0500
+[    17.765] (II) NOUVEAU driver for NVIDIA chipset families :
+[    17.765] 	RIVA TNT            (NV04)
+[    17.765] 	RIVA TNT2           (NV05)
+[    17.765] 	GeForce 256         (NV10)
+[    17.765] 	GeForce 2           (NV11, NV15)
+[    17.765] 	GeForce 4MX         (NV17, NV18)
+[    17.765] 	GeForce 3           (NV20)
+[    17.765] 	GeForce 4Ti         (NV25, NV28)
+[    17.765] 	GeForce FX          (NV3x)
+[    17.765] 	GeForce 6           (NV4x)
+[    17.765] 	GeForce 7           (G7x)
+[    17.765] 	GeForce 8           (G8x)
+[    17.765] 	GeForce 9           (G9x)
+[    17.765] 	GeForce GTX 2xx/3xx (GT2xx)
+[    17.765] 	GeForce GTX 4xx/5xx (GFxxx)
+[    17.765] 	GeForce GTX 6xx/7xx (GKxxx)
+[    17.765] 	GeForce GTX 9xx     (GMxxx)
+[    17.765] 	GeForce GTX 10xx    (GPxxx)
+[    17.765] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    17.765] (II) FBDEV: driver for framebuffer: fbdev
+[    17.765] (II) VESA: driver for VESA chipsets: vesa
+[    17.765] (II) systemd-logind: releasing fd for 226:0
+[    17.766] (II) Loading sub module "fb"
+[    17.766] (II) LoadModule: "fb"
+[    17.766] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    17.766] (II) Module fb: vendor="X.Org Foundation"
+[    17.766] 	compiled for 1.20.13, module version = 1.0.0
+[    17.766] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    17.767] (II) Loading sub module "wfb"
+[    17.767] (II) LoadModule: "wfb"
+[    17.767] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[    17.767] (II) Module wfb: vendor="X.Org Foundation"
+[    17.767] 	compiled for 1.20.13, module version = 1.0.0
+[    17.767] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    17.767] (II) Loading sub module "ramdac"
+[    17.767] (II) LoadModule: "ramdac"
+[    17.767] (II) Module "ramdac" already built-in
+[    17.767] (WW) Falling back to old probe method for modesetting
+[    17.767] (WW) Falling back to old probe method for fbdev
+[    17.767] (II) Loading sub module "fbdevhw"
+[    17.767] (II) LoadModule: "fbdevhw"
+[    17.767] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    17.767] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    17.767] 	compiled for 1.20.13, module version = 0.0.2
+[    17.767] 	ABI class: X.Org Video Driver, version 24.1
+[    17.767] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    17.767] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[    17.767] (==) NVIDIA(0): RGB weight 888
+[    17.767] (==) NVIDIA(0): Default visual is TrueColor
+[    17.767] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    17.767] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[    17.767] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[    17.767] (**) NVIDIA(0): Enabling 2D acceleration
+[    17.767] (II) Loading sub module "glxserver_nvidia"
+[    17.767] (II) LoadModule: "glxserver_nvidia"
+[    17.767] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/libglxserver_nvidia.so
+[    17.773] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    17.773] 	compiled for 1.6.99.901, module version = 1.0.0
+[    17.773] 	Module class: X.Org Server Extension
+[    17.773] (II) NVIDIA GLX Module  470.86  Tue Oct 26 21:51:04 UTC 2021
+[    17.773] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    17.774] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[    17.774] (--) NVIDIA(0):     DFP-0 (boot)
+[    17.774] (--) NVIDIA(0):     DFP-1
+[    17.774] (--) NVIDIA(0):     DFP-2
+[    17.774] (--) NVIDIA(0):     DFP-3
+[    17.774] (--) NVIDIA(0):     DFP-4
+[    17.774] (--) NVIDIA(0):     DFP-5
+[    17.774] (--) NVIDIA(0):     DFP-6
+[    17.775] (II) NVIDIA(0): NVIDIA GPU NVIDIA GeForce GTX 1060 6GB (GP106-A) at PCI:1:0:0
+[    17.775] (II) NVIDIA(0):     (GPU-0)
+[    17.775] (--) NVIDIA(0): Memory: 6291456 kBytes
+[    17.775] (--) NVIDIA(0): VideoBIOS: 86.06.0e.00.a4
+[    17.775] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[    17.789] (--) NVIDIA(GPU-0): HP E241i (DFP-0): connected
+[    17.789] (--) NVIDIA(GPU-0): HP E241i (DFP-0): Internal TMDS
+[    17.789] (--) NVIDIA(GPU-0): HP E241i (DFP-0): 330.0 MHz maximum pixel clock
+[    17.789] (--) NVIDIA(GPU-0): 
+[    17.790] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    17.790] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    17.790] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    17.790] (--) NVIDIA(GPU-0): 
+[    17.833] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[    17.833] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[    17.833] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[    17.833] (--) NVIDIA(GPU-0): 
+[    17.834] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[    17.834] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[    17.834] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[    17.834] (--) NVIDIA(GPU-0): 
+[    17.836] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    17.836] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    17.836] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    17.836] (--) NVIDIA(GPU-0): 
+[    17.836] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    17.836] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    17.836] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[    17.836] (--) NVIDIA(GPU-0): 
+[    17.836] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    17.836] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    17.836] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    17.836] (--) NVIDIA(GPU-0): 
+[    17.844] (==) NVIDIA(0): 
+[    17.844] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[    17.844] (==) NVIDIA(0):     will be used as the requested mode.
+[    17.844] (==) NVIDIA(0): 
+[    17.844] (II) NVIDIA(0): Validated MetaModes:
+[    17.844] (II) NVIDIA(0):    
+[    17.844] (II) NVIDIA(0):     "DFP-0:nvidia-auto-select,DFP-2:nvidia-auto-select,DFP-3:nvidia-auto-select"
+[    17.844] (II) NVIDIA(0): Virtual screen size determined to be 5760 x 1200
+[    17.847] (--) NVIDIA(0): DPI set to (93, 95); computed from "UseEdidDpi" X config
+[    17.847] (--) NVIDIA(0):     option
+[    17.847] (II) UnloadModule: "nouveau"
+[    17.847] (II) Unloading nouveau
+[    17.847] (II) UnloadModule: "modesetting"
+[    17.847] (II) Unloading modesetting
+[    17.847] (II) UnloadModule: "fbdev"
+[    17.847] (II) Unloading fbdev
+[    17.847] (II) UnloadSubModule: "fbdevhw"
+[    17.847] (II) Unloading fbdevhw
+[    17.847] (II) UnloadModule: "vesa"
+[    17.847] (II) Unloading vesa
+[    17.848] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[    17.848] (II) NVIDIA:     access.
+[    17.865] (II) NVIDIA(0): Setting mode "DFP-0:nvidia-auto-select,DFP-2:nvidia-auto-select,DFP-3:nvidia-auto-select"
+[    17.988] (==) NVIDIA(0): Disabling shared memory pixmaps
+[    17.988] (==) NVIDIA(0): Backing store enabled
+[    17.988] (==) NVIDIA(0): Silken mouse enabled
+[    17.989] (==) NVIDIA(0): DPMS enabled
+[    17.989] (II) Loading sub module "dri2"
+[    17.989] (II) LoadModule: "dri2"
+[    17.989] (II) Module "dri2" already built-in
+[    17.989] (II) NVIDIA(0): [DRI2] Setup complete
+[    17.989] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[    17.989] (II) Initializing extension Generic Event Extension
+[    17.989] (II) Initializing extension SHAPE
+[    17.989] (II) Initializing extension MIT-SHM
+[    17.989] (II) Initializing extension XInputExtension
+[    17.989] (II) Initializing extension XTEST
+[    17.990] (II) Initializing extension BIG-REQUESTS
+[    17.990] (II) Initializing extension SYNC
+[    17.990] (II) Initializing extension XKEYBOARD
+[    17.990] (II) Initializing extension XC-MISC
+[    17.990] (II) Initializing extension SECURITY
+[    17.990] (II) Initializing extension XFIXES
+[    17.990] (II) Initializing extension RENDER
+[    17.990] (II) Initializing extension RANDR
+[    17.990] (II) Initializing extension COMPOSITE
+[    17.990] (II) Initializing extension DAMAGE
+[    17.990] (II) Initializing extension MIT-SCREEN-SAVER
+[    17.990] (II) Initializing extension DOUBLE-BUFFER
+[    17.991] (II) Initializing extension RECORD
+[    17.991] (II) Initializing extension DPMS
+[    17.991] (II) Initializing extension Present
+[    17.991] (II) Initializing extension DRI3
+[    17.991] (II) Initializing extension X-Resource
+[    17.991] (II) Initializing extension XVideo
+[    17.991] (II) Initializing extension XVideo-MotionCompensation
+[    17.991] (II) Initializing extension SELinux
+[    17.991] (II) SELinux: Disabled on system
+[    17.991] (II) Initializing extension GLX
+[    17.991] (II) Initializing extension GLX
+[    17.991] (II) Indirect GLX disabled.
+[    17.991] (II) GLX: Another vendor is already registered for screen 0
+[    17.991] (II) Initializing extension XFree86-VidModeExtension
+[    17.991] (II) Initializing extension XFree86-DGA
+[    17.991] (II) Initializing extension XFree86-DRI
+[    17.991] (II) Initializing extension DRI2
+[    17.991] (II) Initializing extension NV-GLX
+[    17.991] (II) Initializing extension NV-CONTROL
+[    17.991] (II) Initializing extension XINERAMA
+[    18.023] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    18.023] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    18.023] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    18.023] (II) LoadModule: "libinput"
+[    18.023] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    18.024] (II) Module libinput: vendor="X.Org Foundation"
+[    18.024] 	compiled for 1.20.13, module version = 1.1.0
+[    18.024] 	Module class: X.Org XInput Driver
+[    18.024] 	ABI class: X.Org XInput driver, version 24.1
+[    18.024] (II) Using input driver 'libinput' for 'Power Button'
+[    18.029] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 44 paused 0
+[    18.029] (**) Power Button: always reports core events
+[    18.029] (**) Option "Device" "/dev/input/event2"
+[    18.029] (**) Option "_source" "server/udev"
+[    18.030] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    18.030] (II) event2  - Power Button: device is a keyboard
+[    18.031] (II) event2  - Power Button: device removed
+[    18.031] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[    18.031] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    18.031] (**) Option "xkb_model" "pc105"
+[    18.031] (**) Option "xkb_layout" "pl"
+[    18.043] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    18.043] (II) event2  - Power Button: device is a keyboard
+[    18.044] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    18.044] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    18.044] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    18.044] (II) Using input driver 'libinput' for 'Power Button'
+[    18.047] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 47 paused 0
+[    18.047] (**) Power Button: always reports core events
+[    18.048] (**) Option "Device" "/dev/input/event1"
+[    18.048] (**) Option "_source" "server/udev"
+[    18.049] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    18.049] (II) event1  - Power Button: device is a keyboard
+[    18.049] (II) event1  - Power Button: device removed
+[    18.049] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    18.049] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    18.049] (**) Option "xkb_model" "pc105"
+[    18.049] (**) Option "xkb_layout" "pl"
+[    18.050] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    18.050] (II) event1  - Power Button: device is a keyboard
+[    18.051] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[    18.051] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[    18.051] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    18.051] (II) Using input driver 'libinput' for 'Sleep Button'
+[    18.051] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 48 paused 0
+[    18.051] (**) Sleep Button: always reports core events
+[    18.051] (**) Option "Device" "/dev/input/event0"
+[    18.051] (**) Option "_source" "server/udev"
+[    18.052] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[    18.052] (II) event0  - Sleep Button: device is a keyboard
+[    18.052] (II) event0  - Sleep Button: device removed
+[    18.052] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[    18.052] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[    18.052] (**) Option "xkb_model" "pc105"
+[    18.052] (**) Option "xkb_layout" "pl"
+[    18.052] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[    18.053] (II) event0  - Sleep Button: device is a keyboard
+[    18.053] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event3)
+[    18.053] (II) No input driver specified, ignoring this device.
+[    18.053] (II) This device may have been added with another device file.
+[    18.053] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event8)
+[    18.053] (II) No input driver specified, ignoring this device.
+[    18.053] (II) This device may have been added with another device file.
+[    18.054] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event9)
+[    18.054] (II) No input driver specified, ignoring this device.
+[    18.054] (II) This device may have been added with another device file.
+[    18.054] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event10)
+[    18.054] (II) No input driver specified, ignoring this device.
+[    18.054] (II) This device may have been added with another device file.
+[    18.054] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event11)
+[    18.054] (II) No input driver specified, ignoring this device.
+[    18.054] (II) This device may have been added with another device file.
+[    18.054] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event12)
+[    18.054] (II) No input driver specified, ignoring this device.
+[    18.054] (II) This device may have been added with another device file.
+[    18.055] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=12 (/dev/input/event13)
+[    18.055] (II) No input driver specified, ignoring this device.
+[    18.055] (II) This device may have been added with another device file.
+[    18.055] (II) config/udev: Adding input device Logitech MX Master (/dev/input/event5)
+[    18.056] (**) Logitech MX Master: Applying InputClass "evdev pointer catchall"
+[    18.056] (**) Logitech MX Master: Applying InputClass "evdev keyboard catchall"
+[    18.056] (**) Logitech MX Master: Applying InputClass "libinput pointer catchall"
+[    18.056] (**) Logitech MX Master: Applying InputClass "libinput keyboard catchall"
+[    18.056] (II) Using input driver 'libinput' for 'Logitech MX Master'
+[    18.057] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 49 paused 0
+[    18.057] (**) Logitech MX Master: always reports core events
+[    18.057] (**) Option "Device" "/dev/input/event5"
+[    18.057] (**) Option "_source" "server/udev"
+[    18.058] (II) event5  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[    18.058] (II) event5  - Logitech MX Master: device set to 1000 DPI
+[    18.058] (II) event5  - Logitech MX Master: device is a pointer
+[    18.058] (II) event5  - Logitech MX Master: device is a keyboard
+[    18.058] (II) event5  - Logitech MX Master: device removed
+[    18.058] (II) libinput: Logitech MX Master: needs a virtual subdevice
+[    18.058] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0005/0003:046D:4041.0007/input/input20/event5"
+[    18.058] (II) XINPUT: Adding extended input device "Logitech MX Master" (type: MOUSE, id 9)
+[    18.058] (**) Option "AccelerationScheme" "none"
+[    18.058] (**) Logitech MX Master: (accel) selected scheme none/0
+[    18.058] (**) Logitech MX Master: (accel) acceleration factor: 2.000
+[    18.058] (**) Logitech MX Master: (accel) acceleration threshold: 4
+[    18.059] (II) event5  - Logitech MX Master: is tagged by udev as: Keyboard Mouse
+[    18.059] (II) event5  - Logitech MX Master: device set to 1000 DPI
+[    18.059] (II) event5  - Logitech MX Master: device is a pointer
+[    18.059] (II) event5  - Logitech MX Master: device is a keyboard
+[    18.060] (II) config/udev: Adding input device Logitech MX Master (/dev/input/mouse2)
+[    18.060] (II) No input driver specified, ignoring this device.
+[    18.060] (II) This device may have been added with another device file.
+[    18.061] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event4)
+[    18.062] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[    18.062] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[    18.062] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[    18.062] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 50 paused 0
+[    18.062] (**) Logitech MX Keys: always reports core events
+[    18.062] (**) Option "Device" "/dev/input/event4"
+[    18.062] (**) Option "_source" "server/udev"
+[    18.064] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard
+[    18.064] (II) event4  - Logitech MX Keys: device is a keyboard
+[    18.064] (II) event4  - Logitech MX Keys: device removed
+[    18.064] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[    18.064] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0005/0003:046D:408A.0006/input/input19/event4"
+[    18.065] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 10)
+[    18.065] (**) Option "AccelerationScheme" "none"
+[    18.065] (**) Logitech MX Keys: (accel) selected scheme none/0
+[    18.065] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[    18.065] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[    18.066] (II) event4  - Logitech MX Keys: is tagged by udev as: Keyboard
+[    18.066] (II) event4  - Logitech MX Keys: device is a keyboard
+[    18.067] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse1)
+[    18.067] (II) No input driver specified, ignoring this device.
+[    18.067] (II) This device may have been added with another device file.
+[    18.067] (II) config/udev: Adding input device ov519 (/dev/input/event21)
+[    18.067] (**) ov519: Applying InputClass "evdev keyboard catchall"
+[    18.067] (**) ov519: Applying InputClass "libinput keyboard catchall"
+[    18.067] (II) Using input driver 'libinput' for 'ov519'
+[    18.068] (II) systemd-logind: got fd for /dev/input/event21 13:85 fd 51 paused 0
+[    18.068] (**) ov519: always reports core events
+[    18.068] (**) Option "Device" "/dev/input/event21"
+[    18.068] (**) Option "_source" "server/udev"
+[    18.068] (II) event21 - ov519: is tagged by udev as: Keyboard
+[    18.068] (II) event21 - ov519: device is a keyboard
+[    18.068] (II) event21 - ov519: device removed
+[    18.068] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-13/input/input38/event21"
+[    18.068] (II) XINPUT: Adding extended input device "ov519" (type: KEYBOARD, id 11)
+[    18.068] (**) Option "xkb_model" "pc105"
+[    18.068] (**) Option "xkb_layout" "pl"
+[    18.069] (II) event21 - ov519: is tagged by udev as: Keyboard
+[    18.069] (II) event21 - ov519: device is a keyboard
+[    18.070] (II) config/udev: Adding input device HUION Huion Tablet Pen (/dev/input/event6)
+[    18.070] (**) HUION Huion Tablet Pen: Applying InputClass "evdev tablet catchall"
+[    18.070] (**) HUION Huion Tablet Pen: Applying InputClass "libinput tablet catchall"
+[    18.070] (II) Using input driver 'libinput' for 'HUION Huion Tablet Pen'
+[    18.071] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 52 paused 0
+[    18.071] (**) HUION Huion Tablet Pen: always reports core events
+[    18.071] (**) Option "Device" "/dev/input/event6"
+[    18.071] (**) Option "_source" "server/udev"
+[    18.072] (II) event6  - HUION Huion Tablet Pen: is tagged by udev as: Tablet
+[    18.080] (II) event6  - HUION Huion Tablet Pen: tablet 'HUION Huion Tablet Pen' unknown to libwacom
+[    18.080] (II) event6  - HUION Huion Tablet Pen: device is a tablet
+[    18.080] (II) event6  - HUION Huion Tablet Pen: device removed
+[    18.080] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:256C:006D.0001/input/input21/event6"
+[    18.080] (II) XINPUT: Adding extended input device "HUION Huion Tablet Pen" (type: TABLET, id 12)
+[    18.081] (II) event6  - HUION Huion Tablet Pen: is tagged by udev as: Tablet
+[    18.082] (II) event6  - HUION Huion Tablet Pen: tablet 'HUION Huion Tablet Pen' unknown to libwacom
+[    18.082] (II) event6  - HUION Huion Tablet Pen: device is a tablet
+[    18.082] (II) config/udev: Adding input device HUION Huion Tablet Pen (/dev/input/mouse3)
+[    18.083] (II) No input driver specified, ignoring this device.
+[    18.083] (II) This device may have been added with another device file.
+[    18.083] (II) config/udev: Adding input device HUION Huion Tablet Pad (/dev/input/event7)
+[    18.083] (**) HUION Huion Tablet Pad: Applying InputClass "evdev tablet catchall"
+[    18.083] (**) HUION Huion Tablet Pad: Applying InputClass "libinput tablet catchall"
+[    18.083] (II) Using input driver 'libinput' for 'HUION Huion Tablet Pad'
+[    18.084] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 54 paused 0
+[    18.084] (**) HUION Huion Tablet Pad: always reports core events
+[    18.084] (**) Option "Device" "/dev/input/event7"
+[    18.084] (**) Option "_source" "server/udev"
+[    18.085] (II) event7  - HUION Huion Tablet Pad: is tagged by udev as: Tablet TabletPad
+[    18.086] (II) event7  - HUION Huion Tablet Pad: tablet 'HUION Huion Tablet Pad' unknown to libwacom
+[    18.086] (II) event7  - HUION Huion Tablet Pad: device is a tablet pad
+[    18.086] (II) event7  - HUION Huion Tablet Pad: device removed
+[    18.086] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:256C:006D.0001/input/input22/event7"
+[    18.086] (II) XINPUT: Adding extended input device "HUION Huion Tablet Pad" (type: PAD, id 13)
+[    18.086] (**) Option "AccelerationScheme" "none"
+[    18.086] (**) HUION Huion Tablet Pad: (accel) selected scheme none/0
+[    18.086] (**) HUION Huion Tablet Pad: (accel) acceleration factor: 2.000
+[    18.086] (**) HUION Huion Tablet Pad: (accel) acceleration threshold: 4
+[    18.087] (II) event7  - HUION Huion Tablet Pad: is tagged by udev as: Tablet TabletPad
+[    18.087] (II) event7  - HUION Huion Tablet Pad: tablet 'HUION Huion Tablet Pad' unknown to libwacom
+[    18.089] (II) event7  - HUION Huion Tablet Pad: device is a tablet pad
+[    18.089] (II) config/udev: Adding input device HUION Huion Tablet Pad (/dev/input/js0)
+[    18.089] (II) No input driver specified, ignoring this device.
+[    18.089] (II) This device may have been added with another device file.
+[    18.089] (II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event14)
+[    18.090] (II) No input driver specified, ignoring this device.
+[    18.090] (II) This device may have been added with another device file.
+[    18.090] (II) config/udev: Adding input device HDA Intel PCH Rear Mic (/dev/input/event15)
+[    18.090] (II) No input driver specified, ignoring this device.
+[    18.090] (II) This device may have been added with another device file.
+[    18.090] (II) config/udev: Adding input device HDA Intel PCH Line (/dev/input/event16)
+[    18.090] (II) No input driver specified, ignoring this device.
+[    18.090] (II) This device may have been added with another device file.
+[    18.090] (II) config/udev: Adding input device HDA Intel PCH Line Out Front (/dev/input/event17)
+[    18.090] (II) No input driver specified, ignoring this device.
+[    18.090] (II) This device may have been added with another device file.
+[    18.091] (II) config/udev: Adding input device HDA Intel PCH Line Out Surround (/dev/input/event18)
+[    18.091] (II) No input driver specified, ignoring this device.
+[    18.091] (II) This device may have been added with another device file.
+[    18.091] (II) config/udev: Adding input device HDA Intel PCH Line Out CLFE (/dev/input/event19)
+[    18.091] (II) No input driver specified, ignoring this device.
+[    18.091] (II) This device may have been added with another device file.
+[    18.091] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event20)
+[    18.091] (II) No input driver specified, ignoring this device.
+[    18.091] (II) This device may have been added with another device file.
+[    18.097] (**) Logitech MX Master: Applying InputClass "evdev pointer catchall"
+[    18.098] (**) Logitech MX Master: Applying InputClass "evdev keyboard catchall"
+[    18.098] (**) Logitech MX Master: Applying InputClass "libinput pointer catchall"
+[    18.098] (**) Logitech MX Master: Applying InputClass "libinput keyboard catchall"
+[    18.098] (II) Using input driver 'libinput' for 'Logitech MX Master'
+[    18.098] (II) systemd-logind: returning pre-existing fd for /dev/input/event5 13:69
+[    18.098] (**) Logitech MX Master: always reports core events
+[    18.098] (**) Option "Device" "/dev/input/event5"
+[    18.098] (**) Option "_source" "_driver/libinput"
+[    18.098] (II) libinput: Logitech MX Master: is a virtual subdevice
+[    18.098] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0005/0003:046D:4041.0007/input/input20/event5"
+[    18.098] (II) XINPUT: Adding extended input device "Logitech MX Master" (type: KEYBOARD, id 14)
+[    18.098] (**) Option "xkb_model" "pc105"
+[    18.098] (**) Option "xkb_layout" "pl"
+[    18.098] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[    18.098] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[    18.098] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[    18.098] (II) systemd-logind: returning pre-existing fd for /dev/input/event4 13:68
+[    18.098] (**) Logitech MX Keys: always reports core events
+[    18.098] (**) Option "Device" "/dev/input/event4"
+[    18.098] (**) Option "_source" "_driver/libinput"
+[    18.098] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[    18.098] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.2/0003:046D:C52B.0005/0003:046D:408A.0006/input/input19/event4"
+[    18.098] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 15)
+[    18.098] (**) Option "xkb_model" "pc105"
+[    18.098] (**) Option "xkb_layout" "pl"
+[    18.914] (--) NVIDIA(GPU-0): HP E241i (DFP-0): connected
+[    18.914] (--) NVIDIA(GPU-0): HP E241i (DFP-0): Internal TMDS
+[    18.914] (--) NVIDIA(GPU-0): HP E241i (DFP-0): 330.0 MHz maximum pixel clock
+[    18.914] (--) NVIDIA(GPU-0): 
+[    18.914] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    18.915] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    18.915] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    18.915] (--) NVIDIA(GPU-0): 
+[    18.958] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[    18.959] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[    18.959] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[    18.959] (--) NVIDIA(GPU-0): 
+[    18.959] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[    18.959] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[    18.959] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[    18.959] (--) NVIDIA(GPU-0): 
+[    18.961] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    18.961] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    18.962] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    18.962] (--) NVIDIA(GPU-0): 
+[    18.962] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    18.962] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    18.962] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[    18.962] (--) NVIDIA(GPU-0): 
+[    18.962] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    18.962] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    18.962] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    18.962] (--) NVIDIA(GPU-0): 
+[    20.997] (--) NVIDIA(GPU-0): HP E241i (DFP-0): connected
+[    20.997] (--) NVIDIA(GPU-0): HP E241i (DFP-0): Internal TMDS
+[    20.997] (--) NVIDIA(GPU-0): HP E241i (DFP-0): 330.0 MHz maximum pixel clock
+[    20.997] (--) NVIDIA(GPU-0): 
+[    20.997] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    20.997] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    20.997] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    20.997] (--) NVIDIA(GPU-0): 
+[    21.042] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[    21.042] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[    21.043] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[    21.043] (--) NVIDIA(GPU-0): 
+[    21.043] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[    21.043] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[    21.043] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[    21.043] (--) NVIDIA(GPU-0): 
+[    21.045] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    21.045] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    21.045] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    21.045] (--) NVIDIA(GPU-0): 
+[    21.045] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    21.045] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    21.045] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[    21.045] (--) NVIDIA(GPU-0): 
+[    21.045] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    21.045] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    21.045] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    21.045] (--) NVIDIA(GPU-0): 
+[    22.621] (--) NVIDIA(GPU-0): HP E241i (DFP-0): connected
+[    22.621] (--) NVIDIA(GPU-0): HP E241i (DFP-0): Internal TMDS
+[    22.621] (--) NVIDIA(GPU-0): HP E241i (DFP-0): 330.0 MHz maximum pixel clock
+[    22.621] (--) NVIDIA(GPU-0): 
+[    22.621] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    22.621] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    22.621] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    22.621] (--) NVIDIA(GPU-0): 
+[    22.666] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[    22.666] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[    22.666] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[    22.666] (--) NVIDIA(GPU-0): 
+[    22.666] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[    22.666] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[    22.666] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[    22.666] (--) NVIDIA(GPU-0): 
+[    22.668] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    22.668] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    22.668] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    22.668] (--) NVIDIA(GPU-0): 
+[    22.668] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    22.668] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    22.668] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[    22.668] (--) NVIDIA(GPU-0): 
+[    22.668] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    22.668] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    22.668] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    22.668] (--) NVIDIA(GPU-0): 
+[    23.750] (--) NVIDIA(GPU-0): HP E241i (DFP-0): connected
+[    23.750] (--) NVIDIA(GPU-0): HP E241i (DFP-0): Internal TMDS
+[    23.750] (--) NVIDIA(GPU-0): HP E241i (DFP-0): 330.0 MHz maximum pixel clock
+[    23.750] (--) NVIDIA(GPU-0): 
+[    23.750] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    23.750] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    23.750] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    23.750] (--) NVIDIA(GPU-0): 
+[    23.794] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[    23.794] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[    23.794] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[    23.794] (--) NVIDIA(GPU-0): 
+[    23.795] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[    23.795] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[    23.795] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[    23.795] (--) NVIDIA(GPU-0): 
+[    23.797] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    23.797] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    23.797] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    23.797] (--) NVIDIA(GPU-0): 
+[    23.797] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    23.797] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    23.797] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[    23.797] (--) NVIDIA(GPU-0): 
+[    23.797] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    23.797] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    23.797] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    23.797] (--) NVIDIA(GPU-0): 
+[    32.115] (--) NVIDIA(GPU-0): HP E241i (DFP-0): connected
+[    32.115] (--) NVIDIA(GPU-0): HP E241i (DFP-0): Internal TMDS
+[    32.115] (--) NVIDIA(GPU-0): HP E241i (DFP-0): 330.0 MHz maximum pixel clock
+[    32.115] (--) NVIDIA(GPU-0): 
+[    32.115] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    32.115] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    32.115] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    32.115] (--) NVIDIA(GPU-0): 
+[    32.159] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): connected
+[    32.159] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): Internal TMDS
+[    32.159] (--) NVIDIA(GPU-0): Idek Iiyama PLX2783H (DFP-2): 600.0 MHz maximum pixel clock
+[    32.159] (--) NVIDIA(GPU-0): 
+[    32.159] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): connected
+[    32.159] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): Internal DisplayPort
+[    32.159] (--) NVIDIA(GPU-0): HP LA2405x (DFP-3): 1440.0 MHz maximum pixel clock
+[    32.159] (--) NVIDIA(GPU-0): 
+[    32.161] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    32.161] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    32.161] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    32.161] (--) NVIDIA(GPU-0): 
+[    32.161] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    32.161] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    32.161] (--) NVIDIA(GPU-0): DFP-5: 1440.0 MHz maximum pixel clock
+[    32.161] (--) NVIDIA(GPU-0): 
+[    32.161] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    32.161] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    32.161] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    32.161] (--) NVIDIA(GPU-0): 
+[   100.818] (II) config/udev: removing device HUION Huion Tablet Pen
+[   100.818] (**) Option "fd" "52"
+[   100.818] (II) event6  - HUION Huion Tablet Pen: device removed
+[   100.818] (II) UnloadModule: "libinput"
+[   100.818] (II) systemd-logind: releasing fd for 13:70
+[   100.847] (II) config/udev: removing device HUION Huion Tablet Pad
+[   100.847] (**) Option "fd" "54"
+[   100.847] (II) event7  - HUION Huion Tablet Pad: device removed
+[   100.847] (II) UnloadModule: "libinput"
+[   100.847] (II) systemd-logind: releasing fd for 13:71
+[   104.139] (II) config/udev: Adding input device HUION Huion Tablet Pen (/dev/input/mouse0)
+[   104.139] (II) No input driver specified, ignoring this device.
+[   104.139] (II) This device may have been added with another device file.
+[   104.145] (II) config/udev: Adding input device HUION Huion Tablet Pad (/dev/input/js0)
+[   104.145] (II) No input driver specified, ignoring this device.
+[   104.145] (II) This device may have been added with another device file.
+[   104.200] (II) config/udev: Adding input device HUION Huion Tablet Pad (/dev/input/event7)
+[   104.200] (**) HUION Huion Tablet Pad: Applying InputClass "evdev tablet catchall"
+[   104.200] (**) HUION Huion Tablet Pad: Applying InputClass "libinput tablet catchall"
+[   104.200] (II) Using input driver 'libinput' for 'HUION Huion Tablet Pad'
+[   104.201] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 54 paused 0
+[   104.201] (**) HUION Huion Tablet Pad: always reports core events
+[   104.201] (**) Option "Device" "/dev/input/event7"
+[   104.201] (**) Option "_source" "server/udev"
+[   104.202] (II) event7  - HUION Huion Tablet Pad: is tagged by udev as: Tablet TabletPad
+[   104.217] (II) event7  - HUION Huion Tablet Pad: tablet 'HUION Huion Tablet Pad' unknown to libwacom
+[   104.227] (II) event7  - HUION Huion Tablet Pad: device is a tablet pad
+[   104.227] (II) event7  - HUION Huion Tablet Pad: device removed
+[   104.227] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:256C:006D.0008/input/input40/event7"
+[   104.227] (II) XINPUT: Adding extended input device "HUION Huion Tablet Pad" (type: PAD, id 12)
+[   104.227] (**) Option "AccelerationScheme" "none"
+[   104.228] (**) HUION Huion Tablet Pad: (accel) selected scheme none/0
+[   104.228] (**) HUION Huion Tablet Pad: (accel) acceleration factor: 2.000
+[   104.228] (**) HUION Huion Tablet Pad: (accel) acceleration threshold: 4
+[   104.229] (II) event7  - HUION Huion Tablet Pad: is tagged by udev as: Tablet TabletPad
+[   104.247] (II) event7  - HUION Huion Tablet Pad: tablet 'HUION Huion Tablet Pad' unknown to libwacom
+[   104.256] (II) event7  - HUION Huion Tablet Pad: device is a tablet pad
+[   104.258] (II) config/udev: Adding input device HUION Huion Tablet Pen (/dev/input/event6)
+[   104.258] (**) HUION Huion Tablet Pen: Applying InputClass "evdev tablet catchall"
+[   104.258] (**) HUION Huion Tablet Pen: Applying InputClass "libinput tablet catchall"
+[   104.258] (II) Using input driver 'libinput' for 'HUION Huion Tablet Pen'
+[   104.258] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 74 paused 0
+[   104.258] (**) HUION Huion Tablet Pen: always reports core events
+[   104.258] (**) Option "Device" "/dev/input/event6"
+[   104.258] (**) Option "_source" "server/udev"
+[   104.259] (II) event6  - HUION Huion Tablet Pen: is tagged by udev as: Tablet
+[   104.268] (II) event6  - HUION Huion Tablet Pen: tablet 'HUION Huion Tablet Pen' unknown to libwacom
+[   104.268] (II) event6  - HUION Huion Tablet Pen: device is a tablet
+[   104.268] (II) event6  - HUION Huion Tablet Pen: device removed
+[   104.268] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:256C:006D.0008/input/input39/event6"
+[   104.268] (II) XINPUT: Adding extended input device "HUION Huion Tablet Pen" (type: TABLET, id 13)
+[   104.269] (II) event6  - HUION Huion Tablet Pen: is tagged by udev as: Tablet
+[   104.269] (II) event6  - HUION Huion Tablet Pen: tablet 'HUION Huion Tablet Pen' unknown to libwacom
+[   104.269] (II) event6  - HUION Huion Tablet Pen: device is a tablet
+[   143.374] (II) config/udev: removing device HUION Huion Tablet Pen
+[   143.374] (**) Option "fd" "74"
+[   143.374] (II) event6  - HUION Huion Tablet Pen: device removed
+[   143.375] (II) UnloadModule: "libinput"
+[   143.375] (II) systemd-logind: releasing fd for 13:70
+[   143.390] (II) config/udev: removing device HUION Huion Tablet Pad
+[   143.391] (**) Option "fd" "54"
+[   143.391] (II) event7  - HUION Huion Tablet Pad: device removed
+[   143.391] (II) UnloadModule: "libinput"
+[   143.391] (II) systemd-logind: releasing fd for 13:71
+[   147.536] (II) config/udev: Adding input device HUION Huion Tablet Pen (/dev/input/mouse0)
+[   147.536] (II) No input driver specified, ignoring this device.
+[   147.536] (II) This device may have been added with another device file.
+[   147.545] (II) config/udev: Adding input device HUION Huion Tablet Pad (/dev/input/js0)
+[   147.545] (II) No input driver specified, ignoring this device.
+[   147.545] (II) This device may have been added with another device file.
+[   147.644] (II) config/udev: Adding input device HUION Huion Tablet Pad (/dev/input/event7)
+[   147.644] (**) HUION Huion Tablet Pad: Applying InputClass "evdev tablet catchall"
+[   147.644] (**) HUION Huion Tablet Pad: Applying InputClass "libinput tablet catchall"
+[   147.644] (II) Using input driver 'libinput' for 'HUION Huion Tablet Pad'
+[   147.701] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 54 paused 0
+[   147.701] (**) HUION Huion Tablet Pad: always reports core events
+[   147.701] (**) Option "Device" "/dev/input/event7"
+[   147.701] (**) Option "_source" "server/udev"
+[   147.702] (II) event7  - HUION Huion Tablet Pad: is tagged by udev as: Tablet TabletPad
+[   147.718] (II) event7  - HUION Huion Tablet Pad: tablet 'HUION Huion Tablet Pad' unknown to libwacom
+[   147.727] (II) event7  - HUION Huion Tablet Pad: device is a tablet pad
+[   147.727] (II) event7  - HUION Huion Tablet Pad: device removed
+[   147.727] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:256C:006D.000A/input/input43/event7"
+[   147.728] (II) XINPUT: Adding extended input device "HUION Huion Tablet Pad" (type: PAD, id 12)
+[   147.728] (**) Option "AccelerationScheme" "none"
+[   147.730] (**) HUION Huion Tablet Pad: (accel) selected scheme none/0
+[   147.730] (**) HUION Huion Tablet Pad: (accel) acceleration factor: 2.000
+[   147.730] (**) HUION Huion Tablet Pad: (accel) acceleration threshold: 4
+[   147.731] (II) event7  - HUION Huion Tablet Pad: is tagged by udev as: Tablet TabletPad
+[   147.748] (II) event7  - HUION Huion Tablet Pad: tablet 'HUION Huion Tablet Pad' unknown to libwacom
+[   147.757] (II) event7  - HUION Huion Tablet Pad: device is a tablet pad
+[   147.758] (II) config/udev: Adding input device HUION Huion Tablet Pen (/dev/input/event6)
+[   147.758] (**) HUION Huion Tablet Pen: Applying InputClass "evdev tablet catchall"
+[   147.758] (**) HUION Huion Tablet Pen: Applying InputClass "libinput tablet catchall"
+[   147.758] (II) Using input driver 'libinput' for 'HUION Huion Tablet Pen'
+[   147.758] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 57 paused 0
+[   147.758] (**) HUION Huion Tablet Pen: always reports core events
+[   147.758] (**) Option "Device" "/dev/input/event6"
+[   147.758] (**) Option "_source" "server/udev"
+[   147.759] (II) event6  - HUION Huion Tablet Pen: is tagged by udev as: Tablet
+[   147.768] (II) event6  - HUION Huion Tablet Pen: tablet 'HUION Huion Tablet Pen' unknown to libwacom
+[   147.768] (II) event6  - HUION Huion Tablet Pen: device is a tablet
+[   147.768] (II) event6  - HUION Huion Tablet Pen: device removed
+[   147.768] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:256C:006D.000A/input/input42/event6"
+[   147.768] (II) XINPUT: Adding extended input device "HUION Huion Tablet Pen" (type: TABLET, id 13)
+[   147.769] (II) event6  - HUION Huion Tablet Pen: is tagged by udev as: Tablet
+[   147.770] (II) event6  - HUION Huion Tablet Pen: tablet 'HUION Huion Tablet Pen' unknown to libwacom
+[   147.770] (II) event6  - HUION Huion Tablet Pen: device is a tablet
+[   173.917] (**) Option "fd" "44"
+[   173.917] (II) event2  - Power Button: device removed
+[   173.917] (**) Option "fd" "47"
+[   173.917] (II) event1  - Power Button: device removed
+[   173.917] (**) Option "fd" "48"
+[   173.917] (II) event0  - Sleep Button: device removed
+[   173.917] (**) Option "fd" "49"
+[   173.917] (**) Option "fd" "50"
+[   173.917] (**) Option "fd" "51"
+[   173.917] (II) event21 - ov519: device removed
+[   173.917] (**) Option "fd" "49"
+[   173.917] (II) event5  - Logitech MX Master: device removed
+[   173.917] (**) Option "fd" "50"
+[   173.917] (II) event4  - Logitech MX Keys: device removed
+[   173.917] (**) Option "fd" "54"
+[   173.917] (II) event7  - HUION Huion Tablet Pad: device removed
+[   173.917] (**) Option "fd" "57"
+[   173.917] (II) event6  - HUION Huion Tablet Pen: device removed
+[   173.918] (II) UnloadModule: "libinput"
+[   173.918] (II) systemd-logind: releasing fd for 13:70
+[   174.136] (II) UnloadModule: "libinput"
+[   174.136] (II) systemd-logind: releasing fd for 13:71
+[   174.160] (II) UnloadModule: "libinput"
+[   174.160] (II) systemd-logind: not releasing fd for 13:68, still in use
+[   174.161] (II) UnloadModule: "libinput"
+[   174.161] (II) systemd-logind: not releasing fd for 13:69, still in use
+[   174.161] (II) UnloadModule: "libinput"
+[   174.161] (II) systemd-logind: releasing fd for 13:85
+[   174.204] (II) UnloadModule: "libinput"
+[   174.205] (II) systemd-logind: releasing fd for 13:68
+[   174.205] (II) UnloadModule: "libinput"
+[   174.205] (II) systemd-logind: releasing fd for 13:69
+[   174.205] (II) UnloadModule: "libinput"
+[   174.206] (II) systemd-logind: releasing fd for 13:64
+[   174.206] (II) UnloadModule: "libinput"
+[   174.206] (II) systemd-logind: releasing fd for 13:65
+[   174.207] (II) UnloadModule: "libinput"
+[   174.207] (II) systemd-logind: releasing fd for 13:66
+[   174.488] (II) NVIDIA(GPU-0): Deleting GPU-0
+[   174.489] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[   174.489] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[   174.490] (II) Server terminated successfully (0). Closing log file.

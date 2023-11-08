@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>10</report_id>
+    <usage>digitizer_stylus<!-- Stylus (20h, application collection, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
+      <usage>digitizer_invert<!-- Invert (3Ch, momentary control) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>6</report_count>
+      <input>
+        <variable/>
+      </input>
+      <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
+      <report_size>1</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <unit_exponent>13</unit_exponent>
+      <unit>
+        <english_linear>
+          <inch>3</inch>
+        </english_linear>
+      </unit>
+      <logical_maximum>32767</logical_maximum>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>2048</physical_maximum>
+      <report_size>16</report_size>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>8191</logical_maximum>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <usage>digitizer_x_tilt<!-- X tilt (3Dh, dynamic value) --></usage>
+      <usage>digitizer_y_tilt<!-- Y tilt (3Eh, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
