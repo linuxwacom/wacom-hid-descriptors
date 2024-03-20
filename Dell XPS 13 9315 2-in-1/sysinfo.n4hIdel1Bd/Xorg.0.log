@@ -1,0 +1,638 @@
+[   542.352] 
+X.Org X Server 1.20.14
+X Protocol Version 11, Revision 0
+[   542.352] Build Operating System:  6.6.9-100.fc38.x86_64 
+[   542.352] Current Operating System: Linux HOSTNAME 6.7.9-200.fc39.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar  6 19:35:04 UTC 2024 x86_64
+[   542.352] Kernel command line: BOOT_IMAGE=(hd0,gpt2)/vmlinuz-6.7.9-200.fc39.x86_64 USERNAME=UUID=a2a93a87-4643-40a6-800a-32bdd0e65116 ro USERNAMEflags=subvol=USERNAME rhgb quiet
+[   542.352] Build Date: 19 January 2024  12:00:00AM
+[   542.352] Build ID: xorg-x11-server 1.20.14-30.fc39 
+[   542.352] Current version of pixman: 0.42.2
+[   542.352] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   542.352] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   542.352] (==) Log file: "/var/log/Xorg.0.log", Time: Wed Mar 20 15:25:00 2024
+[   542.352] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   542.352] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   542.352] (==) No Layout section.  Using the first Screen section.
+[   542.352] (==) No screen section available. Using defaults.
+[   542.352] (**) |-->Screen "Default Screen Section" (0)
+[   542.352] (**) |   |-->Monitor "<default monitor>"
+[   542.352] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   542.352] (==) Automatically adding devices
+[   542.352] (==) Automatically enabling devices
+[   542.352] (==) Automatically adding GPU devices
+[   542.352] (==) Automatically binding GPU devices
+[   542.352] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   542.352] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[   542.352] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[   542.352] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   542.352] (II) Loader magic: 0x55b789bb3a80
+[   542.352] (II) Module ABI versions:
+[   542.352] 	X.Org ANSI C Emulation: 0.4
+[   542.352] 	X.Org Video Driver: 24.1
+[   542.352] 	X.Org XInput driver : 24.1
+[   542.352] 	X.Org Server Extension : 10.0
+[   542.352] (++) using VT number 1
+
+[   542.353] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[   542.353] (II) xfree86: Adding drm device (/dev/dri/card1)
+[   542.358] (--) PCI:*(0@0:2:0) 8086:46aa:1028:0b34 rev 12, Mem @ 0x603d000000/16777216, 0x4000000000/268435456, I/O @ 0x00003000/64, BIOS @ 0x????????/131072
+[   542.358] (II) LoadModule: "glx"
+[   542.358] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[   542.359] (II) Module glx: vendor="X.Org Foundation"
+[   542.359] 	compiled for 1.20.14, module version = 1.0.0
+[   542.359] 	ABI class: X.Org Server Extension, version 10.0
+[   542.359] (==) Matched modesetting as autoconfigured driver 0
+[   542.359] (==) Matched fbdev as autoconfigured driver 1
+[   542.359] (==) Matched vesa as autoconfigured driver 2
+[   542.359] (==) Assigned the driver to the xf86ConfigLayout
+[   542.359] (II) LoadModule: "modesetting"
+[   542.359] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[   542.359] (II) Module modesetting: vendor="X.Org Foundation"
+[   542.359] 	compiled for 1.20.14, module version = 1.20.14
+[   542.359] 	Module class: X.Org Video Driver
+[   542.359] 	ABI class: X.Org Video Driver, version 24.1
+[   542.359] (II) LoadModule: "fbdev"
+[   542.359] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[   542.359] (II) Module fbdev: vendor="X.Org Foundation"
+[   542.359] 	compiled for 1.20.14, module version = 0.5.0
+[   542.359] 	Module class: X.Org Video Driver
+[   542.359] 	ABI class: X.Org Video Driver, version 24.1
+[   542.359] (II) LoadModule: "vesa"
+[   542.359] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[   542.359] (II) Module vesa: vendor="X.Org Foundation"
+[   542.359] 	compiled for 1.20.14, module version = 2.5.0
+[   542.359] 	Module class: X.Org Video Driver
+[   542.359] 	ABI class: X.Org Video Driver, version 24.1
+[   542.359] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[   542.359] (II) FBDEV: driver for framebuffer: fbdev
+[   542.359] (II) VESA: driver for VESA chipsets: vesa
+[   542.377] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[   542.391] (II) modeset(0): using drv /dev/dri/card1
+[   542.391] (WW) Falling back to old probe method for fbdev
+[   542.391] (II) Loading sub module "fbdevhw"
+[   542.391] (II) LoadModule: "fbdevhw"
+[   542.391] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[   542.391] (II) Module fbdevhw: vendor="X.Org Foundation"
+[   542.391] 	compiled for 1.20.14, module version = 0.0.2
+[   542.391] 	ABI class: X.Org Video Driver, version 24.1
+[   542.391] (EE) open /dev/fb0: No such file or directory
+[   542.391] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   542.391] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[   542.391] (==) modeset(0): RGB weight 888
+[   542.391] (==) modeset(0): Default visual is TrueColor
+[   542.391] (II) Loading sub module "glamoregl"
+[   542.391] (II) LoadModule: "glamoregl"
+[   542.391] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[   542.393] (II) Module glamoregl: vendor="X.Org Foundation"
+[   542.393] 	compiled for 1.20.14, module version = 1.0.1
+[   542.393] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   542.406] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) Graphics (ADL GT2)
+[   542.406] (II) modeset(0): glamor initialized
+[   542.409] (II) modeset(0): Output eDP-1 has no monitor section
+[   542.409] (II) modeset(0): Output DP-1 has no monitor section
+[   542.409] (II) modeset(0): Output HDMI-1 has no monitor section
+[   542.409] (II) modeset(0): Output DP-2 has no monitor section
+[   542.409] (II) modeset(0): Output HDMI-2 has no monitor section
+[   542.411] (II) modeset(0): EDID for output eDP-1
+[   542.411] (II) modeset(0): Manufacturer: BOE  Model: a4d  Serial#: 0
+[   542.411] (II) modeset(0): Year: 2021  Week: 11
+[   542.411] (II) modeset(0): EDID Version: 1.4
+[   542.411] (II) modeset(0): Digital Display Input
+[   542.411] (II) modeset(0): 10 bits per channel
+[   542.411] (II) modeset(0): Digital interface is DisplayPort
+[   542.411] (II) modeset(0): Max Image Size [cm]: horiz.: 27  vert.: 18
+[   542.411] (II) modeset(0): Gamma: 2.20
+[   542.411] (II) modeset(0): No DPMS capabilities specified
+[   542.411] (II) modeset(0): Supported color encodings: RGB 4:4:4 
+[   542.411] (II) modeset(0): Default color space is primary color space
+[   542.411] (II) modeset(0): First detailed timing is preferred mode
+[   542.412] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[   542.412] (II) modeset(0): Display is continuous-frequency
+[   542.412] (II) modeset(0): redX: 0.654 redY: 0.326   greenX: 0.291 greenY: 0.623
+[   542.412] (II) modeset(0): blueX: 0.147 blueY: 0.055   whiteX: 0.313 whiteY: 0.329
+[   542.412] (II) modeset(0): Manufacturer's mask: 0
+[   542.412] (II) modeset(0): Supported detailed timing:
+[   542.412] (II) modeset(0): clock: 368.7 MHz   Image Size:  273 x 182 mm
+[   542.412] (II) modeset(0): h_active: 2880  h_sync: 2928  h_sync_end 2960 h_blank_end 3100 h_border: 0
+[   542.412] (II) modeset(0): v_active: 1920  v_sync: 1923  v_sync_end 1929 v_blanking: 1982 v_border: 0
+[   542.412] (II) modeset(0): Ranges: V min: 48 V max: 60 Hz, H min: 119 H max: 119 kHz, PixClock max 375 MHz
+[   542.412] (II) modeset(0):  CMXFW€NE13A1M
+[   542.412] (II) modeset(0): Unknown vendor-specific block 0
+[   542.412] (II) modeset(0): Number of EDID sections to follow: 1
+[   542.412] (II) modeset(0): EDID (in hex):
+[   542.412] (II) modeset(0): 	00ffffffffffff0009e54d0a00000000
+[   542.412] (II) modeset(0): 	0b1f0104b51b127807aac5a7534a9f25
+[   542.412] (II) modeset(0): 	0e505400000001010101010101010101
+[   542.412] (II) modeset(0): 	010101010101029040dcb0803e703020
+[   542.412] (II) modeset(0): 	360011b61000001a000000fd00303c77
+[   542.412] (II) modeset(0): 	7725010a202020202020000000fe0043
+[   542.412] (II) modeset(0): 	4d584657804e45313341314d00000000
+[   542.412] (II) modeset(0): 	00024101b2000100000b010a202001a7
+[   542.412] (II) modeset(0): 	02030f00e3058000e60605016a6a3b00
+[   542.412] (II) modeset(0): 	00000000000000000000000000000000
+[   542.412] (II) modeset(0): 	00000000000000000000000000000000
+[   542.412] (II) modeset(0): 	00000000000000000000000000000000
+[   542.412] (II) modeset(0): 	00000000000000000000000000000000
+[   542.412] (II) modeset(0): 	00000000000000000000000000000000
+[   542.412] (II) modeset(0): 	00000000000000000000000000000000
+[   542.412] (II) modeset(0): 	00000000000000000000000000000083
+[   542.412] (II) modeset(0): Not using default mode "2880x1620" (bad mode clock/interlace/doublescan)
+[   542.412] (II) modeset(0): Not using default mode "2048x1152" (bad mode clock/interlace/doublescan)
+[   542.412] (II) modeset(0): Not using default mode "2560x1440" (bad mode clock/interlace/doublescan)
+[   542.412] (II) modeset(0): Not using default mode "2560x1440" (bad mode clock/interlace/doublescan)
+[   542.412] (II) modeset(0): Printing probed modes for output eDP-1
+[   542.412] (II) modeset(0): Modeline "2880x1920"x60.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
+[   542.412] (II) modeset(0): Modeline "2880x1620"x60.0  303.75  2880 2928 2960 3040  1620 1623 1628 1666 +hsync -vsync (99.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "2560x1600"x60.0  348.50  2560 2760 3032 3504  1600 1603 1609 1658 -hsync +vsync (99.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "2560x1600"x60.0  268.50  2560 2608 2640 2720  1600 1603 1609 1646 +hsync -vsync (98.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "2560x1440"x60.0  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync (89.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "2560x1440"x60.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "2048x1536"x60.0  266.95  2048 2200 2424 2800  1536 1537 1540 1589 -hsync +vsync (95.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1440"x60.0  234.00  1920 2048 2256 2600  1440 1441 1444 1500 -hsync +vsync (90.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1856x1392"x60.0  218.30  1856 1952 2176 2528  1392 1393 1396 1439 -hsync +vsync (86.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "1792x1344"x60.0  204.80  1792 1920 2120 2448  1344 1345 1348 1394 -hsync +vsync (83.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "2048x1152"x60.0  302.50  2048 2072 2088 2128  1152 1153 1156 1185 doublescan +hsync -vsync (142.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "2048x1152"x59.9  197.00  2048 2184 2400 2752  1152 1155 1160 1195 -hsync +vsync (71.6 kHz d)
+[   542.412] (II) modeset(0): Modeline "2048x1152"x59.9  156.75  2048 2096 2128 2208  1152 1155 1160 1185 +hsync -vsync (71.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1200"x59.9  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1080"x60.0  356.38  1920 2080 2288 2656  1080 1081 1084 1118 doublescan -hsync +vsync (134.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1080"x60.0  266.50  1920 1944 1960 2000  1080 1081 1084 1111 doublescan +hsync -vsync (133.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[   542.412] (II) modeset(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "1600x900"x60.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "1600x900"x59.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1440x810"x60.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "1440x810"x60.0  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x800"x60.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x800"x60.0  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x720"x60.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x720"x60.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "1024x768"x60.0  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x720"x60.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "928x696"x60.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "896x672"x60.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "1024x576"x60.0   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[   542.412] (II) modeset(0): Modeline "1024x576"x60.0   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x600"x59.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x600"x60.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x540"x60.0   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x540"x60.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "800x600"x60.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "840x525"x60.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "840x525"x59.9   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "700x525"x60.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "800x450"x59.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "800x450"x59.8   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x512"x60.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "700x450"x60.0   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "700x450"x59.9   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x480"x60.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[   542.412] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "684x384"x59.9   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "684x384"x59.9   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x400"x59.9   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x400"x60.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x360"x59.9   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x360"x59.8   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "512x384"x60.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[   542.412] (II) modeset(0): Modeline "512x288"x60.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "512x288"x59.9   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "480x270"x59.6   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "480x270"x59.8   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "400x300"x60.3   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[   542.412] (II) modeset(0): Modeline "400x300"x56.3   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[   542.412] (II) modeset(0): Modeline "432x243"x59.9   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[   542.412] (II) modeset(0): Modeline "432x243"x59.6   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[   542.412] (II) modeset(0): Modeline "320x240"x60.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "360x202"x59.5   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[   542.412] (II) modeset(0): Modeline "360x202"x59.1   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[   542.412] (II) modeset(0): Modeline "320x180"x59.8    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[   542.412] (II) modeset(0): Modeline "320x180"x59.3    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[   542.412] (II) modeset(0): EDID for output DP-1
+[   542.412] (II) modeset(0): EDID for output HDMI-1
+[   542.412] (II) modeset(0): EDID for output DP-2
+[   542.412] (II) modeset(0): EDID for output HDMI-2
+[   542.412] (II) modeset(0): Output eDP-1 connected
+[   542.412] (II) modeset(0): Output DP-1 disconnected
+[   542.412] (II) modeset(0): Output HDMI-1 disconnected
+[   542.412] (II) modeset(0): Output DP-2 disconnected
+[   542.412] (II) modeset(0): Output HDMI-2 disconnected
+[   542.412] (II) modeset(0): Using exact sizes for initial modes
+[   542.412] (II) modeset(0): Output eDP-1 using initial mode 2880x1920 +0+0
+[   542.412] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[   542.412] (==) modeset(0): DPI set to (96, 96)
+[   542.412] (II) Loading sub module "fb"
+[   542.412] (II) LoadModule: "fb"
+[   542.412] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[   542.412] (II) Module fb: vendor="X.Org Foundation"
+[   542.412] 	compiled for 1.20.14, module version = 1.0.0
+[   542.412] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   542.412] (II) UnloadModule: "fbdev"
+[   542.412] (II) Unloading fbdev
+[   542.412] (II) UnloadSubModule: "fbdevhw"
+[   542.413] (II) Unloading fbdevhw
+[   542.413] (II) UnloadModule: "vesa"
+[   542.413] (II) Unloading vesa
+[   542.419] (==) modeset(0): Backing store enabled
+[   542.419] (==) modeset(0): Silken mouse enabled
+[   542.492] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[   542.492] (==) modeset(0): DPMS enabled
+[   542.492] (II) modeset(0): [DRI2] Setup complete
+[   542.492] (II) modeset(0): [DRI2]   DRI driver: iris
+[   542.492] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[   542.492] (II) Initializing extension Generic Event Extension
+[   542.492] (II) Initializing extension SHAPE
+[   542.493] (II) Initializing extension MIT-SHM
+[   542.493] (II) Initializing extension XInputExtension
+[   542.493] (II) Initializing extension XTEST
+[   542.493] (II) Initializing extension BIG-REQUESTS
+[   542.493] (II) Initializing extension SYNC
+[   542.494] (II) Initializing extension XKEYBOARD
+[   542.494] (II) Initializing extension XC-MISC
+[   542.494] (II) Initializing extension SECURITY
+[   542.494] (II) Initializing extension XFIXES
+[   542.494] (II) Initializing extension RENDER
+[   542.494] (II) Initializing extension RANDR
+[   542.495] (II) Initializing extension COMPOSITE
+[   542.495] (II) Initializing extension DAMAGE
+[   542.495] (II) Initializing extension MIT-SCREEN-SAVER
+[   542.495] (II) Initializing extension DOUBLE-BUFFER
+[   542.495] (II) Initializing extension RECORD
+[   542.495] (II) Initializing extension DPMS
+[   542.496] (II) Initializing extension Present
+[   542.496] (II) Initializing extension DRI3
+[   542.496] (II) Initializing extension X-Resource
+[   542.496] (II) Initializing extension XVideo
+[   542.496] (II) Initializing extension XVideo-MotionCompensation
+[   542.496] (II) Initializing extension SELinux
+[   542.496] (II) SELinux: Disabled by boolean
+[   542.496] (II) Initializing extension GLX
+[   542.499] (II) AIGLX: Loaded and initialized iris
+[   542.499] (II) GLX: Initialized DRI2 GL provider for screen 0
+[   542.499] (II) Initializing extension XFree86-VidModeExtension
+[   542.499] (II) Initializing extension XFree86-DGA
+[   542.499] (II) Initializing extension DRI2
+[   542.499] (II) modeset(0): Damage tracking initialized
+[   542.499] (II) modeset(0): Setting screen physical size to 762 x 508
+[   542.521] (II) config/udev: Adding input device Video Bus (/dev/input/event7)
+[   542.521] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[   542.521] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   542.521] (**) Video Bus: Applying InputClass "system-keyboard"
+[   542.521] (II) LoadModule: "libinput"
+[   542.521] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[   542.521] (II) Module libinput: vendor="X.Org Foundation"
+[   542.521] 	compiled for 1.20.14, module version = 1.4.0
+[   542.521] 	Module class: X.Org XInput Driver
+[   542.521] 	ABI class: X.Org XInput driver, version 24.1
+[   542.521] (II) Using input driver 'libinput' for 'Video Bus'
+[   542.521] (**) Video Bus: always reports core events
+[   542.521] (**) Option "Device" "/dev/input/event7"
+[   542.522] (II) event7  - Video Bus: is tagged by udev as: Keyboard
+[   542.523] (II) event7  - Video Bus: device is a keyboard
+[   542.523] (II) event7  - Video Bus: device removed
+[   542.543] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input17/event7"
+[   542.543] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[   542.543] (**) Option "xkb_model" "pc105"
+[   542.543] (**) Option "xkb_layout" "us"
+[   542.543] (II) event7  - Video Bus: is tagged by udev as: Keyboard
+[   542.544] (II) event7  - Video Bus: device is a keyboard
+[   542.544] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   542.544] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[   542.544] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   542.544] (**) Power Button: Applying InputClass "system-keyboard"
+[   542.544] (II) Using input driver 'libinput' for 'Power Button'
+[   542.544] (**) Power Button: always reports core events
+[   542.544] (**) Option "Device" "/dev/input/event1"
+[   542.544] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   542.544] (II) event1  - Power Button: device is a keyboard
+[   542.544] (II) event1  - Power Button: device removed
+[   542.550] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[   542.550] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[   542.550] (**) Option "xkb_model" "pc105"
+[   542.550] (**) Option "xkb_layout" "us"
+[   542.550] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   542.550] (II) event1  - Power Button: device is a keyboard
+[   542.551] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   542.551] (II) No input driver specified, ignoring this device.
+[   542.551] (II) This device may have been added with another device file.
+[   542.552] (II) config/udev: Adding input device Cirque Cirque Millienno 1033 0016 Mouse (/dev/input/event3)
+[   542.552] (**) Cirque Cirque Millienno 1033 0016 Mouse: Applying InputClass "evdev pointer catchall"
+[   542.552] (**) Cirque Cirque Millienno 1033 0016 Mouse: Applying InputClass "libinput pointer catchall"
+[   542.552] (II) Using input driver 'libinput' for 'Cirque Cirque Millienno 1033 0016 Mouse'
+[   542.552] (**) Cirque Cirque Millienno 1033 0016 Mouse: always reports core events
+[   542.552] (**) Option "Device" "/dev/input/event3"
+[   542.606] (II) event3  - Cirque Cirque Millienno 1033 0016 Mouse: is tagged by udev as: Mouse
+[   542.606] (II) event3  - Cirque Cirque Millienno 1033 0016 Mouse: device is a pointer
+[   542.607] (II) event3  - Cirque Cirque Millienno 1033 0016 Mouse: device removed
+[   542.621] (II) libinput: Cirque Cirque Millienno 1033 0016 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   542.621] (II) libinput: Cirque Cirque Millienno 1033 0016 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   542.621] (II) libinput: Cirque Cirque Millienno 1033 0016 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   542.621] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/0003:0488:1035.0001/input/input6/event3"
+[   542.621] (II) XINPUT: Adding extended input device "Cirque Cirque Millienno 1033 0016 Mouse" (type: MOUSE, id 8)
+[   542.621] (**) Option "AccelerationScheme" "none"
+[   542.621] (**) Cirque Cirque Millienno 1033 0016 Mouse: (accel) selected scheme none/0
+[   542.621] (**) Cirque Cirque Millienno 1033 0016 Mouse: (accel) acceleration factor: 2.000
+[   542.621] (**) Cirque Cirque Millienno 1033 0016 Mouse: (accel) acceleration threshold: 4
+[   542.676] (II) event3  - Cirque Cirque Millienno 1033 0016 Mouse: is tagged by udev as: Mouse
+[   542.677] (II) event3  - Cirque Cirque Millienno 1033 0016 Mouse: device is a pointer
+[   542.678] (II) config/udev: Adding input device Cirque Cirque Millienno 1033 0016 Mouse (/dev/input/mouse0)
+[   542.678] (II) No input driver specified, ignoring this device.
+[   542.678] (II) This device may have been added with another device file.
+[   542.679] (II) config/udev: Adding input device Cirque Cirque Millienno 1033 0016 Touchpad (/dev/input/event4)
+[   542.679] (**) Cirque Cirque Millienno 1033 0016 Touchpad: Applying InputClass "evdev touchpad catchall"
+[   542.679] (**) Cirque Cirque Millienno 1033 0016 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   542.679] (II) Using input driver 'libinput' for 'Cirque Cirque Millienno 1033 0016 Touchpad'
+[   542.679] (**) Cirque Cirque Millienno 1033 0016 Touchpad: always reports core events
+[   542.679] (**) Option "Device" "/dev/input/event4"
+[   542.680] (II) event4  - Cirque Cirque Millienno 1033 0016 Touchpad: is tagged by udev as: Touchpad
+[   542.681] (II) event4  - Cirque Cirque Millienno 1033 0016 Touchpad: device is a touchpad
+[   542.681] (II) event4  - Cirque Cirque Millienno 1033 0016 Touchpad: device removed
+[   542.695] (II) libinput: Cirque Cirque Millienno 1033 0016 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   542.695] (II) libinput: Cirque Cirque Millienno 1033 0016 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   542.695] (II) libinput: Cirque Cirque Millienno 1033 0016 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   542.696] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4:1.0/0003:0488:1035.0001/input/input7/event4"
+[   542.696] (II) XINPUT: Adding extended input device "Cirque Cirque Millienno 1033 0016 Touchpad" (type: TOUCHPAD, id 9)
+[   542.698] (**) Option "AccelerationScheme" "none"
+[   542.698] (**) Cirque Cirque Millienno 1033 0016 Touchpad: (accel) selected scheme none/0
+[   542.698] (**) Cirque Cirque Millienno 1033 0016 Touchpad: (accel) acceleration factor: 2.000
+[   542.698] (**) Cirque Cirque Millienno 1033 0016 Touchpad: (accel) acceleration threshold: 4
+[   542.700] (II) event4  - Cirque Cirque Millienno 1033 0016 Touchpad: is tagged by udev as: Touchpad
+[   542.702] (II) event4  - Cirque Cirque Millienno 1033 0016 Touchpad: device is a touchpad
+[   542.703] (II) config/udev: Adding input device Cirque Cirque Millienno 1033 0016 Touchpad (/dev/input/mouse1)
+[   542.703] (II) No input driver specified, ignoring this device.
+[   542.703] (II) This device may have been added with another device file.
+[   542.703] (II) config/udev: Adding input device Wacom HID 49BC Pen (/dev/input/event5)
+[   542.703] (**) Wacom HID 49BC Pen: Applying InputClass "evdev tablet catchall"
+[   542.703] (**) Wacom HID 49BC Pen: Applying InputClass "libinput tablet catchall"
+[   542.703] (**) Wacom HID 49BC Pen: Applying InputClass "Wacom USB tablet class"
+[   542.703] (**) Wacom HID 49BC Pen: Applying InputClass "Wacom tablet class"
+[   542.703] (II) LoadModule: "wacom"
+[   542.703] (II) Loading /usr/lib64/xorg/modules/input/wacom_drv.so
+[   542.703] (II) Module wacom: vendor="X.Org Foundation"
+[   542.703] 	compiled for 1.20.14, module version = 1.2.0
+[   542.703] 	Module class: X.Org XInput Driver
+[   542.703] 	ABI class: X.Org XInput driver, version 24.1
+[   542.703] (II) Build version: 1.2.0
+[   542.703] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[   542.704] (II) Using input driver 'wacom' for 'Wacom HID 49BC Pen'
+[   542.704] (**) Wacom HID 49BC Pen: always reports core events
+[   542.704] (**) Option "Device" "/dev/input/event5"
+[   542.704] (II) wacom: Wacom HID 49BC Pen: type not specified, assuming 'stylus'.
+[   542.704] (II) wacom: Wacom HID 49BC Pen: other types will be automatically added.
+[   542.705] (--) wacom: Wacom HID 49BC Pen stylus: using pressure threshold of 851 for button 1
+[   542.705] (**) wacom: Wacom HID 49BC Pen stylus: panscroll is 0
+[   542.705] (**) wacom: Wacom HID 49BC Pen stylus: panscroll modified to 1300
+[   542.705] (--) wacom: Wacom HID 49BC Pen stylus: maxX=27389 maxY=18259 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[   542.705] (II) wacom: Wacom HID 49BC Pen stylus: hotplugging dependent devices.
+[   542.705] (II) wacom: Wacom HID 49BC Pen stylus: hotplugging completed.
+[   542.719] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:19.0/i2c_designware.3/i2c-3/i2c-WACF3233:00/0018:056A:49BC.0002/input/input14/event5"
+[   542.719] (II) XINPUT: Adding extended input device "Wacom HID 49BC Pen stylus" (type: STYLUS, id 10)
+[   542.719] (**) Wacom HID 49BC Pen stylus: (accel) keeping acceleration scheme 1
+[   542.719] (**) Wacom HID 49BC Pen stylus: (accel) acceleration profile 0
+[   542.719] (**) Wacom HID 49BC Pen stylus: (accel) acceleration factor: 2.000
+[   542.719] (**) Wacom HID 49BC Pen stylus: (accel) acceleration threshold: 4
+[   542.720] (II) config/udev: Adding input device Wacom HID 49BC Pen (/dev/input/mouse2)
+[   542.720] (II) No input driver specified, ignoring this device.
+[   542.720] (II) This device may have been added with another device file.
+[   542.721] (II) config/udev: Adding input device Wacom HID 49BC Finger (/dev/input/event6)
+[   542.721] (**) Wacom HID 49BC Finger: Applying InputClass "evdev touchscreen catchall"
+[   542.721] (**) Wacom HID 49BC Finger: Applying InputClass "libinput touchscreen catchall"
+[   542.721] (**) Wacom HID 49BC Finger: Applying InputClass "Wacom USB touchscreen class"
+[   542.721] (**) Wacom HID 49BC Finger: Applying InputClass "Wacom touchscreen class"
+[   542.721] (II) Using input driver 'wacom' for 'Wacom HID 49BC Finger'
+[   542.721] (**) Wacom HID 49BC Finger: always reports core events
+[   542.721] (**) Option "Device" "/dev/input/event6"
+[   542.721] (II) wacom: Wacom HID 49BC Finger: type not specified, assuming 'touch'.
+[   542.721] (II) wacom: Wacom HID 49BC Finger: other types will be automatically added.
+[   542.721] (**) wacom: Wacom HID 49BC Finger touch: panscroll is 0
+[   542.721] (**) wacom: Wacom HID 49BC Finger touch: panscroll modified to 13
+[   542.721] (--) wacom: Wacom HID 49BC Finger touch: maxX=10956 maxY=7304 maxZ=0 resX=40000 resY=40000 
+[   542.721] (II) wacom: Wacom HID 49BC Finger touch: hotplugging dependent devices.
+[   542.721] (II) wacom: Wacom HID 49BC Finger touch: hotplugging completed.
+[   542.733] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:19.0/i2c_designware.3/i2c-3/i2c-WACF3233:00/0018:056A:49BC.0002/input/input15/event6"
+[   542.733] (II) XINPUT: Adding extended input device "Wacom HID 49BC Finger touch" (type: TOUCH, id 11)
+[   542.733] (**) Wacom HID 49BC Finger touch: (accel) keeping acceleration scheme 1
+[   542.733] (**) Wacom HID 49BC Finger touch: (accel) acceleration profile 0
+[   542.733] (**) Wacom HID 49BC Finger touch: (accel) acceleration factor: 2.000
+[   542.733] (**) Wacom HID 49BC Finger touch: (accel) acceleration threshold: 4
+[   542.734] (II) config/udev: Adding input device Wacom HID 49BC Finger (/dev/input/mouse3)
+[   542.734] (II) No input driver specified, ignoring this device.
+[   542.734] (II) This device may have been added with another device file.
+[   542.735] (II) config/udev: Adding input device sof-soundwire HDMI/DP,pcm=5 (/dev/input/event13)
+[   542.735] (II) No input driver specified, ignoring this device.
+[   542.735] (II) This device may have been added with another device file.
+[   542.735] (II) config/udev: Adding input device sof-soundwire HDMI/DP,pcm=6 (/dev/input/event14)
+[   542.735] (II) No input driver specified, ignoring this device.
+[   542.735] (II) This device may have been added with another device file.
+[   542.736] (II) config/udev: Adding input device sof-soundwire HDMI/DP,pcm=7 (/dev/input/event15)
+[   542.736] (II) No input driver specified, ignoring this device.
+[   542.736] (II) This device may have been added with another device file.
+[   542.736] (II) config/udev: Adding input device Intel HID events (/dev/input/event8)
+[   542.736] (**) Intel HID events: Applying InputClass "evdev keyboard catchall"
+[   542.736] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[   542.736] (**) Intel HID events: Applying InputClass "system-keyboard"
+[   542.736] (II) Using input driver 'libinput' for 'Intel HID events'
+[   542.736] (**) Intel HID events: always reports core events
+[   542.736] (**) Option "Device" "/dev/input/event8"
+[   542.737] (II) event8  - Intel HID events: is tagged by udev as: Keyboard
+[   542.737] (II) event8  - Intel HID events: device is a keyboard
+[   542.737] (II) event8  - Intel HID events: device removed
+[   542.743] (**) Option "config_info" "udev:/sys/devices/platform/INTC1070:00/input/input18/event8"
+[   542.743] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 12)
+[   542.743] (**) Option "xkb_model" "pc105"
+[   542.743] (**) Option "xkb_layout" "us"
+[   542.744] (II) event8  - Intel HID events: is tagged by udev as: Keyboard
+[   542.744] (II) event8  - Intel HID events: device is a keyboard
+[   542.745] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event9)
+[   542.745] (**) Intel HID 5 button array: Applying InputClass "evdev keyboard catchall"
+[   542.745] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[   542.745] (**) Intel HID 5 button array: Applying InputClass "system-keyboard"
+[   542.745] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[   542.745] (**) Intel HID 5 button array: always reports core events
+[   542.745] (**) Option "Device" "/dev/input/event9"
+[   542.745] (II) event9  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   542.746] (II) event9  - Intel HID 5 button array: device is a keyboard
+[   542.746] (II) event9  - Intel HID 5 button array: device removed
+[   542.752] (**) Option "config_info" "udev:/sys/devices/platform/INTC1070:00/input/input19/event9"
+[   542.752] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 13)
+[   542.752] (**) Option "xkb_model" "pc105"
+[   542.752] (**) Option "xkb_layout" "us"
+[   542.753] (II) event9  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   542.753] (II) event9  - Intel HID 5 button array: device is a keyboard
+[   542.754] (II) config/udev: Adding input device Intel HID switches (/dev/input/event16)
+[   542.754] (II) No input driver specified, ignoring this device.
+[   542.754] (II) This device may have been added with another device file.
+[   542.754] (II) config/udev: Adding input device Dell Privacy Driver (/dev/input/event11)
+[   542.754] (**) Dell Privacy Driver: Applying InputClass "evdev keyboard catchall"
+[   542.754] (**) Dell Privacy Driver: Applying InputClass "libinput keyboard catchall"
+[   542.754] (**) Dell Privacy Driver: Applying InputClass "system-keyboard"
+[   542.754] (II) Using input driver 'libinput' for 'Dell Privacy Driver'
+[   542.754] (**) Dell Privacy Driver: always reports core events
+[   542.754] (**) Option "Device" "/dev/input/event11"
+[   542.755] (II) event11 - Dell Privacy Driver: is tagged by udev as: Keyboard
+[   542.755] (II) event11 - Dell Privacy Driver: device is a keyboard
+[   542.755] (II) event11 - Dell Privacy Driver: device removed
+[   542.767] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:02/wmi_bus/wmi_bus-PNP0C14:02/6932965F-1671-4CEB-B988-D3AB0A901919/input/input21/event11"
+[   542.767] (II) XINPUT: Adding extended input device "Dell Privacy Driver" (type: KEYBOARD, id 14)
+[   542.767] (**) Option "xkb_model" "pc105"
+[   542.767] (**) Option "xkb_layout" "us"
+[   542.769] (II) event11 - Dell Privacy Driver: is tagged by udev as: Keyboard
+[   542.769] (II) event11 - Dell Privacy Driver: device is a keyboard
+[   542.770] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event12)
+[   542.770] (**) Dell WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[   542.770] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   542.770] (**) Dell WMI hotkeys: Applying InputClass "system-keyboard"
+[   542.770] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[   542.770] (**) Dell WMI hotkeys: always reports core events
+[   542.770] (**) Option "Device" "/dev/input/event12"
+[   542.771] (II) event12 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   542.771] (II) event12 - Dell WMI hotkeys: device is a keyboard
+[   542.772] (II) event12 - Dell WMI hotkeys: device removed
+[   542.792] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:02/wmi_bus/wmi_bus-PNP0C14:02/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input22/event12"
+[   542.792] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 15)
+[   542.792] (**) Option "xkb_model" "pc105"
+[   542.792] (**) Option "xkb_layout" "us"
+[   542.793] (II) event12 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   542.793] (II) event12 - Dell WMI hotkeys: device is a keyboard
+[   542.794] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[   542.794] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[   542.794] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   542.794] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[   542.794] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   542.794] (**) AT Translated Set 2 keyboard: always reports core events
+[   542.794] (**) Option "Device" "/dev/input/event2"
+[   542.795] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   542.795] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[   542.796] (II) event2  - AT Translated Set 2 keyboard: device removed
+[   542.807] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[   542.807] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 16)
+[   542.807] (**) Option "xkb_model" "pc105"
+[   542.807] (**) Option "xkb_layout" "us"
+[   542.808] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   542.809] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[   542.810] (II) config/udev: Adding input device PC Speaker (/dev/input/event10)
+[   542.810] (II) No input driver specified, ignoring this device.
+[   542.810] (II) This device may have been added with another device file.
+[   542.834] (**) Wacom HID 49BC Pen eraser: Applying InputClass "evdev tablet catchall"
+[   542.834] (**) Wacom HID 49BC Pen eraser: Applying InputClass "libinput tablet catchall"
+[   542.834] (**) Wacom HID 49BC Pen eraser: Applying InputClass "Wacom USB tablet class"
+[   542.834] (**) Wacom HID 49BC Pen eraser: Applying InputClass "Wacom tablet class"
+[   542.834] (II) Using input driver 'wacom' for 'Wacom HID 49BC Pen eraser'
+[   542.834] (**) Wacom HID 49BC Pen eraser: always reports core events
+[   542.835] (**) Option "Device" "/dev/input/event5"
+[   542.835] (**) Option "Type" "eraser"
+[   542.835] (**) wacom: Wacom HID 49BC Pen eraser: panscroll is 1300
+[   542.835] (**) wacom: Wacom HID 49BC Pen eraser: panscroll modified to 1300
+[   542.835] (--) wacom: Wacom HID 49BC Pen eraser: maxX=27389 maxY=18259 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[   542.844] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:19.0/i2c_designware.3/i2c-3/i2c-WACF3233:00/0018:056A:49BC.0002/input/input14/event5"
+[   542.844] (II) XINPUT: Adding extended input device "Wacom HID 49BC Pen eraser" (type: ERASER, id 17)
+[   542.844] (**) Wacom HID 49BC Pen eraser: (accel) keeping acceleration scheme 1
+[   542.844] (**) Wacom HID 49BC Pen eraser: (accel) acceleration profile 0
+[   542.844] (**) Wacom HID 49BC Pen eraser: (accel) acceleration factor: 2.000
+[   542.844] (**) Wacom HID 49BC Pen eraser: (accel) acceleration threshold: 4
+[   552.883] (II) modeset(0): EDID vendor "BOE", prod id 2637
+[   552.883] (II) modeset(0): Using EDID range info for horizontal sync
+[   552.883] (II) modeset(0): Using EDID range info for vertical refresh
+[   552.883] (II) modeset(0): Printing DDC gathered Modelines:
+[   552.883] (II) modeset(0): Modeline "2880x1920"x0.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
+[   552.887] (II) modeset(0): EDID vendor "BOE", prod id 2637
+[   552.887] (II) modeset(0): Using hsync ranges from config file
+[   552.887] (II) modeset(0): Using vrefresh ranges from config file
+[   552.887] (II) modeset(0): Printing DDC gathered Modelines:
+[   552.887] (II) modeset(0): Modeline "2880x1920"x0.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
+[   552.897] (II) modeset(0): EDID vendor "BOE", prod id 2637
+[   552.897] (II) modeset(0): Using hsync ranges from config file
+[   552.897] (II) modeset(0): Using vrefresh ranges from config file
+[   552.897] (II) modeset(0): Printing DDC gathered Modelines:
+[   552.897] (II) modeset(0): Modeline "2880x1920"x0.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
+[   553.077] (II) modeset(0): EDID vendor "BOE", prod id 2637
+[   553.077] (II) modeset(0): Using hsync ranges from config file
+[   553.077] (II) modeset(0): Using vrefresh ranges from config file
+[   553.077] (II) modeset(0): Printing DDC gathered Modelines:
+[   553.077] (II) modeset(0): Modeline "2880x1920"x0.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
+[  2324.781] (II) modeset(0): EDID vendor "BOE", prod id 2637
+[  2324.781] (II) modeset(0): Using hsync ranges from config file
+[  2324.781] (II) modeset(0): Using vrefresh ranges from config file
+[  2324.781] (II) modeset(0): Printing DDC gathered Modelines:
+[  2324.781] (II) modeset(0): Modeline "2880x1920"x0.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
+[  2789.131] (II) modeset(0): EDID vendor "BOE", prod id 2637
+[  2789.131] (II) modeset(0): Using hsync ranges from config file
+[  2789.131] (II) modeset(0): Using vrefresh ranges from config file
+[  2789.131] (II) modeset(0): Printing DDC gathered Modelines:
+[  2789.131] (II) modeset(0): Modeline "2880x1920"x0.0  368.66  2880 2928 2960 3100  1920 1923 1929 1982 +hsync -vsync (118.9 kHz eP)
