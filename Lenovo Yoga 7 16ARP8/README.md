@@ -1,5 +1,7 @@
 Manufacturer: Lenovo
+
 Model Name: Yoga 7 16ARP8
+
 Model Number:
 
 Notes:
