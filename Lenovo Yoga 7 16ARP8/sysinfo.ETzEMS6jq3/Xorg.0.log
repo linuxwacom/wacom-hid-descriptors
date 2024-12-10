@@ -1,0 +1,556 @@
+[     7.796] (--) Log file renamed from "/var/log/Xorg.pid-844.log" to "/var/log/Xorg.0.log"
+[     7.797] 
+X.Org X Server 1.21.1.13
+X Protocol Version 11, Revision 0
+[     7.797] Current Operating System: Linux HOSTNAME 6.9.8-arch1-1 #1 SMP PREEMPT_DYNAMIC Fri, 05 Jul 2024 22:11:24 +0000 x86_64
+[     7.797] Kernel command line: initrd=\MACHINEID\6.9.8-arch1-1\initrd nvme_load=YES nowatchdog rw USERNAMEflags=subvol=/@ USERNAME=UUID=c0d6fade-251e-46aa-a1a4-53f8f24d76f4 resume=UUID=98adbee4-1813-4951-91e1-4c64f14f46fb rw USERNAMEflags=subvol=/@ USERNAME=UUID=c0d6fade-251e-46aa-a1a4-53f8f24d76f4 resume=UUID=98adbee4-1813-4951-91e1-4c64f14f46fb systemd.machine_id=MACHINEID
+[     7.797]  
+[     7.797] Current version of pixman: 0.43.4
+[     7.797] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     7.797] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     7.797] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Jul 12 12:54:35 2024
+[     7.798] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[     7.798] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     7.798] (==) No Layout section.  Using the first Screen section.
+[     7.798] (==) No screen section available. Using defaults.
+[     7.798] (**) |-->Screen "Default Screen Section" (0)
+[     7.798] (**) |   |-->Monitor "<default monitor>"
+[     7.798] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     7.798] (**) Allowing byte-swapped clients
+[     7.798] (==) Automatically adding devices
+[     7.798] (==) Automatically enabling devices
+[     7.798] (==) Automatically adding GPU devices
+[     7.798] (==) Automatically binding GPU devices
+[     7.798] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     7.799] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[     7.799] 	Entry deleted from font path.
+[     7.799] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/TTF".
+[     7.799] 	Entry deleted from font path.
+[     7.799] 	(Run 'mkfontdir' on "/usr/share/fonts/TTF").
+[     7.799] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[     7.799] 	Entry deleted from font path.
+[     7.799] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[     7.799] 	Entry deleted from font path.
+[     7.799] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[     7.799] 	Entry deleted from font path.
+[     7.799] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[     7.799] 	Entry deleted from font path.
+[     7.799] (==) FontPath set to:
+	
+[     7.799] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     7.799] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     7.799] (II) Module ABI versions:
+[     7.799] 	X.Org ANSI C Emulation: 0.4
+[     7.799] 	X.Org Video Driver: 25.2
+[     7.799] 	X.Org XInput driver : 24.4
+[     7.799] 	X.Org Server Extension : 10.0
+[     7.799] (++) using VT number 2
+
+[     7.800] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     7.801] (II) xfree86: Adding drm device (/dev/dri/card1)
+[     7.801] (II) Platform probe for /sys/devices/pci0000:00/0000:00:08.1/0000:04:00.0/drm/card1
+[     7.840] (--) PCI:*(4@0:0:0) 1002:1681:17aa:381d rev 8, Mem @ 0x7f20000000/268435456, 0x7f30000000/2097152, 0x80700000/524288, I/O @ 0x00001000/256
+[     7.841] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[     7.841] (II) LoadModule: "glx"
+[     7.841] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     7.847] (II) Module glx: vendor="X.Org Foundation"
+[     7.847] 	compiled for 1.21.1.13, module version = 1.0.0
+[     7.847] 	ABI class: X.Org Server Extension, version 10.0
+[     7.847] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[     7.847] 	loading driver: amdgpu
+[     7.847] (==) Matched amdgpu as autoconfigured driver 0
+[     7.847] (==) Matched ati as autoconfigured driver 1
+[     7.847] (==) Matched modesetting as autoconfigured driver 2
+[     7.847] (==) Matched fbdev as autoconfigured driver 3
+[     7.847] (==) Matched vesa as autoconfigured driver 4
+[     7.847] (==) Assigned the driver to the xf86ConfigLayout
+[     7.847] (II) LoadModule: "amdgpu"
+[     7.847] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[     7.850] (II) Module amdgpu: vendor="X.Org Foundation"
+[     7.850] 	compiled for 1.21.1.11, module version = 23.0.0
+[     7.850] 	Module class: X.Org Video Driver
+[     7.850] 	ABI class: X.Org Video Driver, version 25.2
+[     7.850] (II) LoadModule: "ati"
+[     7.850] (WW) Warning, couldn't open module ati
+[     7.850] (EE) Failed to load module "ati" (module does not exist, 0)
+[     7.850] (II) LoadModule: "modesetting"
+[     7.850] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     7.850] (II) Module modesetting: vendor="X.Org Foundation"
+[     7.850] 	compiled for 1.21.1.13, module version = 1.21.1
+[     7.850] 	Module class: X.Org Video Driver
+[     7.850] 	ABI class: X.Org Video Driver, version 25.2
+[     7.850] (II) LoadModule: "fbdev"
+[     7.851] (WW) Warning, couldn't open module fbdev
+[     7.851] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[     7.851] (II) LoadModule: "vesa"
+[     7.851] (WW) Warning, couldn't open module vesa
+[     7.851] (EE) Failed to load module "vesa" (module does not exist, 0)
+[     7.851] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[     7.851] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     7.871] (WW) Falling back to old probe method for modesetting
+[     7.871] (EE) open /dev/dri/card0: No such file or directory
+[     7.871] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     7.871] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[     7.871] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[     7.871] (==) AMDGPU(0): Default visual is TrueColor
+[     7.871] (II) Applying OutputClass "AMDgpu" options to /dev/dri/card1
+[     7.871] (==) AMDGPU(0): RGB weight 888
+[     7.871] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[     7.871] (--) AMDGPU(0): Chipset: "AMD Radeon Graphics" (ChipID = 0x1681)
+[     7.872] (II) Loading sub module "fb"
+[     7.872] (II) LoadModule: "fb"
+[     7.872] (II) Module "fb" already built-in
+[     7.872] (II) Loading sub module "dri2"
+[     7.872] (II) LoadModule: "dri2"
+[     7.872] (II) Module "dri2" already built-in
+[     8.014] (II) Loading sub module "glamoregl"
+[     8.014] (II) LoadModule: "glamoregl"
+[     8.014] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[     8.019] (II) Module glamoregl: vendor="X.Org Foundation"
+[     8.019] 	compiled for 1.21.1.13, module version = 1.0.1
+[     8.019] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     8.029] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon Graphics (radeonsi, rembrandt, LLVM 18.1.8, DRM 3.57, 6.9.8-arch1-1)
+[     8.029] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[     8.029] (==) AMDGPU(0): TearFree property default: auto
+[     8.029] (==) AMDGPU(0): VariableRefresh: disabled
+[     8.029] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[     8.029] (II) AMDGPU(0): KMS Pageflipping: enabled
+[     8.032] (II) AMDGPU(0): Output eDP has no monitor section
+[     8.032] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[     8.032] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[     8.032] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[     8.032] (II) AMDGPU(0): Output DisplayPort-2 has no monitor section
+[     8.032] (II) AMDGPU(0): Output DisplayPort-3 has no monitor section
+[     8.032] (II) AMDGPU(0): Output DisplayPort-4 has no monitor section
+[     8.032] (II) AMDGPU(0): Output DisplayPort-5 has no monitor section
+[     8.034] (WW) AMDGPU(0): 8 ZaphodHeads crtcs unavailable. Some outputs will stay off.
+[     8.037] (II) AMDGPU(0): EDID for output eDP
+[     8.037] (II) AMDGPU(0): Manufacturer: BOE  Model: a31  Serial#: 0
+[     8.037] (II) AMDGPU(0): Year: 2021  Week: 15
+[     8.037] (II) AMDGPU(0): EDID Version: 1.4
+[     8.037] (II) AMDGPU(0): Digital Display Input
+[     8.037] (II) AMDGPU(0): 8 bits per channel
+[     8.037] (II) AMDGPU(0): Digital interface is DisplayPort
+[     8.037] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 34  vert.: 22
+[     8.037] (II) AMDGPU(0): Gamma: 2.20
+[     8.037] (II) AMDGPU(0): No DPMS capabilities specified
+[     8.037] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 
+[     8.037] (II) AMDGPU(0): Default color space is primary color space
+[     8.037] (II) AMDGPU(0): First detailed timing is preferred mode
+[     8.037] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[     8.037] (II) AMDGPU(0): Display is continuous-frequency
+[     8.037] (II) AMDGPU(0): redX: 0.586 redY: 0.366   greenX: 0.345 greenY: 0.573
+[     8.037] (II) AMDGPU(0): blueX: 0.161 blueY: 0.126   whiteX: 0.313 whiteY: 0.329
+[     8.037] (II) AMDGPU(0): Manufacturer's mask: 0
+[     8.037] (II) AMDGPU(0): Supported detailed timing:
+[     8.037] (II) AMDGPU(0): clock: 161.8 MHz   Image Size:  345 x 215 mm
+[     8.037] (II) AMDGPU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2140 h_border: 0
+[     8.037] (II) AMDGPU(0): v_active: 1200  v_sync: 1203  v_sync_end 1209 v_blanking: 1260 v_border: 0
+[     8.037] (II) AMDGPU(0): Ranges: V min: 40 V max: 60 Hz, H min: 76 H max: 76 kHz, PixClock max 165 MHz
+[     8.037] (II) AMDGPU(0):  BOE CQ
+[     8.037] (II) AMDGPU(0):  NV160WUM-N43
+[     8.037] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[     8.037] (II) AMDGPU(0): EDID (in hex):
+[     8.037] (II) AMDGPU(0): 	00ffffffffffff0009e5310a00000000
+[     8.037] (II) AMDGPU(0): 	0f1f0104a5221678073755965d589229
+[     8.037] (II) AMDGPU(0): 	20505400000001010101010101010101
+[     8.037] (II) AMDGPU(0): 	010101010101333f80dc70b03c403020
+[     8.037] (II) AMDGPU(0): 	360059d71000001a000000fd00283c4c
+[     8.037] (II) AMDGPU(0): 	4c10010a202020202020000000fe0042
+[     8.037] (II) AMDGPU(0): 	4f452043510a202020202020000000fe
+[     8.037] (II) AMDGPU(0): 	004e5631363057554d2d4e34330a0159
+[     8.037] (II) AMDGPU(0): 	02030000681a00000101283c00000000
+[     8.037] (II) AMDGPU(0): 	00000000000000000000000000000000
+[     8.037] (II) AMDGPU(0): 	00000000000000000000000000000000
+[     8.037] (II) AMDGPU(0): 	00000000000000000000000000000000
+[     8.037] (II) AMDGPU(0): 	00000000000000000000000000000000
+[     8.037] (II) AMDGPU(0): 	00000000000000000000000000000000
+[     8.037] (II) AMDGPU(0): 	00000000000000000000000000000000
+[     8.037] (II) AMDGPU(0): 	000000000000000000000000000015fe
+[     8.037] (II) AMDGPU(0): Printing probed modes for output eDP
+[     8.037] (II) AMDGPU(0): Modeline "1920x1200"x60.0  161.79  1920 1968 2000 2140  1200 1203 1209 1260 +hsync -vsync (75.6 kHz eP)
+[     8.037] (II) AMDGPU(0): Modeline "1920x1080"x60.0  161.79  1920 1968 2000 2140  1080 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1600x1200"x60.0  161.79  1600 1968 2000 2140  1200 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1680x1050"x60.0  161.79  1680 1968 2000 2140  1050 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1280x1024"x60.0  161.79  1280 1968 2000 2140  1024 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1440x900"x60.0  161.79  1440 1968 2000 2140  900 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1280x800"x60.0  161.79  1280 1968 2000 2140  800 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1280x720"x60.0  161.79  1280 1968 2000 2140  720 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "1024x768"x60.0  161.79  1024 1968 2000 2140  768 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "800x600"x60.0  161.79  800 1968 2000 2140  600 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): Modeline "640x480"x60.0  161.79  640 1968 2000 2140  480 1203 1209 1260 +hsync -vsync (75.6 kHz e)
+[     8.037] (II) AMDGPU(0): EDID for output HDMI-A-0
+[     8.037] (II) AMDGPU(0): EDID for output DisplayPort-0
+[     8.038] (II) AMDGPU(0): EDID for output DisplayPort-1
+[     8.038] (II) AMDGPU(0): EDID for output DisplayPort-2
+[     8.038] (II) AMDGPU(0): EDID for output DisplayPort-3
+[     8.038] (II) AMDGPU(0): EDID for output DisplayPort-4
+[     8.038] (II) AMDGPU(0): EDID for output DisplayPort-5
+[     8.038] (II) AMDGPU(0): Output eDP connected
+[     8.038] (II) AMDGPU(0): Output HDMI-A-0 disconnected
+[     8.038] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[     8.038] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[     8.038] (II) AMDGPU(0): Output DisplayPort-2 disconnected
+[     8.038] (II) AMDGPU(0): Output DisplayPort-3 disconnected
+[     8.038] (II) AMDGPU(0): Output DisplayPort-4 disconnected
+[     8.038] (II) AMDGPU(0): Output DisplayPort-5 disconnected
+[     8.038] (II) AMDGPU(0): Using exact sizes for initial modes
+[     8.038] (II) AMDGPU(0): Output eDP using initial mode 1920x1200 +0+0
+[     8.038] (II) AMDGPU(0): mem size init: gart size :1aa09d000 vram size: s:7df7a000 visible:7df7a000
+[     8.038] (==) AMDGPU(0): DPI set to (96, 96)
+[     8.038] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[     8.038] (II) Loading sub module "ramdac"
+[     8.038] (II) LoadModule: "ramdac"
+[     8.038] (II) Module "ramdac" already built-in
+[     8.038] (II) UnloadModule: "modesetting"
+[     8.038] (II) Unloading modesetting
+[     8.038] (II) AMDGPU(0): [DRI2] Setup complete
+[     8.038] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[     8.038] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[     8.056] (II) AMDGPU(0): Front buffer pitch: 7680 bytes
+[     8.056] (II) AMDGPU(0): SYNC extension fences enabled
+[     8.056] (II) AMDGPU(0): Present extension enabled
+[     8.056] (==) AMDGPU(0): DRI3 enabled
+[     8.056] (==) AMDGPU(0): Backing store enabled
+[     8.056] (II) AMDGPU(0): Direct rendering enabled
+[     8.069] (II) AMDGPU(0): Use GLAMOR acceleration.
+[     8.069] (II) AMDGPU(0): Acceleration enabled
+[     8.069] (==) AMDGPU(0): DPMS enabled
+[     8.069] (==) AMDGPU(0): Silken mouse enabled
+[     8.069] (II) AMDGPU(0): Set up textured video (glamor)
+[     8.085] (WW) AMDGPU(0): Option "HotplugDriver" is not used
+[     8.085] (II) Initializing extension Generic Event Extension
+[     8.085] (II) Initializing extension SHAPE
+[     8.085] (II) Initializing extension MIT-SHM
+[     8.085] (II) Initializing extension XInputExtension
+[     8.085] (II) Initializing extension XTEST
+[     8.086] (II) Initializing extension BIG-REQUESTS
+[     8.086] (II) Initializing extension SYNC
+[     8.086] (II) Initializing extension XKEYBOARD
+[     8.086] (II) Initializing extension XC-MISC
+[     8.086] (II) Initializing extension SECURITY
+[     8.086] (II) Initializing extension XFIXES
+[     8.086] (II) Initializing extension RENDER
+[     8.086] (II) Initializing extension RANDR
+[     8.086] (II) Initializing extension COMPOSITE
+[     8.086] (II) Initializing extension DAMAGE
+[     8.087] (II) Initializing extension MIT-SCREEN-SAVER
+[     8.087] (II) Initializing extension DOUBLE-BUFFER
+[     8.087] (II) Initializing extension RECORD
+[     8.087] (II) Initializing extension DPMS
+[     8.087] (II) Initializing extension Present
+[     8.088] (II) Initializing extension DRI3
+[     8.088] (II) Initializing extension X-Resource
+[     8.088] (II) Initializing extension XVideo
+[     8.088] (II) Initializing extension XVideo-MotionCompensation
+[     8.088] (II) Initializing extension GLX
+[     8.093] (II) AIGLX: Loaded and initialized radeonsi
+[     8.093] (II) GLX: Initialized DRI2 GL provider for screen 0
+[     8.093] (II) Initializing extension XFree86-VidModeExtension
+[     8.093] (II) Initializing extension XFree86-DGA
+[     8.093] (II) Initializing extension XFree86-DRI
+[     8.093] (II) Initializing extension DRI2
+[     8.093] (II) AMDGPU(0): Setting screen physical size to 508 x 317
+[     8.174] (II) config/udev: Adding input device Video Bus (/dev/input/event2)
+[     8.174] (**) Video Bus: Applying InputClass "devname"
+[     8.174] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[     8.174] (**) Video Bus: Applying InputClass "system-keyboard"
+[     8.174] (II) LoadModule: "libinput"
+[     8.174] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     8.178] (II) Module libinput: vendor="X.Org Foundation"
+[     8.178] 	compiled for 1.21.1.13, module version = 1.4.0
+[     8.178] 	Module class: X.Org XInput Driver
+[     8.178] 	ABI class: X.Org XInput driver, version 24.4
+[     8.178] (II) Using input driver 'libinput' for 'Video Bus'
+[     8.178] (**) Video Bus: always reports core events
+[     8.178] (**) Option "Device" "/dev/input/event2"
+[     8.182] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[     8.182] (II) event2  - Video Bus: device is a keyboard
+[     8.182] (II) event2  - Video Bus: device removed
+[     8.257] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:16/LNXVIDEO:00/input/input2/event2"
+[     8.257] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[     8.257] (**) Option "xkb_layout" "it"
+[     8.257] (WW) Option "xkb_variant" requires a string value
+[     8.276] (II) event2  - Video Bus: is tagged by udev as: Keyboard
+[     8.277] (II) event2  - Video Bus: device is a keyboard
+[     8.277] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[     8.277] (**) Power Button: Applying InputClass "devname"
+[     8.277] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     8.277] (**) Power Button: Applying InputClass "system-keyboard"
+[     8.277] (II) Using input driver 'libinput' for 'Power Button'
+[     8.277] (**) Power Button: always reports core events
+[     8.277] (**) Option "Device" "/dev/input/event0"
+[     8.278] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[     8.278] (II) event0  - Power Button: device is a keyboard
+[     8.278] (II) event0  - Power Button: device removed
+[     8.323] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[     8.323] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[     8.324] (**) Option "xkb_layout" "it"
+[     8.324] (WW) Option "xkb_variant" requires a string value
+[     8.325] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[     8.325] (II) event0  - Power Button: device is a keyboard
+[     8.325] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[     8.325] (**) Lid Switch: Applying InputClass "devname"
+[     8.325] (II) Using input driver 'libinput' for 'Lid Switch'
+[     8.325] (**) Lid Switch: always reports core events
+[     8.325] (**) Option "Device" "/dev/input/event1"
+[     8.326] (II) event1  - Lid Switch: is tagged by udev as: Switch
+[     8.326] (II) event1  - Lid Switch: device is a switch device
+[     8.326] (II) event1  - Lid Switch: device removed
+[     8.350] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input1/event1"
+[     8.350] (II) XINPUT: Adding extended input device "Lid Switch" (type: KEYBOARD, id 8)
+[     8.352] (II) event1  - Lid Switch: is tagged by udev as: Switch
+[     8.352] (II) event1  - Lid Switch: device is a switch device
+[     8.353] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event12)
+[     8.353] (**) HD-Audio Generic HDMI/DP,pcm=3: Applying InputClass "devname"
+[     8.353] (II) Using input driver 'libinput' for 'HD-Audio Generic HDMI/DP,pcm=3'
+[     8.353] (**) HD-Audio Generic HDMI/DP,pcm=3: always reports core events
+[     8.353] (**) Option "Device" "/dev/input/event12"
+[     8.354] (II) event12 - HD-Audio Generic HDMI/DP,pcm=3: is tagged by udev as: Switch
+[     8.427] (II) event12 - not using input device '/dev/input/event12'.
+[     8.427] (EE) libinput: HD-Audio Generic HDMI/DP,pcm=3: Failed to create a device for /dev/input/event12
+[     8.427] (EE) PreInit returned 2 for "HD-Audio Generic HDMI/DP,pcm=3"
+[     8.427] (II) UnloadModule: "libinput"
+[     8.428] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=7 (/dev/input/event13)
+[     8.428] (**) HD-Audio Generic HDMI/DP,pcm=7: Applying InputClass "devname"
+[     8.428] (II) Using input driver 'libinput' for 'HD-Audio Generic HDMI/DP,pcm=7'
+[     8.428] (**) HD-Audio Generic HDMI/DP,pcm=7: always reports core events
+[     8.428] (**) Option "Device" "/dev/input/event13"
+[     8.429] (II) event13 - HD-Audio Generic HDMI/DP,pcm=7: is tagged by udev as: Switch
+[     8.480] (II) event13 - not using input device '/dev/input/event13'.
+[     8.480] (EE) libinput: HD-Audio Generic HDMI/DP,pcm=7: Failed to create a device for /dev/input/event13
+[     8.481] (EE) PreInit returned 2 for "HD-Audio Generic HDMI/DP,pcm=7"
+[     8.481] (II) UnloadModule: "libinput"
+[     8.482] (II) config/udev: Adding input device PixArt HP 1000 USB Optical Mouse (/dev/input/event5)
+[     8.482] (**) PixArt HP 1000 USB Optical Mouse: Applying InputClass "devname"
+[     8.482] (**) PixArt HP 1000 USB Optical Mouse: Applying InputClass "libinput pointer catchall"
+[     8.482] (II) Using input driver 'libinput' for 'PixArt HP 1000 USB Optical Mouse'
+[     8.482] (**) PixArt HP 1000 USB Optical Mouse: always reports core events
+[     8.482] (**) Option "Device" "/dev/input/event5"
+[     8.538] (II) event5  - PixArt HP 1000 USB Optical Mouse: is tagged by udev as: Mouse
+[     8.539] (II) event5  - PixArt HP 1000 USB Optical Mouse: device is a pointer
+[     8.539] (II) event5  - PixArt HP 1000 USB Optical Mouse: device removed
+[     8.590] (II) libinput: PixArt HP 1000 USB Optical Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.590] (II) libinput: PixArt HP 1000 USB Optical Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.590] (II) libinput: PixArt HP 1000 USB Optical Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.590] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.4/usb3/3-1/3-1:1.0/0003:03F0:2A41.0004/input/input18/event5"
+[     8.590] (II) XINPUT: Adding extended input device "PixArt HP 1000 USB Optical Mouse" (type: MOUSE, id 9)
+[     8.590] (**) Option "AccelerationScheme" "none"
+[     8.591] (**) PixArt HP 1000 USB Optical Mouse: (accel) selected scheme none/0
+[     8.591] (**) PixArt HP 1000 USB Optical Mouse: (accel) acceleration factor: 2.000
+[     8.591] (**) PixArt HP 1000 USB Optical Mouse: (accel) acceleration threshold: 4
+[     8.649] (II) event5  - PixArt HP 1000 USB Optical Mouse: is tagged by udev as: Mouse
+[     8.649] (II) event5  - PixArt HP 1000 USB Optical Mouse: device is a pointer
+[     8.650] (II) config/udev: Adding input device PixArt HP 1000 USB Optical Mouse (/dev/input/mouse4)
+[     8.650] (**) PixArt HP 1000 USB Optical Mouse: Applying InputClass "devname"
+[     8.650] (II) Using input driver 'libinput' for 'PixArt HP 1000 USB Optical Mouse'
+[     8.650] (**) PixArt HP 1000 USB Optical Mouse: always reports core events
+[     8.650] (**) Option "Device" "/dev/input/mouse4"
+[     8.720] (II) mouse4  - not using input device '/dev/input/mouse4'.
+[     8.720] (EE) libinput: PixArt HP 1000 USB Optical Mouse: Failed to create a device for /dev/input/mouse4
+[     8.720] (EE) PreInit returned 2 for "PixArt HP 1000 USB Optical Mouse"
+[     8.720] (II) UnloadModule: "libinput"
+[     8.721] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event14)
+[     8.721] (**) HD-Audio Generic Mic: Applying InputClass "devname"
+[     8.721] (II) Using input driver 'libinput' for 'HD-Audio Generic Mic'
+[     8.721] (**) HD-Audio Generic Mic: always reports core events
+[     8.721] (**) Option "Device" "/dev/input/event14"
+[     8.722] (II) event14 - HD-Audio Generic Mic: is tagged by udev as: Switch
+[     8.773] (II) event14 - not using input device '/dev/input/event14'.
+[     8.773] (EE) libinput: HD-Audio Generic Mic: Failed to create a device for /dev/input/event14
+[     8.773] (EE) PreInit returned 2 for "HD-Audio Generic Mic"
+[     8.773] (II) UnloadModule: "libinput"
+[     8.774] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event15)
+[     8.774] (**) HD-Audio Generic Headphone: Applying InputClass "devname"
+[     8.774] (II) Using input driver 'libinput' for 'HD-Audio Generic Headphone'
+[     8.774] (**) HD-Audio Generic Headphone: always reports core events
+[     8.774] (**) Option "Device" "/dev/input/event15"
+[     8.775] (II) event15 - HD-Audio Generic Headphone: is tagged by udev as: Switch
+[     8.827] (II) event15 - not using input device '/dev/input/event15'.
+[     8.827] (EE) libinput: HD-Audio Generic Headphone: Failed to create a device for /dev/input/event15
+[     8.827] (EE) PreInit returned 2 for "HD-Audio Generic Headphone"
+[     8.827] (II) UnloadModule: "libinput"
+[     8.828] (II) config/udev: Adding input device Ideapad extra buttons (/dev/input/event6)
+[     8.828] (**) Ideapad extra buttons: Applying InputClass "devname"
+[     8.828] (**) Ideapad extra buttons: Applying InputClass "libinput keyboard catchall"
+[     8.828] (**) Ideapad extra buttons: Applying InputClass "system-keyboard"
+[     8.828] (II) Using input driver 'libinput' for 'Ideapad extra buttons'
+[     8.828] (**) Ideapad extra buttons: always reports core events
+[     8.828] (**) Option "Device" "/dev/input/event6"
+[     8.829] (II) event6  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[     8.829] (II) event6  - Ideapad extra buttons: device is a keyboard
+[     8.829] (II) event6  - Ideapad extra buttons: device removed
+[     8.880] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.3/PNP0C09:00/VPC2004:00/input/input19/event6"
+[     8.880] (II) XINPUT: Adding extended input device "Ideapad extra buttons" (type: KEYBOARD, id 10)
+[     8.880] (**) Option "xkb_layout" "it"
+[     8.880] (WW) Option "xkb_variant" requires a string value
+[     8.881] (II) event6  - Ideapad extra buttons: is tagged by udev as: Keyboard
+[     8.881] (II) event6  - Ideapad extra buttons: device is a keyboard
+[     8.882] (II) config/udev: Adding input device ELAN06FA:00 04F3:3293 Mouse (/dev/input/event8)
+[     8.882] (**) ELAN06FA:00 04F3:3293 Mouse: Applying InputClass "devname"
+[     8.882] (**) ELAN06FA:00 04F3:3293 Mouse: Applying InputClass "libinput pointer catchall"
+[     8.882] (II) Using input driver 'libinput' for 'ELAN06FA:00 04F3:3293 Mouse'
+[     8.882] (**) ELAN06FA:00 04F3:3293 Mouse: always reports core events
+[     8.882] (**) Option "Device" "/dev/input/event8"
+[     8.883] (II) event8  - ELAN06FA:00 04F3:3293 Mouse: is tagged by udev as: Mouse Pointingstick
+[     8.883] (II) event8  - ELAN06FA:00 04F3:3293 Mouse: device is a pointer
+[     8.884] (II) event8  - ELAN06FA:00 04F3:3293 Mouse: device removed
+[     8.953] (II) libinput: ELAN06FA:00 04F3:3293 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.953] (II) libinput: ELAN06FA:00 04F3:3293 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.953] (II) libinput: ELAN06FA:00 04F3:3293 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.954] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN06FA:00/0018:04F3:3293.0002/input/input11/event8"
+[     8.954] (II) XINPUT: Adding extended input device "ELAN06FA:00 04F3:3293 Mouse" (type: MOUSE, id 11)
+[     8.954] (**) Option "AccelerationScheme" "none"
+[     8.954] (**) ELAN06FA:00 04F3:3293 Mouse: (accel) selected scheme none/0
+[     8.954] (**) ELAN06FA:00 04F3:3293 Mouse: (accel) acceleration factor: 2.000
+[     8.954] (**) ELAN06FA:00 04F3:3293 Mouse: (accel) acceleration threshold: 4
+[     8.955] (II) event8  - ELAN06FA:00 04F3:3293 Mouse: is tagged by udev as: Mouse Pointingstick
+[     8.956] (II) event8  - ELAN06FA:00 04F3:3293 Mouse: device is a pointer
+[     8.957] (II) config/udev: Adding input device ELAN06FA:00 04F3:3293 Mouse (/dev/input/mouse0)
+[     8.957] (**) ELAN06FA:00 04F3:3293 Mouse: Applying InputClass "devname"
+[     8.957] (II) Using input driver 'libinput' for 'ELAN06FA:00 04F3:3293 Mouse'
+[     8.957] (**) ELAN06FA:00 04F3:3293 Mouse: always reports core events
+[     8.957] (**) Option "Device" "/dev/input/mouse0"
+[     9.027] (II) mouse0  - not using input device '/dev/input/mouse0'.
+[     9.027] (EE) libinput: ELAN06FA:00 04F3:3293 Mouse: Failed to create a device for /dev/input/mouse0
+[     9.027] (EE) PreInit returned 2 for "ELAN06FA:00 04F3:3293 Mouse"
+[     9.027] (II) UnloadModule: "libinput"
+[     9.028] (II) config/udev: Adding input device ELAN06FA:00 04F3:3293 Touchpad (/dev/input/event9)
+[     9.028] (**) ELAN06FA:00 04F3:3293 Touchpad: Applying InputClass "devname"
+[     9.028] (**) ELAN06FA:00 04F3:3293 Touchpad: Applying InputClass "libinput touchpad catchall"
+[     9.028] (II) Using input driver 'libinput' for 'ELAN06FA:00 04F3:3293 Touchpad'
+[     9.028] (**) ELAN06FA:00 04F3:3293 Touchpad: always reports core events
+[     9.028] (**) Option "Device" "/dev/input/event9"
+[     9.029] (II) event9  - ELAN06FA:00 04F3:3293 Touchpad: is tagged by udev as: Touchpad
+[     9.030] (II) event9  - ELAN06FA:00 04F3:3293 Touchpad: device is a touchpad
+[     9.031] (II) event9  - ELAN06FA:00 04F3:3293 Touchpad: device removed
+[     9.093] (**) Option "Tapping" "on"
+[     9.093] (II) libinput: ELAN06FA:00 04F3:3293 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.093] (II) libinput: ELAN06FA:00 04F3:3293 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.093] (II) libinput: ELAN06FA:00 04F3:3293 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.094] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN06FA:00/0018:04F3:3293.0002/input/input13/event9"
+[     9.094] (II) XINPUT: Adding extended input device "ELAN06FA:00 04F3:3293 Touchpad" (type: TOUCHPAD, id 12)
+[     9.096] (**) Option "AccelerationScheme" "none"
+[     9.096] (**) ELAN06FA:00 04F3:3293 Touchpad: (accel) selected scheme none/0
+[     9.096] (**) ELAN06FA:00 04F3:3293 Touchpad: (accel) acceleration factor: 2.000
+[     9.096] (**) ELAN06FA:00 04F3:3293 Touchpad: (accel) acceleration threshold: 4
+[     9.097] (II) event9  - ELAN06FA:00 04F3:3293 Touchpad: is tagged by udev as: Touchpad
+[     9.098] (II) event9  - ELAN06FA:00 04F3:3293 Touchpad: device is a touchpad
+[     9.099] (II) config/udev: Adding input device ELAN06FA:00 04F3:3293 Touchpad (/dev/input/mouse1)
+[     9.099] (**) ELAN06FA:00 04F3:3293 Touchpad: Applying InputClass "devname"
+[     9.099] (II) Using input driver 'libinput' for 'ELAN06FA:00 04F3:3293 Touchpad'
+[     9.099] (**) ELAN06FA:00 04F3:3293 Touchpad: always reports core events
+[     9.099] (**) Option "Device" "/dev/input/mouse1"
+[     9.167] (II) mouse1  - not using input device '/dev/input/mouse1'.
+[     9.167] (EE) libinput: ELAN06FA:00 04F3:3293 Touchpad: Failed to create a device for /dev/input/mouse1
+[     9.167] (EE) PreInit returned 2 for "ELAN06FA:00 04F3:3293 Touchpad"
+[     9.167] (II) UnloadModule: "libinput"
+[     9.168] (II) config/udev: Adding input device Wacom HID 5365 Pen (/dev/input/event3)
+[     9.168] (**) Wacom HID 5365 Pen: Applying InputClass "devname"
+[     9.168] (**) Wacom HID 5365 Pen: Applying InputClass "libinput tablet catchall"
+[     9.168] (II) Using input driver 'libinput' for 'Wacom HID 5365 Pen'
+[     9.168] (**) Wacom HID 5365 Pen: always reports core events
+[     9.168] (**) Option "Device" "/dev/input/event3"
+[     9.169] (II) event3  - Wacom HID 5365 Pen: is tagged by udev as: Tablet
+[     9.208] (II) event3  - Wacom HID 5365 Pen: tablet 'Wacom HID 5365 Pen' unknown to libwacom
+[     9.208] (II) event3  - Wacom HID 5365 Pen: device is a tablet
+[     9.208] (II) event3  - Wacom HID 5365 Pen: device removed
+[     9.274] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00/0018:056A:5365.0003/input/input15/event3"
+[     9.274] (II) XINPUT: Adding extended input device "Wacom HID 5365 Pen" (type: TABLET, id 13)
+[     9.275] (II) event3  - Wacom HID 5365 Pen: is tagged by udev as: Tablet
+[     9.301] (II) event3  - Wacom HID 5365 Pen: tablet 'Wacom HID 5365 Pen' unknown to libwacom
+[     9.301] (II) event3  - Wacom HID 5365 Pen: device is a tablet
+[     9.302] (II) config/udev: Adding input device Wacom HID 5365 Pen (/dev/input/mouse2)
+[     9.302] (**) Wacom HID 5365 Pen: Applying InputClass "devname"
+[     9.302] (II) Using input driver 'libinput' for 'Wacom HID 5365 Pen'
+[     9.302] (**) Wacom HID 5365 Pen: always reports core events
+[     9.302] (**) Option "Device" "/dev/input/mouse2"
+[     9.386] (II) mouse2  - not using input device '/dev/input/mouse2'.
+[     9.387] (EE) libinput: Wacom HID 5365 Pen: Failed to create a device for /dev/input/mouse2
+[     9.387] (EE) PreInit returned 2 for "Wacom HID 5365 Pen"
+[     9.387] (II) UnloadModule: "libinput"
+[     9.388] (II) config/udev: Adding input device Wacom HID 5365 Finger (/dev/input/event4)
+[     9.388] (**) Wacom HID 5365 Finger: Applying InputClass "devname"
+[     9.388] (**) Wacom HID 5365 Finger: Applying InputClass "libinput touchscreen catchall"
+[     9.388] (II) Using input driver 'libinput' for 'Wacom HID 5365 Finger'
+[     9.388] (**) Wacom HID 5365 Finger: always reports core events
+[     9.388] (**) Option "Device" "/dev/input/event4"
+[     9.389] (II) event4  - Wacom HID 5365 Finger: is tagged by udev as: Touchscreen
+[     9.389] (II) event4  - Wacom HID 5365 Finger: device is a touch device
+[     9.389] (II) event4  - Wacom HID 5365 Finger: device removed
+[     9.440] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:02/i2c-2/i2c-WACF2200:00/0018:056A:5365.0003/input/input16/event4"
+[     9.440] (II) XINPUT: Adding extended input device "Wacom HID 5365 Finger" (type: TOUCHSCREEN, id 14)
+[     9.440] (**) Option "AccelerationScheme" "none"
+[     9.440] (**) Wacom HID 5365 Finger: (accel) selected scheme none/0
+[     9.440] (**) Wacom HID 5365 Finger: (accel) acceleration factor: 2.000
+[     9.440] (**) Wacom HID 5365 Finger: (accel) acceleration threshold: 4
+[     9.442] (II) event4  - Wacom HID 5365 Finger: is tagged by udev as: Touchscreen
+[     9.442] (II) event4  - Wacom HID 5365 Finger: device is a touch device
+[     9.443] (II) config/udev: Adding input device Wacom HID 5365 Finger (/dev/input/mouse3)
+[     9.443] (**) Wacom HID 5365 Finger: Applying InputClass "devname"
+[     9.443] (II) Using input driver 'libinput' for 'Wacom HID 5365 Finger'
+[     9.443] (**) Wacom HID 5365 Finger: always reports core events
+[     9.443] (**) Option "Device" "/dev/input/mouse3"
+[     9.513] (II) mouse3  - not using input device '/dev/input/mouse3'.
+[     9.513] (EE) libinput: Wacom HID 5365 Finger: Failed to create a device for /dev/input/mouse3
+[     9.513] (EE) PreInit returned 2 for "Wacom HID 5365 Finger"
+[     9.514] (II) UnloadModule: "libinput"
+[     9.515] (II) config/udev: Adding input device Lenovo Yoga Tablet Mode Control switch (/dev/input/event11)
+[     9.515] (**) Lenovo Yoga Tablet Mode Control switch: Applying InputClass "devname"
+[     9.515] (II) Using input driver 'libinput' for 'Lenovo Yoga Tablet Mode Control switch'
+[     9.515] (**) Lenovo Yoga Tablet Mode Control switch: always reports core events
+[     9.515] (**) Option "Device" "/dev/input/event11"
+[     9.516] (II) event11 - Lenovo Yoga Tablet Mode Control switch: is tagged by udev as: Switch
+[     9.516] (II) event11 - Lenovo Yoga Tablet Mode Control switch: device is a switch device
+[     9.516] (II) event11 - Lenovo Yoga Tablet Mode Control switch: device removed
+[     9.587] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:01/wmi_bus/wmi_bus-PNP0C14:01/06129D99-6083-4164-81AD-F092F9D773A6/input/input21/event11"
+[     9.587] (II) XINPUT: Adding extended input device "Lenovo Yoga Tablet Mode Control switch" (type: KEYBOARD, id 15)
+[     9.588] (II) event11 - Lenovo Yoga Tablet Mode Control switch: is tagged by udev as: Switch
+[     9.589] (II) event11 - Lenovo Yoga Tablet Mode Control switch: device is a switch device
+[     9.590] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event10)
+[     9.590] (**) AT Translated Set 2 keyboard: Applying InputClass "devname"
+[     9.590] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[     9.590] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[     9.590] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[     9.590] (**) AT Translated Set 2 keyboard: always reports core events
+[     9.590] (**) Option "Device" "/dev/input/event10"
+[     9.590] (II) event10 - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     9.590] (II) event10 - AT Translated Set 2 keyboard: device is a keyboard
+[     9.591] (II) event10 - AT Translated Set 2 keyboard: device removed
+[     9.634] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input14/event10"
+[     9.634] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 16)
+[     9.634] (**) Option "xkb_layout" "it"
+[     9.634] (WW) Option "xkb_variant" requires a string value
+[     9.635] (II) event10 - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     9.635] (II) event10 - AT Translated Set 2 keyboard: device is a keyboard
+[     9.636] (II) config/udev: Adding input device PC Speaker (/dev/input/event7)
+[     9.636] (**) PC Speaker: Applying InputClass "devname"
+[     9.637] (II) Using input driver 'libinput' for 'PC Speaker'
+[     9.637] (**) PC Speaker: always reports core events
+[     9.637] (**) Option "Device" "/dev/input/event7"
+[     9.637] (II) event7  - PC Speaker: not tagged as supported input device
+[     9.707] (II) event7  - not using input device '/dev/input/event7'.
+[     9.707] (EE) libinput: PC Speaker: Failed to create a device for /dev/input/event7
+[     9.707] (EE) PreInit returned 2 for "PC Speaker"
+[     9.707] (II) UnloadModule: "libinput"
+[    14.094] (WW) AMDGPU(0): flip queue failed: Invalid argument
+[    14.094] (WW) AMDGPU(0): Page flip failed: Invalid argument
+[    14.396] (II) event2  - Video Bus: device removed
+[    14.457] (II) event0  - Power Button: device removed
+[    14.500] (II) event1  - Lid Switch: device removed
+[    14.517] (II) event5  - PixArt HP 1000 USB Optical Mouse: device removed
+[    14.550] (II) event6  - Ideapad extra buttons: device removed
+[    14.583] (II) event8  - ELAN06FA:00 04F3:3293 Mouse: device removed
+[    14.617] (II) event9  - ELAN06FA:00 04F3:3293 Touchpad: device removed
+[    14.650] (II) event3  - Wacom HID 5365 Pen: device removed
+[    14.684] (II) event4  - Wacom HID 5365 Finger: device removed
+[    14.717] (II) event11 - Lenovo Yoga Tablet Mode Control switch: device removed
+[    14.750] (II) event10 - AT Translated Set 2 keyboard: device removed
+[    14.767] (II) AIGLX: Suspending AIGLX clients for VT switch
