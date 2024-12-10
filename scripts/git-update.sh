@@ -210,10 +210,10 @@ else
     echo "Attempting to parse HID data and create libwacom tablet definition..."
 fi
 
-PEN_ID=$(cut -d. -f1 <<< "${PEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/' | tr 'A-F' 'a-f')
-PEN_VID=$(cut -d: -f2 <<< "${PEN_ID}")
-PEN_PID=$(cut -d: -f3 <<< "${PEN_ID}")
-TOUCHSCREEN_ID=$(cut -d. -f1 <<< "${TOUCHSCREEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/' | tr 'A-F' 'a-f')
+PEN_ID=$(cut -d. -f1 <<< "${PEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/' | tr 'A-F' 'a-f' | tr ':' '|')
+PEN_VID=$(cut -d\| -f2 <<< "${PEN_ID}")
+PEN_PID=$(cut -d\| -f3 <<< "${PEN_ID}")
+TOUCHSCREEN_ID=$(cut -d. -f1 <<< "${TOUCHSCREEN_FILE}" | sed 's/^0003/usb/; s/^0018/i2c/' | tr 'A-F' 'a-f' | tr ':' '|')
 TOUCHSCREEN_VID=$(cut -d: -f2 <<< "${TOUCHSCREEN_ID}")
 TOUCHSCREEN_PID=$(cut -d: -f3 <<< "${TOUCHSCREEN_ID}")
 
@@ -249,6 +249,8 @@ LIBWACOM_NOTE=$(cat <<-EOF
 LIBWACOM_PREFIX="isdv4-"
 if [[ ${PEN_VID} != "056a" ]]; then
     LIBWACOM_PREFIX="${LIBWACOM_PREFIX}${PEN_VID}-"
+else
+    LIBWACOM_PREFIX="wacom-${LIBWACOM_PREFIX}"
 fi
 LIBWACOM_FILE=$(tr A-Z a-z <<<"${LIBWACOM_PREFIX}${PEN_PID}.tablet")
 LIBWACOM_NAME="ISDv4 ${PEN_PID}"
