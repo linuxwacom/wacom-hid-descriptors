@@ -39,13 +39,13 @@
   <usage>digitizer_pen<!-- Pen (02h, application collection) --></usage>
   <COLLECTION type="application">
     <report_id>2</report_id>
-    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <usage>digitizer_stylus<!-- Stylus (20h, application collection, logical collection) --></usage>
     <COLLECTION type="physical">
       <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
       <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
       <usage>digitizer_eraser<!-- Eraser (45h, momentary control) --></usage>
       <usage>digitizer_invert<!-- Invert (3Ch, momentary control) --></usage>
-      <usage>5A</usage>
+      <usage>digitizer_secondary_barrel_switch<!-- Secondary barrel switch (5Ah, momentary control) --></usage>
       <usage>digitizer_in_range<!-- In range (32h, momentary control) --></usage>
       <logical_minimum>0</logical_minimum>
       <logical_maximum>1</logical_maximum>
@@ -99,7 +99,7 @@
       <non_linear/>
     </feature>
     <report_id>19</report_id>
-    <usage>60</usage>
+    <usage>digitizer_latency_mode<!-- Latency mode (60h, dynamic flag) --></usage>
     <report_size>1</report_size>
     <report_count>1</report_count>
     <logical_maximum>1</logical_maximum>
@@ -125,7 +125,7 @@
   <COLLECTION type="application">
     <report_id>17</report_id>
     <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
-    <usage>digitizer_stylus<!-- Stylus (20h, logical collection) --></usage>
+    <usage>digitizer_stylus<!-- Stylus (20h, application collection, logical collection) --></usage>
     <COLLECTION type="physical">
       <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
       <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>

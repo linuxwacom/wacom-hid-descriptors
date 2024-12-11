@@ -132,13 +132,13 @@ Collection (Application),
     Usage Page (Digitizer),             ; Digitizer (0Dh)
     Report ID (2),
     Usage (Contact Count Maximum),      ; Contact count maximum (55h, static value)
-    Usage (59h),
+    Usage (Pad Type),                   ; Pad type (59h, static flag)
     Report Size (4),
     Report Count (2),
     Logical Maximum (15),
     Feature (Variable),
     Report ID (7),
-    Usage (60h),
+    Usage (Latency Mode),               ; Latency mode (60h, dynamic flag)
     Report Size (1),
     Report Count (1),
     Logical Minimum (0),
@@ -172,8 +172,8 @@ Collection (Application),
     Usage (Finger),                     ; Finger (22h, logical collection)
     Collection (Physical),
         Report ID (5),
-        Usage (57h),
-        Usage (58h),
+        Usage (Surface Switch),         ; Surface switch (57h, dynamic flag)
+        Usage (Button Switch),          ; Button switch (58h, dynamic flag)
         Report Size (1),
         Report Count (2),
         Logical Maximum (1),
