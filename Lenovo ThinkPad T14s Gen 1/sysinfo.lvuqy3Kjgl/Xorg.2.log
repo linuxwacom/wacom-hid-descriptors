@@ -1,0 +1,680 @@
+[250980.053] 
+X.Org X Server 1.20.14
+X Protocol Version 11, Revision 0
+[250980.053] Build Operating System:  6.7.11-200.fc39.x86_64 
+[250980.053] Current Operating System: Linux HOSTNAME 6.8.11-300.fc40.x86_64 #1 SMP PREEMPT_DYNAMIC Mon May 27 14:53:33 UTC 2024 x86_64
+[250980.053] Kernel command line: BOOT_IMAGE=(hd0,gpt4)/vmlinuz-6.8.11-300.fc40.x86_64 USERNAME=UUID=eee57a90-9901-4809-b889-6bab7b80b02a ro USERNAMEflags=subvol=USERNAME rd.luks.uuid=luks-a67d42a5-7998-4ccc-9b2d-e86ac47da36e rhgb quiet rd.neednet=1 ip=dhcp crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M
+[250980.053] Build Date: 10 April 2024  12:00:00AM
+[250980.053] Build ID: xorg-x11-server 1.20.14-35.fc40 
+[250980.053] Current version of pixman: 0.43.4
+[250980.053] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[250980.053] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[250980.053] (==) Log file: "/var/log/Xorg.2.log", Time: Fri Jul 19 11:17:11 2024
+[250980.053] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[250980.053] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[250980.054] (==) No Layout section.  Using the first Screen section.
+[250980.054] (==) No screen section available. Using defaults.
+[250980.054] (**) |-->Screen "Default Screen Section" (0)
+[250980.054] (**) |   |-->Monitor "<default monitor>"
+[250980.054] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[250980.054] (==) Automatically adding devices
+[250980.054] (==) Automatically enabling devices
+[250980.054] (==) Automatically adding GPU devices
+[250980.054] (==) Automatically binding GPU devices
+[250980.054] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[250980.054] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[250980.054] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[250980.054] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[250980.054] (II) Loader magic: 0x559779a3da80
+[250980.054] (II) Module ABI versions:
+[250980.054] 	X.Org ANSI C Emulation: 0.4
+[250980.054] 	X.Org Video Driver: 24.1
+[250980.054] 	X.Org XInput driver : 24.1
+[250980.054] 	X.Org Server Extension : 10.0
+[250980.054] (--) using VT number 4
+
+[250980.054] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[250980.055] (II) xfree86: Adding drm device (/dev/dri/card1)
+[250980.058] (--) PCI:*(0@0:2:0) 8086:9b41:17aa:22af rev 2, Mem @ 0xed000000/16777216, 0xd0000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[250980.058] (II) LoadModule: "glx"
+[250980.058] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[250980.059] (II) Module glx: vendor="X.Org Foundation"
+[250980.059] 	compiled for 1.20.14, module version = 1.0.0
+[250980.059] 	ABI class: X.Org Server Extension, version 10.0
+[250980.059] (==) Matched modesetting as autoconfigured driver 0
+[250980.059] (==) Matched fbdev as autoconfigured driver 1
+[250980.059] (==) Matched vesa as autoconfigured driver 2
+[250980.059] (==) Assigned the driver to the xf86ConfigLayout
+[250980.059] (II) LoadModule: "modesetting"
+[250980.059] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[250980.059] (II) Module modesetting: vendor="X.Org Foundation"
+[250980.059] 	compiled for 1.20.14, module version = 1.20.14
+[250980.059] 	Module class: X.Org Video Driver
+[250980.059] 	ABI class: X.Org Video Driver, version 24.1
+[250980.059] (II) LoadModule: "fbdev"
+[250980.059] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[250980.059] (II) Module fbdev: vendor="X.Org Foundation"
+[250980.059] 	compiled for 1.20.14, module version = 0.5.0
+[250980.059] 	Module class: X.Org Video Driver
+[250980.059] 	ABI class: X.Org Video Driver, version 24.1
+[250980.059] (II) LoadModule: "vesa"
+[250980.059] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[250980.059] (II) Module vesa: vendor="X.Org Foundation"
+[250980.059] 	compiled for 1.20.14, module version = 2.5.0
+[250980.059] 	Module class: X.Org Video Driver
+[250980.059] 	ABI class: X.Org Video Driver, version 24.1
+[250980.059] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[250980.060] (II) FBDEV: driver for framebuffer: fbdev
+[250980.060] (II) VESA: driver for VESA chipsets: vesa
+[250980.070] (II) modeset(0): using drv /dev/dri/card1
+[250980.070] (WW) Falling back to old probe method for fbdev
+[250980.070] (II) Loading sub module "fbdevhw"
+[250980.070] (II) LoadModule: "fbdevhw"
+[250980.070] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[250980.070] (II) Module fbdevhw: vendor="X.Org Foundation"
+[250980.070] 	compiled for 1.20.14, module version = 0.0.2
+[250980.070] 	ABI class: X.Org Video Driver, version 24.1
+[250980.070] (EE) open /dev/fb0: No such file or directory
+[250980.071] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[250980.071] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[250980.071] (==) modeset(0): RGB weight 888
+[250980.071] (==) modeset(0): Default visual is TrueColor
+[250980.071] (II) Loading sub module "glamoregl"
+[250980.071] (II) LoadModule: "glamoregl"
+[250980.071] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[250980.073] (II) Module glamoregl: vendor="X.Org Foundation"
+[250980.073] 	compiled for 1.20.14, module version = 1.0.1
+[250980.073] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[250980.097] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) UHD Graphics (CML GT2)
+[250980.097] (II) modeset(0): glamor initialized
+[250980.099] (II) modeset(0): Output eDP-1 has no monitor section
+[250980.099] (II) modeset(0): Output DP-1 has no monitor section
+[250980.117] (II) modeset(0): Output HDMI-1 has no monitor section
+[250980.438] (II) modeset(0): Output DP-2 has no monitor section
+[250980.474] (II) modeset(0): Output HDMI-2 has no monitor section
+[250980.475] (II) modeset(0): EDID for output eDP-1
+[250980.475] (II) modeset(0): Manufacturer: IVO  Model: 57d  Serial#: 0
+[250980.475] (II) modeset(0): Year: 2018  Week: 0
+[250980.475] (II) modeset(0): EDID Version: 1.4
+[250980.475] (II) modeset(0): Digital Display Input
+[250980.475] (II) modeset(0): 6 bits per channel
+[250980.475] (II) modeset(0): Digital interface is DisplayPort
+[250980.475] (II) modeset(0): Max Image Size [cm]: horiz.: 31  vert.: 17
+[250980.475] (II) modeset(0): Gamma: 2.20
+[250980.475] (II) modeset(0): No DPMS capabilities specified
+[250980.475] (II) modeset(0): Supported color encodings: RGB 4:4:4 
+[250980.475] (II) modeset(0): First detailed timing is preferred mode
+[250980.475] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[250980.475] (II) modeset(0): redX: 0.579 redY: 0.335   greenX: 0.329 greenY: 0.564
+[250980.476] (II) modeset(0): blueX: 0.154 blueY: 0.130   whiteX: 0.312 whiteY: 0.328
+[250980.476] (II) modeset(0): Manufacturer's mask: 0
+[250980.476] (II) modeset(0): Supported detailed timing:
+[250980.476] (II) modeset(0): clock: 138.8 MHz   Image Size:  309 x 174 mm
+[250980.476] (II) modeset(0): h_active: 1920  h_sync: 1944  h_sync_end 1992 h_blank_end 2080 h_border: 0
+[250980.476] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1095 v_blanking: 1112 v_border: 0
+[250980.476] (II) modeset(0):  InfoVision
+[250980.476] (II) modeset(0):  R140NWF5 RA
+[250980.476] (II) modeset(0): EDID (in hex):
+[250980.476] (II) modeset(0): 	00ffffffffffff0026cf7d0500000000
+[250980.476] (II) modeset(0): 	001c0104951f11780276909455549027
+[250980.476] (II) modeset(0): 	21505400000001010101010101010101
+[250980.476] (II) modeset(0): 	010101010101383680a0703820401830
+[250980.476] (II) modeset(0): 	3c0035ae100000190000000000000000
+[250980.476] (II) modeset(0): 	00000000000000000000000000fe0049
+[250980.476] (II) modeset(0): 	6e666f566973696f6e0a2020000000fe
+[250980.476] (II) modeset(0): 	00523134304e574635205241200a000c
+[250980.476] (II) modeset(0): Printing probed modes for output eDP-1
+[250980.476] (II) modeset(0): Modeline "1920x1080"x60.0  138.80  1920 1944 1992 2080  1080 1083 1095 1112 -hsync -vsync (66.7 kHz eP)
+[250980.476] (II) modeset(0): Modeline "1920x1080"x120.0  356.38  1920 2080 2288 2656  1080 1081 1084 1118 doublescan -hsync +vsync (134.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "1920x1080"x119.9  266.50  1920 1944 1960 2000  1080 1081 1084 1111 doublescan +hsync -vsync (133.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[250980.476] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[250980.476] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[250980.476] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[250980.476] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[250980.476] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[250980.476] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[250980.476] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[250980.476] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[250980.476] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[250980.476] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[250980.476] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[250980.476] (II) modeset(0): EDID for output DP-1
+[250980.495] (II) modeset(0): EDID for output HDMI-1
+[250980.816] (II) modeset(0): EDID for output DP-2
+[250980.851] (II) modeset(0): EDID for output HDMI-2
+[250980.851] (II) modeset(0): Manufacturer: HAT  Model: 1160  Serial#: 16843009
+[250980.851] (II) modeset(0): Year: 2020  Week: 51
+[250980.851] (II) modeset(0): EDID Version: 1.3
+[250980.851] (II) modeset(0): Digital Display Input
+[250980.852] (II) modeset(0): Max Image Size [cm]: horiz.: 26  vert.: 14
+[250980.852] (II) modeset(0): Gamma: 2.20
+[250980.852] (II) modeset(0): DPMS capabilities: StandBy Suspend Off
+[250980.852] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[250980.852] (II) modeset(0): First detailed timing is preferred mode
+[250980.852] (II) modeset(0): redX: 0.640 redY: 0.329   greenX: 0.300 greenY: 0.600
+[250980.852] (II) modeset(0): blueX: 0.149 blueY: 0.060   whiteX: 0.312 whiteY: 0.328
+[250980.852] (II) modeset(0): Supported established timings:
+[250980.852] (II) modeset(0): 640x480@60Hz
+[250980.852] (II) modeset(0): 800x600@60Hz
+[250980.852] (II) modeset(0): 1024x768@60Hz
+[250980.852] (II) modeset(0): Manufacturer's mask: 0
+[250980.852] (II) modeset(0): Supported standard timings:
+[250980.852] (II) modeset(0): #0: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[250980.852] (II) modeset(0): #1: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[250980.852] (II) modeset(0): #2: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[250980.852] (II) modeset(0): #3: hsize: 1360  vsize 850  refresh: 60  vid: 139
+[250980.852] (II) modeset(0): Supported detailed timing:
+[250980.852] (II) modeset(0): clock: 148.5 MHz   Image Size:  256 x 144 mm
+[250980.852] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[250980.852] (II) modeset(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[250980.852] (II) modeset(0): Serial No: 
+[250980.852] (II) modeset(0): Monitor name: Kamvas 12
+[250980.852] (II) modeset(0): Ranges: V min: 49 V max: 65 Hz, H min: 30 H max: 81 kHz, PixClock max 175 MHz
+[250980.852] (II) modeset(0): Number of EDID sections to follow: 1
+[250980.852] (II) modeset(0): EDID (in hex):
+[250980.852] (II) modeset(0): 	00ffffffffffff002034601101010101
+[250980.852] (II) modeset(0): 	331e0103801a0e78eade50a3544c9926
+[250980.852] (II) modeset(0): 	0f50542108008180a940d1c08b000101
+[250980.852] (II) modeset(0): 	010101010101023a801871382d40582c
+[250980.852] (II) modeset(0): 	450000901000001e000000ff00000a20
+[250980.852] (II) modeset(0): 	20202020202020202020000000fc004b
+[250980.852] (II) modeset(0): 	616d7661732031320a202020000000fd
+[250980.852] (II) modeset(0): 	0031411e5111000a20202020202001e4
+[250980.852] (II) modeset(0): 	020300b1402067030c001000382d80e3
+[250980.852] (II) modeset(0): 	050301023a801871382d40582c450006
+[250980.852] (II) modeset(0): 	442100001e011d007251d01e206e2855
+[250980.852] (II) modeset(0): 	0006442100001e8c0ad08a20e02d1010
+[250980.852] (II) modeset(0): 	3e960006442100001800000000000000
+[250980.852] (II) modeset(0): 	00000000000000000000000000000000
+[250980.852] (II) modeset(0): 	00000000000000000000000000000000
+[250980.852] (II) modeset(0): 	00000000000000000000000000000060
+[250980.852] (--) modeset(0): HDMI max TMDS frequency 225000KHz
+[250980.852] (II) modeset(0): Printing probed modes for output HDMI-2
+[250980.852] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[250980.852] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[250980.852] (II) modeset(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[250980.852] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[250980.852] (II) modeset(0): Modeline "1360x850"x60.0   94.62  1360 1432 1576 1792  850 851 854 880 -hsync +vsync (52.8 kHz)
+[250980.852] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[250980.852] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[250980.852] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[250980.852] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[250980.852] (II) modeset(0): Output eDP-1 connected
+[250980.852] (II) modeset(0): Output DP-1 disconnected
+[250980.852] (II) modeset(0): Output HDMI-1 disconnected
+[250980.852] (II) modeset(0): Output DP-2 disconnected
+[250980.852] (II) modeset(0): Output HDMI-2 connected
+[250980.852] (II) modeset(0): Using spanning desktop for initial modes
+[250980.852] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
+[250980.852] (II) modeset(0): Output HDMI-2 using initial mode 1920x1080 +1920+0
+[250980.852] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[250980.852] (==) modeset(0): DPI set to (96, 96)
+[250980.852] (II) Loading sub module "fb"
+[250980.852] (II) LoadModule: "fb"
+[250980.852] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[250980.852] (II) Module fb: vendor="X.Org Foundation"
+[250980.852] 	compiled for 1.20.14, module version = 1.0.0
+[250980.852] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[250980.852] (II) UnloadModule: "fbdev"
+[250980.852] (II) Unloading fbdev
+[250980.852] (II) UnloadSubModule: "fbdevhw"
+[250980.852] (II) Unloading fbdevhw
+[250980.852] (II) UnloadModule: "vesa"
+[250980.852] (II) Unloading vesa
+[250980.861] (==) modeset(0): Backing store enabled
+[250980.861] (==) modeset(0): Silken mouse enabled
+[250981.080] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[250981.080] (==) modeset(0): DPMS enabled
+[250981.081] (II) modeset(0): [DRI2] Setup complete
+[250981.081] (II) modeset(0): [DRI2]   DRI driver: iris
+[250981.081] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[250981.081] (II) Initializing extension Generic Event Extension
+[250981.081] (II) Initializing extension SHAPE
+[250981.082] (II) Initializing extension MIT-SHM
+[250981.082] (II) Initializing extension XInputExtension
+[250981.082] (II) Initializing extension XTEST
+[250981.083] (II) Initializing extension BIG-REQUESTS
+[250981.083] (II) Initializing extension SYNC
+[250981.083] (II) Initializing extension XKEYBOARD
+[250981.084] (II) Initializing extension XC-MISC
+[250981.084] (II) Initializing extension SECURITY
+[250981.084] (II) Initializing extension XFIXES
+[250981.085] (II) Initializing extension RENDER
+[250981.085] (II) Initializing extension RANDR
+[250981.085] (II) Initializing extension COMPOSITE
+[250981.086] (II) Initializing extension DAMAGE
+[250981.086] (II) Initializing extension MIT-SCREEN-SAVER
+[250981.086] (II) Initializing extension DOUBLE-BUFFER
+[250981.087] (II) Initializing extension RECORD
+[250981.087] (II) Initializing extension DPMS
+[250981.087] (II) Initializing extension Present
+[250981.087] (II) Initializing extension DRI3
+[250981.088] (II) Initializing extension X-Resource
+[250981.088] (II) Initializing extension XVideo
+[250981.088] (II) Initializing extension XVideo-MotionCompensation
+[250981.088] (II) Initializing extension SELinux
+[250981.088] (II) SELinux: Disabled by boolean
+[250981.089] (II) Initializing extension GLX
+[250981.109] (II) AIGLX: Loaded and initialized iris
+[250981.109] (II) GLX: Initialized DRI2 GL provider for screen 0
+[250981.109] (II) Initializing extension XFree86-VidModeExtension
+[250981.110] (II) Initializing extension XFree86-DGA
+[250981.110] (II) Initializing extension DRI2
+[250981.111] (II) modeset(0): Damage tracking initialized
+[250981.111] (II) modeset(0): Setting screen physical size to 1016 x 285
+[250981.229] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[250981.229] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[250981.229] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[250981.229] (**) Power Button: Applying InputClass "system-keyboard"
+[250981.229] (II) LoadModule: "libinput"
+[250981.229] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[250981.230] (II) Module libinput: vendor="X.Org Foundation"
+[250981.230] 	compiled for 1.20.14, module version = 1.4.0
+[250981.230] 	Module class: X.Org XInput Driver
+[250981.230] 	ABI class: X.Org XInput driver, version 24.1
+[250981.230] (II) Using input driver 'libinput' for 'Power Button'
+[250981.230] (**) Power Button: always reports core events
+[250981.230] (**) Option "Device" "/dev/input/event2"
+[250981.232] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[250981.232] (II) event2  - Power Button: device is a keyboard
+[250981.232] (II) event2  - Power Button: device removed
+[250981.241] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[250981.241] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[250981.241] (**) Option "xkb_layout" "au"
+[250981.253] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[250981.253] (II) event2  - Power Button: device is a keyboard
+[250981.253] (II) config/udev: Adding input device Video Bus (/dev/input/event6)
+[250981.253] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[250981.253] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[250981.253] (**) Video Bus: Applying InputClass "system-keyboard"
+[250981.254] (II) Using input driver 'libinput' for 'Video Bus'
+[250981.254] (**) Video Bus: always reports core events
+[250981.254] (**) Option "Device" "/dev/input/event6"
+[250981.254] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[250981.254] (II) event6  - Video Bus: device is a keyboard
+[250981.254] (II) event6  - Video Bus: device removed
+[250981.281] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input24/event6"
+[250981.281] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[250981.281] (**) Option "xkb_layout" "au"
+[250981.281] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[250981.282] (II) event6  - Video Bus: device is a keyboard
+[250981.282] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[250981.282] (II) No input driver specified, ignoring this device.
+[250981.282] (II) This device may have been added with another device file.
+[250981.282] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[250981.282] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[250981.282] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[250981.282] (**) Sleep Button: Applying InputClass "system-keyboard"
+[250981.282] (II) Using input driver 'libinput' for 'Sleep Button'
+[250981.282] (**) Sleep Button: always reports core events
+[250981.282] (**) Option "Device" "/dev/input/event0"
+[250981.283] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[250981.283] (II) event0  - Sleep Button: device is a keyboard
+[250981.283] (II) event0  - Sleep Button: device removed
+[250981.289] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[250981.289] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[250981.289] (**) Option "xkb_layout" "au"
+[250981.289] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[250981.290] (II) event0  - Sleep Button: device is a keyboard
+[250981.291] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Pen (/dev/input/event12)
+[250981.291] (**) HUION Huion Tablet_GS1161 Pen: Applying InputClass "evdev tablet catchall"
+[250981.291] (**) HUION Huion Tablet_GS1161 Pen: Applying InputClass "libinput tablet catchall"
+[250981.291] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1161 Pen'
+[250981.291] (**) HUION Huion Tablet_GS1161 Pen: always reports core events
+[250981.291] (**) Option "Device" "/dev/input/event12"
+[250981.346] (II) event12 - HUION Huion Tablet_GS1161 Pen: is tagged by udev as: Tablet
+[250981.409] (II) event12 - HUION Huion Tablet_GS1161 Pen: device is a tablet
+[250981.409] (II) event12 - HUION Huion Tablet_GS1161 Pen: device removed
+[250981.423] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.0/0003:256C:006D.0001/input/input20/event12"
+[250981.423] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1161 Pen" (type: TABLET, id 9)
+[250981.476] (II) event12 - HUION Huion Tablet_GS1161 Pen: is tagged by udev as: Tablet
+[250981.498] (II) event12 - HUION Huion Tablet_GS1161 Pen: device is a tablet
+[250981.498] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Pen (/dev/input/mouse5)
+[250981.498] (II) No input driver specified, ignoring this device.
+[250981.498] (II) This device may have been added with another device file.
+[250981.499] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Pad (/dev/input/event13)
+[250981.499] (**) HUION Huion Tablet_GS1161 Pad: Applying InputClass "evdev tablet catchall"
+[250981.499] (**) HUION Huion Tablet_GS1161 Pad: Applying InputClass "libinput tablet catchall"
+[250981.499] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1161 Pad'
+[250981.499] (**) HUION Huion Tablet_GS1161 Pad: always reports core events
+[250981.499] (**) Option "Device" "/dev/input/event13"
+[250981.500] (II) event13 - HUION Huion Tablet_GS1161 Pad: is tagged by udev as: Tablet TabletPad
+[250981.530] (II) event13 - HUION Huion Tablet_GS1161 Pad: device is a tablet pad
+[250981.530] (II) event13 - HUION Huion Tablet_GS1161 Pad: device removed
+[250981.545] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.0/0003:256C:006D.0001/input/input21/event13"
+[250981.545] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1161 Pad" (type: PAD, id 10)
+[250981.545] (**) Option "AccelerationScheme" "none"
+[250981.545] (**) HUION Huion Tablet_GS1161 Pad: (accel) selected scheme none/0
+[250981.545] (**) HUION Huion Tablet_GS1161 Pad: (accel) acceleration factor: 2.000
+[250981.545] (**) HUION Huion Tablet_GS1161 Pad: (accel) acceleration threshold: 4
+[250981.546] (II) event13 - HUION Huion Tablet_GS1161 Pad: is tagged by udev as: Tablet TabletPad
+[250981.576] (II) event13 - HUION Huion Tablet_GS1161 Pad: device is a tablet pad
+[250981.576] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Pad (/dev/input/js0)
+[250981.576] (II) No input driver specified, ignoring this device.
+[250981.576] (II) This device may have been added with another device file.
+[250981.577] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Touch Strip (/dev/input/event14)
+[250981.577] (**) HUION Huion Tablet_GS1161 Touch Strip: Applying InputClass "evdev tablet catchall"
+[250981.577] (**) HUION Huion Tablet_GS1161 Touch Strip: Applying InputClass "libinput tablet catchall"
+[250981.577] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1161 Touch Strip'
+[250981.577] (**) HUION Huion Tablet_GS1161 Touch Strip: always reports core events
+[250981.577] (**) Option "Device" "/dev/input/event14"
+[250981.577] (II) event14 - HUION Huion Tablet_GS1161 Touch Strip: is tagged by udev as: Tablet
+[250981.577] (EE) event14 - HUION Huion Tablet_GS1161 Touch Strip: libinput bug: missing tablet capabilities: pen btn-stylus resolution. Ignoring this device.
+[250981.578] (II) event14 - HUION Huion Tablet_GS1161 Touch Strip: device is a tablet
+[250981.589] (II) event14 - failed to create input device '/dev/input/event14'.
+[250981.589] (EE) libinput: HUION Huion Tablet_GS1161 Touch Strip: Failed to create a device for /dev/input/event14
+[250981.589] (EE) PreInit returned 2 for "HUION Huion Tablet_GS1161 Touch Strip"
+[250981.589] (II) UnloadModule: "libinput"
+[250981.589] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Touch Strip (/dev/input/js1)
+[250981.589] (II) No input driver specified, ignoring this device.
+[250981.589] (II) This device may have been added with another device file.
+[250981.590] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Dial (/dev/input/event15)
+[250981.590] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "evdev keyboard catchall"
+[250981.590] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "evdev tablet catchall"
+[250981.590] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "libinput keyboard catchall"
+[250981.590] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "libinput tablet catchall"
+[250981.590] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "system-keyboard"
+[250981.590] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1161 Dial'
+[250981.590] (**) HUION Huion Tablet_GS1161 Dial: always reports core events
+[250981.590] (**) Option "Device" "/dev/input/event15"
+[250981.590] (II) event15 - HUION Huion Tablet_GS1161 Dial: is tagged by udev as: Keyboard Tablet TabletPad
+[250981.611] (II) event15 - HUION Huion Tablet_GS1161 Dial: tablet 'HUION Huion Tablet_GS1161 Dial' unknown to libwacom
+[250981.621] (II) event15 - HUION Huion Tablet_GS1161 Dial: device is a tablet pad
+[250981.621] (II) event15 - HUION Huion Tablet_GS1161 Dial: device removed
+[250981.641] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.0/0003:256C:006D.0001/input/input23/event15"
+[250981.641] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1161 Dial" (type: PAD, id 11)
+[250981.641] (**) Option "AccelerationScheme" "none"
+[250981.641] (**) HUION Huion Tablet_GS1161 Dial: (accel) selected scheme none/0
+[250981.641] (**) HUION Huion Tablet_GS1161 Dial: (accel) acceleration factor: 2.000
+[250981.641] (**) HUION Huion Tablet_GS1161 Dial: (accel) acceleration threshold: 4
+[250981.642] (II) event15 - HUION Huion Tablet_GS1161 Dial: is tagged by udev as: Keyboard Tablet TabletPad
+[250981.662] (II) event15 - HUION Huion Tablet_GS1161 Dial: tablet 'HUION Huion Tablet_GS1161 Dial' unknown to libwacom
+[250981.672] (II) event15 - HUION Huion Tablet_GS1161 Dial: device is a tablet pad
+[250981.672] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Dial (/dev/input/js2)
+[250981.672] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "system-keyboard"
+[250981.672] (II) No input driver specified, ignoring this device.
+[250981.672] (II) This device may have been added with another device file.
+[250981.673] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Dial (/dev/input/mouse6)
+[250981.673] (**) HUION Huion Tablet_GS1161 Dial: Applying InputClass "system-keyboard"
+[250981.673] (II) No input driver specified, ignoring this device.
+[250981.673] (II) This device may have been added with another device file.
+[250981.673] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Stylus (/dev/input/event4)
+[250981.673] (**) HUION Huion Tablet_GS1161 Stylus: Applying InputClass "evdev tablet catchall"
+[250981.673] (**) HUION Huion Tablet_GS1161 Stylus: Applying InputClass "libinput tablet catchall"
+[250981.673] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1161 Stylus'
+[250981.673] (**) HUION Huion Tablet_GS1161 Stylus: always reports core events
+[250981.673] (**) Option "Device" "/dev/input/event4"
+[250981.726] (II) event4  - HUION Huion Tablet_GS1161 Stylus: is tagged by udev as: Tablet
+[250981.753] (II) event4  - HUION Huion Tablet_GS1161 Stylus: tablet 'HUION Huion Tablet_GS1161 Stylus' unknown to libwacom
+[250981.753] (II) event4  - HUION Huion Tablet_GS1161 Stylus: device is a tablet
+[250981.753] (II) event4  - HUION Huion Tablet_GS1161 Stylus: device removed
+[250981.765] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:256C:006D.0002/input/input14/event4"
+[250981.765] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1161 Stylus" (type: TABLET, id 12)
+[250981.819] (II) event4  - HUION Huion Tablet_GS1161 Stylus: is tagged by udev as: Tablet
+[250981.874] (II) event4  - HUION Huion Tablet_GS1161 Stylus: tablet 'HUION Huion Tablet_GS1161 Stylus' unknown to libwacom
+[250981.874] (II) event4  - HUION Huion Tablet_GS1161 Stylus: device is a tablet
+[250981.875] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 Stylus (/dev/input/mouse0)
+[250981.875] (II) No input driver specified, ignoring this device.
+[250981.875] (II) This device may have been added with another device file.
+[250981.875] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 (/dev/input/event5)
+[250981.875] (**) HUION Huion Tablet_GS1161: Applying InputClass "evdev tablet catchall"
+[250981.875] (**) HUION Huion Tablet_GS1161: Applying InputClass "evdev touchscreen catchall"
+[250981.875] (**) HUION Huion Tablet_GS1161: Applying InputClass "libinput touchscreen catchall"
+[250981.875] (**) HUION Huion Tablet_GS1161: Applying InputClass "libinput tablet catchall"
+[250981.875] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1161'
+[250981.875] (**) HUION Huion Tablet_GS1161: always reports core events
+[250981.875] (**) Option "Device" "/dev/input/event5"
+[250981.876] (II) event5  - HUION Huion Tablet_GS1161: is tagged by udev as: Touchscreen Tablet
+[250981.877] (II) event5  - HUION Huion Tablet_GS1161: device is a touch device
+[250981.877] (II) event5  - HUION Huion Tablet_GS1161: device removed
+[250981.894] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:256C:006D.0002/input/input15/event5"
+[250981.894] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1161" (type: TOUCHSCREEN, id 13)
+[250981.894] (**) Option "AccelerationScheme" "none"
+[250981.894] (**) HUION Huion Tablet_GS1161: (accel) selected scheme none/0
+[250981.894] (**) HUION Huion Tablet_GS1161: (accel) acceleration factor: 2.000
+[250981.894] (**) HUION Huion Tablet_GS1161: (accel) acceleration threshold: 4
+[250981.895] (II) event5  - HUION Huion Tablet_GS1161: is tagged by udev as: Touchscreen Tablet
+[250981.895] (II) event5  - HUION Huion Tablet_GS1161: device is a touch device
+[250981.895] (II) config/udev: Adding input device HUION Huion Tablet_GS1161 (/dev/input/mouse1)
+[250981.895] (II) No input driver specified, ignoring this device.
+[250981.895] (II) This device may have been added with another device file.
+[250981.896] (II) config/udev: Adding input device ELAN Touchscreen (/dev/input/event9)
+[250981.896] (**) ELAN Touchscreen: Applying InputClass "evdev touchscreen catchall"
+[250981.896] (**) ELAN Touchscreen: Applying InputClass "libinput touchscreen catchall"
+[250981.896] (II) Using input driver 'libinput' for 'ELAN Touchscreen'
+[250981.896] (**) ELAN Touchscreen: always reports core events
+[250981.896] (**) Option "Device" "/dev/input/event9"
+[250981.897] (II) event9  - ELAN Touchscreen: is tagged by udev as: Touchscreen
+[250981.897] (II) event9  - ELAN Touchscreen: device is a touch device
+[250981.897] (II) event9  - ELAN Touchscreen: device removed
+[250981.912] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/0003:04F3:2D4A.0004/input/input16/event9"
+[250981.912] (II) XINPUT: Adding extended input device "ELAN Touchscreen" (type: TOUCHSCREEN, id 14)
+[250981.912] (**) Option "AccelerationScheme" "none"
+[250981.912] (**) ELAN Touchscreen: (accel) selected scheme none/0
+[250981.912] (**) ELAN Touchscreen: (accel) acceleration factor: 2.000
+[250981.912] (**) ELAN Touchscreen: (accel) acceleration threshold: 4
+[250981.913] (II) event9  - ELAN Touchscreen: is tagged by udev as: Touchscreen
+[250981.913] (II) event9  - ELAN Touchscreen: device is a touch device
+[250981.914] (II) config/udev: Adding input device ELAN Touchscreen (/dev/input/mouse4)
+[250981.914] (II) No input driver specified, ignoring this device.
+[250981.914] (II) This device may have been added with another device file.
+[250981.914] (II) config/udev: Adding input device ELAN Touchscreen UNKNOWN (/dev/input/event10)
+[250981.914] (II) No input driver specified, ignoring this device.
+[250981.914] (II) This device may have been added with another device file.
+[250981.914] (II) config/udev: Adding input device ELAN Touchscreen UNKNOWN (/dev/input/event11)
+[250981.914] (II) No input driver specified, ignoring this device.
+[250981.914] (II) This device may have been added with another device file.
+[250981.915] (II) config/udev: Adding input device sof-hda-dsp Mic (/dev/input/event19)
+[250981.915] (II) No input driver specified, ignoring this device.
+[250981.915] (II) This device may have been added with another device file.
+[250981.915] (II) config/udev: Adding input device sof-hda-dsp Headphone (/dev/input/event20)
+[250981.915] (II) No input driver specified, ignoring this device.
+[250981.915] (II) This device may have been added with another device file.
+[250981.915] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=3 (/dev/input/event21)
+[250981.915] (II) No input driver specified, ignoring this device.
+[250981.915] (II) This device may have been added with another device file.
+[250981.915] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=4 (/dev/input/event22)
+[250981.915] (II) No input driver specified, ignoring this device.
+[250981.915] (II) This device may have been added with another device file.
+[250981.916] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=5 (/dev/input/event23)
+[250981.916] (II) No input driver specified, ignoring this device.
+[250981.916] (II) This device may have been added with another device file.
+[250981.916] (II) config/udev: Adding input device Elan Touchpad (/dev/input/event17)
+[250981.916] (**) Elan Touchpad: Applying InputClass "evdev touchpad catchall"
+[250981.916] (**) Elan Touchpad: Applying InputClass "libinput touchpad catchall"
+[250981.916] (II) Using input driver 'libinput' for 'Elan Touchpad'
+[250981.916] (**) Elan Touchpad: always reports core events
+[250981.916] (**) Option "Device" "/dev/input/event17"
+[250981.917] (II) event17 - Elan Touchpad: is tagged by udev as: Touchpad
+[250981.918] (II) event17 - Elan Touchpad: device is a touchpad
+[250981.918] (II) event17 - Elan Touchpad: device removed
+[250981.934] (II) libinput: Elan Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[250981.934] (II) libinput: Elan Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[250981.934] (II) libinput: Elan Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[250981.934] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.4/i2c-7/7-0015/input/input30/event17"
+[250981.934] (II) XINPUT: Adding extended input device "Elan Touchpad" (type: TOUCHPAD, id 15)
+[250981.935] (**) Option "AccelerationScheme" "none"
+[250981.935] (**) Elan Touchpad: (accel) selected scheme none/0
+[250981.935] (**) Elan Touchpad: (accel) acceleration factor: 2.000
+[250981.935] (**) Elan Touchpad: (accel) acceleration threshold: 4
+[250981.936] (II) event17 - Elan Touchpad: is tagged by udev as: Touchpad
+[250981.938] (II) event17 - Elan Touchpad: device is a touchpad
+[250981.938] (II) config/udev: Adding input device Elan Touchpad (/dev/input/mouse2)
+[250981.938] (II) No input driver specified, ignoring this device.
+[250981.938] (II) This device may have been added with another device file.
+[250981.939] (II) config/udev: Adding input device Elan TrackPoint (/dev/input/event18)
+[250981.939] (**) Elan TrackPoint: Applying InputClass "evdev pointer catchall"
+[250981.939] (**) Elan TrackPoint: Applying InputClass "libinput pointer catchall"
+[250981.939] (II) Using input driver 'libinput' for 'Elan TrackPoint'
+[250981.939] (**) Elan TrackPoint: always reports core events
+[250981.939] (**) Option "Device" "/dev/input/event18"
+[250981.939] (II) event18 - Elan TrackPoint: is tagged by udev as: Mouse Pointingstick
+[250981.940] (II) event18 - Elan TrackPoint: device is a pointer
+[250981.940] (II) event18 - Elan TrackPoint: device removed
+[250981.954] (II) libinput: Elan TrackPoint: Step value 0 was provided, libinput Fallback acceleration function is used.
+[250981.954] (II) libinput: Elan TrackPoint: Step value 0 was provided, libinput Fallback acceleration function is used.
+[250981.954] (II) libinput: Elan TrackPoint: Step value 0 was provided, libinput Fallback acceleration function is used.
+[250981.954] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1f.4/i2c-7/7-0015/input/input31/event18"
+[250981.954] (II) XINPUT: Adding extended input device "Elan TrackPoint" (type: MOUSE, id 16)
+[250981.954] (**) Option "AccelerationScheme" "none"
+[250981.954] (**) Elan TrackPoint: (accel) selected scheme none/0
+[250981.954] (**) Elan TrackPoint: (accel) acceleration factor: 2.000
+[250981.954] (**) Elan TrackPoint: (accel) acceleration threshold: 4
+[250981.955] (II) event18 - Elan TrackPoint: is tagged by udev as: Mouse Pointingstick
+[250981.955] (II) event18 - Elan TrackPoint: device is a pointer
+[250981.956] (II) config/udev: Adding input device Elan TrackPoint (/dev/input/mouse3)
+[250981.956] (II) No input driver specified, ignoring this device.
+[250981.956] (II) This device may have been added with another device file.
+[250981.957] (II) config/udev: Adding input device Intel HID events (/dev/input/event16)
+[250981.957] (**) Intel HID events: Applying InputClass "evdev keyboard catchall"
+[250981.957] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[250981.957] (**) Intel HID events: Applying InputClass "system-keyboard"
+[250981.957] (II) Using input driver 'libinput' for 'Intel HID events'
+[250981.957] (**) Intel HID events: always reports core events
+[250981.957] (**) Option "Device" "/dev/input/event16"
+[250981.957] (II) event16 - Intel HID events: is tagged by udev as: Keyboard
+[250981.957] (II) event16 - Intel HID events: device is a keyboard
+[250981.957] (II) event16 - Intel HID events: device removed
+[250981.969] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input25/event16"
+[250981.969] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 17)
+[250981.969] (**) Option "xkb_layout" "au"
+[250981.970] (II) event16 - Intel HID events: is tagged by udev as: Keyboard
+[250981.970] (II) event16 - Intel HID events: device is a keyboard
+[250981.970] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[250981.970] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[250981.970] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[250981.970] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[250981.970] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[250981.970] (**) AT Translated Set 2 keyboard: always reports core events
+[250981.970] (**) Option "Device" "/dev/input/event3"
+[250981.971] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[250981.971] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[250981.972] (II) event3  - AT Translated Set 2 keyboard: device removed
+[250981.988] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[250981.988] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 18)
+[250981.988] (**) Option "xkb_layout" "au"
+[250981.989] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[250981.989] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[250981.992] (II) config/udev: Adding input device PC Speaker (/dev/input/event8)
+[250981.992] (II) No input driver specified, ignoring this device.
+[250981.992] (II) This device may have been added with another device file.
+[250981.997] (II) config/udev: Adding input device ThinkPad Extra Buttons (/dev/input/event7)
+[250981.997] (**) ThinkPad Extra Buttons: Applying InputClass "evdev keyboard catchall"
+[250981.997] (**) ThinkPad Extra Buttons: Applying InputClass "libinput keyboard catchall"
+[250981.997] (**) ThinkPad Extra Buttons: Applying InputClass "system-keyboard"
+[250981.997] (II) Using input driver 'libinput' for 'ThinkPad Extra Buttons'
+[250981.997] (**) ThinkPad Extra Buttons: always reports core events
+[250981.997] (**) Option "Device" "/dev/input/event7"
+[250981.998] (II) event7  - ThinkPad Extra Buttons: is tagged by udev as: Keyboard Switch
+[250981.998] (II) event7  - ThinkPad Extra Buttons: device is a keyboard
+[250981.999] (II) event7  - ThinkPad Extra Buttons: device removed
+[250982.008] (**) Option "config_info" "udev:/sys/devices/platform/thinkpad_acpi/input/input26/event7"
+[250982.008] (II) XINPUT: Adding extended input device "ThinkPad Extra Buttons" (type: KEYBOARD, id 19)
+[250982.008] (**) Option "xkb_layout" "au"
+[250982.010] (II) event7  - ThinkPad Extra Buttons: is tagged by udev as: Keyboard Switch
+[250982.010] (II) event7  - ThinkPad Extra Buttons: device is a keyboard
+[250990.043] (II) event2  - Power Button: device removed
+[250990.053] (II) event6  - Video Bus: device removed
+[250990.069] (II) event0  - Sleep Button: device removed
+[250990.075] (II) event12 - HUION Huion Tablet_GS1161 Pen: device removed
+[250990.087] (II) event13 - HUION Huion Tablet_GS1161 Pad: device removed
+[250990.100] (II) event15 - HUION Huion Tablet_GS1161 Dial: device removed
+[250990.118] (II) event4  - HUION Huion Tablet_GS1161 Stylus: device removed
+[250990.130] (II) event5  - HUION Huion Tablet_GS1161: device removed
+[250990.143] (II) event9  - ELAN Touchscreen: device removed
+[250990.156] (II) event17 - Elan Touchpad: device removed
+[250990.172] (II) event18 - Elan TrackPoint: device removed
+[250990.185] (II) event16 - Intel HID events: device removed
+[250990.191] (II) event3  - AT Translated Set 2 keyboard: device removed
+[250990.197] (II) event7  - ThinkPad Extra Buttons: device removed
+[250990.232] (II) UnloadModule: "libinput"
+[250990.232] (II) UnloadModule: "libinput"
+[250990.232] (II) UnloadModule: "libinput"
+[250990.232] (II) UnloadModule: "libinput"
+[250990.232] (II) UnloadModule: "libinput"
+[250990.232] (II) UnloadModule: "libinput"
+[250990.232] (II) UnloadModule: "libinput"
+[250990.233] (II) UnloadModule: "libinput"
+[250990.233] (II) UnloadModule: "libinput"
+[250990.233] (II) UnloadModule: "libinput"
+[250990.233] (II) UnloadModule: "libinput"
+[250990.233] (II) UnloadModule: "libinput"
+[250990.233] (II) UnloadModule: "libinput"
+[250990.235] (II) UnloadModule: "libinput"
+[250990.317] (II) Server terminated successfully (0). Closing log file.

@@ -1,0 +1,164 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0011:00/i2c-4/i2c-WCOM517E:00/0018:056A:517E.0002/input/input20':
+    KERNEL=="input20"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{capabilities/abs}=="1000d000003"
+    ATTR{capabilities/ev}=="1b"
+    ATTR{capabilities/ff}=="0"
+    ATTR{capabilities/key}=="1c03 0 0 0 0 0"
+    ATTR{capabilities/led}=="0"
+    ATTR{capabilities/msc}=="1"
+    ATTR{capabilities/rel}=="0"
+    ATTR{capabilities/snd}=="0"
+    ATTR{capabilities/sw}=="0"
+    ATTR{id/bustype}=="0018"
+    ATTR{id/product}=="517e"
+    ATTR{id/vendor}=="056a"
+    ATTR{id/version}=="0100"
+    ATTR{inhibited}=="0"
+    ATTR{name}=="Wacom HID 517E Pen"
+    ATTR{phys}=="i2c-WCOM517E:00"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-4/i2c-WCOM517E:00/0018:056A:517E.0002':
+    KERNELS=="0018:056A:517E.0002"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-4/i2c-WCOM517E:00':
+    KERNELS=="i2c-WCOM517E:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid_acpi"
+    ATTRS{name}=="WCOM517E:00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-4':
+    KERNELS=="i2c-4"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{delete_device}=="(not readable)"
+    ATTRS{name}=="AMD MP2 i2c bus 0"
+    ATTRS{new_device}=="(not readable)"
+    ATTRS{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/AMDI0011:00':
+    KERNELS=="AMDI0011:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_amd_mp2"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0011:00/i2c-4/i2c-WCOM517E:00/0018:056A:517E.0002/input/input21':
+    KERNEL=="input21"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{capabilities/abs}=="260800000000003"
+    ATTR{capabilities/ev}=="1b"
+    ATTR{capabilities/ff}=="0"
+    ATTR{capabilities/key}=="400 0 0 0 0 0"
+    ATTR{capabilities/led}=="0"
+    ATTR{capabilities/msc}=="20"
+    ATTR{capabilities/rel}=="0"
+    ATTR{capabilities/snd}=="0"
+    ATTR{capabilities/sw}=="0"
+    ATTR{id/bustype}=="0018"
+    ATTR{id/product}=="517e"
+    ATTR{id/vendor}=="056a"
+    ATTR{id/version}=="0100"
+    ATTR{inhibited}=="0"
+    ATTR{name}=="Wacom HID 517E Finger"
+    ATTR{phys}=="i2c-WCOM517E:00"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-4/i2c-WCOM517E:00/0018:056A:517E.0002':
+    KERNELS=="0018:056A:517E.0002"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-4/i2c-WCOM517E:00':
+    KERNELS=="i2c-WCOM517E:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid_acpi"
+    ATTRS{name}=="WCOM517E:00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/AMDI0011:00/i2c-4':
+    KERNELS=="i2c-4"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{delete_device}=="(not readable)"
+    ATTRS{name}=="AMD MP2 i2c bus 0"
+    ATTRS{new_device}=="(not readable)"
+    ATTRS{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/AMDI0011:00':
+    KERNELS=="AMDI0011:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_amd_mp2"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

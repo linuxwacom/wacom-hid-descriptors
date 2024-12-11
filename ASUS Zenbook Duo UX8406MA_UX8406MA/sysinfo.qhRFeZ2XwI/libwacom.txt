@@ -1,0 +1,43 @@
+devices:
+- name: 'ELAN9008:00'
+  bus: 'i2c'
+  vid: '0x04f3'
+  pid: '0x4259'
+  nodes: 
+  - /dev/input/event15: 'ELAN9008:00 04F3:4259 Stylus'
+  - /dev/input/event16: 'ELAN9008:00 04F3:4259 Touchpad'
+  styli:
+   - id: 0xffffe
+     name: 'General Pen Eraser'
+     type: 'general'
+     axes: ['x', 'y' , 'tilt', 'distance', 'pressure']
+     buttons: 2
+     is_eraser: 'true'
+     eraser_type: 'invert'
+   - id: 0xfffff
+     name: 'General Pen'
+     type: 'general'
+     axes: ['x', 'y' , 'tilt', 'distance', 'pressure']
+     buttons: 2
+     erasers: [0xffffe]
+- name: 'ELAN9009:00'
+  bus: 'i2c'
+  vid: '0x04f3'
+  pid: '0x42ec'
+  nodes: 
+  - /dev/input/event19: 'ELAN9009:00 04F3:42EC Stylus'
+  - /dev/input/event20: 'ELAN9009:00 04F3:42EC Touchpad'
+  styli:
+   - id: 0xffffe
+     name: 'General Pen Eraser'
+     type: 'general'
+     axes: ['x', 'y' , 'tilt', 'distance', 'pressure']
+     buttons: 2
+     is_eraser: 'true'
+     eraser_type: 'invert'
+   - id: 0xfffff
+     name: 'General Pen'
+     type: 'general'
+     axes: ['x', 'y' , 'tilt', 'distance', 'pressure']
+     buttons: 2
+     erasers: [0xffffe]

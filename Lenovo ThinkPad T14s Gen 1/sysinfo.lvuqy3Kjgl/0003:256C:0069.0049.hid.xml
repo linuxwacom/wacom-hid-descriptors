@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keypad<!-- Keypad (07h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>8</report_id>
+    <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+    <usage>digitizer_tablet_function_keys<!-- Tablet function keys (39h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_barrel_switch<!-- Barrel switch (44h, momentary control) --></usage>
+      <report_count>1</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>7</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>2</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>0A</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>10</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage_minimum>31</usage_minimum>
+      <usage_maximum>3A</usage_maximum>
+      <report_count>9</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>13</report_count>
+      <report_size>1</report_size>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-1</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+    <usage_page>FFFF<!-- FFFFh, vendor-defined --></usage_page>
+    <usage>01</usage>
+    <COLLECTION type="physical">
+      <report_id>172</report_id>
+      <report_size>8</report_size>
+      <report_count>11</report_count>
+      <input>
+        <constant/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>

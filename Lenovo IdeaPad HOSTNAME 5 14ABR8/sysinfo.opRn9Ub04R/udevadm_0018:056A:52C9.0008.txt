@@ -1,0 +1,184 @@
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0010:00/i2c-0/i2c-WACF2200:00/0018:056A:52C9.0008/input/input25':
+    KERNEL=="input25"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{capabilities/abs}=="1000d000003"
+    ATTR{capabilities/ev}=="1b"
+    ATTR{capabilities/ff}=="0"
+    ATTR{capabilities/key}=="1c03 0 0 0 0 0"
+    ATTR{capabilities/led}=="0"
+    ATTR{capabilities/msc}=="21"
+    ATTR{capabilities/rel}=="0"
+    ATTR{capabilities/snd}=="0"
+    ATTR{capabilities/sw}=="0"
+    ATTR{id/bustype}=="0018"
+    ATTR{id/product}=="52c9"
+    ATTR{id/vendor}=="056a"
+    ATTR{id/version}=="0100"
+    ATTR{inhibited}=="0"
+    ATTR{name}=="Wacom HID 52C9 Pen"
+    ATTR{phys}=="i2c-WACF2200:00"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0010:00/i2c-0/i2c-WACF2200:00/0018:056A:52C9.0008':
+    KERNELS=="0018:056A:52C9.0008"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:00/i2c-0/i2c-WACF2200:00':
+    KERNELS=="i2c-WACF2200:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid_acpi"
+    ATTRS{name}=="WACF2200:00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="546"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="9128771"
+    ATTRS{power/wakeup_max_time_ms}=="0"
+    ATTRS{power/wakeup_total_time_ms}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:00/i2c-0':
+    KERNELS=="i2c-0"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{delete_device}=="(not readable)"
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+    ATTRS{new_device}=="(not readable)"
+    ATTRS{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:00':
+    KERNELS=="AMDI0010:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/autosuspend_delay_ms}=="1000"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="17192"
+    ATTRS{power/runtime_status}=="suspended"
+    ATTRS{power/runtime_suspended_time}=="15550084"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/platform/AMDI0010:00/i2c-0/i2c-WACF2200:00/0018:056A:52C9.0008/input/input26':
+    KERNEL=="input26"
+    SUBSYSTEM=="input"
+    DRIVER==""
+    ATTR{capabilities/abs}=="260800000000003"
+    ATTR{capabilities/ev}=="1b"
+    ATTR{capabilities/ff}=="0"
+    ATTR{capabilities/key}=="400 0 0 0 0 0"
+    ATTR{capabilities/led}=="0"
+    ATTR{capabilities/msc}=="20"
+    ATTR{capabilities/rel}=="0"
+    ATTR{capabilities/snd}=="0"
+    ATTR{capabilities/sw}=="0"
+    ATTR{id/bustype}=="0018"
+    ATTR{id/product}=="52c9"
+    ATTR{id/vendor}=="056a"
+    ATTR{id/version}=="0100"
+    ATTR{inhibited}=="0"
+    ATTR{name}=="Wacom HID 52C9 Finger"
+    ATTR{phys}=="i2c-WACF2200:00"
+    ATTR{power/control}=="auto"
+    ATTR{power/runtime_active_time}=="0"
+    ATTR{power/runtime_status}=="unsupported"
+    ATTR{power/runtime_suspended_time}=="0"
+    ATTR{properties}=="2"
+    ATTR{uniq}==""
+
+  looking at parent device '/devices/platform/AMDI0010:00/i2c-0/i2c-WACF2200:00/0018:056A:52C9.0008':
+    KERNELS=="0018:056A:52C9.0008"
+    SUBSYSTEMS=="hid"
+    DRIVERS=="wacom"
+    ATTRS{country}=="00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:00/i2c-0/i2c-WACF2200:00':
+    KERNELS=="i2c-WACF2200:00"
+    SUBSYSTEMS=="i2c"
+    DRIVERS=="i2c_hid_acpi"
+    ATTRS{name}=="WACF2200:00"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+    ATTRS{power/wakeup}=="enabled"
+    ATTRS{power/wakeup_abort_count}=="0"
+    ATTRS{power/wakeup_active}=="0"
+    ATTRS{power/wakeup_active_count}=="546"
+    ATTRS{power/wakeup_count}=="0"
+    ATTRS{power/wakeup_expire_count}=="0"
+    ATTRS{power/wakeup_last_time_ms}=="9128771"
+    ATTRS{power/wakeup_max_time_ms}=="0"
+    ATTRS{power/wakeup_total_time_ms}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:00/i2c-0':
+    KERNELS=="i2c-0"
+    SUBSYSTEMS=="i2c"
+    DRIVERS==""
+    ATTRS{delete_device}=="(not readable)"
+    ATTRS{name}=="Synopsys DesignWare I2C adapter"
+    ATTRS{new_device}=="(not readable)"
+    ATTRS{waiting_for_supplier}=="0"
+
+  looking at parent device '/devices/platform/AMDI0010:00':
+    KERNELS=="AMDI0010:00"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="i2c_designware"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{power/autosuspend_delay_ms}=="1000"
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="17192"
+    ATTRS{power/runtime_status}=="suspended"
+    ATTRS{power/runtime_suspended_time}=="15550089"
+
+  looking at parent device '/devices/platform':
+    KERNELS=="platform"
+    SUBSYSTEMS==""
+    DRIVERS==""
+    ATTRS{power/control}=="auto"
+    ATTRS{power/runtime_active_time}=="0"
+    ATTRS{power/runtime_status}=="unsupported"
+    ATTRS{power/runtime_suspended_time}=="0"
+

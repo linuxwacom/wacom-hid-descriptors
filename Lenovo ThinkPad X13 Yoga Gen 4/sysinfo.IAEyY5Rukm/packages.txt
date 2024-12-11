@@ -1,0 +1,91 @@
+Name            : xf86-input-wacom
+Version         : 1.2.2-1
+Description     : X.Org Wacom tablet driver
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/xf86-input-wacom
+Licenses        : GPL-2.0-or-later
+Groups          : None
+Provides        : None
+Depends On      : libxi  libxinerama  libxrandr  systemd-libs  libx11  glibc
+Optional Deps   : None
+Required By     : wacomtablet
+Optional For    : None
+Conflicts With  : xorg-server<21.1.1  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 230.05 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Mon Apr 15 07:44:23 2024
+Install Date    : Tue Dec 10 09:23:20 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : libwacom
+Version         : 2.13.0-1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/libwacom/wiki
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  libevdev  libgudev  glibc
+Optional Deps   : python-libevdev: for libwacom-show-stylus
+                  python-pyudev: for libwacom-show-stylus
+Required By     : libinput  wacomtablet
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1398.81 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Mon Sep  2 07:24:30 2024
+Install Date    : Tue Dec 10 09:11:46 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : libinput
+Version         : 1.27.0-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://gitlab.freedesktop.org/libinput/libinput
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : mtdev  libevdev  libwacom  systemd-libs  glibc
+Optional Deps   : gtk4: libinput debug-gui [installed]
+                  python-pyudev: libinput measure
+                  python-libevdev: libinput measure
+                  python-yaml: used by various tools [installed]
+Required By     : kwin  qt5-base  qt6-base  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1161.23 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Tue Nov 19 16:52:05 2024
+Install Date    : Fri Dec  6 10:46:04 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.5.0-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput  glibc
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 103.13 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Tue Oct 15 14:44:40 2024
+Install Date    : Fri Dec  6 10:46:18 2024
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature

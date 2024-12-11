@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>FF0A<!-- FF0Ah, vendor-defined --></usage_page>
+  <usage>01</usage>
+  <COLLECTION type="application">
+    <report_id>2</report_id>
+    <usage>02</usage>
+    <report_size>8</report_size>
+    <report_count>11</report_count>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <input>
+      <variable/>
+    </input>
+    <usage>03</usage>
+    <report_size>8</report_size>
+    <report_count>63</report_count>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <output>
+      <variable/>
+    </output>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keypad<!-- Keypad (07h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>240</report_id>
+    <report_count>1</report_count>
+    <report_size>8</report_size>
+    <input>
+      <constant/>
+    </input>
+    <logical_maximum>0</logical_maximum>
+    <logical_maximum>1</logical_maximum>
+    <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+    <usage>digitizer_tablet_function_keys<!-- Tablet function keys (39h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>0A</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>10</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage>31</usage>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage>44</usage>
+      <report_count>1</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>7</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <report_count>2</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-1</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+    <report_id>242</report_id>
+    <report_count>1</report_count>
+    <report_size>8</report_size>
+    <input>
+      <constant/>
+    </input>
+    <input>
+      <constant/>
+    </input>
+    <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+    <usage>digitizer_stylus<!-- Stylus (20h, application collection, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>power_batsys<!-- Power battery system (85h, power page) --></usage_page>
+      <usage>65</usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>100</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage>44</usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>
