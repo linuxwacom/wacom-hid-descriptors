@@ -68,6 +68,7 @@ if [[ -z "${OEM}" ]]; then
     "MOTION")                OEM="Motion Computing";;
     "ASUSTeK COMPUTER INC.") OEM="ASUS";;
     "HUAWEI")                OEM="Huawei";;
+    "Panasonic Corporation") OEM="Panasonic";;
     *)                       echo "ERROR: Unknown OEM '${OEM}'. Please specify one with the --oem=<name> argument."; exit 1;;
   esac
 fi
@@ -178,6 +179,7 @@ else
 	EOF
 fi
 
+echo "Generated '$(pwd)/README"
 
 ####################
 # Determine libwacom properties
