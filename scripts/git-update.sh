@@ -69,6 +69,7 @@ if [[ -z "${OEM}" ]]; then
     "ASUSTeK COMPUTER INC.") OEM="ASUS";;
     "HUAWEI")                OEM="Huawei";;
     "Panasonic Corporation") OEM="Panasonic";;
+    "TOSHIBA")               OEM="Toshiba";;
     *)                       echo "ERROR: Unknown OEM '${OEM}'. Please specify one with the --oem=<name> argument."; exit 1;;
   esac
 fi
