@@ -118,20 +118,14 @@ LIBWACOM_NOTE=$(cat <<-EOF
 	EOF
 )
 
-LIBWACOM_PREFIX="isdv4-"
-if [[ ${PEN_VID} != "056a" ]]; then
-    LIBWACOM_PREFIX="${LIBWACOM_PREFIX}${PEN_VID}-"
-else
-    LIBWACOM_PREFIX="wacom-${LIBWACOM_PREFIX}"
-fi
-LIBWACOM_FILE=$(tr A-Z a-z <<<"${LIBWACOM_PREFIX}${PEN_PID}.tablet")
 LIBWACOM_NAME="ISDv4 ${PEN_PID}"
 LIBWACOM_MATCH=${PEN_ID}
 LIBWACOM_CLASS="ISDV4"
 if [[ ${SENSORTYPE} == "AES" ]]; then
-    LIBWACOM_STYLI="@isdv4-aes;"
+    LIBWACOM_STYLI="Styli=@isdv4-aes;"
 elif [[ ${SENSORTYPE} == "EMR" ]]; then
-    LIBWACOM_STYLI="0xfffff;0xffffe;"
+    # No default stylus entry required
+    true
 fi
 LIBWACOM_WIDTH=$(printf '%.0f\n' ${PEN_WIDTH})
 LIBWACOM_HEIGHT=$(printf '%.0f\n' ${PEN_HEIGHT})
@@ -144,6 +138,16 @@ if [[ -n "${TOUCH_SUPPORT}" ]]; then
 else
     LIBWACOM_HASTOUCH="false"
 fi
+
+
+LIBWACOM_PREFIX="isdv4-"
+if [[ ${PEN_VID} != "056a" ]]; then
+    LIBWACOM_PREFIX="${LIBWACOM_PREFIX}${PEN_VID}-"
+else
+    LIBWACOM_PREFIX="wacom-${LIBWACOM_PREFIX}"
+    LIBWACOM_NAME="Wacom ISDv4 ${PEN_PID}"
+fi
+LIBWACOM_FILE=$(tr A-Z a-z <<<"${LIBWACOM_PREFIX}${PEN_PID}.tablet")
 
 ####################
 # Create tablet definition file
@@ -159,7 +163,7 @@ cat <<-EOF > "${LIBWACOM_FILE}"
 	Width=${LIBWACOM_WIDTH}
 	Height=${LIBWACOM_HEIGHT}
 	IntegratedIn=${LIBACOM_INTEGRATION}
-	Styli=${LIBWACOM_STYLI}
+	${LIBWACOM_STYLI}
 
 	[Features]
 	Stylus=true
