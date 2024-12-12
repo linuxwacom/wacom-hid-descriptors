@@ -31,15 +31,9 @@ for arg in "${@}"; do
   esac
 done
 
-if [[ -f "${ARCHIVE}" ]]; then
-  IDENT=$(tar --list -f "${ARCHIVE}" | head -n1)
-  IDENT=${IDENT%/}
-  MACHINE=$(tar xf "${ARCHIVE}" -O ${IDENT}/machine.txt)
-else
-  IDENT="${ARCHIVE}"
-  IDENT=${IDENT%/}
-  MACHINE=$(cat "${IDENT}"/machine.txt)
-fi
+IDENT=$(tar --list -f "${ARCHIVE}" | head -n1)
+IDENT=${IDENT%/}
+MACHINE=$(tar xf "${ARCHIVE}" -O ${IDENT}/machine.txt)
 
 if [[ -n "${NOURL}" ]]; then
   echo "NOTE: Treating as a private bug..."
@@ -110,13 +104,11 @@ done
 ####################
 # Extract archive into proper directory
 #
-if [[ ! -d "$ARCHIVE" ]]; then
-  if [[ ! -d "${OEM} ${PRODUCT}" ]]; then
-    mkdir "${OEM} ${PRODUCT}"
-  fi
-  cd "${OEM} ${PRODUCT}"
-  tar xf "${ARCHIVE}"
+if [[ ! -d "${OEM} ${PRODUCT}" ]]; then
+  mkdir "${OEM} ${PRODUCT}"
 fi
+cd "${OEM} ${PRODUCT}"
+tar xf "${ARCHIVE}"
 
 
 
