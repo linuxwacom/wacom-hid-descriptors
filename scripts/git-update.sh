@@ -180,7 +180,7 @@ else
 	EOF
 fi
 
-echo "Generated '$(pwd)/README"
+echo "Generated '$(pwd)/README'"
 
 ####################
 # Determine libwacom properties
