@@ -1,0 +1,19 @@
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keypad),                     ; Keypad (07h, application collection)
+Collection (Application),
+    Report ID (6),
+    Usage Page (Digitizer),         ; Digitizer (0Dh)
+    Usage (Tablet Function Keys),   ; Tablet function keys (39h, logical collection)
+    Collection (Physical),
+        Usage Page (Button),        ; Button (09h)
+        Report Size (1),
+        Report Count (6),
+        Usage Minimum (01h),
+        Usage Maximum (06h),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Input (Variable),
+        Report Count (50),
+        Input (Constant),
+    End Collection,
+End Collection

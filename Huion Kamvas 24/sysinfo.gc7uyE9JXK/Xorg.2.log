@@ -1,0 +1,665 @@
+[   628.419] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[   628.419] _XSERVTransMakeAllCOTSServerListeners: server already running
+[   628.419] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[   628.419] _XSERVTransMakeAllCOTSServerListeners: server already running
+[   628.419] (--) Log file renamed from "/var/log/Xorg.pid-4148.log" to "/var/log/Xorg.2.log"
+[   628.419] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[   628.419] Current Operating System: Linux HOSTNAME 6.5.0-28-generic #29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2 x86_64
+[   628.419] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.5.0-28-generic root=UUID=bc3decb0-4c0e-4bda-a3e2-6fd8d3162275 ro quiet splash vt.handoff=7
+[   628.419] xorg-server 2:21.1.4-2ubuntu1.7~22.04.10 (For technical support please see http://www.ubuntu.com/support) 
+[   628.419] Current version of pixman: 0.40.0
+[   628.419] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   628.419] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   628.419] (==) Log file: "/var/log/Xorg.2.log", Time: Wed May  8 10:02:25 2024
+[   628.419] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   628.419] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   628.419] (==) No Layout section.  Using the first Screen section.
+[   628.419] (==) No screen section available. Using defaults.
+[   628.419] (**) |-->Screen "Default Screen Section" (0)
+[   628.419] (**) |   |-->Monitor "<default monitor>"
+[   628.420] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   628.420] (==) Automatically adding devices
+[   628.420] (==) Automatically enabling devices
+[   628.420] (==) Automatically adding GPU devices
+[   628.420] (==) Automatically binding GPU devices
+[   628.420] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   628.420] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[   628.420] 	Entry deleted from font path.
+[   628.420] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[   628.420] 	Entry deleted from font path.
+[   628.420] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[   628.420] 	Entry deleted from font path.
+[   628.420] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[   628.420] 	Entry deleted from font path.
+[   628.420] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[   628.420] 	Entry deleted from font path.
+[   628.420] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[   628.420] (**) ModulePath set to "/opt/amdgpu-pro/lib/xorg/modules,/opt/amdgpu/lib/xorg/modules,/usr/lib/xorg/modules"
+[   628.420] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   628.420] (II) Loader magic: 0x61892f1b5020
+[   628.420] (II) Module ABI versions:
+[   628.420] 	X.Org ANSI C Emulation: 0.4
+[   628.420] 	X.Org Video Driver: 25.2
+[   628.420] 	X.Org XInput driver : 24.4
+[   628.420] 	X.Org Server Extension : 10.0
+[   628.420] (++) using VT number 3
+
+[   628.420] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[   628.421] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   628.421] (II) Platform probe for /sys/devices/pci0000:00/0000:00:03.1/0000:09:00.0/0000:0a:00.0/0000:0b:00.0/drm/card0
+[   628.425] (--) PCI:*(11@0:0:0) 1002:73af:1458:2332 rev 192, Mem @ 0xd0000000/268435456, 0xe0000000/2097152, 0xfcc00000/1048576, I/O @ 0x0000e000/256, BIOS @ 0x????????/131072
+[   628.425] (II) LoadModule: "glx"
+[   628.426] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   628.426] (II) Module glx: vendor="X.Org Foundation"
+[   628.426] 	compiled for 1.21.1.4, module version = 1.0.0
+[   628.426] 	ABI class: X.Org Server Extension, version 10.0
+[   628.426] (II) Applying OutputClass "AMDgpu" to /dev/dri/card0
+[   628.426] 	loading driver: amdgpu
+[   628.426] (II) Applying OutputClass "AMDgpu" to /dev/dri/card0
+[   628.426] 	loading driver: amdgpu
+[   628.426] (==) Matched amdgpu as autoconfigured driver 0
+[   628.426] (==) Matched ati as autoconfigured driver 1
+[   628.426] (==) Matched modesetting as autoconfigured driver 2
+[   628.426] (==) Matched fbdev as autoconfigured driver 3
+[   628.426] (==) Matched vesa as autoconfigured driver 4
+[   628.426] (==) Assigned the driver to the xf86ConfigLayout
+[   628.426] (II) LoadModule: "amdgpu"
+[   628.426] (II) Loading /opt/amdgpu/lib/xorg/modules/drivers/amdgpu_drv.so
+[   628.427] (II) Module amdgpu: vendor="X.Org Foundation"
+[   628.427] 	compiled for 1.21.1.4, module version = 22.0.0
+[   628.427] 	Module class: X.Org Video Driver
+[   628.427] 	ABI class: X.Org Video Driver, version 25.2
+[   628.427] (II) LoadModule: "ati"
+[   628.427] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[   628.427] (II) Module ati: vendor="X.Org Foundation"
+[   628.427] 	compiled for 1.21.1.3, module version = 19.1.0
+[   628.427] 	Module class: X.Org Video Driver
+[   628.427] 	ABI class: X.Org Video Driver, version 25.2
+[   628.670] (II) LoadModule: "radeon"
+[   628.670] (II) Loading /usr/lib/xorg/modules/drivers/radeon_drv.so
+[   628.671] (II) Module radeon: vendor="X.Org Foundation"
+[   628.671] 	compiled for 1.21.1.3, module version = 19.1.0
+[   628.671] 	Module class: X.Org Video Driver
+[   628.671] 	ABI class: X.Org Video Driver, version 25.2
+[   628.671] (II) LoadModule: "modesetting"
+[   628.671] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[   628.671] (II) Module modesetting: vendor="X.Org Foundation"
+[   628.671] 	compiled for 1.21.1.4, module version = 1.21.1
+[   628.671] 	Module class: X.Org Video Driver
+[   628.671] 	ABI class: X.Org Video Driver, version 25.2
+[   628.671] (II) LoadModule: "fbdev"
+[   628.671] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[   628.671] (II) Module fbdev: vendor="X.Org Foundation"
+[   628.671] 	compiled for 1.21.1.3, module version = 0.5.0
+[   628.671] 	Module class: X.Org Video Driver
+[   628.671] 	ABI class: X.Org Video Driver, version 25.2
+[   628.671] (II) LoadModule: "vesa"
+[   628.671] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[   628.671] (II) Module vesa: vendor="X.Org Foundation"
+[   628.671] 	compiled for 1.21.1.3, module version = 2.5.0
+[   628.671] 	Module class: X.Org Video Driver
+[   628.671] 	ABI class: X.Org Video Driver, version 25.2
+[   628.671] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[   628.671] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[   628.673] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[   628.673] (II) FBDEV: driver for framebuffer: fbdev
+[   628.673] (II) VESA: driver for VESA chipsets: vesa
+[   628.674] (WW) Falling back to old probe method for modesetting
+[   628.675] (WW) Falling back to old probe method for fbdev
+[   628.675] (II) Loading sub module "fbdevhw"
+[   628.675] (II) LoadModule: "fbdevhw"
+[   628.675] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[   628.675] (II) Module fbdevhw: vendor="X.Org Foundation"
+[   628.675] 	compiled for 1.21.1.4, module version = 0.0.2
+[   628.675] 	ABI class: X.Org Video Driver, version 25.2
+[   628.675] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   628.675] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[   628.675] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[   628.675] (==) AMDGPU(0): Default visual is TrueColor
+[   628.675] (==) AMDGPU(0): RGB weight 888
+[   628.675] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[   628.675] (--) AMDGPU(0): Chipset: "AMD Radeon RX 6900 XT" (ChipID = 0x73af)
+[   628.675] (II) Loading sub module "fb"
+[   628.675] (II) LoadModule: "fb"
+[   628.675] (II) Module "fb" already built-in
+[   628.675] (II) Loading sub module "dri2"
+[   628.675] (II) LoadModule: "dri2"
+[   628.675] (II) Module "dri2" already built-in
+[   628.690] (II) Loading sub module "glamoregl"
+[   628.690] (II) LoadModule: "glamoregl"
+[   628.690] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[   628.691] (II) Module glamoregl: vendor="X.Org Foundation"
+[   628.691] 	compiled for 1.21.1.4, module version = 1.0.1
+[   628.691] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   628.696] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon RX 6900 XT (navi21, LLVM 17.0.4, DRM 3.56, 6.5.0-28-generic)
+[   628.696] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[   628.696] (==) AMDGPU(0): TearFree property default: auto
+[   628.696] (==) AMDGPU(0): VariableRefresh: disabled
+[   628.696] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[   628.696] (II) AMDGPU(0): KMS Pageflipping: enabled
+[   628.696] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[   628.696] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[   628.699] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[   628.699] (II) AMDGPU(0): Output HDMI-A-1 has no monitor section
+[   628.713] (II) AMDGPU(0): EDID for output DisplayPort-0
+[   628.713] (II) AMDGPU(0): EDID for output DisplayPort-1
+[   628.716] (II) AMDGPU(0): EDID for output HDMI-A-0
+[   628.716] (II) AMDGPU(0): Manufacturer: LEN  Model: 66d7  Serial#: 825512524
+[   628.716] (II) AMDGPU(0): Year: 2021  Week: 44
+[   628.716] (II) AMDGPU(0): EDID Version: 1.3
+[   628.716] (II) AMDGPU(0): Digital Display Input
+[   628.716] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 53  vert.: 30
+[   628.716] (II) AMDGPU(0): Gamma: 2.20
+[   628.716] (II) AMDGPU(0): DPMS capabilities: Off
+[   628.716] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[   628.716] (II) AMDGPU(0): Default color space is primary color space
+[   628.716] (II) AMDGPU(0): First detailed timing is preferred mode
+[   628.716] (II) AMDGPU(0): redX: 0.658 redY: 0.332   greenX: 0.310 greenY: 0.620
+[   628.716] (II) AMDGPU(0): blueX: 0.147 blueY: 0.070   whiteX: 0.313 whiteY: 0.329
+[   628.716] (II) AMDGPU(0): Supported established timings:
+[   628.716] (II) AMDGPU(0): 720x400@70Hz
+[   628.716] (II) AMDGPU(0): 640x480@60Hz
+[   628.716] (II) AMDGPU(0): 640x480@72Hz
+[   628.716] (II) AMDGPU(0): 640x480@75Hz
+[   628.716] (II) AMDGPU(0): 800x600@60Hz
+[   628.716] (II) AMDGPU(0): 800x600@72Hz
+[   628.716] (II) AMDGPU(0): 800x600@75Hz
+[   628.716] (II) AMDGPU(0): 832x624@75Hz
+[   628.716] (II) AMDGPU(0): 1024x768@60Hz
+[   628.716] (II) AMDGPU(0): 1024x768@70Hz
+[   628.716] (II) AMDGPU(0): 1024x768@75Hz
+[   628.716] (II) AMDGPU(0): 1280x1024@75Hz
+[   628.716] (II) AMDGPU(0): Manufacturer's mask: 0
+[   628.716] (II) AMDGPU(0): Supported standard timings:
+[   628.716] (II) AMDGPU(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[   628.716] (II) AMDGPU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[   628.716] (II) AMDGPU(0): #2: hsize: 1280  vsize 1024  refresh: 70  vid: 35457
+[   628.716] (II) AMDGPU(0): #3: hsize: 1440  vsize 900  refresh: 60  vid: 149
+[   628.716] (II) AMDGPU(0): #4: hsize: 1600  vsize 900  refresh: 60  vid: 49321
+[   628.716] (II) AMDGPU(0): #5: hsize: 1600  vsize 900  refresh: 75  vid: 53161
+[   628.716] (II) AMDGPU(0): #6: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+[   628.716] (II) AMDGPU(0): #7: hsize: 1920  vsize 1080  refresh: 75  vid: 53201
+[   628.716] (II) AMDGPU(0): Supported detailed timing:
+[   628.716] (II) AMDGPU(0): clock: 233.2 MHz   Image Size:  527 x 296 mm
+[   628.716] (II) AMDGPU(0): h_active: 1920  h_sync: 1988  h_sync_end 2020 h_blank_end 2120 h_border: 0
+[   628.716] (II) AMDGPU(0): v_active: 1080  v_sync: 1086  v_sync_end 1094 v_blanking: 1100 v_border: 0
+[   628.716] (II) AMDGPU(0): Serial No: UK6014RL
+[   628.716] (II) AMDGPU(0): Ranges: V min: 50 V max: 100 Hz, H min: 30 H max: 115 kHz, PixClock max 305 MHz
+[   628.716] (II) AMDGPU(0): Monitor name: G24e-20
+[   628.716] (II) AMDGPU(0): Supported detailed timing:
+[   628.716] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  527 x 296 mm
+[   628.716] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[   628.716] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[   628.716] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[   628.716] (II) AMDGPU(0): EDID (in hex):
+[   628.716] (II) AMDGPU(0): 	00ffffffffffff0030aed7664c523431
+[   628.716] (II) AMDGPU(0): 	2c1f010380351e782e87c5a8554f9e25
+[   628.716] (II) AMDGPU(0): 	125054adef00714f8180818a9500a9c0
+[   628.716] (II) AMDGPU(0): 	a9cfb300d1cf185b80c8703814404420
+[   628.716] (II) AMDGPU(0): 	68000f282100001a000000ff00554b36
+[   628.716] (II) AMDGPU(0): 	303134524c0a20202020000000fd0032
+[   628.716] (II) AMDGPU(0): 	641e731e000a202020202020000000fc
+[   628.716] (II) AMDGPU(0): 	00473234652d32300a20202020200103
+[   628.716] (II) AMDGPU(0): 	020331f14b01020304901112131f404c
+[   628.716] (II) AMDGPU(0): 	230907078301000067030c001000003c
+[   628.716] (II) AMDGPU(0): 	67d85dc4013c8000681a000001013064
+[   628.716] (II) AMDGPU(0): 	e6023a801871382d40582c45000f2821
+[   628.716] (II) AMDGPU(0): 	00001e00000000000000000000000000
+[   628.716] (II) AMDGPU(0): 	00000000000000000000000000000000
+[   628.716] (II) AMDGPU(0): 	00000000000000000000000000000000
+[   628.716] (II) AMDGPU(0): 	0000000000000000000000000000004f
+[   628.716] (--) AMDGPU(0): HDMI max TMDS frequency 300000KHz
+[   628.716] (II) AMDGPU(0): Printing probed modes for output HDMI-A-0
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x100.0  233.20  1920 1988 2020 2120  1080 1086 1094 1100 +hsync -vsync (110.0 kHz eP)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x100.0  297.00  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (112.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x96.1  233.20  1920 1988 2020 2120  1080 1131 1139 1145 +hsync -vsync (110.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x72.0  233.20  1920 1988 2020 2120  1080 1513 1521 1527 +hsync -vsync (110.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x60.0  233.20  1920 1988 2020 2120  1080 1819 1827 1833 +hsync -vsync (110.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x50.0  233.20  1920 1988 2020 2120  1080 2186 2194 2200 +hsync -vsync (110.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x48.0  233.20  1920 1988 2020 2120  1080 2277 2285 2291 +hsync -vsync (110.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x75.0  220.60  1920 2056 2264 2608  1080 1081 1084 1128 -hsync +vsync (84.6 kHz)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1600x900"x75.0  152.28  1600 1704 1880 2160  900 901 904 940 -hsync +vsync (70.5 kHz)
+[   628.716] (II) AMDGPU(0): Modeline "1600x900"x60.0  108.00  1600 1624 1704 1800  900 901 904 1000 +hsync +vsync (60.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1280x1024"x70.0  128.95  1280 1368 1504 1728  1024 1025 1028 1066 -hsync +vsync (74.6 kHz)
+[   628.716] (II) AMDGPU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1280x800"x100.0  233.20  1280 1988 2020 2120  800 1086 1094 1100 +hsync -vsync (110.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "832x624"x74.6   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   628.716] (II) AMDGPU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   628.716] (II) AMDGPU(0): EDID for output HDMI-A-1
+[   628.716] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[   628.716] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[   628.716] (II) AMDGPU(0): Output HDMI-A-0 connected
+[   628.716] (II) AMDGPU(0): Output HDMI-A-1 disconnected
+[   628.716] (II) AMDGPU(0): Using exact sizes for initial modes
+[   628.716] (II) AMDGPU(0): Output HDMI-A-0 using initial mode 1920x1080 +0+0
+[   628.716] (II) AMDGPU(0): mem size init: gart size :7d5de9000 vram size: s:3fceec000 visible:2fdb31000
+[   628.716] (II) AMDGPU(0): Video RAM: 16726960 kByte
+[   628.716] (==) AMDGPU(0): DPI set to (96, 96)
+[   628.716] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[   628.716] (II) Loading sub module "ramdac"
+[   628.716] (II) LoadModule: "ramdac"
+[   628.716] (II) Module "ramdac" already built-in
+[   628.716] (II) UnloadModule: "radeon"
+[   628.716] (II) Unloading radeon
+[   628.717] (II) UnloadModule: "modesetting"
+[   628.717] (II) Unloading modesetting
+[   628.717] (II) UnloadModule: "fbdev"
+[   628.717] (II) Unloading fbdev
+[   628.717] (II) UnloadSubModule: "fbdevhw"
+[   628.717] (II) Unloading fbdevhw
+[   628.717] (II) UnloadModule: "vesa"
+[   628.717] (II) Unloading vesa
+[   628.717] (II) AMDGPU(0): [DRI2] Setup complete
+[   628.717] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[   628.717] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[   628.722] (II) AMDGPU(0): Front buffer pitch: 7680 bytes
+[   628.722] (II) AMDGPU(0): SYNC extension fences enabled
+[   628.722] (II) AMDGPU(0): Present extension enabled
+[   628.722] (==) AMDGPU(0): DRI3 enabled
+[   628.722] (==) AMDGPU(0): Backing store enabled
+[   628.722] (II) AMDGPU(0): Direct rendering enabled
+[   628.727] (II) AMDGPU(0): Use GLAMOR acceleration.
+[   628.727] (II) AMDGPU(0): Acceleration enabled
+[   628.727] (==) AMDGPU(0): DPMS enabled
+[   628.727] (==) AMDGPU(0): Silken mouse enabled
+[   628.727] (II) AMDGPU(0): Set up textured video (glamor)
+[   628.741] (II) Initializing extension Generic Event Extension
+[   628.741] (II) Initializing extension SHAPE
+[   628.741] (II) Initializing extension MIT-SHM
+[   628.741] (II) Initializing extension XInputExtension
+[   628.741] (II) Initializing extension XTEST
+[   628.741] (II) Initializing extension BIG-REQUESTS
+[   628.741] (II) Initializing extension SYNC
+[   628.741] (II) Initializing extension XKEYBOARD
+[   628.742] (II) Initializing extension XC-MISC
+[   628.742] (II) Initializing extension SECURITY
+[   628.742] (II) Initializing extension XFIXES
+[   628.742] (II) Initializing extension RENDER
+[   628.742] (II) Initializing extension RANDR
+[   628.742] (II) Initializing extension COMPOSITE
+[   628.742] (II) Initializing extension DAMAGE
+[   628.742] (II) Initializing extension MIT-SCREEN-SAVER
+[   628.742] (II) Initializing extension DOUBLE-BUFFER
+[   628.742] (II) Initializing extension RECORD
+[   628.742] (II) Initializing extension DPMS
+[   628.742] (II) Initializing extension Present
+[   628.742] (II) Initializing extension DRI3
+[   628.742] (II) Initializing extension X-Resource
+[   628.742] (II) Initializing extension XVideo
+[   628.742] (II) Initializing extension XVideo-MotionCompensation
+[   628.742] (II) Initializing extension SELinux
+[   628.742] (II) SELinux: Disabled on system
+[   628.742] (II) Initializing extension GLX
+[   628.745] (II) AIGLX: Loaded and initialized radeonsi
+[   628.745] (II) GLX: Initialized DRI2 GL provider for screen 0
+[   628.746] (II) Initializing extension XFree86-VidModeExtension
+[   628.746] (II) Initializing extension XFree86-DGA
+[   628.746] (II) Initializing extension XFree86-DRI
+[   628.746] (II) Initializing extension DRI2
+[   628.746] (II) AMDGPU(0): Setting screen physical size to 508 x 285
+[   628.849] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   628.849] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   628.849] (**) Power Button: Applying InputClass "system-keyboard"
+[   628.849] (II) LoadModule: "libinput"
+[   628.849] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[   628.850] (II) Module libinput: vendor="X.Org Foundation"
+[   628.850] 	compiled for 1.20.14, module version = 1.2.1
+[   628.850] 	Module class: X.Org XInput Driver
+[   628.850] 	ABI class: X.Org XInput driver, version 24.1
+[   628.850] (II) Using input driver 'libinput' for 'Power Button'
+[   628.850] (**) Power Button: always reports core events
+[   628.850] (**) Option "Device" "/dev/input/event1"
+[   628.851] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   628.851] (II) event1  - Power Button: device is a keyboard
+[   628.851] (II) event1  - Power Button: device removed
+[   628.876] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[   628.876] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   628.876] (**) Option "xkb_model" "pc105"
+[   628.876] (**) Option "xkb_layout" "us"
+[   628.876] (WW) Option "xkb_variant" requires a string value
+[   628.876] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   628.876] (II) event1  - Power Button: device is a keyboard
+[   628.877] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[   628.877] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   628.877] (**) Power Button: Applying InputClass "system-keyboard"
+[   628.877] (II) Using input driver 'libinput' for 'Power Button'
+[   628.877] (**) Power Button: always reports core events
+[   628.877] (**) Option "Device" "/dev/input/event0"
+[   628.877] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   628.877] (II) event0  - Power Button: device is a keyboard
+[   628.877] (II) event0  - Power Button: device removed
+[   628.900] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[   628.900] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[   628.900] (**) Option "xkb_model" "pc105"
+[   628.900] (**) Option "xkb_layout" "us"
+[   628.900] (WW) Option "xkb_variant" requires a string value
+[   628.900] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   628.900] (II) event0  - Power Button: device is a keyboard
+[   628.901] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse (/dev/input/event2)
+[   628.901] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse: Applying InputClass "libinput pointer catchall"
+[   628.901] (II) Using input driver 'libinput' for 'Corsair CORSAIR M65 RGB ELITE Gaming Mouse'
+[   628.901] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse: always reports core events
+[   628.901] (**) Option "Device" "/dev/input/event2"
+[   628.902] (II) event2  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse: is tagged by udev as: Mouse
+[   628.902] (II) event2  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse: device is a pointer
+[   628.902] (II) event2  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse: device removed
+[   628.944] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:01:00.0/0000:02:08.0/0000:05:00.1/usb1/1-1/1-1:1.0/0003:1B1C:1B5A.0001/input/input2/event2"
+[   628.944] (II) XINPUT: Adding extended input device "Corsair CORSAIR M65 RGB ELITE Gaming Mouse" (type: MOUSE, id 8)
+[   628.944] (**) Option "AccelerationScheme" "none"
+[   628.944] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse: (accel) selected scheme none/0
+[   628.944] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse: (accel) acceleration factor: 2.000
+[   628.944] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse: (accel) acceleration threshold: 4
+[   628.945] (II) event2  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse: is tagged by udev as: Mouse
+[   628.945] (II) event2  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse: device is a pointer
+[   628.946] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse (/dev/input/js0)
+[   628.946] (II) No input driver specified, ignoring this device.
+[   628.946] (II) This device may have been added with another device file.
+[   628.946] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse (/dev/input/mouse0)
+[   628.946] (II) No input driver specified, ignoring this device.
+[   628.946] (II) This device may have been added with another device file.
+[   628.947] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control (/dev/input/event3)
+[   628.947] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   628.947] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: Applying InputClass "system-keyboard"
+[   628.947] (II) Using input driver 'libinput' for 'Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control'
+[   628.947] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: always reports core events
+[   628.947] (**) Option "Device" "/dev/input/event3"
+[   628.948] (II) event3  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: is tagged by udev as: Keyboard
+[   628.948] (II) event3  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: device is a keyboard
+[   628.948] (II) event3  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: device removed
+[   628.992] (II) libinput: Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: needs a virtual subdevice
+[   628.992] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:01:00.0/0000:02:08.0/0000:05:00.1/usb1/1-1/1-1:1.0/0003:1B1C:1B5A.0001/input/input3/event3"
+[   628.992] (II) XINPUT: Adding extended input device "Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control" (type: MOUSE, id 9)
+[   628.992] (**) Option "AccelerationScheme" "none"
+[   628.992] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: (accel) selected scheme none/0
+[   628.992] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: (accel) acceleration factor: 2.000
+[   628.992] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: (accel) acceleration threshold: 4
+[   628.993] (II) event3  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: is tagged by udev as: Keyboard
+[   628.993] (II) event3  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: device is a keyboard
+[   628.993] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse (/dev/input/event4)
+[   628.994] (II) No input driver specified, ignoring this device.
+[   628.994] (II) This device may have been added with another device file.
+[   628.994] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse (/dev/input/event5)
+[   628.994] (II) No input driver specified, ignoring this device.
+[   628.994] (II) This device may have been added with another device file.
+[   628.995] (II) config/udev: Adding input device Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard (/dev/input/event6)
+[   628.995] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[   628.995] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: Applying InputClass "system-keyboard"
+[   628.995] (II) Using input driver 'libinput' for 'Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard'
+[   628.995] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: always reports core events
+[   628.995] (**) Option "Device" "/dev/input/event6"
+[   628.996] (II) event6  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[   628.996] (II) event6  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: device is a keyboard
+[   628.996] (II) event6  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: device removed
+[   629.040] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:01:00.0/0000:02:08.0/0000:05:00.1/usb1/1-1/1-1:1.0/0003:1B1C:1B5A.0001/input/input6/event6"
+[   629.040] (II) XINPUT: Adding extended input device "Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard" (type: KEYBOARD, id 10)
+[   629.040] (**) Option "xkb_model" "pc105"
+[   629.040] (**) Option "xkb_layout" "us"
+[   629.040] (WW) Option "xkb_variant" requires a string value
+[   629.041] (II) event6  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[   629.041] (II) event6  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: device is a keyboard
+[   629.042] (II) config/udev: Adding input device Corsair CORSAIR K55 RGB PRO Gaming Keyboard (/dev/input/event8)
+[   629.042] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: Applying InputClass "libinput keyboard catchall"
+[   629.042] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: Applying InputClass "system-keyboard"
+[   629.042] (II) Using input driver 'libinput' for 'Corsair CORSAIR K55 RGB PRO Gaming Keyboard'
+[   629.042] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: always reports core events
+[   629.042] (**) Option "Device" "/dev/input/event8"
+[   629.043] (II) event8  - Corsair CORSAIR K55 RGB PRO Gaming Keyboard: is tagged by udev as: Keyboard
+[   629.043] (II) event8  - Corsair CORSAIR K55 RGB PRO Gaming Keyboard: device is a keyboard
+[   629.043] (II) event8  - Corsair CORSAIR K55 RGB PRO Gaming Keyboard: device removed
+[   629.056] (II) libinput: Corsair CORSAIR K55 RGB PRO Gaming Keyboard: needs a virtual subdevice
+[   629.056] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:01:00.0/0000:02:08.0/0000:05:00.1/usb1/1-2/1-2:1.0/0003:1B1C:1BA4.0004/input/input8/event8"
+[   629.056] (II) XINPUT: Adding extended input device "Corsair CORSAIR K55 RGB PRO Gaming Keyboard" (type: MOUSE, id 11)
+[   629.056] (**) Option "AccelerationScheme" "none"
+[   629.056] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: (accel) selected scheme none/0
+[   629.056] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: (accel) acceleration factor: 2.000
+[   629.056] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: (accel) acceleration threshold: 4
+[   629.057] (II) event8  - Corsair CORSAIR K55 RGB PRO Gaming Keyboard: is tagged by udev as: Keyboard
+[   629.057] (II) event8  - Corsair CORSAIR K55 RGB PRO Gaming Keyboard: device is a keyboard
+[   629.058] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=7 (/dev/input/event10)
+[   629.058] (II) No input driver specified, ignoring this device.
+[   629.058] (II) This device may have been added with another device file.
+[   629.058] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=8 (/dev/input/event11)
+[   629.058] (II) No input driver specified, ignoring this device.
+[   629.058] (II) This device may have been added with another device file.
+[   629.058] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=9 (/dev/input/event12)
+[   629.058] (II) No input driver specified, ignoring this device.
+[   629.058] (II) This device may have been added with another device file.
+[   629.058] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=10 (/dev/input/event13)
+[   629.058] (II) No input driver specified, ignoring this device.
+[   629.058] (II) This device may have been added with another device file.
+[   629.059] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=11 (/dev/input/event14)
+[   629.059] (II) No input driver specified, ignoring this device.
+[   629.059] (II) This device may have been added with another device file.
+[   629.059] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event9)
+[   629.059] (II) No input driver specified, ignoring this device.
+[   629.059] (II) This device may have been added with another device file.
+[   629.059] (II) config/udev: Adding input device USB PnP Audio Device (/dev/input/event7)
+[   629.060] (**) USB PnP Audio Device: Applying InputClass "libinput keyboard catchall"
+[   629.060] (**) USB PnP Audio Device: Applying InputClass "system-keyboard"
+[   629.060] (II) Using input driver 'libinput' for 'USB PnP Audio Device'
+[   629.060] (**) USB PnP Audio Device: always reports core events
+[   629.060] (**) Option "Device" "/dev/input/event7"
+[   629.060] (II) event7  - USB PnP Audio Device: is tagged by udev as: Keyboard
+[   629.060] (II) event7  - USB PnP Audio Device: device is a keyboard
+[   629.060] (II) event7  - USB PnP Audio Device: device removed
+[   629.080] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:0d:00.3/usb5/5-3/5-3:1.2/0003:0C76:161E.0003/input/input7/event7"
+[   629.080] (II) XINPUT: Adding extended input device "USB PnP Audio Device" (type: KEYBOARD, id 12)
+[   629.080] (**) Option "xkb_model" "pc105"
+[   629.080] (**) Option "xkb_layout" "us"
+[   629.080] (WW) Option "xkb_variant" requires a string value
+[   629.081] (II) event7  - USB PnP Audio Device: is tagged by udev as: Keyboard
+[   629.081] (II) event7  - USB PnP Audio Device: device is a keyboard
+[   629.081] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event15)
+[   629.081] (II) No input driver specified, ignoring this device.
+[   629.081] (II) This device may have been added with another device file.
+[   629.081] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event16)
+[   629.081] (II) No input driver specified, ignoring this device.
+[   629.081] (II) This device may have been added with another device file.
+[   629.082] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event17)
+[   629.082] (II) No input driver specified, ignoring this device.
+[   629.082] (II) This device may have been added with another device file.
+[   629.082] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event18)
+[   629.082] (II) No input driver specified, ignoring this device.
+[   629.082] (II) This device may have been added with another device file.
+[   629.082] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event19)
+[   629.082] (II) No input driver specified, ignoring this device.
+[   629.082] (II) This device may have been added with another device file.
+[   629.086] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   629.086] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: Applying InputClass "system-keyboard"
+[   629.086] (II) Using input driver 'libinput' for 'Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control'
+[   629.086] (**) Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: always reports core events
+[   629.086] (**) Option "Device" "/dev/input/event3"
+[   629.086] (II) libinput: Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: is a virtual subdevice
+[   629.087] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:01:00.0/0000:02:08.0/0000:05:00.1/usb1/1-1/1-1:1.0/0003:1B1C:1B5A.0001/input/input3/event3"
+[   629.087] (II) XINPUT: Adding extended input device "Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control" (type: KEYBOARD, id 13)
+[   629.087] (**) Option "xkb_model" "pc105"
+[   629.087] (**) Option "xkb_layout" "us"
+[   629.087] (WW) Option "xkb_variant" requires a string value
+[   629.087] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: Applying InputClass "libinput keyboard catchall"
+[   629.087] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: Applying InputClass "system-keyboard"
+[   629.087] (II) Using input driver 'libinput' for 'Corsair CORSAIR K55 RGB PRO Gaming Keyboard'
+[   629.087] (**) Corsair CORSAIR K55 RGB PRO Gaming Keyboard: always reports core events
+[   629.087] (**) Option "Device" "/dev/input/event8"
+[   629.087] (II) libinput: Corsair CORSAIR K55 RGB PRO Gaming Keyboard: is a virtual subdevice
+[   629.087] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:01:00.0/0000:02:08.0/0000:05:00.1/usb1/1-2/1-2:1.0/0003:1B1C:1BA4.0004/input/input8/event8"
+[   629.087] (II) XINPUT: Adding extended input device "Corsair CORSAIR K55 RGB PRO Gaming Keyboard" (type: KEYBOARD, id 14)
+[   629.087] (**) Option "xkb_model" "pc105"
+[   629.087] (**) Option "xkb_layout" "us"
+[   629.087] (WW) Option "xkb_variant" requires a string value
+[   637.087] (WW) AMDGPU(0): flip queue failed: Invalid argument
+[   637.087] (WW) AMDGPU(0): Page flip failed: Invalid argument
+[   637.098] (II) event1  - Power Button: device removed
+[   637.128] (II) event0  - Power Button: device removed
+[   637.164] (II) event2  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse: device removed
+[   637.228] (II) event6  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Keyboard: device removed
+[   637.252] (II) event7  - USB PnP Audio Device: device removed
+[   637.268] (II) event3  - Corsair CORSAIR M65 RGB ELITE Gaming Mouse Consumer Control: device removed
+[   637.284] (II) event8  - Corsair CORSAIR K55 RGB PRO Gaming Keyboard: device removed
+[   637.308] (II) AIGLX: Suspending AIGLX clients for VT switch
+[   642.086] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) UnloadModule: "libinput"
+[   642.087] (II) Server terminated successfully (0). Closing log file.

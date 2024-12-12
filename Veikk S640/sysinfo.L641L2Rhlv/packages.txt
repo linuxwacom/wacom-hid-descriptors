@@ -1,0 +1,91 @@
+Name            : xf86-input-wacom
+Version         : 1.2.2-1.1
+Description     : X.Org Wacom tablet driver
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/xf86-input-wacom
+Licenses        : GPL-2.0-or-later
+Groups          : None
+Provides        : None
+Depends On      : libxi  libxinerama  libxrandr  systemd-libs  libx11  glibc
+Optional Deps   : None
+Required By     : digimend-kernel-drivers-dkms
+Optional For    : None
+Conflicts With  : xorg-server<21.1.1  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 246.05 KiB
+Packager        : ALHP x86-64-v3 <alhp@harting.dev>
+Build Date      : Mon Apr 15 13:07:24 2024
+Install Date    : Fri Jul 26 13:35:58 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : SHA-256 Sum  Signature
+
+Name            : libwacom
+Version         : 2.12.2-1.1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/libwacom/wiki
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  libevdev  libgudev  glibc
+Optional Deps   : python-libevdev: for libwacom-show-stylus
+                  python-pyudev: for libwacom-show-stylus [installed]
+Required By     : gnome-control-center  gnome-settings-daemon  libinput  mutter
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1403.66 KiB
+Packager        : ALHP x86-64-v3 <alhp@harting.dev>
+Build Date      : Sat Jun 22 00:55:10 2024
+Install Date    : Fri Jun 28 09:39:48 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : SHA-256 Sum  Signature
+
+Name            : libinput
+Version         : 1.26.2-1.1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://gitlab.freedesktop.org/libinput/libinput
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : mtdev  libevdev  libwacom  systemd-libs  glibc
+Optional Deps   : gtk4: libinput debug-gui [installed]
+                  python-pyudev: libinput measure [installed]
+                  python-libevdev: libinput measure
+                  python-yaml: used by various tools [installed]
+Required By     : aquamarine  clutter  hyprland  mutter  qt5-base  qt6-base  showmethekey  sway  weston  wlroots  wlroots0.17  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1187.97 KiB
+Packager        : ALHP x86-64-v3 <alhp@harting.dev>
+Build Date      : Mon Aug 19 13:00:39 2024
+Install Date    : Fri Aug 23 13:44:45 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : SHA-256 Sum  Signature
+
+Name            : xf86-input-libinput
+Version         : 1.4.0-2.1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput  glibc
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 105.63 KiB
+Packager        : ALHP x86-64-v3 <alhp@harting.dev>
+Build Date      : Thu Jul 11 03:41:56 2024
+Install Date    : Fri Jul 12 19:29:06 2024
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : SHA-256 Sum  Signature

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>3</report_id>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_kb_leftcontrol<!-- Keyboard left control (E0h, dynamic value) --></usage_minimum>
+    <usage_maximum>keyboard_kb_right_gui<!-- Keyboard right GUI (E7h, dynamic value) --></usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>8</report_count>
+    <input>
+      <variable/>
+    </input>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_none<!-- No event (00h, selector) --></usage_minimum>
+    <usage_maximum>FF</usage_maximum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>6</report_count>
+    <input/>
+  </COLLECTION>
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>4</report_id>
+    <usage_minimum>0</usage_minimum>
+    <usage_maximum>consumer_ac_format<!-- AC format (023Ch, selector) --></usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>572</logical_maximum>
+    <report_count>1</report_count>
+    <report_size>16</report_size>
+    <input/>
+  </COLLECTION>
+</descriptor>

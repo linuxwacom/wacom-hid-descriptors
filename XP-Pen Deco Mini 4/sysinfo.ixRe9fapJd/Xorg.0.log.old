@@ -1,0 +1,749 @@
+[  3411.105] (--) Log file renamed from "/home/USERNAME/.local/share/xorg/Xorg.pid-14943.log" to "/home/USERNAME/.local/share/xorg/Xorg.0.log"
+[  3411.106] 
+X.Org X Server 1.20.14
+X Protocol Version 11, Revision 0
+[  3411.106] Build Operating System:  6.6.9-100.fc38.x86_64 
+[  3411.106] Current Operating System: Linux HOSTNAME 6.7.9-200.fc39.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar  6 19:35:04 UTC 2024 x86_64
+[  3411.106] Kernel command line: BOOT_IMAGE=(hd0,gpt2)/vmlinuz-6.7.9-200.fc39.x86_64 root=UUID=b2e6d181-5ed8-4208-9ec8-07a604f2dd16 ro rootflags=subvol=root rhgb quiet
+[  3411.106] Build Date: 19 January 2024  12:00:00AM
+[  3411.106] Build ID: xorg-x11-server 1.20.14-30.fc39 
+[  3411.106] Current version of pixman: 0.42.2
+[  3411.106] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  3411.106] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  3411.106] (==) Log file: "/home/USERNAME/.local/share/xorg/Xorg.0.log", Time: Tue Mar 26 14:01:27 2024
+[  3411.107] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  3411.107] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  3411.107] (==) No Layout section.  Using the first Screen section.
+[  3411.107] (==) No screen section available. Using defaults.
+[  3411.107] (**) |-->Screen "Default Screen Section" (0)
+[  3411.107] (**) |   |-->Monitor "<default monitor>"
+[  3411.107] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  3411.107] (==) Automatically adding devices
+[  3411.107] (==) Automatically enabling devices
+[  3411.107] (==) Automatically adding GPU devices
+[  3411.107] (==) Automatically binding GPU devices
+[  3411.107] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  3411.107] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[  3411.107] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[  3411.107] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  3411.107] (II) Loader magic: 0x5576dd655a80
+[  3411.107] (II) Module ABI versions:
+[  3411.107] 	X.Org ANSI C Emulation: 0.4
+[  3411.107] 	X.Org Video Driver: 24.1
+[  3411.107] 	X.Org XInput driver : 24.1
+[  3411.107] 	X.Org Server Extension : 10.0
+[  3411.108] (++) using VT number 2
+
+[  3411.109] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_35
+[  3411.110] (II) xfree86: Adding drm device (/dev/dri/card1)
+[  3411.111] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 14 paused 0
+[  3411.117] (--) PCI:*(45@0:0:0) 1002:67df:1682:c570 rev 239, Mem @ 0xd0000000/268435456, 0xe0000000/2097152, 0xfce00000/262144, I/O @ 0x0000e000/256, BIOS @ 0x????????/65536
+[  3411.117] (II) LoadModule: "glx"
+[  3411.117] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[  3411.119] (II) Module glx: vendor="X.Org Foundation"
+[  3411.119] 	compiled for 1.20.14, module version = 1.0.0
+[  3411.119] 	ABI class: X.Org Server Extension, version 10.0
+[  3411.119] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[  3411.119] 	loading driver: amdgpu
+[  3411.119] (==) Matched amdgpu as autoconfigured driver 0
+[  3411.119] (==) Matched ati as autoconfigured driver 1
+[  3411.119] (==) Matched modesetting as autoconfigured driver 2
+[  3411.119] (==) Matched fbdev as autoconfigured driver 3
+[  3411.119] (==) Matched vesa as autoconfigured driver 4
+[  3411.119] (==) Assigned the driver to the xf86ConfigLayout
+[  3411.119] (II) LoadModule: "amdgpu"
+[  3411.119] (II) Loading /usr/lib64/xorg/modules/drivers/amdgpu_drv.so
+[  3411.120] (II) Module amdgpu: vendor="X.Org Foundation"
+[  3411.120] 	compiled for 1.20.14, module version = 23.0.0
+[  3411.120] 	Module class: X.Org Video Driver
+[  3411.120] 	ABI class: X.Org Video Driver, version 24.1
+[  3411.120] (II) LoadModule: "ati"
+[  3411.120] (II) Loading /usr/lib64/xorg/modules/drivers/ati_drv.so
+[  3411.120] (II) Module ati: vendor="X.Org Foundation"
+[  3411.120] 	compiled for 1.20.14, module version = 19.1.0
+[  3411.120] 	Module class: X.Org Video Driver
+[  3411.120] 	ABI class: X.Org Video Driver, version 24.1
+[  3411.126] (II) LoadModule: "modesetting"
+[  3411.126] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[  3411.127] (II) Module modesetting: vendor="X.Org Foundation"
+[  3411.127] 	compiled for 1.20.14, module version = 1.20.14
+[  3411.127] 	Module class: X.Org Video Driver
+[  3411.127] 	ABI class: X.Org Video Driver, version 24.1
+[  3411.127] (II) LoadModule: "fbdev"
+[  3411.127] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[  3411.127] (II) Module fbdev: vendor="X.Org Foundation"
+[  3411.128] 	compiled for 1.20.14, module version = 0.5.0
+[  3411.128] 	Module class: X.Org Video Driver
+[  3411.128] 	ABI class: X.Org Video Driver, version 24.1
+[  3411.128] (II) LoadModule: "vesa"
+[  3411.128] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[  3411.128] (II) Module vesa: vendor="X.Org Foundation"
+[  3411.128] 	compiled for 1.20.14, module version = 2.5.0
+[  3411.128] 	Module class: X.Org Video Driver
+[  3411.128] 	ABI class: X.Org Video Driver, version 24.1
+[  3411.128] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[  3411.128] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  3411.128] (II) FBDEV: driver for framebuffer: fbdev
+[  3411.128] (II) VESA: driver for VESA chipsets: vesa
+[  3411.128] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[  3411.129] (WW) Falling back to old probe method for modesetting
+[  3411.129] (EE) open /dev/dri/card0: No such file or directory
+[  3411.129] (WW) Falling back to old probe method for fbdev
+[  3411.129] (II) Loading sub module "fbdevhw"
+[  3411.129] (II) LoadModule: "fbdevhw"
+[  3411.129] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[  3411.129] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  3411.129] 	compiled for 1.20.14, module version = 0.0.2
+[  3411.129] 	ABI class: X.Org Video Driver, version 24.1
+[  3411.129] (EE) open /dev/fb0: No such file or directory
+[  3411.129] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  3411.129] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  3411.129] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[  3411.129] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[  3411.129] (==) AMDGPU(0): Default visual is TrueColor
+[  3411.129] (II) Applying OutputClass "AMDgpu" options to /dev/dri/card1
+[  3411.129] (==) AMDGPU(0): RGB weight 888
+[  3411.129] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[  3411.129] (--) AMDGPU(0): Chipset: "AMD Radeon RX 570 Series" (ChipID = 0x67df)
+[  3411.129] (II) Loading sub module "fb"
+[  3411.129] (II) LoadModule: "fb"
+[  3411.129] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[  3411.130] (II) Module fb: vendor="X.Org Foundation"
+[  3411.130] 	compiled for 1.20.14, module version = 1.0.0
+[  3411.130] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  3411.130] (II) Loading sub module "dri2"
+[  3411.130] (II) LoadModule: "dri2"
+[  3411.130] (II) Module "dri2" already built-in
+[  3411.150] (II) Loading sub module "glamoregl"
+[  3411.150] (II) LoadModule: "glamoregl"
+[  3411.150] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[  3411.153] (II) Module glamoregl: vendor="X.Org Foundation"
+[  3411.153] 	compiled for 1.20.14, module version = 1.0.1
+[  3411.153] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  3411.159] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon RX 570 Series (radeonsi, polaris10, LLVM 17.0.6, DRM 3.57, 6.7.9-200.fc39.x86_64)
+[  3411.159] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[  3411.159] (==) AMDGPU(0): TearFree property default: auto
+[  3411.159] (==) AMDGPU(0): VariableRefresh: disabled
+[  3411.159] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[  3411.159] (II) AMDGPU(0): KMS Pageflipping: enabled
+[  3411.159] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[  3411.159] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[  3411.168] (II) AMDGPU(0): Output DisplayPort-2 has no monitor section
+[  3411.175] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[  3411.175] (II) AMDGPU(0): Output DVI-D-0 has no monitor section
+[  3411.175] (II) AMDGPU(0): EDID for output DisplayPort-0
+[  3411.175] (II) AMDGPU(0): EDID for output DisplayPort-1
+[  3411.184] (II) AMDGPU(0): EDID for output DisplayPort-2
+[  3411.184] (II) AMDGPU(0): Manufacturer: DEL  Model: 4148  Serial#: 1110655575
+[  3411.184] (II) AMDGPU(0): Year: 2020  Week: 1
+[  3411.184] (II) AMDGPU(0): EDID Version: 1.4
+[  3411.184] (II) AMDGPU(0): Digital Display Input
+[  3411.184] (II) AMDGPU(0): 8 bits per channel
+[  3411.184] (II) AMDGPU(0): Digital interface is DisplayPort
+[  3411.184] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 53  vert.: 30
+[  3411.184] (II) AMDGPU(0): Gamma: 2.20
+[  3411.184] (II) AMDGPU(0): DPMS capabilities: Off
+[  3411.184] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+[  3411.184] (II) AMDGPU(0): Default color space is primary color space
+[  3411.184] (II) AMDGPU(0): First detailed timing is preferred mode
+[  3411.184] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[  3411.184] (II) AMDGPU(0): redX: 0.640 redY: 0.330   greenX: 0.300 greenY: 0.600
+[  3411.184] (II) AMDGPU(0): blueX: 0.150 blueY: 0.060   whiteX: 0.313 whiteY: 0.329
+[  3411.184] (II) AMDGPU(0): Supported established timings:
+[  3411.184] (II) AMDGPU(0): 720x400@70Hz
+[  3411.184] (II) AMDGPU(0): 640x480@60Hz
+[  3411.184] (II) AMDGPU(0): 640x480@75Hz
+[  3411.184] (II) AMDGPU(0): 800x600@60Hz
+[  3411.184] (II) AMDGPU(0): 800x600@75Hz
+[  3411.184] (II) AMDGPU(0): 1024x768@60Hz
+[  3411.184] (II) AMDGPU(0): 1024x768@75Hz
+[  3411.184] (II) AMDGPU(0): 1280x1024@75Hz
+[  3411.184] (II) AMDGPU(0): Manufacturer's mask: 0
+[  3411.184] (II) AMDGPU(0): Supported standard timings:
+[  3411.184] (II) AMDGPU(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[  3411.184] (II) AMDGPU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[  3411.184] (II) AMDGPU(0): #2: hsize: 1600  vsize 900  refresh: 60  vid: 49321
+[  3411.184] (II) AMDGPU(0): #3: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[  3411.184] (II) AMDGPU(0): Supported detailed timing:
+[  3411.184] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  527 x 296 mm
+[  3411.184] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  3411.184] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[  3411.184] (II) AMDGPU(0): Serial No: 7PKXTS2
+[  3411.184] (II) AMDGPU(0): Monitor name: DELL U2419H
+[  3411.184] (II) AMDGPU(0): Ranges: V min: 56 V max: 76 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[  3411.184] (II) AMDGPU(0): Supported detailed timing:
+[  3411.184] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  527 x 296 mm
+[  3411.184] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  3411.184] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[  3411.184] (II) AMDGPU(0): Supported detailed timing:
+[  3411.184] (II) AMDGPU(0): clock: 74.2 MHz   Image Size:  527 x 296 mm
+[  3411.184] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  3411.184] (II) AMDGPU(0): v_active: 540  v_sync: 542  v_sync_end 547 v_blanking: 562 v_border: 0
+[  3411.184] (II) AMDGPU(0): Supported detailed timing:
+[  3411.185] (II) AMDGPU(0): clock: 74.2 MHz   Image Size:  527 x 296 mm
+[  3411.185] (II) AMDGPU(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[  3411.185] (II) AMDGPU(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[  3411.185] (II) AMDGPU(0): Supported detailed timing:
+[  3411.185] (II) AMDGPU(0): clock: 27.0 MHz   Image Size:  527 x 296 mm
+[  3411.185] (II) AMDGPU(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[  3411.185] (II) AMDGPU(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[  3411.185] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[  3411.185] (II) AMDGPU(0): EDID (in hex):
+[  3411.185] (II) AMDGPU(0): 	00ffffffffffff0010ac484157423342
+[  3411.185] (II) AMDGPU(0): 	011e0104a5351e783eee95a3544c9926
+[  3411.185] (II) AMDGPU(0): 	0f5054a54b00714f8180a9c0d1c00101
+[  3411.185] (II) AMDGPU(0): 	010101010101023a801871382d40582c
+[  3411.185] (II) AMDGPU(0): 	45000f282100001e000000ff0037504b
+[  3411.185] (II) AMDGPU(0): 	585453320a2020202020000000fc0044
+[  3411.185] (II) AMDGPU(0): 	454c4c205532343139480a20000000fd
+[  3411.185] (II) AMDGPU(0): 	00384c1e5311010a202020202020017e
+[  3411.185] (II) AMDGPU(0): 	02031cf14f9005040302071601061112
+[  3411.185] (II) AMDGPU(0): 	1513141f23097f0783010000023a8018
+[  3411.185] (II) AMDGPU(0): 	71382d40582c45000f282100001e011d
+[  3411.185] (II) AMDGPU(0): 	8018711c1620582c25000f282100009e
+[  3411.185] (II) AMDGPU(0): 	011d007251d01e206e2855000f282100
+[  3411.185] (II) AMDGPU(0): 	001e8c0ad08a20e02d10103e96000f28
+[  3411.185] (II) AMDGPU(0): 	21000018000000000000000000000000
+[  3411.185] (II) AMDGPU(0): 	00000000000000000000000000000017
+[  3411.185] (II) AMDGPU(0): Printing probed modes for output DisplayPort-2
+[  3411.185] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  3411.185] (II) AMDGPU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1680x1050"x60.0  148.50  1680 2008 2052 2200  1050 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1600x900"x60.0  108.00  1600 1624 1704 1800  900 901 904 1000 +hsync +vsync (60.0 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1440x900"x60.0  148.50  1440 2008 2052 2200  900 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1280x800"x60.0  148.50  1280 2008 2052 2200  800 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  3411.185] (II) AMDGPU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  3411.193] (II) AMDGPU(0): EDID for output HDMI-A-0
+[  3411.193] (II) AMDGPU(0): Manufacturer: DEL  Model: a1b8  Serial#: 826553164
+[  3411.193] (II) AMDGPU(0): Year: 2023  Week: 21
+[  3411.193] (II) AMDGPU(0): EDID Version: 1.3
+[  3411.193] (II) AMDGPU(0): Digital Display Input
+[  3411.193] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 53  vert.: 30
+[  3411.193] (II) AMDGPU(0): Gamma: 2.20
+[  3411.193] (II) AMDGPU(0): DPMS capabilities: StandBy Suspend Off
+[  3411.193] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[  3411.193] (II) AMDGPU(0): Default color space is primary color space
+[  3411.193] (II) AMDGPU(0): First detailed timing is preferred mode
+[  3411.193] (II) AMDGPU(0): redX: 0.674 redY: 0.321   greenX: 0.309 greenY: 0.617
+[  3411.193] (II) AMDGPU(0): blueX: 0.145 blueY: 0.061   whiteX: 0.313 whiteY: 0.329
+[  3411.193] (II) AMDGPU(0): Supported established timings:
+[  3411.193] (II) AMDGPU(0): 720x400@70Hz
+[  3411.193] (II) AMDGPU(0): 640x480@60Hz
+[  3411.193] (II) AMDGPU(0): 640x480@75Hz
+[  3411.193] (II) AMDGPU(0): 800x600@60Hz
+[  3411.193] (II) AMDGPU(0): 800x600@75Hz
+[  3411.193] (II) AMDGPU(0): 1024x768@60Hz
+[  3411.193] (II) AMDGPU(0): 1024x768@75Hz
+[  3411.193] (II) AMDGPU(0): 1280x1024@75Hz
+[  3411.193] (II) AMDGPU(0): Manufacturer's mask: 0
+[  3411.193] (II) AMDGPU(0): Supported standard timings:
+[  3411.193] (II) AMDGPU(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[  3411.193] (II) AMDGPU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[  3411.193] (II) AMDGPU(0): #2: hsize: 1600  vsize 900  refresh: 60  vid: 49321
+[  3411.193] (II) AMDGPU(0): #3: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[  3411.193] (II) AMDGPU(0): Supported detailed timing:
+[  3411.193] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  527 x 296 mm
+[  3411.193] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  3411.193] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[  3411.193] (II) AMDGPU(0): Serial No: 6ZNQRP3
+[  3411.193] (II) AMDGPU(0): Monitor name: DELL U2422H
+[  3411.193] (II) AMDGPU(0): Ranges: V min: 56 V max: 76 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[  3411.193] (II) AMDGPU(0): Supported detailed timing:
+[  3411.193] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  527 x 296 mm
+[  3411.193] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  3411.193] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[  3411.193] (II) AMDGPU(0): Supported detailed timing:
+[  3411.193] (II) AMDGPU(0): clock: 74.2 MHz   Image Size:  527 x 296 mm
+[  3411.193] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  3411.193] (II) AMDGPU(0): v_active: 540  v_sync: 542  v_sync_end 547 v_blanking: 562 v_border: 0
+[  3411.193] (II) AMDGPU(0): Supported detailed timing:
+[  3411.193] (II) AMDGPU(0): clock: 74.2 MHz   Image Size:  527 x 296 mm
+[  3411.193] (II) AMDGPU(0): h_active: 1280  h_sync: 1350  h_sync_end 1390 h_blank_end 1650 h_border: 0
+[  3411.193] (II) AMDGPU(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[  3411.193] (II) AMDGPU(0): Supported detailed timing:
+[  3411.193] (II) AMDGPU(0): clock: 27.0 MHz   Image Size:  527 x 296 mm
+[  3411.194] (II) AMDGPU(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[  3411.194] (II) AMDGPU(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[  3411.194] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[  3411.194] (II) AMDGPU(0): EDID (in hex):
+[  3411.194] (II) AMDGPU(0): 	00ffffffffffff0010acb8a14c334431
+[  3411.194] (II) AMDGPU(0): 	1521010380351e78ee9025ac524f9e25
+[  3411.194] (II) AMDGPU(0): 	0f5054a54b00714f8180a9c0d1c00101
+[  3411.194] (II) AMDGPU(0): 	010101010101023a801871382d40582c
+[  3411.194] (II) AMDGPU(0): 	45000f282100001e000000ff00365a4e
+[  3411.194] (II) AMDGPU(0): 	515250330a2020202020000000fc0044
+[  3411.194] (II) AMDGPU(0): 	454c4c205532343232480a20000000fd
+[  3411.194] (II) AMDGPU(0): 	00384c1e5311000a20202020202001ed
+[  3411.194] (II) AMDGPU(0): 	02031ff14c9005040302071601141f12
+[  3411.194] (II) AMDGPU(0): 	13230907078301000065030c00100002
+[  3411.194] (II) AMDGPU(0): 	3a801871382d40582c45000f28210000
+[  3411.194] (II) AMDGPU(0): 	1e011d8018711c1620582c25000f2821
+[  3411.194] (II) AMDGPU(0): 	00009e011d007251d01e20462855000f
+[  3411.194] (II) AMDGPU(0): 	282100001e8c0ad08a20e02d10103e96
+[  3411.194] (II) AMDGPU(0): 	000f2821000018000000000000000000
+[  3411.194] (II) AMDGPU(0): 	0000000000000000000000000000005f
+[  3411.194] (II) AMDGPU(0): Printing probed modes for output HDMI-A-0
+[  3411.194] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  3411.194] (II) AMDGPU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1680x1050"x60.0  148.50  1680 2008 2052 2200  1050 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1600x900"x60.0  108.00  1600 1624 1704 1800  900 901 904 1000 +hsync +vsync (60.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1440x900"x60.0  148.50  1440 2008 2052 2200  900 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x800"x60.0  148.50  1280 2008 2052 2200  800 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1350 1390 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  3411.194] (II) AMDGPU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  3411.194] (II) AMDGPU(0): EDID for output DVI-D-0
+[  3411.194] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[  3411.194] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[  3411.194] (II) AMDGPU(0): Output DisplayPort-2 connected
+[  3411.194] (II) AMDGPU(0): Output HDMI-A-0 connected
+[  3411.194] (II) AMDGPU(0): Output DVI-D-0 disconnected
+[  3411.194] (II) AMDGPU(0): Using spanning desktop for initial modes
+[  3411.194] (II) AMDGPU(0): Output DisplayPort-2 using initial mode 1920x1080 +0+0
+[  3411.194] (II) AMDGPU(0): Output HDMI-A-0 using initial mode 1920x1080 +1920+0
+[  3411.194] (II) AMDGPU(0): mem size init: gart size :7d6571000 vram size: s:1fe0b0000 visible:fdb0000
+[  3411.194] (==) AMDGPU(0): DPI set to (96, 96)
+[  3411.194] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[  3411.194] (II) Loading sub module "ramdac"
+[  3411.194] (II) LoadModule: "ramdac"
+[  3411.194] (II) Module "ramdac" already built-in
+[  3411.194] (II) UnloadModule: "modesetting"
+[  3411.194] (II) Unloading modesetting
+[  3411.194] (II) UnloadModule: "fbdev"
+[  3411.194] (II) Unloading fbdev
+[  3411.195] (II) UnloadSubModule: "fbdevhw"
+[  3411.195] (II) Unloading fbdevhw
+[  3411.195] (II) UnloadModule: "vesa"
+[  3411.195] (II) Unloading vesa
+[  3411.195] (II) AMDGPU(0): [DRI2] Setup complete
+[  3411.195] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[  3411.195] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[  3411.195] (II) AMDGPU(0): Front buffer pitch: 15360 bytes
+[  3411.195] (II) AMDGPU(0): SYNC extension fences enabled
+[  3411.195] (II) AMDGPU(0): Present extension enabled
+[  3411.195] (==) AMDGPU(0): DRI3 enabled
+[  3411.195] (==) AMDGPU(0): Backing store enabled
+[  3411.195] (II) AMDGPU(0): Direct rendering enabled
+[  3411.201] (II) AMDGPU(0): Use GLAMOR acceleration.
+[  3411.201] (II) AMDGPU(0): Acceleration enabled
+[  3411.201] (==) AMDGPU(0): DPMS enabled
+[  3411.201] (==) AMDGPU(0): Silken mouse enabled
+[  3411.201] (II) AMDGPU(0): Set up textured video (glamor)
+[  3411.235] (WW) AMDGPU(0): Option "HotplugDriver" is not used
+[  3411.235] (II) Initializing extension Generic Event Extension
+[  3411.235] (II) Initializing extension SHAPE
+[  3411.235] (II) Initializing extension MIT-SHM
+[  3411.235] (II) Initializing extension XInputExtension
+[  3411.235] (II) Initializing extension XTEST
+[  3411.235] (II) Initializing extension BIG-REQUESTS
+[  3411.235] (II) Initializing extension SYNC
+[  3411.235] (II) Initializing extension XKEYBOARD
+[  3411.235] (II) Initializing extension XC-MISC
+[  3411.235] (II) Initializing extension SECURITY
+[  3411.235] (II) Initializing extension XFIXES
+[  3411.236] (II) Initializing extension RENDER
+[  3411.236] (II) Initializing extension RANDR
+[  3411.236] (II) Initializing extension COMPOSITE
+[  3411.236] (II) Initializing extension DAMAGE
+[  3411.236] (II) Initializing extension MIT-SCREEN-SAVER
+[  3411.236] (II) Initializing extension DOUBLE-BUFFER
+[  3411.236] (II) Initializing extension RECORD
+[  3411.236] (II) Initializing extension DPMS
+[  3411.236] (II) Initializing extension Present
+[  3411.236] (II) Initializing extension DRI3
+[  3411.236] (II) Initializing extension X-Resource
+[  3411.236] (II) Initializing extension XVideo
+[  3411.236] (II) Initializing extension XVideo-MotionCompensation
+[  3411.236] (II) Initializing extension SELinux
+[  3411.237] (II) SELinux: Disabled by boolean
+[  3411.237] (II) Initializing extension GLX
+[  3411.240] (II) AIGLX: Loaded and initialized radeonsi
+[  3411.240] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  3411.240] (II) Initializing extension XFree86-VidModeExtension
+[  3411.240] (II) Initializing extension XFree86-DGA
+[  3411.240] (II) Initializing extension DRI2
+[  3411.241] (II) AMDGPU(0): Setting screen physical size to 1016 x 285
+[  3411.333] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  3411.333] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  3411.333] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  3411.333] (**) Power Button: Applying InputClass "system-keyboard"
+[  3411.333] (II) LoadModule: "libinput"
+[  3411.333] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[  3411.336] (II) Module libinput: vendor="X.Org Foundation"
+[  3411.336] 	compiled for 1.20.14, module version = 1.4.0
+[  3411.336] 	Module class: X.Org XInput Driver
+[  3411.336] 	ABI class: X.Org XInput driver, version 24.1
+[  3411.336] (II) Using input driver 'libinput' for 'Power Button'
+[  3411.336] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 28 paused 0
+[  3411.336] (**) Power Button: always reports core events
+[  3411.337] (**) Option "Device" "/dev/input/event1"
+[  3411.339] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  3411.339] (II) event1  - Power Button: device is a keyboard
+[  3411.339] (II) event1  - Power Button: device removed
+[  3411.339] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[  3411.339] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  3411.339] (**) Option "xkb_layout" "es"
+[  3411.351] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  3411.351] (II) event1  - Power Button: device is a keyboard
+[  3411.352] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[  3411.352] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  3411.352] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  3411.352] (**) Power Button: Applying InputClass "system-keyboard"
+[  3411.352] (II) Using input driver 'libinput' for 'Power Button'
+[  3411.352] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 31 paused 0
+[  3411.352] (**) Power Button: always reports core events
+[  3411.352] (**) Option "Device" "/dev/input/event0"
+[  3411.353] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  3411.353] (II) event0  - Power Button: device is a keyboard
+[  3411.353] (II) event0  - Power Button: device removed
+[  3411.353] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[  3411.353] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[  3411.353] (**) Option "xkb_layout" "es"
+[  3411.354] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  3411.354] (II) event0  - Power Button: device is a keyboard
+[  3411.355] (II) config/udev: Adding input device José Expósito’s Keyboard (/dev/input/event20)
+[  3411.355] (**) José Expósito’s Keyboard: Applying InputClass "evdev keyboard catchall"
+[  3411.355] (**) José Expósito’s Keyboard: Applying InputClass "libinput keyboard catchall"
+[  3411.355] (**) José Expósito’s Keyboard: Applying InputClass "system-keyboard"
+[  3411.355] (II) Using input driver 'libinput' for 'José Expósito’s Keyboard'
+[  3411.355] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 32 paused 0
+[  3411.355] (**) José Expósito’s Keyboard: always reports core events
+[  3411.355] (**) Option "Device" "/dev/input/event20"
+[  3411.358] (II) event20 - José Expósito’s Keyboard: is tagged by udev as: Keyboard
+[  3411.359] (II) event20 - José Expósito’s Keyboard: device is a keyboard
+[  3411.359] (II) event20 - José Expósito’s Keyboard: device removed
+[  3411.359] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.1/usb1/1-4/1-4:1.0/bluetooth/hci0/hci0:256/0005:004C:0267.0007/input/input31/event20"
+[  3411.359] (II) XINPUT: Adding extended input device "José Expósito’s Keyboard" (type: KEYBOARD, id 8)
+[  3411.359] (**) Option "xkb_layout" "es"
+[  3411.362] (II) event20 - José Expósito’s Keyboard: is tagged by udev as: Keyboard
+[  3411.362] (II) event20 - José Expósito’s Keyboard: device is a keyboard
+[  3411.363] (II) config/udev: Adding input device Logitech M705 (/dev/input/event4)
+[  3411.363] (**) Logitech M705: Applying InputClass "evdev pointer catchall"
+[  3411.363] (**) Logitech M705: Applying InputClass "libinput pointer catchall"
+[  3411.363] (II) Using input driver 'libinput' for 'Logitech M705'
+[  3411.364] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 33 paused 0
+[  3411.364] (**) Logitech M705: always reports core events
+[  3411.364] (**) Option "Device" "/dev/input/event4"
+[  3411.365] (II) event4  - Logitech M705: is tagged by udev as: Mouse
+[  3411.365] (II) event4  - Logitech M705: device set to 1000 DPI
+[  3411.365] (II) event4  - Logitech M705: device is a pointer
+[  3411.366] (II) event4  - Logitech M705: device removed
+[  3411.366] (II) libinput: Logitech M705: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.366] (II) libinput: Logitech M705: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.366] (II) libinput: Logitech M705: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.366] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.3/usb3/3-1/3-1:1.2/0003:046D:C52B.0004/0003:046D:406D.0006/input/input14/event4"
+[  3411.366] (II) XINPUT: Adding extended input device "Logitech M705" (type: MOUSE, id 9)
+[  3411.366] (**) Option "AccelerationScheme" "none"
+[  3411.366] (**) Logitech M705: (accel) selected scheme none/0
+[  3411.366] (**) Logitech M705: (accel) acceleration factor: 2.000
+[  3411.366] (**) Logitech M705: (accel) acceleration threshold: 4
+[  3411.368] (II) event4  - Logitech M705: is tagged by udev as: Mouse
+[  3411.368] (II) event4  - Logitech M705: device set to 1000 DPI
+[  3411.368] (II) event4  - Logitech M705: device is a pointer
+[  3411.369] (II) config/udev: Adding input device Logitech M705 (/dev/input/mouse1)
+[  3411.369] (II) No input driver specified, ignoring this device.
+[  3411.369] (II) This device may have been added with another device file.
+[  3411.370] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/event21)
+[  3411.370] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "evdev touchpad catchall"
+[  3411.370] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "libinput touchpad catchall"
+[  3411.370] (II) Using input driver 'libinput' for 'Apple Inc. Magic Trackpad 2'
+[  3411.422] (II) systemd-logind: got fd for /dev/input/event21 13:85 fd 34 paused 0
+[  3411.422] (**) Apple Inc. Magic Trackpad 2: always reports core events
+[  3411.422] (**) Option "Device" "/dev/input/event21"
+[  3411.423] (II) event21 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3411.425] (II) event21 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3411.425] (II) event21 - Apple Inc. Magic Trackpad 2: device removed
+[  3411.425] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.425] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.425] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.425] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.3/usb3/3-2/3-2:1.0/0003:05AC:0265.000C/input/input34/event21"
+[  3411.425] (II) XINPUT: Adding extended input device "Apple Inc. Magic Trackpad 2" (type: TOUCHPAD, id 10)
+[  3411.426] (**) Option "AccelerationScheme" "none"
+[  3411.426] (**) Apple Inc. Magic Trackpad 2: (accel) selected scheme none/0
+[  3411.426] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration factor: 2.000
+[  3411.426] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration threshold: 4
+[  3411.427] (II) event21 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3411.428] (II) event21 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3411.429] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/mouse2)
+[  3411.429] (II) No input driver specified, ignoring this device.
+[  3411.429] (II) This device may have been added with another device file.
+[  3411.430] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/event22)
+[  3411.430] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "evdev touchpad catchall"
+[  3411.430] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "libinput touchpad catchall"
+[  3411.430] (II) Using input driver 'libinput' for 'Apple Inc. Magic Trackpad 2'
+[  3411.483] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 35 paused 0
+[  3411.483] (**) Apple Inc. Magic Trackpad 2: always reports core events
+[  3411.483] (**) Option "Device" "/dev/input/event22"
+[  3411.484] (II) event22 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3411.486] (II) event22 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3411.486] (II) event22 - Apple Inc. Magic Trackpad 2: device removed
+[  3411.486] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.486] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.486] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.486] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.3/usb3/3-2/3-2:1.1/0003:05AC:0265.000D/input/input35/event22"
+[  3411.486] (II) XINPUT: Adding extended input device "Apple Inc. Magic Trackpad 2" (type: TOUCHPAD, id 11)
+[  3411.487] (**) Option "AccelerationScheme" "none"
+[  3411.487] (**) Apple Inc. Magic Trackpad 2: (accel) selected scheme none/0
+[  3411.487] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration factor: 2.000
+[  3411.487] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration threshold: 4
+[  3411.488] (II) event22 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3411.490] (II) event22 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3411.490] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/mouse3)
+[  3411.490] (II) No input driver specified, ignoring this device.
+[  3411.490] (II) This device may have been added with another device file.
+[  3411.491] (II) config/udev: Adding input device MSI MYSTIC LIGHT  (/dev/input/event8)
+[  3411.491] (II) No input driver specified, ignoring this device.
+[  3411.491] (II) This device may have been added with another device file.
+[  3411.492] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event6)
+[  3411.492] (II) No input driver specified, ignoring this device.
+[  3411.492] (II) This device may have been added with another device file.
+[  3411.493] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=7 (/dev/input/event7)
+[  3411.493] (II) No input driver specified, ignoring this device.
+[  3411.493] (II) This device may have been added with another device file.
+[  3411.493] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=8 (/dev/input/event9)
+[  3411.493] (II) No input driver specified, ignoring this device.
+[  3411.493] (II) This device may have been added with another device file.
+[  3411.494] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=9 (/dev/input/event10)
+[  3411.494] (II) No input driver specified, ignoring this device.
+[  3411.494] (II) This device may have been added with another device file.
+[  3411.494] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=10 (/dev/input/event11)
+[  3411.494] (II) No input driver specified, ignoring this device.
+[  3411.494] (II) This device may have been added with another device file.
+[  3411.494] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=11 (/dev/input/event12)
+[  3411.494] (II) No input driver specified, ignoring this device.
+[  3411.494] (II) This device may have been added with another device file.
+[  3411.495] (II) config/udev: Adding input device HP HP Wireless Mouse 220  Mouse (/dev/input/event2)
+[  3411.495] (**) HP HP Wireless Mouse 220  Mouse: Applying InputClass "evdev pointer catchall"
+[  3411.495] (**) HP HP Wireless Mouse 220  Mouse: Applying InputClass "libinput pointer catchall"
+[  3411.495] (II) Using input driver 'libinput' for 'HP HP Wireless Mouse 220  Mouse'
+[  3411.549] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 36 paused 0
+[  3411.549] (**) HP HP Wireless Mouse 220  Mouse: always reports core events
+[  3411.549] (**) Option "Device" "/dev/input/event2"
+[  3411.551] (II) event2  - HP HP Wireless Mouse 220  Mouse: is tagged by udev as: Mouse
+[  3411.551] (II) event2  - HP HP Wireless Mouse 220  Mouse: device is a pointer
+[  3411.552] (II) event2  - HP HP Wireless Mouse 220  Mouse: device removed
+[  3411.552] (II) libinput: HP HP Wireless Mouse 220  Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.552] (II) libinput: HP HP Wireless Mouse 220  Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.552] (II) libinput: HP HP Wireless Mouse 220  Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3411.552] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:2f:00.3/usb5/5-3/5-3:1.0/0003:03F0:2141.0001/input/input2/event2"
+[  3411.552] (II) XINPUT: Adding extended input device "HP HP Wireless Mouse 220  Mouse" (type: MOUSE, id 12)
+[  3411.552] (**) Option "AccelerationScheme" "none"
+[  3411.552] (**) HP HP Wireless Mouse 220  Mouse: (accel) selected scheme none/0
+[  3411.552] (**) HP HP Wireless Mouse 220  Mouse: (accel) acceleration factor: 2.000
+[  3411.552] (**) HP HP Wireless Mouse 220  Mouse: (accel) acceleration threshold: 4
+[  3411.554] (II) event2  - HP HP Wireless Mouse 220  Mouse: is tagged by udev as: Mouse
+[  3411.554] (II) event2  - HP HP Wireless Mouse 220  Mouse: device is a pointer
+[  3411.555] (II) config/udev: Adding input device HP HP Wireless Mouse 220  Mouse (/dev/input/mouse0)
+[  3411.555] (II) No input driver specified, ignoring this device.
+[  3411.555] (II) This device may have been added with another device file.
+[  3411.557] (II) config/udev: Adding input device HP HP Wireless Mouse 220  (/dev/input/event3)
+[  3411.557] (II) No input driver specified, ignoring this device.
+[  3411.557] (II) This device may have been added with another device file.
+[  3411.557] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event13)
+[  3411.557] (II) No input driver specified, ignoring this device.
+[  3411.557] (II) This device may have been added with another device file.
+[  3411.558] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event14)
+[  3411.558] (II) No input driver specified, ignoring this device.
+[  3411.558] (II) This device may have been added with another device file.
+[  3411.558] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event15)
+[  3411.558] (II) No input driver specified, ignoring this device.
+[  3411.558] (II) This device may have been added with another device file.
+[  3411.559] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event16)
+[  3411.559] (II) No input driver specified, ignoring this device.
+[  3411.559] (II) This device may have been added with another device file.
+[  3411.560] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event17)
+[  3411.560] (II) No input driver specified, ignoring this device.
+[  3411.560] (II) This device may have been added with another device file.
+[  3411.560] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event18)
+[  3411.560] (II) No input driver specified, ignoring this device.
+[  3411.560] (II) This device may have been added with another device file.
+[  3411.561] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event19)
+[  3411.561] (II) No input driver specified, ignoring this device.
+[  3411.561] (II) This device may have been added with another device file.
+[  3411.561] (II) config/udev: Adding input device PC Speaker (/dev/input/event5)
+[  3411.562] (II) No input driver specified, ignoring this device.
+[  3411.562] (II) This device may have been added with another device file.
+[  3412.165] (II) AMDGPU(0): EDID vendor "DEL", prod id 16712
+[  3412.165] (II) AMDGPU(0): Using EDID range info for horizontal sync
+[  3412.165] (II) AMDGPU(0): Using EDID range info for vertical refresh
+[  3412.165] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[  3412.165] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  3412.165] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  3412.165] (II) AMDGPU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  3412.474] (II) AMDGPU(0): EDID vendor "DEL", prod id 16712
+[  3412.474] (II) AMDGPU(0): Using hsync ranges from config file
+[  3412.474] (II) AMDGPU(0): Using vrefresh ranges from config file
+[  3412.474] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[  3412.474] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  3412.474] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  3412.475] (II) AMDGPU(0): Modeline "1600x900"x60.0  119.00  1600 1696 1864 2128  900 901 904 932 -hsync +vsync (55.9 kHz e)
+[  3521.958] (II) event21 - Apple Inc. Magic Trackpad 2: device removed
+[  3521.959] (II) config/udev: removing device Apple Inc. Magic Trackpad 2
+[  3521.959] (**) Option "fd" "34"
+[  3521.963] (II) UnloadModule: "libinput"
+[  3521.963] (II) systemd-logind: releasing fd for 13:85
+[  3522.013] (II) event22 - Apple Inc. Magic Trackpad 2: device removed
+[  3522.014] (II) config/udev: removing device Apple Inc. Magic Trackpad 2
+[  3522.014] (**) Option "fd" "35"
+[  3522.017] (II) UnloadModule: "libinput"
+[  3522.017] (II) systemd-logind: releasing fd for 13:86
+[  3594.727] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/mouse2)
+[  3594.727] (II) No input driver specified, ignoring this device.
+[  3594.727] (II) This device may have been added with another device file.
+[  3594.728] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/mouse3)
+[  3594.728] (II) No input driver specified, ignoring this device.
+[  3594.728] (II) This device may have been added with another device file.
+[  3594.944] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/event21)
+[  3594.944] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "evdev touchpad catchall"
+[  3594.944] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "libinput touchpad catchall"
+[  3594.944] (II) Using input driver 'libinput' for 'Apple Inc. Magic Trackpad 2'
+[  3594.997] (II) systemd-logind: got fd for /dev/input/event21 13:85 fd 35 paused 0
+[  3594.997] (**) Apple Inc. Magic Trackpad 2: always reports core events
+[  3594.997] (**) Option "Device" "/dev/input/event21"
+[  3595.000] (II) event21 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3595.002] (II) event21 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3595.002] (II) event21 - Apple Inc. Magic Trackpad 2: device removed
+[  3595.002] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3595.002] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3595.002] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3595.002] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.3/usb3/3-2/3-2:1.0/0003:05AC:0265.0010/input/input36/event21"
+[  3595.002] (II) XINPUT: Adding extended input device "Apple Inc. Magic Trackpad 2" (type: TOUCHPAD, id 10)
+[  3595.004] (**) Option "AccelerationScheme" "none"
+[  3595.005] (**) Apple Inc. Magic Trackpad 2: (accel) selected scheme none/0
+[  3595.005] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration factor: 2.000
+[  3595.005] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration threshold: 4
+[  3595.007] (II) event21 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3595.009] (II) event21 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3595.011] (II) config/udev: Adding input device Apple Inc. Magic Trackpad 2 (/dev/input/event22)
+[  3595.011] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "evdev touchpad catchall"
+[  3595.011] (**) Apple Inc. Magic Trackpad 2: Applying InputClass "libinput touchpad catchall"
+[  3595.011] (II) Using input driver 'libinput' for 'Apple Inc. Magic Trackpad 2'
+[  3595.064] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 40 paused 0
+[  3595.064] (**) Apple Inc. Magic Trackpad 2: always reports core events
+[  3595.064] (**) Option "Device" "/dev/input/event22"
+[  3595.066] (II) event22 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3595.069] (II) event22 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3595.069] (II) event22 - Apple Inc. Magic Trackpad 2: device removed
+[  3595.069] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3595.069] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3595.069] (II) libinput: Apple Inc. Magic Trackpad 2: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  3595.069] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:20:00.0/0000:21:08.0/0000:2a:00.3/usb3/3-2/3-2:1.1/0003:05AC:0265.0011/input/input37/event22"
+[  3595.069] (II) XINPUT: Adding extended input device "Apple Inc. Magic Trackpad 2" (type: TOUCHPAD, id 11)
+[  3595.071] (**) Option "AccelerationScheme" "none"
+[  3595.072] (**) Apple Inc. Magic Trackpad 2: (accel) selected scheme none/0
+[  3595.072] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration factor: 2.000
+[  3595.072] (**) Apple Inc. Magic Trackpad 2: (accel) acceleration threshold: 4
+[  3595.074] (II) event22 - Apple Inc. Magic Trackpad 2: is tagged by udev as: Touchpad
+[  3595.077] (II) event22 - Apple Inc. Magic Trackpad 2: device is a touchpad
+[  3595.077] (EE) event4  - Logitech M705: client bug: event processing lagging behind by 59ms, your system is too slow
+[  3899.426] (II) event21 - Apple Inc. Magic Trackpad 2: device removed
+[  3899.427] (II) config/udev: removing device Apple Inc. Magic Trackpad 2
+[  3899.427] (**) Option "fd" "35"
+[  3899.434] (II) UnloadModule: "libinput"
+[  3899.434] (II) systemd-logind: releasing fd for 13:85
+[  3899.497] (II) event22 - Apple Inc. Magic Trackpad 2: device removed
+[  3899.498] (II) config/udev: removing device Apple Inc. Magic Trackpad 2
+[  3899.498] (**) Option "fd" "40"
+[  3899.502] (II) UnloadModule: "libinput"
+[  3899.502] (II) systemd-logind: releasing fd for 13:86
+[  4356.547] (**) Option "fd" "28"
+[  4356.548] (II) event1  - Power Button: device removed
+[  4356.548] (**) Option "fd" "31"
+[  4356.548] (II) event0  - Power Button: device removed
+[  4356.548] (**) Option "fd" "32"
+[  4356.548] (II) event20 - José Expósito’s Keyboard: device removed
+[  4356.548] (**) Option "fd" "33"
+[  4356.548] (II) event4  - Logitech M705: device removed
+[  4356.549] (**) Option "fd" "36"
+[  4356.549] (II) event2  - HP HP Wireless Mouse 220  Mouse: device removed
+[  4356.549] (II) UnloadModule: "libinput"
+[  4356.549] (II) systemd-logind: releasing fd for 13:66
+[  4356.550] (II) UnloadModule: "libinput"
+[  4356.550] (II) systemd-logind: releasing fd for 13:68
+[  4356.550] (II) UnloadModule: "libinput"
+[  4356.550] (II) systemd-logind: releasing fd for 13:84
+[  4356.551] (II) UnloadModule: "libinput"
+[  4356.551] (II) systemd-logind: releasing fd for 13:64
+[  4356.551] (II) UnloadModule: "libinput"
+[  4356.551] (II) systemd-logind: releasing fd for 13:65
+[  4356.553] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[  4356.553] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[  4356.599] (II) Server terminated successfully (0). Closing log file.

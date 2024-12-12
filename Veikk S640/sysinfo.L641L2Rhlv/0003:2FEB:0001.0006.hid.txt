@@ -1,0 +1,65 @@
+Usage Page (Digitizer),             ; Digitizer (0Dh)
+Usage (Digitizer),                  ; Digitizer (01h, application collection)
+Collection (Application),
+    Report ID (2),
+    Usage (Stylus),                 ; Stylus (20h, application collection, logical collection)
+    Collection (Physical),
+        Usage (Tip Switch),         ; Tip switch (42h, momentary control)
+        Usage (Barrel Switch),      ; Barrel switch (44h, momentary control)
+        Usage (Eraser),             ; Eraser (45h, momentary control)
+        Usage (Invert),             ; Invert (3Ch, momentary control)
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Report Size (1),
+        Report Count (4),
+        Input (Variable),
+        Report Size (1),
+        Report Count (2),
+        Input (Constant),
+        Usage (In Range),           ; In range (32h, momentary control)
+        Report Size (1),
+        Report Count (1),
+        Input (Variable),
+        Input (Constant),
+        Report Size (16),
+        Report Count (1),
+        Physical Minimum (0),
+        Push,
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Unit (Inch),
+        Unit Exponent (13),
+        Physical Maximum (820),
+        Logical Maximum (30480),
+        Input (Variable),
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Physical Maximum (1101),
+        Logical Maximum (20320),
+        Input (Variable),
+        Pop,
+        Usage (Tip Pressure),       ; Tip pressure (30h, dynamic value)
+        Physical Maximum (0),
+        Logical Maximum (8191),
+        Input (Variable),
+    End Collection,
+End Collection,
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keyboard),                   ; Keyboard (06h, application collection)
+Collection (Application),
+    Report ID (3),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (KB Leftcontrol), ; Keyboard left control (E0h, dynamic value)
+    Usage Maximum (KB Right GUI),   ; Keyboard right GUI (E7h, dynamic value)
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (8),
+    Input (Variable),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (None),           ; No event (00h, selector)
+    Usage Maximum (FFh),
+    Logical Maximum (255),
+    Report Size (8),
+    Report Count (6),
+    Input,
+End Collection

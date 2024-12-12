@@ -1,0 +1,985 @@
+[     8.151] (--) Log file renamed from "/var/log/Xorg.pid-1506.log" to "/var/log/Xorg.0.log"
+[     8.152] 
+X.Org X Server 1.21.1.11
+X Protocol Version 11, Revision 0
+[     8.152] Current Operating System: Linux HOSTNAME 6.8.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun  7 15:25:01 UTC 2024 x86_64
+[     8.152] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-38-generic root=UUID=b67c2fb2-905f-40af-a345-b01e3e002e5a ro quiet splash resume=UUID=de46a410-57e0-4d95-ac0c-493c275be38a vt.handoff=7
+[     8.152] xorg-server 2:21.1.12-1ubuntu1 (For technical support please see http://www.ubuntu.com/support) 
+[     8.152] Current version of pixman: 0.42.2
+[     8.152] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     8.152] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     8.152] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Jul 16 06:29:32 2024
+[     8.153] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[     8.153] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     8.153] (==) No Layout section.  Using the first Screen section.
+[     8.153] (==) No screen section available. Using defaults.
+[     8.153] (**) |-->Screen "Default Screen Section" (0)
+[     8.153] (**) |   |-->Monitor "<default monitor>"
+[     8.154] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     8.154] (**) Allowing byte-swapped clients
+[     8.154] (==) Automatically adding devices
+[     8.154] (==) Automatically enabling devices
+[     8.154] (==) Automatically adding GPU devices
+[     8.154] (==) Automatically binding GPU devices
+[     8.154] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     8.154] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     8.154] 	Entry deleted from font path.
+[     8.154] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     8.154] 	Entry deleted from font path.
+[     8.154] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     8.154] 	Entry deleted from font path.
+[     8.154] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     8.154] 	Entry deleted from font path.
+[     8.154] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     8.154] 	Entry deleted from font path.
+[     8.154] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[     8.154] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     8.154] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     8.154] (II) Loader magic: 0x6374d783d020
+[     8.154] (II) Module ABI versions:
+[     8.154] 	X.Org ANSI C Emulation: 0.4
+[     8.154] 	X.Org Video Driver: 25.2
+[     8.154] 	X.Org XInput driver : 24.4
+[     8.154] 	X.Org Server Extension : 10.0
+[     8.155] (++) using VT number 2
+
+[     8.155] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     8.156] (II) xfree86: Adding drm device (/dev/dri/card1)
+[     8.156] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card1
+[     8.180] (--) PCI:*(0@0:2:0) 8086:a7a1:103c:8b41 rev 4, Mem @ 0x603c000000/16777216, 0x4000000000/268435456, I/O @ 0x00003000/64, BIOS @ 0x????????/131072
+[     8.180] (II) LoadModule: "glx"
+[     8.181] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     8.185] (II) Module glx: vendor="X.Org Foundation"
+[     8.185] 	compiled for 1.21.1.11, module version = 1.0.0
+[     8.185] 	ABI class: X.Org Server Extension, version 10.0
+[     8.185] (==) Matched modesetting as autoconfigured driver 0
+[     8.185] (==) Matched fbdev as autoconfigured driver 1
+[     8.185] (==) Matched vesa as autoconfigured driver 2
+[     8.185] (==) Assigned the driver to the xf86ConfigLayout
+[     8.185] (II) LoadModule: "modesetting"
+[     8.185] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     8.186] (II) Module modesetting: vendor="X.Org Foundation"
+[     8.186] 	compiled for 1.21.1.11, module version = 1.21.1
+[     8.186] 	Module class: X.Org Video Driver
+[     8.186] 	ABI class: X.Org Video Driver, version 25.2
+[     8.186] (II) LoadModule: "fbdev"
+[     8.186] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     8.187] (II) Module fbdev: vendor="X.Org Foundation"
+[     8.187] 	compiled for 1.21.1.11, module version = 0.5.0
+[     8.187] 	Module class: X.Org Video Driver
+[     8.187] 	ABI class: X.Org Video Driver, version 25.2
+[     8.187] (II) LoadModule: "vesa"
+[     8.187] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[     8.187] (II) Module vesa: vendor="X.Org Foundation"
+[     8.187] 	compiled for 1.21.1.7, module version = 2.6.0
+[     8.187] 	Module class: X.Org Video Driver
+[     8.187] 	ABI class: X.Org Video Driver, version 25.2
+[     8.187] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     8.187] (II) FBDEV: driver for framebuffer: fbdev
+[     8.187] (II) VESA: driver for VESA chipsets: vesa
+[     8.209] (II) modeset(0): using drv /dev/dri/card1
+[     8.209] (WW) Falling back to old probe method for fbdev
+[     8.209] (II) Loading sub module "fbdevhw"
+[     8.209] (II) LoadModule: "fbdevhw"
+[     8.209] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     8.209] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     8.209] 	compiled for 1.21.1.11, module version = 0.0.2
+[     8.209] 	ABI class: X.Org Video Driver, version 25.2
+[     8.210] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     8.210] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[     8.210] (==) modeset(0): RGB weight 888
+[     8.210] (==) modeset(0): Default visual is TrueColor
+[     8.210] (II) Loading sub module "glamoregl"
+[     8.210] (II) LoadModule: "glamoregl"
+[     8.210] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[     8.216] (II) Module glamoregl: vendor="X.Org Foundation"
+[     8.216] 	compiled for 1.21.1.11, module version = 1.0.1
+[     8.216] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     8.321] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) Graphics (RPL-U)
+[     8.321] (II) modeset(0): glamor initialized
+[     8.321] (==) modeset(0): VariableRefresh: disabled
+[     8.321] (==) modeset(0): AsyncFlipSecondaries: disabled
+[     8.323] (II) modeset(0): Output eDP-1 has no monitor section
+[     8.323] (II) modeset(0): Output HDMI-1 has no monitor section
+[     8.324] (II) modeset(0): Output DP-1 has no monitor section
+[     8.324] (II) modeset(0): Output DP-2 has no monitor section
+[     8.324] (II) modeset(0): Output DP-3 has no monitor section
+[     8.324] (II) modeset(0): Output DP-4 has no monitor section
+[     8.327] (II) modeset(0): EDID for output eDP-1
+[     8.327] (II) modeset(0): Manufacturer: IVO  Model: 8cbe  Serial#: 4
+[     8.327] (II) modeset(0): Year: 2021  Week: 0
+[     8.327] (II) modeset(0): EDID Version: 1.4
+[     8.327] (II) modeset(0): Digital Display Input
+[     8.327] (II) modeset(0): 8 bits per channel
+[     8.327] (II) modeset(0): Digital interface is DisplayPort
+[     8.327] (II) modeset(0): Max Image Size [cm]: horiz.: 30  vert.: 19
+[     8.327] (II) modeset(0): Gamma: 2.20
+[     8.327] (II) modeset(0): No DPMS capabilities specified
+[     8.327] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[     8.327] (II) modeset(0): First detailed timing is preferred mode
+[     8.327] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[     8.327] (II) modeset(0): Display is continuous-frequency
+[     8.327] (II) modeset(0): redX: 0.640 redY: 0.329   greenX: 0.300 greenY: 0.600
+[     8.327] (II) modeset(0): blueX: 0.149 blueY: 0.060   whiteX: 0.312 whiteY: 0.328
+[     8.327] (II) modeset(0): Manufacturer's mask: 0
+[     8.327] (II) modeset(0): Supported detailed timing:
+[     8.327] (II) modeset(0): clock: 154.1 MHz   Image Size:  302 x 189 mm
+[     8.327] (II) modeset(0): h_active: 1920  h_sync: 1944  h_sync_end 1992 h_blank_end 2080 h_border: 0
+[     8.327] (II) modeset(0): v_active: 1200  v_sync: 1206  v_sync_end 1218 v_blanking: 1235 v_border: 0
+[     8.327] (II) modeset(0):  X140NV4J R0
+[     8.327] (II) modeset(0): Unknown vendor-specific block 3
+[     8.327] (II) modeset(0): Unknown vendor-specific block 3
+[     8.327] (II) modeset(0): EDID (in hex):
+[     8.327] (II) modeset(0): 	00ffffffffffff0026cfbe8c04000000
+[     8.327] (II) modeset(0): 	001f0104a51e13780bde50a3544c9926
+[     8.327] (II) modeset(0): 	0f505400000001010101010101010101
+[     8.327] (II) modeset(0): 	010101010101323c80a070b023401830
+[     8.327] (II) modeset(0): 	6c002ebd10000019000000fe00583134
+[     8.327] (II) modeset(0): 	304e56344a205230200a000000030003
+[     8.327] (II) modeset(0): 	54d804647d130c19af00000000000003
+[     8.327] (II) modeset(0): 	001951ff64a0f4150c4af401010000de
+[     8.327] (II) modeset(0): Printing probed modes for output eDP-1
+[     8.327] (II) modeset(0): Modeline "1920x1200"x60.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[     8.327] (II) modeset(0): Modeline "1920x1200"x60.0  154.10  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.1 kHz d)
+[     8.327] (II) modeset(0): Modeline "1920x1080"x60.0  138.63  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[     8.327] (II) modeset(0): Modeline "1600x1200"x60.0  161.97  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz d)
+[     8.327] (II) modeset(0): Modeline "1680x1050"x60.0  119.21  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.8 kHz d)
+[     8.327] (II) modeset(0): Modeline "1400x1050"x60.0  122.03  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[     8.327] (II) modeset(0): Modeline "1600x900"x60.0   97.77  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "1280x1024"x60.0  107.94  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (63.9 kHz d)
+[     8.327] (II) modeset(0): Modeline "1400x900"x60.0   86.66  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "1280x960"x60.0  107.98  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[     8.327] (II) modeset(0): Modeline "1440x810"x60.0  151.91  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[     8.327] (II) modeset(0): Modeline "1368x768"x60.0   72.41  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "1280x800"x60.0   71.09  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "1280x720"x60.0   64.01  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "1024x768"x60.0   64.98  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "960x720"x60.0  116.98  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[     8.327] (II) modeset(0): Modeline "928x696"x60.0  109.04  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.3 kHz d)
+[     8.327] (II) modeset(0): Modeline "896x672"x60.0  102.36  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.6 kHz d)
+[     8.327] (II) modeset(0): Modeline "1024x576"x60.0   42.12  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.6 kHz d)
+[     8.327] (II) modeset(0): Modeline "960x600"x60.0   76.99  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[     8.327] (II) modeset(0): Modeline "960x540"x60.0   37.36  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "800x600"x60.0   38.39  800 824 896 1024  600 601 603 625 +hsync +vsync (37.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "840x525"x60.0   59.60  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.8 kHz d)
+[     8.327] (II) modeset(0): Modeline "864x486"x60.0   30.71  864 912 944 1024  486 489 494 500 +hsync -vsync (30.0 kHz d)
+[     8.327] (II) modeset(0): Modeline "700x525"x60.0   61.01  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[     8.327] (II) modeset(0): Modeline "800x450"x60.0   48.88  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "640x512"x60.0   53.97  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (63.9 kHz d)
+[     8.327] (II) modeset(0): Modeline "700x450"x60.0   43.33  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "720x405"x60.0   22.12  720 768 800 880  405 408 413 419 +hsync -vsync (25.1 kHz d)
+[     8.327] (II) modeset(0): Modeline "684x384"x60.0   36.21  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "640x360"x60.0   17.95  640 688 720 800  360 363 368 374 +hsync -vsync (22.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "512x384"x60.0   32.49  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "512x288"x60.0   21.02  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[     8.327] (II) modeset(0): Modeline "480x270"x60.0   18.68  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "400x300"x60.0   19.16  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (37.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "432x243"x60.0   15.36  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (30.0 kHz d)
+[     8.327] (II) modeset(0): Modeline "320x240"x60.0   12.57  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.4 kHz d)
+[     8.327] (II) modeset(0): Modeline "360x202"x60.0   11.03  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (25.1 kHz d)
+[     8.327] (II) modeset(0): Modeline "320x180"x60.0    8.97  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.4 kHz d)
+[     8.327] (II) modeset(0): EDID for output HDMI-1
+[     8.327] (II) modeset(0): EDID for output DP-1
+[     8.327] (II) modeset(0): EDID for output DP-2
+[     8.327] (II) modeset(0): EDID for output DP-3
+[     8.327] (II) modeset(0): EDID for output DP-4
+[     8.327] (II) modeset(0): Output eDP-1 connected
+[     8.327] (II) modeset(0): Output HDMI-1 disconnected
+[     8.327] (II) modeset(0): Output DP-1 disconnected
+[     8.327] (II) modeset(0): Output DP-2 disconnected
+[     8.327] (II) modeset(0): Output DP-3 disconnected
+[     8.327] (II) modeset(0): Output DP-4 disconnected
+[     8.327] (II) modeset(0): Using exact sizes for initial modes
+[     8.327] (II) modeset(0): Output eDP-1 using initial mode 1920x1200 +0+0
+[     8.327] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[     8.327] (==) modeset(0): DPI set to (96, 96)
+[     8.327] (II) Loading sub module "fb"
+[     8.327] (II) LoadModule: "fb"
+[     8.327] (II) Module "fb" already built-in
+[     8.327] (II) UnloadModule: "fbdev"
+[     8.327] (II) Unloading fbdev
+[     8.327] (II) UnloadSubModule: "fbdevhw"
+[     8.327] (II) Unloading fbdevhw
+[     8.327] (II) UnloadModule: "vesa"
+[     8.327] (II) Unloading vesa
+[     8.338] (==) modeset(0): Backing store enabled
+[     8.338] (==) modeset(0): Silken mouse enabled
+[     8.426] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[     8.426] (==) modeset(0): DPMS enabled
+[     8.427] (II) modeset(0): [DRI2] Setup complete
+[     8.427] (II) modeset(0): [DRI2]   DRI driver: iris
+[     8.427] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[     8.427] (II) Initializing extension Generic Event Extension
+[     8.427] (II) Initializing extension SHAPE
+[     8.427] (II) Initializing extension MIT-SHM
+[     8.427] (II) Initializing extension XInputExtension
+[     8.429] (II) Initializing extension XTEST
+[     8.429] (II) Initializing extension BIG-REQUESTS
+[     8.429] (II) Initializing extension SYNC
+[     8.429] (II) Initializing extension XKEYBOARD
+[     8.429] (II) Initializing extension XC-MISC
+[     8.430] (II) Initializing extension SECURITY
+[     8.430] (II) Initializing extension XFIXES
+[     8.430] (II) Initializing extension RENDER
+[     8.430] (II) Initializing extension RANDR
+[     8.431] (II) Initializing extension COMPOSITE
+[     8.431] (II) Initializing extension DAMAGE
+[     8.432] (II) Initializing extension MIT-SCREEN-SAVER
+[     8.432] (II) Initializing extension DOUBLE-BUFFER
+[     8.432] (II) Initializing extension RECORD
+[     8.432] (II) Initializing extension DPMS
+[     8.432] (II) Initializing extension Present
+[     8.432] (II) Initializing extension DRI3
+[     8.432] (II) Initializing extension X-Resource
+[     8.433] (II) Initializing extension XVideo
+[     8.433] (II) Initializing extension XVideo-MotionCompensation
+[     8.433] (II) Initializing extension SELinux
+[     8.433] (II) SELinux: Disabled on system
+[     8.433] (II) Initializing extension GLX
+[     8.443] (II) AIGLX: Loaded and initialized iris
+[     8.443] (II) GLX: Initialized DRI2 GL provider for screen 0
+[     8.443] (II) Initializing extension XFree86-VidModeExtension
+[     8.443] (II) Initializing extension XFree86-DGA
+[     8.443] (II) Initializing extension XFree86-DRI
+[     8.443] (II) Initializing extension DRI2
+[     8.444] (II) modeset(0): Damage tracking initialized
+[     8.444] (II) modeset(0): Setting screen physical size to 508 x 317
+[     8.490] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[     8.490] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     8.490] (**) Power Button: Applying InputClass "system-keyboard"
+[     8.490] (II) LoadModule: "libinput"
+[     8.490] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     8.492] (II) Module libinput: vendor="X.Org Foundation"
+[     8.492] 	compiled for 1.21.1.11, module version = 1.4.0
+[     8.492] 	Module class: X.Org XInput Driver
+[     8.492] 	ABI class: X.Org XInput driver, version 24.4
+[     8.492] (II) Using input driver 'libinput' for 'Power Button'
+[     8.492] (**) Power Button: always reports core events
+[     8.492] (**) Option "Device" "/dev/input/event2"
+[     8.494] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[     8.494] (II) event2  - Power Button: device is a keyboard
+[     8.494] (II) event2  - Power Button: device removed
+[     8.507] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[     8.507] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[     8.507] (**) Option "xkb_model" "pc105"
+[     8.507] (**) Option "xkb_layout" "us"
+[     8.507] (WW) Option "xkb_variant" requires a string value
+[     8.507] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[     8.507] (II) event2  - Power Button: device is a keyboard
+[     8.508] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[     8.508] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[     8.508] (**) Video Bus: Applying InputClass "system-keyboard"
+[     8.508] (II) Using input driver 'libinput' for 'Video Bus'
+[     8.508] (**) Video Bus: always reports core events
+[     8.508] (**) Option "Device" "/dev/input/event12"
+[     8.508] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[     8.509] (II) event12 - Video Bus: device is a keyboard
+[     8.509] (II) event12 - Video Bus: device removed
+[     8.522] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input22/event12"
+[     8.522] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[     8.522] (**) Option "xkb_model" "pc105"
+[     8.522] (**) Option "xkb_layout" "us"
+[     8.522] (WW) Option "xkb_variant" requires a string value
+[     8.523] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[     8.524] (II) event12 - Video Bus: device is a keyboard
+[     8.524] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[     8.524] (II) No input driver specified, ignoring this device.
+[     8.524] (II) This device may have been added with another device file.
+[     8.525] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[     8.525] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[     8.525] (**) Sleep Button: Applying InputClass "system-keyboard"
+[     8.525] (II) Using input driver 'libinput' for 'Sleep Button'
+[     8.525] (**) Sleep Button: always reports core events
+[     8.525] (**) Option "Device" "/dev/input/event0"
+[     8.526] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[     8.526] (II) event0  - Sleep Button: device is a keyboard
+[     8.526] (II) event0  - Sleep Button: device removed
+[     8.532] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[     8.532] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[     8.532] (**) Option "xkb_model" "pc105"
+[     8.532] (**) Option "xkb_layout" "us"
+[     8.532] (WW) Option "xkb_variant" requires a string value
+[     8.533] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[     8.534] (II) event0  - Sleep Button: device is a keyboard
+[     8.535] (II) config/udev: Adding input device SYNA310D:00 06CB:CEA4 Mouse (/dev/input/event4)
+[     8.535] (**) SYNA310D:00 06CB:CEA4 Mouse: Applying InputClass "libinput pointer catchall"
+[     8.535] (II) Using input driver 'libinput' for 'SYNA310D:00 06CB:CEA4 Mouse'
+[     8.535] (**) SYNA310D:00 06CB:CEA4 Mouse: always reports core events
+[     8.535] (**) Option "Device" "/dev/input/event4"
+[     8.537] (II) event4  - SYNA310D:00 06CB:CEA4 Mouse: is tagged by udev as: Mouse Pointingstick
+[     8.537] (II) event4  - SYNA310D:00 06CB:CEA4 Mouse: device is a pointer
+[     8.538] (II) event4  - SYNA310D:00 06CB:CEA4 Mouse: device removed
+[     8.553] (II) libinput: SYNA310D:00 06CB:CEA4 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.553] (II) libinput: SYNA310D:00 06CB:CEA4 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.553] (II) libinput: SYNA310D:00 06CB:CEA4 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.553] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-SYNA310D:00/0018:06CB:CEA4.0001/input/input12/event4"
+[     8.553] (II) XINPUT: Adding extended input device "SYNA310D:00 06CB:CEA4 Mouse" (type: MOUSE, id 9)
+[     8.553] (**) Option "AccelerationScheme" "none"
+[     8.553] (**) SYNA310D:00 06CB:CEA4 Mouse: (accel) selected scheme none/0
+[     8.553] (**) SYNA310D:00 06CB:CEA4 Mouse: (accel) acceleration factor: 2.000
+[     8.553] (**) SYNA310D:00 06CB:CEA4 Mouse: (accel) acceleration threshold: 4
+[     8.556] (II) event4  - SYNA310D:00 06CB:CEA4 Mouse: is tagged by udev as: Mouse Pointingstick
+[     8.556] (II) event4  - SYNA310D:00 06CB:CEA4 Mouse: device is a pointer
+[     8.558] (II) config/udev: Adding input device SYNA310D:00 06CB:CEA4 Mouse (/dev/input/mouse0)
+[     8.558] (II) No input driver specified, ignoring this device.
+[     8.558] (II) This device may have been added with another device file.
+[     8.558] (II) config/udev: Adding input device SYNA310D:00 06CB:CEA4 Touchpad (/dev/input/event5)
+[     8.558] (**) SYNA310D:00 06CB:CEA4 Touchpad: Applying InputClass "libinput touchpad catchall"
+[     8.558] (II) Using input driver 'libinput' for 'SYNA310D:00 06CB:CEA4 Touchpad'
+[     8.558] (**) SYNA310D:00 06CB:CEA4 Touchpad: always reports core events
+[     8.558] (**) Option "Device" "/dev/input/event5"
+[     8.560] (II) event5  - SYNA310D:00 06CB:CEA4 Touchpad: is tagged by udev as: Touchpad
+[     8.562] (II) event5  - SYNA310D:00 06CB:CEA4 Touchpad: device is a touchpad
+[     8.562] (II) event5  - SYNA310D:00 06CB:CEA4 Touchpad: device removed
+[     8.578] (II) libinput: SYNA310D:00 06CB:CEA4 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.578] (II) libinput: SYNA310D:00 06CB:CEA4 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.578] (II) libinput: SYNA310D:00 06CB:CEA4 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     8.579] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-SYNA310D:00/0018:06CB:CEA4.0001/input/input13/event5"
+[     8.579] (II) XINPUT: Adding extended input device "SYNA310D:00 06CB:CEA4 Touchpad" (type: TOUCHPAD, id 10)
+[     8.581] (**) Option "AccelerationScheme" "none"
+[     8.581] (**) SYNA310D:00 06CB:CEA4 Touchpad: (accel) selected scheme none/0
+[     8.581] (**) SYNA310D:00 06CB:CEA4 Touchpad: (accel) acceleration factor: 2.000
+[     8.581] (**) SYNA310D:00 06CB:CEA4 Touchpad: (accel) acceleration threshold: 4
+[     8.583] (II) event5  - SYNA310D:00 06CB:CEA4 Touchpad: is tagged by udev as: Touchpad
+[     8.585] (II) event5  - SYNA310D:00 06CB:CEA4 Touchpad: device is a touchpad
+[     8.586] (II) config/udev: Adding input device SYNA310D:00 06CB:CEA4 Touchpad (/dev/input/mouse1)
+[     8.586] (II) No input driver specified, ignoring this device.
+[     8.586] (II) This device may have been added with another device file.
+[     8.587] (II) config/udev: Adding input device Wacom HID 49FC Pen (/dev/input/event6)
+[     8.587] (**) Wacom HID 49FC Pen: Applying InputClass "libinput tablet catchall"
+[     8.587] (**) Wacom HID 49FC Pen: Applying InputClass "Wacom USB tablet class"
+[     8.587] (**) Wacom HID 49FC Pen: Applying InputClass "Wacom tablet class"
+[     8.587] (II) LoadModule: "wacom"
+[     8.587] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[     8.588] (II) Module wacom: vendor="X.Org Foundation"
+[     8.588] 	compiled for 1.21.1.11, module version = 1.2.0
+[     8.588] 	Module class: X.Org XInput Driver
+[     8.588] 	ABI class: X.Org XInput driver, version 24.4
+[     8.588] (II) Build version: 1.2.0
+[     8.588] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[     8.589] (II) Using input driver 'wacom' for 'Wacom HID 49FC Pen'
+[     8.589] (**) Wacom HID 49FC Pen: always reports core events
+[     8.589] (**) Option "Device" "/dev/input/event6"
+[     8.589] (II) wacom: Wacom HID 49FC Pen: type not specified, assuming 'stylus'.
+[     8.589] (II) wacom: Wacom HID 49FC Pen: other types will be automatically added.
+[     8.589] (--) wacom: Wacom HID 49FC Pen stylus: using pressure threshold of 851 for button 1
+[     8.589] (**) wacom: Wacom HID 49FC Pen stylus: panscroll is 0
+[     8.589] (**) wacom: Wacom HID 49FC Pen stylus: panscroll modified to 1300
+[     8.589] (--) wacom: Wacom HID 49FC Pen stylus: maxX=30159 maxY=18850 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[     8.589] (II) wacom: Wacom HID 49FC Pen stylus: hotplugging dependent devices.
+[     8.589] (II) wacom: Wacom HID 49FC Pen stylus: hotplugging completed.
+[     8.610] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-WACF4234:00/0018:056A:49FC.0002/input/input15/event6"
+[     8.610] (II) XINPUT: Adding extended input device "Wacom HID 49FC Pen stylus" (type: STYLUS, id 11)
+[     8.610] (**) Wacom HID 49FC Pen stylus: (accel) keeping acceleration scheme 1
+[     8.610] (**) Wacom HID 49FC Pen stylus: (accel) acceleration profile 0
+[     8.610] (**) Wacom HID 49FC Pen stylus: (accel) acceleration factor: 2.000
+[     8.610] (**) Wacom HID 49FC Pen stylus: (accel) acceleration threshold: 4
+[     8.612] (II) config/udev: Adding input device Wacom HID 49FC Pen (/dev/input/mouse2)
+[     8.612] (II) No input driver specified, ignoring this device.
+[     8.612] (II) This device may have been added with another device file.
+[     8.613] (II) config/udev: Adding input device Wacom HID 49FC Finger (/dev/input/event7)
+[     8.613] (**) Wacom HID 49FC Finger: Applying InputClass "libinput touchscreen catchall"
+[     8.613] (**) Wacom HID 49FC Finger: Applying InputClass "Wacom USB touchscreen class"
+[     8.613] (**) Wacom HID 49FC Finger: Applying InputClass "Wacom touchscreen class"
+[     8.613] (II) Using input driver 'wacom' for 'Wacom HID 49FC Finger'
+[     8.613] (**) Wacom HID 49FC Finger: always reports core events
+[     8.613] (**) Option "Device" "/dev/input/event7"
+[     8.613] (II) wacom: Wacom HID 49FC Finger: type not specified, assuming 'touch'.
+[     8.613] (II) wacom: Wacom HID 49FC Finger: other types will be automatically added.
+[     8.613] (**) wacom: Wacom HID 49FC Finger touch: panscroll is 0
+[     8.613] (**) wacom: Wacom HID 49FC Finger touch: panscroll modified to 13
+[     8.613] (--) wacom: Wacom HID 49FC Finger touch: maxX=12064 maxY=7540 maxZ=0 resX=40000 resY=40000 
+[     8.613] (II) wacom: Wacom HID 49FC Finger touch: hotplugging dependent devices.
+[     8.613] (II) wacom: Wacom HID 49FC Finger touch: hotplugging completed.
+[     8.634] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-WACF4234:00/0018:056A:49FC.0002/input/input16/event7"
+[     8.634] (II) XINPUT: Adding extended input device "Wacom HID 49FC Finger touch" (type: TOUCH, id 12)
+[     8.634] (**) Wacom HID 49FC Finger touch: (accel) keeping acceleration scheme 1
+[     8.634] (**) Wacom HID 49FC Finger touch: (accel) acceleration profile 0
+[     8.634] (**) Wacom HID 49FC Finger touch: (accel) acceleration factor: 2.000
+[     8.634] (**) Wacom HID 49FC Finger touch: (accel) acceleration threshold: 4
+[     8.635] (II) config/udev: Adding input device Wacom HID 49FC Finger (/dev/input/mouse3)
+[     8.635] (II) No input driver specified, ignoring this device.
+[     8.635] (II) This device may have been added with another device file.
+[     8.636] (II) config/udev: Adding input device sof-hda-dsp Mic (/dev/input/event13)
+[     8.636] (II) No input driver specified, ignoring this device.
+[     8.636] (II) This device may have been added with another device file.
+[     8.637] (II) config/udev: Adding input device sof-hda-dsp Headphone (/dev/input/event14)
+[     8.637] (II) No input driver specified, ignoring this device.
+[     8.637] (II) This device may have been added with another device file.
+[     8.637] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=3 (/dev/input/event15)
+[     8.637] (II) No input driver specified, ignoring this device.
+[     8.637] (II) This device may have been added with another device file.
+[     8.638] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=4 (/dev/input/event16)
+[     8.638] (II) No input driver specified, ignoring this device.
+[     8.638] (II) This device may have been added with another device file.
+[     8.638] (II) config/udev: Adding input device sof-hda-dsp HDMI/DP,pcm=5 (/dev/input/event17)
+[     8.638] (II) No input driver specified, ignoring this device.
+[     8.638] (II) This device may have been added with another device file.
+[     8.639] (II) config/udev: Adding input device Intel HID events (/dev/input/event8)
+[     8.639] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[     8.639] (**) Intel HID events: Applying InputClass "system-keyboard"
+[     8.639] (II) Using input driver 'libinput' for 'Intel HID events'
+[     8.639] (**) Intel HID events: always reports core events
+[     8.639] (**) Option "Device" "/dev/input/event8"
+[     8.640] (II) event8  - Intel HID events: is tagged by udev as: Keyboard
+[     8.640] (II) event8  - Intel HID events: device is a keyboard
+[     8.640] (II) event8  - Intel HID events: device removed
+[     8.646] (**) Option "config_info" "udev:/sys/devices/platform/INTC1078:00/input/input18/event8"
+[     8.646] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 13)
+[     8.646] (**) Option "xkb_model" "pc105"
+[     8.646] (**) Option "xkb_layout" "us"
+[     8.646] (WW) Option "xkb_variant" requires a string value
+[     8.647] (II) event8  - Intel HID events: is tagged by udev as: Keyboard
+[     8.647] (II) event8  - Intel HID events: device is a keyboard
+[     8.648] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event9)
+[     8.648] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[     8.648] (**) Intel HID 5 button array: Applying InputClass "system-keyboard"
+[     8.648] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[     8.648] (**) Intel HID 5 button array: always reports core events
+[     8.648] (**) Option "Device" "/dev/input/event9"
+[     8.649] (II) event9  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[     8.649] (II) event9  - Intel HID 5 button array: device is a keyboard
+[     8.650] (II) event9  - Intel HID 5 button array: device removed
+[     8.663] (**) Option "config_info" "udev:/sys/devices/platform/INTC1078:00/input/input19/event9"
+[     8.663] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 14)
+[     8.663] (**) Option "xkb_model" "pc105"
+[     8.663] (**) Option "xkb_layout" "us"
+[     8.663] (WW) Option "xkb_variant" requires a string value
+[     8.665] (II) event9  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[     8.665] (II) event9  - Intel HID 5 button array: device is a keyboard
+[     8.666] (II) config/udev: Adding input device Intel HID switches (/dev/input/event11)
+[     8.666] (II) No input driver specified, ignoring this device.
+[     8.666] (II) This device may have been added with another device file.
+[     8.666] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[     8.666] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[     8.666] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[     8.666] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[     8.666] (**) AT Translated Set 2 keyboard: always reports core events
+[     8.667] (**) Option "Device" "/dev/input/event3"
+[     8.668] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     8.668] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[     8.669] (II) event3  - AT Translated Set 2 keyboard: device removed
+[     8.683] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[     8.683] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 15)
+[     8.683] (**) Option "xkb_model" "pc105"
+[     8.683] (**) Option "xkb_layout" "us"
+[     8.683] (WW) Option "xkb_variant" requires a string value
+[     8.685] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     8.685] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[     8.689] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event10)
+[     8.689] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[     8.689] (**) HP WMI hotkeys: Applying InputClass "system-keyboard"
+[     8.689] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[     8.689] (**) HP WMI hotkeys: always reports core events
+[     8.689] (**) Option "Device" "/dev/input/event10"
+[     8.690] (II) event10 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[     8.690] (II) event10 - HP WMI hotkeys: device is a keyboard
+[     8.690] (II) event10 - HP WMI hotkeys: device is a switch device
+[     8.691] (II) event10 - HP WMI hotkeys: device removed
+[     8.702] (**) Option "config_info" "udev:/sys/devices/virtual/input/input20/event10"
+[     8.702] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 16)
+[     8.702] (**) Option "xkb_model" "pc105"
+[     8.702] (**) Option "xkb_layout" "us"
+[     8.702] (WW) Option "xkb_variant" requires a string value
+[     8.703] (II) event10 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[     8.703] (II) event10 - HP WMI hotkeys: device is a keyboard
+[     8.704] (II) event10 - HP WMI hotkeys: device is a switch device
+[     8.729] (**) Wacom HID 49FC Pen eraser: Applying InputClass "libinput tablet catchall"
+[     8.729] (**) Wacom HID 49FC Pen eraser: Applying InputClass "Wacom USB tablet class"
+[     8.729] (**) Wacom HID 49FC Pen eraser: Applying InputClass "Wacom tablet class"
+[     8.730] (II) Using input driver 'wacom' for 'Wacom HID 49FC Pen eraser'
+[     8.730] (**) Wacom HID 49FC Pen eraser: always reports core events
+[     8.730] (**) Option "Device" "/dev/input/event6"
+[     8.730] (**) Option "Type" "eraser"
+[     8.730] (**) wacom: Wacom HID 49FC Pen eraser: panscroll is 1300
+[     8.730] (**) wacom: Wacom HID 49FC Pen eraser: panscroll modified to 1300
+[     8.730] (--) wacom: Wacom HID 49FC Pen eraser: maxX=30159 maxY=18850 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[     8.741] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-WACF4234:00/0018:056A:49FC.0002/input/input15/event6"
+[     8.741] (II) XINPUT: Adding extended input device "Wacom HID 49FC Pen eraser" (type: ERASER, id 17)
+[     8.741] (**) Wacom HID 49FC Pen eraser: (accel) keeping acceleration scheme 1
+[     8.741] (**) Wacom HID 49FC Pen eraser: (accel) acceleration profile 0
+[     8.741] (**) Wacom HID 49FC Pen eraser: (accel) acceleration factor: 2.000
+[     8.741] (**) Wacom HID 49FC Pen eraser: (accel) acceleration threshold: 4
+[     8.862] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[     8.862] (II) modeset(0): Printing DDC gathered Modelines:
+[     8.862] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[     8.879] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[     8.879] (II) modeset(0): Printing DDC gathered Modelines:
+[     8.879] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[     8.912] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[     8.912] (II) modeset(0): Printing DDC gathered Modelines:
+[     8.912] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[     8.929] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[     8.929] (II) modeset(0): Printing DDC gathered Modelines:
+[     8.929] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[    15.645] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[    15.645] (II) modeset(0): Printing DDC gathered Modelines:
+[    15.645] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[    16.295] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[    16.295] (II) modeset(0): Printing DDC gathered Modelines:
+[    16.295] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[   128.674] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[   128.675] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[   128.675] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[   128.675] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[   128.675] (**) HP Active Pen G3 Keyboard: always reports core events
+[   128.675] (**) Option "Device" "/dev/input/event18"
+[   128.676] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[   128.676] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[   128.676] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[   128.694] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0009/input/input28/event18"
+[   128.694] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[   128.694] (**) Option "xkb_model" "pc105"
+[   128.694] (**) Option "xkb_layout" "us"
+[   128.694] (WW) Option "xkb_variant" requires a string value
+[   128.698] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[   128.698] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[  2030.097] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.25.0/touchpad-jumping-cursors.html for details
+[  2033.311] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.25.0/touchpad-jumping-cursors.html for details
+[  2209.096] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.25.0/touchpad-jumping-cursors.html for details
+[  2209.103] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.25.0/touchpad-jumping-cursors.html for details
+[  2209.191] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.25.0/touchpad-jumping-cursors.html for details
+[  2209.191] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: WARNING: log rate limit exceeded (5 msgs per 24h). Discarding future messages.
+[  5609.315] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[  5610.608] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[  5610.618] (II) UnloadModule: "libinput"
+[  5696.195] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[  5696.195] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[  5696.195] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[  5696.195] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[  5696.195] (**) HP Active Pen G3 Keyboard: always reports core events
+[  5696.195] (**) Option "Device" "/dev/input/event18"
+[  5696.196] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[  5696.196] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[  5696.197] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[  5696.213] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.000A/input/input30/event18"
+[  5696.213] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[  5696.213] (**) Option "xkb_model" "pc105"
+[  5696.213] (**) Option "xkb_layout" "us"
+[  5696.213] (WW) Option "xkb_variant" requires a string value
+[  5696.216] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[  5696.216] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[  6647.379] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[  6648.576] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[  6648.602] (II) UnloadModule: "libinput"
+[  6749.700] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[  6749.700] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[  6749.700] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[  6749.700] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[  6749.700] (**) HP Active Pen G3 Keyboard: always reports core events
+[  6749.700] (**) Option "Device" "/dev/input/event18"
+[  6749.702] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[  6749.702] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[  6749.703] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[  6749.721] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.000B/input/input32/event18"
+[  6749.721] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[  6749.721] (**) Option "xkb_model" "pc105"
+[  6749.721] (**) Option "xkb_layout" "us"
+[  6749.721] (WW) Option "xkb_variant" requires a string value
+[  6749.724] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[  6749.724] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 11907.404] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 11908.598] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 11908.627] (II) UnloadModule: "libinput"
+[ 12015.981] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 12015.981] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 12015.981] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 12015.981] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 12015.981] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 12015.981] (**) Option "Device" "/dev/input/event18"
+[ 12015.986] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 12015.986] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 12015.987] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 12016.003] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.000C/input/input34/event18"
+[ 12016.003] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 12016.003] (**) Option "xkb_model" "pc105"
+[ 12016.003] (**) Option "xkb_layout" "us"
+[ 12016.003] (WW) Option "xkb_variant" requires a string value
+[ 12016.007] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 12016.007] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 14179.783] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 14180.969] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 14180.997] (II) UnloadModule: "libinput"
+[ 14221.860] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 14221.860] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 14221.860] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 14221.860] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 14221.860] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 14221.860] (**) Option "Device" "/dev/input/event18"
+[ 14221.861] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 14221.861] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 14221.862] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 14221.882] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.000D/input/input36/event18"
+[ 14221.882] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 14221.882] (**) Option "xkb_model" "pc105"
+[ 14221.882] (**) Option "xkb_layout" "us"
+[ 14221.882] (WW) Option "xkb_variant" requires a string value
+[ 14221.887] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 14221.888] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 18589.659] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 18590.982] (EE) event2  - Power Button: client bug: event processing lagging behind by 241ms, your system is too slow
+[ 18591.315] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 18591.325] (II) UnloadModule: "libinput"
+[ 18608.173] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 18608.174] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 18608.174] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 18608.174] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 18608.174] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 18608.174] (**) Option "Device" "/dev/input/event18"
+[ 18608.179] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 18608.179] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 18608.181] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 18608.194] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.000E/input/input38/event18"
+[ 18608.194] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 18608.194] (**) Option "xkb_model" "pc105"
+[ 18608.194] (**) Option "xkb_layout" "us"
+[ 18608.194] (WW) Option "xkb_variant" requires a string value
+[ 18608.202] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 18608.203] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 28059.836] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 28060.777] (EE) event5  - SYNA310D:00 06CB:CEA4 Touchpad: client bug: event processing lagging behind by 257ms, your system is too slow
+[ 28060.777] (EE) client bug: timer event5 tap: scheduled expiry is in the past (-77ms), your system is too slow
+[ 28060.777] (EE) client bug: timer event5 hold: scheduled expiry is in the past (-217ms), your system is too slow
+[ 28060.778] (EE) client bug: timer event5 hold: scheduled expiry is in the past (-190ms), your system is too slow
+[ 28060.778] (EE) client bug: timer event5 hold: scheduled expiry is in the past (-153ms), your system is too slow
+[ 28060.778] (EE) event2  - Power Button: client bug: event processing lagging behind by 254ms, your system is too slow
+[ 28061.102] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 28061.103] (II) UnloadModule: "libinput"
+[ 28176.024] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 28176.025] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 28176.025] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 28176.025] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 28176.025] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 28176.025] (**) Option "Device" "/dev/input/event18"
+[ 28176.026] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 28176.026] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 28176.027] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 28176.040] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.000F/input/input40/event18"
+[ 28176.040] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 28176.040] (**) Option "xkb_model" "pc105"
+[ 28176.040] (**) Option "xkb_layout" "us"
+[ 28176.040] (WW) Option "xkb_variant" requires a string value
+[ 28176.044] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 28176.044] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 29486.114] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 29487.057] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 29487.100] (II) UnloadModule: "libinput"
+[ 29487.101] (EE) client bug: timer event5 hold: scheduled expiry is in the past (-245ms), your system is too slow
+[ 29487.101] (EE) client bug: timer event5 tap: scheduled expiry is in the past (-54ms), your system is too slow
+[ 29487.101] (EE) client bug: timer event5 hold: scheduled expiry is in the past (-194ms), your system is too slow
+[ 29548.295] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 29548.295] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 29548.295] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 29548.295] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 29548.295] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 29548.295] (**) Option "Device" "/dev/input/event18"
+[ 29548.297] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 29548.297] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 29548.298] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 29548.319] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0010/input/input42/event18"
+[ 29548.319] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 29548.319] (**) Option "xkb_model" "pc105"
+[ 29548.319] (**) Option "xkb_layout" "us"
+[ 29548.319] (WW) Option "xkb_variant" requires a string value
+[ 29548.323] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 29548.323] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 32780.865] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 32782.217] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 32782.229] (II) UnloadModule: "libinput"
+[ 32785.865] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 32785.865] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 32785.865] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 32785.865] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 32785.865] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 32785.865] (**) Option "Device" "/dev/input/event18"
+[ 32785.866] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 32785.866] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 32785.867] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 32785.881] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0011/input/input44/event18"
+[ 32785.881] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 32785.881] (**) Option "xkb_model" "pc105"
+[ 32785.881] (**) Option "xkb_layout" "us"
+[ 32785.881] (WW) Option "xkb_variant" requires a string value
+[ 32785.883] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 32785.884] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 33177.113] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 33178.260] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 33178.307] (II) UnloadModule: "libinput"
+[ 33178.517] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[ 33178.517] (II) modeset(0): Printing DDC gathered Modelines:
+[ 33178.517] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[ 33178.628] (II) config/udev: Adding input device DP-3 (/dev/input/event18)
+[ 33178.629] (**) DP-3: Applying InputClass "libinput keyboard catchall"
+[ 33178.629] (**) DP-3: Applying InputClass "system-keyboard"
+[ 33178.629] (II) Using input driver 'libinput' for 'DP-3'
+[ 33178.629] (**) DP-3: always reports core events
+[ 33178.629] (**) Option "Device" "/dev/input/event18"
+[ 33178.629] (II) event18 - DP-3: is tagged by udev as: Keyboard Pointingstick
+[ 33178.629] (II) event18 - DP-3: device is a pointer
+[ 33178.629] (II) event18 - DP-3: device is a keyboard
+[ 33178.630] (II) event18 - DP-3: device removed
+[ 33178.639] (II) libinput: DP-3: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33178.639] (II) libinput: DP-3: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33178.639] (II) libinput: DP-3: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33178.639] (II) libinput: DP-3: needs a virtual subdevice
+[ 33178.639] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.0/rc/rc0/input46/event18"
+[ 33178.639] (II) XINPUT: Adding extended input device "DP-3" (type: MOUSE, id 18)
+[ 33178.639] (**) Option "AccelerationScheme" "none"
+[ 33178.640] (**) DP-3: (accel) selected scheme none/0
+[ 33178.640] (**) DP-3: (accel) acceleration factor: 2.000
+[ 33178.640] (**) DP-3: (accel) acceleration threshold: 4
+[ 33178.641] (II) event18 - DP-3: is tagged by udev as: Keyboard Pointingstick
+[ 33178.641] (II) event18 - DP-3: device is a pointer
+[ 33178.641] (II) event18 - DP-3: device is a keyboard
+[ 33178.642] (**) DP-3: Applying InputClass "libinput keyboard catchall"
+[ 33178.642] (**) DP-3: Applying InputClass "system-keyboard"
+[ 33178.642] (II) Using input driver 'libinput' for 'DP-3'
+[ 33178.642] (**) DP-3: always reports core events
+[ 33178.642] (**) Option "Device" "/dev/input/event18"
+[ 33178.642] (II) libinput: DP-3: is a virtual subdevice
+[ 33178.642] (II) libinput: DP-3: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33178.642] (II) libinput: DP-3: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33178.642] (II) libinput: DP-3: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33178.642] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:02.0/rc/rc0/input46/event18"
+[ 33178.642] (II) XINPUT: Adding extended input device "DP-3" (type: KEYBOARD, id 19)
+[ 33178.642] (**) Option "xkb_model" "pc105"
+[ 33178.642] (**) Option "xkb_layout" "us"
+[ 33178.642] (WW) Option "xkb_variant" requires a string value
+[ 33179.551] (II) modeset(0): Allocate new frame buffer 3840x1200 stride
+[ 33181.091] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse4)
+[ 33181.091] (II) No input driver specified, ignoring this device.
+[ 33181.091] (II) This device may have been added with another device file.
+[ 33181.092] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event20)
+[ 33181.092] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[ 33181.092] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[ 33181.092] (**) Logitech Wireless Mouse: always reports core events
+[ 33181.092] (**) Option "Device" "/dev/input/event20"
+[ 33181.094] (II) event20 - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[ 33181.094] (II) event20 - Logitech Wireless Mouse: device is a pointer
+[ 33181.095] (II) event20 - Logitech Wireless Mouse: device removed
+[ 33181.110] (II) libinput: Logitech Wireless Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33181.110] (II) libinput: Logitech Wireless Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33181.110] (II) libinput: Logitech Wireless Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 33181.110] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4.1/3-4.1:1.1/0003:046D:C534.0013/0003:046D:4054.0015/input/input63/event20"
+[ 33181.110] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 20)
+[ 33181.112] (**) Option "AccelerationScheme" "none"
+[ 33181.114] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[ 33181.114] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[ 33181.114] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[ 33181.116] (II) event20 - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[ 33181.117] (II) event20 - Logitech Wireless Mouse: device is a pointer
+[ 33181.119] (II) config/udev: Adding input device Logitech Wireless Keyboard PID:4075 (/dev/input/event19)
+[ 33181.119] (**) Logitech Wireless Keyboard PID:4075: Applying InputClass "libinput keyboard catchall"
+[ 33181.119] (**) Logitech Wireless Keyboard PID:4075: Applying InputClass "system-keyboard"
+[ 33181.119] (II) Using input driver 'libinput' for 'Logitech Wireless Keyboard PID:4075'
+[ 33181.119] (**) Logitech Wireless Keyboard PID:4075: always reports core events
+[ 33181.119] (**) Option "Device" "/dev/input/event19"
+[ 33181.122] (II) event19 - Logitech Wireless Keyboard PID:4075: is tagged by udev as: Keyboard
+[ 33181.122] (II) event19 - Logitech Wireless Keyboard PID:4075: device is a keyboard
+[ 33181.123] (II) event19 - Logitech Wireless Keyboard PID:4075: device removed
+[ 33181.135] (II) libinput: Logitech Wireless Keyboard PID:4075: needs a virtual subdevice
+[ 33181.135] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4.1/3-4.1:1.1/0003:046D:C534.0013/0003:046D:4075.0014/input/input62/event19"
+[ 33181.135] (II) XINPUT: Adding extended input device "Logitech Wireless Keyboard PID:4075" (type: MOUSE, id 21)
+[ 33181.137] (**) Option "AccelerationScheme" "none"
+[ 33181.138] (**) Logitech Wireless Keyboard PID:4075: (accel) selected scheme none/0
+[ 33181.138] (**) Logitech Wireless Keyboard PID:4075: (accel) acceleration factor: 2.000
+[ 33181.138] (**) Logitech Wireless Keyboard PID:4075: (accel) acceleration threshold: 4
+[ 33181.141] (II) event19 - Logitech Wireless Keyboard PID:4075: is tagged by udev as: Keyboard
+[ 33181.141] (II) event19 - Logitech Wireless Keyboard PID:4075: device is a keyboard
+[ 33181.142] (**) Logitech Wireless Keyboard PID:4075: Applying InputClass "libinput keyboard catchall"
+[ 33181.142] (**) Logitech Wireless Keyboard PID:4075: Applying InputClass "system-keyboard"
+[ 33181.142] (II) Using input driver 'libinput' for 'Logitech Wireless Keyboard PID:4075'
+[ 33181.142] (**) Logitech Wireless Keyboard PID:4075: always reports core events
+[ 33181.142] (**) Option "Device" "/dev/input/event19"
+[ 33181.142] (II) libinput: Logitech Wireless Keyboard PID:4075: is a virtual subdevice
+[ 33181.142] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb3/3-4/3-4.1/3-4.1:1.1/0003:046D:C534.0013/0003:046D:4075.0014/input/input62/event19"
+[ 33181.142] (II) XINPUT: Adding extended input device "Logitech Wireless Keyboard PID:4075" (type: KEYBOARD, id 22)
+[ 33181.142] (**) Option "xkb_model" "pc105"
+[ 33181.142] (**) Option "xkb_layout" "us"
+[ 33181.142] (WW) Option "xkb_variant" requires a string value
+[ 33237.883] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event21)
+[ 33237.883] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 33237.883] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 33237.883] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 33237.883] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 33237.883] (**) Option "Device" "/dev/input/event21"
+[ 33237.885] (II) event21 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 33237.885] (II) event21 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 33237.886] (II) event21 - HP Active Pen G3 Keyboard: device removed
+[ 33237.899] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0016/input/input64/event21"
+[ 33237.899] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 23)
+[ 33237.899] (**) Option "xkb_model" "pc105"
+[ 33237.899] (**) Option "xkb_layout" "us"
+[ 33237.899] (WW) Option "xkb_variant" requires a string value
+[ 33237.903] (II) event21 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 33237.903] (II) event21 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 33264.490] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[ 37099.668] (II) event20 - Logitech Wireless Mouse: Enabling spurious button debouncing, see https://wayland.freedesktop.org/libinput/doc/1.25.0/button-debouncing.html for details
+[ 42906.214] (II) event21 - HP Active Pen G3 Keyboard: device removed
+[ 42907.656] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 42907.661] (II) UnloadModule: "libinput"
+[ 42925.272] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event21)
+[ 42925.272] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 42925.272] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 42925.272] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 42925.272] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 42925.272] (**) Option "Device" "/dev/input/event21"
+[ 42925.273] (II) event21 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 42925.274] (II) event21 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 42925.274] (II) event21 - HP Active Pen G3 Keyboard: device removed
+[ 42925.294] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0017/input/input66/event21"
+[ 42925.294] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 23)
+[ 42925.294] (**) Option "xkb_model" "pc105"
+[ 42925.294] (**) Option "xkb_layout" "us"
+[ 42925.294] (WW) Option "xkb_variant" requires a string value
+[ 42925.298] (II) event21 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 42925.298] (II) event21 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 46271.637] (II) event19 - Logitech Wireless Keyboard PID:4075: device removed
+[ 46271.658] (II) config/udev: removing device Logitech Wireless Keyboard PID:4075
+[ 46271.688] (II) UnloadModule: "libinput"
+[ 46271.688] (II) config/udev: removing device Logitech Wireless Keyboard PID:4075
+[ 46271.701] (II) UnloadModule: "libinput"
+[ 46271.739] (II) event20 - Logitech Wireless Mouse: device removed
+[ 46271.942] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[ 46271.942] (II) modeset(0): Printing DDC gathered Modelines:
+[ 46271.942] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)
+[ 46271.976] (II) config/udev: removing device Logitech Wireless Mouse
+[ 46272.004] (II) UnloadModule: "libinput"
+[ 46272.879] (II) modeset(0): Allocate new frame buffer 1920x1200 stride
+[ 46273.004] (II) event18 - DP-3: device removed
+[ 46273.159] (II) config/udev: removing device DP-3
+[ 46273.167] (II) UnloadModule: "libinput"
+[ 46273.167] (II) config/udev: removing device DP-3
+[ 46273.169] (II) UnloadModule: "libinput"
+[ 46274.454] (II) event21 - HP Active Pen G3 Keyboard: device removed
+[ 46275.766] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 46275.815] (II) UnloadModule: "libinput"
+[ 46377.700] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 46377.700] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 46377.700] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 46377.700] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 46377.700] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 46377.700] (**) Option "Device" "/dev/input/event18"
+[ 46377.702] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 46377.702] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 46377.703] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 46377.711] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0018/input/input68/event18"
+[ 46377.711] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 46377.711] (**) Option "xkb_model" "pc105"
+[ 46377.711] (**) Option "xkb_layout" "us"
+[ 46377.711] (WW) Option "xkb_variant" requires a string value
+[ 46377.715] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 46377.716] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 49319.031] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 49320.295] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 49320.334] (II) UnloadModule: "libinput"
+[ 49337.119] (II) config/udev: Adding input device EarFun Air Pro 3 (AVRCP) (/dev/input/event18)
+[ 49337.119] (**) EarFun Air Pro 3 (AVRCP): Applying InputClass "libinput keyboard catchall"
+[ 49337.119] (**) EarFun Air Pro 3 (AVRCP): Applying InputClass "system-keyboard"
+[ 49337.119] (II) Using input driver 'libinput' for 'EarFun Air Pro 3 (AVRCP)'
+[ 49337.119] (**) EarFun Air Pro 3 (AVRCP): always reports core events
+[ 49337.119] (**) Option "Device" "/dev/input/event18"
+[ 49337.120] (II) event18 - EarFun Air Pro 3 (AVRCP): is tagged by udev as: Keyboard
+[ 49337.120] (II) event18 - EarFun Air Pro 3 (AVRCP): device is a keyboard
+[ 49337.121] (II) event18 - EarFun Air Pro 3 (AVRCP): device removed
+[ 49337.140] (**) Option "config_info" "udev:/sys/devices/virtual/input/input70/event18"
+[ 49337.140] (II) XINPUT: Adding extended input device "EarFun Air Pro 3 (AVRCP)" (type: KEYBOARD, id 18)
+[ 49337.140] (**) Option "xkb_model" "pc105"
+[ 49337.140] (**) Option "xkb_layout" "us"
+[ 49337.140] (WW) Option "xkb_variant" requires a string value
+[ 49337.144] (II) event18 - EarFun Air Pro 3 (AVRCP): is tagged by udev as: Keyboard
+[ 49337.144] (II) event18 - EarFun Air Pro 3 (AVRCP): device is a keyboard
+[ 49397.030] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event19)
+[ 49397.030] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 49397.030] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 49397.030] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 49397.030] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 49397.030] (**) Option "Device" "/dev/input/event19"
+[ 49397.032] (II) event19 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 49397.032] (II) event19 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 49397.033] (II) event19 - HP Active Pen G3 Keyboard: device removed
+[ 49397.045] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.0019/input/input71/event19"
+[ 49397.045] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 19)
+[ 49397.045] (**) Option "xkb_model" "pc105"
+[ 49397.045] (**) Option "xkb_layout" "us"
+[ 49397.045] (WW) Option "xkb_variant" requires a string value
+[ 49397.050] (II) event19 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 49397.050] (II) event19 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 58441.036] (II) event18 - EarFun Air Pro 3 (AVRCP): device removed
+[ 58442.204] (II) config/udev: removing device EarFun Air Pro 3 (AVRCP)
+[ 58442.230] (II) UnloadModule: "libinput"
+[ 58442.232] (II) event19 - HP Active Pen G3 Keyboard: device removed
+[ 58442.265] (II) config/udev: removing device HP Active Pen G3 Keyboard
+[ 58442.298] (II) UnloadModule: "libinput"
+[ 58470.619] (II) config/udev: Adding input device HP Active Pen G3 Keyboard (/dev/input/event18)
+[ 58470.619] (**) HP Active Pen G3 Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 58470.619] (**) HP Active Pen G3 Keyboard: Applying InputClass "system-keyboard"
+[ 58470.619] (II) Using input driver 'libinput' for 'HP Active Pen G3 Keyboard'
+[ 58470.619] (**) HP Active Pen G3 Keyboard: always reports core events
+[ 58470.619] (**) Option "Device" "/dev/input/event18"
+[ 58470.621] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 58470.621] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 58470.621] (II) event18 - HP Active Pen G3 Keyboard: device removed
+[ 58470.629] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:04F2:1850.001A/input/input73/event18"
+[ 58470.629] (II) XINPUT: Adding extended input device "HP Active Pen G3 Keyboard" (type: KEYBOARD, id 18)
+[ 58470.629] (**) Option "xkb_model" "pc105"
+[ 58470.629] (**) Option "xkb_layout" "us"
+[ 58470.629] (WW) Option "xkb_variant" requires a string value
+[ 58470.634] (II) event18 - HP Active Pen G3 Keyboard: is tagged by udev as: Keyboard
+[ 58470.634] (II) event18 - HP Active Pen G3 Keyboard: device is a keyboard
+[ 58743.378] (II) modeset(0): EDID vendor "IVO", prod id 36030
+[ 58743.378] (II) modeset(0): Printing DDC gathered Modelines:
+[ 58743.378] (II) modeset(0): Modeline "1920x1200"x0.0  154.10  1920 1944 1992 2080  1200 1206 1218 1235 -hsync -vsync (74.1 kHz eP)

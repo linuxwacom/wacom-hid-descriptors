@@ -1,0 +1,744 @@
+[  2803.069] (--) Log file renamed from "/home/USERNAME/.local/share/xorg/Xorg.pid-25575.log" to "/home/USERNAME/.local/share/xorg/Xorg.0.log"
+[  2803.069] 
+X.Org X Server 1.21.1.9
+X Protocol Version 11, Revision 0
+[  2803.069] Current Operating System: Linux HOSTNAME 6.5.6-300.fc39.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Oct  6 19:57:21 UTC 2023 x86_64
+[  2803.069] Kernel command line: BOOT_IMAGE=(hd0,gpt3)/vmlinuz-6.5.6-300.fc39.x86_64 root=UUID=64cb89f7-4cbb-4028-9135-bf7d6d9044f9 ro rootflags=subvol=root resume=UUID=dab33400-dedf-463e-92cd-f6021d631e8a rd.luks.uuid=luks-b0110a0b-220f-48a5-9526-fd71c871fef2 rhgb quiet rd.neednet=1 ip=dhcp crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M
+[  2803.069]  
+[  2803.069] Current version of pixman: 0.42.2
+[  2803.069] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  2803.069] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  2803.069] (==) Log file: "/home/USERNAME/.local/share/xorg/Xorg.0.log", Time: Mon Oct 30 09:19:22 2023
+[  2803.072] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  2803.072] (==) Using system config directory "/opt/xorg/share/X11/xorg.conf.d"
+[  2803.072] (==) No Layout section.  Using the first Screen section.
+[  2803.072] (==) No screen section available. Using defaults.
+[  2803.072] (**) |-->Screen "Default Screen Section" (0)
+[  2803.072] (**) |   |-->Monitor "<default monitor>"
+[  2803.072] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  2803.072] (==) Automatically adding devices
+[  2803.072] (==) Automatically enabling devices
+[  2803.072] (==) Automatically adding GPU devices
+[  2803.072] (==) Automatically binding GPU devices
+[  2803.072] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  2803.073] (WW) The directory "/opt/xorg/share/fonts/X11/misc" does not exist.
+[  2803.073] 	Entry deleted from font path.
+[  2803.073] (WW) The directory "/opt/xorg/share/fonts/X11/TTF" does not exist.
+[  2803.073] 	Entry deleted from font path.
+[  2803.073] (WW) The directory "/opt/xorg/share/fonts/X11/OTF" does not exist.
+[  2803.073] 	Entry deleted from font path.
+[  2803.073] (WW) The directory "/opt/xorg/share/fonts/X11/Type1" does not exist.
+[  2803.073] 	Entry deleted from font path.
+[  2803.073] (WW) The directory "/opt/xorg/share/fonts/X11/100dpi" does not exist.
+[  2803.073] 	Entry deleted from font path.
+[  2803.073] (WW) The directory "/opt/xorg/share/fonts/X11/75dpi" does not exist.
+[  2803.073] 	Entry deleted from font path.
+[  2803.073] (==) FontPath set to:
+	
+[  2803.073] (==) ModulePath set to "/opt/xorg/lib64/xorg/modules"
+[  2803.073] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  2803.073] (II) Module ABI versions:
+[  2803.073] 	X.Org ANSI C Emulation: 0.4
+[  2803.073] 	X.Org Video Driver: 25.2
+[  2803.073] 	X.Org XInput driver : 24.4
+[  2803.073] 	X.Org Server Extension : 10.0
+[  2803.073] (++) using VT number 2
+
+[  2803.073] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_35
+[  2803.074] (II) xfree86: Adding drm device (/dev/dri/card1)
+[  2803.074] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card1
+[  2803.075] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 12 paused 0
+[  2803.076] (--) PCI:*(0@0:2:0) 8086:9bc5:17aa:317c rev 5, Mem @ 0xb0000000/16777216, 0xa0000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/65536
+[  2803.076] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  2803.076] (II) LoadModule: "glx"
+[  2803.076] (II) Loading /opt/xorg/lib64/xorg/modules/extensions/libglx.so
+[  2803.079] (II) Module glx: vendor="X.Org Foundation"
+[  2803.079] 	compiled for 1.21.1.9, module version = 1.0.0
+[  2803.079] 	ABI class: X.Org Server Extension, version 10.0
+[  2803.079] (==) Matched intel as autoconfigured driver 0
+[  2803.079] (==) Matched modesetting as autoconfigured driver 1
+[  2803.079] (==) Matched fbdev as autoconfigured driver 2
+[  2803.079] (==) Matched vesa as autoconfigured driver 3
+[  2803.079] (==) Assigned the driver to the xf86ConfigLayout
+[  2803.079] (II) LoadModule: "intel"
+[  2803.079] (WW) Warning, couldn't open module intel
+[  2803.079] (EE) Failed to load module "intel" (module does not exist, 0)
+[  2803.079] (II) LoadModule: "modesetting"
+[  2803.079] (II) Loading /opt/xorg/lib64/xorg/modules/drivers/modesetting_drv.so
+[  2803.080] (II) Module modesetting: vendor="X.Org Foundation"
+[  2803.081] 	compiled for 1.21.1.9, module version = 1.21.1
+[  2803.081] 	Module class: X.Org Video Driver
+[  2803.081] 	ABI class: X.Org Video Driver, version 25.2
+[  2803.081] (II) LoadModule: "fbdev"
+[  2803.081] (WW) Warning, couldn't open module fbdev
+[  2803.081] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[  2803.081] (II) LoadModule: "vesa"
+[  2803.081] (WW) Warning, couldn't open module vesa
+[  2803.081] (EE) Failed to load module "vesa" (module does not exist, 0)
+[  2803.081] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  2803.081] (II) modeset(0): using drv /dev/dri/card1
+[  2803.081] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  2803.081] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  2803.081] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[  2803.081] (==) modeset(0): RGB weight 888
+[  2803.081] (==) modeset(0): Default visual is TrueColor
+[  2803.081] (II) Loading sub module "glamoregl"
+[  2803.081] (II) LoadModule: "glamoregl"
+[  2803.081] (II) Loading /opt/xorg/lib64/xorg/modules/libglamoregl.so
+[  2803.085] (II) Module glamoregl: vendor="X.Org Foundation"
+[  2803.085] 	compiled for 1.21.1.9, module version = 1.0.1
+[  2803.085] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  2803.102] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) UHD Graphics 630 (CML GT2)
+[  2803.102] (II) modeset(0): glamor initialized
+[  2803.102] (==) modeset(0): VariableRefresh: disabled
+[  2803.102] (==) modeset(0): AsyncFlipSecondaries: disabled
+[  2803.121] (II) modeset(0): Output DP-1 has no monitor section
+[  2803.124] (II) modeset(0): Output HDMI-1 has no monitor section
+[  2803.150] (II) modeset(0): Output HDMI-2 has no monitor section
+[  2803.150] (II) modeset(0): Output DP-2 has no monitor section
+[  2803.169] (II) modeset(0): EDID for output DP-1
+[  2803.169] (II) modeset(0): Manufacturer: GSM  Model: 7750  Serial#: 366517
+[  2803.169] (II) modeset(0): Year: 2022  Week: 7
+[  2803.169] (II) modeset(0): EDID Version: 1.4
+[  2803.169] (II) modeset(0): Digital Display Input
+[  2803.169] (II) modeset(0): 10 bits per channel
+[  2803.169] (II) modeset(0): Digital interface is DisplayPort
+[  2803.169] (II) modeset(0): Max Image Size [cm]: horiz.: 70  vert.: 40
+[  2803.169] (II) modeset(0): Gamma: 2.20
+[  2803.169] (II) modeset(0): DPMS capabilities: StandBy Suspend Off
+[  2803.169] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+[  2803.169] (II) modeset(0): First detailed timing is preferred mode
+[  2803.169] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[  2803.169] (II) modeset(0): redX: 0.681 redY: 0.312   greenX: 0.268 greenY: 0.663
+[  2803.169] (II) modeset(0): blueX: 0.150 blueY: 0.049   whiteX: 0.312 whiteY: 0.329
+[  2803.169] (II) modeset(0): Supported established timings:
+[  2803.169] (II) modeset(0): 640x480@60Hz
+[  2803.169] (II) modeset(0): 800x600@60Hz
+[  2803.169] (II) modeset(0): 1024x768@60Hz
+[  2803.169] (II) modeset(0): Manufacturer's mask: 0
+[  2803.169] (II) modeset(0): Supported standard timings:
+[  2803.169] (II) modeset(0): #0: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[  2803.169] (II) modeset(0): #1: hsize: 1024  vsize 768  refresh: 60  vid: 16481
+[  2803.169] (II) modeset(0): Supported detailed timing:
+[  2803.169] (II) modeset(0): clock: 537.6 MHz   Image Size:  697 x 392 mm
+[  2803.169] (II) modeset(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+[  2803.169] (II) modeset(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2240 v_border: 0
+[  2803.169] (II) modeset(0): Ranges: V min: 40 V max: 60 Hz, H min: 30 H max: 135 kHz, PixClock max 605 MHz
+[  2803.169] (II) modeset(0): Monitor name: LG HDR 4K
+[  2803.169] (II) modeset(0): Serial No: 207NTBKAS517
+[  2803.169] (II) modeset(0): Supported detailed timing:
+[  2803.169] (II) modeset(0): clock: 262.8 MHz   Image Size:  697 x 392 mm
+[  2803.169] (II) modeset(0): h_active: 3840  h_sync: 3888  h_sync_end 3920 h_blank_end 4000 h_border: 0
+[  2803.169] (II) modeset(0): v_active: 2160  v_sync: 2163  v_sync_end 2168 v_blanking: 2191 v_border: 0
+[  2803.169] (II) modeset(0): Supported detailed timing:
+[  2803.169] (II) modeset(0): clock: 241.5 MHz   Image Size:  697 x 392 mm
+[  2803.169] (II) modeset(0): h_active: 2560  h_sync: 2608  h_sync_end 2640 h_blank_end 2720 h_border: 0
+[  2803.169] (II) modeset(0): v_active: 1440  v_sync: 1443  v_sync_end 1448 v_blanking: 1481 v_border: 0
+[  2803.169] (II) modeset(0): Supported detailed timing:
+[  2803.169] (II) modeset(0): clock: 148.5 MHz   Image Size:  697 x 392 mm
+[  2803.169] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  2803.169] (II) modeset(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[  2803.169] (II) modeset(0): Number of EDID sections to follow: 1
+[  2803.169] (II) modeset(0): EDID (in hex):
+[  2803.169] (II) modeset(0): 	00ffffffffffff001e6d5077b5970500
+[  2803.169] (II) modeset(0): 	07200104b5462878fa7ba1ae4f44a926
+[  2803.169] (II) modeset(0): 	0c5054210800d1c06140010101010101
+[  2803.169] (II) modeset(0): 	01010101010100d200a0f07050803020
+[  2803.169] (II) modeset(0): 	3500b9882100001a000000fd00283c1e
+[  2803.169] (II) modeset(0): 	873c000a202020202020000000fc004c
+[  2803.169] (II) modeset(0): 	472048445220344b0a202020000000ff
+[  2803.169] (II) modeset(0): 	003230374e54424b41533531370a0117
+[  2803.169] (II) modeset(0): 	02031f72230907078301000044010304
+[  2803.169] (II) modeset(0): 	10e2006ae305c000e6060501595952a3
+[  2803.169] (II) modeset(0): 	6600a0f0701f8030203500b988210000
+[  2803.169] (II) modeset(0): 	1a565e00a0a0a0295030203500b98821
+[  2803.169] (II) modeset(0): 	00001a023a801871382d40582c4500b9
+[  2803.169] (II) modeset(0): 	882100001a0000000000000000000000
+[  2803.169] (II) modeset(0): 	00000000000000000000000000000000
+[  2803.169] (II) modeset(0): 	00000000000000000000000000000080
+[  2803.170] (II) modeset(0): Printing probed modes for output DP-1
+[  2803.170] (II) modeset(0): Modeline "3840x2160"x60.0  537.60  3840 3888 3920 4000  2160 2163 2168 2240 +hsync -vsync (134.4 kHz eP)
+[  2803.170] (II) modeset(0): Modeline "3840x2160"x30.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+[  2803.170] (II) modeset(0): Modeline "2560x1440"x60.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+[  2803.170] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync -vsync (67.5 kHz e)
+[  2803.170] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  2803.170] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[  2803.170] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2803.170] (II) modeset(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2803.170] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  2803.170] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  2803.170] (II) modeset(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2803.170] (II) modeset(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2803.170] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2803.170] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2803.173] (II) modeset(0): EDID for output HDMI-1
+[  2803.200] (II) modeset(0): EDID for output HDMI-2
+[  2803.200] (II) modeset(0): Manufacturer: GSM  Model: 774f  Serial#: 407298
+[  2803.200] (II) modeset(0): Year: 2023  Week: 8
+[  2803.200] (II) modeset(0): EDID Version: 1.3
+[  2803.200] (II) modeset(0): Digital Display Input
+[  2803.200] (II) modeset(0): Max Image Size [cm]: horiz.: 70  vert.: 40
+[  2803.200] (II) modeset(0): Gamma: 2.20
+[  2803.200] (II) modeset(0): DPMS capabilities: StandBy Suspend Off
+[  2803.200] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[  2803.200] (II) modeset(0): First detailed timing is preferred mode
+[  2803.200] (II) modeset(0): redX: 0.681 redY: 0.312   greenX: 0.268 greenY: 0.663
+[  2803.200] (II) modeset(0): blueX: 0.150 blueY: 0.049   whiteX: 0.312 whiteY: 0.329
+[  2803.200] (II) modeset(0): Supported established timings:
+[  2803.200] (II) modeset(0): 640x480@60Hz
+[  2803.200] (II) modeset(0): 800x600@60Hz
+[  2803.200] (II) modeset(0): 1024x768@60Hz
+[  2803.200] (II) modeset(0): Manufacturer's mask: 0
+[  2803.200] (II) modeset(0): Supported standard timings:
+[  2803.200] (II) modeset(0): #0: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[  2803.200] (II) modeset(0): #1: hsize: 1024  vsize 768  refresh: 60  vid: 16481
+[  2803.200] (II) modeset(0): #2: hsize: 800  vsize 600  refresh: 60  vid: 16453
+[  2803.200] (II) modeset(0): Supported detailed timing:
+[  2803.200] (II) modeset(0): clock: 594.0 MHz   Image Size:  697 x 392 mm
+[  2803.200] (II) modeset(0): h_active: 3840  h_sync: 4016  h_sync_end 4104 h_blank_end 4400 h_border: 0
+[  2803.200] (II) modeset(0): v_active: 2160  v_sync: 2168  v_sync_end 2178 v_blanking: 2250 v_border: 0
+[  2803.200] (II) modeset(0): Ranges: V min: 40 V max: 60 Hz, H min: 30 H max: 135 kHz, PixClock max 605 MHz
+[  2803.200] (II) modeset(0): Monitor name: LG HDR 4K
+[  2803.200] (II) modeset(0): Serial No: 308NTXRBZ298
+[  2803.200] (II) modeset(0): Supported detailed timing:
+[  2803.200] (II) modeset(0): clock: 297.0 MHz   Image Size:  697 x 392 mm
+[  2803.200] (II) modeset(0): h_active: 3840  h_sync: 4016  h_sync_end 4104 h_blank_end 4400 h_border: 0
+[  2803.200] (II) modeset(0): v_active: 2160  v_sync: 2168  v_sync_end 2178 v_blanking: 2250 v_border: 0
+[  2803.200] (II) modeset(0): Supported detailed timing:
+[  2803.200] (II) modeset(0): clock: 241.5 MHz   Image Size:  697 x 392 mm
+[  2803.200] (II) modeset(0): h_active: 2560  h_sync: 2608  h_sync_end 2640 h_blank_end 2720 h_border: 0
+[  2803.200] (II) modeset(0): v_active: 1440  v_sync: 1443  v_sync_end 1448 v_blanking: 1481 v_border: 0
+[  2803.200] (II) modeset(0): Supported detailed timing:
+[  2803.200] (II) modeset(0): clock: 138.5 MHz   Image Size:  697 x 392 mm
+[  2803.200] (II) modeset(0): h_active: 1920  h_sync: 1962  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[  2803.200] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1111 v_border: 0
+[  2803.200] (II) modeset(0): Number of EDID sections to follow: 1
+[  2803.200] (II) modeset(0): EDID (in hex):
+[  2803.200] (II) modeset(0): 	00ffffffffffff001e6d4f7702370600
+[  2803.200] (II) modeset(0): 	0821010380462878ea7ba1ae4f44a926
+[  2803.200] (II) modeset(0): 	0c5054210800d1c06140454001010101
+[  2803.200] (II) modeset(0): 	01010101010108e80030f2705a80b058
+[  2803.200] (II) modeset(0): 	8a00b9882100001e000000fd00283c1e
+[  2803.200] (II) modeset(0): 	873c000a202020202020000000fc004c
+[  2803.200] (II) modeset(0): 	472048445220344b0a202020000000ff
+[  2803.200] (II) modeset(0): 	003330384e545852425a3239380a01f3
+[  2803.200] (II) modeset(0): 	0203427223090707830100004d010304
+[  2803.200] (II) modeset(0): 	10121f202261605f5e5d6d030c001000
+[  2803.200] (II) modeset(0): 	b83c20006001020367d85dc401788003
+[  2803.200] (II) modeset(0): 	e30f0003e2006ae305c000e606050159
+[  2803.200] (II) modeset(0): 	595204740030f2705a80b0588a00b988
+[  2803.200] (II) modeset(0): 	2100001e565e00a0a0a0295030203500
+[  2803.200] (II) modeset(0): 	b9882100001a1a3680a070381f402a26
+[  2803.200] (II) modeset(0): 	3500b9882100001a0000000000000019
+[  2803.200] (--) modeset(0): HDMI max TMDS frequency 300000KHz
+[  2803.200] (II) modeset(0): Printing probed modes for output HDMI-2
+[  2803.200] (II) modeset(0): Modeline "3840x2160"x30.0  297.00  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (67.5 kHz e)
+[  2803.200] (II) modeset(0): Modeline "3840x2160"x25.0  297.00  3840 4896 4984 5280  2160 2168 2178 2250 +hsync +vsync (56.2 kHz e)
+[  2803.200] (II) modeset(0): Modeline "3840x2160"x24.0  297.00  3840 5116 5204 5500  2160 2168 2178 2250 +hsync +vsync (54.0 kHz e)
+[  2803.200] (II) modeset(0): Modeline "3840x2160"x30.0  296.70  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (67.4 kHz e)
+[  2803.200] (II) modeset(0): Modeline "3840x2160"x24.0  296.70  3840 5116 5204 5500  2160 2168 2178 2250 +hsync +vsync (53.9 kHz e)
+[  2803.200] (II) modeset(0): Modeline "2560x1440"x60.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1962 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x30.0   74.25  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.8 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x30.0   74.18  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (33.7 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1920x1080"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2803.200] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  2803.200] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  2803.200] (II) modeset(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  2803.200] (II) modeset(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2803.200] (II) modeset(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2803.200] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2803.200] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2803.200] (II) modeset(0): EDID for output DP-2
+[  2803.200] (II) modeset(0): Output DP-1 connected
+[  2803.200] (II) modeset(0): Output HDMI-1 disconnected
+[  2803.200] (II) modeset(0): Output HDMI-2 connected
+[  2803.200] (II) modeset(0): Output DP-2 disconnected
+[  2803.200] (II) modeset(0): Using exact sizes for initial modes
+[  2803.200] (II) modeset(0): Output DP-1 using initial mode 3840x2160 +0+0
+[  2803.200] (II) modeset(0): Output HDMI-2 using initial mode 3840x2160 +0+0
+[  2803.200] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[  2803.200] (==) modeset(0): DPI set to (96, 96)
+[  2803.200] (II) Loading sub module "fb"
+[  2803.200] (II) LoadModule: "fb"
+[  2803.200] (II) Module "fb" already built-in
+[  2803.221] (==) modeset(0): Backing store enabled
+[  2803.221] (==) modeset(0): Silken mouse enabled
+[  2803.610] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[  2803.611] (==) modeset(0): DPMS enabled
+[  2803.611] (II) modeset(0): [DRI2] Setup complete
+[  2803.611] (II) modeset(0): [DRI2]   DRI driver: iris
+[  2803.611] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[  2803.611] (II) Initializing extension Generic Event Extension
+[  2803.612] (II) Initializing extension SHAPE
+[  2803.612] (II) Initializing extension MIT-SHM
+[  2803.613] (II) Initializing extension XInputExtension
+[  2803.613] (II) Initializing extension XTEST
+[  2803.614] (II) Initializing extension BIG-REQUESTS
+[  2803.614] (II) Initializing extension SYNC
+[  2803.615] (II) Initializing extension XKEYBOARD
+[  2803.615] (II) Initializing extension XC-MISC
+[  2803.615] (II) Initializing extension XFIXES
+[  2803.615] (II) Initializing extension RENDER
+[  2803.615] (II) Initializing extension RANDR
+[  2803.615] (II) Initializing extension COMPOSITE
+[  2803.616] (II) Initializing extension DAMAGE
+[  2803.616] (II) Initializing extension MIT-SCREEN-SAVER
+[  2803.616] (II) Initializing extension DOUBLE-BUFFER
+[  2803.616] (II) Initializing extension RECORD
+[  2803.616] (II) Initializing extension DPMS
+[  2803.616] (II) Initializing extension Present
+[  2803.616] (II) Initializing extension DRI3
+[  2803.616] (II) Initializing extension X-Resource
+[  2803.616] (II) Initializing extension XVideo
+[  2803.616] (II) Initializing extension XVideo-MotionCompensation
+[  2803.616] (II) Initializing extension SELinux
+[  2803.616] (II) SELinux: Disabled by boolean
+[  2803.616] (II) Initializing extension GLX
+[  2803.623] (II) AIGLX: Loaded and initialized iris
+[  2803.623] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  2803.623] (II) Initializing extension XFree86-VidModeExtension
+[  2803.623] (II) Initializing extension XFree86-DGA
+[  2803.623] (II) Initializing extension XFree86-DRI
+[  2803.623] (II) Initializing extension DRI2
+[  2803.624] (II) modeset(0): Damage tracking initialized
+[  2803.624] (II) modeset(0): Setting screen physical size to 1016 x 571
+[  2803.668] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[  2803.668] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  2803.668] (**) Power Button: Applying InputClass "system-keyboard"
+[  2803.668] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  2803.668] (II) LoadModule: "evdev"
+[  2803.668] (WW) Warning, couldn't open module evdev
+[  2803.668] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.668] (EE) No input driver matching `evdev'
+[  2803.668] (II) Falling back to input driver `libinput'
+[  2803.668] (II) LoadModule: "libinput"
+[  2803.668] (II) Loading /opt/xorg/lib64/xorg/modules/input/libinput_drv.so
+[  2803.669] (II) Module libinput: vendor="X.Org Foundation"
+[  2803.669] 	compiled for 1.21.1.9, module version = 1.4.0
+[  2803.669] 	Module class: X.Org XInput Driver
+[  2803.669] 	ABI class: X.Org XInput driver, version 24.4
+[  2803.669] (II) Using input driver 'libinput' for 'Power Button'
+[  2803.670] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 26 paused 0
+[  2803.670] (**) Power Button: always reports core events
+[  2803.670] (**) Option "Device" "/dev/input/event2"
+[  2803.672] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  2803.672] (II) event2  - Power Button: device is a keyboard
+[  2803.672] (II) event2  - Power Button: device removed
+[  2803.672] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[  2803.672] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  2803.672] (**) Option "xkb_layout" "au"
+[  2803.684] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  2803.684] (II) event2  - Power Button: device is a keyboard
+[  2803.684] (II) config/udev: Adding input device Video Bus (/dev/input/event13)
+[  2803.684] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  2803.685] (**) Video Bus: Applying InputClass "system-keyboard"
+[  2803.685] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[  2803.685] (II) LoadModule: "evdev"
+[  2803.685] (WW) Warning, couldn't open module evdev
+[  2803.685] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.685] (EE) No input driver matching `evdev'
+[  2803.685] (II) Falling back to input driver `libinput'
+[  2803.685] (II) Using input driver 'libinput' for 'Video Bus'
+[  2803.685] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 29 paused 0
+[  2803.685] (**) Video Bus: always reports core events
+[  2803.685] (**) Option "Device" "/dev/input/event13"
+[  2803.685] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[  2803.686] (II) event13 - Video Bus: device is a keyboard
+[  2803.686] (II) event13 - Video Bus: device removed
+[  2803.686] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input14/event13"
+[  2803.686] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[  2803.686] (**) Option "xkb_layout" "au"
+[  2803.686] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[  2803.686] (II) event13 - Video Bus: device is a keyboard
+[  2803.687] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  2803.687] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  2803.687] (**) Power Button: Applying InputClass "system-keyboard"
+[  2803.687] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[  2803.687] (II) LoadModule: "evdev"
+[  2803.687] (WW) Warning, couldn't open module evdev
+[  2803.687] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.687] (EE) No input driver matching `evdev'
+[  2803.687] (II) Falling back to input driver `libinput'
+[  2803.687] (II) Using input driver 'libinput' for 'Power Button'
+[  2803.687] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 30 paused 0
+[  2803.687] (**) Power Button: always reports core events
+[  2803.687] (**) Option "Device" "/dev/input/event1"
+[  2803.688] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  2803.688] (II) event1  - Power Button: device is a keyboard
+[  2803.688] (II) event1  - Power Button: device removed
+[  2803.688] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[  2803.688] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[  2803.688] (**) Option "xkb_layout" "au"
+[  2803.688] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  2803.688] (II) event1  - Power Button: device is a keyboard
+[  2803.689] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[  2803.689] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  2803.689] (**) Sleep Button: Applying InputClass "system-keyboard"
+[  2803.689] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[  2803.689] (II) LoadModule: "evdev"
+[  2803.689] (WW) Warning, couldn't open module evdev
+[  2803.689] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.689] (EE) No input driver matching `evdev'
+[  2803.689] (II) Falling back to input driver `libinput'
+[  2803.689] (II) Using input driver 'libinput' for 'Sleep Button'
+[  2803.689] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 31 paused 0
+[  2803.689] (**) Sleep Button: always reports core events
+[  2803.689] (**) Option "Device" "/dev/input/event0"
+[  2803.690] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[  2803.690] (II) event0  - Sleep Button: device is a keyboard
+[  2803.690] (II) event0  - Sleep Button: device removed
+[  2803.690] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[  2803.690] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[  2803.690] (**) Option "xkb_layout" "au"
+[  2803.691] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[  2803.691] (II) event0  - Sleep Button: device is a keyboard
+[  2803.691] (II) config/udev: Adding input device Microsoft Microsoft® 2.4GHz Transceiver v9.0 (/dev/input/event3)
+[  2803.691] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0: Applying InputClass "libinput keyboard catchall"
+[  2803.691] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0: Applying InputClass "system-keyboard"
+[  2803.691] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0: Applying InputClass "evdev keyboard catchall"
+[  2803.691] (II) LoadModule: "evdev"
+[  2803.691] (WW) Warning, couldn't open module evdev
+[  2803.691] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.691] (EE) No input driver matching `evdev'
+[  2803.691] (II) Falling back to input driver `libinput'
+[  2803.691] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0'
+[  2803.692] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 32 paused 0
+[  2803.692] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0: always reports core events
+[  2803.692] (**) Option "Device" "/dev/input/event3"
+[  2803.692] (II) event3  - Microsoft Microsoft® 2.4GHz Transceiver v9.0: is tagged by udev as: Keyboard
+[  2803.693] (II) event3  - Microsoft Microsoft® 2.4GHz Transceiver v9.0: device is a keyboard
+[  2803.693] (II) event3  - Microsoft Microsoft® 2.4GHz Transceiver v9.0: device removed
+[  2803.693] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:045E:07A5.0001/input/input3/event3"
+[  2803.693] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0" (type: KEYBOARD, id 10)
+[  2803.693] (**) Option "xkb_layout" "au"
+[  2803.694] (II) event3  - Microsoft Microsoft® 2.4GHz Transceiver v9.0: is tagged by udev as: Keyboard
+[  2803.694] (II) event3  - Microsoft Microsoft® 2.4GHz Transceiver v9.0: device is a keyboard
+[  2803.694] (II) config/udev: Adding input device Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse (/dev/input/event4)
+[  2803.694] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: Applying InputClass "libinput pointer catchall"
+[  2803.694] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: Applying InputClass "evdev pointer catchall"
+[  2803.694] (II) LoadModule: "evdev"
+[  2803.694] (WW) Warning, couldn't open module evdev
+[  2803.694] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.694] (EE) No input driver matching `evdev'
+[  2803.694] (II) Falling back to input driver `libinput'
+[  2803.694] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse'
+[  2803.747] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 33 paused 0
+[  2803.747] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: always reports core events
+[  2803.747] (**) Option "Device" "/dev/input/event4"
+[  2803.751] (II) event4  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: is tagged by udev as: Mouse
+[  2803.751] (II) event4  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: device is a pointer
+[  2803.752] (II) event4  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: device removed
+[  2803.752] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.752] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.752] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.752] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:045E:07A5.0002/input/input21/event4"
+[  2803.752] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse" (type: MOUSE, id 11)
+[  2803.753] (**) Option "AccelerationScheme" "none"
+[  2803.753] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: (accel) selected scheme none/0
+[  2803.753] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: (accel) acceleration factor: 2.000
+[  2803.753] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: (accel) acceleration threshold: 4
+[  2803.756] (II) event4  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: is tagged by udev as: Mouse
+[  2803.756] (II) event4  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: device is a pointer
+[  2803.758] (II) config/udev: Adding input device Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse (/dev/input/mouse0)
+[  2803.758] (II) No input driver specified, ignoring this device.
+[  2803.758] (II) This device may have been added with another device file.
+[  2803.759] (II) config/udev: Adding input device Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control (/dev/input/event5)
+[  2803.759] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2803.759] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "system-keyboard"
+[  2803.759] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  2803.759] (II) LoadModule: "evdev"
+[  2803.759] (WW) Warning, couldn't open module evdev
+[  2803.759] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.759] (EE) No input driver matching `evdev'
+[  2803.759] (II) Falling back to input driver `libinput'
+[  2803.759] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control'
+[  2803.759] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 34 paused 0
+[  2803.759] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: always reports core events
+[  2803.759] (**) Option "Device" "/dev/input/event5"
+[  2803.760] (II) event5  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: is tagged by udev as: Keyboard
+[  2803.760] (II) event5  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device is a keyboard
+[  2803.760] (II) event5  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device removed
+[  2803.760] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: needs a virtual subdevice
+[  2803.760] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:045E:07A5.0002/input/input22/event5"
+[  2803.760] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control" (type: MOUSE, id 12)
+[  2803.760] (**) Option "AccelerationScheme" "none"
+[  2803.760] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: (accel) selected scheme none/0
+[  2803.760] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: (accel) acceleration factor: 2.000
+[  2803.760] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: (accel) acceleration threshold: 4
+[  2803.761] (II) event5  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: is tagged by udev as: Keyboard
+[  2803.761] (II) event5  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device is a keyboard
+[  2803.762] (II) config/udev: Adding input device Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control (/dev/input/event6)
+[  2803.762] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2803.762] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "system-keyboard"
+[  2803.762] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  2803.762] (II) LoadModule: "evdev"
+[  2803.762] (WW) Warning, couldn't open module evdev
+[  2803.762] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.762] (EE) No input driver matching `evdev'
+[  2803.762] (II) Falling back to input driver `libinput'
+[  2803.762] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control'
+[  2803.762] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 35 paused 0
+[  2803.762] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: always reports core events
+[  2803.762] (**) Option "Device" "/dev/input/event6"
+[  2803.763] (II) event6  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: is tagged by udev as: Keyboard
+[  2803.763] (II) event6  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device is a keyboard
+[  2803.763] (II) event6  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device removed
+[  2803.763] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: needs a virtual subdevice
+[  2803.763] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:045E:07A5.0003/input/input6/event6"
+[  2803.763] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control" (type: MOUSE, id 13)
+[  2803.763] (**) Option "AccelerationScheme" "none"
+[  2803.763] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: (accel) selected scheme none/0
+[  2803.763] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: (accel) acceleration factor: 2.000
+[  2803.763] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: (accel) acceleration threshold: 4
+[  2803.764] (II) event6  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: is tagged by udev as: Keyboard
+[  2803.764] (II) event6  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device is a keyboard
+[  2803.764] (II) config/udev: Adding input device Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control (/dev/input/event7)
+[  2803.764] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: Applying InputClass "libinput keyboard catchall"
+[  2803.764] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: Applying InputClass "system-keyboard"
+[  2803.764] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: Applying InputClass "evdev keyboard catchall"
+[  2803.764] (II) LoadModule: "evdev"
+[  2803.765] (WW) Warning, couldn't open module evdev
+[  2803.765] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.765] (EE) No input driver matching `evdev'
+[  2803.765] (II) Falling back to input driver `libinput'
+[  2803.765] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control'
+[  2803.765] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 36 paused 0
+[  2803.765] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: always reports core events
+[  2803.765] (**) Option "Device" "/dev/input/event7"
+[  2803.766] (II) event7  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: is tagged by udev as: Keyboard
+[  2803.766] (II) event7  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: device is a keyboard
+[  2803.766] (II) event7  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: device removed
+[  2803.766] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:045E:07A5.0003/input/input7/event7"
+[  2803.766] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control" (type: KEYBOARD, id 14)
+[  2803.766] (**) Option "xkb_layout" "au"
+[  2803.767] (II) event7  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: is tagged by udev as: Keyboard
+[  2803.767] (II) event7  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: device is a keyboard
+[  2803.767] (II) config/udev: Adding input device Yubico YubiKey OTP+FIDO+CCID (/dev/input/event12)
+[  2803.767] (**) Yubico YubiKey OTP+FIDO+CCID: Applying InputClass "libinput keyboard catchall"
+[  2803.767] (**) Yubico YubiKey OTP+FIDO+CCID: Applying InputClass "system-keyboard"
+[  2803.767] (**) Yubico YubiKey OTP+FIDO+CCID: Applying InputClass "evdev keyboard catchall"
+[  2803.767] (II) LoadModule: "evdev"
+[  2803.767] (WW) Warning, couldn't open module evdev
+[  2803.767] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.767] (EE) No input driver matching `evdev'
+[  2803.767] (II) Falling back to input driver `libinput'
+[  2803.767] (II) Using input driver 'libinput' for 'Yubico YubiKey OTP+FIDO+CCID'
+[  2803.768] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 37 paused 0
+[  2803.768] (**) Yubico YubiKey OTP+FIDO+CCID: always reports core events
+[  2803.768] (**) Option "Device" "/dev/input/event12"
+[  2803.768] (II) event12 - Yubico YubiKey OTP+FIDO+CCID: is tagged by udev as: Keyboard
+[  2803.768] (II) event12 - Yubico YubiKey OTP+FIDO+CCID: device is a keyboard
+[  2803.768] (II) event12 - Yubico YubiKey OTP+FIDO+CCID: device removed
+[  2803.768] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6.1/1-6.1:1.0/0003:1050:0407.0007/input/input13/event12"
+[  2803.768] (II) XINPUT: Adding extended input device "Yubico YubiKey OTP+FIDO+CCID" (type: KEYBOARD, id 15)
+[  2803.768] (**) Option "xkb_layout" "au"
+[  2803.769] (II) event12 - Yubico YubiKey OTP+FIDO+CCID: is tagged by udev as: Keyboard
+[  2803.769] (II) event12 - Yubico YubiKey OTP+FIDO+CCID: device is a keyboard
+[  2803.770] (II) config/udev: Adding input device Logitech ERGO K860 (/dev/input/event8)
+[  2803.770] (**) Logitech ERGO K860: Applying InputClass "libinput pointer catchall"
+[  2803.770] (**) Logitech ERGO K860: Applying InputClass "libinput keyboard catchall"
+[  2803.770] (**) Logitech ERGO K860: Applying InputClass "system-keyboard"
+[  2803.770] (**) Logitech ERGO K860: Applying InputClass "evdev pointer catchall"
+[  2803.770] (**) Logitech ERGO K860: Applying InputClass "evdev keyboard catchall"
+[  2803.770] (II) LoadModule: "evdev"
+[  2803.770] (WW) Warning, couldn't open module evdev
+[  2803.770] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.770] (EE) No input driver matching `evdev'
+[  2803.770] (II) Falling back to input driver `libinput'
+[  2803.770] (II) Using input driver 'libinput' for 'Logitech ERGO K860'
+[  2803.770] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 38 paused 0
+[  2803.770] (**) Logitech ERGO K860: always reports core events
+[  2803.770] (**) Option "Device" "/dev/input/event8"
+[  2803.771] (II) event8  - Logitech ERGO K860: is tagged by udev as: Keyboard Mouse
+[  2803.771] (II) event8  - Logitech ERGO K860: device is a pointer
+[  2803.771] (II) event8  - Logitech ERGO K860: device is a keyboard
+[  2803.771] (II) event8  - Logitech ERGO K860: device removed
+[  2803.771] (II) libinput: Logitech ERGO K860: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.771] (II) libinput: Logitech ERGO K860: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.771] (II) libinput: Logitech ERGO K860: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.771] (II) libinput: Logitech ERGO K860: needs a virtual subdevice
+[  2803.771] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.2/0003:046D:C52B.0006/0003:046D:4088.0009/input/input20/event8"
+[  2803.771] (II) XINPUT: Adding extended input device "Logitech ERGO K860" (type: MOUSE, id 16)
+[  2803.771] (**) Option "AccelerationScheme" "none"
+[  2803.772] (**) Logitech ERGO K860: (accel) selected scheme none/0
+[  2803.772] (**) Logitech ERGO K860: (accel) acceleration factor: 2.000
+[  2803.772] (**) Logitech ERGO K860: (accel) acceleration threshold: 4
+[  2803.772] (II) event8  - Logitech ERGO K860: is tagged by udev as: Keyboard Mouse
+[  2803.772] (II) event8  - Logitech ERGO K860: device is a pointer
+[  2803.772] (II) event8  - Logitech ERGO K860: device is a keyboard
+[  2803.773] (II) config/udev: Adding input device Logitech ERGO K860 (/dev/input/mouse1)
+[  2803.773] (**) Logitech ERGO K860: Applying InputClass "system-keyboard"
+[  2803.773] (II) No input driver specified, ignoring this device.
+[  2803.773] (II) This device may have been added with another device file.
+[  2803.773] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event9)
+[  2803.773] (II) No input driver specified, ignoring this device.
+[  2803.773] (II) This device may have been added with another device file.
+[  2803.774] (II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event10)
+[  2803.774] (II) No input driver specified, ignoring this device.
+[  2803.774] (II) This device may have been added with another device file.
+[  2803.774] (II) config/udev: Adding input device HDA Intel PCH Line Out (/dev/input/event11)
+[  2803.774] (II) No input driver specified, ignoring this device.
+[  2803.774] (II) This device may have been added with another device file.
+[  2803.774] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event14)
+[  2803.774] (II) No input driver specified, ignoring this device.
+[  2803.774] (II) This device may have been added with another device file.
+[  2803.774] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event15)
+[  2803.774] (II) No input driver specified, ignoring this device.
+[  2803.774] (II) This device may have been added with another device file.
+[  2803.774] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event16)
+[  2803.774] (II) No input driver specified, ignoring this device.
+[  2803.774] (II) This device may have been added with another device file.
+[  2803.775] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event17)
+[  2803.775] (II) No input driver specified, ignoring this device.
+[  2803.775] (II) This device may have been added with another device file.
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "system-keyboard"
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  2803.810] (II) LoadModule: "evdev"
+[  2803.810] (WW) Warning, couldn't open module evdev
+[  2803.810] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.810] (EE) No input driver matching `evdev'
+[  2803.810] (II) Falling back to input driver `libinput'
+[  2803.810] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control'
+[  2803.810] (II) systemd-logind: returning pre-existing fd for /dev/input/event5 13:69
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: always reports core events
+[  2803.810] (**) Option "Device" "/dev/input/event5"
+[  2803.810] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: is a virtual subdevice
+[  2803.810] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:045E:07A5.0002/input/input22/event5"
+[  2803.810] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control" (type: KEYBOARD, id 17)
+[  2803.810] (**) Option "xkb_layout" "au"
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "system-keyboard"
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: Applying InputClass "evdev keyboard catchall"
+[  2803.810] (II) LoadModule: "evdev"
+[  2803.810] (WW) Warning, couldn't open module evdev
+[  2803.810] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.810] (EE) No input driver matching `evdev'
+[  2803.810] (II) Falling back to input driver `libinput'
+[  2803.810] (II) Using input driver 'libinput' for 'Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control'
+[  2803.810] (II) systemd-logind: returning pre-existing fd for /dev/input/event6 13:70
+[  2803.810] (**) Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: always reports core events
+[  2803.810] (**) Option "Device" "/dev/input/event6"
+[  2803.810] (II) libinput: Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: is a virtual subdevice
+[  2803.810] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.2/0003:045E:07A5.0003/input/input6/event6"
+[  2803.810] (II) XINPUT: Adding extended input device "Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control" (type: KEYBOARD, id 18)
+[  2803.810] (**) Option "xkb_layout" "au"
+[  2803.811] (**) Logitech ERGO K860: Applying InputClass "libinput pointer catchall"
+[  2803.811] (**) Logitech ERGO K860: Applying InputClass "libinput keyboard catchall"
+[  2803.811] (**) Logitech ERGO K860: Applying InputClass "system-keyboard"
+[  2803.811] (**) Logitech ERGO K860: Applying InputClass "evdev pointer catchall"
+[  2803.811] (**) Logitech ERGO K860: Applying InputClass "evdev keyboard catchall"
+[  2803.811] (II) LoadModule: "evdev"
+[  2803.811] (WW) Warning, couldn't open module evdev
+[  2803.811] (EE) Failed to load module "evdev" (module does not exist, 0)
+[  2803.811] (EE) No input driver matching `evdev'
+[  2803.811] (II) Falling back to input driver `libinput'
+[  2803.811] (II) Using input driver 'libinput' for 'Logitech ERGO K860'
+[  2803.811] (II) systemd-logind: returning pre-existing fd for /dev/input/event8 13:72
+[  2803.811] (**) Logitech ERGO K860: always reports core events
+[  2803.811] (**) Option "Device" "/dev/input/event8"
+[  2803.811] (II) libinput: Logitech ERGO K860: is a virtual subdevice
+[  2803.811] (II) libinput: Logitech ERGO K860: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.811] (II) libinput: Logitech ERGO K860: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.811] (II) libinput: Logitech ERGO K860: Step value 0 was provided, libinput Fallback acceleration function is used.
+[  2803.811] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.2/0003:046D:C52B.0006/0003:046D:4088.0009/input/input20/event8"
+[  2803.811] (II) XINPUT: Adding extended input device "Logitech ERGO K860" (type: KEYBOARD, id 19)
+[  2803.811] (**) Option "xkb_layout" "au"
+[  2804.826] (II) modeset(0): EDID vendor "GSM", prod id 30544
+[  2804.826] (II) modeset(0): Using EDID range info for horizontal sync
+[  2804.826] (II) modeset(0): Using EDID range info for vertical refresh
+[  2804.826] (II) modeset(0): Printing DDC gathered Modelines:
+[  2804.826] (II) modeset(0): Modeline "3840x2160"x0.0  537.60  3840 3888 3920 4000  2160 2163 2168 2240 +hsync -vsync (134.4 kHz eP)
+[  2804.826] (II) modeset(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+[  2804.826] (II) modeset(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+[  2804.826] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync -vsync (67.5 kHz e)
+[  2804.826] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2804.826] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2804.826] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2804.826] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  2804.826] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  2804.826] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  2804.859] (--) modeset(0): HDMI max TMDS frequency 300000KHz
+[  2805.003] (II) modeset(0): Allocate new frame buffer 7680x2160 stride
+[  2805.693] (II) modeset(0): EDID vendor "GSM", prod id 30544
+[  2805.693] (II) modeset(0): Using hsync ranges from config file
+[  2805.693] (II) modeset(0): Using vrefresh ranges from config file
+[  2805.693] (II) modeset(0): Printing DDC gathered Modelines:
+[  2805.693] (II) modeset(0): Modeline "3840x2160"x0.0  537.60  3840 3888 3920 4000  2160 2163 2168 2240 +hsync -vsync (134.4 kHz eP)
+[  2805.693] (II) modeset(0): Modeline "3840x2160"x0.0  262.75  3840 3888 3920 4000  2160 2163 2168 2191 +hsync -vsync (65.7 kHz e)
+[  2805.693] (II) modeset(0): Modeline "2560x1440"x0.0  241.50  2560 2608 2640 2720  1440 1443 1448 1481 +hsync -vsync (88.8 kHz e)
+[  2805.693] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync -vsync (67.5 kHz e)
+[  2805.693] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2805.693] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2805.693] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2805.693] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[  2805.693] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  2805.693] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  2805.742] (--) modeset(0): HDMI max TMDS frequency 300000KHz
+[  2879.058] (**) Option "fd" "26"
+[  2879.058] (II) event2  - Power Button: device removed
+[  2879.058] (**) Option "fd" "29"
+[  2879.058] (II) event13 - Video Bus: device removed
+[  2879.058] (**) Option "fd" "30"
+[  2879.058] (II) event1  - Power Button: device removed
+[  2879.058] (**) Option "fd" "31"
+[  2879.058] (II) event0  - Sleep Button: device removed
+[  2879.058] (**) Option "fd" "32"
+[  2879.058] (II) event3  - Microsoft Microsoft® 2.4GHz Transceiver v9.0: device removed
+[  2879.058] (**) Option "fd" "33"
+[  2879.058] (II) event4  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Mouse: device removed
+[  2879.058] (**) Option "fd" "34"
+[  2879.058] (**) Option "fd" "35"
+[  2879.058] (**) Option "fd" "36"
+[  2879.058] (II) event7  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 System Control: device removed
+[  2879.058] (**) Option "fd" "37"
+[  2879.058] (II) event12 - Yubico YubiKey OTP+FIDO+CCID: device removed
+[  2879.058] (**) Option "fd" "38"
+[  2879.058] (**) Option "fd" "34"
+[  2879.058] (II) event5  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device removed
+[  2879.058] (**) Option "fd" "35"
+[  2879.058] (II) event6  - Microsoft Microsoft® 2.4GHz Transceiver v9.0 Consumer Control: device removed
+[  2879.058] (**) Option "fd" "38"
+[  2879.058] (II) event8  - Logitech ERGO K860: device removed
+[  2879.075] (II) UnloadModule: "libinput"
+[  2879.075] (II) systemd-logind: not releasing fd for 13:72, still in use
+[  2879.075] (II) UnloadModule: "libinput"
+[  2879.075] (II) systemd-logind: not releasing fd for 13:70, still in use
+[  2879.075] (II) UnloadModule: "libinput"
+[  2879.076] (II) systemd-logind: not releasing fd for 13:69, still in use
+[  2879.076] (II) UnloadModule: "libinput"
+[  2879.076] (II) systemd-logind: releasing fd for 13:72
+[  2879.076] (II) UnloadModule: "libinput"
+[  2879.076] (II) systemd-logind: releasing fd for 13:76
+[  2879.077] (II) UnloadModule: "libinput"
+[  2879.077] (II) systemd-logind: releasing fd for 13:71
+[  2879.077] (II) UnloadModule: "libinput"
+[  2879.077] (II) systemd-logind: releasing fd for 13:70
+[  2879.077] (II) UnloadModule: "libinput"
+[  2879.077] (II) systemd-logind: releasing fd for 13:69
+[  2879.077] (II) UnloadModule: "libinput"
+[  2879.077] (II) systemd-logind: releasing fd for 13:68
+[  2879.078] (II) UnloadModule: "libinput"
+[  2879.078] (II) systemd-logind: releasing fd for 13:67
+[  2879.078] (II) UnloadModule: "libinput"
+[  2879.078] (II) systemd-logind: releasing fd for 13:64
+[  2879.078] (II) UnloadModule: "libinput"
+[  2879.078] (II) systemd-logind: releasing fd for 13:65
+[  2879.078] (II) UnloadModule: "libinput"
+[  2879.078] (II) systemd-logind: releasing fd for 13:77
+[  2879.079] (II) UnloadModule: "libinput"
+[  2879.079] (II) systemd-logind: releasing fd for 13:66
+[  2879.109] (II) Server terminated successfully (0). Closing log file.

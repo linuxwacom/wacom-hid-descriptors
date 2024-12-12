@@ -1,0 +1,66 @@
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keyboard),                   ; Keyboard (06h, application collection)
+Collection (Application),
+    Report ID (3),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (KB Leftcontrol), ; Keyboard left control (E0h, dynamic value)
+    Usage Maximum (KB Right GUI),   ; Keyboard right GUI (E7h, dynamic value)
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (8),
+    Input (Variable),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (None),           ; No event (00h, selector)
+    Usage Maximum (FFh),
+    Logical Maximum (255),
+    Report Size (8),
+    Report Count (6),
+    Input,
+End Collection,
+Usage Page (Consumer),              ; Consumer (0Ch)
+Usage (Consumer Control),           ; Consumer control (01h, application collection)
+Collection (Application),
+    Report ID (4),
+    Usage Minimum (00h),
+    Usage Maximum (AC Format),      ; AC format (023Ch, selector)
+    Logical Minimum (0),
+    Logical Maximum (572),
+    Report Count (1),
+    Report Size (16),
+    Input,
+End Collection,
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Mouse),                      ; Mouse (02h, application collection)
+Collection (Application),
+    Usage (Pointer),                ; Pointer (01h, physical collection)
+    Report ID (5),
+    Collection (Physical),
+        Usage Page (Button),        ; Button (09h)
+        Usage Minimum (01h),
+        Usage Maximum (05h),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Report Count (5),
+        Report Size (1),
+        Input (Variable),
+        Report Count (1),
+        Report Size (3),
+        Input (Constant),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Logical Minimum (-32768),
+        Logical Maximum (32767),
+        Report Size (16),
+        Report Count (2),
+        Input (Variable, Relative),
+        Report Count (1),
+        Report Size (8),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (Wheel),              ; Wheel (38h, dynamic value)
+        Logical Minimum (-127),
+        Logical Maximum (127),
+        Input (Variable, Relative),
+    End Collection,
+End Collection
