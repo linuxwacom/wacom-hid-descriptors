@@ -1,0 +1,849 @@
+[    52.441] (--) Log file renamed from "/var/log/Xorg.pid-1715.log" to "/var/log/Xorg.0.log"
+[    52.442] 
+X.Org X Server 1.21.1.11
+X Protocol Version 11, Revision 0
+[    52.442] Current Operating System: Linux HOSTNAME 6.7.0-arch3-1 #1 SMP PREEMPT_DYNAMIC Sat, 13 Jan 2024 14:37:14 +0000 x86_64
+[    52.442] Kernel command line: root=PARTUUID=ae530f8f-cd0a-460c-b403-c12ca53baefa zswap.enabled=0 rw rootfstype=ext4
+[    52.442]  
+[    52.442] Current version of pixman: 0.43.0
+[    52.442] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    52.442] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    52.442] (==) Log file: "/var/log/Xorg.0.log", Time: Sun Jan 21 13:13:25 2024
+[    52.442] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    52.442] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    52.442] (==) No Layout section.  Using the first Screen section.
+[    52.442] (==) No screen section available. Using defaults.
+[    52.442] (**) |-->Screen "Default Screen Section" (0)
+[    52.442] (**) |   |-->Monitor "<default monitor>"
+[    52.442] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    52.442] (==) Automatically adding devices
+[    52.442] (==) Automatically enabling devices
+[    52.442] (==) Automatically adding GPU devices
+[    52.442] (==) Automatically binding GPU devices
+[    52.442] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    52.442] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    52.442] 	Entry deleted from font path.
+[    52.442] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    52.442] 	Entry deleted from font path.
+[    52.442] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    52.442] 	Entry deleted from font path.
+[    52.442] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[    52.442] 	Entry deleted from font path.
+[    52.442] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[    52.442] 	Entry deleted from font path.
+[    52.442] (==) FontPath set to:
+	/usr/share/fonts/TTF
+[    52.442] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    52.442] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    52.442] (II) Module ABI versions:
+[    52.442] 	X.Org ANSI C Emulation: 0.4
+[    52.442] 	X.Org Video Driver: 25.2
+[    52.442] 	X.Org XInput driver : 24.4
+[    52.442] 	X.Org Server Extension : 10.0
+[    52.442] (++) using VT number 2
+
+[    52.442] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    52.444] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    52.444] (II) Platform probe for /sys/devices/pci0000:00/0000:00:08.1/0000:65:00.0/drm/card1
+[    52.485] (--) PCI:*(101@0:0:0) 1002:15bf:1002:0124 rev 201, Mem @ 0x7c00000000/268435456, 0xdc000000/2097152, 0xdc500000/524288, I/O @ 0x0000f000/256
+[    52.485] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    52.485] (II) LoadModule: "glx"
+[    52.485] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    52.486] (II) Module glx: vendor="X.Org Foundation"
+[    52.486] 	compiled for 1.21.1.11, module version = 1.0.0
+[    52.486] 	ABI class: X.Org Server Extension, version 10.0
+[    52.486] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[    52.486] 	loading driver: amdgpu
+[    52.486] (==) Matched amdgpu as autoconfigured driver 0
+[    52.486] (==) Matched ati as autoconfigured driver 1
+[    52.486] (==) Matched modesetting as autoconfigured driver 2
+[    52.486] (==) Matched fbdev as autoconfigured driver 3
+[    52.486] (==) Matched vesa as autoconfigured driver 4
+[    52.486] (==) Assigned the driver to the xf86ConfigLayout
+[    52.486] (II) LoadModule: "amdgpu"
+[    52.486] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[    52.487] (II) Module amdgpu: vendor="X.Org Foundation"
+[    52.487] 	compiled for 1.21.1.7, module version = 23.0.0
+[    52.487] 	Module class: X.Org Video Driver
+[    52.487] 	ABI class: X.Org Video Driver, version 25.2
+[    52.487] (II) LoadModule: "ati"
+[    52.487] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[    52.487] (II) Module ati: vendor="X.Org Foundation"
+[    52.487] 	compiled for 1.21.1.8, module version = 22.0.0
+[    52.487] 	Module class: X.Org Video Driver
+[    52.487] 	ABI class: X.Org Video Driver, version 25.2
+[    52.529] (II) LoadModule: "modesetting"
+[    52.530] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    52.530] (II) Module modesetting: vendor="X.Org Foundation"
+[    52.530] 	compiled for 1.21.1.11, module version = 1.21.1
+[    52.530] 	Module class: X.Org Video Driver
+[    52.530] 	ABI class: X.Org Video Driver, version 25.2
+[    52.530] (II) LoadModule: "fbdev"
+[    52.530] (WW) Warning, couldn't open module fbdev
+[    52.530] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    52.530] (II) LoadModule: "vesa"
+[    52.530] (WW) Warning, couldn't open module vesa
+[    52.530] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    52.530] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[    52.530] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    52.554] (WW) Falling back to old probe method for modesetting
+[    52.554] (EE) open /dev/dri/card0: No such file or directory
+[    52.554] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    52.554] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[    52.554] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[    52.554] (==) AMDGPU(0): Default visual is TrueColor
+[    52.554] (II) Applying OutputClass "AMDgpu" options to /dev/dri/card1
+[    52.554] (==) AMDGPU(0): RGB weight 888
+[    52.554] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[    52.554] (--) AMDGPU(0): Chipset: "AMD Radeon Graphics" (ChipID = 0x15bf)
+[    52.554] (II) Loading sub module "fb"
+[    52.554] (II) LoadModule: "fb"
+[    52.554] (II) Module "fb" already built-in
+[    52.554] (II) Loading sub module "dri2"
+[    52.554] (II) LoadModule: "dri2"
+[    52.554] (II) Module "dri2" already built-in
+[    52.579] (II) Loading sub module "glamoregl"
+[    52.579] (II) LoadModule: "glamoregl"
+[    52.579] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    52.582] (II) Module glamoregl: vendor="X.Org Foundation"
+[    52.582] 	compiled for 1.21.1.11, module version = 1.0.1
+[    52.582] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    52.586] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon Graphics (radeonsi, gfx1103_r1, LLVM 16.0.6, DRM 3.56, 6.7.0-arch3-1)
+[    52.586] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[    52.586] (==) AMDGPU(0): TearFree property default: auto
+[    52.586] (==) AMDGPU(0): VariableRefresh: disabled
+[    52.586] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[    52.586] (II) AMDGPU(0): KMS Pageflipping: enabled
+[    52.588] (II) AMDGPU(0): Output eDP has no monitor section
+[    52.588] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[    52.590] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[    52.590] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[    52.590] (II) AMDGPU(0): Output DisplayPort-2 has no monitor section
+[    52.590] (II) AMDGPU(0): Output DisplayPort-3 has no monitor section
+[    52.590] (II) AMDGPU(0): Output DisplayPort-4 has no monitor section
+[    52.590] (II) AMDGPU(0): Output DisplayPort-5 has no monitor section
+[    52.604] (WW) AMDGPU(0): 8 ZaphodHeads crtcs unavailable. Some outputs will stay off.
+[    52.606] (II) AMDGPU(0): EDID for output eDP
+[    52.606] (II) AMDGPU(0): Manufacturer: JDI  Model: 31  Serial#: 1
+[    52.606] (II) AMDGPU(0): Year: 2022  Week: 22
+[    52.606] (II) AMDGPU(0): EDID Version: 1.4
+[    52.606] (II) AMDGPU(0): Digital Display Input
+[    52.606] (II) AMDGPU(0): Undefined color depth
+[    52.606] (II) AMDGPU(0): Digital interface is undefined
+[    52.606] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 89  vert.: 50
+[    52.606] (II) AMDGPU(0): Gamma: 2.20
+[    52.606] (II) AMDGPU(0): No DPMS capabilities specified
+[    52.606] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    52.606] (II) AMDGPU(0): First detailed timing is preferred mode
+[    52.606] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    52.606] (II) AMDGPU(0): redX: 0.625 redY: 0.340   greenX: 0.280 greenY: 0.595
+[    52.606] (II) AMDGPU(0): blueX: 0.155 blueY: 0.070   whiteX: 0.283 whiteY: 0.298
+[    52.606] (II) AMDGPU(0): Manufacturer's mask: 0
+[    52.606] (II) AMDGPU(0): Supported detailed timing:
+[    52.606] (II) AMDGPU(0): clock: 286.8 MHz   Image Size:  217 x 135 mm
+[    52.606] (II) AMDGPU(0): h_active: 2560  h_sync: 2760  h_sync_end 2792 h_blank_end 2952 h_border: 0
+[    52.606] (II) AMDGPU(0): v_active: 1600  v_sync: 1610  v_sync_end 1613 v_blanking: 1619 v_border: 0
+[    52.606] (II) AMDGPU(0): Supported detailed timing:
+[    52.606] (II) AMDGPU(0): clock: 191.2 MHz   Image Size:  800 x 450 mm
+[    52.606] (II) AMDGPU(0): h_active: 2560  h_sync: 2760  h_sync_end 2792 h_blank_end 2952 h_border: 0
+[    52.606] (II) AMDGPU(0): v_active: 1600  v_sync: 1610  v_sync_end 1613 v_blanking: 1619 v_border: 0
+[    52.606] (II) AMDGPU(0): Ranges: V min: 22 V max: 72 Hz, H min: 15 H max: 90 kHz, PixClock max 305 MHz
+[    52.606] (II) AMDGPU(0): Monitor name: GPD1001H
+[    52.606] (II) AMDGPU(0): EDID (in hex):
+[    52.606] (II) AMDGPU(0): 	00ffffffffffff002889310001000000
+[    52.606] (II) AMDGPU(0): 	16200104805932780a0dc9a057479827
+[    52.606] (II) AMDGPU(0): 	12484c00000001010101010101010101
+[    52.606] (II) AMDGPU(0): 	01010101010108700088a1401360c820
+[    52.606] (II) AMDGPU(0): 	a300d9870000001ead4a0088a1401360
+[    52.606] (II) AMDGPU(0): 	c820a30020c23100001e000000fd0016
+[    52.606] (II) AMDGPU(0): 	480f5a1e000a202020202020000000fc
+[    52.606] (II) AMDGPU(0): 	0047504431303031480a2020202000cf
+[    52.606] (II) AMDGPU(0): Printing probed modes for output eDP
+[    52.606] (II) AMDGPU(0): Modeline "2560x1600"x60.0  286.80  2560 2760 2792 2952  1600 1610 1613 1619 +hsync +vsync (97.2 kHz eP)
+[    52.606] (II) AMDGPU(0): Modeline "2560x1600"x40.0  191.17  2560 2760 2792 2952  1600 1610 1613 1619 +hsync +vsync (64.8 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1920x1200"x60.0  286.80  1920 2760 2792 2952  1200 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1920x1080"x60.0  286.80  1920 2760 2792 2952  1080 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1600x1200"x60.0  286.80  1600 2760 2792 2952  1200 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1680x1050"x60.0  286.80  1680 2760 2792 2952  1050 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1280x1024"x60.0  286.80  1280 2760 2792 2952  1024 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1440x900"x60.0  286.80  1440 2760 2792 2952  900 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1280x800"x60.0  286.80  1280 2760 2792 2952  800 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1280x720"x60.0  286.80  1280 2760 2792 2952  720 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "1024x768"x60.0  286.80  1024 2760 2792 2952  768 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "800x600"x60.0  286.80  800 2760 2792 2952  600 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): Modeline "640x480"x60.0  286.80  640 2760 2792 2952  480 1610 1613 1619 +hsync +vsync (97.2 kHz e)
+[    52.606] (II) AMDGPU(0): EDID for output HDMI-A-0
+[    52.608] (II) AMDGPU(0): EDID for output DisplayPort-0
+[    52.608] (II) AMDGPU(0): Manufacturer: WAC  Model: 1080  Serial#: 539100691
+[    52.608] (II) AMDGPU(0): Year: 2022  Week: 20
+[    52.608] (II) AMDGPU(0): EDID Version: 1.4
+[    52.608] (II) AMDGPU(0): Digital Display Input
+[    52.608] (II) AMDGPU(0): 8 bits per channel
+[    52.608] (II) AMDGPU(0): Digital interface is DisplayPort
+[    52.608] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 26  vert.: 14
+[    52.608] (II) AMDGPU(0): Gamma: 2.20
+[    52.608] (II) AMDGPU(0): DPMS capabilities: Off
+[    52.608] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+[    52.608] (II) AMDGPU(0): First detailed timing is preferred mode
+[    52.608] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    52.608] (II) AMDGPU(0): redX: 0.664 redY: 0.314   greenX: 0.263 greenY: 0.657
+[    52.608] (II) AMDGPU(0): blueX: 0.151 blueY: 0.066   whiteX: 0.313 whiteY: 0.329
+[    52.608] (II) AMDGPU(0): Supported established timings:
+[    52.608] (II) AMDGPU(0): 720x400@70Hz
+[    52.608] (II) AMDGPU(0): 640x480@60Hz
+[    52.608] (II) AMDGPU(0): 800x600@60Hz
+[    52.608] (II) AMDGPU(0): 1024x768@60Hz
+[    52.608] (II) AMDGPU(0): Manufacturer's mask: 0
+[    52.608] (II) AMDGPU(0): Supported standard timings:
+[    52.608] (II) AMDGPU(0): #0: hsize: 1280  vsize 720  refresh: 60  vid: 49281
+[    52.608] (II) AMDGPU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[    52.608] (II) AMDGPU(0): #2: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[    52.608] (II) AMDGPU(0): Supported detailed timing:
+[    52.608] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  256 x 144 mm
+[    52.608] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    52.608] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[    52.608] (II) AMDGPU(0): Ranges: V min: 50 V max: 70 Hz, H min: 31 H max: 75 kHz, PixClock max 165 MHz
+[    52.608] (II) AMDGPU(0): Monitor name: Wacom One 12
+[    52.608] (II) AMDGPU(0): Serial No: 3GH01E1001920
+[    52.608] (II) AMDGPU(0): Supported detailed timing:
+[    52.608] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  256 x 144 mm
+[    52.608] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    52.608] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[    52.608] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[    52.608] (II) AMDGPU(0): EDID (in hex):
+[    52.608] (II) AMDGPU(0): 	00ffffffffffff005c23801013062220
+[    52.608] (II) AMDGPU(0): 	14200104a51a0e783a25c5aa5043a826
+[    52.609] (II) AMDGPU(0): 	115054a1080081c08180a94001010101
+[    52.609] (II) AMDGPU(0): 	010101010101023a801871382d40582c
+[    52.609] (II) AMDGPU(0): 	450000901000001e000000fd0032461f
+[    52.609] (II) AMDGPU(0): 	4b10010a202020202020000000fc0057
+[    52.609] (II) AMDGPU(0): 	61636f6d204f6e652031320a000000ff
+[    52.609] (II) AMDGPU(0): 	003347483031453130303139323001aa
+[    52.609] (II) AMDGPU(0): 	02030cb1470103120413901f023a8018
+[    52.609] (II) AMDGPU(0): 	71382d40582c450000901000001e0000
+[    52.609] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    52.609] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    52.609] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    52.609] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    52.609] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    52.609] (II) AMDGPU(0): 	000000000000000000000000000000aa
+[    52.609] (II) AMDGPU(0): Printing probed modes for output DisplayPort-0
+[    52.609] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[    52.609] (II) AMDGPU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1680x1050"x60.0  148.50  1680 2008 2052 2200  1050 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1440x900"x60.0  148.50  1440 2008 2052 2200  900 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1280x800"x60.0  148.50  1280 2008 2052 2200  800 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    52.609] (II) AMDGPU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[    52.609] (II) AMDGPU(0): EDID for output DisplayPort-1
+[    52.609] (II) AMDGPU(0): EDID for output DisplayPort-2
+[    52.609] (II) AMDGPU(0): EDID for output DisplayPort-3
+[    52.609] (II) AMDGPU(0): EDID for output DisplayPort-4
+[    52.609] (II) AMDGPU(0): EDID for output DisplayPort-5
+[    52.609] (II) AMDGPU(0): Output eDP connected
+[    52.609] (II) AMDGPU(0): Output HDMI-A-0 disconnected
+[    52.609] (II) AMDGPU(0): Output DisplayPort-0 connected
+[    52.609] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[    52.609] (II) AMDGPU(0): Output DisplayPort-2 disconnected
+[    52.609] (II) AMDGPU(0): Output DisplayPort-3 disconnected
+[    52.609] (II) AMDGPU(0): Output DisplayPort-4 disconnected
+[    52.609] (II) AMDGPU(0): Output DisplayPort-5 disconnected
+[    52.609] (II) AMDGPU(0): Using spanning desktop for initial modes
+[    52.609] (II) AMDGPU(0): Output eDP using initial mode 2560x1600 +0+0
+[    52.609] (II) AMDGPU(0): Output DisplayPort-0 using initial mode 1920x1080 +2560+0
+[    52.609] (II) AMDGPU(0): mem size init: gart size :5d7fb7000 vram size: s:3f9994000 visible:3f9994000
+[    52.609] (==) AMDGPU(0): DPI set to (96, 96)
+[    52.609] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    52.609] (II) Loading sub module "ramdac"
+[    52.609] (II) LoadModule: "ramdac"
+[    52.609] (II) Module "ramdac" already built-in
+[    52.609] (II) UnloadModule: "modesetting"
+[    52.609] (II) Unloading modesetting
+[    52.609] (II) AMDGPU(0): [DRI2] Setup complete
+[    52.609] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[    52.609] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[    52.619] (II) AMDGPU(0): Front buffer pitch: 17920 bytes
+[    52.619] (II) AMDGPU(0): SYNC extension fences enabled
+[    52.619] (II) AMDGPU(0): Present extension enabled
+[    52.619] (==) AMDGPU(0): DRI3 enabled
+[    52.619] (==) AMDGPU(0): Backing store enabled
+[    52.619] (II) AMDGPU(0): Direct rendering enabled
+[    52.625] (II) AMDGPU(0): Use GLAMOR acceleration.
+[    52.625] (II) AMDGPU(0): Acceleration enabled
+[    52.625] (==) AMDGPU(0): DPMS enabled
+[    52.625] (==) AMDGPU(0): Silken mouse enabled
+[    52.625] (II) AMDGPU(0): Set up textured video (glamor)
+[    52.637] (WW) AMDGPU(0): Option "HotplugDriver" is not used
+[    52.637] (II) Initializing extension Generic Event Extension
+[    52.637] (II) Initializing extension SHAPE
+[    52.637] (II) Initializing extension MIT-SHM
+[    52.638] (II) Initializing extension XInputExtension
+[    52.638] (II) Initializing extension XTEST
+[    52.638] (II) Initializing extension BIG-REQUESTS
+[    52.638] (II) Initializing extension SYNC
+[    52.638] (II) Initializing extension XKEYBOARD
+[    52.638] (II) Initializing extension XC-MISC
+[    52.639] (II) Initializing extension SECURITY
+[    52.639] (II) Initializing extension XFIXES
+[    52.639] (II) Initializing extension RENDER
+[    52.639] (II) Initializing extension RANDR
+[    52.639] (II) Initializing extension COMPOSITE
+[    52.639] (II) Initializing extension DAMAGE
+[    52.639] (II) Initializing extension MIT-SCREEN-SAVER
+[    52.639] (II) Initializing extension DOUBLE-BUFFER
+[    52.639] (II) Initializing extension RECORD
+[    52.639] (II) Initializing extension DPMS
+[    52.639] (II) Initializing extension Present
+[    52.639] (II) Initializing extension DRI3
+[    52.639] (II) Initializing extension X-Resource
+[    52.639] (II) Initializing extension XVideo
+[    52.639] (II) Initializing extension XVideo-MotionCompensation
+[    52.639] (II) Initializing extension GLX
+[    52.642] (II) AIGLX: Loaded and initialized radeonsi
+[    52.642] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    52.642] (II) Initializing extension XFree86-VidModeExtension
+[    52.642] (II) Initializing extension XFree86-DGA
+[    52.642] (II) Initializing extension XFree86-DRI
+[    52.642] (II) Initializing extension DRI2
+[    52.642] (II) AMDGPU(0): Setting screen physical size to 1185 x 423
+[    52.708] (II) config/udev: Adding input device Video Bus (/dev/input/event6)
+[    52.708] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    52.708] (**) Video Bus: Applying InputClass "system-keyboard"
+[    52.708] (II) LoadModule: "libinput"
+[    52.708] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    52.709] (II) Module libinput: vendor="X.Org Foundation"
+[    52.709] 	compiled for 1.21.1.8, module version = 1.4.0
+[    52.709] 	Module class: X.Org XInput Driver
+[    52.709] 	ABI class: X.Org XInput driver, version 24.4
+[    52.709] (II) Using input driver 'libinput' for 'Video Bus'
+[    52.709] (**) Video Bus: always reports core events
+[    52.709] (**) Option "Device" "/dev/input/event6"
+[    52.710] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[    52.710] (II) event6  - Video Bus: device is a keyboard
+[    52.710] (II) event6  - Video Bus: device removed
+[    52.777] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:24/LNXVIDEO:00/input/input6/event6"
+[    52.777] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[    52.777] (**) Option "xkb_model" "pc105+inet"
+[    52.777] (**) Option "xkb_layout" "us"
+[    52.777] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    52.792] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[    52.792] (II) event6  - Video Bus: device is a keyboard
+[    52.793] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    52.793] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    52.793] (**) Power Button: Applying InputClass "system-keyboard"
+[    52.793] (II) Using input driver 'libinput' for 'Power Button'
+[    52.793] (**) Power Button: always reports core events
+[    52.793] (**) Option "Device" "/dev/input/event0"
+[    52.793] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    52.793] (II) event0  - Power Button: device is a keyboard
+[    52.793] (II) event0  - Power Button: device removed
+[    52.817] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    52.817] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    52.817] (**) Option "xkb_model" "pc105+inet"
+[    52.817] (**) Option "xkb_layout" "us"
+[    52.817] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    52.818] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    52.818] (II) event0  - Power Button: device is a keyboard
+[    52.819] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[    52.819] (II) No input driver specified, ignoring this device.
+[    52.819] (II) This device may have been added with another device file.
+[    52.819] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event7)
+[    52.819] (II) No input driver specified, ignoring this device.
+[    52.819] (II) This device may have been added with another device file.
+[    52.820] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=7 (/dev/input/event25)
+[    52.820] (II) No input driver specified, ignoring this device.
+[    52.820] (II) This device may have been added with another device file.
+[    52.820] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=8 (/dev/input/event9)
+[    52.820] (II) No input driver specified, ignoring this device.
+[    52.820] (II) This device may have been added with another device file.
+[    52.820] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=9 (/dev/input/event26)
+[    52.820] (II) No input driver specified, ignoring this device.
+[    52.820] (II) This device may have been added with another device file.
+[    52.821] (II) config/udev: Adding input device   Mouse for Windows (/dev/input/event3)
+[    52.821] (**)   Mouse for Windows: Applying InputClass "libinput pointer catchall"
+[    52.821] (II) Using input driver 'libinput' for '  Mouse for Windows'
+[    52.821] (**)   Mouse for Windows: always reports core events
+[    52.821] (**) Option "Device" "/dev/input/event3"
+[    52.878] (II) event3  -   Mouse for Windows: is tagged by udev as: Mouse
+[    52.878] (II) event3  -   Mouse for Windows: device is a pointer
+[    52.879] (II) event3  -   Mouse for Windows: device removed
+[    52.920] (II) libinput:   Mouse for Windows: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    52.920] (II) libinput:   Mouse for Windows: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    52.920] (II) libinput:   Mouse for Windows: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    52.920] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:65:00.3/usb1/1-4/1-4:1.0/0003:2F24:0135.0001/input/input3/event3"
+[    52.920] (II) XINPUT: Adding extended input device "  Mouse for Windows" (type: MOUSE, id 8)
+[    52.920] (**) Option "AccelerationScheme" "none"
+[    52.920] (**)   Mouse for Windows: (accel) selected scheme none/0
+[    52.920] (**)   Mouse for Windows: (accel) acceleration factor: 2.000
+[    52.920] (**)   Mouse for Windows: (accel) acceleration threshold: 4
+[    52.979] (II) event3  -   Mouse for Windows: is tagged by udev as: Mouse
+[    52.979] (II) event3  -   Mouse for Windows: device is a pointer
+[    52.980] (II) config/udev: Adding input device   Mouse for Windows (/dev/input/mouse0)
+[    52.980] (II) No input driver specified, ignoring this device.
+[    52.980] (II) This device may have been added with another device file.
+[    52.980] (II) config/udev: Adding input device   Mouse for Windows (/dev/input/event4)
+[    52.980] (**)   Mouse for Windows: Applying InputClass "libinput keyboard catchall"
+[    52.980] (**)   Mouse for Windows: Applying InputClass "system-keyboard"
+[    52.980] (II) Using input driver 'libinput' for '  Mouse for Windows'
+[    52.980] (**)   Mouse for Windows: always reports core events
+[    52.980] (**) Option "Device" "/dev/input/event4"
+[    52.981] (II) event4  -   Mouse for Windows: is tagged by udev as: Keyboard
+[    52.982] (II) event4  -   Mouse for Windows: device is a keyboard
+[    52.982] (II) event4  -   Mouse for Windows: device removed
+[    53.013] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:65:00.3/usb1/1-4/1-4:1.1/0003:2F24:0135.0002/input/input4/event4"
+[    53.014] (II) XINPUT: Adding extended input device "  Mouse for Windows" (type: KEYBOARD, id 9)
+[    53.014] (**) Option "xkb_model" "pc105+inet"
+[    53.014] (**) Option "xkb_layout" "us"
+[    53.014] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.015] (II) event4  -   Mouse for Windows: is tagged by udev as: Keyboard
+[    53.015] (II) event4  -   Mouse for Windows: device is a keyboard
+[    53.016] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event8)
+[    53.016] (II) No input driver specified, ignoring this device.
+[    53.016] (II) This device may have been added with another device file.
+[    53.016] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event24)
+[    53.016] (II) No input driver specified, ignoring this device.
+[    53.016] (II) This device may have been added with another device file.
+[    53.017] (II) config/udev: Adding input device Wacom One pen display 11.6" Pen (/dev/input/event27)
+[    53.017] (**) Wacom One pen display 11.6" Pen: Applying InputClass "libinput tablet catchall"
+[    53.017] (**) Wacom One pen display 11.6" Pen: Applying InputClass "Wacom USB tablet class"
+[    53.017] (**) Wacom One pen display 11.6" Pen: Applying InputClass "Wacom tablet class"
+[    53.017] (II) LoadModule: "wacom"
+[    53.017] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[    53.017] (II) Module wacom: vendor="X.Org Foundation"
+[    53.017] 	compiled for 1.21.1.8, module version = 1.1.0
+[    53.017] 	Module class: X.Org XInput Driver
+[    53.017] 	ABI class: X.Org XInput driver, version 24.4
+[    53.017] (II) Build version: 1.1.0
+[    53.017] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[    53.018] (II) Using input driver 'wacom' for 'Wacom One pen display 11.6" Pen'
+[    53.018] (**) Wacom One pen display 11.6" Pen: always reports core events
+[    53.018] (**) Option "Device" "/dev/input/event27"
+[    53.073] (II) wacom: Wacom One pen display 11.6" Pen: type not specified, assuming 'stylus'.
+[    53.073] (II) wacom: Wacom One pen display 11.6" Pen: other types will be automatically added.
+[    53.073] (--) wacom: Wacom One pen display 11.6" Pen stylus: using pressure threshold of 851 for button 1
+[    53.073] (**) wacom: Wacom One pen display 11.6" Pen stylus: panscroll is 0
+[    53.073] (**) wacom: Wacom One pen display 11.6" Pen stylus: panscroll modified to 1300
+[    53.073] (--) wacom: Wacom One pen display 11.6" Pen stylus: maxX=25632 maxY=14418 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    53.073] (II) wacom: Wacom One pen display 11.6" Pen stylus: hotplugging dependent devices.
+[    53.073] (II) wacom: Wacom One pen display 11.6" Pen stylus: hotplugging completed.
+[    53.106] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.3/usb5/5-1/5-1.2/5-1.2:1.0/0003:056A:03CE.0004/input/input34/event27"
+[    53.106] (II) XINPUT: Adding extended input device "Wacom One pen display 11.6" Pen stylus" (type: STYLUS, id 10)
+[    53.107] (**) Wacom One pen display 11.6" Pen stylus: (accel) keeping acceleration scheme 1
+[    53.107] (**) Wacom One pen display 11.6" Pen stylus: (accel) acceleration profile 0
+[    53.107] (**) Wacom One pen display 11.6" Pen stylus: (accel) acceleration factor: 2.000
+[    53.107] (**) Wacom One pen display 11.6" Pen stylus: (accel) acceleration threshold: 4
+[    53.165] (II) config/udev: Adding input device Wacom One pen display 11.6" Pen (/dev/input/mouse1)
+[    53.165] (II) No input driver specified, ignoring this device.
+[    53.165] (II) This device may have been added with another device file.
+[    53.166] (II) config/udev: Adding input device Logitech USB Receiver (/dev/input/event11)
+[    53.166] (**) Logitech USB Receiver: Applying InputClass "libinput pointer catchall"
+[    53.166] (II) Using input driver 'libinput' for 'Logitech USB Receiver'
+[    53.166] (**) Logitech USB Receiver: always reports core events
+[    53.166] (**) Option "Device" "/dev/input/event11"
+[    53.222] (II) event11 - Logitech USB Receiver: is tagged by udev as: Mouse
+[    53.222] (II) event11 - Logitech USB Receiver: device is a pointer
+[    53.222] (II) event11 - Logitech USB Receiver: device removed
+[    53.253] (II) libinput: Logitech USB Receiver: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.254] (II) libinput: Logitech USB Receiver: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.254] (II) libinput: Logitech USB Receiver: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.254] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.3/7-1.3:1.0/0003:046D:C547.0008/input/input11/event11"
+[    53.254] (II) XINPUT: Adding extended input device "Logitech USB Receiver" (type: MOUSE, id 11)
+[    53.254] (**) Option "AccelerationScheme" "none"
+[    53.254] (**) Logitech USB Receiver: (accel) selected scheme none/0
+[    53.254] (**) Logitech USB Receiver: (accel) acceleration factor: 2.000
+[    53.254] (**) Logitech USB Receiver: (accel) acceleration threshold: 4
+[    53.312] (II) event11 - Logitech USB Receiver: is tagged by udev as: Mouse
+[    53.312] (II) event11 - Logitech USB Receiver: device is a pointer
+[    53.313] (II) config/udev: Adding input device Logitech USB Receiver (/dev/input/mouse3)
+[    53.313] (II) No input driver specified, ignoring this device.
+[    53.313] (II) This device may have been added with another device file.
+[    53.314] (II) config/udev: Adding input device Logitech USB Receiver Keyboard (/dev/input/event12)
+[    53.314] (**) Logitech USB Receiver Keyboard: Applying InputClass "libinput keyboard catchall"
+[    53.314] (**) Logitech USB Receiver Keyboard: Applying InputClass "system-keyboard"
+[    53.314] (II) Using input driver 'libinput' for 'Logitech USB Receiver Keyboard'
+[    53.314] (**) Logitech USB Receiver Keyboard: always reports core events
+[    53.314] (**) Option "Device" "/dev/input/event12"
+[    53.315] (II) event12 - Logitech USB Receiver Keyboard: is tagged by udev as: Keyboard
+[    53.315] (II) event12 - Logitech USB Receiver Keyboard: device is a keyboard
+[    53.316] (II) event12 - Logitech USB Receiver Keyboard: device removed
+[    53.347] (II) libinput: Logitech USB Receiver Keyboard: needs a virtual subdevice
+[    53.347] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.3/7-1.3:1.1/0003:046D:C547.0009/input/input12/event12"
+[    53.347] (II) XINPUT: Adding extended input device "Logitech USB Receiver Keyboard" (type: MOUSE, id 12)
+[    53.347] (**) Option "AccelerationScheme" "none"
+[    53.347] (**) Logitech USB Receiver Keyboard: (accel) selected scheme none/0
+[    53.347] (**) Logitech USB Receiver Keyboard: (accel) acceleration factor: 2.000
+[    53.347] (**) Logitech USB Receiver Keyboard: (accel) acceleration threshold: 4
+[    53.349] (II) event12 - Logitech USB Receiver Keyboard: is tagged by udev as: Keyboard
+[    53.350] (II) event12 - Logitech USB Receiver Keyboard: device is a keyboard
+[    53.351] (II) config/udev: Adding input device Milsky 68EC-XRGB (/dev/input/event13)
+[    53.351] (**) Milsky 68EC-XRGB: Applying InputClass "libinput keyboard catchall"
+[    53.351] (**) Milsky 68EC-XRGB: Applying InputClass "system-keyboard"
+[    53.351] (II) Using input driver 'libinput' for 'Milsky 68EC-XRGB'
+[    53.351] (**) Milsky 68EC-XRGB: always reports core events
+[    53.351] (**) Option "Device" "/dev/input/event13"
+[    53.352] (II) event13 - Milsky 68EC-XRGB: is tagged by udev as: Keyboard
+[    53.352] (II) event13 - Milsky 68EC-XRGB: device is a keyboard
+[    53.352] (II) event13 - Milsky 68EC-XRGB: device removed
+[    53.383] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.4/7-1.4:1.0/0003:0483:5032.000A/input/input13/event13"
+[    53.384] (II) XINPUT: Adding extended input device "Milsky 68EC-XRGB" (type: KEYBOARD, id 13)
+[    53.384] (**) Option "xkb_model" "pc105+inet"
+[    53.384] (**) Option "xkb_layout" "us"
+[    53.384] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.386] (II) event13 - Milsky 68EC-XRGB: is tagged by udev as: Keyboard
+[    53.386] (II) event13 - Milsky 68EC-XRGB: device is a keyboard
+[    53.387] (II) config/udev: Adding input device Milsky 68EC-XRGB Consumer Control (/dev/input/event14)
+[    53.387] (**) Milsky 68EC-XRGB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    53.387] (**) Milsky 68EC-XRGB Consumer Control: Applying InputClass "system-keyboard"
+[    53.387] (II) Using input driver 'libinput' for 'Milsky 68EC-XRGB Consumer Control'
+[    53.387] (**) Milsky 68EC-XRGB Consumer Control: always reports core events
+[    53.387] (**) Option "Device" "/dev/input/event14"
+[    53.388] (II) event14 - Milsky 68EC-XRGB Consumer Control: is tagged by udev as: Keyboard
+[    53.388] (II) event14 - Milsky 68EC-XRGB Consumer Control: device is a keyboard
+[    53.388] (II) event14 - Milsky 68EC-XRGB Consumer Control: device removed
+[    53.410] (II) libinput: Milsky 68EC-XRGB Consumer Control: needs a virtual subdevice
+[    53.410] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.4/7-1.4:1.2/0003:0483:5032.000F/input/input18/event14"
+[    53.410] (II) XINPUT: Adding extended input device "Milsky 68EC-XRGB Consumer Control" (type: MOUSE, id 14)
+[    53.410] (**) Option "AccelerationScheme" "none"
+[    53.410] (**) Milsky 68EC-XRGB Consumer Control: (accel) selected scheme none/0
+[    53.410] (**) Milsky 68EC-XRGB Consumer Control: (accel) acceleration factor: 2.000
+[    53.410] (**) Milsky 68EC-XRGB Consumer Control: (accel) acceleration threshold: 4
+[    53.412] (II) event14 - Milsky 68EC-XRGB Consumer Control: is tagged by udev as: Keyboard
+[    53.412] (II) event14 - Milsky 68EC-XRGB Consumer Control: device is a keyboard
+[    53.413] (II) config/udev: Adding input device Milsky 68EC-XRGB System Control (/dev/input/event18)
+[    53.413] (**) Milsky 68EC-XRGB System Control: Applying InputClass "libinput keyboard catchall"
+[    53.413] (**) Milsky 68EC-XRGB System Control: Applying InputClass "system-keyboard"
+[    53.413] (II) Using input driver 'libinput' for 'Milsky 68EC-XRGB System Control'
+[    53.413] (**) Milsky 68EC-XRGB System Control: always reports core events
+[    53.413] (**) Option "Device" "/dev/input/event18"
+[    53.414] (II) event18 - Milsky 68EC-XRGB System Control: is tagged by udev as: Keyboard
+[    53.414] (II) event18 - Milsky 68EC-XRGB System Control: device is a keyboard
+[    53.415] (II) event18 - Milsky 68EC-XRGB System Control: device removed
+[    53.447] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.4/7-1.4:1.2/0003:0483:5032.000F/input/input19/event18"
+[    53.447] (II) XINPUT: Adding extended input device "Milsky 68EC-XRGB System Control" (type: KEYBOARD, id 15)
+[    53.447] (**) Option "xkb_model" "pc105+inet"
+[    53.447] (**) Option "xkb_layout" "us"
+[    53.447] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.449] (II) event18 - Milsky 68EC-XRGB System Control: is tagged by udev as: Keyboard
+[    53.449] (II) event18 - Milsky 68EC-XRGB System Control: device is a keyboard
+[    53.450] (II) config/udev: Adding input device Milsky 68EC-XRGB Keyboard (/dev/input/event19)
+[    53.450] (**) Milsky 68EC-XRGB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    53.450] (**) Milsky 68EC-XRGB Keyboard: Applying InputClass "system-keyboard"
+[    53.450] (II) Using input driver 'libinput' for 'Milsky 68EC-XRGB Keyboard'
+[    53.450] (**) Milsky 68EC-XRGB Keyboard: always reports core events
+[    53.450] (**) Option "Device" "/dev/input/event19"
+[    53.451] (II) event19 - Milsky 68EC-XRGB Keyboard: is tagged by udev as: Keyboard
+[    53.451] (II) event19 - Milsky 68EC-XRGB Keyboard: device is a keyboard
+[    53.451] (II) event19 - Milsky 68EC-XRGB Keyboard: device removed
+[    53.493] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.4/7-1.4:1.2/0003:0483:5032.000F/input/input20/event19"
+[    53.493] (II) XINPUT: Adding extended input device "Milsky 68EC-XRGB Keyboard" (type: KEYBOARD, id 16)
+[    53.493] (**) Option "xkb_model" "pc105+inet"
+[    53.493] (**) Option "xkb_layout" "us"
+[    53.493] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.495] (II) event19 - Milsky 68EC-XRGB Keyboard: is tagged by udev as: Keyboard
+[    53.495] (II) event19 - Milsky 68EC-XRGB Keyboard: device is a keyboard
+[    53.496] (II) config/udev: Adding input device Milsky 68EC-XRGB Mouse (/dev/input/event17)
+[    53.496] (**) Milsky 68EC-XRGB Mouse: Applying InputClass "libinput pointer catchall"
+[    53.496] (II) Using input driver 'libinput' for 'Milsky 68EC-XRGB Mouse'
+[    53.496] (**) Milsky 68EC-XRGB Mouse: always reports core events
+[    53.496] (**) Option "Device" "/dev/input/event17"
+[    53.498] (II) event17 - Milsky 68EC-XRGB Mouse: is tagged by udev as: Mouse
+[    53.498] (II) event17 - Milsky 68EC-XRGB Mouse: device is a pointer
+[    53.498] (II) event17 - Milsky 68EC-XRGB Mouse: device removed
+[    53.557] (II) libinput: Milsky 68EC-XRGB Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.557] (II) libinput: Milsky 68EC-XRGB Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.557] (II) libinput: Milsky 68EC-XRGB Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.557] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.4/7-1.4:1.2/0003:0483:5032.000F/input/input21/event17"
+[    53.557] (II) XINPUT: Adding extended input device "Milsky 68EC-XRGB Mouse" (type: MOUSE, id 17)
+[    53.557] (**) Option "AccelerationScheme" "none"
+[    53.557] (**) Milsky 68EC-XRGB Mouse: (accel) selected scheme none/0
+[    53.557] (**) Milsky 68EC-XRGB Mouse: (accel) acceleration factor: 2.000
+[    53.557] (**) Milsky 68EC-XRGB Mouse: (accel) acceleration threshold: 4
+[    53.559] (II) event17 - Milsky 68EC-XRGB Mouse: is tagged by udev as: Mouse
+[    53.559] (II) event17 - Milsky 68EC-XRGB Mouse: device is a pointer
+[    53.560] (II) config/udev: Adding input device Milsky 68EC-XRGB Mouse (/dev/input/mouse6)
+[    53.560] (II) No input driver specified, ignoring this device.
+[    53.560] (II) This device may have been added with another device file.
+[    53.561] (II) config/udev: Adding input device PNP0C50:00 0911:5288 Mouse (/dev/input/event15)
+[    53.561] (**) PNP0C50:00 0911:5288 Mouse: Applying InputClass "libinput pointer catchall"
+[    53.561] (II) Using input driver 'libinput' for 'PNP0C50:00 0911:5288 Mouse'
+[    53.561] (**) PNP0C50:00 0911:5288 Mouse: always reports core events
+[    53.561] (**) Option "Device" "/dev/input/event15"
+[    53.561] (II) event15 - PNP0C50:00 0911:5288 Mouse: is tagged by udev as: Mouse Pointingstick
+[    53.562] (II) event15 - PNP0C50:00 0911:5288 Mouse: device is a pointer
+[    53.563] (II) event15 - PNP0C50:00 0911:5288 Mouse: device removed
+[    53.600] (II) libinput: PNP0C50:00 0911:5288 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.600] (II) libinput: PNP0C50:00 0911:5288 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.600] (II) libinput: PNP0C50:00 0911:5288 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.600] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-PNP0C50:00/0018:0911:5288.000E/input/input22/event15"
+[    53.600] (II) XINPUT: Adding extended input device "PNP0C50:00 0911:5288 Mouse" (type: MOUSE, id 18)
+[    53.600] (**) Option "AccelerationScheme" "none"
+[    53.600] (**) PNP0C50:00 0911:5288 Mouse: (accel) selected scheme none/0
+[    53.600] (**) PNP0C50:00 0911:5288 Mouse: (accel) acceleration factor: 2.000
+[    53.600] (**) PNP0C50:00 0911:5288 Mouse: (accel) acceleration threshold: 4
+[    53.602] (II) event15 - PNP0C50:00 0911:5288 Mouse: is tagged by udev as: Mouse Pointingstick
+[    53.602] (II) event15 - PNP0C50:00 0911:5288 Mouse: device is a pointer
+[    53.604] (II) config/udev: Adding input device PNP0C50:00 0911:5288 Mouse (/dev/input/mouse4)
+[    53.604] (II) No input driver specified, ignoring this device.
+[    53.604] (II) This device may have been added with another device file.
+[    53.605] (II) config/udev: Adding input device PNP0C50:00 0911:5288 Touchpad (/dev/input/event16)
+[    53.605] (**) PNP0C50:00 0911:5288 Touchpad: Applying InputClass "libinput touchpad catchall"
+[    53.605] (II) Using input driver 'libinput' for 'PNP0C50:00 0911:5288 Touchpad'
+[    53.605] (**) PNP0C50:00 0911:5288 Touchpad: always reports core events
+[    53.605] (**) Option "Device" "/dev/input/event16"
+[    53.605] (II) event16 - PNP0C50:00 0911:5288 Touchpad: is tagged by udev as: Touchpad
+[    53.607] (II) event16 - PNP0C50:00 0911:5288 Touchpad: device is a touchpad
+[    53.608] (II) event16 - PNP0C50:00 0911:5288 Touchpad: device removed
+[    53.653] (II) libinput: PNP0C50:00 0911:5288 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.653] (II) libinput: PNP0C50:00 0911:5288 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.653] (II) libinput: PNP0C50:00 0911:5288 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    53.654] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-PNP0C50:00/0018:0911:5288.000E/input/input23/event16"
+[    53.654] (II) XINPUT: Adding extended input device "PNP0C50:00 0911:5288 Touchpad" (type: TOUCHPAD, id 19)
+[    53.656] (**) Option "AccelerationScheme" "none"
+[    53.656] (**) PNP0C50:00 0911:5288 Touchpad: (accel) selected scheme none/0
+[    53.656] (**) PNP0C50:00 0911:5288 Touchpad: (accel) acceleration factor: 2.000
+[    53.656] (**) PNP0C50:00 0911:5288 Touchpad: (accel) acceleration threshold: 4
+[    53.657] (II) event16 - PNP0C50:00 0911:5288 Touchpad: is tagged by udev as: Touchpad
+[    53.659] (II) event16 - PNP0C50:00 0911:5288 Touchpad: device is a touchpad
+[    53.660] (II) config/udev: Adding input device PNP0C50:00 0911:5288 Touchpad (/dev/input/mouse5)
+[    53.660] (II) No input driver specified, ignoring this device.
+[    53.660] (II) This device may have been added with another device file.
+[    53.661] (II) config/udev: Adding input device GXTP7385:00 27C6:0113 (/dev/input/event20)
+[    53.661] (**) GXTP7385:00 27C6:0113: Applying InputClass "libinput touchscreen catchall"
+[    53.661] (II) Using input driver 'libinput' for 'GXTP7385:00 27C6:0113'
+[    53.661] (**) GXTP7385:00 27C6:0113: always reports core events
+[    53.661] (**) Option "Device" "/dev/input/event20"
+[    53.662] (II) event20 - GXTP7385:00 27C6:0113: is tagged by udev as: Touchscreen
+[    53.662] (II) event20 - GXTP7385:00 27C6:0113: device is a touch device
+[    53.662] (II) event20 - GXTP7385:00 27C6:0113: device removed
+[    53.711] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-GXTP7385:00/0018:27C6:0113.000C/input/input24/event20"
+[    53.711] (II) XINPUT: Adding extended input device "GXTP7385:00 27C6:0113" (type: TOUCHSCREEN, id 20)
+[    53.711] (**) Option "AccelerationScheme" "none"
+[    53.711] (**) GXTP7385:00 27C6:0113: (accel) selected scheme none/0
+[    53.711] (**) GXTP7385:00 27C6:0113: (accel) acceleration factor: 2.000
+[    53.711] (**) GXTP7385:00 27C6:0113: (accel) acceleration threshold: 4
+[    53.712] (II) event20 - GXTP7385:00 27C6:0113: is tagged by udev as: Touchscreen
+[    53.713] (II) event20 - GXTP7385:00 27C6:0113: device is a touch device
+[    53.713] (II) config/udev: Adding input device GXTP7385:00 27C6:0113 (/dev/input/mouse7)
+[    53.713] (II) No input driver specified, ignoring this device.
+[    53.713] (II) This device may have been added with another device file.
+[    53.714] (II) config/udev: Adding input device GXTP7385:00 27C6:0113 Stylus (/dev/input/event21)
+[    53.714] (**) GXTP7385:00 27C6:0113 Stylus: Applying InputClass "libinput tablet catchall"
+[    53.714] (II) Using input driver 'libinput' for 'GXTP7385:00 27C6:0113 Stylus'
+[    53.714] (**) GXTP7385:00 27C6:0113 Stylus: always reports core events
+[    53.714] (**) Option "Device" "/dev/input/event21"
+[    53.715] (II) event21 - GXTP7385:00 27C6:0113 Stylus: is tagged by udev as: Tablet
+[    53.736] (II) event21 - GXTP7385:00 27C6:0113 Stylus: tablet 'GXTP7385:00 27C6:0113 Stylus' unknown to libwacom
+[    53.736] (II) event21 - GXTP7385:00 27C6:0113 Stylus: device is a tablet
+[    53.736] (II) event21 - GXTP7385:00 27C6:0113 Stylus: device removed
+[    53.767] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-GXTP7385:00/0018:27C6:0113.000C/input/input25/event21"
+[    53.767] (II) XINPUT: Adding extended input device "GXTP7385:00 27C6:0113 Stylus" (type: TABLET, id 21)
+[    53.769] (II) event21 - GXTP7385:00 27C6:0113 Stylus: is tagged by udev as: Tablet
+[    53.783] (II) event21 - GXTP7385:00 27C6:0113 Stylus: tablet 'GXTP7385:00 27C6:0113 Stylus' unknown to libwacom
+[    53.783] (II) event21 - GXTP7385:00 27C6:0113 Stylus: device is a tablet
+[    53.783] (II) config/udev: Adding input device GXTP7385:00 27C6:0113 Stylus (/dev/input/mouse8)
+[    53.783] (II) No input driver specified, ignoring this device.
+[    53.783] (II) This device may have been added with another device file.
+[    53.783] (II) config/udev: Adding input device GXTP7385:00 27C6:0113 UNKNOWN (/dev/input/event22)
+[    53.783] (II) No input driver specified, ignoring this device.
+[    53.783] (II) This device may have been added with another device file.
+[    53.784] (II) config/udev: Adding input device GXTP7385:00 27C6:0113 Keyboard (/dev/input/event23)
+[    53.784] (**) GXTP7385:00 27C6:0113 Keyboard: Applying InputClass "libinput keyboard catchall"
+[    53.784] (**) GXTP7385:00 27C6:0113 Keyboard: Applying InputClass "system-keyboard"
+[    53.784] (II) Using input driver 'libinput' for 'GXTP7385:00 27C6:0113 Keyboard'
+[    53.784] (**) GXTP7385:00 27C6:0113 Keyboard: always reports core events
+[    53.784] (**) Option "Device" "/dev/input/event23"
+[    53.784] (II) event23 - GXTP7385:00 27C6:0113 Keyboard: is tagged by udev as: Keyboard
+[    53.784] (II) event23 - GXTP7385:00 27C6:0113 Keyboard: device is a keyboard
+[    53.785] (II) event23 - GXTP7385:00 27C6:0113 Keyboard: device removed
+[    53.840] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-GXTP7385:00/0018:27C6:0113.000C/input/input27/event23"
+[    53.840] (II) XINPUT: Adding extended input device "GXTP7385:00 27C6:0113 Keyboard" (type: KEYBOARD, id 22)
+[    53.840] (**) Option "xkb_model" "pc105+inet"
+[    53.840] (**) Option "xkb_layout" "us"
+[    53.840] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.842] (II) event23 - GXTP7385:00 27C6:0113 Keyboard: is tagged by udev as: Keyboard
+[    53.842] (II) event23 - GXTP7385:00 27C6:0113 Keyboard: device is a keyboard
+[    53.843] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[    53.843] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    53.843] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[    53.843] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    53.843] (**) AT Translated Set 2 keyboard: always reports core events
+[    53.843] (**) Option "Device" "/dev/input/event2"
+[    53.843] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    53.843] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    53.844] (II) event2  - AT Translated Set 2 keyboard: device removed
+[    53.867] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[    53.867] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 23)
+[    53.867] (**) Option "xkb_model" "pc105+inet"
+[    53.867] (**) Option "xkb_layout" "us"
+[    53.867] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.868] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    53.868] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    53.870] (II) config/udev: Adding input device PC Speaker (/dev/input/event5)
+[    53.870] (II) No input driver specified, ignoring this device.
+[    53.870] (II) This device may have been added with another device file.
+[    53.876] (**) Wacom One pen display 11.6" Pen eraser: Applying InputClass "libinput tablet catchall"
+[    53.876] (**) Wacom One pen display 11.6" Pen eraser: Applying InputClass "Wacom USB tablet class"
+[    53.876] (**) Wacom One pen display 11.6" Pen eraser: Applying InputClass "Wacom tablet class"
+[    53.876] (II) Using input driver 'wacom' for 'Wacom One pen display 11.6" Pen eraser'
+[    53.876] (**) Wacom One pen display 11.6" Pen eraser: always reports core events
+[    53.876] (**) Option "Device" "/dev/input/event27"
+[    53.876] (**) Option "Type" "eraser"
+[    53.876] (**) wacom: Wacom One pen display 11.6" Pen eraser: panscroll is 1300
+[    53.876] (**) wacom: Wacom One pen display 11.6" Pen eraser: panscroll modified to 1300
+[    53.876] (--) wacom: Wacom One pen display 11.6" Pen eraser: maxX=25632 maxY=14418 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    53.910] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.3/usb5/5-1/5-1.2/5-1.2:1.0/0003:056A:03CE.0004/input/input34/event27"
+[    53.910] (II) XINPUT: Adding extended input device "Wacom One pen display 11.6" Pen eraser" (type: ERASER, id 24)
+[    53.910] (**) Wacom One pen display 11.6" Pen eraser: (accel) keeping acceleration scheme 1
+[    53.910] (**) Wacom One pen display 11.6" Pen eraser: (accel) acceleration profile 0
+[    53.910] (**) Wacom One pen display 11.6" Pen eraser: (accel) acceleration factor: 2.000
+[    53.910] (**) Wacom One pen display 11.6" Pen eraser: (accel) acceleration threshold: 4
+[    53.911] (**) Logitech USB Receiver Keyboard: Applying InputClass "libinput keyboard catchall"
+[    53.911] (**) Logitech USB Receiver Keyboard: Applying InputClass "system-keyboard"
+[    53.911] (II) Using input driver 'libinput' for 'Logitech USB Receiver Keyboard'
+[    53.911] (**) Logitech USB Receiver Keyboard: always reports core events
+[    53.911] (**) Option "Device" "/dev/input/event12"
+[    53.911] (II) libinput: Logitech USB Receiver Keyboard: is a virtual subdevice
+[    53.911] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.3/7-1.3:1.1/0003:046D:C547.0009/input/input12/event12"
+[    53.911] (II) XINPUT: Adding extended input device "Logitech USB Receiver Keyboard" (type: KEYBOARD, id 25)
+[    53.911] (**) Option "xkb_model" "pc105+inet"
+[    53.911] (**) Option "xkb_layout" "us"
+[    53.911] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[    53.911] (**) Milsky 68EC-XRGB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    53.911] (**) Milsky 68EC-XRGB Consumer Control: Applying InputClass "system-keyboard"
+[    53.911] (II) Using input driver 'libinput' for 'Milsky 68EC-XRGB Consumer Control'
+[    53.911] (**) Milsky 68EC-XRGB Consumer Control: always reports core events
+[    53.911] (**) Option "Device" "/dev/input/event14"
+[    53.911] (II) libinput: Milsky 68EC-XRGB Consumer Control: is a virtual subdevice
+[    53.911] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:67:00.4/usb7/7-1/7-1.4/7-1.4:1.2/0003:0483:5032.000F/input/input18/event14"
+[    53.911] (II) XINPUT: Adding extended input device "Milsky 68EC-XRGB Consumer Control" (type: KEYBOARD, id 26)
+[    53.911] (**) Option "xkb_model" "pc105+inet"
+[    53.911] (**) Option "xkb_layout" "us"
+[    53.911] (**) Option "xkb_options" "terminate:ctrl_alt_bksp"
+[   135.773] (II) AMDGPU(0): EDID vendor "WAC", prod id 4224
+[   135.773] (II) AMDGPU(0): Using EDID range info for horizontal sync
+[   135.773] (II) AMDGPU(0): Using EDID range info for vertical refresh
+[   135.773] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[   135.773] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[   135.773] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[   135.773] (II) AMDGPU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[   136.219] (II) AMDGPU(0): EDID vendor "WAC", prod id 4224
+[   136.219] (II) AMDGPU(0): Using hsync ranges from config file
+[   136.219] (II) AMDGPU(0): Using vrefresh ranges from config file
+[   136.219] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[   136.219] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[   136.219] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[   136.219] (II) AMDGPU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[   136.355] (II) AMDGPU(0): EDID vendor "WAC", prod id 4224
+[   136.355] (II) AMDGPU(0): Using hsync ranges from config file
+[   136.355] (II) AMDGPU(0): Using vrefresh ranges from config file
+[   136.355] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[   136.355] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[   136.355] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[   136.355] (II) AMDGPU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[   137.039] (EE) AMDGPU(0): drmmode_do_crtc_dpms cannot get last vblank counter
+[   137.043] (WW) AMDGPU(0): flip queue failed: Invalid argument
+[   137.043] (WW) AMDGPU(0): Page flip failed: Invalid argument
+[   137.053] (II) AMDGPU(0): Allocate new frame buffer 4480x1920
+[   137.054] (II) AMDGPU(0):  => pitch 17920 bytes
+[   137.092] (II) AMDGPU(0): Allocate new frame buffer 1080x1920
+[   137.092] (II) AMDGPU(0):  => pitch 4608 bytes
+[   835.294] (II) AMDGPU(0): EDID vendor "WAC", prod id 4224
+[   835.294] (II) AMDGPU(0): Using hsync ranges from config file
+[   835.294] (II) AMDGPU(0): Using vrefresh ranges from config file
+[   835.294] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[   835.294] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[   835.294] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[   835.294] (II) AMDGPU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
