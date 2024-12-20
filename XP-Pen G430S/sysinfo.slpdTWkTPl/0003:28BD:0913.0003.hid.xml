@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>9</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>03</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_count>3</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_maximum>32767</logical_maximum>
+      <report_count>2</report_count>
+      <report_size>16</report_size>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <usage>digitizer_tip_pressure<!-- Tip pressure (30h, dynamic value) --></usage>
+      <logical_maximum>2047</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>16</report_size>
+      <input>
+        <variable/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <report_id>1</report_id>
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>05</usage_maximum>
+      <report_count>5</report_count>
+      <report_size>1</report_size>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <report_count>3</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <report_count>2</report_count>
+      <report_size>16</report_size>
+      <logical_minimum>-32768</logical_minimum>
+      <logical_maximum>32767</logical_maximum>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+      <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+      <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+      <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
+      <report_count>1</report_count>
+      <report_size>8</report_size>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>6</report_id>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_kb_leftcontrol<!-- Keyboard left control (E0h, dynamic value) --></usage_minimum>
+    <usage_maximum>keyboard_kb_right_gui<!-- Keyboard right GUI (E7h, dynamic value) --></usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>8</report_count>
+    <input>
+      <variable/>
+    </input>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_none<!-- No event (00h, selector) --></usage_minimum>
+    <usage_maximum>FF</usage_maximum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>6</report_count>
+    <input/>
+  </COLLECTION>
+</descriptor>

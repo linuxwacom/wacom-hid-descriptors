@@ -1,0 +1,90 @@
+Name            : xf86-input-wacom
+Version         : 1.2.0-1
+Description     : X.Org Wacom tablet driver
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/xf86-input-wacom
+Licenses        : GPL
+Groups          : None
+Provides        : None
+Depends On      : libxi  libxinerama  libxrandr  systemd-libs
+Optional Deps   : None
+Required By     : None
+Optional For    : None
+Conflicts With  : xorg-server<21.1.1  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 241.49 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Thu Apr  6 08:48:52 2023
+Install Date    : Fri May  5 10:12:59 2023
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : libwacom
+Version         : 2.8.0-1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/libwacom/wiki
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  libgudev  glibc
+Optional Deps   : python-libevdev: for libwacom-show-stylus [installed]
+                  python-pyudev: for libwacom-show-stylus [installed]
+Required By     : gnome-control-center  gnome-settings-daemon  libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 719.57 KiB
+Packager        : Unknown Packager
+Build Date      : Sat Oct 21 14:18:03 2023
+Install Date    : Sat Oct 21 14:18:24 2023
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : None
+
+Name            : libinput
+Version         : 1.24.0-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://wayland.freedesktop.org/libinput/doc/1.24.0/
+Licenses        : custom:X11
+Groups          : None
+Provides        : None
+Depends On      : mtdev  systemd  libevdev  libwacom  systemd-libs  glibc
+Optional Deps   : gtk4: libinput debug-gui [installed]
+                  python-pyudev: libinput measure [installed]
+                  python-libevdev: libinput measure [installed]
+Required By     : clutter  gamescope-plus  mutter-performance  qt5-base  qt6-base  touchegg  wlUSERNAMEs  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1103.71 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Fri Aug 25 08:54:16 2023
+Install Date    : Sun Aug 27 17:16:55 2023
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.4.0-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : custom:MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput  glibc
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 105.46 KiB
+Packager        : Unknown Packager
+Build Date      : Wed Oct 18 19:08:28 2023
+Install Date    : Wed Oct 18 19:08:42 2023
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : None

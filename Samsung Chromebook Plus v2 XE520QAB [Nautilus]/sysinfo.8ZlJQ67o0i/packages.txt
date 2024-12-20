@@ -1,0 +1,68 @@
+Name            : libwacom
+Version         : 2.7.0-1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/libwacom/wiki
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  systemd  libgudev
+Optional Deps   : python-libevdev: for libwacom-show-stylus
+                  python-pyudev: for libwacom-show-stylus
+Required By     : gnome-settings-daemon  libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 712.70 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Wed May 17 07:21:23 2023
+Install Date    : Sun Aug 20 03:36:56 2023
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : libinput
+Version         : 1.23.0-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://gitlab.freedesktop.org/libinput
+Licenses        : custom:X11
+Groups          : None
+Provides        : None
+Depends On      : mtdev  systemd  libevdev  libwacom
+Optional Deps   : gtk4: libinput debug-gui [installed]
+                  python-pyudev: libinput measure
+                  python-libevdev: libinput measure
+Required By     : clutter  mutter  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1102.54 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Sun Mar 26 00:33:35 2023
+Install Date    : Sun Aug 20 03:36:56 2023
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.3.0-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : custom:MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 105.02 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Tue Apr  4 12:32:28 2023
+Install Date    : Sun Aug 20 03:37:08 2023
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature

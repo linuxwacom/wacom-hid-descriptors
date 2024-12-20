@@ -1,0 +1,1944 @@
+[     8.895] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[     8.895] Current Operating System: Linux HOSTNAME 5.15.0-89-generic #99-Ubuntu SMP Mon Oct 30 20:42:41 UTC 2023 x86_64
+[     8.895] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-89-generic root=UUID=6e2f7438-d3e5-4651-8e38-23a351566b99 ro quiet splash
+[     8.895] xorg-server 2:21.1.4-2ubuntu1.7~22.04.2 (For technical support please see http://www.ubuntu.com/support) 
+[     8.895] Current version of pixman: 0.40.0
+[     8.895] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     8.895] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     8.895] (==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec  2 10:33:46 2023
+[     8.904] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     8.913] (==) ServerLayout "layout"
+[     8.913] (==) No screen section available. Using defaults.
+[     8.913] (**) |-->Screen "Default Screen Section" (0)
+[     8.913] (**) |   |-->Monitor "<default monitor>"
+[     8.916] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     8.916] (==) Automatically adding devices
+[     8.916] (==) Automatically enabling devices
+[     8.916] (==) Automatically adding GPU devices
+[     8.916] (==) Automatically binding GPU devices
+[     8.916] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     8.927] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     8.927] 	Entry deleted from font path.
+[     8.927] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     8.927] 	Entry deleted from font path.
+[     8.927] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     8.927] 	Entry deleted from font path.
+[     8.932] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     8.932] 	Entry deleted from font path.
+[     8.932] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     8.932] 	Entry deleted from font path.
+[     8.932] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[     8.932] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     8.932] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     8.932] (II) Loader magic: 0x558824697020
+[     8.932] (II) Module ABI versions:
+[     8.932] 	X.Org ANSI C Emulation: 0.4
+[     8.932] 	X.Org Video Driver: 25.2
+[     8.932] 	X.Org XInput driver : 24.4
+[     8.932] 	X.Org Server Extension : 10.0
+[     8.933] (++) using VT number 7
+
+[     8.933] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     8.934] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     8.934] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[     8.945] (II) xfree86: Adding drm device (/dev/dri/card1)
+[     8.945] (II) Platform probe for /sys/devices/pci0000:00/0000:00:1c.4/0000:03:00.0/drm/card1
+[     8.946] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/x86_64-linux-gnu/nvidia/xorg,/usr/lib/xorg/modules"
+[     8.949] (--) PCI:*(0@0:2:0) 8086:5916:1028:07a8 rev 2, Mem @ 0xed000000/16777216, 0xc0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[     8.949] (--) PCI: (3@0:0:0) 10de:134e:1028:07a8 rev 162, Mem @ 0xee000000/16777216, 0xd0000000/268435456, 0xe0000000/33554432, I/O @ 0x0000d000/128, BIOS @ 0x????????/524288
+[     8.950] (II) LoadModule: "glx"
+[     8.966] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     9.001] (II) Module glx: vendor="X.Org Foundation"
+[     9.002] 	compiled for 1.21.1.4, module version = 1.0.0
+[     9.002] 	ABI class: X.Org Server Extension, version 10.0
+[     9.002] (II) Applying OutputClass "nvidia" to /dev/dri/card1
+[     9.002] 	loading driver: nvidia
+[     9.131] (==) Matched nvidia as autoconfigured driver 0
+[     9.131] (==) Matched nouveau as autoconfigured driver 1
+[     9.131] (==) Matched modesetting as autoconfigured driver 2
+[     9.131] (==) Matched fbdev as autoconfigured driver 3
+[     9.131] (==) Matched vesa as autoconfigured driver 4
+[     9.131] (==) Assigned the driver to the xf86ConfigLayout
+[     9.131] (II) LoadModule: "nvidia"
+[     9.131] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/nvidia_drv.so
+[     9.505] (II) Module nvidia: vendor="NVIDIA Corporation"
+[     9.505] 	compiled for 1.6.99.901, module version = 1.0.0
+[     9.505] 	Module class: X.Org Video Driver
+[     9.506] (II) LoadModule: "nouveau"
+[     9.507] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[     9.513] (II) Module nouveau: vendor="X.Org Foundation"
+[     9.513] 	compiled for 1.21.1.3, module version = 1.0.17
+[     9.513] 	Module class: X.Org Video Driver
+[     9.513] 	ABI class: X.Org Video Driver, version 25.2
+[     9.513] (II) LoadModule: "modesetting"
+[     9.514] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     9.517] (II) Module modesetting: vendor="X.Org Foundation"
+[     9.517] 	compiled for 1.21.1.4, module version = 1.21.1
+[     9.517] 	Module class: X.Org Video Driver
+[     9.517] 	ABI class: X.Org Video Driver, version 25.2
+[     9.517] (II) LoadModule: "fbdev"
+[     9.517] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     9.520] (II) Module fbdev: vendor="X.Org Foundation"
+[     9.520] 	compiled for 1.21.1.3, module version = 0.5.0
+[     9.520] 	Module class: X.Org Video Driver
+[     9.520] 	ABI class: X.Org Video Driver, version 25.2
+[     9.520] (II) LoadModule: "vesa"
+[     9.520] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[     9.524] (II) Module vesa: vendor="X.Org Foundation"
+[     9.524] 	compiled for 1.21.1.3, module version = 2.5.0
+[     9.524] 	Module class: X.Org Video Driver
+[     9.524] 	ABI class: X.Org Video Driver, version 25.2
+[     9.524] (II) NVIDIA dlloader X Driver  535.129.03  Thu Oct 19 18:44:59 UTC 2023
+[     9.524] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[     9.527] (II) NOUVEAU driver Date:   Sat Jan 23 12:24:42 2021 -0500
+[     9.527] (II) NOUVEAU driver for NVIDIA chipset families :
+[     9.527] 	RIVA TNT            (NV04)
+[     9.527] 	RIVA TNT2           (NV05)
+[     9.527] 	GeForce 256         (NV10)
+[     9.527] 	GeForce 2           (NV11, NV15)
+[     9.528] 	GeForce 4MX         (NV17, NV18)
+[     9.528] 	GeForce 3           (NV20)
+[     9.528] 	GeForce 4Ti         (NV25, NV28)
+[     9.528] 	GeForce FX          (NV3x)
+[     9.528] 	GeForce 6           (NV4x)
+[     9.528] 	GeForce 7           (G7x)
+[     9.528] 	GeForce 8           (G8x)
+[     9.528] 	GeForce 9           (G9x)
+[     9.528] 	GeForce GTX 2xx/3xx (GT2xx)
+[     9.528] 	GeForce GTX 4xx/5xx (GFxxx)
+[     9.528] 	GeForce GTX 6xx/7xx (GKxxx)
+[     9.528] 	GeForce GTX 9xx     (GMxxx)
+[     9.528] 	GeForce GTX 10xx    (GPxxx)
+[     9.528] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     9.528] (II) FBDEV: driver for framebuffer: fbdev
+[     9.528] (II) VESA: driver for VESA chipsets: vesa
+[     9.561] (II) modeset(0): using drv /dev/dri/card0
+[     9.561] (WW) Falling back to old probe method for fbdev
+[     9.561] (II) Loading sub module "fbdevhw"
+[     9.561] (II) LoadModule: "fbdevhw"
+[     9.562] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     9.563] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     9.563] 	compiled for 1.21.1.4, module version = 0.0.2
+[     9.563] 	ABI class: X.Org Video Driver, version 25.2
+[     9.565] (II) Loading sub module "fb"
+[     9.565] (II) LoadModule: "fb"
+[     9.565] (II) Module "fb" already built-in
+[     9.565] (II) Loading sub module "wfb"
+[     9.565] (II) LoadModule: "wfb"
+[     9.566] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[     9.569] (II) Module wfb: vendor="X.Org Foundation"
+[     9.569] 	compiled for 1.21.1.4, module version = 1.0.0
+[     9.569] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     9.573] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     9.573] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[     9.573] (==) modeset(0): RGB weight 888
+[     9.573] (==) modeset(0): Default visual is TrueColor
+[     9.573] (II) Loading sub module "glamoregl"
+[     9.573] (II) LoadModule: "glamoregl"
+[     9.575] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[     9.591] (II) Module glamoregl: vendor="X.Org Foundation"
+[     9.591] 	compiled for 1.21.1.4, module version = 1.0.1
+[     9.591] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    10.440] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) HD Graphics 620 (KBL GT2)
+[    10.440] (II) modeset(0): glamor initialized
+[    10.441] (==) modeset(0): VariableRefresh: disabled
+[    10.441] (==) modeset(0): AsyncFlipSecondaries: disabled
+[    10.442] (II) modeset(0): Output eDP-1 has no monitor section
+[    10.447] (II) modeset(0): Output HDMI-1 has no monitor section
+[    10.447] (II) modeset(0): Output DP-1 has no monitor section
+[    10.452] (II) modeset(0): Output HDMI-2 has no monitor section
+[    10.454] (II) modeset(0): EDID for output eDP-1
+[    10.454] (II) modeset(0): Manufacturer: BOE  Model: 702  Serial#: 0
+[    10.454] (II) modeset(0): Year: 2016  Week: 1
+[    10.454] (II) modeset(0): EDID Version: 1.4
+[    10.454] (II) modeset(0): Digital Display Input
+[    10.454] (II) modeset(0): 6 bits per channel
+[    10.454] (II) modeset(0): Digital interface is DisplayPort
+[    10.454] (II) modeset(0): Max Image Size [cm]: horiz.: 34  vert.: 19
+[    10.454] (II) modeset(0): Gamma: 2.20
+[    10.454] (II) modeset(0): No DPMS capabilities specified
+[    10.454] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    10.454] (II) modeset(0): First detailed timing is preferred mode
+[    10.454] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[    10.454] (II) modeset(0): redX: 0.590 redY: 0.350   greenX: 0.329 greenY: 0.555
+[    10.454] (II) modeset(0): blueX: 0.152 blueY: 0.118   whiteX: 0.312 whiteY: 0.328
+[    10.455] (II) modeset(0): Manufacturer's mask: 0
+[    10.455] (II) modeset(0): Supported detailed timing:
+[    10.455] (II) modeset(0): clock: 70.1 MHz   Image Size:  344 x 194 mm
+[    10.455] (II) modeset(0): h_active: 1366  h_sync: 1414  h_sync_end 1446 h_blank_end 1485 h_border: 0
+[    10.455] (II) modeset(0): v_active: 768  v_sync: 771  v_sync_end 777 v_blanking: 787 v_border: 0
+[    10.455] (II) modeset(0): Supported detailed timing:
+[    10.455] (II) modeset(0): clock: 60.5 MHz   Image Size:  344 x 194 mm
+[    10.455] (II) modeset(0): h_active: 1366  h_sync: 1414  h_sync_end 1446 h_blank_end 1551 h_border: 0
+[    10.455] (II) modeset(0): v_active: 768  v_sync: 771  v_sync_end 777 v_blanking: 813 v_border: 0
+[    10.455] (II) modeset(0):  YG0NR€NT15N42
+[    10.455] (II) modeset(0): Unknown vendor-specific block 0
+[    10.455] (II) modeset(0): EDID (in hex):
+[    10.455] (II) modeset(0): 	00ffffffffffff0009e5020700000000
+[    10.455] (II) modeset(0): 	011a0104952213780a24109759548e27
+[    10.455] (II) modeset(0): 	1e505400000001010101010101010101
+[    10.455] (II) modeset(0): 	010101010101641b5677500013303020
+[    10.455] (II) modeset(0): 	360058c21000001aa21756b950002d30
+[    10.455] (II) modeset(0): 	3020360058c21000001a000000fe0059
+[    10.455] (II) modeset(0): 	47304e52804e5431354e343200000000
+[    10.455] (II) modeset(0): 	00004101940010000009010a202000d8
+[    10.456] (II) modeset(0): Printing probed modes for output eDP-1
+[    10.456] (II) modeset(0): Modeline "1366x768"x60.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[    10.456] (II) modeset(0): Modeline "1366x768"x48.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[    10.456] (II) modeset(0): Modeline "1280x720"x60.0   64.02  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.5 kHz d)
+[    10.456] (II) modeset(0): Modeline "1024x768"x60.0   64.99  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "960x720"x60.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[    10.456] (II) modeset(0): Modeline "928x696"x60.0  109.06  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.3 kHz d)
+[    10.456] (II) modeset(0): Modeline "896x672"x60.0  102.37  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.6 kHz d)
+[    10.456] (II) modeset(0): Modeline "1024x576"x60.0   42.12  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.6 kHz d)
+[    10.456] (II) modeset(0): Modeline "960x600"x60.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[    10.456] (II) modeset(0): Modeline "960x540"x60.0   37.36  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "800x600"x60.0   38.40  800 824 896 1024  600 601 603 625 +hsync +vsync (37.5 kHz d)
+[    10.456] (II) modeset(0): Modeline "840x525"x60.0   59.61  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.8 kHz d)
+[    10.456] (II) modeset(0): Modeline "864x486"x60.0   30.72  864 912 944 1024  486 489 494 500 +hsync -vsync (30.0 kHz d)
+[    10.456] (II) modeset(0): Modeline "700x525"x60.0   61.02  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[    10.456] (II) modeset(0): Modeline "800x450"x60.0   48.89  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.6 kHz d)
+[    10.456] (II) modeset(0): Modeline "640x512"x60.0   53.98  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[    10.456] (II) modeset(0): Modeline "700x450"x60.0   43.34  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.6 kHz d)
+[    10.456] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[    10.456] (II) modeset(0): Modeline "720x405"x60.0   22.12  720 768 800 880  405 408 413 419 +hsync -vsync (25.1 kHz d)
+[    10.456] (II) modeset(0): Modeline "684x384"x60.0   36.21  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "640x360"x60.0   17.95  640 688 720 800  360 363 368 374 +hsync -vsync (22.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "512x384"x60.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "512x288"x60.0   21.03  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[    10.456] (II) modeset(0): Modeline "480x270"x60.0   18.68  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "400x300"x60.0   19.17  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (37.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "432x243"x60.0   15.36  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (30.0 kHz d)
+[    10.456] (II) modeset(0): Modeline "320x240"x60.0   12.57  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.4 kHz d)
+[    10.456] (II) modeset(0): Modeline "360x202"x60.0   11.03  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (25.1 kHz d)
+[    10.456] (II) modeset(0): Modeline "320x180"x60.0    8.97  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.4 kHz d)
+[    10.461] (II) modeset(0): EDID for output HDMI-1
+[    10.461] (II) modeset(0): EDID for output DP-1
+[    10.465] (II) modeset(0): EDID for output HDMI-2
+[    10.465] (II) modeset(0): Output eDP-1 connected
+[    10.465] (II) modeset(0): Output HDMI-1 disconnected
+[    10.465] (II) modeset(0): Output DP-1 disconnected
+[    10.465] (II) modeset(0): Output HDMI-2 disconnected
+[    10.465] (II) modeset(0): Using exact sizes for initial modes
+[    10.465] (II) modeset(0): Output eDP-1 using initial mode 1366x768 +0+0
+[    10.465] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    10.465] (==) modeset(0): DPI set to (96, 96)
+[    10.465] (II) Loading sub module "fb"
+[    10.465] (II) LoadModule: "fb"
+[    10.465] (II) Module "fb" already built-in
+[    10.465] (==) NVIDIA(G0): Depth 24, (==) framebuffer bpp 32
+[    10.465] (==) NVIDIA(G0): RGB weight 888
+[    10.465] (==) NVIDIA(G0): Default visual is TrueColor
+[    10.465] (==) NVIDIA(G0): Using gamma correction (1.0, 1.0, 1.0)
+[    10.465] (**) Option "AllowNVIDIAGpuScreens"
+[    10.465] (II) Applying OutputClass "nvidia" options to /dev/dri/card1
+[    10.465] (**) NVIDIA(G0): Option "AllowEmptyInitialConfiguration"
+[    10.466] (**) NVIDIA(G0): Enabling 2D acceleration
+[    10.466] (II) Loading sub module "glxserver_nvidia"
+[    10.466] (II) LoadModule: "glxserver_nvidia"
+[    10.466] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/libglxserver_nvidia.so
+[    10.604] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    10.604] 	compiled for 1.6.99.901, module version = 1.0.0
+[    10.604] 	Module class: X.Org Server Extension
+[    10.604] (II) NVIDIA GLX Module  535.129.03  Thu Oct 19 18:49:06 UTC 2023
+[    10.605] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    10.608] (II) NVIDIA(G0): NVIDIA GPU NVIDIA GeForce 930MX (GM108-A) at PCI:3:0:0
+[    10.608] (II) NVIDIA(G0):     (GPU-0)
+[    10.608] (--) NVIDIA(G0): Memory: 2097152 kBytes
+[    10.608] (--) NVIDIA(G0): VideoBIOS: 82.08.6e.00.01
+[    10.608] (II) NVIDIA(G0): Detected PCI Express Link width: 4X
+[    10.608] (II) NVIDIA(G0): Validated MetaModes:
+[    10.608] (II) NVIDIA(G0):     "NULL"
+[    10.608] (II) NVIDIA(G0): Virtual screen size determined to be 640 x 480
+[    10.608] (WW) NVIDIA(G0): Unable to get display device for DPI computation.
+[    10.608] (==) NVIDIA(G0): DPI set to (75, 75); computed from built-in default
+[    10.608] (II) UnloadModule: "nouveau"
+[    10.608] (II) Unloading nouveau
+[    10.608] (II) UnloadModule: "fbdev"
+[    10.608] (II) Unloading fbdev
+[    10.608] (II) UnloadSubModule: "fbdevhw"
+[    10.608] (II) Unloading fbdevhw
+[    10.608] (II) UnloadModule: "vesa"
+[    10.608] (II) Unloading vesa
+[    10.646] (==) modeset(0): Backing store enabled
+[    10.646] (==) modeset(0): Silken mouse enabled
+[    10.729] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    10.729] (==) modeset(0): DPMS enabled
+[    10.729] (II) modeset(0): [DRI2] Setup complete
+[    10.729] (II) modeset(0): [DRI2]   DRI driver: iris
+[    10.729] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[    10.730] (II) NVIDIA: Reserving 6144.00 MB of virtual memory for indirect memory
+[    10.730] (II) NVIDIA:     access.
+[    10.775] (II) NVIDIA(G0): Setting mode "NULL"
+[    10.778] (==) NVIDIA(G0): Disabling shared memory pixmaps
+[    10.778] (==) NVIDIA(G0): Backing store enabled
+[    10.778] (==) NVIDIA(G0): Silken mouse enabled
+[    10.778] (==) NVIDIA(G0): DPMS enabled
+[    10.778] (II) Loading sub module "dri2"
+[    10.778] (II) LoadModule: "dri2"
+[    10.778] (II) Module "dri2" already built-in
+[    10.778] (II) NVIDIA(G0): [DRI2] Setup complete
+[    10.778] (II) NVIDIA(G0): [DRI2]   VDPAU driver: nvidia
+[    10.778] (II) Initializing extension Generic Event Extension
+[    10.778] (II) Initializing extension SHAPE
+[    10.778] (II) Initializing extension MIT-SHM
+[    10.778] (II) Initializing extension XInputExtension
+[    10.780] (II) Initializing extension XTEST
+[    10.780] (II) Initializing extension BIG-REQUESTS
+[    10.780] (II) Initializing extension SYNC
+[    10.780] (II) Initializing extension XKEYBOARD
+[    10.780] (II) Initializing extension XC-MISC
+[    10.780] (II) Initializing extension SECURITY
+[    10.780] (II) Initializing extension XFIXES
+[    10.780] (II) Initializing extension RENDER
+[    10.780] (II) Initializing extension RANDR
+[    10.780] (II) Initializing extension COMPOSITE
+[    10.780] (II) Initializing extension DAMAGE
+[    10.781] (II) Initializing extension MIT-SCREEN-SAVER
+[    10.781] (II) Initializing extension DOUBLE-BUFFER
+[    10.781] (II) Initializing extension RECORD
+[    10.781] (II) Initializing extension DPMS
+[    10.781] (II) Initializing extension Present
+[    10.781] (II) Initializing extension DRI3
+[    10.781] (II) Initializing extension X-Resource
+[    10.781] (II) Initializing extension XVideo
+[    10.781] (II) Initializing extension XVideo-MotionCompensation
+[    10.781] (II) Initializing extension SELinux
+[    10.781] (II) SELinux: Disabled on system
+[    10.781] (II) Initializing extension GLX
+[    10.781] (II) Initializing extension GLX
+[    10.781] (II) Indirect GLX disabled.
+[    10.787] (II) AIGLX: Loaded and initialized iris
+[    10.787] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    10.787] (II) Initializing extension XFree86-VidModeExtension
+[    10.787] (II) Initializing extension XFree86-DGA
+[    10.787] (II) Initializing extension XFree86-DRI
+[    10.787] (II) Initializing extension DRI2
+[    10.788] (II) Initializing extension NV-GLX
+[    10.788] (II) Initializing extension NV-CONTROL
+[    10.789] (II) modeset(0): Damage tracking initialized
+[    10.789] (II) modeset(0): Setting screen physical size to 361 x 203
+[    10.888] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    10.888] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    10.888] (II) LoadModule: "libinput"
+[    10.888] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    10.890] (II) Module libinput: vendor="X.Org Foundation"
+[    10.890] 	compiled for 1.20.14, module version = 1.2.1
+[    10.890] 	Module class: X.Org XInput Driver
+[    10.890] 	ABI class: X.Org XInput driver, version 24.1
+[    10.890] (II) Using input driver 'libinput' for 'Power Button'
+[    10.890] (**) Power Button: always reports core events
+[    10.890] (**) Option "Device" "/dev/input/event3"
+[    10.892] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    10.892] (II) event3  - Power Button: device is a keyboard
+[    10.892] (II) event3  - Power Button: device removed
+[    10.924] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[    10.924] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    10.924] (**) Option "xkb_model" "pc105"
+[    10.924] (**) Option "xkb_layout" "us"
+[    10.925] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    10.925] (II) event3  - Power Button: device is a keyboard
+[    10.925] (II) config/udev: Adding input device Video Bus (/dev/input/event11)
+[    10.925] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    10.925] (II) Using input driver 'libinput' for 'Video Bus'
+[    10.925] (**) Video Bus: always reports core events
+[    10.925] (**) Option "Device" "/dev/input/event11"
+[    10.926] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[    10.926] (II) event11 - Video Bus: device is a keyboard
+[    10.926] (II) event11 - Video Bus: device removed
+[    10.948] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input11/event11"
+[    10.948] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    10.948] (**) Option "xkb_model" "pc105"
+[    10.948] (**) Option "xkb_layout" "us"
+[    10.949] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[    10.949] (II) event11 - Video Bus: device is a keyboard
+[    10.950] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[    10.950] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    10.950] (II) Using input driver 'libinput' for 'Video Bus'
+[    10.950] (**) Video Bus: always reports core events
+[    10.950] (**) Option "Device" "/dev/input/event12"
+[    10.951] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[    10.951] (II) event12 - Video Bus: device is a keyboard
+[    10.951] (II) event12 - Video Bus: device removed
+[    10.968] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:23/LNXVIDEO:01/input/input12/event12"
+[    10.968] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[    10.968] (**) Option "xkb_model" "pc105"
+[    10.968] (**) Option "xkb_layout" "us"
+[    10.970] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[    10.970] (II) event12 - Video Bus: device is a keyboard
+[    10.971] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    10.971] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    10.971] (II) Using input driver 'libinput' for 'Power Button'
+[    10.971] (**) Power Button: always reports core events
+[    10.971] (**) Option "Device" "/dev/input/event1"
+[    10.973] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    10.973] (II) event1  - Power Button: device is a keyboard
+[    10.973] (II) event1  - Power Button: device removed
+[    11.004] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    11.004] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[    11.004] (**) Option "xkb_model" "pc105"
+[    11.004] (**) Option "xkb_layout" "us"
+[    11.007] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    11.007] (II) event1  - Power Button: device is a keyboard
+[    11.009] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    11.009] (II) No input driver specified, ignoring this device.
+[    11.009] (II) This device may have been added with another device file.
+[    11.011] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    11.011] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    11.011] (II) Using input driver 'libinput' for 'Sleep Button'
+[    11.011] (**) Sleep Button: always reports core events
+[    11.011] (**) Option "Device" "/dev/input/event2"
+[    11.014] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    11.014] (II) event2  - Sleep Button: device is a keyboard
+[    11.014] (II) event2  - Sleep Button: device removed
+[    11.036] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[    11.036] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[    11.036] (**) Option "xkb_model" "pc105"
+[    11.036] (**) Option "xkb_layout" "us"
+[    11.039] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    11.039] (II) event2  - Sleep Button: device is a keyboard
+[    11.044] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/event7)
+[    11.044] (**) Telink Wireless Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[    11.044] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Mouse'
+[    11.044] (**) Telink Wireless Receiver Mouse: always reports core events
+[    11.044] (**) Option "Device" "/dev/input/event7"
+[    11.048] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[    11.049] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[    11.049] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[    11.064] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input7/event7"
+[    11.064] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Mouse" (type: MOUSE, id 11)
+[    11.065] (**) Option "AccelerationScheme" "none"
+[    11.065] (**) Telink Wireless Receiver Mouse: (accel) selected scheme none/0
+[    11.065] (**) Telink Wireless Receiver Mouse: (accel) acceleration factor: 2.000
+[    11.065] (**) Telink Wireless Receiver Mouse: (accel) acceleration threshold: 4
+[    11.069] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[    11.070] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[    11.073] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/mouse2)
+[    11.073] (II) No input driver specified, ignoring this device.
+[    11.073] (II) This device may have been added with another device file.
+[    11.076] (II) config/udev: Adding input device Telink Wireless Receiver Consumer Control (/dev/input/event8)
+[    11.076] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    11.076] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[    11.076] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[    11.076] (**) Option "Device" "/dev/input/event8"
+[    11.080] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[    11.081] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[    11.081] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[    11.096] (II) libinput: Telink Wireless Receiver Consumer Control: needs a virtual subdevice
+[    11.096] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[    11.096] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: MOUSE, id 12)
+[    11.096] (**) Option "AccelerationScheme" "none"
+[    11.096] (**) Telink Wireless Receiver Consumer Control: (accel) selected scheme none/0
+[    11.096] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration factor: 2.000
+[    11.096] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration threshold: 4
+[    11.101] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[    11.101] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[    11.105] (II) config/udev: Adding input device Telink Wireless Receiver System Control (/dev/input/event9)
+[    11.105] (**) Telink Wireless Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[    11.105] (II) Using input driver 'libinput' for 'Telink Wireless Receiver System Control'
+[    11.105] (**) Telink Wireless Receiver System Control: always reports core events
+[    11.105] (**) Option "Device" "/dev/input/event9"
+[    11.109] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[    11.109] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[    11.110] (II) event9  - Telink Wireless Receiver System Control: device removed
+[    11.128] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input9/event9"
+[    11.128] (II) XINPUT: Adding extended input device "Telink Wireless Receiver System Control" (type: KEYBOARD, id 13)
+[    11.128] (**) Option "xkb_model" "pc105"
+[    11.128] (**) Option "xkb_layout" "us"
+[    11.133] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[    11.133] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[    11.137] (II) config/udev: Adding input device Telink Wireless Receiver (/dev/input/event10)
+[    11.137] (**) Telink Wireless Receiver: Applying InputClass "libinput keyboard catchall"
+[    11.137] (II) Using input driver 'libinput' for 'Telink Wireless Receiver'
+[    11.137] (**) Telink Wireless Receiver: always reports core events
+[    11.137] (**) Option "Device" "/dev/input/event10"
+[    11.141] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[    11.142] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[    11.142] (II) event10 - Telink Wireless Receiver: device removed
+[    11.156] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:248A:8367.0003/input/input10/event10"
+[    11.156] (II) XINPUT: Adding extended input device "Telink Wireless Receiver" (type: KEYBOARD, id 14)
+[    11.156] (**) Option "xkb_model" "pc105"
+[    11.156] (**) Option "xkb_layout" "us"
+[    11.161] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[    11.162] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[    11.165] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event15)
+[    11.165] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[    11.165] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[    11.165] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[    11.165] (**) Option "Device" "/dev/input/event15"
+[    11.169] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[    11.169] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[    11.169] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[    11.188] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input15/event15"
+[    11.188] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 15)
+[    11.188] (**) Option "xkb_model" "pc105"
+[    11.188] (**) Option "xkb_layout" "us"
+[    11.193] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[    11.193] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[    11.196] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/event6)
+[    11.196] (**) DLL07A8:01 044E:120B: Applying InputClass "libinput touchpad catchall"
+[    11.196] (II) Using input driver 'libinput' for 'DLL07A8:01 044E:120B'
+[    11.196] (**) DLL07A8:01 044E:120B: always reports core events
+[    11.196] (**) Option "Device" "/dev/input/event6"
+[    11.200] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[    11.203] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[    11.204] (II) event6  - DLL07A8:01 044E:120B: device removed
+[    11.221] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input5/event6"
+[    11.221] (II) XINPUT: Adding extended input device "DLL07A8:01 044E:120B" (type: TOUCHPAD, id 16)
+[    11.223] (**) Option "AccelerationScheme" "none"
+[    11.223] (**) DLL07A8:01 044E:120B: (accel) selected scheme none/0
+[    11.223] (**) DLL07A8:01 044E:120B: (accel) acceleration factor: 2.000
+[    11.223] (**) DLL07A8:01 044E:120B: (accel) acceleration threshold: 4
+[    11.227] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[    11.231] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[    11.234] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/mouse1)
+[    11.234] (II) No input driver specified, ignoring this device.
+[    11.234] (II) This device may have been added with another device file.
+[    11.236] (II) config/udev: Adding input device DualPoint Stick (/dev/input/event5)
+[    11.236] (**) DualPoint Stick: Applying InputClass "libinput pointer catchall"
+[    11.236] (II) Using input driver 'libinput' for 'DualPoint Stick'
+[    11.236] (**) DualPoint Stick: always reports core events
+[    11.236] (**) Option "Device" "/dev/input/event5"
+[    11.239] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[    11.240] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[    11.240] (II) event5  - DualPoint Stick: device is a pointer
+[    11.242] (II) event5  - DualPoint Stick: device removed
+[    11.260] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input6/event5"
+[    11.260] (II) XINPUT: Adding extended input device "DualPoint Stick" (type: MOUSE, id 17)
+[    11.260] (**) Option "AccelerationScheme" "none"
+[    11.260] (**) DualPoint Stick: (accel) selected scheme none/0
+[    11.260] (**) DualPoint Stick: (accel) acceleration factor: 2.000
+[    11.260] (**) DualPoint Stick: (accel) acceleration threshold: 4
+[    11.262] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[    11.263] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[    11.263] (II) event5  - DualPoint Stick: device is a pointer
+[    11.265] (II) config/udev: Adding input device DualPoint Stick (/dev/input/mouse0)
+[    11.265] (II) No input driver specified, ignoring this device.
+[    11.265] (II) This device may have been added with another device file.
+[    11.266] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event17)
+[    11.266] (II) No input driver specified, ignoring this device.
+[    11.266] (II) This device may have been added with another device file.
+[    11.267] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event18)
+[    11.267] (II) No input driver specified, ignoring this device.
+[    11.267] (II) This device may have been added with another device file.
+[    11.268] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event19)
+[    11.268] (II) No input driver specified, ignoring this device.
+[    11.268] (II) This device may have been added with another device file.
+[    11.269] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event20)
+[    11.269] (II) No input driver specified, ignoring this device.
+[    11.269] (II) This device may have been added with another device file.
+[    11.269] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event21)
+[    11.269] (II) No input driver specified, ignoring this device.
+[    11.269] (II) This device may have been added with another device file.
+[    11.270] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event22)
+[    11.270] (II) No input driver specified, ignoring this device.
+[    11.270] (II) This device may have been added with another device file.
+[    11.271] (II) config/udev: Adding input device Intel HID events (/dev/input/event13)
+[    11.271] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[    11.271] (II) Using input driver 'libinput' for 'Intel HID events'
+[    11.271] (**) Intel HID events: always reports core events
+[    11.271] (**) Option "Device" "/dev/input/event13"
+[    11.272] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[    11.272] (II) event13 - Intel HID events: device is a keyboard
+[    11.272] (II) event13 - Intel HID events: device removed
+[    11.292] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input13/event13"
+[    11.292] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 18)
+[    11.292] (**) Option "xkb_model" "pc105"
+[    11.292] (**) Option "xkb_layout" "us"
+[    11.293] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[    11.293] (II) event13 - Intel HID events: device is a keyboard
+[    11.294] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event14)
+[    11.294] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[    11.294] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[    11.294] (**) Intel HID 5 button array: always reports core events
+[    11.294] (**) Option "Device" "/dev/input/event14"
+[    11.296] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[    11.296] (II) event14 - Intel HID 5 button array: device is a keyboard
+[    11.296] (II) event14 - Intel HID 5 button array: device removed
+[    11.316] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input14/event14"
+[    11.316] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 19)
+[    11.316] (**) Option "xkb_model" "pc105"
+[    11.316] (**) Option "xkb_layout" "us"
+[    11.318] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[    11.318] (II) event14 - Intel HID 5 button array: device is a keyboard
+[    11.321] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event16)
+[    11.321] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    11.321] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[    11.321] (**) Dell WMI hotkeys: always reports core events
+[    11.321] (**) Option "Device" "/dev/input/event16"
+[    11.351] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[    11.352] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[    11.353] (II) event16 - Dell WMI hotkeys: device removed
+[    11.384] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:03/wmi_bus/wmi_bus-PNP0C14:03/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input16/event16"
+[    11.384] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 20)
+[    11.384] (**) Option "xkb_model" "pc105"
+[    11.384] (**) Option "xkb_layout" "us"
+[    11.389] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[    11.389] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[    11.394] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[    11.394] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    11.394] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    11.394] (**) AT Translated Set 2 keyboard: always reports core events
+[    11.394] (**) Option "Device" "/dev/input/event4"
+[    11.398] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    11.398] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[    11.400] (II) event4  - AT Translated Set 2 keyboard: device removed
+[    11.420] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[    11.420] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 21)
+[    11.420] (**) Option "xkb_model" "pc105"
+[    11.420] (**) Option "xkb_layout" "us"
+[    11.423] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    11.423] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[    11.478] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    11.478] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[    11.478] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[    11.478] (**) Option "Device" "/dev/input/event8"
+[    11.478] (II) libinput: Telink Wireless Receiver Consumer Control: is a virtual subdevice
+[    11.478] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[    11.478] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: KEYBOARD, id 22)
+[    11.478] (**) Option "xkb_model" "pc105"
+[    11.478] (**) Option "xkb_layout" "us"
+[    11.595] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[    11.595] (II) modeset(0): Printing DDC gathered Modelines:
+[    11.595] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[    11.595] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[    11.628] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[    11.628] (II) modeset(0): Printing DDC gathered Modelines:
+[    11.628] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[    11.628] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[    11.645] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[    11.645] (II) modeset(0): Printing DDC gathered Modelines:
+[    11.645] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[    11.645] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[    11.661] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[    11.661] (II) modeset(0): Printing DDC gathered Modelines:
+[    11.661] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[    11.661] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[    11.695] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[    11.695] (II) modeset(0): Printing DDC gathered Modelines:
+[    11.695] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[    11.695] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[    11.983] (II) modeset(0): Allocate new frame buffer 320x200 stride
+[    12.004] (II) modeset(0): Allocate new frame buffer 1366x768 stride
+[   191.726] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   191.726] (II) No input driver specified, ignoring this device.
+[   191.726] (II) This device may have been added with another device file.
+[   191.794] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   191.794] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   191.794] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   191.795] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   191.795] (**) Option "Device" "/dev/input/event23"
+[   191.844] (II) event23 - Gaomon Gaomon Tablet_1060Pro: is tagged by udev as: Tablet
+[   191.934] (EE) event23 - Gaomon Gaomon Tablet_1060Pro: libinput bug: missing tablet capabilities: resolution. Ignoring this device.
+[   191.934] (II) event23 - Gaomon Gaomon Tablet_1060Pro: device is a tablet
+[   191.964] (II) event23 - failed to create input device '/dev/input/event23'.
+[   191.964] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   191.964] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   191.964] (II) UnloadModule: "libinput"
+[   312.970] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   312.970] (II) modeset(0): Printing DDC gathered Modelines:
+[   312.970] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   312.970] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   313.253] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   313.253] (II) modeset(0): Printing DDC gathered Modelines:
+[   313.253] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   313.253] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   313.487] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   313.487] (II) modeset(0): Printing DDC gathered Modelines:
+[   313.487] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   313.487] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   313.737] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   313.737] (II) modeset(0): Printing DDC gathered Modelines:
+[   313.737] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   313.737] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   323.275] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   323.275] (II) No input driver specified, ignoring this device.
+[   323.275] (II) This device may have been added with another device file.
+[   323.375] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   323.376] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   323.376] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   323.376] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   323.376] (**) Option "Device" "/dev/input/event23"
+[   323.413] (II) event23 - Gaomon Gaomon Tablet_1060Pro: is tagged by udev as: Tablet
+[   323.422] (EE) event23 - Gaomon Gaomon Tablet_1060Pro: libinput bug: missing tablet capabilities: resolution. Ignoring this device.
+[   323.422] (II) event23 - Gaomon Gaomon Tablet_1060Pro: device is a tablet
+[   323.488] (II) event23 - failed to create input device '/dev/input/event23'.
+[   323.488] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   323.488] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   323.488] (II) UnloadModule: "libinput"
+[   535.814] (II) config/udev: removing device Power Button
+[   535.814] (II) event3  - Power Button: device removed
+[   535.833] (II) UnloadModule: "libinput"
+[   535.833] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[   535.833] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   535.833] (II) Using input driver 'libinput' for 'Power Button'
+[   535.833] (**) Power Button: always reports core events
+[   535.833] (**) Option "Device" "/dev/input/event3"
+[   535.834] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[   535.834] (II) event3  - Power Button: device is a keyboard
+[   535.834] (II) event3  - Power Button: device removed
+[   535.848] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[   535.848] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   535.848] (**) Option "xkb_model" "pc105"
+[   535.848] (**) Option "xkb_layout" "us"
+[   535.848] (WW) Option "xkb_variant" requires a string value
+[   535.848] (WW) Option "xkb_options" requires a string value
+[   535.849] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[   535.849] (II) event3  - Power Button: device is a keyboard
+[   535.850] (II) config/udev: removing device Video Bus
+[   535.850] (II) event11 - Video Bus: device removed
+[   535.869] (II) UnloadModule: "libinput"
+[   535.869] (II) config/udev: Adding input device Video Bus (/dev/input/event11)
+[   535.869] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   535.869] (II) Using input driver 'libinput' for 'Video Bus'
+[   535.869] (**) Video Bus: always reports core events
+[   535.869] (**) Option "Device" "/dev/input/event11"
+[   535.871] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[   535.871] (II) event11 - Video Bus: device is a keyboard
+[   535.871] (II) event11 - Video Bus: device removed
+[   535.884] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input11/event11"
+[   535.884] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   535.884] (**) Option "xkb_model" "pc105"
+[   535.884] (**) Option "xkb_layout" "us"
+[   535.884] (WW) Option "xkb_variant" requires a string value
+[   535.884] (WW) Option "xkb_options" requires a string value
+[   535.885] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[   535.885] (II) event11 - Video Bus: device is a keyboard
+[   535.908] (II) config/udev: removing device Video Bus
+[   535.908] (II) event12 - Video Bus: device removed
+[   535.941] (II) UnloadModule: "libinput"
+[   535.941] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[   535.941] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   535.941] (II) Using input driver 'libinput' for 'Video Bus'
+[   535.941] (**) Video Bus: always reports core events
+[   535.941] (**) Option "Device" "/dev/input/event12"
+[   535.942] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   535.943] (II) event12 - Video Bus: device is a keyboard
+[   535.943] (II) event12 - Video Bus: device removed
+[   535.956] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:23/LNXVIDEO:01/input/input12/event12"
+[   535.956] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   535.956] (**) Option "xkb_model" "pc105"
+[   535.956] (**) Option "xkb_layout" "us"
+[   535.956] (WW) Option "xkb_variant" requires a string value
+[   535.956] (WW) Option "xkb_options" requires a string value
+[   535.957] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   535.958] (II) event12 - Video Bus: device is a keyboard
+[   535.991] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   535.991] (II) modeset(0): Printing DDC gathered Modelines:
+[   535.991] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   535.991] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   536.009] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   536.009] (II) No input driver specified, ignoring this device.
+[   536.009] (II) This device may have been added with another device file.
+[   536.010] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   536.010] (II) No input driver specified, ignoring this device.
+[   536.010] (II) This device may have been added with another device file.
+[   536.010] (II) config/udev: removing device Power Button
+[   536.010] (II) event1  - Power Button: device removed
+[   536.033] (II) UnloadModule: "libinput"
+[   536.033] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   536.033] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   536.033] (II) Using input driver 'libinput' for 'Power Button'
+[   536.033] (**) Power Button: always reports core events
+[   536.033] (**) Option "Device" "/dev/input/event1"
+[   536.034] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   536.034] (II) event1  - Power Button: device is a keyboard
+[   536.035] (II) event1  - Power Button: device removed
+[   536.052] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[   536.052] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[   536.052] (**) Option "xkb_model" "pc105"
+[   536.052] (**) Option "xkb_layout" "us"
+[   536.052] (WW) Option "xkb_variant" requires a string value
+[   536.052] (WW) Option "xkb_options" requires a string value
+[   536.053] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   536.053] (II) event1  - Power Button: device is a keyboard
+[   536.055] (II) config/udev: removing device Sleep Button
+[   536.055] (II) event2  - Sleep Button: device removed
+[   536.073] (II) UnloadModule: "libinput"
+[   536.074] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[   536.074] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[   536.074] (II) Using input driver 'libinput' for 'Sleep Button'
+[   536.074] (**) Sleep Button: always reports core events
+[   536.074] (**) Option "Device" "/dev/input/event2"
+[   536.075] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[   536.075] (II) event2  - Sleep Button: device is a keyboard
+[   536.075] (II) event2  - Sleep Button: device removed
+[   536.100] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[   536.100] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[   536.100] (**) Option "xkb_model" "pc105"
+[   536.100] (**) Option "xkb_layout" "us"
+[   536.100] (WW) Option "xkb_variant" requires a string value
+[   536.100] (WW) Option "xkb_options" requires a string value
+[   536.101] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[   536.101] (II) event2  - Sleep Button: device is a keyboard
+[   536.124] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   536.124] (II) modeset(0): Printing DDC gathered Modelines:
+[   536.125] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   536.125] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   536.135] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/mouse2)
+[   536.135] (II) No input driver specified, ignoring this device.
+[   536.135] (II) This device may have been added with another device file.
+[   536.136] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/mouse1)
+[   536.136] (II) No input driver specified, ignoring this device.
+[   536.136] (II) This device may have been added with another device file.
+[   536.136] (II) config/udev: removing device Integrated_Webcam_HD: Integrate
+[   536.136] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[   536.185] (II) UnloadModule: "libinput"
+[   536.186] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event15)
+[   536.186] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[   536.186] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[   536.186] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[   536.186] (**) Option "Device" "/dev/input/event15"
+[   536.187] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[   536.187] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[   536.188] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[   536.212] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input15/event15"
+[   536.212] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 15)
+[   536.212] (**) Option "xkb_model" "pc105"
+[   536.212] (**) Option "xkb_layout" "us"
+[   536.212] (WW) Option "xkb_variant" requires a string value
+[   536.212] (WW) Option "xkb_options" requires a string value
+[   536.213] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[   536.213] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[   536.215] (II) config/udev: Adding input device DualPoint Stick (/dev/input/mouse0)
+[   536.215] (II) No input driver specified, ignoring this device.
+[   536.215] (II) This device may have been added with another device file.
+[   536.215] (II) config/udev: removing device Telink Wireless Receiver Mouse
+[   536.215] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[   536.241] (II) UnloadModule: "libinput"
+[   536.242] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/event7)
+[   536.242] (**) Telink Wireless Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[   536.242] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Mouse'
+[   536.242] (**) Telink Wireless Receiver Mouse: always reports core events
+[   536.242] (**) Option "Device" "/dev/input/event7"
+[   536.245] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[   536.245] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[   536.252] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[   536.272] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input7/event7"
+[   536.272] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Mouse" (type: MOUSE, id 11)
+[   536.272] (**) Option "AccelerationScheme" "none"
+[   536.273] (**) Telink Wireless Receiver Mouse: (accel) selected scheme none/0
+[   536.273] (**) Telink Wireless Receiver Mouse: (accel) acceleration factor: 2.000
+[   536.273] (**) Telink Wireless Receiver Mouse: (accel) acceleration threshold: 4
+[   536.275] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[   536.275] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[   536.276] (II) config/udev: removing device Telink Wireless Receiver
+[   536.276] (II) event10 - Telink Wireless Receiver: device removed
+[   536.301] (II) UnloadModule: "libinput"
+[   536.302] (II) config/udev: Adding input device Telink Wireless Receiver (/dev/input/event10)
+[   536.302] (**) Telink Wireless Receiver: Applying InputClass "libinput keyboard catchall"
+[   536.302] (II) Using input driver 'libinput' for 'Telink Wireless Receiver'
+[   536.302] (**) Telink Wireless Receiver: always reports core events
+[   536.302] (**) Option "Device" "/dev/input/event10"
+[   536.304] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[   536.305] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[   536.305] (II) event10 - Telink Wireless Receiver: device removed
+[   536.324] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:248A:8367.0003/input/input10/event10"
+[   536.324] (II) XINPUT: Adding extended input device "Telink Wireless Receiver" (type: KEYBOARD, id 14)
+[   536.324] (**) Option "xkb_model" "pc105"
+[   536.324] (**) Option "xkb_layout" "us"
+[   536.324] (WW) Option "xkb_variant" requires a string value
+[   536.324] (WW) Option "xkb_options" requires a string value
+[   536.329] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[   536.330] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[   536.333] (II) config/udev: removing device Telink Wireless Receiver Consumer Control
+[   536.341] (II) UnloadModule: "libinput"
+[   536.341] (II) config/udev: removing device Telink Wireless Receiver Consumer Control
+[   536.341] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[   536.365] (II) UnloadModule: "libinput"
+[   536.368] (II) config/udev: Adding input device Telink Wireless Receiver Consumer Control (/dev/input/event8)
+[   536.368] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   536.368] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[   536.368] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[   536.368] (**) Option "Device" "/dev/input/event8"
+[   536.372] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[   536.373] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[   536.374] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[   536.400] (II) libinput: Telink Wireless Receiver Consumer Control: needs a virtual subdevice
+[   536.400] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[   536.400] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: MOUSE, id 12)
+[   536.402] (**) Option "AccelerationScheme" "none"
+[   536.405] (**) Telink Wireless Receiver Consumer Control: (accel) selected scheme none/0
+[   536.405] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration factor: 2.000
+[   536.405] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration threshold: 4
+[   536.409] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[   536.410] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[   536.413] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   536.413] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[   536.413] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[   536.413] (**) Option "Device" "/dev/input/event8"
+[   536.413] (II) libinput: Telink Wireless Receiver Consumer Control: is a virtual subdevice
+[   536.413] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[   536.413] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: KEYBOARD, id 22)
+[   536.413] (**) Option "xkb_model" "pc105"
+[   536.413] (**) Option "xkb_layout" "us"
+[   536.413] (WW) Option "xkb_variant" requires a string value
+[   536.413] (WW) Option "xkb_options" requires a string value
+[   536.417] (II) config/udev: removing device Telink Wireless Receiver System Control
+[   536.417] (II) event9  - Telink Wireless Receiver System Control: device removed
+[   536.454] (II) UnloadModule: "libinput"
+[   536.456] (II) config/udev: Adding input device Telink Wireless Receiver System Control (/dev/input/event9)
+[   536.456] (**) Telink Wireless Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[   536.456] (II) Using input driver 'libinput' for 'Telink Wireless Receiver System Control'
+[   536.456] (**) Telink Wireless Receiver System Control: always reports core events
+[   536.456] (**) Option "Device" "/dev/input/event9"
+[   536.462] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[   536.462] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[   536.463] (II) event9  - Telink Wireless Receiver System Control: device removed
+[   536.488] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input9/event9"
+[   536.488] (II) XINPUT: Adding extended input device "Telink Wireless Receiver System Control" (type: KEYBOARD, id 13)
+[   536.488] (**) Option "xkb_model" "pc105"
+[   536.488] (**) Option "xkb_layout" "us"
+[   536.488] (WW) Option "xkb_variant" requires a string value
+[   536.488] (WW) Option "xkb_options" requires a string value
+[   536.496] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[   536.497] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[   536.500] (II) config/udev: removing device DualPoint Stick
+[   536.501] (II) event5  - DualPoint Stick: device removed
+[   536.543] (II) UnloadModule: "libinput"
+[   536.545] (II) config/udev: Adding input device DualPoint Stick (/dev/input/event5)
+[   536.545] (**) DualPoint Stick: Applying InputClass "libinput pointer catchall"
+[   536.545] (II) Using input driver 'libinput' for 'DualPoint Stick'
+[   536.545] (**) DualPoint Stick: always reports core events
+[   536.545] (**) Option "Device" "/dev/input/event5"
+[   536.549] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[   536.550] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[   536.550] (II) event5  - DualPoint Stick: device is a pointer
+[   536.554] (II) event5  - DualPoint Stick: device removed
+[   536.580] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input6/event5"
+[   536.580] (II) XINPUT: Adding extended input device "DualPoint Stick" (type: MOUSE, id 17)
+[   536.582] (**) Option "AccelerationScheme" "none"
+[   536.584] (**) DualPoint Stick: (accel) selected scheme none/0
+[   536.584] (**) DualPoint Stick: (accel) acceleration factor: 2.000
+[   536.584] (**) DualPoint Stick: (accel) acceleration threshold: 4
+[   536.589] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[   536.590] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[   536.590] (II) event5  - DualPoint Stick: device is a pointer
+[   536.600] (II) config/udev: removing device DLL07A8:01 044E:120B
+[   536.600] (II) event6  - DLL07A8:01 044E:120B: device removed
+[   536.642] (II) UnloadModule: "libinput"
+[   536.645] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/event6)
+[   536.645] (**) DLL07A8:01 044E:120B: Applying InputClass "libinput touchpad catchall"
+[   536.645] (II) Using input driver 'libinput' for 'DLL07A8:01 044E:120B'
+[   536.645] (**) DLL07A8:01 044E:120B: always reports core events
+[   536.645] (**) Option "Device" "/dev/input/event6"
+[   536.650] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[   536.654] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[   536.654] (II) event6  - DLL07A8:01 044E:120B: device removed
+[   536.689] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input5/event6"
+[   536.689] (II) XINPUT: Adding extended input device "DLL07A8:01 044E:120B" (type: TOUCHPAD, id 16)
+[   536.693] (**) Option "AccelerationScheme" "none"
+[   536.694] (**) DLL07A8:01 044E:120B: (accel) selected scheme none/0
+[   536.694] (**) DLL07A8:01 044E:120B: (accel) acceleration factor: 2.000
+[   536.694] (**) DLL07A8:01 044E:120B: (accel) acceleration threshold: 4
+[   536.698] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[   536.701] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[   536.706] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   536.706] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   536.706] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   536.706] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   536.706] (**) Option "Device" "/dev/input/event23"
+[   536.706] (II) event23 - failed to create input device '/dev/input/event23'.
+[   536.706] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   536.706] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   536.706] (II) UnloadModule: "libinput"
+[   536.707] (II) config/udev: removing device Intel HID 5 button array
+[   536.707] (II) event14 - Intel HID 5 button array: device removed
+[   536.726] (II) UnloadModule: "libinput"
+[   536.727] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event14)
+[   536.727] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[   536.727] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[   536.727] (**) Intel HID 5 button array: always reports core events
+[   536.727] (**) Option "Device" "/dev/input/event14"
+[   536.728] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   536.728] (II) event14 - Intel HID 5 button array: device is a keyboard
+[   536.728] (II) event14 - Intel HID 5 button array: device removed
+[   536.752] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input14/event14"
+[   536.752] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 19)
+[   536.752] (**) Option "xkb_model" "pc105"
+[   536.752] (**) Option "xkb_layout" "us"
+[   536.752] (WW) Option "xkb_variant" requires a string value
+[   536.752] (WW) Option "xkb_options" requires a string value
+[   536.753] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   536.753] (II) event14 - Intel HID 5 button array: device is a keyboard
+[   536.754] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event18)
+[   536.754] (II) No input driver specified, ignoring this device.
+[   536.754] (II) This device may have been added with another device file.
+[   536.755] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event19)
+[   536.755] (II) No input driver specified, ignoring this device.
+[   536.755] (II) This device may have been added with another device file.
+[   536.755] (II) config/udev: removing device Intel HID events
+[   536.755] (II) event13 - Intel HID events: device removed
+[   536.773] (II) UnloadModule: "libinput"
+[   536.773] (II) config/udev: Adding input device Intel HID events (/dev/input/event13)
+[   536.773] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[   536.773] (II) Using input driver 'libinput' for 'Intel HID events'
+[   536.773] (**) Intel HID events: always reports core events
+[   536.773] (**) Option "Device" "/dev/input/event13"
+[   536.774] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[   536.774] (II) event13 - Intel HID events: device is a keyboard
+[   536.774] (II) event13 - Intel HID events: device removed
+[   536.788] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input13/event13"
+[   536.788] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 18)
+[   536.788] (**) Option "xkb_model" "pc105"
+[   536.788] (**) Option "xkb_layout" "us"
+[   536.788] (WW) Option "xkb_variant" requires a string value
+[   536.788] (WW) Option "xkb_options" requires a string value
+[   536.789] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[   536.789] (II) event13 - Intel HID events: device is a keyboard
+[   536.790] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event20)
+[   536.790] (II) No input driver specified, ignoring this device.
+[   536.790] (II) This device may have been added with another device file.
+[   536.791] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event17)
+[   536.791] (II) No input driver specified, ignoring this device.
+[   536.791] (II) This device may have been added with another device file.
+[   536.791] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event22)
+[   536.791] (II) No input driver specified, ignoring this device.
+[   536.791] (II) This device may have been added with another device file.
+[   536.792] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event21)
+[   536.792] (II) No input driver specified, ignoring this device.
+[   536.792] (II) This device may have been added with another device file.
+[   536.794] (II) config/udev: removing device Dell WMI hotkeys
+[   536.794] (II) event16 - Dell WMI hotkeys: device removed
+[   536.817] (II) UnloadModule: "libinput"
+[   536.817] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event16)
+[   536.817] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   536.817] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[   536.817] (**) Dell WMI hotkeys: always reports core events
+[   536.817] (**) Option "Device" "/dev/input/event16"
+[   536.818] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   536.818] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[   536.819] (II) event16 - Dell WMI hotkeys: device removed
+[   536.836] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:03/wmi_bus/wmi_bus-PNP0C14:03/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input16/event16"
+[   536.836] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 20)
+[   536.836] (**) Option "xkb_model" "pc105"
+[   536.836] (**) Option "xkb_layout" "us"
+[   536.836] (WW) Option "xkb_variant" requires a string value
+[   536.836] (WW) Option "xkb_options" requires a string value
+[   536.837] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   536.837] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[   536.838] (II) config/udev: removing device AT Translated Set 2 keyboard
+[   536.838] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   536.857] (II) UnloadModule: "libinput"
+[   536.858] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[   536.858] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   536.858] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   536.858] (**) AT Translated Set 2 keyboard: always reports core events
+[   536.858] (**) Option "Device" "/dev/input/event4"
+[   536.858] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   536.858] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   536.860] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   536.884] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[   536.884] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 21)
+[   536.884] (**) Option "xkb_model" "pc105"
+[   536.884] (**) Option "xkb_layout" "us"
+[   536.884] (WW) Option "xkb_variant" requires a string value
+[   536.884] (WW) Option "xkb_options" requires a string value
+[   536.885] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   536.885] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   586.636] (II) config/udev: removing device Power Button
+[   586.636] (II) event3  - Power Button: device removed
+[   586.665] (II) UnloadModule: "libinput"
+[   586.665] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[   586.665] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   586.665] (II) Using input driver 'libinput' for 'Power Button'
+[   586.665] (**) Power Button: always reports core events
+[   586.665] (**) Option "Device" "/dev/input/event3"
+[   586.666] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[   586.666] (II) event3  - Power Button: device is a keyboard
+[   586.667] (II) event3  - Power Button: device removed
+[   586.676] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[   586.676] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   586.676] (**) Option "xkb_model" "pc105"
+[   586.676] (**) Option "xkb_layout" "us"
+[   586.676] (WW) Option "xkb_variant" requires a string value
+[   586.676] (WW) Option "xkb_options" requires a string value
+[   586.677] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[   586.677] (II) event3  - Power Button: device is a keyboard
+[   586.678] (II) config/udev: removing device Video Bus
+[   586.678] (II) event11 - Video Bus: device removed
+[   586.705] (II) UnloadModule: "libinput"
+[   586.706] (II) config/udev: Adding input device Video Bus (/dev/input/event11)
+[   586.706] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   586.706] (II) Using input driver 'libinput' for 'Video Bus'
+[   586.706] (**) Video Bus: always reports core events
+[   586.706] (**) Option "Device" "/dev/input/event11"
+[   586.706] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[   586.707] (II) event11 - Video Bus: device is a keyboard
+[   586.707] (II) event11 - Video Bus: device removed
+[   586.724] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input11/event11"
+[   586.724] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   586.724] (**) Option "xkb_model" "pc105"
+[   586.724] (**) Option "xkb_layout" "us"
+[   586.724] (WW) Option "xkb_variant" requires a string value
+[   586.724] (WW) Option "xkb_options" requires a string value
+[   586.725] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[   586.725] (II) event11 - Video Bus: device is a keyboard
+[   586.726] (II) config/udev: removing device Video Bus
+[   586.726] (II) event12 - Video Bus: device removed
+[   586.741] (II) UnloadModule: "libinput"
+[   586.741] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[   586.741] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   586.742] (II) Using input driver 'libinput' for 'Video Bus'
+[   586.742] (**) Video Bus: always reports core events
+[   586.742] (**) Option "Device" "/dev/input/event12"
+[   586.742] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   586.743] (II) event12 - Video Bus: device is a keyboard
+[   586.743] (II) event12 - Video Bus: device removed
+[   586.768] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:23/LNXVIDEO:01/input/input12/event12"
+[   586.768] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   586.768] (**) Option "xkb_model" "pc105"
+[   586.768] (**) Option "xkb_layout" "us"
+[   586.768] (WW) Option "xkb_variant" requires a string value
+[   586.768] (WW) Option "xkb_options" requires a string value
+[   586.769] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   586.770] (II) event12 - Video Bus: device is a keyboard
+[   586.794] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   586.794] (II) modeset(0): Printing DDC gathered Modelines:
+[   586.794] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   586.794] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   586.805] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   586.805] (II) No input driver specified, ignoring this device.
+[   586.805] (II) This device may have been added with another device file.
+[   586.805] (II) config/udev: removing device Power Button
+[   586.805] (II) event1  - Power Button: device removed
+[   586.825] (II) UnloadModule: "libinput"
+[   586.826] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   586.826] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   586.826] (II) Using input driver 'libinput' for 'Power Button'
+[   586.826] (**) Power Button: always reports core events
+[   586.826] (**) Option "Device" "/dev/input/event1"
+[   586.827] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   586.827] (II) event1  - Power Button: device is a keyboard
+[   586.827] (II) event1  - Power Button: device removed
+[   586.836] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[   586.836] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[   586.836] (**) Option "xkb_model" "pc105"
+[   586.836] (**) Option "xkb_layout" "us"
+[   586.836] (WW) Option "xkb_variant" requires a string value
+[   586.836] (WW) Option "xkb_options" requires a string value
+[   586.837] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   586.837] (II) event1  - Power Button: device is a keyboard
+[   586.838] (II) config/udev: removing device Sleep Button
+[   586.838] (II) event2  - Sleep Button: device removed
+[   586.857] (II) UnloadModule: "libinput"
+[   586.857] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[   586.857] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[   586.857] (II) Using input driver 'libinput' for 'Sleep Button'
+[   586.857] (**) Sleep Button: always reports core events
+[   586.857] (**) Option "Device" "/dev/input/event2"
+[   586.858] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[   586.858] (II) event2  - Sleep Button: device is a keyboard
+[   586.859] (II) event2  - Sleep Button: device removed
+[   586.880] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[   586.880] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[   586.880] (**) Option "xkb_model" "pc105"
+[   586.880] (**) Option "xkb_layout" "us"
+[   586.880] (WW) Option "xkb_variant" requires a string value
+[   586.880] (WW) Option "xkb_options" requires a string value
+[   586.881] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[   586.881] (II) event2  - Sleep Button: device is a keyboard
+[   586.912] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   586.912] (II) modeset(0): Printing DDC gathered Modelines:
+[   586.912] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   586.912] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   586.925] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/mouse2)
+[   586.925] (II) No input driver specified, ignoring this device.
+[   586.925] (II) This device may have been added with another device file.
+[   586.925] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/mouse1)
+[   586.925] (II) No input driver specified, ignoring this device.
+[   586.925] (II) This device may have been added with another device file.
+[   586.926] (II) config/udev: Adding input device DualPoint Stick (/dev/input/mouse0)
+[   586.926] (II) No input driver specified, ignoring this device.
+[   586.926] (II) This device may have been added with another device file.
+[   586.926] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   586.926] (II) No input driver specified, ignoring this device.
+[   586.926] (II) This device may have been added with another device file.
+[   586.927] (II) config/udev: removing device Telink Wireless Receiver System Control
+[   586.927] (II) event9  - Telink Wireless Receiver System Control: device removed
+[   586.937] (II) UnloadModule: "libinput"
+[   586.938] (II) config/udev: Adding input device Telink Wireless Receiver System Control (/dev/input/event9)
+[   586.938] (**) Telink Wireless Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[   586.938] (II) Using input driver 'libinput' for 'Telink Wireless Receiver System Control'
+[   586.938] (**) Telink Wireless Receiver System Control: always reports core events
+[   586.938] (**) Option "Device" "/dev/input/event9"
+[   586.940] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[   586.940] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[   586.940] (II) event9  - Telink Wireless Receiver System Control: device removed
+[   586.964] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input9/event9"
+[   586.964] (II) XINPUT: Adding extended input device "Telink Wireless Receiver System Control" (type: KEYBOARD, id 13)
+[   586.964] (**) Option "xkb_model" "pc105"
+[   586.964] (**) Option "xkb_layout" "us"
+[   586.964] (WW) Option "xkb_variant" requires a string value
+[   586.964] (WW) Option "xkb_options" requires a string value
+[   586.966] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[   586.966] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[   586.967] (II) config/udev: removing device Telink Wireless Receiver Mouse
+[   586.967] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[   586.992] (II) UnloadModule: "libinput"
+[   586.993] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/event7)
+[   586.993] (**) Telink Wireless Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[   586.993] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Mouse'
+[   586.993] (**) Telink Wireless Receiver Mouse: always reports core events
+[   586.993] (**) Option "Device" "/dev/input/event7"
+[   586.994] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[   586.994] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[   586.995] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[   587.020] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input7/event7"
+[   587.020] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Mouse" (type: MOUSE, id 11)
+[   587.021] (**) Option "AccelerationScheme" "none"
+[   587.021] (**) Telink Wireless Receiver Mouse: (accel) selected scheme none/0
+[   587.021] (**) Telink Wireless Receiver Mouse: (accel) acceleration factor: 2.000
+[   587.021] (**) Telink Wireless Receiver Mouse: (accel) acceleration threshold: 4
+[   587.023] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[   587.023] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[   587.025] (II) config/udev: removing device DualPoint Stick
+[   587.025] (II) event5  - DualPoint Stick: device removed
+[   587.048] (II) UnloadModule: "libinput"
+[   587.049] (II) config/udev: Adding input device DualPoint Stick (/dev/input/event5)
+[   587.049] (**) DualPoint Stick: Applying InputClass "libinput pointer catchall"
+[   587.049] (II) Using input driver 'libinput' for 'DualPoint Stick'
+[   587.049] (**) DualPoint Stick: always reports core events
+[   587.049] (**) Option "Device" "/dev/input/event5"
+[   587.051] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[   587.051] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[   587.051] (II) event5  - DualPoint Stick: device is a pointer
+[   587.053] (II) event5  - DualPoint Stick: device removed
+[   587.068] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input6/event5"
+[   587.068] (II) XINPUT: Adding extended input device "DualPoint Stick" (type: MOUSE, id 17)
+[   587.069] (**) Option "AccelerationScheme" "none"
+[   587.069] (**) DualPoint Stick: (accel) selected scheme none/0
+[   587.069] (**) DualPoint Stick: (accel) acceleration factor: 2.000
+[   587.069] (**) DualPoint Stick: (accel) acceleration threshold: 4
+[   587.071] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[   587.071] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[   587.071] (II) event5  - DualPoint Stick: device is a pointer
+[   587.074] (II) config/udev: removing device Telink Wireless Receiver
+[   587.074] (II) event10 - Telink Wireless Receiver: device removed
+[   587.093] (II) UnloadModule: "libinput"
+[   587.093] (II) config/udev: Adding input device Telink Wireless Receiver (/dev/input/event10)
+[   587.094] (**) Telink Wireless Receiver: Applying InputClass "libinput keyboard catchall"
+[   587.094] (II) Using input driver 'libinput' for 'Telink Wireless Receiver'
+[   587.094] (**) Telink Wireless Receiver: always reports core events
+[   587.094] (**) Option "Device" "/dev/input/event10"
+[   587.095] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[   587.095] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[   587.095] (II) event10 - Telink Wireless Receiver: device removed
+[   587.124] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:248A:8367.0003/input/input10/event10"
+[   587.124] (II) XINPUT: Adding extended input device "Telink Wireless Receiver" (type: KEYBOARD, id 14)
+[   587.124] (**) Option "xkb_model" "pc105"
+[   587.124] (**) Option "xkb_layout" "us"
+[   587.124] (WW) Option "xkb_variant" requires a string value
+[   587.124] (WW) Option "xkb_options" requires a string value
+[   587.125] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[   587.125] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[   587.126] (II) config/udev: removing device Integrated_Webcam_HD: Integrate
+[   587.126] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[   587.174] (II) UnloadModule: "libinput"
+[   587.174] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event15)
+[   587.174] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[   587.174] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[   587.174] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[   587.174] (**) Option "Device" "/dev/input/event15"
+[   587.175] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[   587.175] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[   587.176] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[   587.196] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input15/event15"
+[   587.196] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 15)
+[   587.196] (**) Option "xkb_model" "pc105"
+[   587.196] (**) Option "xkb_layout" "us"
+[   587.196] (WW) Option "xkb_variant" requires a string value
+[   587.196] (WW) Option "xkb_options" requires a string value
+[   587.197] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[   587.197] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[   587.198] (II) config/udev: removing device Telink Wireless Receiver Consumer Control
+[   587.199] (II) UnloadModule: "libinput"
+[   587.199] (II) config/udev: removing device Telink Wireless Receiver Consumer Control
+[   587.199] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[   587.213] (II) UnloadModule: "libinput"
+[   587.213] (II) config/udev: Adding input device Telink Wireless Receiver Consumer Control (/dev/input/event8)
+[   587.214] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   587.214] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[   587.214] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[   587.214] (**) Option "Device" "/dev/input/event8"
+[   587.215] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[   587.215] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[   587.215] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[   587.232] (II) libinput: Telink Wireless Receiver Consumer Control: needs a virtual subdevice
+[   587.232] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[   587.232] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: MOUSE, id 12)
+[   587.232] (**) Option "AccelerationScheme" "none"
+[   587.233] (**) Telink Wireless Receiver Consumer Control: (accel) selected scheme none/0
+[   587.233] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration factor: 2.000
+[   587.233] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration threshold: 4
+[   587.234] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[   587.234] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[   587.235] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   587.235] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[   587.235] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[   587.235] (**) Option "Device" "/dev/input/event8"
+[   587.235] (II) libinput: Telink Wireless Receiver Consumer Control: is a virtual subdevice
+[   587.235] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[   587.235] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: KEYBOARD, id 22)
+[   587.235] (**) Option "xkb_model" "pc105"
+[   587.235] (**) Option "xkb_layout" "us"
+[   587.235] (WW) Option "xkb_variant" requires a string value
+[   587.235] (WW) Option "xkb_options" requires a string value
+[   587.237] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event19)
+[   587.237] (II) No input driver specified, ignoring this device.
+[   587.237] (II) This device may have been added with another device file.
+[   587.238] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event22)
+[   587.238] (II) No input driver specified, ignoring this device.
+[   587.238] (II) This device may have been added with another device file.
+[   587.238] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event18)
+[   587.238] (II) No input driver specified, ignoring this device.
+[   587.238] (II) This device may have been added with another device file.
+[   587.238] (II) config/udev: removing device DLL07A8:01 044E:120B
+[   587.238] (II) event6  - DLL07A8:01 044E:120B: device removed
+[   587.268] (II) UnloadModule: "libinput"
+[   587.268] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/event6)
+[   587.269] (**) DLL07A8:01 044E:120B: Applying InputClass "libinput touchpad catchall"
+[   587.269] (II) Using input driver 'libinput' for 'DLL07A8:01 044E:120B'
+[   587.269] (**) DLL07A8:01 044E:120B: always reports core events
+[   587.269] (**) Option "Device" "/dev/input/event6"
+[   587.270] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[   587.271] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[   587.271] (II) event6  - DLL07A8:01 044E:120B: device removed
+[   587.296] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input5/event6"
+[   587.296] (II) XINPUT: Adding extended input device "DLL07A8:01 044E:120B" (type: TOUCHPAD, id 16)
+[   587.298] (**) Option "AccelerationScheme" "none"
+[   587.298] (**) DLL07A8:01 044E:120B: (accel) selected scheme none/0
+[   587.298] (**) DLL07A8:01 044E:120B: (accel) acceleration factor: 2.000
+[   587.298] (**) DLL07A8:01 044E:120B: (accel) acceleration threshold: 4
+[   587.300] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[   587.301] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[   587.302] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event17)
+[   587.302] (II) No input driver specified, ignoring this device.
+[   587.302] (II) This device may have been added with another device file.
+[   587.302] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event20)
+[   587.302] (II) No input driver specified, ignoring this device.
+[   587.302] (II) This device may have been added with another device file.
+[   587.302] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event21)
+[   587.302] (II) No input driver specified, ignoring this device.
+[   587.302] (II) This device may have been added with another device file.
+[   587.303] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   587.303] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   587.303] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   587.303] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   587.303] (**) Option "Device" "/dev/input/event23"
+[   587.369] (II) event23 - Gaomon Gaomon Tablet_1060Pro: is tagged by udev as: Tablet
+[   587.419] (EE) event23 - Gaomon Gaomon Tablet_1060Pro: libinput bug: missing tablet capabilities: resolution. Ignoring this device.
+[   587.420] (II) event23 - Gaomon Gaomon Tablet_1060Pro: device is a tablet
+[   587.468] (II) event23 - failed to create input device '/dev/input/event23'.
+[   587.468] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   587.468] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   587.468] (II) UnloadModule: "libinput"
+[   587.468] (II) config/udev: removing device Intel HID events
+[   587.469] (II) event13 - Intel HID events: device removed
+[   587.508] (II) UnloadModule: "libinput"
+[   587.509] (II) config/udev: Adding input device Intel HID events (/dev/input/event13)
+[   587.509] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[   587.509] (II) Using input driver 'libinput' for 'Intel HID events'
+[   587.509] (**) Intel HID events: always reports core events
+[   587.509] (**) Option "Device" "/dev/input/event13"
+[   587.510] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[   587.510] (II) event13 - Intel HID events: device is a keyboard
+[   587.511] (II) event13 - Intel HID events: device removed
+[   587.540] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input13/event13"
+[   587.540] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 18)
+[   587.540] (**) Option "xkb_model" "pc105"
+[   587.540] (**) Option "xkb_layout" "us"
+[   587.540] (WW) Option "xkb_variant" requires a string value
+[   587.540] (WW) Option "xkb_options" requires a string value
+[   587.541] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[   587.541] (II) event13 - Intel HID events: device is a keyboard
+[   587.542] (II) config/udev: removing device Intel HID 5 button array
+[   587.542] (II) event14 - Intel HID 5 button array: device removed
+[   587.557] (II) UnloadModule: "libinput"
+[   587.557] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event14)
+[   587.557] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[   587.557] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[   587.557] (**) Intel HID 5 button array: always reports core events
+[   587.557] (**) Option "Device" "/dev/input/event14"
+[   587.558] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   587.558] (II) event14 - Intel HID 5 button array: device is a keyboard
+[   587.558] (II) event14 - Intel HID 5 button array: device removed
+[   587.572] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input14/event14"
+[   587.572] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 19)
+[   587.572] (**) Option "xkb_model" "pc105"
+[   587.572] (**) Option "xkb_layout" "us"
+[   587.572] (WW) Option "xkb_variant" requires a string value
+[   587.572] (WW) Option "xkb_options" requires a string value
+[   587.572] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   587.573] (II) event14 - Intel HID 5 button array: device is a keyboard
+[   587.574] (II) config/udev: removing device Dell WMI hotkeys
+[   587.574] (II) event16 - Dell WMI hotkeys: device removed
+[   587.593] (II) UnloadModule: "libinput"
+[   587.593] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event16)
+[   587.593] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   587.593] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[   587.593] (**) Dell WMI hotkeys: always reports core events
+[   587.593] (**) Option "Device" "/dev/input/event16"
+[   587.594] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   587.594] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[   587.595] (II) event16 - Dell WMI hotkeys: device removed
+[   587.608] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:03/wmi_bus/wmi_bus-PNP0C14:03/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input16/event16"
+[   587.608] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 20)
+[   587.608] (**) Option "xkb_model" "pc105"
+[   587.608] (**) Option "xkb_layout" "us"
+[   587.608] (WW) Option "xkb_variant" requires a string value
+[   587.608] (WW) Option "xkb_options" requires a string value
+[   587.609] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   587.609] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[   587.609] (II) config/udev: removing device AT Translated Set 2 keyboard
+[   587.609] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   587.625] (II) UnloadModule: "libinput"
+[   587.625] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[   587.625] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   587.625] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   587.625] (**) AT Translated Set 2 keyboard: always reports core events
+[   587.625] (**) Option "Device" "/dev/input/event4"
+[   587.626] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   587.626] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   587.627] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   587.644] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[   587.644] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 21)
+[   587.644] (**) Option "xkb_model" "pc105"
+[   587.644] (**) Option "xkb_layout" "us"
+[   587.644] (WW) Option "xkb_variant" requires a string value
+[   587.644] (WW) Option "xkb_options" requires a string value
+[   587.645] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   587.645] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   698.857] (II) config/udev: removing device Power Button
+[   698.857] (II) event3  - Power Button: device removed
+[   698.873] (II) UnloadModule: "libinput"
+[   698.873] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[   698.873] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   698.873] (II) Using input driver 'libinput' for 'Power Button'
+[   698.873] (**) Power Button: always reports core events
+[   698.873] (**) Option "Device" "/dev/input/event3"
+[   698.874] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[   698.874] (II) event3  - Power Button: device is a keyboard
+[   698.876] (II) event3  - Power Button: device removed
+[   698.892] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[   698.892] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   698.892] (**) Option "xkb_model" "pc105"
+[   698.892] (**) Option "xkb_layout" "us"
+[   698.892] (WW) Option "xkb_variant" requires a string value
+[   698.892] (WW) Option "xkb_options" requires a string value
+[   698.893] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[   698.893] (II) event3  - Power Button: device is a keyboard
+[   698.916] (II) config/udev: removing device Video Bus
+[   698.916] (II) event11 - Video Bus: device removed
+[   698.941] (II) UnloadModule: "libinput"
+[   698.941] (II) config/udev: Adding input device Video Bus (/dev/input/event11)
+[   698.941] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   698.941] (II) Using input driver 'libinput' for 'Video Bus'
+[   698.941] (**) Video Bus: always reports core events
+[   698.941] (**) Option "Device" "/dev/input/event11"
+[   698.942] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[   698.942] (II) event11 - Video Bus: device is a keyboard
+[   698.943] (II) event11 - Video Bus: device removed
+[   698.956] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input11/event11"
+[   698.956] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   698.956] (**) Option "xkb_model" "pc105"
+[   698.956] (**) Option "xkb_layout" "us"
+[   698.956] (WW) Option "xkb_variant" requires a string value
+[   698.956] (WW) Option "xkb_options" requires a string value
+[   698.957] (II) event11 - Video Bus: is tagged by udev as: Keyboard
+[   698.957] (II) event11 - Video Bus: device is a keyboard
+[   698.958] (II) config/udev: removing device Video Bus
+[   698.958] (II) event12 - Video Bus: device removed
+[   698.977] (II) UnloadModule: "libinput"
+[   698.977] (II) config/udev: Adding input device Video Bus (/dev/input/event12)
+[   698.977] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   698.977] (II) Using input driver 'libinput' for 'Video Bus'
+[   698.977] (**) Video Bus: always reports core events
+[   698.977] (**) Option "Device" "/dev/input/event12"
+[   698.979] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   698.979] (II) event12 - Video Bus: device is a keyboard
+[   698.979] (II) event12 - Video Bus: device removed
+[   698.988] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:23/LNXVIDEO:01/input/input12/event12"
+[   698.988] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   698.988] (**) Option "xkb_model" "pc105"
+[   698.988] (**) Option "xkb_layout" "us"
+[   698.988] (WW) Option "xkb_variant" requires a string value
+[   698.988] (WW) Option "xkb_options" requires a string value
+[   698.990] (II) event12 - Video Bus: is tagged by udev as: Keyboard
+[   698.990] (II) event12 - Video Bus: device is a keyboard
+[   699.016] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   699.016] (II) modeset(0): Printing DDC gathered Modelines:
+[   699.016] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   699.016] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   699.027] (II) config/udev: removing device Power Button
+[   699.027] (II) event1  - Power Button: device removed
+[   699.049] (II) UnloadModule: "libinput"
+[   699.050] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[   699.050] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   699.050] (II) Using input driver 'libinput' for 'Power Button'
+[   699.050] (**) Power Button: always reports core events
+[   699.050] (**) Option "Device" "/dev/input/event1"
+[   699.051] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   699.051] (II) event1  - Power Button: device is a keyboard
+[   699.051] (II) event1  - Power Button: device removed
+[   699.072] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[   699.072] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[   699.072] (**) Option "xkb_model" "pc105"
+[   699.072] (**) Option "xkb_layout" "us"
+[   699.072] (WW) Option "xkb_variant" requires a string value
+[   699.072] (WW) Option "xkb_options" requires a string value
+[   699.073] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[   699.073] (II) event1  - Power Button: device is a keyboard
+[   699.074] (II) config/udev: removing device Sleep Button
+[   699.074] (II) event2  - Sleep Button: device removed
+[   699.093] (II) UnloadModule: "libinput"
+[   699.093] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[   699.093] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[   699.093] (II) Using input driver 'libinput' for 'Sleep Button'
+[   699.093] (**) Sleep Button: always reports core events
+[   699.093] (**) Option "Device" "/dev/input/event2"
+[   699.094] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[   699.094] (II) event2  - Sleep Button: device is a keyboard
+[   699.095] (II) event2  - Sleep Button: device removed
+[   699.120] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[   699.120] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[   699.120] (**) Option "xkb_model" "pc105"
+[   699.120] (**) Option "xkb_layout" "us"
+[   699.120] (WW) Option "xkb_variant" requires a string value
+[   699.120] (WW) Option "xkb_options" requires a string value
+[   699.121] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[   699.121] (II) event2  - Sleep Button: device is a keyboard
+[   699.122] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[   699.122] (II) No input driver specified, ignoring this device.
+[   699.122] (II) This device may have been added with another device file.
+[   699.149] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[   699.149] (II) modeset(0): Printing DDC gathered Modelines:
+[   699.149] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[   699.149] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[   699.160] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/mouse2)
+[   699.160] (II) No input driver specified, ignoring this device.
+[   699.160] (II) This device may have been added with another device file.
+[   699.162] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   699.162] (II) No input driver specified, ignoring this device.
+[   699.162] (II) This device may have been added with another device file.
+[   699.162] (II) config/udev: Adding input device DualPoint Stick (/dev/input/mouse0)
+[   699.162] (II) No input driver specified, ignoring this device.
+[   699.162] (II) This device may have been added with another device file.
+[   699.163] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/mouse1)
+[   699.163] (II) No input driver specified, ignoring this device.
+[   699.163] (II) This device may have been added with another device file.
+[   699.163] (II) config/udev: removing device Telink Wireless Receiver Consumer Control
+[   699.169] (II) UnloadModule: "libinput"
+[   699.169] (II) config/udev: removing device Telink Wireless Receiver Consumer Control
+[   699.169] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[   699.193] (II) UnloadModule: "libinput"
+[   699.194] (II) config/udev: Adding input device Telink Wireless Receiver Consumer Control (/dev/input/event8)
+[   699.194] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   699.194] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[   699.194] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[   699.194] (**) Option "Device" "/dev/input/event8"
+[   699.195] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[   699.195] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[   699.196] (II) event8  - Telink Wireless Receiver Consumer Control: device removed
+[   699.204] (II) libinput: Telink Wireless Receiver Consumer Control: needs a virtual subdevice
+[   699.204] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[   699.204] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: MOUSE, id 12)
+[   699.205] (**) Option "AccelerationScheme" "none"
+[   699.206] (**) Telink Wireless Receiver Consumer Control: (accel) selected scheme none/0
+[   699.206] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration factor: 2.000
+[   699.206] (**) Telink Wireless Receiver Consumer Control: (accel) acceleration threshold: 4
+[   699.208] (II) event8  - Telink Wireless Receiver Consumer Control: is tagged by udev as: Keyboard
+[   699.208] (II) event8  - Telink Wireless Receiver Consumer Control: device is a keyboard
+[   699.209] (**) Telink Wireless Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   699.210] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Consumer Control'
+[   699.210] (**) Telink Wireless Receiver Consumer Control: always reports core events
+[   699.210] (**) Option "Device" "/dev/input/event8"
+[   699.210] (II) libinput: Telink Wireless Receiver Consumer Control: is a virtual subdevice
+[   699.210] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input8/event8"
+[   699.210] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Consumer Control" (type: KEYBOARD, id 22)
+[   699.210] (**) Option "xkb_model" "pc105"
+[   699.210] (**) Option "xkb_layout" "us"
+[   699.210] (WW) Option "xkb_variant" requires a string value
+[   699.210] (WW) Option "xkb_options" requires a string value
+[   699.211] (II) config/udev: removing device Telink Wireless Receiver Mouse
+[   699.211] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[   699.236] (II) UnloadModule: "libinput"
+[   699.237] (II) config/udev: Adding input device Telink Wireless Receiver Mouse (/dev/input/event7)
+[   699.237] (**) Telink Wireless Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[   699.237] (II) Using input driver 'libinput' for 'Telink Wireless Receiver Mouse'
+[   699.237] (**) Telink Wireless Receiver Mouse: always reports core events
+[   699.237] (**) Option "Device" "/dev/input/event7"
+[   699.238] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[   699.238] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[   699.239] (II) event7  - Telink Wireless Receiver Mouse: device removed
+[   699.248] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input7/event7"
+[   699.248] (II) XINPUT: Adding extended input device "Telink Wireless Receiver Mouse" (type: MOUSE, id 11)
+[   699.249] (**) Option "AccelerationScheme" "none"
+[   699.249] (**) Telink Wireless Receiver Mouse: (accel) selected scheme none/0
+[   699.249] (**) Telink Wireless Receiver Mouse: (accel) acceleration factor: 2.000
+[   699.249] (**) Telink Wireless Receiver Mouse: (accel) acceleration threshold: 4
+[   699.251] (II) event7  - Telink Wireless Receiver Mouse: is tagged by udev as: Mouse
+[   699.251] (II) event7  - Telink Wireless Receiver Mouse: device is a pointer
+[   699.252] (II) config/udev: removing device Integrated_Webcam_HD: Integrate
+[   699.252] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[   699.277] (II) UnloadModule: "libinput"
+[   699.278] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event15)
+[   699.278] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[   699.278] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[   699.278] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[   699.278] (**) Option "Device" "/dev/input/event15"
+[   699.279] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[   699.279] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[   699.279] (II) event15 - Integrated_Webcam_HD: Integrate: device removed
+[   699.308] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input15/event15"
+[   699.308] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 15)
+[   699.308] (**) Option "xkb_model" "pc105"
+[   699.308] (**) Option "xkb_layout" "us"
+[   699.308] (WW) Option "xkb_variant" requires a string value
+[   699.308] (WW) Option "xkb_options" requires a string value
+[   699.310] (II) event15 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[   699.310] (II) event15 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[   699.311] (II) config/udev: removing device Telink Wireless Receiver System Control
+[   699.311] (II) event9  - Telink Wireless Receiver System Control: device removed
+[   699.327] (II) UnloadModule: "libinput"
+[   699.328] (II) config/udev: Adding input device Telink Wireless Receiver System Control (/dev/input/event9)
+[   699.328] (**) Telink Wireless Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[   699.328] (II) Using input driver 'libinput' for 'Telink Wireless Receiver System Control'
+[   699.328] (**) Telink Wireless Receiver System Control: always reports core events
+[   699.328] (**) Option "Device" "/dev/input/event9"
+[   699.330] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[   699.330] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[   699.330] (II) event9  - Telink Wireless Receiver System Control: device removed
+[   699.352] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:248A:8367.0002/input/input9/event9"
+[   699.352] (II) XINPUT: Adding extended input device "Telink Wireless Receiver System Control" (type: KEYBOARD, id 13)
+[   699.352] (**) Option "xkb_model" "pc105"
+[   699.352] (**) Option "xkb_layout" "us"
+[   699.352] (WW) Option "xkb_variant" requires a string value
+[   699.352] (WW) Option "xkb_options" requires a string value
+[   699.354] (II) event9  - Telink Wireless Receiver System Control: is tagged by udev as: Keyboard
+[   699.354] (II) event9  - Telink Wireless Receiver System Control: device is a keyboard
+[   699.355] (II) config/udev: removing device DualPoint Stick
+[   699.355] (II) event5  - DualPoint Stick: device removed
+[   699.398] (II) UnloadModule: "libinput"
+[   699.400] (II) config/udev: Adding input device DualPoint Stick (/dev/input/event5)
+[   699.400] (**) DualPoint Stick: Applying InputClass "libinput pointer catchall"
+[   699.400] (II) Using input driver 'libinput' for 'DualPoint Stick'
+[   699.400] (**) DualPoint Stick: always reports core events
+[   699.400] (**) Option "Device" "/dev/input/event5"
+[   699.403] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[   699.403] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[   699.403] (II) event5  - DualPoint Stick: device is a pointer
+[   699.406] (II) event5  - DualPoint Stick: device removed
+[   699.432] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input6/event5"
+[   699.432] (II) XINPUT: Adding extended input device "DualPoint Stick" (type: MOUSE, id 17)
+[   699.435] (**) Option "AccelerationScheme" "none"
+[   699.437] (**) DualPoint Stick: (accel) selected scheme none/0
+[   699.437] (**) DualPoint Stick: (accel) acceleration factor: 2.000
+[   699.437] (**) DualPoint Stick: (accel) acceleration threshold: 4
+[   699.441] (II) event5  - DualPoint Stick: is tagged by udev as: Mouse Pointingstick
+[   699.442] (II) event5  - DualPoint Stick: trackpoint multiplier is 0.50
+[   699.443] (II) event5  - DualPoint Stick: device is a pointer
+[   699.449] (II) config/udev: removing device Telink Wireless Receiver
+[   699.450] (II) event10 - Telink Wireless Receiver: device removed
+[   699.475] (II) UnloadModule: "libinput"
+[   699.478] (II) config/udev: Adding input device Telink Wireless Receiver (/dev/input/event10)
+[   699.478] (**) Telink Wireless Receiver: Applying InputClass "libinput keyboard catchall"
+[   699.478] (II) Using input driver 'libinput' for 'Telink Wireless Receiver'
+[   699.478] (**) Telink Wireless Receiver: always reports core events
+[   699.478] (**) Option "Device" "/dev/input/event10"
+[   699.483] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[   699.483] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[   699.484] (II) event10 - Telink Wireless Receiver: device removed
+[   699.508] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:248A:8367.0003/input/input10/event10"
+[   699.508] (II) XINPUT: Adding extended input device "Telink Wireless Receiver" (type: KEYBOARD, id 14)
+[   699.508] (**) Option "xkb_model" "pc105"
+[   699.508] (**) Option "xkb_layout" "us"
+[   699.508] (WW) Option "xkb_variant" requires a string value
+[   699.508] (WW) Option "xkb_options" requires a string value
+[   699.512] (II) event10 - Telink Wireless Receiver: is tagged by udev as: Keyboard
+[   699.512] (II) event10 - Telink Wireless Receiver: device is a keyboard
+[   699.515] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event20)
+[   699.515] (II) No input driver specified, ignoring this device.
+[   699.515] (II) This device may have been added with another device file.
+[   699.516] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event22)
+[   699.516] (II) No input driver specified, ignoring this device.
+[   699.516] (II) This device may have been added with another device file.
+[   699.517] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event17)
+[   699.517] (II) No input driver specified, ignoring this device.
+[   699.517] (II) This device may have been added with another device file.
+[   699.518] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event21)
+[   699.518] (II) No input driver specified, ignoring this device.
+[   699.518] (II) This device may have been added with another device file.
+[   699.519] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event18)
+[   699.519] (II) No input driver specified, ignoring this device.
+[   699.519] (II) This device may have been added with another device file.
+[   699.519] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event19)
+[   699.519] (II) No input driver specified, ignoring this device.
+[   699.519] (II) This device may have been added with another device file.
+[   699.520] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   699.520] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   699.520] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   699.520] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   699.520] (**) Option "Device" "/dev/input/event23"
+[   699.521] (II) event23 - failed to create input device '/dev/input/event23'.
+[   699.521] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   699.521] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   699.521] (II) UnloadModule: "libinput"
+[   699.521] (II) config/udev: removing device DLL07A8:01 044E:120B
+[   699.521] (II) event6  - DLL07A8:01 044E:120B: device removed
+[   699.573] (II) UnloadModule: "libinput"
+[   699.575] (II) config/udev: Adding input device DLL07A8:01 044E:120B (/dev/input/event6)
+[   699.575] (**) DLL07A8:01 044E:120B: Applying InputClass "libinput touchpad catchall"
+[   699.575] (II) Using input driver 'libinput' for 'DLL07A8:01 044E:120B'
+[   699.575] (**) DLL07A8:01 044E:120B: always reports core events
+[   699.575] (**) Option "Device" "/dev/input/event6"
+[   699.580] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[   699.583] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[   699.584] (II) event6  - DLL07A8:01 044E:120B: device removed
+[   699.605] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-1/i2c-DLL07A8:01/0018:044E:120B.0001/input/input5/event6"
+[   699.605] (II) XINPUT: Adding extended input device "DLL07A8:01 044E:120B" (type: TOUCHPAD, id 16)
+[   699.610] (**) Option "AccelerationScheme" "none"
+[   699.613] (**) DLL07A8:01 044E:120B: (accel) selected scheme none/0
+[   699.613] (**) DLL07A8:01 044E:120B: (accel) acceleration factor: 2.000
+[   699.613] (**) DLL07A8:01 044E:120B: (accel) acceleration threshold: 4
+[   699.617] (II) event6  - DLL07A8:01 044E:120B: is tagged by udev as: Touchpad
+[   699.620] (II) event6  - DLL07A8:01 044E:120B: device is a touchpad
+[   699.623] (II) config/udev: removing device Intel HID events
+[   699.623] (II) event13 - Intel HID events: device removed
+[   699.646] (II) UnloadModule: "libinput"
+[   699.647] (II) config/udev: Adding input device Intel HID events (/dev/input/event13)
+[   699.647] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[   699.647] (II) Using input driver 'libinput' for 'Intel HID events'
+[   699.648] (**) Intel HID events: always reports core events
+[   699.648] (**) Option "Device" "/dev/input/event13"
+[   699.651] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[   699.651] (II) event13 - Intel HID events: device is a keyboard
+[   699.652] (II) event13 - Intel HID events: device removed
+[   699.672] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input13/event13"
+[   699.672] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 18)
+[   699.672] (**) Option "xkb_model" "pc105"
+[   699.672] (**) Option "xkb_layout" "us"
+[   699.672] (WW) Option "xkb_variant" requires a string value
+[   699.672] (WW) Option "xkb_options" requires a string value
+[   699.674] (II) event13 - Intel HID events: is tagged by udev as: Keyboard
+[   699.674] (II) event13 - Intel HID events: device is a keyboard
+[   699.676] (II) config/udev: removing device Intel HID 5 button array
+[   699.676] (II) event14 - Intel HID 5 button array: device removed
+[   699.698] (II) UnloadModule: "libinput"
+[   699.698] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event14)
+[   699.698] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[   699.698] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[   699.698] (**) Intel HID 5 button array: always reports core events
+[   699.698] (**) Option "Device" "/dev/input/event14"
+[   699.699] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   699.699] (II) event14 - Intel HID 5 button array: device is a keyboard
+[   699.699] (II) event14 - Intel HID 5 button array: device removed
+[   699.712] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input14/event14"
+[   699.712] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 19)
+[   699.712] (**) Option "xkb_model" "pc105"
+[   699.712] (**) Option "xkb_layout" "us"
+[   699.712] (WW) Option "xkb_variant" requires a string value
+[   699.712] (WW) Option "xkb_options" requires a string value
+[   699.713] (II) event14 - Intel HID 5 button array: is tagged by udev as: Keyboard
+[   699.713] (II) event14 - Intel HID 5 button array: device is a keyboard
+[   699.715] (II) config/udev: removing device Dell WMI hotkeys
+[   699.715] (II) event16 - Dell WMI hotkeys: device removed
+[   699.737] (II) UnloadModule: "libinput"
+[   699.737] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event16)
+[   699.737] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   699.737] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[   699.737] (**) Dell WMI hotkeys: always reports core events
+[   699.737] (**) Option "Device" "/dev/input/event16"
+[   699.738] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   699.738] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[   699.739] (II) event16 - Dell WMI hotkeys: device removed
+[   699.760] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:03/wmi_bus/wmi_bus-PNP0C14:03/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input16/event16"
+[   699.760] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 20)
+[   699.760] (**) Option "xkb_model" "pc105"
+[   699.760] (**) Option "xkb_layout" "us"
+[   699.760] (WW) Option "xkb_variant" requires a string value
+[   699.760] (WW) Option "xkb_options" requires a string value
+[   699.761] (II) event16 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[   699.761] (II) event16 - Dell WMI hotkeys: device is a keyboard
+[   699.763] (II) config/udev: removing device AT Translated Set 2 keyboard
+[   699.763] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   699.781] (II) UnloadModule: "libinput"
+[   699.781] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[   699.781] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   699.781] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   699.781] (**) AT Translated Set 2 keyboard: always reports core events
+[   699.781] (**) Option "Device" "/dev/input/event4"
+[   699.782] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   699.782] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   699.783] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   699.804] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[   699.804] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 21)
+[   699.804] (**) Option "xkb_model" "pc105"
+[   699.804] (**) Option "xkb_layout" "us"
+[   699.804] (WW) Option "xkb_variant" requires a string value
+[   699.804] (WW) Option "xkb_options" requires a string value
+[   699.805] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   699.805] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   820.385] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   820.385] (II) No input driver specified, ignoring this device.
+[   820.385] (II) This device may have been added with another device file.
+[   820.432] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   820.432] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   820.432] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   820.432] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   820.432] (**) Option "Device" "/dev/input/event23"
+[   820.432] (II) event23 - failed to create input device '/dev/input/event23'.
+[   820.432] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   820.432] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   820.432] (II) UnloadModule: "libinput"
+[   854.522] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   854.522] (II) No input driver specified, ignoring this device.
+[   854.522] (II) This device may have been added with another device file.
+[   854.584] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   854.584] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   854.584] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   854.584] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   854.584] (**) Option "Device" "/dev/input/event23"
+[   854.584] (II) event23 - failed to create input device '/dev/input/event23'.
+[   854.584] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   854.584] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   854.584] (II) UnloadModule: "libinput"
+[   876.370] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   876.370] (II) No input driver specified, ignoring this device.
+[   876.370] (II) This device may have been added with another device file.
+[   876.420] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   876.420] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   876.420] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   876.420] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   876.420] (**) Option "Device" "/dev/input/event23"
+[   876.421] (II) event23 - failed to create input device '/dev/input/event23'.
+[   876.421] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   876.421] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   876.421] (II) UnloadModule: "libinput"
+[   893.087] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[   893.087] (II) No input driver specified, ignoring this device.
+[   893.087] (II) This device may have been added with another device file.
+[   893.179] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[   893.179] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[   893.179] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[   893.179] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[   893.179] (**) Option "Device" "/dev/input/event23"
+[   893.179] (II) event23 - failed to create input device '/dev/input/event23'.
+[   893.179] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[   893.179] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[   893.179] (II) UnloadModule: "libinput"
+[  1028.677] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  1028.677] (II) No input driver specified, ignoring this device.
+[  1028.677] (II) This device may have been added with another device file.
+[  1028.744] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  1028.744] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  1028.744] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  1028.744] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  1028.744] (**) Option "Device" "/dev/input/event23"
+[  1028.744] (II) event23 - failed to create input device '/dev/input/event23'.
+[  1028.744] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  1028.744] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  1028.744] (II) UnloadModule: "libinput"
+[  1067.746] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  1067.746] (II) No input driver specified, ignoring this device.
+[  1067.746] (II) This device may have been added with another device file.
+[  1067.820] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  1067.820] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  1067.820] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  1067.820] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  1067.820] (**) Option "Device" "/dev/input/event23"
+[  1067.820] (II) event23 - failed to create input device '/dev/input/event23'.
+[  1067.820] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  1067.820] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  1067.820] (II) UnloadModule: "libinput"
+[  1102.404] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  1102.404] (II) No input driver specified, ignoring this device.
+[  1102.404] (II) This device may have been added with another device file.
+[  1102.519] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  1102.519] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  1102.519] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  1102.519] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  1102.519] (**) Option "Device" "/dev/input/event23"
+[  1102.520] (II) event23 - failed to create input device '/dev/input/event23'.
+[  1102.520] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  1102.520] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  1102.520] (II) UnloadModule: "libinput"
+[  1549.209] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  1549.209] (II) No input driver specified, ignoring this device.
+[  1549.209] (II) This device may have been added with another device file.
+[  1549.265] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  1549.265] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  1549.265] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  1549.265] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  1549.265] (**) Option "Device" "/dev/input/event23"
+[  1549.265] (II) event23 - failed to create input device '/dev/input/event23'.
+[  1549.265] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  1549.265] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  1549.265] (II) UnloadModule: "libinput"
+[  2001.666] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  2001.666] (II) No input driver specified, ignoring this device.
+[  2001.666] (II) This device may have been added with another device file.
+[  2001.813] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  2001.813] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  2001.813] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  2001.813] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  2001.813] (**) Option "Device" "/dev/input/event23"
+[  2001.813] (II) event23 - failed to create input device '/dev/input/event23'.
+[  2001.813] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  2001.813] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  2001.813] (II) UnloadModule: "libinput"
+[  2658.642] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[  2658.642] (II) modeset(0): Printing DDC gathered Modelines:
+[  2658.642] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[  2658.642] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[  6207.535] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  6207.535] (II) No input driver specified, ignoring this device.
+[  6207.535] (II) This device may have been added with another device file.
+[  6207.604] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  6207.604] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  6207.604] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  6207.604] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  6207.604] (**) Option "Device" "/dev/input/event23"
+[  6207.605] (II) event23 - failed to create input device '/dev/input/event23'.
+[  6207.605] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  6207.605] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  6207.605] (II) UnloadModule: "libinput"
+[  6249.465] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[  6249.465] (II) modeset(0): Printing DDC gathered Modelines:
+[  6249.465] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[  6249.465] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[  6255.298] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[  6255.298] (II) modeset(0): Printing DDC gathered Modelines:
+[  6255.298] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[  6255.298] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[  6267.565] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[  6267.565] (II) modeset(0): Printing DDC gathered Modelines:
+[  6267.565] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[  6267.565] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)
+[  6285.215] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/mouse3)
+[  6285.215] (II) No input driver specified, ignoring this device.
+[  6285.215] (II) This device may have been added with another device file.
+[  6285.248] (II) config/udev: Adding input device Gaomon Gaomon Tablet_1060Pro (/dev/input/event23)
+[  6285.248] (**) Gaomon Gaomon Tablet_1060Pro: Applying InputClass "libinput tablet catchall"
+[  6285.248] (II) Using input driver 'libinput' for 'Gaomon Gaomon Tablet_1060Pro'
+[  6285.248] (**) Gaomon Gaomon Tablet_1060Pro: always reports core events
+[  6285.248] (**) Option "Device" "/dev/input/event23"
+[  6285.249] (II) event23 - failed to create input device '/dev/input/event23'.
+[  6285.249] (EE) libinput: Gaomon Gaomon Tablet_1060Pro: Failed to create a device for /dev/input/event23
+[  6285.249] (EE) PreInit returned 2 for "Gaomon Gaomon Tablet_1060Pro"
+[  6285.249] (II) UnloadModule: "libinput"
+[  6289.500] (II) modeset(0): EDID vendor "BOE", prod id 1794
+[  6289.500] (II) modeset(0): Printing DDC gathered Modelines:
+[  6289.500] (II) modeset(0): Modeline "1366x768"x0.0   70.12  1366 1414 1446 1485  768 771 777 787 +hsync -vsync (47.2 kHz eP)
+[  6289.500] (II) modeset(0): Modeline "1366x768"x0.0   60.50  1366 1414 1446 1551  768 771 777 813 +hsync -vsync (39.0 kHz e)

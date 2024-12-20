@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+    <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+    <COLLECTION type="logical">
+      <report_id>1</report_id>
+      <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+      <COLLECTION type="physical">
+        <usage_page>button<!-- Button (09h) --></usage_page>
+        <usage_minimum>01</usage_minimum>
+        <usage_maximum>05</usage_maximum>
+        <logical_minimum>0</logical_minimum>
+        <logical_maximum>1</logical_maximum>
+        <report_count>5</report_count>
+        <report_size>1</report_size>
+        <input>
+          <variable/>
+        </input>
+        <report_count>1</report_count>
+        <report_size>3</report_size>
+        <input>
+          <constant/>
+        </input>
+        <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+        <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+        <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+        <report_count>2</report_count>
+        <report_size>16</report_size>
+        <logical_minimum>-32767</logical_minimum>
+        <logical_maximum>32767</logical_maximum>
+        <input>
+          <variable/>
+          <relative/>
+        </input>
+        <COLLECTION type="logical">
+          <report_id>1</report_id>
+          <usage>desktop_wheel<!-- Wheel (38h, dynamic value) --></usage>
+          <physical_minimum>0</physical_minimum>
+          <physical_maximum>0</physical_maximum>
+          <report_count>1</report_count>
+          <report_size>16</report_size>
+          <logical_minimum>-32767</logical_minimum>
+          <logical_maximum>32767</logical_maximum>
+          <input>
+            <variable/>
+            <relative/>
+          </input>
+          <report_id>1</report_id>
+          <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+          <report_count>1</report_count>
+          <report_size>16</report_size>
+          <logical_minimum>-32767</logical_minimum>
+          <logical_maximum>32767</logical_maximum>
+          <usage>consumer_ac_pan<!-- AC pan (0238h, linear control) --></usage>
+          <input>
+            <variable/>
+            <relative/>
+          </input>
+        </COLLECTION>
+      </COLLECTION>
+    </COLLECTION>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>2</report_id>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_kb_leftcontrol<!-- Keyboard left control (E0h, dynamic value) --></usage_minimum>
+    <usage_maximum>keyboard_kb_right_gui<!-- Keyboard right GUI (E7h, dynamic value) --></usage_maximum>
+    <report_size>1</report_size>
+    <report_count>8</report_count>
+    <input>
+      <variable/>
+    </input>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_none<!-- No event (00h, selector) --></usage_minimum>
+    <usage_maximum>keyboard_kb_lang2<!-- Keyboard LANG2 (91h, selector) --></usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>10</report_count>
+    <input/>
+  </COLLECTION>
+  <usage_page>FF07<!-- FF07h, vendor-defined --></usage_page>
+  <usage>90</usage>
+  <COLLECTION type="application">
+    <report_id>5</report_id>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>1</report_count>
+    <usage>0</usage>
+    <input>
+      <variable/>
+    </input>
+  </COLLECTION>
+  <usage>91</usage>
+  <COLLECTION type="application">
+    <report_id>42</report_id>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>-1</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>72</report_count>
+    <usage>C6</usage>
+    <input>
+      <variable/>
+      <buffered_bytes/>
+    </input>
+    <usage>C7</usage>
+    <output>
+      <variable/>
+      <buffered_bytes/>
+    </output>
+    <usage>C8</usage>
+    <feature>
+      <variable/>
+      <buffered_bytes/>
+    </feature>
+    <report_id>44</report_id>
+    <report_size>32</report_size>
+    <report_count>4</report_count>
+    <usage_minimum>CC</usage_minimum>
+    <usage_maximum>CF</usage_maximum>
+    <input>
+      <variable/>
+    </input>
+    <usage_minimum>D0</usage_minimum>
+    <usage_maximum>D3</usage_maximum>
+    <output>
+      <variable/>
+    </output>
+    <usage_minimum>D4</usage_minimum>
+    <usage_maximum>D7</usage_maximum>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>45</report_id>
+    <usage_minimum>D8</usage_minimum>
+    <usage_maximum>DB</usage_maximum>
+    <input>
+      <variable/>
+    </input>
+    <usage_minimum>DC</usage_minimum>
+    <usage_maximum>DF</usage_maximum>
+    <output>
+      <variable/>
+    </output>
+    <usage_minimum>E0</usage_minimum>
+    <usage_maximum>E3</usage_maximum>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+  <usage>0212</usage>
+  <COLLECTION type="application">
+    <report_id>36</report_id>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>-1</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>19</report_count>
+    <usage>01</usage>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>39</report_id>
+    <usage>02</usage>
+    <input>
+      <variable/>
+    </input>
+    <report_id>4</report_id>
+    <usage>03</usage>
+    <report_count>8</report_count>
+    <report_size>8</report_size>
+    <input>
+      <variable/>
+    </input>
+  </COLLECTION>
+</descriptor>

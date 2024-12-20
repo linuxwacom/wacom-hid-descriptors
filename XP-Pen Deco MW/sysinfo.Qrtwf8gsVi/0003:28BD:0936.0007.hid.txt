@@ -1,0 +1,88 @@
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Mouse),                      ; Mouse (02h, application collection)
+Collection (Application),
+    Report ID (9),
+    Usage (Pointer),                ; Pointer (01h, physical collection)
+    Collection (Physical),
+        Usage Page (Button),        ; Button (09h)
+        Usage Minimum (01h),
+        Usage Maximum (06h),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Report Count (3),
+        Report Size (1),
+        Input (Variable),
+        Report Count (5),
+        Input (Constant),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Logical Maximum (32767),
+        Report Count (2),
+        Report Size (16),
+        Input (Variable),
+        Usage Page (Digitizer),     ; Digitizer (0Dh)
+        Usage (Tip Pressure),       ; Tip pressure (30h, dynamic value)
+        Logical Maximum (2047),
+        Report Count (1),
+        Report Size (16),
+        Input (Variable),
+    End Collection,
+End Collection,
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Mouse),                      ; Mouse (02h, application collection)
+Collection (Application),
+    Usage (Pointer),                ; Pointer (01h, physical collection)
+    Collection (Physical),
+        Report ID (1),
+        Usage Page (Button),        ; Button (09h)
+        Usage Minimum (01h),
+        Usage Maximum (06h),
+        Report Count (5),
+        Report Size (1),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Input (Variable),
+        Report Count (3),
+        Input (Constant),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Report Count (2),
+        Report Size (16),
+        Logical Minimum (-32768),
+        Logical Maximum (32767),
+        Input (Variable, Relative),
+        Usage (Wheel),              ; Wheel (38h, dynamic value)
+        Logical Minimum (-127),
+        Logical Maximum (127),
+        Report Count (1),
+        Report Size (8),
+        Input (Variable, Relative),
+        Usage Page (Consumer),      ; Consumer (0Ch)
+        Usage (AC Pan),             ; AC pan (0238h, linear control)
+        Report Count (1),
+        Report Size (8),
+        Input (Variable, Relative),
+    End Collection,
+End Collection,
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keyboard),                   ; Keyboard (06h, application collection)
+Collection (Application),
+    Report ID (6),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (KB Leftcontrol), ; Keyboard left control (E0h, dynamic value)
+    Usage Maximum (KB Right GUI),   ; Keyboard right GUI (E7h, dynamic value)
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (8),
+    Input (Variable),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (None),           ; No event (00h, selector)
+    Usage Maximum (FFh),
+    Logical Maximum (255),
+    Report Size (8),
+    Report Count (6),
+    Input,
+End Collection

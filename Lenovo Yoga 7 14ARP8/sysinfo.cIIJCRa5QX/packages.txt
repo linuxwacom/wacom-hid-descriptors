@@ -1,0 +1,131 @@
+Package: xserver-xorg-input-wacom
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 297
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: xf86-input-wacom
+Version: 1:1.0.0-3ubuntu1
+Replaces: wacom-tools (<< 0.10.0)
+Provides: xorg-driver-input
+Depends: libc6 (>= 2.34), libudev1 (>= 183), libx11-6, libxi6 (>= 2:1.2.0), libxinerama1 (>= 2:1.1.4), libxrandr2 (>= 2:1.2.0), xorg-input-abi-24, xserver-xorg-core (>= 2:21.1.1)
+Suggests: xinput
+Conflicts: wacom-tools (<< 0.10.0)
+Description: X.Org X server -- Wacom input driver
+ This package provides the X.Org driver for Wacom tablet devices.
+Original-Maintainer: Boyuan Yang <byang@debian.org>
+Homepage: https://linuxwacom.github.io/
+
+
+Package: libwacom-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 805
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libwacom
+Version: 2.2.0-1
+Description: Wacom model feature query library (common files)
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+ .
+ This package contains common data files for libwacom.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
+
+Package: libwacom-bin
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 65
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Source: libwacom
+Version: 2.2.0-1
+Depends: libc6 (>= 2.34), libglib2.0-0 (>= 2.28.0), libgudev-1.0-0 (>= 146), libwacom9 (>= 2.0.0), python3:any
+Description: Wacom model feature query library -- binaries
+ libwacom is a library to identify wacom tablets and their model-specific
+ features. It provides easy access to information such as "is this a built-in
+ on-screen tablet", "what is the size of this model", etc.
+ .
+ This package contains the utilities which are used by the libraries.
+Original-Maintainer: Timo Aaltonen <tjaalton@debian.org>
+
+
+Package: libinput10
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 366
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libinput
+Version: 1.20.0-1ubuntu0.3
+Depends: libc6 (>= 2.35), libevdev2 (>= 1.10.0), libmtdev1 (>= 1.1.0), libudev1 (>= 183), libwacom9 (>= 2.0.0), libinput-bin (>= 1.20.0-1ubuntu0.3)
+Description: input device management and event handling library - shared library
+ libinput is a library that handles input devices for display servers and
+ other applications that need to directly deal with input devices.
+ .
+ It provides device detection, device handling, input device event
+ processing and abstraction to minimize the amount of custom input
+ code the user of libinput needs to provide the common set of
+ functionality that users expect.
+ .
+ This package includes the shared library.
+Homepage: http://www.freedesktop.org/wiki/Software/libinput/
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: xserver-xorg-input-libinput
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 115
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.2.1-1
+Provides: xorg-driver-input
+Depends: libc6 (>= 2.7), libinput10 (>= 1.19.1), xorg-input-abi-24, xserver-xorg-core (>= 2:1.18.99.901)
+Description: X.Org X server -- libinput input driver
+ This package provides the driver for input devices using libinput library.
+ It can handle keyboards, mice and touchpads, and essentially replaces the
+ separate -evdev and -synaptics drivers.
+ .
+ This package is built from the X.org xf86-input-libinput driver module.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: https://www.x.org
+
+Package: inputattach
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 72
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: joystick
+Version: 1:1.7.1-1build2
+Depends: libc6 (>= 2.34), libsystemd0
+Breaks: joystick (<< 20051019-6)
+Description: utility to connect serial-attached peripherals to the input subsystem
+ inputattach connects legacy serial-attached input peripherals to the input
+ subsystem: keyboards, mice, joysticks, touch-screens...
+ .
+ Amongst other things this allows legacy mice to be accessed via the
+ /dev/input/mice multiplexer.
+ .
+ Supported devices include:
+  * Serial-attached keyboards including the Apple Newton keyboard, DEC LK201
+    / LK401 keyboards, the Stowaway keyboard, Sun type 4 and 5 keyboards,
+    standard PS/2 keyboards with a serial adapter
+  * Serial mice using Genius, Logitech, Microsoft or Mouse Systems protocols
+  * Serial-attached touchscreens including those manufactured by 3M, ELO,
+    Fujitsu, Penmount, Touchright, Touchwindow
+  * Serial-attached joysticks including I-Force, SpaceBall, SpaceOrb, Gravis
+    Stinger, WingMan Warrior
+  * The Handykey Twiddler used as a joystick or a chording keyboard
+Homepage: https://sourceforge.net/projects/linuxconsole/
+Original-Maintainer: Stephen Kitt <skitt@debian.org>
