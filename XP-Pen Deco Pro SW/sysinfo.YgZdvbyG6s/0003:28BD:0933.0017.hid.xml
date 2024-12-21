@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>1</report_id>
+    <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+    <COLLECTION type="physical">
+      <report_size>1</report_size>
+      <report_count>2</report_count>
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>02</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <input>
+        <variable/>
+      </input>
+      <report_count>6</report_count>
+      <input>
+        <constant/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <report_size>16</report_size>
+      <report_count>2</report_count>
+      <logical_minimum>-32768</logical_minimum>
+      <logical_maximum>32767</logical_maximum>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+      <report_count>1</report_count>
+      <input>
+        <constant/>
+      </input>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>

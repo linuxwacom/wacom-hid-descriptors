@@ -1,0 +1,65 @@
+
+-rw-r--r-- 1 root root  6064 Dec 21 17:01 /lib/modules/6.0.14-cadmium/kernel/drivers/hid/hid-generic.ko
+-rw-r--r-- 1 root root 13089 Apr  7 16:00 /lib/modules/6.2.10-1-aarch64-ARCH/kernel/drivers/hid/hid-multitouch.ko.zst
+-rw-r--r-- 1 root root 48630 Apr  7 16:00 /lib/modules/6.2.10-1-aarch64-ARCH/kernel/drivers/hid/wacom.ko.zst
+-rw-r--r-- 1 root root  5051 Apr  7 16:00 /lib/modules/6.2.10-1-aarch64-ARCH/kernel/drivers/input/tablet/wacom_serial4.ko.zst
+-rw-r--r-- 1 root root  4029 Apr  7 16:00 /lib/modules/6.2.10-1-aarch64-ARCH/kernel/drivers/input/touchscreen/elo.ko.zst
+-rw-r--r-- 1 root root  2877 Apr  7 16:00 /lib/modules/6.2.10-1-aarch64-ARCH/kernel/drivers/input/touchscreen/wacom_i2c.ko.zst
+-rw-r--r-- 1 root root  5212 Apr  7 16:00 /lib/modules/6.2.10-1-aarch64-ARCH/kernel/drivers/input/touchscreen/wacom_w8001.ko.zst
+total 20
+-rw-r--r-- 1 USERNAME USERNAME  338 Jun  6 11:37 host.txt
+-rw-r--r-- 1 USERNAME USERNAME  835 Jun  6 11:37 kernel_drivers.txt
+-rw-r--r-- 1 USERNAME USERNAME   53 Jun  6 11:37 machine.txt
+-rw-r--r-- 1 USERNAME USERNAME 1540 Jun  6 11:37 sysinfo.log
+-rw-r--r-- 1 USERNAME USERNAME   17 Jun  6 11:37 uptime.txt
+
+
+filename:       /lib/modules/6.0.14-cadmium/kernel/drivers/hid/hid-generic.ko
+license:        GPL
+description:    HID generic driver
+author:         Henrik Rydberg
+alias:          hid:b*g*v*p*
+depends:        
+intree:         Y
+name:           hid_generic
+vermagic:       6.0.14-cadmium SMP preempt mod_unload aarch64
+
+name:           hid_multitouch
+filename:       (builtin)
+license:        GPL
+file:           drivers/hid/hid-multitouch
+description:    HID multitouch panels
+author:         Benjamin Tissoires <benjamin.tissoires@gmail.com>
+author:         Stephane Chatty <chatty@enac.fr>
+
+modinfo: ERROR: Module hid_wacom not found.
+
+modinfo: ERROR: Module wacom not found.
+
+modinfo: ERROR: Module wacom_w8001 not found.
+
+modinfo: ERROR: Module wacom_i2c not found.
+
+modinfo: ERROR: Module wacom_serial4 not found.
+
+modinfo: ERROR: Module uclogic not found.
+
+modinfo: ERROR: Module elo not found.
+
+modinfo: ERROR: Module kye not found.
+
+modinfo: ERROR: Module waltop not found.
+
+modinfo: ERROR: Module elan not found.
+
+modinfo: ERROR: Module egalax-touch not found.
+
+name:           hid
+filename:       (builtin)
+license:        GPL
+file:           drivers/hid/hid
+author:         Jiri Kosina
+author:         Vojtech Pavlik
+author:         Andreas Gal
+parm:           debug:toggle HID debugging messages (int)
+parm:           ignore_special_drivers:Ignore any special drivers and handle all devices by generic driver (int)

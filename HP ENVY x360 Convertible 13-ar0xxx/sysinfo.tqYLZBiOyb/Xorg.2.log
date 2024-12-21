@@ -1,0 +1,714 @@
+[   470.102] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[   470.102] _XSERVTransMakeAllCOTSServerListeners: server already running
+[   470.102] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[   470.102] _XSERVTransMakeAllCOTSServerListeners: server already running
+[   470.102] (--) Log file renamed from "/var/log/Xorg.pid-8465.log" to "/var/log/Xorg.2.log"
+[   470.102] 
+X.Org X Server 1.21.1.7
+X Protocol Version 11, Revision 0
+[   470.102] Current Operating System: Linux HOSTNAME 6.1.12-1-default #1 SMP PREEMPT_DYNAMIC Wed Feb 15 05:31:41 UTC 2023 (373f017) x86_64
+[   470.102] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.1.12-1-default root=UUID=e641dd81-ce65-42c9-ba65-ed2b5fe4c1fa resume=/dev/disk/by-uuid/dcc9bd26-6142-4d05-ba1b-e8297e157735 quiet splash=silent mitigations=auto psi=1
+[   470.102]  
+[   470.102] Current version of pixman: 0.42.2
+[   470.102] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   470.102] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   470.103] (==) Log file: "/var/log/Xorg.2.log", Time: Sat Feb 18 16:49:41 2023
+[   470.103] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[   470.103] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   470.103] (==) No Layout section.  Using the first Screen section.
+[   470.103] (==) No screen section available. Using defaults.
+[   470.103] (**) |-->Screen "Default Screen Section" (0)
+[   470.103] (**) |   |-->Monitor "<default monitor>"
+[   470.103] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   470.103] (==) Automatically adding devices
+[   470.103] (==) Automatically enabling devices
+[   470.103] (==) Automatically adding GPU devices
+[   470.103] (==) Automatically binding GPU devices
+[   470.103] (==) Max clients allowed: 512, resource mask: 0xfffff
+[   470.103] (WW) The directory "/usr/share/fonts/misc/sgi" does not exist.
+[   470.103] 	Entry deleted from font path.
+[   470.103] (==) FontPath set to:
+	/usr/share/fonts/misc:unscaled,
+	/usr/share/fonts/Type1/,
+	/usr/share/fonts/100dpi:unscaled,
+	/usr/share/fonts/75dpi:unscaled,
+	/usr/share/fonts/ghostscript/,
+	/usr/share/fonts/cyrillic:unscaled,
+	/usr/share/fonts/truetype/,
+	built-ins
+[   470.103] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[   470.103] (WW) Ignoring unrecognized extension "XFree86-DGA"
+[   470.103] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   470.103] (II) Loader magic: 0x561d461bfac0
+[   470.103] (II) Module ABI versions:
+[   470.103] 	X.Org ANSI C Emulation: 0.4
+[   470.103] 	X.Org Video Driver: 25.2
+[   470.103] 	X.Org XInput driver : 24.4
+[   470.103] 	X.Org Server Extension : 10.0
+[   470.104] (++) using VT number 8
+
+[   470.104] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[   470.104] (II) xfree86: Adding drm device (/dev/dri/card1)
+[   470.104] (II) Platform probe for /sys/devices/pci0000:00/0000:00:08.1/0000:04:00.0/drm/card1
+[   470.107] (--) PCI:*(4@0:0:0) 1002:15d8:103c:85de rev 193, Mem @ 0xe0000000/268435456, 0xf0000000/2097152, 0xfcc00000/524288, I/O @ 0x0000e000/256
+[   470.107] (II) LoadModule: "glx"
+[   470.107] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[   470.108] (II) Module glx: vendor="X.Org Foundation"
+[   470.108] 	compiled for 1.21.1.7, module version = 1.0.0
+[   470.108] 	ABI class: X.Org Server Extension, version 10.0
+[   470.108] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[   470.108] 	loading driver: amdgpu
+[   470.108] (II) Scanning /usr/share/X11/xorg_pci_ids directory for additional PCI ID's supported by the drivers
+[   470.108] (II) Scanning /usr/share/X11/xorg_pci_ids directory for additional PCI ID's supported by the drivers
+[   470.108] (==) Matched amdgpu as autoconfigured driver 0
+[   470.108] (==) Matched ati as autoconfigured driver 1
+[   470.108] (==) Matched modesetting as autoconfigured driver 2
+[   470.108] (==) Matched fbdev as autoconfigured driver 3
+[   470.108] (==) Matched vesa as autoconfigured driver 4
+[   470.108] (==) Assigned the driver to the xf86ConfigLayout
+[   470.108] (II) LoadModule: "amdgpu"
+[   470.108] (II) Loading /usr/lib64/xorg/modules/drivers/amdgpu_drv.so
+[   470.109] (II) Module amdgpu: vendor="X.Org Foundation"
+[   470.109] 	compiled for 1.21.1.6, module version = 22.0.0
+[   470.109] 	Module class: X.Org Video Driver
+[   470.109] 	ABI class: X.Org Video Driver, version 25.2
+[   470.109] (II) LoadModule: "ati"
+[   470.109] (II) Loading /usr/lib64/xorg/modules/drivers/ati_drv.so
+[   470.109] (II) Module ati: vendor="X.Org Foundation"
+[   470.109] 	compiled for 1.21.1.4, module version = 19.1.0
+[   470.109] 	Module class: X.Org Video Driver
+[   470.109] 	ABI class: X.Org Video Driver, version 25.2
+[   470.165] (II) LoadModule: "radeon"
+[   470.165] (II) Loading /usr/lib64/xorg/modules/drivers/radeon_drv.so
+[   470.166] (II) Module radeon: vendor="X.Org Foundation"
+[   470.166] 	compiled for 1.21.1.4, module version = 19.1.0
+[   470.166] 	Module class: X.Org Video Driver
+[   470.166] 	ABI class: X.Org Video Driver, version 25.2
+[   470.166] (II) LoadModule: "modesetting"
+[   470.166] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[   470.167] (II) Module modesetting: vendor="X.Org Foundation"
+[   470.167] 	compiled for 1.21.1.7, module version = 1.21.1
+[   470.167] 	Module class: X.Org Video Driver
+[   470.167] 	ABI class: X.Org Video Driver, version 25.2
+[   470.167] (II) LoadModule: "fbdev"
+[   470.167] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[   470.167] (II) Module fbdev: vendor="X.Org Foundation"
+[   470.167] 	compiled for 1.21.1.4, module version = 0.5.0
+[   470.167] 	Module class: X.Org Video Driver
+[   470.167] 	ABI class: X.Org Video Driver, version 25.2
+[   470.167] (II) LoadModule: "vesa"
+[   470.167] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[   470.167] (II) Module vesa: vendor="X.Org Foundation"
+[   470.167] 	compiled for 1.21.1.6, module version = 2.6.0
+[   470.167] 	Module class: X.Org Video Driver
+[   470.167] 	ABI class: X.Org Video Driver, version 25.2
+[   470.167] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[   470.167] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[   470.169] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[   470.169] (II) FBDEV: driver for framebuffer: fbdev
+[   470.169] (II) VESA: driver for VESA chipsets: vesa
+[   470.236] (WW) Falling back to old probe method for modesetting
+[   470.236] (EE) open /dev/dri/card0: No such file or directory
+[   470.236] (WW) Falling back to old probe method for fbdev
+[   470.236] (II) Loading sub module "fbdevhw"
+[   470.236] (II) LoadModule: "fbdevhw"
+[   470.237] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[   470.237] (II) Module fbdevhw: vendor="X.Org Foundation"
+[   470.237] 	compiled for 1.21.1.7, module version = 0.0.2
+[   470.237] 	ABI class: X.Org Video Driver, version 25.2
+[   470.237] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   470.237] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[   470.237] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[   470.237] (==) AMDGPU(0): Default visual is TrueColor
+[   470.237] (==) AMDGPU(0): RGB weight 888
+[   470.237] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[   470.237] (--) AMDGPU(0): Chipset: "AMD Radeon Vega 10 Graphics" (ChipID = 0x15d8)
+[   470.237] (II) Loading sub module "fb"
+[   470.237] (II) LoadModule: "fb"
+[   470.237] (II) Module "fb" already built-in
+[   470.237] (II) Loading sub module "dri2"
+[   470.237] (II) LoadModule: "dri2"
+[   470.237] (II) Module "dri2" already built-in
+[   470.307] (II) Loading sub module "glamoregl"
+[   470.307] (II) LoadModule: "glamoregl"
+[   470.307] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[   470.312] (II) Module glamoregl: vendor="X.Org Foundation"
+[   470.312] 	compiled for 1.21.1.7, module version = 1.0.1
+[   470.312] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   470.322] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon Vega 10 Graphics (raven, LLVM 15.0.7, DRM 3.49, 6.1.12-1-default)
+[   470.322] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[   470.322] (==) AMDGPU(0): TearFree property default: auto
+[   470.322] (==) AMDGPU(0): VariableRefresh: disabled
+[   470.322] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[   470.322] (II) AMDGPU(0): KMS Pageflipping: enabled
+[   470.323] (II) AMDGPU(0): Output eDP has no monitor section
+[   470.323] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[   470.331] (II) AMDGPU(0): EDID for output eDP
+[   470.331] (II) AMDGPU(0): Manufacturer: AUO  Model: 552d  Serial#: 0
+[   470.331] (II) AMDGPU(0): Year: 2017  Week: 0
+[   470.331] (II) AMDGPU(0): EDID Version: 1.4
+[   470.331] (II) AMDGPU(0): Digital Display Input
+[   470.331] (II) AMDGPU(0): 6 bits per channel
+[   470.331] (II) AMDGPU(0): Digital interface is DisplayPort
+[   470.331] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 29  vert.: 17
+[   470.331] (II) AMDGPU(0): Gamma: 2.20
+[   470.331] (II) AMDGPU(0): No DPMS capabilities specified
+[   470.331] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 
+[   470.331] (II) AMDGPU(0): First detailed timing is preferred mode
+[   470.331] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[   470.331] (II) AMDGPU(0): redX: 0.619 redY: 0.334   greenX: 0.306 greenY: 0.605
+[   470.331] (II) AMDGPU(0): blueX: 0.148 blueY: 0.060   whiteX: 0.313 whiteY: 0.329
+[   470.331] (II) AMDGPU(0): Manufacturer's mask: 0
+[   470.331] (II) AMDGPU(0): Supported detailed timing:
+[   470.331] (II) AMDGPU(0): clock: 142.6 MHz   Image Size:  293 x 165 mm
+[   470.331] (II) AMDGPU(0): h_active: 1920  h_sync: 1978  h_sync_end 2020 h_blank_end 2080 h_border: 0
+[   470.331] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1142 v_border: 0
+[   470.331] (II) AMDGPU(0): Supported detailed timing:
+[   470.331] (II) AMDGPU(0): clock: 142.6 MHz   Image Size:  293 x 165 mm
+[   470.331] (II) AMDGPU(0): h_active: 1920  h_sync: 1978  h_sync_end 2020 h_blank_end 2080 h_border: 0
+[   470.331] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1714 v_border: 0
+[   470.331] (II) AMDGPU(0): Unknown vendor-specific block 2
+[   470.331] (II) AMDGPU(0): EDID (in hex):
+[   470.331] (II) AMDGPU(0): 	00ffffffffffff0006af2d5500000000
+[   470.331] (II) AMDGPU(0): 	001b0104951d117802a4159e554e9b26
+[   470.331] (II) AMDGPU(0): 	0f505400000001010101010101010101
+[   470.331] (II) AMDGPU(0): 	010101010101b43780a070383e403a2a
+[   470.331] (II) AMDGPU(0): 	350025a510000018b43780a070387a42
+[   470.331] (II) AMDGPU(0): 	3a2a350025a510000018000000000000
+[   470.331] (II) AMDGPU(0): 	00000000000000000000000000000002
+[   470.331] (II) AMDGPU(0): 	001036ff0f3c964e0c1f9620202000a7
+[   470.331] (II) AMDGPU(0): Printing probed modes for output eDP
+[   470.331] (II) AMDGPU(0): Modeline "1920x1080"x60.0  142.60  1920 1978 2020 2080  1080 1083 1088 1142 -hsync -vsync (68.6 kHz eP)
+[   470.331] (II) AMDGPU(0): Modeline "1920x1080"x40.0  142.60  1920 1978 2020 2080  1080 1083 1088 1714 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "1680x1050"x60.0  142.60  1680 1978 2020 2080  1050 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "1280x1024"x60.0  142.60  1280 1978 2020 2080  1024 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "1440x900"x60.0  142.60  1440 1978 2020 2080  900 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "1280x800"x60.0  142.60  1280 1978 2020 2080  800 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "1280x720"x60.0  142.60  1280 1978 2020 2080  720 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "1024x768"x60.0  142.60  1024 1978 2020 2080  768 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "800x600"x60.0  142.60  800 1978 2020 2080  600 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): Modeline "640x480"x60.0  142.60  640 1978 2020 2080  480 1083 1088 1142 -hsync -vsync (68.6 kHz e)
+[   470.331] (II) AMDGPU(0): EDID for output DisplayPort-0
+[   470.331] (II) AMDGPU(0): Output eDP connected
+[   470.331] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[   470.331] (II) AMDGPU(0): Using exact sizes for initial modes
+[   470.331] (II) AMDGPU(0): Output eDP using initial mode 1920x1080 +0+0
+[   470.331] (II) AMDGPU(0): mem size init: gart size :bf5ca000 vram size: s:7e049000 visible:7e049000
+[   470.332] (++) AMDGPU(0): DPI set to (120, 120)
+[   470.332] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[   470.332] (II) Loading sub module "ramdac"
+[   470.332] (II) LoadModule: "ramdac"
+[   470.332] (II) Module "ramdac" already built-in
+[   470.332] (II) UnloadModule: "radeon"
+[   470.332] (II) Unloading radeon
+[   470.332] (II) UnloadModule: "modesetting"
+[   470.332] (II) Unloading modesetting
+[   470.332] (II) UnloadModule: "fbdev"
+[   470.332] (II) Unloading fbdev
+[   470.332] (II) UnloadSubModule: "fbdevhw"
+[   470.332] (II) Unloading fbdevhw
+[   470.332] (II) UnloadModule: "vesa"
+[   470.332] (II) Unloading vesa
+[   470.332] (II) AMDGPU(0): [DRI2] Setup complete
+[   470.332] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[   470.332] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[   470.345] (II) AMDGPU(0): Front buffer pitch: 7680 bytes
+[   470.345] (II) AMDGPU(0): SYNC extension fences enabled
+[   470.345] (II) AMDGPU(0): Present extension enabled
+[   470.345] (==) AMDGPU(0): DRI3 enabled
+[   470.345] (==) AMDGPU(0): Backing store enabled
+[   470.345] (II) AMDGPU(0): Direct rendering enabled
+[   470.354] (II) AMDGPU(0): Use GLAMOR acceleration.
+[   470.354] (II) AMDGPU(0): Acceleration enabled
+[   470.354] (==) AMDGPU(0): DPMS enabled
+[   470.354] (==) AMDGPU(0): Silken mouse enabled
+[   470.354] (II) AMDGPU(0): Set up textured video (glamor)
+[   470.364] (II) Initializing extension Generic Event Extension
+[   470.365] (II) Initializing extension SHAPE
+[   470.365] (II) Initializing extension MIT-SHM
+[   470.365] (II) Initializing extension XInputExtension
+[   470.365] (II) Initializing extension XTEST
+[   470.365] (II) Initializing extension BIG-REQUESTS
+[   470.365] (II) Initializing extension SYNC
+[   470.365] (II) Initializing extension XKEYBOARD
+[   470.366] (II) Initializing extension XC-MISC
+[   470.366] (II) Initializing extension SECURITY
+[   470.366] (II) Initializing extension XFIXES
+[   470.366] (II) Initializing extension RENDER
+[   470.366] (II) Initializing extension RANDR
+[   470.366] (II) Initializing extension COMPOSITE
+[   470.366] (II) Initializing extension DAMAGE
+[   470.366] (II) Initializing extension MIT-SCREEN-SAVER
+[   470.366] (II) Initializing extension DOUBLE-BUFFER
+[   470.367] (II) Initializing extension RECORD
+[   470.367] (II) Initializing extension DPMS
+[   470.367] (II) Initializing extension Present
+[   470.367] (II) Initializing extension DRI3
+[   470.367] (II) Initializing extension X-Resource
+[   470.367] (II) Initializing extension XVideo
+[   470.367] (II) Initializing extension XVideo-MotionCompensation
+[   470.367] (II) Initializing extension GLX
+[   470.374] (II) AIGLX: Loaded and initialized radeonsi
+[   470.374] (II) GLX: Initialized DRI2 GL provider for screen 0
+[   470.374] (II) Initializing extension XFree86-VidModeExtension
+[   470.374] (II) Initializing extension XFree86-DGA
+[   470.374] (II) Initializing extension XFree86-DRI
+[   470.374] (II) Initializing extension DRI2
+[   470.375] (II) AMDGPU(0): Setting screen physical size to 406 x 228
+[   470.506] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[   470.506] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[   470.506] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   470.506] (**) Video Bus: Applying InputClass "system-keyboard"
+[   470.506] (II) LoadModule: "libinput"
+[   470.506] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[   470.508] (II) Module libinput: vendor="X.Org Foundation"
+[   470.508] 	compiled for 1.21.1.4, module version = 1.2.1
+[   470.508] 	Module class: X.Org XInput Driver
+[   470.508] 	ABI class: X.Org XInput driver, version 24.4
+[   470.508] (II) Using input driver 'libinput' for 'Video Bus'
+[   470.508] (**) Video Bus: always reports core events
+[   470.508] (**) Option "Device" "/dev/input/event3"
+[   470.511] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[   470.511] (II) event3  - Video Bus: device is a keyboard
+[   470.511] (II) event3  - Video Bus: device removed
+[   470.575] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0a/LNXVIDEO:00/input/input10/event3"
+[   470.575] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[   470.575] (**) Option "xkb_layout" "us"
+[   470.576] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[   470.576] (II) event3  - Video Bus: device is a keyboard
+[   470.576] (II) config/udev: Adding input device Power Button (/dev/input/event14)
+[   470.576] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[   470.576] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   470.576] (**) Power Button: Applying InputClass "system-keyboard"
+[   470.576] (II) Using input driver 'libinput' for 'Power Button'
+[   470.576] (**) Power Button: always reports core events
+[   470.576] (**) Option "Device" "/dev/input/event14"
+[   470.577] (II) event14 - Power Button: is tagged by udev as: Keyboard
+[   470.577] (II) event14 - Power Button: device is a keyboard
+[   470.577] (II) event14 - Power Button: device removed
+[   470.603] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input23/event14"
+[   470.603] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[   470.603] (**) Option "xkb_layout" "us"
+[   470.604] (II) event14 - Power Button: is tagged by udev as: Keyboard
+[   470.604] (II) event14 - Power Button: device is a keyboard
+[   470.604] (II) config/udev: Adding input device Lid Switch (/dev/input/event15)
+[   470.604] (II) No input driver specified, ignoring this device.
+[   470.604] (II) This device may have been added with another device file.
+[   470.605] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event18)
+[   470.605] (II) No input driver specified, ignoring this device.
+[   470.605] (II) This device may have been added with another device file.
+[   470.605] (II) config/udev: Adding input device MOSART Semi. 2.4G INPUT DEVICE (/dev/input/event8)
+[   470.605] (**) MOSART Semi. 2.4G INPUT DEVICE: Applying InputClass "evdev keyboard catchall"
+[   470.605] (**) MOSART Semi. 2.4G INPUT DEVICE: Applying InputClass "libinput keyboard catchall"
+[   470.605] (**) MOSART Semi. 2.4G INPUT DEVICE: Applying InputClass "system-keyboard"
+[   470.605] (II) Using input driver 'libinput' for 'MOSART Semi. 2.4G INPUT DEVICE'
+[   470.605] (**) MOSART Semi. 2.4G INPUT DEVICE: always reports core events
+[   470.605] (**) Option "Device" "/dev/input/event8"
+[   470.607] (II) event8  - MOSART Semi. 2.4G INPUT DEVICE: is tagged by udev as: Keyboard
+[   470.607] (II) event8  - MOSART Semi. 2.4G INPUT DEVICE: device is a keyboard
+[   470.607] (II) event8  - MOSART Semi. 2.4G INPUT DEVICE: device removed
+[   470.651] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-3/1-3:1.0/0003:062A:4101.0006/input/input17/event8"
+[   470.651] (II) XINPUT: Adding extended input device "MOSART Semi. 2.4G INPUT DEVICE" (type: KEYBOARD, id 8)
+[   470.651] (**) Option "xkb_layout" "us"
+[   470.653] (II) event8  - MOSART Semi. 2.4G INPUT DEVICE: is tagged by udev as: Keyboard
+[   470.653] (II) event8  - MOSART Semi. 2.4G INPUT DEVICE: device is a keyboard
+[   470.654] (II) config/udev: Adding input device MOSART Semi. 2.4G INPUT DEVICE Mouse (/dev/input/event9)
+[   470.654] (**) MOSART Semi. 2.4G INPUT DEVICE Mouse: Applying InputClass "evdev pointer catchall"
+[   470.654] (**) MOSART Semi. 2.4G INPUT DEVICE Mouse: Applying InputClass "libinput pointer catchall"
+[   470.654] (II) Using input driver 'libinput' for 'MOSART Semi. 2.4G INPUT DEVICE Mouse'
+[   470.654] (**) MOSART Semi. 2.4G INPUT DEVICE Mouse: always reports core events
+[   470.654] (**) Option "Device" "/dev/input/event9"
+[   470.656] (II) event9  - MOSART Semi. 2.4G INPUT DEVICE Mouse: is tagged by udev as: Mouse
+[   470.656] (II) event9  - MOSART Semi. 2.4G INPUT DEVICE Mouse: device is a pointer
+[   470.656] (II) event9  - MOSART Semi. 2.4G INPUT DEVICE Mouse: device removed
+[   470.691] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-3/1-3:1.1/0003:062A:4101.0007/input/input18/event9"
+[   470.691] (II) XINPUT: Adding extended input device "MOSART Semi. 2.4G INPUT DEVICE Mouse" (type: MOUSE, id 9)
+[   470.691] (**) Option "AccelerationScheme" "none"
+[   470.691] (**) MOSART Semi. 2.4G INPUT DEVICE Mouse: (accel) selected scheme none/0
+[   470.691] (**) MOSART Semi. 2.4G INPUT DEVICE Mouse: (accel) acceleration factor: 2.000
+[   470.691] (**) MOSART Semi. 2.4G INPUT DEVICE Mouse: (accel) acceleration threshold: 4
+[   470.692] (II) event9  - MOSART Semi. 2.4G INPUT DEVICE Mouse: is tagged by udev as: Mouse
+[   470.692] (II) event9  - MOSART Semi. 2.4G INPUT DEVICE Mouse: device is a pointer
+[   470.693] (II) config/udev: Adding input device MOSART Semi. 2.4G INPUT DEVICE Mouse (/dev/input/mouse4)
+[   470.693] (II) No input driver specified, ignoring this device.
+[   470.693] (II) This device may have been added with another device file.
+[   470.694] (II) config/udev: Adding input device MOSART Semi. 2.4G INPUT DEVICE Consumer Control (/dev/input/event10)
+[   470.694] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: Applying InputClass "evdev keyboard catchall"
+[   470.694] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   470.694] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: Applying InputClass "system-keyboard"
+[   470.694] (II) Using input driver 'libinput' for 'MOSART Semi. 2.4G INPUT DEVICE Consumer Control'
+[   470.694] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: always reports core events
+[   470.694] (**) Option "Device" "/dev/input/event10"
+[   470.695] (II) event10 - MOSART Semi. 2.4G INPUT DEVICE Consumer Control: is tagged by udev as: Keyboard
+[   470.695] (II) event10 - MOSART Semi. 2.4G INPUT DEVICE Consumer Control: device is a keyboard
+[   470.696] (II) event10 - MOSART Semi. 2.4G INPUT DEVICE Consumer Control: device removed
+[   470.735] (II) libinput: MOSART Semi. 2.4G INPUT DEVICE Consumer Control: needs a virtual subdevice
+[   470.735] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-3/1-3:1.1/0003:062A:4101.0007/input/input19/event10"
+[   470.735] (II) XINPUT: Adding extended input device "MOSART Semi. 2.4G INPUT DEVICE Consumer Control" (type: MOUSE, id 10)
+[   470.735] (**) Option "AccelerationScheme" "none"
+[   470.735] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: (accel) selected scheme none/0
+[   470.735] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: (accel) acceleration factor: 2.000
+[   470.735] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: (accel) acceleration threshold: 4
+[   470.736] (II) event10 - MOSART Semi. 2.4G INPUT DEVICE Consumer Control: is tagged by udev as: Keyboard
+[   470.737] (II) event10 - MOSART Semi. 2.4G INPUT DEVICE Consumer Control: device is a keyboard
+[   470.738] (II) config/udev: Adding input device MOSART Semi. 2.4G INPUT DEVICE System Control (/dev/input/event11)
+[   470.738] (**) MOSART Semi. 2.4G INPUT DEVICE System Control: Applying InputClass "evdev keyboard catchall"
+[   470.738] (**) MOSART Semi. 2.4G INPUT DEVICE System Control: Applying InputClass "libinput keyboard catchall"
+[   470.738] (**) MOSART Semi. 2.4G INPUT DEVICE System Control: Applying InputClass "system-keyboard"
+[   470.738] (II) Using input driver 'libinput' for 'MOSART Semi. 2.4G INPUT DEVICE System Control'
+[   470.738] (**) MOSART Semi. 2.4G INPUT DEVICE System Control: always reports core events
+[   470.738] (**) Option "Device" "/dev/input/event11"
+[   470.739] (II) event11 - MOSART Semi. 2.4G INPUT DEVICE System Control: is tagged by udev as: Keyboard
+[   470.739] (II) event11 - MOSART Semi. 2.4G INPUT DEVICE System Control: device is a keyboard
+[   470.739] (II) event11 - MOSART Semi. 2.4G INPUT DEVICE System Control: device removed
+[   470.779] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-3/1-3:1.1/0003:062A:4101.0007/input/input20/event11"
+[   470.779] (II) XINPUT: Adding extended input device "MOSART Semi. 2.4G INPUT DEVICE System Control" (type: KEYBOARD, id 11)
+[   470.779] (**) Option "xkb_layout" "us"
+[   470.780] (II) event11 - MOSART Semi. 2.4G INPUT DEVICE System Control: is tagged by udev as: Keyboard
+[   470.780] (II) event11 - MOSART Semi. 2.4G INPUT DEVICE System Control: device is a keyboard
+[   470.781] (II) config/udev: Adding input device MOSART Semi. 2.4G INPUT DEVICE (/dev/input/event12)
+[   470.781] (II) No input driver specified, ignoring this device.
+[   470.781] (II) This device may have been added with another device file.
+[   470.782] (II) config/udev: Adding input device HP Wide Vision HD Camera: HP Wi (/dev/input/event21)
+[   470.782] (**) HP Wide Vision HD Camera: HP Wi: Applying InputClass "evdev keyboard catchall"
+[   470.782] (**) HP Wide Vision HD Camera: HP Wi: Applying InputClass "libinput keyboard catchall"
+[   470.782] (**) HP Wide Vision HD Camera: HP Wi: Applying InputClass "system-keyboard"
+[   470.782] (II) Using input driver 'libinput' for 'HP Wide Vision HD Camera: HP Wi'
+[   470.782] (**) HP Wide Vision HD Camera: HP Wi: always reports core events
+[   470.782] (**) Option "Device" "/dev/input/event21"
+[   470.783] (II) event21 - HP Wide Vision HD Camera: HP Wi: is tagged by udev as: Keyboard
+[   470.783] (II) event21 - HP Wide Vision HD Camera: HP Wi: device is a keyboard
+[   470.783] (II) event21 - HP Wide Vision HD Camera: HP Wi: device removed
+[   470.883] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.4/usb3/3-1/3-1:1.0/input/input30/event21"
+[   470.883] (II) XINPUT: Adding extended input device "HP Wide Vision HD Camera: HP Wi" (type: KEYBOARD, id 12)
+[   470.883] (**) Option "xkb_layout" "us"
+[   470.885] (II) event21 - HP Wide Vision HD Camera: HP Wi: is tagged by udev as: Keyboard
+[   470.885] (II) event21 - HP Wide Vision HD Camera: HP Wi: device is a keyboard
+[   470.885] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event19)
+[   470.885] (II) No input driver specified, ignoring this device.
+[   470.885] (II) This device may have been added with another device file.
+[   470.886] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event20)
+[   470.886] (II) No input driver specified, ignoring this device.
+[   470.886] (II) This device may have been added with another device file.
+[   470.886] (II) config/udev: Adding input device ELAN2514:00 04F3:23B9 (/dev/input/event4)
+[   470.886] (**) ELAN2514:00 04F3:23B9: Applying InputClass "evdev touchscreen catchall"
+[   470.886] (**) ELAN2514:00 04F3:23B9: Applying InputClass "libinput touchscreen catchall"
+[   470.886] (II) Using input driver 'libinput' for 'ELAN2514:00 04F3:23B9'
+[   470.886] (**) ELAN2514:00 04F3:23B9: always reports core events
+[   470.886] (**) Option "Device" "/dev/input/event4"
+[   470.887] (II) event4  - ELAN2514:00 04F3:23B9: is tagged by udev as: Touchscreen
+[   470.887] (II) event4  - ELAN2514:00 04F3:23B9: device is a touch device
+[   470.887] (II) event4  - ELAN2514:00 04F3:23B9: device removed
+[   470.983] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN2514:00/0018:04F3:23B9.0004/input/input11/event4"
+[   470.983] (II) XINPUT: Adding extended input device "ELAN2514:00 04F3:23B9" (type: TOUCHSCREEN, id 13)
+[   470.983] (**) Option "AccelerationScheme" "none"
+[   470.983] (**) ELAN2514:00 04F3:23B9: (accel) selected scheme none/0
+[   470.983] (**) ELAN2514:00 04F3:23B9: (accel) acceleration factor: 2.000
+[   470.983] (**) ELAN2514:00 04F3:23B9: (accel) acceleration threshold: 4
+[   470.985] (II) event4  - ELAN2514:00 04F3:23B9: is tagged by udev as: Touchscreen
+[   470.985] (II) event4  - ELAN2514:00 04F3:23B9: device is a touch device
+[   470.987] (II) config/udev: Adding input device ELAN2514:00 04F3:23B9 (/dev/input/mouse1)
+[   470.987] (II) No input driver specified, ignoring this device.
+[   470.987] (II) This device may have been added with another device file.
+[   470.988] (II) config/udev: Adding input device ELAN2514:00 04F3:23B9 UNKNOWN (/dev/input/event5)
+[   470.988] (II) No input driver specified, ignoring this device.
+[   470.988] (II) This device may have been added with another device file.
+[   470.989] (II) config/udev: Adding input device ELAN2514:00 04F3:23B9 UNKNOWN (/dev/input/event6)
+[   470.989] (II) No input driver specified, ignoring this device.
+[   470.989] (II) This device may have been added with another device file.
+[   470.990] (II) config/udev: Adding input device ELAN2514:00 04F3:23B9 Stylus (/dev/input/event7)
+[   470.991] (**) ELAN2514:00 04F3:23B9 Stylus: Applying InputClass "evdev tablet catchall"
+[   470.991] (**) ELAN2514:00 04F3:23B9 Stylus: Applying InputClass "libinput tablet catchall"
+[   470.991] (II) Using input driver 'libinput' for 'ELAN2514:00 04F3:23B9 Stylus'
+[   470.991] (**) ELAN2514:00 04F3:23B9 Stylus: always reports core events
+[   470.991] (**) Option "Device" "/dev/input/event7"
+[   470.993] (II) event7  - ELAN2514:00 04F3:23B9 Stylus: is tagged by udev as: Tablet
+[   471.032] (II) event7  - ELAN2514:00 04F3:23B9 Stylus: device is a tablet
+[   471.032] (II) event7  - ELAN2514:00 04F3:23B9 Stylus: device removed
+[   471.095] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN2514:00/0018:04F3:23B9.0004/input/input14/event7"
+[   471.095] (II) XINPUT: Adding extended input device "ELAN2514:00 04F3:23B9 Stylus" (type: TABLET, id 14)
+[   471.097] (II) event7  - ELAN2514:00 04F3:23B9 Stylus: is tagged by udev as: Tablet
+[   471.122] (II) event7  - ELAN2514:00 04F3:23B9 Stylus: device is a tablet
+[   471.123] (II) config/udev: Adding input device ELAN2514:00 04F3:23B9 Stylus (/dev/input/mouse3)
+[   471.124] (II) No input driver specified, ignoring this device.
+[   471.124] (II) This device may have been added with another device file.
+[   471.125] (II) config/udev: Adding input device SYNA328F:01 06CB:CD50 Mouse (/dev/input/event1)
+[   471.125] (**) SYNA328F:01 06CB:CD50 Mouse: Applying InputClass "evdev pointer catchall"
+[   471.125] (**) SYNA328F:01 06CB:CD50 Mouse: Applying InputClass "libinput pointer catchall"
+[   471.125] (II) Using input driver 'libinput' for 'SYNA328F:01 06CB:CD50 Mouse'
+[   471.125] (**) SYNA328F:01 06CB:CD50 Mouse: always reports core events
+[   471.125] (**) Option "Device" "/dev/input/event1"
+[   471.127] (II) event1  - SYNA328F:01 06CB:CD50 Mouse: is tagged by udev as: Mouse Pointingstick
+[   471.128] (II) event1  - SYNA328F:01 06CB:CD50 Mouse: device is a pointer
+[   471.130] (II) event1  - SYNA328F:01 06CB:CD50 Mouse: device removed
+[   471.175] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-SYNA328F:01/0018:06CB:CD50.0005/input/input7/event1"
+[   471.175] (II) XINPUT: Adding extended input device "SYNA328F:01 06CB:CD50 Mouse" (type: MOUSE, id 15)
+[   471.175] (**) Option "AccelerationScheme" "none"
+[   471.175] (**) SYNA328F:01 06CB:CD50 Mouse: (accel) selected scheme none/0
+[   471.175] (**) SYNA328F:01 06CB:CD50 Mouse: (accel) acceleration factor: 2.000
+[   471.175] (**) SYNA328F:01 06CB:CD50 Mouse: (accel) acceleration threshold: 4
+[   471.178] (II) event1  - SYNA328F:01 06CB:CD50 Mouse: is tagged by udev as: Mouse Pointingstick
+[   471.179] (II) event1  - SYNA328F:01 06CB:CD50 Mouse: device is a pointer
+[   471.183] (II) config/udev: Adding input device SYNA328F:01 06CB:CD50 Mouse (/dev/input/mouse0)
+[   471.183] (II) No input driver specified, ignoring this device.
+[   471.183] (II) This device may have been added with another device file.
+[   471.184] (II) config/udev: Adding input device SYNA328F:01 06CB:CD50 Touchpad (/dev/input/event2)
+[   471.184] (**) SYNA328F:01 06CB:CD50 Touchpad: Applying InputClass "evdev touchpad catchall"
+[   471.184] (**) SYNA328F:01 06CB:CD50 Touchpad: Applying InputClass "libinput touchpad catchall"
+[   471.184] (**) SYNA328F:01 06CB:CD50 Touchpad: Applying InputClass "touchpad catchall"
+[   471.184] (**) SYNA328F:01 06CB:CD50 Touchpad: Applying InputClass "Default clickpad buttons"
+[   471.184] (II) LoadModule: "synaptics"
+[   471.185] (II) Loading /usr/lib64/xorg/modules/input/synaptics_drv.so
+[   471.193] (II) Module synaptics: vendor="X.Org Foundation"
+[   471.193] 	compiled for 1.21.1.4, module version = 1.9.2
+[   471.193] 	Module class: X.Org XInput Driver
+[   471.193] 	ABI class: X.Org XInput driver, version 24.4
+[   471.193] (II) Using input driver 'synaptics' for 'SYNA328F:01 06CB:CD50 Touchpad'
+[   471.193] (**) SYNA328F:01 06CB:CD50 Touchpad: always reports core events
+[   471.193] (**) Option "Device" "/dev/input/event2"
+[   471.243] (II) synaptics: SYNA328F:01 06CB:CD50 Touchpad: found clickpad property
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: x-axis range 0 - 1272 (res 12)
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: y-axis range 0 - 612 (res 12)
+[   471.243] (II) synaptics: SYNA328F:01 06CB:CD50 Touchpad: device does not report pressure, will use touch data.
+[   471.243] (II) synaptics: SYNA328F:01 06CB:CD50 Touchpad: device does not report finger width.
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: buttons: left double triple
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: Vendor 0x6cb Product 0xcd50
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: invalid pressure range.  defaulting to 0 - 255
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: invalid finger width range.  defaulting to 0 - 15
+[   471.243] (**) Option "HorizEdgeScroll" "off"
+[   471.243] (**) Option "TapButton1" "1"
+[   471.243] (**) Option "TapButton2" "3"
+[   471.243] (**) Option "TapButton3" "2"
+[   471.243] (**) Option "SoftButtonAreas" "50% 0 82% 0 0 0 0 0"
+[   471.243] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: touchpad found
+[   471.243] (**) SYNA328F:01 06CB:CD50 Touchpad: always reports core events
+[   471.283] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-SYNA328F:01/0018:06CB:CD50.0005/input/input8/event2"
+[   471.283] (II) XINPUT: Adding extended input device "SYNA328F:01 06CB:CD50 Touchpad" (type: TOUCHPAD, id 16)
+[   471.283] (**) synaptics: SYNA328F:01 06CB:CD50 Touchpad: (accel) MinSpeed is now constant deceleration 2.5
+[   471.283] (**) synaptics: SYNA328F:01 06CB:CD50 Touchpad: (accel) MaxSpeed is now 1.75
+[   471.283] (**) synaptics: SYNA328F:01 06CB:CD50 Touchpad: (accel) AccelFactor is now 0.142
+[   471.283] (**) SYNA328F:01 06CB:CD50 Touchpad: (accel) keeping acceleration scheme 1
+[   471.283] (**) SYNA328F:01 06CB:CD50 Touchpad: (accel) acceleration profile 1
+[   471.283] (**) SYNA328F:01 06CB:CD50 Touchpad: (accel) acceleration factor: 2.000
+[   471.283] (**) SYNA328F:01 06CB:CD50 Touchpad: (accel) acceleration threshold: 4
+[   471.283] (--) synaptics: SYNA328F:01 06CB:CD50 Touchpad: touchpad found
+[   471.284] (II) config/udev: Adding input device SYNA328F:01 06CB:CD50 Touchpad (/dev/input/mouse2)
+[   471.284] (**) SYNA328F:01 06CB:CD50 Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[   471.285] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[   471.285] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[   471.285] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   471.285] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[   471.285] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   471.285] (**) AT Translated Set 2 keyboard: always reports core events
+[   471.285] (**) Option "Device" "/dev/input/event0"
+[   471.287] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   471.287] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   471.289] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   471.315] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[   471.315] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 17)
+[   471.315] (**) Option "xkb_layout" "us"
+[   471.317] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   471.317] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[   471.320] (II) config/udev: Adding input device PC Speaker (/dev/input/event17)
+[   471.320] (II) No input driver specified, ignoring this device.
+[   471.320] (II) This device may have been added with another device file.
+[   471.325] (II) config/udev: Adding input device Wireless hotkeys (/dev/input/event13)
+[   471.325] (**) Wireless hotkeys: Applying InputClass "evdev keyboard catchall"
+[   471.325] (**) Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[   471.325] (**) Wireless hotkeys: Applying InputClass "system-keyboard"
+[   471.325] (II) Using input driver 'libinput' for 'Wireless hotkeys'
+[   471.325] (**) Wireless hotkeys: always reports core events
+[   471.325] (**) Option "Device" "/dev/input/event13"
+[   471.326] (II) event13 - Wireless hotkeys: is tagged by udev as: Keyboard
+[   471.326] (II) event13 - Wireless hotkeys: device is a keyboard
+[   471.326] (II) event13 - Wireless hotkeys: device removed
+[   471.407] (**) Option "config_info" "udev:/sys/devices/virtual/input/input22/event13"
+[   471.407] (II) XINPUT: Adding extended input device "Wireless hotkeys" (type: KEYBOARD, id 18)
+[   471.407] (**) Option "xkb_layout" "us"
+[   471.408] (II) event13 - Wireless hotkeys: is tagged by udev as: Keyboard
+[   471.408] (II) event13 - Wireless hotkeys: device is a keyboard
+[   471.409] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event16)
+[   471.409] (**) HP WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[   471.409] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   471.409] (**) HP WMI hotkeys: Applying InputClass "system-keyboard"
+[   471.410] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[   471.410] (**) HP WMI hotkeys: always reports core events
+[   471.410] (**) Option "Device" "/dev/input/event16"
+[   471.411] (II) event16 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[   471.411] (II) event16 - HP WMI hotkeys: device is a keyboard
+[   471.411] (II) event16 - HP WMI hotkeys: device is a switch device
+[   471.411] (II) event16 - HP WMI hotkeys: device removed
+[   471.431] (**) Option "config_info" "udev:/sys/devices/virtual/input/input26/event16"
+[   471.431] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 19)
+[   471.431] (**) Option "xkb_layout" "us"
+[   471.432] (II) event16 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[   471.432] (II) event16 - HP WMI hotkeys: device is a keyboard
+[   471.432] (II) event16 - HP WMI hotkeys: device is a switch device
+[   471.441] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: Applying InputClass "evdev keyboard catchall"
+[   471.441] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   471.441] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: Applying InputClass "system-keyboard"
+[   471.441] (II) Using input driver 'libinput' for 'MOSART Semi. 2.4G INPUT DEVICE Consumer Control'
+[   471.441] (**) MOSART Semi. 2.4G INPUT DEVICE Consumer Control: always reports core events
+[   471.441] (**) Option "Device" "/dev/input/event10"
+[   471.441] (II) libinput: MOSART Semi. 2.4G INPUT DEVICE Consumer Control: is a virtual subdevice
+[   471.441] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-3/1-3:1.1/0003:062A:4101.0007/input/input19/event10"
+[   471.441] (II) XINPUT: Adding extended input device "MOSART Semi. 2.4G INPUT DEVICE Consumer Control" (type: KEYBOARD, id 20)
+[   471.441] (**) Option "xkb_layout" "us"
+[   480.062] (II) event3  - Video Bus: device removed
+[   480.115] (II) event14 - Power Button: device removed
+[   480.143] (II) event8  - MOSART Semi. 2.4G INPUT DEVICE: device removed
+[   480.175] (II) event9  - MOSART Semi. 2.4G INPUT DEVICE Mouse: device removed
+[   480.247] (II) event11 - MOSART Semi. 2.4G INPUT DEVICE System Control: device removed
+[   480.283] (II) event21 - HP Wide Vision HD Camera: HP Wi: device removed
+[   480.347] (II) event4  - ELAN2514:00 04F3:23B9: device removed
+[   480.399] (II) event7  - ELAN2514:00 04F3:23B9 Stylus: device removed
+[   480.451] (II) event1  - SYNA328F:01 06CB:CD50 Mouse: device removed
+[   480.535] (II) event0  - AT Translated Set 2 keyboard: device removed
+[   480.551] (II) event13 - Wireless hotkeys: device removed
+[   480.583] (II) event16 - HP WMI hotkeys: device removed
+[   480.599] (II) event10 - MOSART Semi. 2.4G INPUT DEVICE Consumer Control: device removed
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "synaptics"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.616] (II) UnloadModule: "libinput"
+[   480.618] (II) UnloadModule: "libinput"
+[   480.679] (II) Server terminated successfully (0). Closing log file.

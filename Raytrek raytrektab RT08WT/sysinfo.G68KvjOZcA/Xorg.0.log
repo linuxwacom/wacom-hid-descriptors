@@ -1,0 +1,574 @@
+[     6.941] (--) Log file renamed from "/var/log/Xorg.pid-382.log" to "/var/log/Xorg.0.log"
+[     7.339] 
+X.Org X Server 1.21.1.8
+X Protocol Version 11, Revision 0
+[     7.340] Current Operating System: Linux HOSTNAME 6.3.2-zen1-1-zen #1 ZEN SMP PREEMPT_DYNAMIC Thu, 11 May 2023 16:40:19 +0000 x86_64
+[     7.340] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux-zen USERNAME=UUID=71c133de-b508-4dac-83d3-25e2c3de0971 rw loglevel=3 quiet nomodeset i915.modeset=0 fbcon=rotate:1
+[     7.340]  
+[     7.340] Current version of pixman: 0.42.2
+[     7.340] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     7.340] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     7.340] (==) Log file: "/var/log/Xorg.0.log", Time: Sun May 21 12:45:31 2023
+[     7.354] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[     7.354] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     7.365] (==) No Layout section.  Using the first Screen section.
+[     7.365] (**) |-->Screen "Screen0" (0)
+[     7.365] (**) |   |-->Monitor "<default monitor>"
+[     7.366] (**) |   |-->Device "Videocard0"
+[     7.366] (==) No monitor specified for screen "Screen0".
+	Using a default monitor configuration.
+[     7.366] (==) Automatically adding devices
+[     7.366] (==) Automatically enabling devices
+[     7.366] (==) Automatically adding GPU devices
+[     7.366] (==) Automatically binding GPU devices
+[     7.366] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     7.397] (**) FontPath set to:
+	/usr/local/share/fonts/bitmap/efont-unicode/,
+	/usr/local/share/fonts/truetype/DF/,
+	/usr/share/fonts/misc,
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF,
+	/usr/share/fonts/Type1,
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[     7.397] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     7.397] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     7.397] (II) Module ABI versions:
+[     7.398] 	X.Org ANSI C Emulation: 0.4
+[     7.398] 	X.Org Video Driver: 25.2
+[     7.398] 	X.Org XInput driver : 24.4
+[     7.398] 	X.Org Server Extension : 10.0
+[     7.399] (++) using VT number 1
+
+[     7.399] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     7.429] (--) PCI:*(0@0:2:0) 8086:3185:1e5a:2212 rev 3, Mem @ 0xc0000000/16777216, 0xa0000000/536870912, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[     7.429] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[     7.429] (II) LoadModule: "glx"
+[     7.434] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     7.469] (II) Module glx: vendor="X.Org Foundation"
+[     7.469] 	compiled for 1.21.1.8, module version = 1.0.0
+[     7.469] 	ABI class: X.Org Server Extension, version 10.0
+[     7.469] (II) LoadModule: "fbdev"
+[     7.469] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     7.471] (II) Module fbdev: vendor="X.Org Foundation"
+[     7.471] 	compiled for 1.21.1.1, module version = 0.5.0
+[     7.471] 	Module class: X.Org Video Driver
+[     7.471] 	ABI class: X.Org Video Driver, version 25.2
+[     7.471] (II) FBDEV: driver for framebuffer: fbdev
+[     7.471] (II) Loading sub module "fbdevhw"
+[     7.471] (II) LoadModule: "fbdevhw"
+[     7.471] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     7.472] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     7.472] 	compiled for 1.21.1.8, module version = 0.0.2
+[     7.472] 	ABI class: X.Org Video Driver, version 25.2
+[     7.472] (EE) Unable to find a valid framebuffer device
+[     7.472] (WW) Falling back to old probe method for fbdev
+[     7.472] (II) Loading sub module "fbdevhw"
+[     7.472] (II) LoadModule: "fbdevhw"
+[     7.472] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     7.472] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     7.472] 	compiled for 1.21.1.8, module version = 0.0.2
+[     7.472] 	ABI class: X.Org Video Driver, version 25.2
+[     7.472] (II) FBDEV(1): using default device
+[     7.472] (EE) Screen 0 deleted because of no matching config section.
+[     7.472] (II) UnloadModule: "fbdev"
+[     7.472] (II) UnloadSubModule: "fbdevhw"
+[     7.472] (**) FBDEV(0): Depth 24, (--) framebuffer bpp 32
+[     7.473] (==) FBDEV(0): RGB weight 888
+[     7.473] (==) FBDEV(0): Default visual is TrueColor
+[     7.473] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[     7.473] (II) FBDEV(0): hardware: EFI VGA (video memory: 4032kB)
+[     7.473] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[     7.473] (**) FBDEV(0): Option "Rotate" "CW"
+[     7.473] (**) FBDEV(0): rotating screen clockwise
+[     7.473] (II) FBDEV(0): checking modes against framebuffer device...
+[     7.473] (II) FBDEV(0): 	mode "800x1280" not found
+[     7.473] (II) FBDEV(0): checking modes against monitor...
+[     7.473] (II) FBDEV(0): Virtual size is 800x1280 (pitch 800)
+[     7.473] (**) FBDEV(0):  Built-in mode "current": 102.4 MHz, 100.0 kHz, 76.7 Hz
+[     7.473] (II) FBDEV(0): Modeline "current"x0.0  102.41  800 832 928 1024  1280 1284 1288 1304 -hsync -vsync -csync (100.0 kHz b)
+[     7.473] (==) FBDEV(0): DPI set to (96, 96)
+[     7.473] (II) Loading sub module "fb"
+[     7.473] (II) LoadModule: "fb"
+[     7.473] (II) Module "fb" already built-in
+[     7.473] (**) FBDEV(0): using shadow framebuffer
+[     7.473] (II) Loading sub module "shadow"
+[     7.473] (II) LoadModule: "shadow"
+[     7.473] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[     7.474] (II) Module shadow: vendor="X.Org Foundation"
+[     7.474] 	compiled for 1.21.1.8, module version = 1.1.0
+[     7.474] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     7.474] (II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+[     7.476] (II) FBDEV(0): display rotated; disabling DGA
+[     7.476] (II) FBDEV(0): using driver rotation; disabling XRandR
+[     7.476] (==) FBDEV(0): Backing store enabled
+[     7.476] (==) FBDEV(0): DPMS enabled
+[     7.476] (II) Initializing extension Generic Event Extension
+[     7.477] (II) Initializing extension SHAPE
+[     7.477] (II) Initializing extension MIT-SHM
+[     7.477] (II) Initializing extension XInputExtension
+[     7.478] (II) Initializing extension XTEST
+[     7.478] (II) Initializing extension BIG-REQUESTS
+[     7.478] (II) Initializing extension SYNC
+[     7.478] (II) Initializing extension XKEYBOARD
+[     7.479] (II) Initializing extension XC-MISC
+[     7.479] (II) Initializing extension SECURITY
+[     7.480] (II) Initializing extension XFIXES
+[     7.480] (II) Initializing extension RENDER
+[     7.481] (II) Initializing extension RANDR
+[     7.481] (II) Initializing extension COMPOSITE
+[     7.482] (II) Initializing extension DAMAGE
+[     7.482] (II) Initializing extension MIT-SCREEN-SAVER
+[     7.483] (II) Initializing extension DOUBLE-BUFFER
+[     7.484] (II) Initializing extension RECORD
+[     7.484] (II) Initializing extension DPMS
+[     7.485] (II) Initializing extension Present
+[     7.485] (II) Initializing extension DRI3
+[     7.485] (II) Initializing extension X-Resource
+[     7.485] (II) Initializing extension XVideo
+[     7.486] (II) Initializing extension XVideo-MotionCompensation
+[     7.486] (II) Initializing extension GLX
+[     7.487] (II) AIGLX: Screen 0 is not DRI2 capable
+[     8.046] (II) IGLX: Loaded and initialized swrast
+[     8.046] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[     8.046] (II) Initializing extension XFree86-VidModeExtension
+[     8.046] (II) Initializing extension XFree86-DGA
+[     8.046] (II) Initializing extension XFree86-DRI
+[     8.046] (II) Initializing extension DRI2
+[     8.547] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[     8.547] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     8.548] (**) Power Button: Applying InputClass "Keyboard Setting"
+[     8.548] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.548] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.548] (II) LoadModule: "libinput"
+[     8.550] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     8.558] (II) Module libinput: vendor="X.Org Foundation"
+[     8.558] 	compiled for 1.21.1.8, module version = 1.3.0
+[     8.559] 	Module class: X.Org XInput Driver
+[     8.559] 	ABI class: X.Org XInput driver, version 24.4
+[     8.559] (II) Using input driver 'libinput' for 'Power Button'
+[     8.559] (**) Power Button: always reports core events
+[     8.559] (**) Option "Device" "/dev/input/event2"
+[     8.576] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[     8.576] (II) event2  - Power Button: device is a keyboard
+[     8.577] (II) event2  - Power Button: device removed
+[     8.577] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[     8.577] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[     8.577] (**) Option "xkb_options" "ctrl:nocaps"
+[     8.617] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[     8.617] (II) event2  - Power Button: device is a keyboard
+[     8.619] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[     8.619] (**) Lid Switch: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.619] (**) Lid Switch: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.619] (II) No input driver specified, ignoring this device.
+[     8.619] (II) This device may have been added with another device file.
+[     8.620] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[     8.620] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     8.620] (**) Power Button: Applying InputClass "Keyboard Setting"
+[     8.620] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.620] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.620] (II) Using input driver 'libinput' for 'Power Button'
+[     8.620] (**) Power Button: always reports core events
+[     8.620] (**) Option "Device" "/dev/input/event1"
+[     8.622] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     8.622] (II) event1  - Power Button: device is a keyboard
+[     8.623] (II) event1  - Power Button: device removed
+[     8.623] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[     8.623] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[     8.623] (**) Option "xkb_options" "ctrl:nocaps"
+[     8.625] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     8.625] (II) event1  - Power Button: device is a keyboard
+[     8.626] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E Stylus (/dev/input/event7)
+[     8.627] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "libinput tablet catchall"
+[     8.627] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.627] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.627] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[     8.627] (II) Using input driver 'libinput' for 'WCOM002A:00 2D1F:011E Stylus'
+[     8.627] (**) WCOM002A:00 2D1F:011E Stylus: always reports core events
+[     8.627] (**) Option "Device" "/dev/input/event7"
+[     8.644] (II) event7  - WCOM002A:00 2D1F:011E Stylus: is tagged by udev as: Tablet
+[     8.846] (II) event7  - WCOM002A:00 2D1F:011E Stylus: tablet 'WCOM002A:00 2D1F:011E Stylus' unknown to libwacom
+[     8.847] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device is a tablet
+[     8.847] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device removed
+[     8.850] (**) Option "ButtonMapping" "1 3 2 4 5 6 7"
+[     8.851] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-3/i2c-WCOM002A:00/0018:2D1F:011E.0001/input/input8/event7"
+[     8.851] (II) XINPUT: Adding extended input device "WCOM002A:00 2D1F:011E Stylus" (type: TABLET, id 8)
+[     8.854] (II) event7  - WCOM002A:00 2D1F:011E Stylus: is tagged by udev as: Tablet
+[     8.873] (II) event7  - WCOM002A:00 2D1F:011E Stylus: tablet 'WCOM002A:00 2D1F:011E Stylus' unknown to libwacom
+[     8.874] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device is a tablet
+[     8.875] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E Stylus (/dev/input/mouse1)
+[     8.875] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.875] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.875] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[     8.875] (II) No input driver specified, ignoring this device.
+[     8.875] (II) This device may have been added with another device file.
+[     8.877] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E (/dev/input/event8)
+[     8.877] (**) WCOM002A:00 2D1F:011E: Applying InputClass "libinput tablet catchall"
+[     8.877] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.877] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.877] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[     8.877] (II) Using input driver 'libinput' for 'WCOM002A:00 2D1F:011E'
+[     8.877] (**) WCOM002A:00 2D1F:011E: always reports core events
+[     8.877] (**) Option "Device" "/dev/input/event8"
+[     8.881] (II) event8  - WCOM002A:00 2D1F:011E: is tagged by udev as: Tablet
+[     8.901] (II) event8  - WCOM002A:00 2D1F:011E: tablet 'WCOM002A:00 2D1F:011E' unknown to libwacom
+[     8.901] (II) event8  - WCOM002A:00 2D1F:011E: device is a tablet
+[     8.901] (II) event8  - WCOM002A:00 2D1F:011E: device removed
+[     8.909] (**) Option "ButtonMapping" "1 3 2 4 5 6 7"
+[     8.909] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-3/i2c-WCOM002A:00/0018:2D1F:011E.0001/input/input9/event8"
+[     8.909] (II) XINPUT: Adding extended input device "WCOM002A:00 2D1F:011E" (type: TABLET, id 9)
+[     8.912] (II) event8  - WCOM002A:00 2D1F:011E: is tagged by udev as: Tablet
+[     8.932] (II) event8  - WCOM002A:00 2D1F:011E: tablet 'WCOM002A:00 2D1F:011E' unknown to libwacom
+[     8.932] (II) event8  - WCOM002A:00 2D1F:011E: device is a tablet
+[     8.934] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E (/dev/input/mouse2)
+[     8.934] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.934] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.934] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[     8.934] (II) No input driver specified, ignoring this device.
+[     8.934] (II) This device may have been added with another device file.
+[     8.935] (II) config/udev: Adding input device Goodix Capacitive TouchScreen (/dev/input/event6)
+[     8.935] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput keyboard catchall"
+[     8.935] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput touchscreen catchall"
+[     8.935] (**) Goodix Capacitive TouchScreen: Applying InputClass "Keyboard Setting"
+[     8.935] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.935] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.935] (**) Goodix Capacitive TouchScreen: Applying InputClass "Goodix Capacitive TouchScreen"
+[     8.936] (II) Using input driver 'libinput' for 'Goodix Capacitive TouchScreen'
+[     8.936] (**) Goodix Capacitive TouchScreen: always reports core events
+[     8.936] (**) Option "Device" "/dev/input/event6"
+[     8.938] (II) event6  - Goodix Capacitive TouchScreen: is tagged by udev as: Keyboard Touchscreen
+[     8.940] (II) event6  - Goodix Capacitive TouchScreen: device is a keyboard
+[     8.940] (II) event6  - Goodix Capacitive TouchScreen: device is a touch device
+[     8.940] (II) event6  - Goodix Capacitive TouchScreen: device removed
+[     8.944] (II) libinput: Goodix Capacitive TouchScreen: needs a virtual subdevice
+[     8.944] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-4/i2c-GDIX1001:00/input/input6/event6"
+[     8.944] (II) XINPUT: Adding extended input device "Goodix Capacitive TouchScreen" (type: TOUCHSCREEN, id 10)
+[     8.944] (**) Option "AccelerationScheme" "none"
+[     8.944] (**) Goodix Capacitive TouchScreen: (accel) selected scheme none/0
+[     8.944] (**) Goodix Capacitive TouchScreen: (accel) acceleration factor: 2.000
+[     8.944] (**) Goodix Capacitive TouchScreen: (accel) acceleration threshold: 4
+[     8.944] (**) Option "TransformationMatrix" "0 1 0 -1 0 1 0 0 1"
+[     8.947] (II) event6  - Goodix Capacitive TouchScreen: is tagged by udev as: Keyboard Touchscreen
+[     8.951] (II) event6  - Goodix Capacitive TouchScreen: device is a keyboard
+[     8.951] (II) event6  - Goodix Capacitive TouchScreen: device is a touch device
+[     8.953] (II) config/udev: Adding input device Goodix Capacitive TouchScreen (/dev/input/mouse0)
+[     8.953] (**) Goodix Capacitive TouchScreen: Applying InputClass "Keyboard Setting"
+[     8.953] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.953] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.953] (**) Goodix Capacitive TouchScreen: Applying InputClass "Goodix Capacitive TouchScreen"
+[     8.953] (II) No input driver specified, ignoring this device.
+[     8.953] (II) This device may have been added with another device file.
+[     8.956] (II) config/udev: Adding input device Intel HID events (/dev/input/event4)
+[     8.956] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[     8.956] (**) Intel HID events: Applying InputClass "Keyboard Setting"
+[     8.956] (**) Intel HID events: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.956] (**) Intel HID events: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.956] (II) Using input driver 'libinput' for 'Intel HID events'
+[     8.956] (**) Intel HID events: always reports core events
+[     8.956] (**) Option "Device" "/dev/input/event4"
+[     8.957] (II) event4  - Intel HID events: is tagged by udev as: Keyboard
+[     8.958] (II) event4  - Intel HID events: device is a keyboard
+[     8.958] (II) event4  - Intel HID events: device removed
+[     8.958] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input4/event4"
+[     8.958] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 11)
+[     8.958] (**) Option "xkb_options" "ctrl:nocaps"
+[     8.962] (II) event4  - Intel HID events: is tagged by udev as: Keyboard
+[     8.962] (II) event4  - Intel HID events: device is a keyboard
+[     8.963] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event5)
+[     8.963] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[     8.963] (**) Intel HID 5 button array: Applying InputClass "Keyboard Setting"
+[     8.963] (**) Intel HID 5 button array: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.963] (**) Intel HID 5 button array: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.963] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[     8.963] (**) Intel HID 5 button array: always reports core events
+[     8.964] (**) Option "Device" "/dev/input/event5"
+[     8.967] (II) event5  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[     8.967] (II) event5  - Intel HID 5 button array: device is a keyboard
+[     8.967] (II) event5  - Intel HID 5 button array: device removed
+[     8.967] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input5/event5"
+[     8.967] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 12)
+[     8.968] (**) Option "xkb_options" "ctrl:nocaps"
+[     8.969] (II) event5  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[     8.970] (II) event5  - Intel HID 5 button array: device is a keyboard
+[     8.971] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[     8.971] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[     8.971] (**) AT Translated Set 2 keyboard: Applying InputClass "Keyboard Setting"
+[     8.971] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.971] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.971] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[     8.971] (**) AT Translated Set 2 keyboard: always reports core events
+[     8.971] (**) Option "Device" "/dev/input/event3"
+[     8.973] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     8.974] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[     8.976] (II) event3  - AT Translated Set 2 keyboard: device removed
+[     8.976] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[     8.976] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
+[     8.976] (**) Option "xkb_options" "ctrl:nocaps"
+[     8.978] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     8.978] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[     8.981] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[     8.981] (**) PC Speaker: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     8.982] (**) PC Speaker: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     8.982] (II) No input driver specified, ignoring this device.
+[     8.982] (II) This device may have been added with another device file.
+[     9.011] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput keyboard catchall"
+[     9.166] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput touchscreen catchall"
+[     9.166] (**) Goodix Capacitive TouchScreen: Applying InputClass "Keyboard Setting"
+[     9.166] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[     9.166] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[     9.166] (**) Goodix Capacitive TouchScreen: Applying InputClass "Goodix Capacitive TouchScreen"
+[     9.166] (II) Using input driver 'libinput' for 'Goodix Capacitive TouchScreen'
+[     9.166] (**) Goodix Capacitive TouchScreen: always reports core events
+[     9.166] (**) Option "Device" "/dev/input/event6"
+[     9.166] (II) libinput: Goodix Capacitive TouchScreen: is a virtual subdevice
+[     9.166] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-4/i2c-GDIX1001:00/input/input6/event6"
+[     9.166] (II) XINPUT: Adding extended input device "Goodix Capacitive TouchScreen" (type: KEYBOARD, id 14)
+[     9.166] (**) Option "xkb_options" "ctrl:nocaps"
+[    10.540] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event10)
+[    10.540] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    10.540] (**) AT Translated Set 2 keyboard: Applying InputClass "Keyboard Setting"
+[    10.540] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[    10.540] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[    10.541] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    10.541] (**) AT Translated Set 2 keyboard: always reports core events
+[    10.541] (**) Option "Device" "/dev/input/event10"
+[    10.545] (II) event10 - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    10.545] (II) event10 - AT Translated Set 2 keyboard: device is a keyboard
+[    10.566] (II) event10 - AT Translated Set 2 keyboard: device removed
+[    10.566] (**) Option "config_info" "udev:/sys/devices/virtual/input/input12/event10"
+[    10.566] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 15)
+[    10.566] (**) Option "xkb_options" "ctrl:nocaps"
+[    10.568] (II) event10 - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    10.568] (II) event10 - AT Translated Set 2 keyboard: device is a keyboard
+[  1248.487] (II) config/udev: removing device Power Button
+[  1248.488] (II) event2  - Power Button: device removed
+[  1248.490] (II) UnloadModule: "libinput"
+[  1248.491] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[  1248.491] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  1248.491] (**) Power Button: Applying InputClass "Keyboard Setting"
+[  1248.491] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.491] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.491] (II) Using input driver 'libinput' for 'Power Button'
+[  1248.491] (**) Power Button: always reports core events
+[  1248.491] (**) Option "Device" "/dev/input/event2"
+[  1248.493] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  1248.493] (II) event2  - Power Button: device is a keyboard
+[  1248.493] (II) event2  - Power Button: device removed
+[  1248.513] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[  1248.514] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  1248.514] (**) Option "xkb_options" "ctrl:nocaps"
+[  1248.541] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[  1248.541] (II) event2  - Power Button: device is a keyboard
+[  1248.589] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[  1248.589] (**) Lid Switch: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.589] (**) Lid Switch: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.589] (II) No input driver specified, ignoring this device.
+[  1248.589] (II) This device may have been added with another device file.
+[  1248.642] (II) config/udev: removing device Power Button
+[  1248.642] (II) event1  - Power Button: device removed
+[  1248.649] (II) UnloadModule: "libinput"
+[  1248.659] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  1248.659] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  1248.659] (**) Power Button: Applying InputClass "Keyboard Setting"
+[  1248.659] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.659] (**) Power Button: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.659] (II) Using input driver 'libinput' for 'Power Button'
+[  1248.659] (**) Power Button: always reports core events
+[  1248.659] (**) Option "Device" "/dev/input/event1"
+[  1248.661] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  1248.661] (II) event1  - Power Button: device is a keyboard
+[  1248.668] (II) event1  - Power Button: device removed
+[  1248.668] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[  1248.668] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[  1248.668] (**) Option "xkb_options" "ctrl:nocaps"
+[  1248.680] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  1248.680] (II) event1  - Power Button: device is a keyboard
+[  1248.761] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E Stylus (/dev/input/mouse1)
+[  1248.761] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.761] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.761] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[  1248.761] (II) No input driver specified, ignoring this device.
+[  1248.761] (II) This device may have been added with another device file.
+[  1248.767] (II) config/udev: Adding input device Goodix Capacitive TouchScreen (/dev/input/mouse0)
+[  1248.767] (**) Goodix Capacitive TouchScreen: Applying InputClass "Keyboard Setting"
+[  1248.767] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.767] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.767] (**) Goodix Capacitive TouchScreen: Applying InputClass "Goodix Capacitive TouchScreen"
+[  1248.767] (II) No input driver specified, ignoring this device.
+[  1248.767] (II) This device may have been added with another device file.
+[  1248.778] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E (/dev/input/mouse2)
+[  1248.793] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.793] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.793] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[  1248.793] (II) No input driver specified, ignoring this device.
+[  1248.793] (II) This device may have been added with another device file.
+[  1248.836] (II) config/udev: removing device Intel HID 5 button array
+[  1248.836] (II) event5  - Intel HID 5 button array: device removed
+[  1248.840] (II) UnloadModule: "libinput"
+[  1248.841] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event5)
+[  1248.841] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[  1248.841] (**) Intel HID 5 button array: Applying InputClass "Keyboard Setting"
+[  1248.841] (**) Intel HID 5 button array: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.841] (**) Intel HID 5 button array: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.841] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[  1248.841] (**) Intel HID 5 button array: always reports core events
+[  1248.841] (**) Option "Device" "/dev/input/event5"
+[  1248.868] (II) event5  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[  1248.868] (II) event5  - Intel HID 5 button array: device is a keyboard
+[  1248.896] (II) event5  - Intel HID 5 button array: device removed
+[  1248.896] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input5/event5"
+[  1248.896] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 12)
+[  1248.896] (**) Option "xkb_options" "ctrl:nocaps"
+[  1248.901] (II) event5  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[  1248.902] (II) event5  - Intel HID 5 button array: device is a keyboard
+[  1248.904] (II) config/udev: removing device Intel HID events
+[  1248.904] (II) event4  - Intel HID events: device removed
+[  1248.909] (II) UnloadModule: "libinput"
+[  1248.909] (II) config/udev: Adding input device Intel HID events (/dev/input/event4)
+[  1248.909] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[  1248.909] (**) Intel HID events: Applying InputClass "Keyboard Setting"
+[  1248.909] (**) Intel HID events: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.909] (**) Intel HID events: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.909] (II) Using input driver 'libinput' for 'Intel HID events'
+[  1248.910] (**) Intel HID events: always reports core events
+[  1248.910] (**) Option "Device" "/dev/input/event4"
+[  1248.911] (II) event4  - Intel HID events: is tagged by udev as: Keyboard
+[  1248.911] (II) event4  - Intel HID events: device is a keyboard
+[  1248.912] (II) event4  - Intel HID events: device removed
+[  1248.912] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input4/event4"
+[  1248.912] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 11)
+[  1248.912] (**) Option "xkb_options" "ctrl:nocaps"
+[  1248.923] (II) event4  - Intel HID events: is tagged by udev as: Keyboard
+[  1248.923] (II) event4  - Intel HID events: device is a keyboard
+[  1248.962] (II) config/udev: removing device WCOM002A:00 2D1F:011E Stylus
+[  1248.962] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device removed
+[  1248.984] (II) UnloadModule: "libinput"
+[  1248.988] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E Stylus (/dev/input/event7)
+[  1248.988] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "libinput tablet catchall"
+[  1248.988] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1248.988] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1248.988] (**) WCOM002A:00 2D1F:011E Stylus: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[  1248.988] (II) Using input driver 'libinput' for 'WCOM002A:00 2D1F:011E Stylus'
+[  1248.988] (**) WCOM002A:00 2D1F:011E Stylus: always reports core events
+[  1248.988] (**) Option "Device" "/dev/input/event7"
+[  1249.007] (II) event7  - WCOM002A:00 2D1F:011E Stylus: is tagged by udev as: Tablet
+[  1249.079] (II) event7  - WCOM002A:00 2D1F:011E Stylus: tablet 'WCOM002A:00 2D1F:011E Stylus' unknown to libwacom
+[  1249.079] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device is a tablet
+[  1249.079] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device removed
+[  1249.082] (**) Option "ButtonMapping" "1 3 2 4 5 6 7"
+[  1249.082] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-3/i2c-WCOM002A:00/0018:2D1F:011E.0001/input/input8/event7"
+[  1249.082] (II) XINPUT: Adding extended input device "WCOM002A:00 2D1F:011E Stylus" (type: TABLET, id 8)
+[  1249.086] (II) event7  - WCOM002A:00 2D1F:011E Stylus: is tagged by udev as: Tablet
+[  1249.107] (II) event7  - WCOM002A:00 2D1F:011E Stylus: tablet 'WCOM002A:00 2D1F:011E Stylus' unknown to libwacom
+[  1249.107] (II) event7  - WCOM002A:00 2D1F:011E Stylus: device is a tablet
+[  1249.118] (II) config/udev: removing device WCOM002A:00 2D1F:011E
+[  1249.118] (II) event8  - WCOM002A:00 2D1F:011E: device removed
+[  1249.124] (II) UnloadModule: "libinput"
+[  1249.125] (II) config/udev: Adding input device WCOM002A:00 2D1F:011E (/dev/input/event8)
+[  1249.125] (**) WCOM002A:00 2D1F:011E: Applying InputClass "libinput tablet catchall"
+[  1249.125] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1249.125] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1249.125] (**) WCOM002A:00 2D1F:011E: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Pen (0)"
+[  1249.125] (II) Using input driver 'libinput' for 'WCOM002A:00 2D1F:011E'
+[  1249.125] (**) WCOM002A:00 2D1F:011E: always reports core events
+[  1249.125] (**) Option "Device" "/dev/input/event8"
+[  1249.128] (II) event8  - WCOM002A:00 2D1F:011E: is tagged by udev as: Tablet
+[  1249.147] (II) event8  - WCOM002A:00 2D1F:011E: tablet 'WCOM002A:00 2D1F:011E' unknown to libwacom
+[  1249.147] (II) event8  - WCOM002A:00 2D1F:011E: device is a tablet
+[  1249.147] (II) event8  - WCOM002A:00 2D1F:011E: device removed
+[  1249.152] (**) Option "ButtonMapping" "1 3 2 4 5 6 7"
+[  1249.152] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:16.3/i2c_designware.3/i2c-3/i2c-WCOM002A:00/0018:2D1F:011E.0001/input/input9/event8"
+[  1249.152] (II) XINPUT: Adding extended input device "WCOM002A:00 2D1F:011E" (type: TABLET, id 9)
+[  1249.155] (II) event8  - WCOM002A:00 2D1F:011E: is tagged by udev as: Tablet
+[  1249.174] (II) event8  - WCOM002A:00 2D1F:011E: tablet 'WCOM002A:00 2D1F:011E' unknown to libwacom
+[  1249.175] (II) event8  - WCOM002A:00 2D1F:011E: device is a tablet
+[  1249.178] (II) config/udev: removing device Goodix Capacitive TouchScreen
+[  1249.180] (II) UnloadModule: "libinput"
+[  1249.180] (II) config/udev: removing device Goodix Capacitive TouchScreen
+[  1249.180] (II) event6  - Goodix Capacitive TouchScreen: device removed
+[  1249.187] (II) UnloadModule: "libinput"
+[  1249.189] (II) config/udev: Adding input device Goodix Capacitive TouchScreen (/dev/input/event6)
+[  1249.189] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput keyboard catchall"
+[  1249.189] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput touchscreen catchall"
+[  1249.189] (**) Goodix Capacitive TouchScreen: Applying InputClass "Keyboard Setting"
+[  1249.189] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1249.189] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1249.189] (**) Goodix Capacitive TouchScreen: Applying InputClass "Goodix Capacitive TouchScreen"
+[  1249.189] (II) Using input driver 'libinput' for 'Goodix Capacitive TouchScreen'
+[  1249.189] (**) Goodix Capacitive TouchScreen: always reports core events
+[  1249.189] (**) Option "Device" "/dev/input/event6"
+[  1249.191] (II) event6  - Goodix Capacitive TouchScreen: is tagged by udev as: Keyboard Touchscreen
+[  1249.192] (II) event6  - Goodix Capacitive TouchScreen: device is a keyboard
+[  1249.192] (II) event6  - Goodix Capacitive TouchScreen: device is a touch device
+[  1249.193] (II) event6  - Goodix Capacitive TouchScreen: device removed
+[  1249.201] (II) libinput: Goodix Capacitive TouchScreen: needs a virtual subdevice
+[  1249.201] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-4/i2c-GDIX1001:00/input/input6/event6"
+[  1249.201] (II) XINPUT: Adding extended input device "Goodix Capacitive TouchScreen" (type: TOUCHSCREEN, id 10)
+[  1249.202] (**) Option "AccelerationScheme" "none"
+[  1249.203] (**) Goodix Capacitive TouchScreen: (accel) selected scheme none/0
+[  1249.203] (**) Goodix Capacitive TouchScreen: (accel) acceleration factor: 2.000
+[  1249.203] (**) Goodix Capacitive TouchScreen: (accel) acceleration threshold: 4
+[  1249.203] (**) Option "TransformationMatrix" "0 1 0 -1 0 1 0 0 1"
+[  1249.205] (II) event6  - Goodix Capacitive TouchScreen: is tagged by udev as: Keyboard Touchscreen
+[  1249.207] (II) event6  - Goodix Capacitive TouchScreen: device is a keyboard
+[  1249.207] (II) event6  - Goodix Capacitive TouchScreen: device is a touch device
+[  1249.208] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput keyboard catchall"
+[  1249.208] (**) Goodix Capacitive TouchScreen: Applying InputClass "libinput touchscreen catchall"
+[  1249.208] (**) Goodix Capacitive TouchScreen: Applying InputClass "Keyboard Setting"
+[  1249.208] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1249.208] (**) Goodix Capacitive TouchScreen: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1249.208] (**) Goodix Capacitive TouchScreen: Applying InputClass "Goodix Capacitive TouchScreen"
+[  1249.208] (II) Using input driver 'libinput' for 'Goodix Capacitive TouchScreen'
+[  1249.208] (**) Goodix Capacitive TouchScreen: always reports core events
+[  1249.208] (**) Option "Device" "/dev/input/event6"
+[  1249.208] (II) libinput: Goodix Capacitive TouchScreen: is a virtual subdevice
+[  1249.208] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:17.0/i2c_designware.4/i2c-4/i2c-GDIX1001:00/input/input6/event6"
+[  1249.208] (II) XINPUT: Adding extended input device "Goodix Capacitive TouchScreen" (type: KEYBOARD, id 14)
+[  1249.208] (**) Option "xkb_options" "ctrl:nocaps"
+[  1249.210] (II) config/udev: removing device AT Translated Set 2 keyboard
+[  1249.210] (II) event3  - AT Translated Set 2 keyboard: device removed
+[  1249.211] (II) UnloadModule: "libinput"
+[  1249.212] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[  1249.212] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  1249.212] (**) AT Translated Set 2 keyboard: Applying InputClass "Keyboard Setting"
+[  1249.212] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1249.212] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1249.212] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  1249.212] (**) AT Translated Set 2 keyboard: always reports core events
+[  1249.212] (**) Option "Device" "/dev/input/event3"
+[  1249.214] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  1249.214] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[  1249.217] (II) event3  - AT Translated Set 2 keyboard: device removed
+[  1249.217] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[  1249.217] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
+[  1249.217] (**) Option "xkb_options" "ctrl:nocaps"
+[  1249.220] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  1249.220] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[  1249.223] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[  1249.223] (**) PC Speaker: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1249.223] (**) PC Speaker: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1249.223] (II) No input driver specified, ignoring this device.
+[  1249.223] (II) This device may have been added with another device file.
+[  1249.223] (II) config/udev: removing device AT Translated Set 2 keyboard
+[  1249.224] (II) event10 - AT Translated Set 2 keyboard: device removed
+[  1249.225] (II) UnloadModule: "libinput"
+[  1249.225] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event10)
+[  1249.226] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  1249.226] (**) AT Translated Set 2 keyboard: Applying InputClass "Keyboard Setting"
+[  1249.226] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Pen (0)"
+[  1249.226] (**) AT Translated Set 2 keyboard: Applying InputClass "WCOM002A:00 2D1F:011E Stylus Eraser (0)"
+[  1249.226] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  1249.226] (**) AT Translated Set 2 keyboard: always reports core events
+[  1249.226] (**) Option "Device" "/dev/input/event10"
+[  1249.227] (II) event10 - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  1249.227] (II) event10 - AT Translated Set 2 keyboard: device is a keyboard
+[  1249.228] (II) event10 - AT Translated Set 2 keyboard: device removed
+[  1249.228] (**) Option "config_info" "udev:/sys/devices/virtual/input/input12/event10"
+[  1249.229] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 15)
+[  1249.229] (**) Option "xkb_options" "ctrl:nocaps"
+[  1249.230] (II) event10 - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  1249.230] (II) event10 - AT Translated Set 2 keyboard: device is a keyboard

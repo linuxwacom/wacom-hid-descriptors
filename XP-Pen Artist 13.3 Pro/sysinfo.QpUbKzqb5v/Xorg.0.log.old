@@ -1,0 +1,1537 @@
+[     6.535] (--) Log file renamed from "/var/log/Xorg.pid-541.log" to "/var/log/Xorg.0.log"
+[     6.536] 
+X.Org X Server 1.21.1.8
+X Protocol Version 11, Revision 0
+[     6.536] Current Operating System: Linux HOSTNAME 6.2.9-arch1-1 #1 SMP PREEMPT_DYNAMIC Thu, 30 Mar 2023 14:51:14 +0000 x86_64
+[     6.536] Kernel command line: initrd=\intel-ucode.img initrd=\initramfs-linux.img USERNAME=PARTUUID=360e8cd0-c890-4a87-8348-4c70c6056134 USERNAMEfstype=ext4 acpi_osi=Linux acpi_rev_override=5 add_efi_memmap nvme_core.default_ps_max_latency_us=170000 pcie_port_pm=on pci=noaer rw
+[     6.536]  
+[     6.536] Current version of pixman: 0.42.2
+[     6.536] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     6.536] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     6.536] (==) Log file: "/var/log/Xorg.0.log", Time: Wed Apr  5 12:21:10 2023
+[     6.537] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[     6.537] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     6.538] (==) No Layout section.  Using the first Screen section.
+[     6.538] (==) No screen section available. Using defaults.
+[     6.538] (**) |-->Screen "Default Screen Section" (0)
+[     6.538] (**) |   |-->Monitor "<default monitor>"
+[     6.539] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     6.539] (==) Automatically adding devices
+[     6.539] (==) Automatically enabling devices
+[     6.539] (==) Automatically adding GPU devices
+[     6.539] (==) Automatically binding GPU devices
+[     6.539] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     6.540] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[     6.540] 	Entry deleted from font path.
+[     6.541] (==) FontPath set to:
+	/usr/share/fonts/misc,
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF,
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[     6.541] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     6.541] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     6.541] (II) Module ABI versions:
+[     6.541] 	X.Org ANSI C Emulation: 0.4
+[     6.541] 	X.Org Video Driver: 25.2
+[     6.541] 	X.Org XInput driver : 24.4
+[     6.541] 	X.Org Server Extension : 10.0
+[     6.542] (++) using VT number 1
+
+[     6.542] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     6.543] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     6.543] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[     7.532] (--) PCI:*(0@0:2:0) 8086:591b:1028:07be rev 4, Mem @ 0xeb000000/16777216, 0x80000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[     7.532] (--) PCI: (1@0:0:0) 10de:1c8d:1028:07be rev 161, Mem @ 0xec000000/16777216, 0xc0000000/268435456, 0xd0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/524288
+[     7.532] (II) Open ACPI successful (/var/run/acpid.socket)
+[     7.532] (II) LoadModule: "glx"
+[     7.533] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     7.537] (II) Module glx: vendor="X.Org Foundation"
+[     7.537] 	compiled for 1.21.1.8, module version = 1.0.0
+[     7.537] 	ABI class: X.Org Server Extension, version 10.0
+[     7.537] (==) Matched intel as autoconfigured driver 0
+[     7.537] (==) Matched modesetting as autoconfigured driver 1
+[     7.537] (==) Matched fbdev as autoconfigured driver 2
+[     7.537] (==) Matched vesa as autoconfigured driver 3
+[     7.537] (==) Assigned the driver to the xf86ConfigLayout
+[     7.537] (II) LoadModule: "intel"
+[     7.539] (WW) Warning, couldn't open module intel
+[     7.539] (EE) Failed to load module "intel" (module does not exist, 0)
+[     7.539] (II) LoadModule: "modesetting"
+[     7.539] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     7.540] (II) Module modesetting: vendor="X.Org Foundation"
+[     7.540] 	compiled for 1.21.1.8, module version = 1.21.1
+[     7.540] 	Module class: X.Org Video Driver
+[     7.540] 	ABI class: X.Org Video Driver, version 25.2
+[     7.540] (II) LoadModule: "fbdev"
+[     7.540] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     7.541] (II) Module fbdev: vendor="X.Org Foundation"
+[     7.541] 	compiled for 1.21.1.1, module version = 0.5.0
+[     7.541] 	Module class: X.Org Video Driver
+[     7.541] 	ABI class: X.Org Video Driver, version 25.2
+[     7.541] (II) LoadModule: "vesa"
+[     7.541] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[     7.541] (II) Module vesa: vendor="X.Org Foundation"
+[     7.541] 	compiled for 1.21.1.4, module version = 2.6.0
+[     7.541] 	Module class: X.Org Video Driver
+[     7.541] 	ABI class: X.Org Video Driver, version 25.2
+[     7.541] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     7.541] (II) FBDEV: driver for framebuffer: fbdev
+[     7.541] (II) VESA: driver for VESA chipsets: vesa
+[     7.564] (II) modeset(0): using drv /dev/dri/card0
+[     7.564] (WW) Falling back to old probe method for fbdev
+[     7.564] (II) Loading sub module "fbdevhw"
+[     7.564] (II) LoadModule: "fbdevhw"
+[     7.564] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     7.564] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     7.564] 	compiled for 1.21.1.8, module version = 0.0.2
+[     7.564] 	ABI class: X.Org Video Driver, version 25.2
+[     7.564] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     7.564] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[     7.564] (==) modeset(0): RGB weight 888
+[     7.564] (==) modeset(0): Default visual is TrueColor
+[     7.564] (II) Loading sub module "glamoregl"
+[     7.564] (II) LoadModule: "glamoregl"
+[     7.564] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[     7.569] (II) Module glamoregl: vendor="X.Org Foundation"
+[     7.569] 	compiled for 1.21.1.8, module version = 1.0.1
+[     7.569] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     8.580] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) HD Graphics 630 (KBL GT2)
+[     8.580] (II) modeset(0): glamor initialized
+[     8.580] (==) modeset(0): VariableRefresh: disabled
+[     8.580] (==) modeset(0): AsyncFlipSecondaries: disabled
+[     8.582] (II) modeset(0): Output eDP-1 has no monitor section
+[     8.588] (II) modeset(0): Output DP-1 has no monitor section
+[     8.591] (II) modeset(0): Output HDMI-1 has no monitor section
+[     8.592] (II) modeset(0): Output DP-2 has no monitor section
+[     8.595] (II) modeset(0): Output HDMI-2 has no monitor section
+[     8.597] (II) modeset(0): EDID for output eDP-1
+[     8.597] (II) modeset(0): Manufacturer: SHP  Model: 1453  Serial#: 0
+[     8.597] (II) modeset(0): Year: 2015  Week: 40
+[     8.597] (II) modeset(0): EDID Version: 1.4
+[     8.597] (II) modeset(0): Digital Display Input
+[     8.597] (II) modeset(0): 8 bits per channel
+[     8.597] (II) modeset(0): Digital interface is DisplayPort
+[     8.597] (II) modeset(0): Max Image Size [cm]: horiz.: 35  vert.: 19
+[     8.597] (II) modeset(0): Gamma: 2.20
+[     8.597] (II) modeset(0): No DPMS capabilities specified
+[     8.597] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[     8.597] (II) modeset(0): Default color space is primary color space
+[     8.597] (II) modeset(0): First detailed timing is preferred mode
+[     8.597] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[     8.597] (II) modeset(0): redX: 0.640 redY: 0.329   greenX: 0.300 greenY: 0.600
+[     8.597] (II) modeset(0): blueX: 0.149 blueY: 0.060   whiteX: 0.312 whiteY: 0.328
+[     8.597] (II) modeset(0): Manufacturer's mask: 0
+[     8.597] (II) modeset(0): Supported detailed timing:
+[     8.597] (II) modeset(0): clock: 138.5 MHz   Image Size:  346 x 194 mm
+[     8.597] (II) modeset(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[     8.597] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1111 v_border: 0
+[     8.597] (II) modeset(0):  1203MÅLQ156M1
+[     8.597] (II) modeset(0): Unknown vendor-specific block 0
+[     8.597] (II) modeset(0): EDID (in hex):
+[     8.597] (II) modeset(0): 	00ffffffffffff004d10531400000000
+[     8.597] (II) modeset(0): 	28190104a52313780ede50a3544c9926
+[     8.597] (II) modeset(0): 	0f505400000001010101010101010101
+[     8.597] (II) modeset(0): 	0101010101011a3680a070381f403020
+[     8.597] (II) modeset(0): 	35005ac2100000180000000000000000
+[     8.597] (II) modeset(0): 	00000000000000000000000000fe0031
+[     8.597] (II) modeset(0): 	3230334d814c513135364d3100000000
+[     8.597] (II) modeset(0): 	0002410328001200000a010a2020004a
+[     8.597] (II) modeset(0): Printing probed modes for output eDP-1
+[     8.597] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[     8.597] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[     8.597] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[     8.597] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[     8.597] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[     8.597] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[     8.597] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[     8.597] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[     8.597] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[     8.597] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[     8.597] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[     8.597] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[     8.597] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[     8.597] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[     8.597] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[     8.597] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[     8.598] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[     8.598] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[     8.598] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[     8.598] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[     8.598] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[     8.598] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[     8.598] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[     8.598] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[     8.598] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[     8.598] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[     8.598] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[     8.598] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[     8.598] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[     8.598] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[     8.598] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[     8.598] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[     8.598] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[     8.598] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[     8.598] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[     8.598] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[     8.605] (II) modeset(0): EDID for output DP-1
+[     8.608] (II) modeset(0): EDID for output HDMI-1
+[     8.608] (II) modeset(0): EDID for output DP-2
+[     8.611] (II) modeset(0): EDID for output HDMI-2
+[     8.611] (II) modeset(0): Output eDP-1 connected
+[     8.611] (II) modeset(0): Output DP-1 disconnected
+[     8.611] (II) modeset(0): Output HDMI-1 disconnected
+[     8.611] (II) modeset(0): Output DP-2 disconnected
+[     8.611] (II) modeset(0): Output HDMI-2 disconnected
+[     8.611] (II) modeset(0): Using exact sizes for initial modes
+[     8.611] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
+[     8.611] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[     8.611] (++) modeset(0): DPI set to (96, 96)
+[     8.611] (II) Loading sub module "fb"
+[     8.611] (II) LoadModule: "fb"
+[     8.611] (II) Module "fb" already built-in
+[     8.611] (II) UnloadModule: "fbdev"
+[     8.611] (II) Unloading fbdev
+[     8.611] (II) UnloadSubModule: "fbdevhw"
+[     8.611] (II) Unloading fbdevhw
+[     8.611] (II) UnloadModule: "vesa"
+[     8.611] (II) Unloading vesa
+[     8.637] (==) modeset(0): Backing store enabled
+[     8.637] (==) modeset(0): Silken mouse enabled
+[     8.716] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[     8.716] (==) modeset(0): DPMS enabled
+[     8.716] (II) modeset(0): [DRI2] Setup complete
+[     8.716] (II) modeset(0): [DRI2]   DRI driver: iris
+[     8.716] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[     8.716] (II) Initializing extension Generic Event Extension
+[     8.716] (II) Initializing extension SHAPE
+[     8.716] (II) Initializing extension MIT-SHM
+[     8.717] (II) Initializing extension XInputExtension
+[     8.717] (II) Initializing extension XTEST
+[     8.717] (II) Initializing extension BIG-REQUESTS
+[     8.717] (II) Initializing extension SYNC
+[     8.717] (II) Initializing extension XKEYBOARD
+[     8.717] (II) Initializing extension XC-MISC
+[     8.717] (II) Initializing extension SECURITY
+[     8.717] (II) Initializing extension XFIXES
+[     8.717] (II) Initializing extension RENDER
+[     8.718] (II) Initializing extension RANDR
+[     8.718] (II) Initializing extension COMPOSITE
+[     8.718] (II) Initializing extension DAMAGE
+[     8.718] (II) Initializing extension MIT-SCREEN-SAVER
+[     8.718] (II) Initializing extension DOUBLE-BUFFER
+[     8.718] (II) Initializing extension RECORD
+[     8.718] (II) Initializing extension DPMS
+[     8.719] (II) Initializing extension Present
+[     8.719] (II) Initializing extension DRI3
+[     8.719] (II) Initializing extension X-Resource
+[     8.719] (II) Initializing extension XVideo
+[     8.719] (II) Initializing extension XVideo-MotionCompensation
+[     8.719] (II) Initializing extension GLX
+[     8.728] (II) AIGLX: Loaded and initialized iris
+[     8.728] (II) GLX: Initialized DRI2 GL provider for screen 0
+[     8.728] (II) Initializing extension XFree86-VidModeExtension
+[     8.728] (II) Initializing extension XFree86-DGA
+[     8.729] (II) Initializing extension XFree86-DRI
+[     8.729] (II) Initializing extension DRI2
+[     8.729] (II) modeset(0): Damage tracking initialized
+[     8.729] (II) modeset(0): Setting screen physical size to 508 x 285
+[     8.826] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[     8.826] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[     8.826] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     8.826] (**) Power Button: Applying InputClass "system-keyboard"
+[     8.826] (II) LoadModule: "libinput"
+[     8.826] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     8.828] (II) Module libinput: vendor="X.Org Foundation"
+[     8.828] 	compiled for 1.21.1.8, module version = 1.3.0
+[     8.828] 	Module class: X.Org XInput Driver
+[     8.828] 	ABI class: X.Org XInput driver, version 24.4
+[     8.828] (II) Using input driver 'libinput' for 'Power Button'
+[     8.828] (**) Power Button: always reports core events
+[     8.828] (**) Option "Device" "/dev/input/event3"
+[     8.833] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[     8.833] (II) event3  - Power Button: device is a keyboard
+[     8.833] (II) event3  - Power Button: device removed
+[     8.859] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[     8.859] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[     8.859] (**) Option "xkb_layout" "fr"
+[     8.875] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[     8.875] (II) event3  - Power Button: device is a keyboard
+[     8.876] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[     8.876] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[     8.876] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[     8.876] (**) Video Bus: Applying InputClass "system-keyboard"
+[     8.876] (II) Using input driver 'libinput' for 'Video Bus'
+[     8.876] (**) Video Bus: always reports core events
+[     8.876] (**) Option "Device" "/dev/input/event4"
+[     8.876] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[     8.876] (II) event4  - Video Bus: device is a keyboard
+[     8.876] (II) event4  - Video Bus: device removed
+[     8.912] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input4/event4"
+[     8.912] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[     8.912] (**) Option "xkb_layout" "fr"
+[     8.914] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[     8.914] (II) event4  - Video Bus: device is a keyboard
+[     8.915] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[     8.915] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[     8.915] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[     8.915] (**) Video Bus: Applying InputClass "system-keyboard"
+[     8.915] (II) Using input driver 'libinput' for 'Video Bus'
+[     8.915] (**) Video Bus: always reports core events
+[     8.915] (**) Option "Device" "/dev/input/event5"
+[     8.917] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[     8.918] (II) event5  - Video Bus: device is a keyboard
+[     8.918] (II) event5  - Video Bus: device removed
+[     8.932] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0a/LNXVIDEO:01/input/input5/event5"
+[     8.932] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[     8.932] (**) Option "xkb_layout" "fr"
+[     8.936] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[     8.936] (II) event5  - Video Bus: device is a keyboard
+[     8.938] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[     8.938] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[     8.938] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     8.938] (**) Power Button: Applying InputClass "system-keyboard"
+[     8.938] (II) Using input driver 'libinput' for 'Power Button'
+[     8.938] (**) Power Button: always reports core events
+[     8.938] (**) Option "Device" "/dev/input/event1"
+[     8.941] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     8.941] (II) event1  - Power Button: device is a keyboard
+[     8.941] (II) event1  - Power Button: device removed
+[     8.959] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[     8.959] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[     8.959] (**) Option "xkb_layout" "fr"
+[     8.962] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     8.962] (II) event1  - Power Button: device is a keyboard
+[     8.964] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[     8.964] (II) No input driver specified, ignoring this device.
+[     8.964] (II) This device may have been added with another device file.
+[     8.965] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[     8.965] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[     8.966] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[     8.966] (**) Sleep Button: Applying InputClass "system-keyboard"
+[     8.966] (II) Using input driver 'libinput' for 'Sleep Button'
+[     8.966] (**) Sleep Button: always reports core events
+[     8.966] (**) Option "Device" "/dev/input/event2"
+[     8.968] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[     8.968] (II) event2  - Sleep Button: device is a keyboard
+[     8.969] (II) event2  - Sleep Button: device removed
+[     8.985] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[     8.985] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[     8.985] (**) Option "xkb_layout" "fr"
+[     8.988] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[     8.989] (II) event2  - Sleep Button: device is a keyboard
+[     8.993] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event17)
+[     8.993] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "evdev keyboard catchall"
+[     8.993] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[     8.993] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "system-keyboard"
+[     8.993] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[     8.993] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[     8.993] (**) Option "Device" "/dev/input/event17"
+[     8.996] (II) event17 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[     8.997] (II) event17 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[     8.997] (II) event17 - Integrated_Webcam_HD: Integrate: device removed
+[     9.032] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/input/input23/event17"
+[     9.032] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 11)
+[     9.032] (**) Option "xkb_layout" "fr"
+[     9.036] (II) event17 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[     9.036] (II) event17 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[     9.039] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Mouse (/dev/input/event15)
+[     9.039] (**) DLL07BE:01 06CB:7A13 Mouse: Applying InputClass "evdev pointer catchall"
+[     9.039] (**) DLL07BE:01 06CB:7A13 Mouse: Applying InputClass "libinput pointer catchall"
+[     9.039] (II) Using input driver 'libinput' for 'DLL07BE:01 06CB:7A13 Mouse'
+[     9.039] (**) DLL07BE:01 06CB:7A13 Mouse: always reports core events
+[     9.039] (**) Option "Device" "/dev/input/event15"
+[     9.043] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: is tagged by udev as: Mouse Pointingstick
+[     9.044] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device is a pointer
+[     9.046] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device removed
+[     9.085] (II) libinput: DLL07BE:01 06CB:7A13 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.085] (II) libinput: DLL07BE:01 06CB:7A13 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.085] (II) libinput: DLL07BE:01 06CB:7A13 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.085] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-8/i2c-DLL07BE:01/0018:06CB:7A13.0001/input/input20/event15"
+[     9.085] (II) XINPUT: Adding extended input device "DLL07BE:01 06CB:7A13 Mouse" (type: MOUSE, id 12)
+[     9.086] (**) Option "AccelerationScheme" "none"
+[     9.086] (**) DLL07BE:01 06CB:7A13 Mouse: (accel) selected scheme none/0
+[     9.086] (**) DLL07BE:01 06CB:7A13 Mouse: (accel) acceleration factor: 2.000
+[     9.086] (**) DLL07BE:01 06CB:7A13 Mouse: (accel) acceleration threshold: 4
+[     9.090] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: is tagged by udev as: Mouse Pointingstick
+[     9.091] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device is a pointer
+[     9.095] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Mouse (/dev/input/mouse0)
+[     9.095] (II) No input driver specified, ignoring this device.
+[     9.095] (II) This device may have been added with another device file.
+[     9.098] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Touchpad (/dev/input/event16)
+[     9.098] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "evdev touchpad catchall"
+[     9.098] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "libinput touchpad catchall"
+[     9.098] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "libinput touchpad catchall"
+[     9.098] (II) Using input driver 'libinput' for 'DLL07BE:01 06CB:7A13 Touchpad'
+[     9.098] (**) DLL07BE:01 06CB:7A13 Touchpad: always reports core events
+[     9.098] (**) Option "Device" "/dev/input/event16"
+[     9.102] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: is tagged by udev as: Touchpad
+[     9.107] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device is a touchpad
+[     9.108] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device removed
+[     9.138] (**) Option "Tapping" "on"
+[     9.139] (**) Option "TappingButtonMap" "lmr"
+[     9.139] (II) libinput: DLL07BE:01 06CB:7A13 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.139] (II) libinput: DLL07BE:01 06CB:7A13 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.139] (II) libinput: DLL07BE:01 06CB:7A13 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[     9.140] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-8/i2c-DLL07BE:01/0018:06CB:7A13.0001/input/input21/event16"
+[     9.140] (II) XINPUT: Adding extended input device "DLL07BE:01 06CB:7A13 Touchpad" (type: TOUCHPAD, id 13)
+[     9.145] (**) Option "AccelerationScheme" "none"
+[     9.145] (**) DLL07BE:01 06CB:7A13 Touchpad: (accel) selected scheme none/0
+[     9.145] (**) DLL07BE:01 06CB:7A13 Touchpad: (accel) acceleration factor: 2.000
+[     9.145] (**) DLL07BE:01 06CB:7A13 Touchpad: (accel) acceleration threshold: 4
+[     9.149] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: is tagged by udev as: Touchpad
+[     9.155] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device is a touchpad
+[     9.158] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Touchpad (/dev/input/mouse1)
+[     9.158] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "libinput touchpad catchall"
+[     9.158] (II) Using input driver 'libinput' for 'DLL07BE:01 06CB:7A13 Touchpad'
+[     9.158] (**) DLL07BE:01 06CB:7A13 Touchpad: always reports core events
+[     9.158] (**) Option "Device" "/dev/input/mouse1"
+[     9.202] (II) mouse1  - not using input device '/dev/input/mouse1'.
+[     9.202] (EE) libinput: DLL07BE:01 06CB:7A13 Touchpad: Failed to create a device for /dev/input/mouse1
+[     9.202] (EE) PreInit returned 2 for "DLL07BE:01 06CB:7A13 Touchpad"
+[     9.202] (II) UnloadModule: "libinput"
+[     9.203] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event11)
+[     9.203] (II) No input driver specified, ignoring this device.
+[     9.203] (II) This device may have been added with another device file.
+[     9.204] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event12)
+[     9.205] (II) No input driver specified, ignoring this device.
+[     9.205] (II) This device may have been added with another device file.
+[     9.206] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event13)
+[     9.206] (II) No input driver specified, ignoring this device.
+[     9.206] (II) This device may have been added with another device file.
+[     9.207] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event14)
+[     9.207] (II) No input driver specified, ignoring this device.
+[     9.207] (II) This device may have been added with another device file.
+[     9.208] (II) config/udev: Adding input device Intel HID events (/dev/input/event7)
+[     9.208] (**) Intel HID events: Applying InputClass "evdev keyboard catchall"
+[     9.208] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[     9.208] (**) Intel HID events: Applying InputClass "system-keyboard"
+[     9.208] (II) Using input driver 'libinput' for 'Intel HID events'
+[     9.209] (**) Intel HID events: always reports core events
+[     9.209] (**) Option "Device" "/dev/input/event7"
+[     9.211] (II) event7  - Intel HID events: is tagged by udev as: Keyboard
+[     9.211] (II) event7  - Intel HID events: device is a keyboard
+[     9.211] (II) event7  - Intel HID events: device removed
+[     9.239] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input8/event7"
+[     9.239] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 14)
+[     9.239] (**) Option "xkb_layout" "fr"
+[     9.241] (II) event7  - Intel HID events: is tagged by udev as: Keyboard
+[     9.242] (II) event7  - Intel HID events: device is a keyboard
+[     9.244] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event8)
+[     9.244] (**) Intel HID 5 button array: Applying InputClass "evdev keyboard catchall"
+[     9.244] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[     9.244] (**) Intel HID 5 button array: Applying InputClass "system-keyboard"
+[     9.244] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[     9.244] (**) Intel HID 5 button array: always reports core events
+[     9.244] (**) Option "Device" "/dev/input/event8"
+[     9.246] (II) event8  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[     9.246] (II) event8  - Intel HID 5 button array: device is a keyboard
+[     9.247] (II) event8  - Intel HID 5 button array: device removed
+[     9.265] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input9/event8"
+[     9.265] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 15)
+[     9.265] (**) Option "xkb_layout" "fr"
+[     9.268] (II) event8  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[     9.268] (II) event8  - Intel HID 5 button array: device is a keyboard
+[     9.271] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event10)
+[     9.271] (**) Dell WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[     9.271] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[     9.271] (**) Dell WMI hotkeys: Applying InputClass "system-keyboard"
+[     9.271] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[     9.271] (**) Dell WMI hotkeys: always reports core events
+[     9.271] (**) Option "Device" "/dev/input/event10"
+[     9.274] (II) event10 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[     9.275] (II) event10 - Dell WMI hotkeys: device is a keyboard
+[     9.276] (II) event10 - Dell WMI hotkeys: device removed
+[     9.292] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:03/wmi_bus/wmi_bus-PNP0C14:03/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input12/event10"
+[     9.292] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 16)
+[     9.292] (**) Option "xkb_layout" "fr"
+[     9.296] (II) event10 - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[     9.297] (II) event10 - Dell WMI hotkeys: device is a keyboard
+[     9.299] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event6)
+[     9.300] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[     9.300] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[     9.300] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[     9.300] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[     9.300] (**) AT Translated Set 2 keyboard: always reports core events
+[     9.300] (**) Option "Device" "/dev/input/event6"
+[     9.303] (II) event6  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     9.303] (II) event6  - AT Translated Set 2 keyboard: device is a keyboard
+[     9.306] (II) event6  - AT Translated Set 2 keyboard: device removed
+[     9.339] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input6/event6"
+[     9.339] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 17)
+[     9.339] (**) Option "xkb_layout" "fr"
+[     9.342] (II) event6  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[     9.342] (II) event6  - AT Translated Set 2 keyboard: device is a keyboard
+[     9.344] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[     9.344] (II) No input driver specified, ignoring this device.
+[     9.344] (II) This device may have been added with another device file.
+[     9.433] (II) config/udev: removing device Integrated_Webcam_HD: Integrate
+[     9.434] (II) event17 - Integrated_Webcam_HD: Integrate: device removed
+[     9.465] (II) UnloadModule: "libinput"
+[     9.467] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event17)
+[     9.467] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "evdev keyboard catchall"
+[     9.467] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[     9.467] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "system-keyboard"
+[     9.467] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[     9.467] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[     9.467] (**) Option "Device" "/dev/input/event17"
+[     9.471] (II) event17 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[     9.471] (II) event17 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[     9.472] (II) event17 - Integrated_Webcam_HD: Integrate: device removed
+[     9.509] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/input/input23/event17"
+[     9.509] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 11)
+[     9.509] (**) Option "xkb_layout" "fr"
+[     9.513] (II) event17 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[     9.513] (II) event17 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[    11.371] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[    11.371] (II) modeset(0): Printing DDC gathered Modelines:
+[    11.371] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    11.439] (II) config/udev: Adding input device PS/2 Synaptics TouchPad (/dev/input/mouse2)
+[    11.439] (II) No input driver specified, ignoring this device.
+[    11.439] (II) This device may have been added with another device file.
+[    11.460] (II) config/udev: Adding input device PS/2 Synaptics TouchPad (/dev/input/event18)
+[    11.460] (**) PS/2 Synaptics TouchPad: Applying InputClass "evdev pointer catchall"
+[    11.460] (**) PS/2 Synaptics TouchPad: Applying InputClass "libinput pointer catchall"
+[    11.460] (II) Using input driver 'libinput' for 'PS/2 Synaptics TouchPad'
+[    11.460] (**) PS/2 Synaptics TouchPad: always reports core events
+[    11.460] (**) Option "Device" "/dev/input/event18"
+[    11.461] (II) event18 - PS/2 Synaptics TouchPad: is tagged by udev as: Mouse
+[    11.461] (II) event18 - PS/2 Synaptics TouchPad: device is a pointer
+[    11.462] (II) event18 - PS/2 Synaptics TouchPad: device removed
+[    11.542] (II) libinput: PS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    11.542] (II) libinput: PS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    11.542] (II) libinput: PS/2 Synaptics TouchPad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    11.542] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input11/event18"
+[    11.542] (II) XINPUT: Adding extended input device "PS/2 Synaptics TouchPad" (type: MOUSE, id 18)
+[    11.542] (**) Option "AccelerationScheme" "none"
+[    11.542] (**) PS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[    11.542] (**) PS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[    11.542] (**) PS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[    11.562] (II) event18 - PS/2 Synaptics TouchPad: is tagged by udev as: Mouse
+[    11.562] (II) event18 - PS/2 Synaptics TouchPad: device is a pointer
+[    13.242] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[    13.242] (II) modeset(0): Printing DDC gathered Modelines:
+[    13.242] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    16.415] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse5)
+[    16.415] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[    16.415] (II) No input driver specified, ignoring this device.
+[    16.415] (II) This device may have been added with another device file.
+[    16.434] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse4)
+[    16.434] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[    16.434] (II) No input driver specified, ignoring this device.
+[    16.434] (II) This device may have been added with another device file.
+[    16.443] (II) config/udev: Adding input device Logitech M325 (/dev/input/mouse3)
+[    16.443] (**) Logitech M325: Applying InputClass "LogitechM325"
+[    16.443] (II) Using input driver 'libinput' for 'Logitech M325'
+[    16.443] (**) Logitech M325: always reports core events
+[    16.443] (**) Option "Device" "/dev/input/mouse3"
+[    16.465] (II) mouse3  - not using input device '/dev/input/mouse3'.
+[    16.465] (EE) libinput: Logitech M325: Failed to create a device for /dev/input/mouse3
+[    16.465] (EE) PreInit returned 2 for "Logitech M325"
+[    16.465] (II) UnloadModule: "libinput"
+[    16.483] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event21)
+[    16.483] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[    16.483] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[    16.483] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[    16.483] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[    16.483] (**) Logitech MX Keys: always reports core events
+[    16.483] (**) Option "Device" "/dev/input/event21"
+[    16.486] (II) event21 - Logitech MX Keys: is tagged by udev as: Keyboard
+[    16.486] (II) event21 - Logitech MX Keys: device is a keyboard
+[    16.486] (II) event21 - Logitech MX Keys: device removed
+[    16.505] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.505] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.505] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.505] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[    16.505] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.6/0000:06:00.0/0000:07:01.0/0000:09:00.0/0000:0a:02.0/0000:0b:00.0/usb3/3-2/3-2.3/3-2.3.2/3-2.3.2.1/3-2.3.2.1:1.2/0003:046D:C52B.0005/0003:046D:408A.0009/input/input45/event21"
+[    16.505] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 19)
+[    16.506] (**) Option "AccelerationScheme" "none"
+[    16.506] (**) Logitech MX Keys: (accel) selected scheme none/0
+[    16.506] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[    16.506] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[    16.509] (II) event21 - Logitech MX Keys: is tagged by udev as: Keyboard
+[    16.509] (II) event21 - Logitech MX Keys: device is a keyboard
+[    16.510] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[    16.510] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[    16.510] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[    16.510] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[    16.510] (**) Logitech MX Keys: always reports core events
+[    16.510] (**) Option "Device" "/dev/input/event21"
+[    16.510] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[    16.510] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.510] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.510] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.510] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.6/0000:06:00.0/0000:07:01.0/0000:09:00.0/0000:0a:02.0/0000:0b:00.0/usb3/3-2/3-2.3/3-2.3.2/3-2.3.2.1/3-2.3.2.1:1.2/0003:046D:C52B.0005/0003:046D:408A.0009/input/input45/event21"
+[    16.510] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 20)
+[    16.510] (**) Option "xkb_layout" "fr"
+[    16.512] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event20)
+[    16.512] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[    16.512] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[    16.512] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[    16.512] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[    16.512] (**) Logitech MX Keys: always reports core events
+[    16.512] (**) Option "Device" "/dev/input/event20"
+[    16.514] (II) event20 - Logitech MX Keys: is tagged by udev as: Keyboard
+[    16.514] (II) event20 - Logitech MX Keys: device is a keyboard
+[    16.515] (II) event20 - Logitech MX Keys: device removed
+[    16.555] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.555] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.555] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.555] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[    16.555] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.6/0000:06:00.0/0000:07:01.0/0000:09:00.0/0000:0a:02.0/0000:0b:00.0/usb3/3-2/3-2.3/3-2.3.2/3-2.3.2.1/3-2.3.2.1:1.2/0003:046D:C52B.0005/0003:046D:408A.0008/input/input44/event20"
+[    16.555] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 21)
+[    16.556] (**) Option "AccelerationScheme" "none"
+[    16.556] (**) Logitech MX Keys: (accel) selected scheme none/0
+[    16.556] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[    16.556] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[    16.560] (II) event20 - Logitech MX Keys: is tagged by udev as: Keyboard
+[    16.560] (II) event20 - Logitech MX Keys: device is a keyboard
+[    16.561] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[    16.561] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[    16.561] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[    16.561] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[    16.561] (**) Logitech MX Keys: always reports core events
+[    16.561] (**) Option "Device" "/dev/input/event20"
+[    16.561] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[    16.561] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.561] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.561] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.561] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.6/0000:06:00.0/0000:07:01.0/0000:09:00.0/0000:0a:02.0/0000:0b:00.0/usb3/3-2/3-2.3/3-2.3.2/3-2.3.2.1/3-2.3.2.1:1.2/0003:046D:C52B.0005/0003:046D:408A.0008/input/input44/event20"
+[    16.561] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 22)
+[    16.561] (**) Option "xkb_layout" "fr"
+[    16.563] (II) config/udev: Adding input device Logitech M325 (/dev/input/event19)
+[    16.563] (**) Logitech M325: Applying InputClass "evdev pointer catchall"
+[    16.563] (**) Logitech M325: Applying InputClass "libinput pointer catchall"
+[    16.563] (**) Logitech M325: Applying InputClass "LogitechM325"
+[    16.563] (II) Using input driver 'libinput' for 'Logitech M325'
+[    16.563] (**) Logitech M325: always reports core events
+[    16.563] (**) Option "Device" "/dev/input/event19"
+[    16.567] (II) event19 - Logitech M325: is tagged by udev as: Mouse
+[    16.567] (II) event19 - Logitech M325: device set to 600 DPI
+[    16.567] (II) event19 - Logitech M325: device is a pointer
+[    16.568] (II) event19 - Logitech M325: device removed
+[    16.618] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.618] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.618] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    16.618] (**) Option "ButtonMapping" "1 2 3 4 5 8 9 6 7 10 11 12 13 14 15 16 17 18 19 20"
+[    16.618] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.6/0000:06:00.0/0000:07:01.0/0000:09:00.0/0000:0a:02.0/0000:0b:00.0/usb3/3-2/3-2.3/3-2.3.2/3-2.3.2.1/3-2.3.2.1:1.2/0003:046D:C52B.0005/0003:046D:400A.0007/input/input43/event19"
+[    16.618] (II) XINPUT: Adding extended input device "Logitech M325" (type: MOUSE, id 23)
+[    16.619] (**) Option "AccelerationScheme" "none"
+[    16.620] (**) Logitech M325: (accel) selected scheme none/0
+[    16.620] (**) Logitech M325: (accel) acceleration factor: 2.000
+[    16.620] (**) Logitech M325: (accel) acceleration threshold: 4
+[    16.623] (II) event19 - Logitech M325: is tagged by udev as: Mouse
+[    16.623] (II) event19 - Logitech M325: device set to 600 DPI
+[    16.623] (II) event19 - Logitech M325: device is a pointer
+[    57.895] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[    57.895] (II) modeset(0): Printing DDC gathered Modelines:
+[    57.895] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[   123.702] (II) event19 - Logitech M325: device removed
+[   123.728] (II) config/udev: removing device Logitech M325
+[   123.734] (II) UnloadModule: "libinput"
+[   123.925] (II) event20 - Logitech MX Keys: device removed
+[   123.942] (II) config/udev: removing device Logitech MX Keys
+[   123.946] (II) UnloadModule: "libinput"
+[   123.946] (II) config/udev: removing device Logitech MX Keys
+[   123.948] (II) UnloadModule: "libinput"
+[   124.152] (II) event21 - Logitech MX Keys: device removed
+[   124.172] (II) config/udev: removing device Logitech MX Keys
+[   124.187] (II) UnloadModule: "libinput"
+[   124.187] (II) config/udev: removing device Logitech MX Keys
+[   124.193] (II) UnloadModule: "libinput"
+[   129.535] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse4)
+[   129.535] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[   129.535] (II) No input driver specified, ignoring this device.
+[   129.535] (II) This device may have been added with another device file.
+[   129.548] (II) config/udev: Adding input device Logitech M325 (/dev/input/mouse3)
+[   129.548] (**) Logitech M325: Applying InputClass "LogitechM325"
+[   129.548] (II) Using input driver 'libinput' for 'Logitech M325'
+[   129.548] (**) Logitech M325: always reports core events
+[   129.548] (**) Option "Device" "/dev/input/mouse3"
+[   129.598] (II) mouse3  - not using input device '/dev/input/mouse3'.
+[   129.598] (EE) libinput: Logitech M325: Failed to create a device for /dev/input/mouse3
+[   129.598] (EE) PreInit returned 2 for "Logitech M325"
+[   129.598] (II) UnloadModule: "libinput"
+[   129.602] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse5)
+[   129.602] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[   129.602] (II) No input driver specified, ignoring this device.
+[   129.602] (II) This device may have been added with another device file.
+[   129.604] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event20)
+[   129.604] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[   129.604] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[   129.604] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[   129.604] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[   129.604] (**) Logitech MX Keys: always reports core events
+[   129.604] (**) Option "Device" "/dev/input/event20"
+[   129.608] (II) event20 - Logitech MX Keys: is tagged by udev as: Keyboard
+[   129.609] (II) event20 - Logitech MX Keys: device is a keyboard
+[   129.610] (II) event20 - Logitech MX Keys: device removed
+[   129.636] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.636] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.636] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.636] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[   129.636] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000E/input/input47/event20"
+[   129.636] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 19)
+[   129.638] (**) Option "AccelerationScheme" "none"
+[   129.640] (**) Logitech MX Keys: (accel) selected scheme none/0
+[   129.640] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[   129.640] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[   129.647] (II) event20 - Logitech MX Keys: is tagged by udev as: Keyboard
+[   129.647] (II) event20 - Logitech MX Keys: device is a keyboard
+[   129.651] (II) event18 - PS/2 Synaptics TouchPad: device removed
+[   129.679] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[   129.679] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[   129.679] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[   129.679] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[   129.679] (**) Logitech MX Keys: always reports core events
+[   129.679] (**) Option "Device" "/dev/input/event20"
+[   129.679] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[   129.679] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.679] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.679] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.679] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000E/input/input47/event20"
+[   129.679] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 20)
+[   129.679] (**) Option "xkb_layout" "fr"
+[   129.685] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event21)
+[   129.685] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[   129.685] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[   129.685] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[   129.685] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[   129.685] (**) Logitech MX Keys: always reports core events
+[   129.685] (**) Option "Device" "/dev/input/event21"
+[   129.690] (II) event21 - Logitech MX Keys: is tagged by udev as: Keyboard
+[   129.691] (II) event21 - Logitech MX Keys: device is a keyboard
+[   129.692] (II) event21 - Logitech MX Keys: device removed
+[   129.722] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.722] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.722] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.722] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[   129.722] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000F/input/input48/event21"
+[   129.722] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 21)
+[   129.724] (**) Option "AccelerationScheme" "none"
+[   129.726] (**) Logitech MX Keys: (accel) selected scheme none/0
+[   129.726] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[   129.726] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[   129.732] (II) event21 - Logitech MX Keys: is tagged by udev as: Keyboard
+[   129.732] (II) event21 - Logitech MX Keys: device is a keyboard
+[   129.737] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[   129.737] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[   129.737] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[   129.737] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[   129.737] (**) Logitech MX Keys: always reports core events
+[   129.737] (**) Option "Device" "/dev/input/event21"
+[   129.737] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[   129.737] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.737] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.737] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.738] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000F/input/input48/event21"
+[   129.738] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 22)
+[   129.738] (**) Option "xkb_layout" "fr"
+[   129.743] (II) config/udev: Adding input device Logitech M325 (/dev/input/event19)
+[   129.743] (**) Logitech M325: Applying InputClass "evdev pointer catchall"
+[   129.743] (**) Logitech M325: Applying InputClass "libinput pointer catchall"
+[   129.743] (**) Logitech M325: Applying InputClass "LogitechM325"
+[   129.743] (II) Using input driver 'libinput' for 'Logitech M325'
+[   129.743] (**) Logitech M325: always reports core events
+[   129.743] (**) Option "Device" "/dev/input/event19"
+[   129.748] (II) event19 - Logitech M325: is tagged by udev as: Mouse
+[   129.748] (II) event19 - Logitech M325: device set to 600 DPI
+[   129.748] (II) event19 - Logitech M325: device is a pointer
+[   129.749] (II) event19 - Logitech M325: device removed
+[   129.805] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.805] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.805] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[   129.805] (**) Option "ButtonMapping" "1 2 3 4 5 8 9 6 7 10 11 12 13 14 15 16 17 18 19 20"
+[   129.805] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:400A.000D/input/input46/event19"
+[   129.805] (II) XINPUT: Adding extended input device "Logitech M325" (type: MOUSE, id 23)
+[   129.807] (**) Option "AccelerationScheme" "none"
+[   129.809] (**) Logitech M325: (accel) selected scheme none/0
+[   129.809] (**) Logitech M325: (accel) acceleration factor: 2.000
+[   129.809] (**) Logitech M325: (accel) acceleration threshold: 4
+[   129.815] (II) event19 - Logitech M325: is tagged by udev as: Mouse
+[   129.815] (II) event19 - Logitech M325: device set to 600 DPI
+[   129.816] (II) event19 - Logitech M325: device is a pointer
+[   129.819] (II) config/udev: removing device PS/2 Synaptics TouchPad
+[   129.835] (II) UnloadModule: "libinput"
+[   978.956] (EE) event16 - DLL07BE:01 06CB:7A13 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.23.0/touchpad-jumping-cursors.html for details
+[ 32089.506] (EE) client bug: timer event16 tap: scheduled expiry is in the past (-2760ms), your system is too slow
+[ 32089.534] (EE) client bug: timer event16 hold: scheduled expiry is in the past (-2928ms), your system is too slow
+[ 32089.534] (EE) client bug: timer event16 tap: scheduled expiry is in the past (-2671ms), your system is too slow
+[ 32089.534] (EE) client bug: timer event16 hold: scheduled expiry is in the past (-2811ms), your system is too slow
+[ 32089.534] (EE) client bug: timer event16 trackpoint: scheduled expiry is in the past (-2877ms), your system is too slow
+[ 32089.534] (EE) WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+[ 58588.412] (EE) event16 - DLL07BE:01 06CB:7A13 Touchpad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.23.0/touchpad-jumping-cursors.html for details
+[ 63335.958] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 63335.958] (II) modeset(0): Printing DDC gathered Modelines:
+[ 63335.958] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 63336.468] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay (/dev/input/mouse6)
+[ 63336.468] (II) No input driver specified, ignoring this device.
+[ 63336.468] (II) This device may have been added with another device file.
+[ 63336.478] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay Mouse (/dev/input/mouse2)
+[ 63336.478] (II) No input driver specified, ignoring this device.
+[ 63336.478] (II) This device may have been added with another device file.
+[ 63336.518] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay Keyboard (/dev/input/event22)
+[ 63336.518] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "evdev keyboard catchall"
+[ 63336.518] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "evdev tablet catchall"
+[ 63336.518] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 63336.518] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "libinput tablet catchall"
+[ 63336.518] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "system-keyboard"
+[ 63336.518] (II) Using input driver 'libinput' for 'UGTABLET 11.6 inch PenDisplay Keyboard'
+[ 63336.518] (**) UGTABLET 11.6 inch PenDisplay Keyboard: always reports core events
+[ 63336.518] (**) Option "Device" "/dev/input/event22"
+[ 63336.520] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: is tagged by udev as: Keyboard Tablet TabletPad
+[ 63336.697] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: tablet 'UGTABLET 11.6 inch PenDisplay Keyboard' unknown to libwacom
+[ 63336.728] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device is a tablet pad
+[ 63336.728] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device removed
+[ 63336.766] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:28BD:091F.0010/input/input80/event22"
+[ 63336.766] (II) XINPUT: Adding extended input device "UGTABLET 11.6 inch PenDisplay Keyboard" (type: PAD, id 18)
+[ 63336.767] (**) Option "AccelerationScheme" "none"
+[ 63336.770] (**) UGTABLET 11.6 inch PenDisplay Keyboard: (accel) selected scheme none/0
+[ 63336.770] (**) UGTABLET 11.6 inch PenDisplay Keyboard: (accel) acceleration factor: 2.000
+[ 63336.770] (**) UGTABLET 11.6 inch PenDisplay Keyboard: (accel) acceleration threshold: 4
+[ 63336.777] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: is tagged by udev as: Keyboard Tablet TabletPad
+[ 63336.898] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: tablet 'UGTABLET 11.6 inch PenDisplay Keyboard' unknown to libwacom
+[ 63336.924] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device is a tablet pad
+[ 63336.926] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay Mouse (/dev/input/event18)
+[ 63336.926] (**) UGTABLET 11.6 inch PenDisplay Mouse: Applying InputClass "evdev pointer catchall"
+[ 63336.926] (**) UGTABLET 11.6 inch PenDisplay Mouse: Applying InputClass "libinput pointer catchall"
+[ 63336.926] (II) Using input driver 'libinput' for 'UGTABLET 11.6 inch PenDisplay Mouse'
+[ 63336.926] (**) UGTABLET 11.6 inch PenDisplay Mouse: always reports core events
+[ 63336.926] (**) Option "Device" "/dev/input/event18"
+[ 63336.927] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: is tagged by udev as: Mouse
+[ 63336.928] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device is a pointer
+[ 63336.928] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device removed
+[ 63336.999] (II) libinput: UGTABLET 11.6 inch PenDisplay Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 63336.999] (II) libinput: UGTABLET 11.6 inch PenDisplay Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 63336.999] (II) libinput: UGTABLET 11.6 inch PenDisplay Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 63336.999] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:28BD:091F.0010/input/input79/event18"
+[ 63336.999] (II) XINPUT: Adding extended input device "UGTABLET 11.6 inch PenDisplay Mouse" (type: MOUSE, id 24)
+[ 63337.000] (**) Option "AccelerationScheme" "none"
+[ 63337.000] (**) UGTABLET 11.6 inch PenDisplay Mouse: (accel) selected scheme none/0
+[ 63337.000] (**) UGTABLET 11.6 inch PenDisplay Mouse: (accel) acceleration factor: 2.000
+[ 63337.000] (**) UGTABLET 11.6 inch PenDisplay Mouse: (accel) acceleration threshold: 4
+[ 63337.002] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: is tagged by udev as: Mouse
+[ 63337.002] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device is a pointer
+[ 63337.004] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay (/dev/input/event23)
+[ 63337.004] (**) UGTABLET 11.6 inch PenDisplay: Applying InputClass "evdev tablet catchall"
+[ 63337.004] (**) UGTABLET 11.6 inch PenDisplay: Applying InputClass "libinput tablet catchall"
+[ 63337.004] (II) Using input driver 'libinput' for 'UGTABLET 11.6 inch PenDisplay'
+[ 63337.004] (**) UGTABLET 11.6 inch PenDisplay: always reports core events
+[ 63337.004] (**) Option "Device" "/dev/input/event23"
+[ 63337.060] (II) event23 - UGTABLET 11.6 inch PenDisplay: is tagged by udev as: Tablet
+[ 63337.084] (II) event23 - UGTABLET 11.6 inch PenDisplay: tablet 'UGTABLET 11.6 inch PenDisplay' unknown to libwacom
+[ 63337.084] (II) event23 - UGTABLET 11.6 inch PenDisplay: device is a tablet
+[ 63337.084] (II) event23 - UGTABLET 11.6 inch PenDisplay: device removed
+[ 63337.135] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:28BD:091F.0011/input/input81/event23"
+[ 63337.135] (II) XINPUT: Adding extended input device "UGTABLET 11.6 inch PenDisplay" (type: TABLET, id 25)
+[ 63337.193] (II) event23 - UGTABLET 11.6 inch PenDisplay: is tagged by udev as: Tablet
+[ 63337.208] (II) event23 - UGTABLET 11.6 inch PenDisplay: tablet 'UGTABLET 11.6 inch PenDisplay' unknown to libwacom
+[ 63337.208] (II) event23 - UGTABLET 11.6 inch PenDisplay: device is a tablet
+[ 63340.128] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 63340.128] (II) modeset(0): Printing DDC gathered Modelines:
+[ 63340.128] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 63340.806] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 63340.806] (II) modeset(0): Printing DDC gathered Modelines:
+[ 63340.806] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 63358.069] (II) modeset(0): Allocate new frame buffer 3840x1080 stride
+[ 63359.291] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 63359.291] (II) modeset(0): Printing DDC gathered Modelines:
+[ 63359.291] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 63360.598] (II) config/udev: Adding input device XP-PEN ERASER (/dev/input/mouse9)
+[ 63360.598] (II) No input driver specified, ignoring this device.
+[ 63360.598] (II) This device may have been added with another device file.
+[ 63360.599] (II) config/udev: Adding input device XP-PEN STYLUS (/dev/input/mouse7)
+[ 63360.599] (**) XP-PEN STYLUS: Applying InputClass "system-keyboard"
+[ 63360.599] (II) No input driver specified, ignoring this device.
+[ 63360.599] (II) This device may have been added with another device file.
+[ 63360.601] (II) config/udev: Adding input device XP-PEN MOUSE (/dev/input/mouse8)
+[ 63360.601] (II) No input driver specified, ignoring this device.
+[ 63360.601] (II) This device may have been added with another device file.
+[ 63360.623] (II) config/udev: Adding input device XP-PEN STYLUS (/dev/input/event24)
+[ 63360.623] (**) XP-PEN STYLUS: Applying InputClass "evdev keyboard catchall"
+[ 63360.623] (**) XP-PEN STYLUS: Applying InputClass "evdev tablet catchall"
+[ 63360.623] (**) XP-PEN STYLUS: Applying InputClass "libinput keyboard catchall"
+[ 63360.624] (**) XP-PEN STYLUS: Applying InputClass "libinput tablet catchall"
+[ 63360.624] (**) XP-PEN STYLUS: Applying InputClass "system-keyboard"
+[ 63360.624] (II) Using input driver 'libinput' for 'XP-PEN STYLUS'
+[ 63360.624] (**) XP-PEN STYLUS: always reports core events
+[ 63360.624] (**) Option "Device" "/dev/input/event24"
+[ 63360.663] (II) event24 - XP-PEN STYLUS: is tagged by udev as: Keyboard Tablet
+[ 63360.681] (II) event24 - XP-PEN STYLUS: tablet 'XP-PEN STYLUS' unknown to libwacom
+[ 63360.681] (II) event24 - XP-PEN STYLUS: device is a tablet
+[ 63360.681] (II) event24 - XP-PEN STYLUS: device removed
+[ 63360.710] (**) Option "config_info" "udev:/sys/devices/virtual/input/input82/event24"
+[ 63360.710] (II) XINPUT: Adding extended input device "XP-PEN STYLUS" (type: TABLET, id 26)
+[ 63360.711] (II) event24 - XP-PEN STYLUS: is tagged by udev as: Keyboard Tablet
+[ 63360.734] (II) event24 - XP-PEN STYLUS: tablet 'XP-PEN STYLUS' unknown to libwacom
+[ 63360.734] (II) event24 - XP-PEN STYLUS: device is a tablet
+[ 63360.735] (II) config/udev: Adding input device XP-PEN ERASER (/dev/input/event26)
+[ 63360.735] (**) XP-PEN ERASER: Applying InputClass "evdev tablet catchall"
+[ 63360.735] (**) XP-PEN ERASER: Applying InputClass "libinput tablet catchall"
+[ 63360.735] (II) Using input driver 'libinput' for 'XP-PEN ERASER'
+[ 63360.735] (**) XP-PEN ERASER: always reports core events
+[ 63360.735] (**) Option "Device" "/dev/input/event26"
+[ 63360.735] (II) event26 - XP-PEN ERASER: is tagged by udev as: Tablet
+[ 63360.753] (II) event26 - XP-PEN ERASER: tablet 'XP-PEN ERASER' unknown to libwacom
+[ 63360.753] (II) event26 - XP-PEN ERASER: device is a tablet
+[ 63360.753] (II) event26 - XP-PEN ERASER: device removed
+[ 63360.809] (**) Option "config_info" "udev:/sys/devices/virtual/input/input84/event26"
+[ 63360.809] (II) XINPUT: Adding extended input device "XP-PEN ERASER" (type: TABLET, id 27)
+[ 63360.810] (II) event26 - XP-PEN ERASER: is tagged by udev as: Tablet
+[ 63360.843] (II) event26 - XP-PEN ERASER: tablet 'XP-PEN ERASER' unknown to libwacom
+[ 63360.843] (II) event26 - XP-PEN ERASER: device is a tablet
+[ 63360.845] (II) config/udev: Adding input device XP-PEN MOUSE (/dev/input/event25)
+[ 63360.845] (**) XP-PEN MOUSE: Applying InputClass "evdev pointer catchall"
+[ 63360.845] (**) XP-PEN MOUSE: Applying InputClass "libinput pointer catchall"
+[ 63360.845] (II) Using input driver 'libinput' for 'XP-PEN MOUSE'
+[ 63360.845] (**) XP-PEN MOUSE: always reports core events
+[ 63360.845] (**) Option "Device" "/dev/input/event25"
+[ 63360.846] (II) event25 - XP-PEN MOUSE: is tagged by udev as: Mouse
+[ 63360.846] (II) event25 - XP-PEN MOUSE: device is a pointer
+[ 63360.847] (II) event25 - XP-PEN MOUSE: device removed
+[ 63360.895] (II) libinput: XP-PEN MOUSE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 63360.896] (II) libinput: XP-PEN MOUSE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 63360.896] (II) libinput: XP-PEN MOUSE: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 63360.896] (**) Option "config_info" "udev:/sys/devices/virtual/input/input83/event25"
+[ 63360.896] (II) XINPUT: Adding extended input device "XP-PEN MOUSE" (type: MOUSE, id 28)
+[ 63360.898] (**) Option "AccelerationScheme" "none"
+[ 63360.900] (**) XP-PEN MOUSE: (accel) selected scheme none/0
+[ 63360.900] (**) XP-PEN MOUSE: (accel) acceleration factor: 2.000
+[ 63360.900] (**) XP-PEN MOUSE: (accel) acceleration threshold: 4
+[ 63360.927] (II) event25 - XP-PEN MOUSE: is tagged by udev as: Mouse
+[ 63360.927] (II) event25 - XP-PEN MOUSE: device is a pointer
+[ 63368.312] (II) libinput: XP-PEN STYLUS: needs a virtual subdevice
+[ 63368.312] (**) XP-PEN STYLUS Pen (0): Applying InputClass "evdev keyboard catchall"
+[ 63368.312] (**) XP-PEN STYLUS Pen (0): Applying InputClass "evdev tablet catchall"
+[ 63368.312] (**) XP-PEN STYLUS Pen (0): Applying InputClass "libinput keyboard catchall"
+[ 63368.312] (**) XP-PEN STYLUS Pen (0): Applying InputClass "libinput tablet catchall"
+[ 63368.312] (**) XP-PEN STYLUS Pen (0): Applying InputClass "system-keyboard"
+[ 63368.312] (II) Using input driver 'libinput' for 'XP-PEN STYLUS Pen (0)'
+[ 63368.312] (**) XP-PEN STYLUS Pen (0): always reports core events
+[ 63368.312] (**) Option "Device" "/dev/input/event24"
+[ 63368.312] (II) libinput: XP-PEN STYLUS Pen (0): is a virtual subdevice
+[ 63368.313] (**) Option "config_info" "udev:/sys/devices/virtual/input/input82/event24"
+[ 63368.313] (II) XINPUT: Adding extended input device "XP-PEN STYLUS Pen (0)" (type: STYLUS, id 29)
+[ 63368.314] (**) Option "AccelerationScheme" "none"
+[ 63368.316] (**) XP-PEN STYLUS Pen (0): (accel) selected scheme none/0
+[ 63368.316] (**) XP-PEN STYLUS Pen (0): (accel) acceleration factor: 2.000
+[ 63368.316] (**) XP-PEN STYLUS Pen (0): (accel) acceleration threshold: 4
+[ 63959.378] (II) libinput: XP-PEN ERASER: needs a virtual subdevice
+[ 63959.379] (**) XP-PEN ERASER Eraser (0): Applying InputClass "evdev tablet catchall"
+[ 63959.379] (**) XP-PEN ERASER Eraser (0): Applying InputClass "libinput tablet catchall"
+[ 63959.379] (II) Using input driver 'libinput' for 'XP-PEN ERASER Eraser (0)'
+[ 63959.379] (**) XP-PEN ERASER Eraser (0): always reports core events
+[ 63959.379] (**) Option "Device" "/dev/input/event26"
+[ 63959.379] (II) libinput: XP-PEN ERASER Eraser (0): is a virtual subdevice
+[ 63959.379] (**) Option "config_info" "udev:/sys/devices/virtual/input/input84/event26"
+[ 63959.379] (II) XINPUT: Adding extended input device "XP-PEN ERASER Eraser (0)" (type: ERASER, id 30)
+[ 63959.380] (**) Option "AccelerationScheme" "none"
+[ 63959.383] (**) XP-PEN ERASER Eraser (0): (accel) selected scheme none/0
+[ 63959.383] (**) XP-PEN ERASER Eraser (0): (accel) acceleration factor: 2.000
+[ 63959.383] (**) XP-PEN ERASER Eraser (0): (accel) acceleration threshold: 4
+[ 87450.185] (II) modeset(0): EDID vendor "UGD", prod id 4354
+[ 87450.185] (II) modeset(0): Using hsync ranges from config file
+[ 87450.185] (II) modeset(0): Using vrefresh ranges from config file
+[ 87450.185] (II) modeset(0): Printing DDC gathered Modelines:
+[ 87450.185] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[ 87450.185] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "1152x648"x60.0   59.91  1152 1200 1320 1488  648 649 652 671 -hsync +vsync (40.3 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "(null)"x59.8   84.75  1366 1430 1566 1776  768 771 781 798 -hsync +vsync (47.7 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "256x192"x60.0    3.26  256 240 264 272  192 193 196 200 -hsync +vsync (12.0 kHz e)
+[ 87450.185] (II) modeset(0): Modeline "1680x1050"x61.0  149.59  1680 1784 1968 2256  1050 1051 1054 1087 -hsync +vsync (66.3 kHz e)
+[ 87450.885] (II) modeset(0): EDID vendor "UGD", prod id 4354
+[ 87450.885] (II) modeset(0): Using hsync ranges from config file
+[ 87450.885] (II) modeset(0): Using vrefresh ranges from config file
+[ 87450.885] (II) modeset(0): Printing DDC gathered Modelines:
+[ 87450.885] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[ 87450.885] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "1152x648"x60.0   59.91  1152 1200 1320 1488  648 649 652 671 -hsync +vsync (40.3 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "(null)"x59.8   84.75  1366 1430 1566 1776  768 771 781 798 -hsync +vsync (47.7 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "256x192"x60.0    3.26  256 240 264 272  192 193 196 200 -hsync +vsync (12.0 kHz e)
+[ 87450.885] (II) modeset(0): Modeline "1680x1050"x61.0  149.59  1680 1784 1968 2256  1050 1051 1054 1087 -hsync +vsync (66.3 kHz e)
+[ 89419.113] (II) config/udev: removing device Power Button
+[ 89419.114] (II) event3  - Power Button: device removed
+[ 89419.148] (II) UnloadModule: "libinput"
+[ 89419.149] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[ 89419.149] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[ 89419.149] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 89419.149] (**) Power Button: Applying InputClass "system-keyboard"
+[ 89419.149] (II) Using input driver 'libinput' for 'Power Button'
+[ 89419.149] (**) Power Button: always reports core events
+[ 89419.149] (**) Option "Device" "/dev/input/event3"
+[ 89419.150] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[ 89419.150] (II) event3  - Power Button: device is a keyboard
+[ 89419.150] (II) event3  - Power Button: device removed
+[ 89419.183] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[ 89419.183] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[ 89419.183] (**) Option "xkb_layout" "fr"
+[ 89419.187] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[ 89419.187] (II) event3  - Power Button: device is a keyboard
+[ 89419.203] (II) config/udev: removing device Video Bus
+[ 89419.203] (II) event4  - Video Bus: device removed
+[ 89419.230] (II) UnloadModule: "libinput"
+[ 89419.230] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[ 89419.230] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[ 89419.230] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[ 89419.230] (**) Video Bus: Applying InputClass "system-keyboard"
+[ 89419.230] (II) Using input driver 'libinput' for 'Video Bus'
+[ 89419.231] (**) Video Bus: always reports core events
+[ 89419.231] (**) Option "Device" "/dev/input/event4"
+[ 89419.232] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[ 89419.232] (II) event4  - Video Bus: device is a keyboard
+[ 89419.232] (II) event4  - Video Bus: device removed
+[ 89419.253] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input4/event4"
+[ 89419.253] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[ 89419.253] (**) Option "xkb_layout" "fr"
+[ 89419.256] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[ 89419.256] (II) event4  - Video Bus: device is a keyboard
+[ 89419.959] (II) modeset(0): EDID vendor "UGD", prod id 4354
+[ 89419.959] (II) modeset(0): Using hsync ranges from config file
+[ 89419.959] (II) modeset(0): Using vrefresh ranges from config file
+[ 89419.959] (II) modeset(0): Printing DDC gathered Modelines:
+[ 89419.959] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[ 89419.959] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "1152x648"x60.0   59.91  1152 1200 1320 1488  648 649 652 671 -hsync +vsync (40.3 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "(null)"x59.8   84.75  1366 1430 1566 1776  768 771 781 798 -hsync +vsync (47.7 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "256x192"x60.0    3.26  256 240 264 272  192 193 196 200 -hsync +vsync (12.0 kHz e)
+[ 89419.959] (II) modeset(0): Modeline "1680x1050"x61.0  149.59  1680 1784 1968 2256  1050 1051 1054 1087 -hsync +vsync (66.3 kHz e)
+[ 89419.962] (II) config/udev: removing device Video Bus
+[ 89419.963] (II) event5  - Video Bus: device removed
+[ 89419.991] (II) UnloadModule: "libinput"
+[ 89419.992] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[ 89419.992] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[ 89419.992] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[ 89419.992] (**) Video Bus: Applying InputClass "system-keyboard"
+[ 89419.992] (II) Using input driver 'libinput' for 'Video Bus'
+[ 89419.992] (**) Video Bus: always reports core events
+[ 89419.992] (**) Option "Device" "/dev/input/event5"
+[ 89419.993] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 89419.993] (II) event5  - Video Bus: device is a keyboard
+[ 89419.993] (II) event5  - Video Bus: device removed
+[ 89420.009] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0a/LNXVIDEO:01/input/input5/event5"
+[ 89420.009] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[ 89420.009] (**) Option "xkb_layout" "fr"
+[ 89420.011] (II) event5  - Video Bus: is tagged by udev as: Keyboard
+[ 89420.011] (II) event5  - Video Bus: device is a keyboard
+[ 89420.013] (II) config/udev: Adding input device Logitech M325 (/dev/input/mouse3)
+[ 89420.013] (**) Logitech M325: Applying InputClass "LogitechM325"
+[ 89420.013] (II) Using input driver 'libinput' for 'Logitech M325'
+[ 89420.013] (**) Logitech M325: always reports core events
+[ 89420.013] (**) Option "Device" "/dev/input/mouse3"
+[ 89420.049] (II) mouse3  - not using input device '/dev/input/mouse3'.
+[ 89420.049] (EE) libinput: Logitech M325: Failed to create a device for /dev/input/mouse3
+[ 89420.049] (EE) PreInit returned 2 for "Logitech M325"
+[ 89420.049] (II) UnloadModule: "libinput"
+[ 89420.050] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse5)
+[ 89420.050] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[ 89420.050] (II) No input driver specified, ignoring this device.
+[ 89420.050] (II) This device may have been added with another device file.
+[ 89420.050] (II) config/udev: removing device Sleep Button
+[ 89420.051] (II) event2  - Sleep Button: device removed
+[ 89420.074] (II) UnloadModule: "libinput"
+[ 89420.075] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[ 89420.075] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[ 89420.075] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[ 89420.075] (**) Sleep Button: Applying InputClass "system-keyboard"
+[ 89420.075] (II) Using input driver 'libinput' for 'Sleep Button'
+[ 89420.075] (**) Sleep Button: always reports core events
+[ 89420.075] (**) Option "Device" "/dev/input/event2"
+[ 89420.076] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[ 89420.076] (II) event2  - Sleep Button: device is a keyboard
+[ 89420.076] (II) event2  - Sleep Button: device removed
+[ 89420.099] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[ 89420.099] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[ 89420.099] (**) Option "xkb_layout" "fr"
+[ 89420.101] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[ 89420.101] (II) event2  - Sleep Button: device is a keyboard
+[ 89420.102] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Mouse (/dev/input/mouse0)
+[ 89420.102] (II) No input driver specified, ignoring this device.
+[ 89420.102] (II) This device may have been added with another device file.
+[ 89420.103] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Touchpad (/dev/input/mouse1)
+[ 89420.103] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "libinput touchpad catchall"
+[ 89420.103] (II) Using input driver 'libinput' for 'DLL07BE:01 06CB:7A13 Touchpad'
+[ 89420.103] (**) DLL07BE:01 06CB:7A13 Touchpad: always reports core events
+[ 89420.103] (**) Option "Device" "/dev/input/mouse1"
+[ 89420.139] (II) mouse1  - not using input device '/dev/input/mouse1'.
+[ 89420.139] (EE) libinput: DLL07BE:01 06CB:7A13 Touchpad: Failed to create a device for /dev/input/mouse1
+[ 89420.139] (EE) PreInit returned 2 for "DLL07BE:01 06CB:7A13 Touchpad"
+[ 89420.139] (II) UnloadModule: "libinput"
+[ 89420.140] (II) config/udev: removing device Power Button
+[ 89420.140] (II) event1  - Power Button: device removed
+[ 89420.161] (II) UnloadModule: "libinput"
+[ 89420.161] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[ 89420.161] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[ 89420.161] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 89420.161] (**) Power Button: Applying InputClass "system-keyboard"
+[ 89420.162] (II) Using input driver 'libinput' for 'Power Button'
+[ 89420.162] (**) Power Button: always reports core events
+[ 89420.162] (**) Option "Device" "/dev/input/event1"
+[ 89420.162] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 89420.162] (II) event1  - Power Button: device is a keyboard
+[ 89420.163] (II) event1  - Power Button: device removed
+[ 89420.189] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[ 89420.189] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[ 89420.189] (**) Option "xkb_layout" "fr"
+[ 89420.191] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[ 89420.191] (II) event1  - Power Button: device is a keyboard
+[ 89420.192] (II) config/udev: removing device Logitech M325
+[ 89420.192] (II) event19 - Logitech M325: device removed
+[ 89420.234] (II) UnloadModule: "libinput"
+[ 89420.235] (II) config/udev: Adding input device Logitech M325 (/dev/input/event19)
+[ 89420.235] (**) Logitech M325: Applying InputClass "evdev pointer catchall"
+[ 89420.235] (**) Logitech M325: Applying InputClass "libinput pointer catchall"
+[ 89420.235] (**) Logitech M325: Applying InputClass "LogitechM325"
+[ 89420.235] (II) Using input driver 'libinput' for 'Logitech M325'
+[ 89420.235] (**) Logitech M325: always reports core events
+[ 89420.235] (**) Option "Device" "/dev/input/event19"
+[ 89420.236] (II) event19 - Logitech M325: is tagged by udev as: Mouse
+[ 89420.236] (II) event19 - Logitech M325: device set to 600 DPI
+[ 89420.237] (II) event19 - Logitech M325: device is a pointer
+[ 89420.237] (II) event19 - Logitech M325: device removed
+[ 89420.306] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.306] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.306] (II) libinput: Logitech M325: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.306] (**) Option "ButtonMapping" "1 2 3 4 5 8 9 6 7 10 11 12 13 14 15 16 17 18 19 20"
+[ 89420.306] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:400A.000D/input/input46/event19"
+[ 89420.306] (II) XINPUT: Adding extended input device "Logitech M325" (type: MOUSE, id 23)
+[ 89420.307] (**) Option "AccelerationScheme" "none"
+[ 89420.308] (**) Logitech M325: (accel) selected scheme none/0
+[ 89420.308] (**) Logitech M325: (accel) acceleration factor: 2.000
+[ 89420.308] (**) Logitech M325: (accel) acceleration threshold: 4
+[ 89420.309] (II) event19 - Logitech M325: is tagged by udev as: Mouse
+[ 89420.309] (II) event19 - Logitech M325: device set to 600 DPI
+[ 89420.309] (II) event19 - Logitech M325: device is a pointer
+[ 89420.310] (II) config/udev: removing device Logitech MX Keys
+[ 89420.314] (II) UnloadModule: "libinput"
+[ 89420.314] (II) config/udev: removing device Logitech MX Keys
+[ 89420.314] (II) event20 - Logitech MX Keys: device removed
+[ 89420.371] (II) UnloadModule: "libinput"
+[ 89420.372] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event20)
+[ 89420.372] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[ 89420.372] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[ 89420.372] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[ 89420.372] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[ 89420.372] (**) Logitech MX Keys: always reports core events
+[ 89420.372] (**) Option "Device" "/dev/input/event20"
+[ 89420.373] (II) event20 - Logitech MX Keys: is tagged by udev as: Keyboard
+[ 89420.374] (II) event20 - Logitech MX Keys: device is a keyboard
+[ 89420.374] (II) event20 - Logitech MX Keys: device removed
+[ 89420.399] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.399] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.399] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.399] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[ 89420.399] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000E/input/input47/event20"
+[ 89420.399] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 19)
+[ 89420.400] (**) Option "AccelerationScheme" "none"
+[ 89420.401] (**) Logitech MX Keys: (accel) selected scheme none/0
+[ 89420.401] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[ 89420.401] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[ 89420.402] (II) event20 - Logitech MX Keys: is tagged by udev as: Keyboard
+[ 89420.402] (II) event20 - Logitech MX Keys: device is a keyboard
+[ 89420.403] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[ 89420.403] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[ 89420.403] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[ 89420.403] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[ 89420.403] (**) Logitech MX Keys: always reports core events
+[ 89420.403] (**) Option "Device" "/dev/input/event20"
+[ 89420.403] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[ 89420.403] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.403] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.403] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.403] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000E/input/input47/event20"
+[ 89420.403] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 20)
+[ 89420.403] (**) Option "xkb_layout" "fr"
+[ 89420.405] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[ 89420.405] (II) No input driver specified, ignoring this device.
+[ 89420.405] (II) This device may have been added with another device file.
+[ 89420.405] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay (/dev/input/mouse6)
+[ 89420.405] (II) No input driver specified, ignoring this device.
+[ 89420.405] (II) This device may have been added with another device file.
+[ 89420.405] (II) config/udev: removing device Integrated_Webcam_HD: Integrate
+[ 89420.405] (II) event17 - Integrated_Webcam_HD: Integrate: device removed
+[ 89420.441] (II) UnloadModule: "libinput"
+[ 89420.442] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event17)
+[ 89420.442] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "evdev keyboard catchall"
+[ 89420.442] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[ 89420.442] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "system-keyboard"
+[ 89420.442] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[ 89420.442] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[ 89420.442] (**) Option "Device" "/dev/input/event17"
+[ 89420.443] (II) event17 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[ 89420.443] (II) event17 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[ 89420.443] (II) event17 - Integrated_Webcam_HD: Integrate: device removed
+[ 89420.479] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/input/input23/event17"
+[ 89420.479] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 11)
+[ 89420.479] (**) Option "xkb_layout" "fr"
+[ 89420.481] (II) event17 - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[ 89420.481] (II) event17 - Integrated_Webcam_HD: Integrate: device is a keyboard
+[ 89420.482] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay Mouse (/dev/input/mouse2)
+[ 89420.482] (II) No input driver specified, ignoring this device.
+[ 89420.482] (II) This device may have been added with another device file.
+[ 89420.483] (II) config/udev: removing device DLL07BE:01 06CB:7A13 Mouse
+[ 89420.483] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device removed
+[ 89420.527] (II) UnloadModule: "libinput"
+[ 89420.527] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Mouse (/dev/input/event15)
+[ 89420.527] (**) DLL07BE:01 06CB:7A13 Mouse: Applying InputClass "evdev pointer catchall"
+[ 89420.527] (**) DLL07BE:01 06CB:7A13 Mouse: Applying InputClass "libinput pointer catchall"
+[ 89420.527] (II) Using input driver 'libinput' for 'DLL07BE:01 06CB:7A13 Mouse'
+[ 89420.527] (**) DLL07BE:01 06CB:7A13 Mouse: always reports core events
+[ 89420.527] (**) Option "Device" "/dev/input/event15"
+[ 89420.529] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: is tagged by udev as: Mouse Pointingstick
+[ 89420.529] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device is a pointer
+[ 89420.530] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device removed
+[ 89420.596] (II) libinput: DLL07BE:01 06CB:7A13 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.596] (II) libinput: DLL07BE:01 06CB:7A13 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.596] (II) libinput: DLL07BE:01 06CB:7A13 Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.596] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-8/i2c-DLL07BE:01/0018:06CB:7A13.0001/input/input20/event15"
+[ 89420.596] (II) XINPUT: Adding extended input device "DLL07BE:01 06CB:7A13 Mouse" (type: MOUSE, id 12)
+[ 89420.597] (**) Option "AccelerationScheme" "none"
+[ 89420.597] (**) DLL07BE:01 06CB:7A13 Mouse: (accel) selected scheme none/0
+[ 89420.597] (**) DLL07BE:01 06CB:7A13 Mouse: (accel) acceleration factor: 2.000
+[ 89420.597] (**) DLL07BE:01 06CB:7A13 Mouse: (accel) acceleration threshold: 4
+[ 89420.599] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: is tagged by udev as: Mouse Pointingstick
+[ 89420.599] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device is a pointer
+[ 89420.601] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/mouse4)
+[ 89420.601] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[ 89420.601] (II) No input driver specified, ignoring this device.
+[ 89420.601] (II) This device may have been added with another device file.
+[ 89420.601] (II) config/udev: removing device Logitech MX Keys
+[ 89420.605] (II) UnloadModule: "libinput"
+[ 89420.605] (II) config/udev: removing device Logitech MX Keys
+[ 89420.605] (II) event21 - Logitech MX Keys: device removed
+[ 89420.631] (II) UnloadModule: "libinput"
+[ 89420.632] (II) config/udev: Adding input device Logitech MX Keys (/dev/input/event21)
+[ 89420.632] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[ 89420.632] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[ 89420.632] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[ 89420.632] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[ 89420.632] (**) Logitech MX Keys: always reports core events
+[ 89420.632] (**) Option "Device" "/dev/input/event21"
+[ 89420.633] (II) event21 - Logitech MX Keys: is tagged by udev as: Keyboard
+[ 89420.634] (II) event21 - Logitech MX Keys: device is a keyboard
+[ 89420.634] (II) event21 - Logitech MX Keys: device removed
+[ 89420.663] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.663] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.663] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.663] (II) libinput: Logitech MX Keys: needs a virtual subdevice
+[ 89420.663] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000F/input/input48/event21"
+[ 89420.663] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: MOUSE, id 21)
+[ 89420.664] (**) Option "AccelerationScheme" "none"
+[ 89420.664] (**) Logitech MX Keys: (accel) selected scheme none/0
+[ 89420.664] (**) Logitech MX Keys: (accel) acceleration factor: 2.000
+[ 89420.664] (**) Logitech MX Keys: (accel) acceleration threshold: 4
+[ 89420.666] (II) event21 - Logitech MX Keys: is tagged by udev as: Keyboard
+[ 89420.666] (II) event21 - Logitech MX Keys: device is a keyboard
+[ 89420.667] (**) Logitech MX Keys: Applying InputClass "evdev keyboard catchall"
+[ 89420.667] (**) Logitech MX Keys: Applying InputClass "libinput keyboard catchall"
+[ 89420.667] (**) Logitech MX Keys: Applying InputClass "system-keyboard"
+[ 89420.667] (II) Using input driver 'libinput' for 'Logitech MX Keys'
+[ 89420.667] (**) Logitech MX Keys: always reports core events
+[ 89420.667] (**) Option "Device" "/dev/input/event21"
+[ 89420.667] (II) libinput: Logitech MX Keys: is a virtual subdevice
+[ 89420.667] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.667] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.667] (II) libinput: Logitech MX Keys: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89420.667] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.000C/0003:046D:408A.000F/input/input48/event21"
+[ 89420.667] (II) XINPUT: Adding extended input device "Logitech MX Keys" (type: KEYBOARD, id 22)
+[ 89420.667] (**) Option "xkb_layout" "fr"
+[ 89420.668] (II) config/udev: removing device UGTABLET 11.6 inch PenDisplay
+[ 89420.668] (II) event23 - UGTABLET 11.6 inch PenDisplay: device removed
+[ 89420.744] (II) UnloadModule: "libinput"
+[ 89420.745] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay (/dev/input/event23)
+[ 89420.745] (**) UGTABLET 11.6 inch PenDisplay: Applying InputClass "evdev tablet catchall"
+[ 89420.745] (**) UGTABLET 11.6 inch PenDisplay: Applying InputClass "libinput tablet catchall"
+[ 89420.745] (II) Using input driver 'libinput' for 'UGTABLET 11.6 inch PenDisplay'
+[ 89420.745] (**) UGTABLET 11.6 inch PenDisplay: always reports core events
+[ 89420.745] (**) Option "Device" "/dev/input/event23"
+[ 89420.800] (II) event23 - UGTABLET 11.6 inch PenDisplay: is tagged by udev as: Tablet
+[ 89420.817] (II) event23 - UGTABLET 11.6 inch PenDisplay: tablet 'UGTABLET 11.6 inch PenDisplay' unknown to libwacom
+[ 89420.817] (II) event23 - UGTABLET 11.6 inch PenDisplay: device is a tablet
+[ 89420.817] (II) event23 - UGTABLET 11.6 inch PenDisplay: device removed
+[ 89420.863] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:28BD:091F.0011/input/input81/event23"
+[ 89420.863] (II) XINPUT: Adding extended input device "UGTABLET 11.6 inch PenDisplay" (type: TABLET, id 25)
+[ 89420.920] (II) event23 - UGTABLET 11.6 inch PenDisplay: is tagged by udev as: Tablet
+[ 89420.937] (II) event23 - UGTABLET 11.6 inch PenDisplay: tablet 'UGTABLET 11.6 inch PenDisplay' unknown to libwacom
+[ 89420.937] (II) event23 - UGTABLET 11.6 inch PenDisplay: device is a tablet
+[ 89420.938] (II) config/udev: removing device UGTABLET 11.6 inch PenDisplay Keyboard
+[ 89420.938] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device removed
+[ 89420.975] (II) UnloadModule: "libinput"
+[ 89420.975] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay Keyboard (/dev/input/event22)
+[ 89420.975] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "evdev keyboard catchall"
+[ 89420.975] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "evdev tablet catchall"
+[ 89420.975] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "libinput keyboard catchall"
+[ 89420.975] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "libinput tablet catchall"
+[ 89420.975] (**) UGTABLET 11.6 inch PenDisplay Keyboard: Applying InputClass "system-keyboard"
+[ 89420.975] (II) Using input driver 'libinput' for 'UGTABLET 11.6 inch PenDisplay Keyboard'
+[ 89420.975] (**) UGTABLET 11.6 inch PenDisplay Keyboard: always reports core events
+[ 89420.975] (**) Option "Device" "/dev/input/event22"
+[ 89420.977] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: is tagged by udev as: Keyboard Tablet TabletPad
+[ 89421.014] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: tablet 'UGTABLET 11.6 inch PenDisplay Keyboard' unknown to libwacom
+[ 89421.030] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device is a tablet pad
+[ 89421.031] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device removed
+[ 89421.053] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:28BD:091F.0010/input/input80/event22"
+[ 89421.053] (II) XINPUT: Adding extended input device "UGTABLET 11.6 inch PenDisplay Keyboard" (type: PAD, id 18)
+[ 89421.054] (**) Option "AccelerationScheme" "none"
+[ 89421.054] (**) UGTABLET 11.6 inch PenDisplay Keyboard: (accel) selected scheme none/0
+[ 89421.054] (**) UGTABLET 11.6 inch PenDisplay Keyboard: (accel) acceleration factor: 2.000
+[ 89421.054] (**) UGTABLET 11.6 inch PenDisplay Keyboard: (accel) acceleration threshold: 4
+[ 89421.056] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: is tagged by udev as: Keyboard Tablet TabletPad
+[ 89421.090] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: tablet 'UGTABLET 11.6 inch PenDisplay Keyboard' unknown to libwacom
+[ 89421.109] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device is a tablet pad
+[ 89421.110] (II) config/udev: removing device UGTABLET 11.6 inch PenDisplay Mouse
+[ 89421.110] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device removed
+[ 89421.174] (II) UnloadModule: "libinput"
+[ 89421.175] (II) config/udev: Adding input device UGTABLET 11.6 inch PenDisplay Mouse (/dev/input/event18)
+[ 89421.175] (**) UGTABLET 11.6 inch PenDisplay Mouse: Applying InputClass "evdev pointer catchall"
+[ 89421.175] (**) UGTABLET 11.6 inch PenDisplay Mouse: Applying InputClass "libinput pointer catchall"
+[ 89421.175] (II) Using input driver 'libinput' for 'UGTABLET 11.6 inch PenDisplay Mouse'
+[ 89421.175] (**) UGTABLET 11.6 inch PenDisplay Mouse: always reports core events
+[ 89421.175] (**) Option "Device" "/dev/input/event18"
+[ 89421.177] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: is tagged by udev as: Mouse
+[ 89421.177] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device is a pointer
+[ 89421.177] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device removed
+[ 89421.216] (II) libinput: UGTABLET 11.6 inch PenDisplay Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89421.216] (II) libinput: UGTABLET 11.6 inch PenDisplay Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89421.216] (II) libinput: UGTABLET 11.6 inch PenDisplay Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89421.216] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:28BD:091F.0010/input/input79/event18"
+[ 89421.216] (II) XINPUT: Adding extended input device "UGTABLET 11.6 inch PenDisplay Mouse" (type: MOUSE, id 24)
+[ 89421.217] (**) Option "AccelerationScheme" "none"
+[ 89421.217] (**) UGTABLET 11.6 inch PenDisplay Mouse: (accel) selected scheme none/0
+[ 89421.217] (**) UGTABLET 11.6 inch PenDisplay Mouse: (accel) acceleration factor: 2.000
+[ 89421.217] (**) UGTABLET 11.6 inch PenDisplay Mouse: (accel) acceleration threshold: 4
+[ 89421.219] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: is tagged by udev as: Mouse
+[ 89421.219] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device is a pointer
+[ 89421.220] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event11)
+[ 89421.220] (II) No input driver specified, ignoring this device.
+[ 89421.220] (II) This device may have been added with another device file.
+[ 89421.221] (II) config/udev: removing device Intel HID events
+[ 89421.221] (II) event7  - Intel HID events: device removed
+[ 89421.264] (II) UnloadModule: "libinput"
+[ 89421.265] (II) config/udev: Adding input device Intel HID events (/dev/input/event7)
+[ 89421.265] (**) Intel HID events: Applying InputClass "evdev keyboard catchall"
+[ 89421.265] (**) Intel HID events: Applying InputClass "libinput keyboard catchall"
+[ 89421.265] (**) Intel HID events: Applying InputClass "system-keyboard"
+[ 89421.265] (II) Using input driver 'libinput' for 'Intel HID events'
+[ 89421.265] (**) Intel HID events: always reports core events
+[ 89421.265] (**) Option "Device" "/dev/input/event7"
+[ 89421.266] (II) event7  - Intel HID events: is tagged by udev as: Keyboard
+[ 89421.266] (II) event7  - Intel HID events: device is a keyboard
+[ 89421.266] (II) event7  - Intel HID events: device removed
+[ 89421.279] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input8/event7"
+[ 89421.279] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 14)
+[ 89421.279] (**) Option "xkb_layout" "fr"
+[ 89421.281] (II) event7  - Intel HID events: is tagged by udev as: Keyboard
+[ 89421.281] (II) event7  - Intel HID events: device is a keyboard
+[ 89421.283] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event13)
+[ 89421.283] (II) No input driver specified, ignoring this device.
+[ 89421.283] (II) This device may have been added with another device file.
+[ 89421.284] (II) config/udev: removing device Intel HID 5 button array
+[ 89421.284] (II) event8  - Intel HID 5 button array: device removed
+[ 89421.314] (II) UnloadModule: "libinput"
+[ 89421.315] (II) config/udev: Adding input device Intel HID 5 button array (/dev/input/event8)
+[ 89421.315] (**) Intel HID 5 button array: Applying InputClass "evdev keyboard catchall"
+[ 89421.315] (**) Intel HID 5 button array: Applying InputClass "libinput keyboard catchall"
+[ 89421.315] (**) Intel HID 5 button array: Applying InputClass "system-keyboard"
+[ 89421.315] (II) Using input driver 'libinput' for 'Intel HID 5 button array'
+[ 89421.315] (**) Intel HID 5 button array: always reports core events
+[ 89421.315] (**) Option "Device" "/dev/input/event8"
+[ 89421.315] (II) event8  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[ 89421.316] (II) event8  - Intel HID 5 button array: device is a keyboard
+[ 89421.316] (II) event8  - Intel HID 5 button array: device removed
+[ 89421.333] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input9/event8"
+[ 89421.333] (II) XINPUT: Adding extended input device "Intel HID 5 button array" (type: KEYBOARD, id 15)
+[ 89421.333] (**) Option "xkb_layout" "fr"
+[ 89421.334] (II) event8  - Intel HID 5 button array: is tagged by udev as: Keyboard
+[ 89421.334] (II) event8  - Intel HID 5 button array: device is a keyboard
+[ 89421.335] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event14)
+[ 89421.335] (II) No input driver specified, ignoring this device.
+[ 89421.335] (II) This device may have been added with another device file.
+[ 89421.335] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event12)
+[ 89421.335] (II) No input driver specified, ignoring this device.
+[ 89421.335] (II) This device may have been added with another device file.
+[ 89421.336] (II) config/udev: removing device DLL07BE:01 06CB:7A13 Touchpad
+[ 89421.336] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device removed
+[ 89421.382] (II) UnloadModule: "libinput"
+[ 89421.382] (II) config/udev: Adding input device DLL07BE:01 06CB:7A13 Touchpad (/dev/input/event16)
+[ 89421.382] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "evdev touchpad catchall"
+[ 89421.382] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "libinput touchpad catchall"
+[ 89421.382] (**) DLL07BE:01 06CB:7A13 Touchpad: Applying InputClass "libinput touchpad catchall"
+[ 89421.382] (II) Using input driver 'libinput' for 'DLL07BE:01 06CB:7A13 Touchpad'
+[ 89421.382] (**) DLL07BE:01 06CB:7A13 Touchpad: always reports core events
+[ 89421.382] (**) Option "Device" "/dev/input/event16"
+[ 89421.383] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: is tagged by udev as: Touchpad
+[ 89421.384] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device is a touchpad
+[ 89421.384] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device removed
+[ 89421.436] (**) Option "Tapping" "on"
+[ 89421.436] (**) Option "TappingButtonMap" "lmr"
+[ 89421.436] (II) libinput: DLL07BE:01 06CB:7A13 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89421.436] (II) libinput: DLL07BE:01 06CB:7A13 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89421.436] (II) libinput: DLL07BE:01 06CB:7A13 Touchpad: Step value 0 was provided, libinput Fallback acceleration function is used.
+[ 89421.436] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-8/i2c-DLL07BE:01/0018:06CB:7A13.0001/input/input21/event16"
+[ 89421.436] (II) XINPUT: Adding extended input device "DLL07BE:01 06CB:7A13 Touchpad" (type: TOUCHPAD, id 13)
+[ 89421.438] (**) Option "AccelerationScheme" "none"
+[ 89421.439] (**) DLL07BE:01 06CB:7A13 Touchpad: (accel) selected scheme none/0
+[ 89421.439] (**) DLL07BE:01 06CB:7A13 Touchpad: (accel) acceleration factor: 2.000
+[ 89421.439] (**) DLL07BE:01 06CB:7A13 Touchpad: (accel) acceleration threshold: 4
+[ 89421.440] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: is tagged by udev as: Touchpad
+[ 89421.441] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device is a touchpad
+[ 89421.443] (II) config/udev: Adding input device XP-PEN ERASER (/dev/input/mouse9)
+[ 89421.443] (II) No input driver specified, ignoring this device.
+[ 89421.443] (II) This device may have been added with another device file.
+[ 90789.290] (II) event24 - XP-PEN STYLUS: device removed
+[ 90789.313] (II) config/udev: removing device XP-PEN STYLUS
+[ 90789.315] (II) UnloadModule: "libinput"
+[ 90789.316] (II) config/udev: removing device XP-PEN STYLUS Pen (0)
+[ 90789.318] (II) UnloadModule: "libinput"
+[ 90789.346] (II) event25 - XP-PEN MOUSE: device removed
+[ 90789.376] (II) config/udev: removing device XP-PEN MOUSE
+[ 90789.397] (II) UnloadModule: "libinput"
+[ 90789.397] (II) event26 - XP-PEN ERASER: device removed
+[ 90789.427] (II) config/udev: removing device XP-PEN ERASER
+[ 90789.432] (II) UnloadModule: "libinput"
+[ 90789.432] (II) config/udev: removing device XP-PEN ERASER Eraser (0)
+[ 90789.437] (II) UnloadModule: "libinput"
+[ 90809.009] (II) modeset(0): Allocate new frame buffer 1920x1080 stride
+[ 90810.444] (II) modeset(0): EDID vendor "UGD", prod id 4354
+[ 90810.445] (II) modeset(0): Using hsync ranges from config file
+[ 90810.445] (II) modeset(0): Using vrefresh ranges from config file
+[ 90810.445] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90810.445] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[ 90810.445] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "1152x648"x60.0   59.91  1152 1200 1320 1488  648 649 652 671 -hsync +vsync (40.3 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "1280x720"x60.0   74.48  1280 1336 1472 1664  720 721 724 746 -hsync +vsync (44.8 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "(null)"x59.8   84.75  1366 1430 1566 1776  768 771 781 798 -hsync +vsync (47.7 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "256x192"x60.0    3.26  256 240 264 272  192 193 196 200 -hsync +vsync (12.0 kHz e)
+[ 90810.445] (II) modeset(0): Modeline "1680x1050"x61.0  149.59  1680 1784 1968 2256  1050 1051 1054 1087 -hsync +vsync (66.3 kHz e)
+[ 90815.631] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90815.631] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90815.631] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90816.309] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90816.309] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90816.309] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90820.331] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90820.331] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90820.331] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90821.008] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90821.008] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90821.008] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90825.505] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90825.506] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90825.506] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90826.188] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90826.188] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90826.188] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90827.944] (II) event18 - UGTABLET 11.6 inch PenDisplay Mouse: device removed
+[ 90827.969] (II) config/udev: removing device UGTABLET 11.6 inch PenDisplay Mouse
+[ 90827.975] (II) UnloadModule: "libinput"
+[ 90828.056] (II) event22 - UGTABLET 11.6 inch PenDisplay Keyboard: device removed
+[ 90828.099] (II) event23 - UGTABLET 11.6 inch PenDisplay: device removed
+[ 90828.163] (II) modeset(0): EDID vendor "SHP", prod id 5203
+[ 90828.163] (II) modeset(0): Printing DDC gathered Modelines:
+[ 90828.163] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[ 90828.270] (II) config/udev: removing device UGTABLET 11.6 inch PenDisplay Keyboard
+[ 90828.272] (II) UnloadModule: "libinput"
+[ 90828.272] (II) config/udev: removing device UGTABLET 11.6 inch PenDisplay
+[ 90828.274] (II) UnloadModule: "libinput"
+[ 90883.005] (II) event10 - Dell WMI hotkeys: device removed
+[ 90883.036] (II) event6  - AT Translated Set 2 keyboard: device removed
+[ 90883.153] (II) event3  - Power Button: device removed
+[ 90883.316] (II) event4  - Video Bus: device removed
+[ 90883.449] (II) event5  - Video Bus: device removed
+[ 90883.486] (II) event2  - Sleep Button: device removed
+[ 90883.523] (II) event1  - Power Button: device removed
+[ 90883.609] (II) event19 - Logitech M325: device removed
+[ 90883.759] (II) event20 - Logitech MX Keys: device removed
+[ 90883.783] (II) event17 - Integrated_Webcam_HD: Integrate: device removed
+[ 90883.829] (II) event15 - DLL07BE:01 06CB:7A13 Mouse: device removed
+[ 90883.893] (II) event21 - Logitech MX Keys: device removed
+[ 90883.923] (II) event7  - Intel HID events: device removed
+[ 90883.956] (II) event8  - Intel HID 5 button array: device removed
+[ 90883.973] (II) event16 - DLL07BE:01 06CB:7A13 Touchpad: device removed
+[ 90884.032] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.033] (II) UnloadModule: "libinput"
+[ 90884.034] (II) UnloadModule: "libinput"
+[ 90885.869] (II) Server terminated successfully (0). Closing log file.
