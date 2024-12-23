@@ -1,0 +1,15 @@
+Usage Page (Desktop),       ; Generic desktop controls (01h)
+Usage (Sys Control),        ; System control (80h, application collection)
+Collection (Application),
+    Report ID (93),
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (3),
+    Usage (Sys Power Down), ; System power down (81h, one-shot control)
+    Usage (Sys Sleep),      ; System sleep (82h, one-shot control)
+    Usage (Sys Wake Up),    ; System wake up (83h, one-shot control)
+    Input (Variable),
+    Report Count (5),
+    Input (Constant),
+End Collection

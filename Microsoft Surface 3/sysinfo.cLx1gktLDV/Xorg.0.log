@@ -1,0 +1,621 @@
+[  1046.600] (--) Log file renamed from "/var/log/Xorg.pid-4216.log" to "/var/log/Xorg.0.log"
+[  1046.604] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[  1046.604] Current Operating System: Linux HOSTNAME 5.17.9-arch1-2-surface #1 SMP PREEMPT Wed, 25 May 2022 15:31:19 +0000 x86_64
+[  1046.604] Kernel command line: BOOT_IMAGE=/vmlinuz-linux-surface USERNAME=/dev/mapper/vg--0-USERNAME rw mem_sleep_default=deep loglevel=3 quiet cryptdevice=UUID=090f709e-4fca-4916-ba89-739b4c0b739d:cryptlvm USERNAME=/dev/vg-0/USERNAME resume=/dev/vg-0/swap
+[  1046.604]  
+[  1046.604] Current version of pixman: 0.42.2
+[  1046.604] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  1046.605] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  1046.605] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Nov  8 08:16:26 2022
+[  1046.606] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  1046.606] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  1046.610] (==) No Layout section.  Using the first Screen section.
+[  1046.610] (==) No screen section available. Using defaults.
+[  1046.610] (**) |-->Screen "Default Screen Section" (0)
+[  1046.610] (**) |   |-->Monitor "<default monitor>"
+[  1046.611] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  1046.612] (==) Automatically adding devices
+[  1046.612] (==) Automatically enabling devices
+[  1046.612] (==) Automatically adding GPU devices
+[  1046.612] (==) Automatically binding GPU devices
+[  1046.612] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  1046.612] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[  1046.612] 	Entry deleted from font path.
+[  1046.612] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/TTF".
+[  1046.612] 	Entry deleted from font path.
+[  1046.612] 	(Run 'mkfontdir' on "/usr/share/fonts/TTF").
+[  1046.612] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  1046.613] 	Entry deleted from font path.
+[  1046.613] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  1046.613] 	Entry deleted from font path.
+[  1046.613] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[  1046.613] 	Entry deleted from font path.
+[  1046.613] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[  1046.613] 	Entry deleted from font path.
+[  1046.613] (==) FontPath set to:
+	
+[  1046.613] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  1046.613] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  1046.613] (II) Module ABI versions:
+[  1046.613] 	X.Org ANSI C Emulation: 0.4
+[  1046.613] 	X.Org Video Driver: 25.2
+[  1046.613] 	X.Org XInput driver : 24.4
+[  1046.614] 	X.Org Server Extension : 10.0
+[  1046.618] (++) using VT number 1
+
+[  1046.618] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[  1046.625] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  1046.625] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[  1046.649] (--) PCI:*(0@0:2:0) 8086:22b0:1414:0009 rev 32, Mem @ 0xd0000000/16777216, 0xc0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[  1046.649] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  1046.650] (II) LoadModule: "glx"
+[  1046.651] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  1046.661] (II) Module glx: vendor="X.Org Foundation"
+[  1046.661] 	compiled for 1.21.1.4, module version = 1.0.0
+[  1046.661] 	ABI class: X.Org Server Extension, version 10.0
+[  1046.661] (==) Matched intel as autoconfigured driver 0
+[  1046.661] (==) Matched modesetting as autoconfigured driver 1
+[  1046.661] (==) Matched fbdev as autoconfigured driver 2
+[  1046.661] (==) Matched vesa as autoconfigured driver 3
+[  1046.662] (==) Assigned the driver to the xf86ConfigLayout
+[  1046.662] (II) LoadModule: "intel"
+[  1046.663] (WW) Warning, couldn't open module intel
+[  1046.663] (EE) Failed to load module "intel" (module does not exist, 0)
+[  1046.663] (II) LoadModule: "modesetting"
+[  1046.663] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  1046.668] (II) Module modesetting: vendor="X.Org Foundation"
+[  1046.668] 	compiled for 1.21.1.4, module version = 1.21.1
+[  1046.668] 	Module class: X.Org Video Driver
+[  1046.668] 	ABI class: X.Org Video Driver, version 25.2
+[  1046.668] (II) LoadModule: "fbdev"
+[  1046.669] (WW) Warning, couldn't open module fbdev
+[  1046.669] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[  1046.669] (II) LoadModule: "vesa"
+[  1046.671] (WW) Warning, couldn't open module vesa
+[  1046.671] (EE) Failed to load module "vesa" (module does not exist, 0)
+[  1046.671] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  1046.738] (II) modeset(0): using drv /dev/dri/card0
+[  1046.739] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  1046.739] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[  1046.740] (==) modeset(0): RGB weight 888
+[  1046.740] (==) modeset(0): Default visual is TrueColor
+[  1046.740] (II) Loading sub module "glamoregl"
+[  1046.740] (II) LoadModule: "glamoregl"
+[  1046.740] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[  1046.789] (II) Module glamoregl: vendor="X.Org Foundation"
+[  1046.789] 	compiled for 1.21.1.4, module version = 1.0.1
+[  1046.790] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  1047.020] (II) modeset(0): glamor X acceleration enabled on Mesa Intel(R) HD Graphics (CHV)
+[  1047.020] (II) modeset(0): glamor initialized
+[  1047.020] (==) modeset(0): VariableRefresh: disabled
+[  1047.020] (==) modeset(0): AsyncFlipSecondaries: disabled
+[  1047.021] (II) modeset(0): Output DSI-1 has no monitor section
+[  1047.022] (II) modeset(0): Output DP-1 has no monitor section
+[  1047.024] (II) modeset(0): Output HDMI-1 has no monitor section
+[  1047.026] (II) modeset(0): EDID for output DSI-1
+[  1047.027] (II) modeset(0): Printing probed modes for output DSI-1
+[  1047.027] (II) modeset(0): Modeline "1920x1280"x60.0  164.49  1920 2036 2044 2055  1280 1303 1309 1334 -hsync -vsync (80.0 kHz P)
+[  1047.027] (II) modeset(0): Modeline "1920x1200"x59.9  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1920x1200"x60.0  154.00  1920 1968 2000 2080  1200 1203 1209 1235 +hsync -vsync (74.0 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1920x1080"x120.0  356.38  1920 2080 2288 2656  1080 1081 1084 1118 doublescan -hsync +vsync (134.2 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1920x1080"x119.9  266.50  1920 1944 1960 2000  1080 1081 1084 1111 doublescan +hsync -vsync (133.2 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1920x1080"x60.0  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync (66.6 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1600x900"x120.0  246.00  1600 1728 1900 2200  900 901 904 932 doublescan -hsync +vsync (111.8 kHz d)
+[  1047.028] (II) modeset(0): Modeline "1600x900"x119.9  186.50  1600 1624 1640 1680  900 901 904 926 doublescan +hsync -vsync (111.0 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1600x900"x59.8   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync (55.4 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1400x900"x59.9   86.50  1400 1448 1480 1560  900 903 913 926 +hsync -vsync (55.4 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1440x810"x120.0  198.12  1440 1548 1704 1968  810 811 814 839 doublescan -hsync +vsync (100.7 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1440x810"x119.9  151.88  1440 1464 1480 1520  810 811 814 833 doublescan +hsync -vsync (99.9 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1368x768"x59.9   72.25  1368 1416 1448 1528  768 771 781 790 +hsync -vsync (47.3 kHz d)
+[  1047.029] (II) modeset(0): Modeline "1280x800"x120.0  174.25  1280 1380 1516 1752  800 801 804 829 doublescan -hsync +vsync (99.5 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x800"x119.9  134.25  1280 1304 1320 1360  800 801 804 823 doublescan +hsync -vsync (98.7 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[  1047.030] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[  1047.030] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[  1047.030] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[  1047.031] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[  1047.031] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[  1047.031] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[  1047.031] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[  1047.031] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[  1047.031] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[  1047.031] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[  1047.031] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[  1047.031] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[  1047.031] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[  1047.031] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[  1047.032] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[  1047.032] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[  1047.032] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[  1047.032] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[  1047.032] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[  1047.032] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[  1047.032] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[  1047.032] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[  1047.032] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[  1047.032] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[  1047.032] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[  1047.033] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[  1047.033] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[  1047.033] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[  1047.033] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[  1047.033] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[  1047.033] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[  1047.033] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[  1047.033] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[  1047.033] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[  1047.033] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[  1047.033] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[  1047.034] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[  1047.034] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[  1047.034] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[  1047.034] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[  1047.034] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[  1047.034] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[  1047.034] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[  1047.034] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[  1047.034] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[  1047.034] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[  1047.035] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[  1047.035] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[  1047.035] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[  1047.035] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[  1047.035] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[  1047.035] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[  1047.035] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[  1047.035] (II) modeset(0): EDID for output DP-1
+[  1047.037] (II) modeset(0): EDID for output HDMI-1
+[  1047.037] (II) modeset(0): Output DSI-1 connected
+[  1047.037] (II) modeset(0): Output DP-1 disconnected
+[  1047.038] (II) modeset(0): Output HDMI-1 disconnected
+[  1047.038] (II) modeset(0): Using exact sizes for initial modes
+[  1047.038] (II) modeset(0): Output DSI-1 using initial mode 1920x1280 +0+0
+[  1047.038] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1047.038] (==) modeset(0): DPI set to (96, 96)
+[  1047.038] (II) Loading sub module "fb"
+[  1047.038] (II) LoadModule: "fb"
+[  1047.038] (II) Module "fb" already built-in
+[  1047.149] (==) modeset(0): Backing store enabled
+[  1047.149] (==) modeset(0): Silken mouse enabled
+[  1047.173] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[  1047.174] (==) modeset(0): DPMS enabled
+[  1047.174] (II) modeset(0): [DRI2] Setup complete
+[  1047.174] (II) modeset(0): [DRI2]   DRI driver: crocus
+[  1047.174] (II) modeset(0): [DRI2]   VDPAU driver: va_gl
+[  1047.175] (II) Initializing extension Generic Event Extension
+[  1047.175] (II) Initializing extension SHAPE
+[  1047.176] (II) Initializing extension MIT-SHM
+[  1047.177] (II) Initializing extension XInputExtension
+[  1047.178] (II) Initializing extension XTEST
+[  1047.179] (II) Initializing extension BIG-REQUESTS
+[  1047.180] (II) Initializing extension SYNC
+[  1047.181] (II) Initializing extension XKEYBOARD
+[  1047.182] (II) Initializing extension XC-MISC
+[  1047.182] (II) Initializing extension SECURITY
+[  1047.183] (II) Initializing extension XFIXES
+[  1047.184] (II) Initializing extension RENDER
+[  1047.185] (II) Initializing extension RANDR
+[  1047.187] (II) Initializing extension COMPOSITE
+[  1047.188] (II) Initializing extension DAMAGE
+[  1047.188] (II) Initializing extension MIT-SCREEN-SAVER
+[  1047.189] (II) Initializing extension DOUBLE-BUFFER
+[  1047.190] (II) Initializing extension RECORD
+[  1047.191] (II) Initializing extension DPMS
+[  1047.192] (II) Initializing extension Present
+[  1047.193] (II) Initializing extension DRI3
+[  1047.193] (II) Initializing extension X-Resource
+[  1047.194] (II) Initializing extension XVideo
+[  1047.195] (II) Initializing extension XVideo-MotionCompensation
+[  1047.195] (II) Initializing extension GLX
+[  1047.222] (II) AIGLX: Loaded and initialized crocus
+[  1047.222] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  1047.222] (II) Initializing extension XFree86-VidModeExtension
+[  1047.223] (II) Initializing extension XFree86-DGA
+[  1047.224] (II) Initializing extension XFree86-DRI
+[  1047.224] (II) Initializing extension DRI2
+[  1047.227] (II) modeset(0): Damage tracking initialized
+[  1047.227] (II) modeset(0): Setting screen physical size to 508 x 338
+[  1047.618] (II) config/udev: Adding input device Video Bus (/dev/input/event13)
+[  1047.619] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  1047.619] (II) LoadModule: "libinput"
+[  1047.620] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  1047.653] (II) Module libinput: vendor="X.Org Foundation"
+[  1047.653] 	compiled for 1.21.1.3, module version = 1.2.1
+[  1047.653] 	Module class: X.Org XInput Driver
+[  1047.653] 	ABI class: X.Org XInput driver, version 24.4
+[  1047.653] (II) Using input driver 'libinput' for 'Video Bus'
+[  1047.654] (**) Video Bus: always reports core events
+[  1047.654] (**) Option "Device" "/dev/input/event13"
+[  1047.670] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[  1047.671] (II) event13 - Video Bus: device is a keyboard
+[  1047.671] (II) event13 - Video Bus: device removed
+[  1047.697] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input22/event13"
+[  1047.697] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[  1047.705] (II) event13 - Video Bus: is tagged by udev as: Keyboard
+[  1047.705] (II) event13 - Video Bus: device is a keyboard
+[  1047.710] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[  1047.710] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  1047.710] (II) Using input driver 'libinput' for 'Power Button'
+[  1047.710] (**) Power Button: always reports core events
+[  1047.710] (**) Option "Device" "/dev/input/event0"
+[  1047.716] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  1047.717] (II) event0  - Power Button: device is a keyboard
+[  1047.717] (II) event0  - Power Button: device removed
+[  1047.743] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[  1047.744] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[  1047.751] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[  1047.751] (II) event0  - Power Button: device is a keyboard
+[  1047.755] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[  1047.756] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  1047.756] (II) Using input driver 'libinput' for 'Sleep Button'
+[  1047.756] (**) Sleep Button: always reports core events
+[  1047.756] (**) Option "Device" "/dev/input/event1"
+[  1047.762] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  1047.762] (II) event1  - Sleep Button: device is a keyboard
+[  1047.763] (II) event1  - Sleep Button: device removed
+[  1047.800] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1/event1"
+[  1047.800] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[  1047.807] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[  1047.808] (II) event1  - Sleep Button: device is a keyboard
+[  1047.814] (II) config/udev: Adding input device Intel HDMI/DP LPE Audio HDMI/DP,pcm=0 (/dev/input/event16)
+[  1047.815] (II) No input driver specified, ignoring this device.
+[  1047.815] (II) This device may have been added with another device file.
+[  1047.818] (II) config/udev: Adding input device Intel HDMI/DP LPE Audio HDMI/DP,pcm=1 (/dev/input/event17)
+[  1047.818] (II) No input driver specified, ignoring this device.
+[  1047.818] (II) This device may have been added with another device file.
+[  1047.821] (II) config/udev: Adding input device Intel HDMI/DP LPE Audio HDMI/DP,pcm=2 (/dev/input/event18)
+[  1047.821] (II) No input driver specified, ignoring this device.
+[  1047.821] (II) This device may have been added with another device file.
+[  1047.827] (II) config/udev: Adding input device Microsoft Surface Type Cover Keyboard (/dev/input/event3)
+[  1047.827] (**) Microsoft Surface Type Cover Keyboard: Applying InputClass "libinput keyboard catchall"
+[  1047.827] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Keyboard'
+[  1047.827] (**) Microsoft Surface Type Cover Keyboard: always reports core events
+[  1047.828] (**) Option "Device" "/dev/input/event3"
+[  1047.838] (II) event3  - Microsoft Surface Type Cover Keyboard: is tagged by udev as: Keyboard
+[  1047.839] (II) event3  - Microsoft Surface Type Cover Keyboard: device is a keyboard
+[  1047.842] (II) event3  - Microsoft Surface Type Cover Keyboard: device removed
+[  1047.867] (II) libinput: Microsoft Surface Type Cover Keyboard: needs a virtual subdevice
+[  1047.868] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0003/input/input30/event3"
+[  1047.868] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Keyboard" (type: MOUSE, id 9)
+[  1047.868] (**) Option "AccelerationScheme" "none"
+[  1047.869] (**) Microsoft Surface Type Cover Keyboard: (accel) selected scheme none/0
+[  1047.869] (**) Microsoft Surface Type Cover Keyboard: (accel) acceleration factor: 2.000
+[  1047.869] (**) Microsoft Surface Type Cover Keyboard: (accel) acceleration threshold: 4
+[  1047.879] (II) event3  - Microsoft Surface Type Cover Keyboard: is tagged by udev as: Keyboard
+[  1047.879] (II) event3  - Microsoft Surface Type Cover Keyboard: device is a keyboard
+[  1047.888] (II) config/udev: Adding input device Microsoft Surface Type Cover Mouse (/dev/input/event4)
+[  1047.889] (**) Microsoft Surface Type Cover Mouse: Applying InputClass "libinput pointer catchall"
+[  1047.889] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Mouse'
+[  1047.889] (**) Microsoft Surface Type Cover Mouse: always reports core events
+[  1047.889] (**) Option "Device" "/dev/input/event4"
+[  1047.899] (II) event4  - Microsoft Surface Type Cover Mouse: is tagged by udev as: Mouse
+[  1047.900] (II) event4  - Microsoft Surface Type Cover Mouse: device is a pointer
+[  1047.902] (II) event4  - Microsoft Surface Type Cover Mouse: device removed
+[  1047.924] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0003/input/input31/event4"
+[  1047.924] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Mouse" (type: MOUSE, id 10)
+[  1047.925] (**) Option "AccelerationScheme" "none"
+[  1047.926] (**) Microsoft Surface Type Cover Mouse: (accel) selected scheme none/0
+[  1047.926] (**) Microsoft Surface Type Cover Mouse: (accel) acceleration factor: 2.000
+[  1047.926] (**) Microsoft Surface Type Cover Mouse: (accel) acceleration threshold: 4
+[  1047.936] (II) event4  - Microsoft Surface Type Cover Mouse: is tagged by udev as: Mouse
+[  1047.937] (II) event4  - Microsoft Surface Type Cover Mouse: device is a pointer
+[  1047.944] (II) config/udev: Adding input device Microsoft Surface Type Cover Mouse (/dev/input/mouse0)
+[  1047.944] (II) No input driver specified, ignoring this device.
+[  1047.944] (II) This device may have been added with another device file.
+[  1047.950] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event5)
+[  1047.950] (II) No input driver specified, ignoring this device.
+[  1047.950] (II) This device may have been added with another device file.
+[  1047.956] (II) config/udev: Adding input device Microsoft Surface Type Cover Touchpad (/dev/input/event6)
+[  1047.956] (**) Microsoft Surface Type Cover Touchpad: Applying InputClass "libinput touchpad catchall"
+[  1047.956] (**) Microsoft Surface Type Cover Touchpad: Applying InputClass "libinput touchpad catchall"
+[  1047.956] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Touchpad'
+[  1047.956] (**) Microsoft Surface Type Cover Touchpad: always reports core events
+[  1047.956] (**) Option "Device" "/dev/input/event6"
+[  1047.967] (II) event6  - Microsoft Surface Type Cover Touchpad: is tagged by udev as: Touchpad
+[  1047.975] (II) event6  - Microsoft Surface Type Cover Touchpad: device is a touchpad
+[  1047.976] (II) event6  - Microsoft Surface Type Cover Touchpad: device removed
+[  1048.000] (**) Option "Tapping" "on"
+[  1048.001] (**) Option "NaturalScrolling" "on"
+[  1048.003] (**) Option "MiddleEmulation" "on"
+[  1048.003] (**) Option "DisableWhileTyping" "off"
+[  1048.004] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0003/input/input33/event6"
+[  1048.004] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Touchpad" (type: TOUCHPAD, id 11)
+[  1048.012] (**) Option "AccelerationScheme" "none"
+[  1048.012] (**) Microsoft Surface Type Cover Touchpad: (accel) selected scheme none/0
+[  1048.012] (**) Microsoft Surface Type Cover Touchpad: (accel) acceleration factor: 2.000
+[  1048.012] (**) Microsoft Surface Type Cover Touchpad: (accel) acceleration threshold: 4
+[  1048.023] (II) event6  - Microsoft Surface Type Cover Touchpad: is tagged by udev as: Touchpad
+[  1048.031] (II) event6  - Microsoft Surface Type Cover Touchpad: device is a touchpad
+[  1048.039] (II) config/udev: Adding input device Microsoft Surface Type Cover Touchpad (/dev/input/mouse1)
+[  1048.039] (II) No input driver specified, ignoring this device.
+[  1048.039] (II) This device may have been added with another device file.
+[  1048.045] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event7)
+[  1048.045] (II) No input driver specified, ignoring this device.
+[  1048.045] (II) This device may have been added with another device file.
+[  1048.051] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event8)
+[  1048.051] (II) No input driver specified, ignoring this device.
+[  1048.051] (II) This device may have been added with another device file.
+[  1048.057] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event9)
+[  1048.057] (II) No input driver specified, ignoring this device.
+[  1048.057] (II) This device may have been added with another device file.
+[  1048.063] (II) config/udev: Adding input device Surface3 SPI Capacitive TouchScreen (/dev/input/event10)
+[  1048.063] (**) Surface3 SPI Capacitive TouchScreen: Applying InputClass "libinput touchscreen catchall"
+[  1048.063] (II) Using input driver 'libinput' for 'Surface3 SPI Capacitive TouchScreen'
+[  1048.064] (**) Surface3 SPI Capacitive TouchScreen: always reports core events
+[  1048.064] (**) Option "Device" "/dev/input/event10"
+[  1048.072] (II) event10 - Surface3 SPI Capacitive TouchScreen: is tagged by udev as: Touchscreen
+[  1048.073] (II) event10 - Surface3 SPI Capacitive TouchScreen: device is a touch device
+[  1048.074] (II) event10 - Surface3 SPI Capacitive TouchScreen: device removed
+[  1048.097] (**) Option "config_info" "udev:/sys/devices/pci0000:00/8086228E:00/spi_master/spi1/spi-MSHW0037:00/input/input19/event10"
+[  1048.097] (II) XINPUT: Adding extended input device "Surface3 SPI Capacitive TouchScreen" (type: TOUCHSCREEN, id 12)
+[  1048.098] (**) Option "AccelerationScheme" "none"
+[  1048.098] (**) Surface3 SPI Capacitive TouchScreen: (accel) selected scheme none/0
+[  1048.098] (**) Surface3 SPI Capacitive TouchScreen: (accel) acceleration factor: 2.000
+[  1048.098] (**) Surface3 SPI Capacitive TouchScreen: (accel) acceleration threshold: 4
+[  1048.106] (II) event10 - Surface3 SPI Capacitive TouchScreen: is tagged by udev as: Touchscreen
+[  1048.107] (II) event10 - Surface3 SPI Capacitive TouchScreen: device is a touch device
+[  1048.113] (II) config/udev: Adding input device Surface3 SPI Capacitive TouchScreen (/dev/input/mouse2)
+[  1048.113] (II) No input driver specified, ignoring this device.
+[  1048.113] (II) This device may have been added with another device file.
+[  1048.118] (II) config/udev: Adding input device Surface3 SPI Pen Input (/dev/input/event11)
+[  1048.118] (**) Surface3 SPI Pen Input: Applying InputClass "libinput tablet catchall"
+[  1048.118] (II) Using input driver 'libinput' for 'Surface3 SPI Pen Input'
+[  1048.118] (**) Surface3 SPI Pen Input: always reports core events
+[  1048.118] (**) Option "Device" "/dev/input/event11"
+[  1048.126] (II) event11 - Surface3 SPI Pen Input: is tagged by udev as: Tablet
+[  1048.351] (II) event11 - Surface3 SPI Pen Input: tablet 'Surface3 SPI Pen Input' unknown to libwacom
+[  1048.352] (II) event11 - Surface3 SPI Pen Input: device is a tablet
+[  1048.352] (II) event11 - Surface3 SPI Pen Input: device removed
+[  1048.387] (**) Option "config_info" "udev:/sys/devices/pci0000:00/8086228E:00/spi_master/spi1/spi-MSHW0037:00/input/input20/event11"
+[  1048.387] (II) XINPUT: Adding extended input device "Surface3 SPI Pen Input" (type: TABLET, id 13)
+[  1048.395] (II) event11 - Surface3 SPI Pen Input: is tagged by udev as: Tablet
+[  1048.516] (II) event11 - Surface3 SPI Pen Input: tablet 'Surface3 SPI Pen Input' unknown to libwacom
+[  1048.517] (II) event11 - Surface3 SPI Pen Input: device is a tablet
+[  1048.522] (II) config/udev: Adding input device Surface3 SPI Pen Input (/dev/input/mouse3)
+[  1048.522] (II) No input driver specified, ignoring this device.
+[  1048.522] (II) This device may have been added with another device file.
+[  1048.526] (II) config/udev: Adding input device chtrt5645 Headset (/dev/input/event19)
+[  1048.526] (II) No input driver specified, ignoring this device.
+[  1048.526] (II) This device may have been added with another device file.
+[  1048.530] (II) config/udev: Adding input device gpio-keys (/dev/input/event2)
+[  1048.530] (**) gpio-keys: Applying InputClass "libinput keyboard catchall"
+[  1048.530] (II) Using input driver 'libinput' for 'gpio-keys'
+[  1048.530] (**) gpio-keys: always reports core events
+[  1048.530] (**) Option "Device" "/dev/input/event2"
+[  1048.537] (II) event2  - gpio-keys: is tagged by udev as: Keyboard
+[  1048.537] (II) event2  - gpio-keys: device is a keyboard
+[  1048.539] (II) event2  - gpio-keys: device removed
+[  1048.567] (**) Option "config_info" "udev:/sys/devices/platform/MSHW0028:00/gpio-keys.1.auto/input/input23/event2"
+[  1048.567] (II) XINPUT: Adding extended input device "gpio-keys" (type: KEYBOARD, id 14)
+[  1048.574] (II) event2  - gpio-keys: is tagged by udev as: Keyboard
+[  1048.575] (II) event2  - gpio-keys: device is a keyboard
+[  1048.580] (II) config/udev: Adding input device gpio-keys (/dev/input/event15)
+[  1048.581] (**) gpio-keys: Applying InputClass "libinput keyboard catchall"
+[  1048.581] (II) Using input driver 'libinput' for 'gpio-keys'
+[  1048.581] (**) gpio-keys: always reports core events
+[  1048.581] (**) Option "Device" "/dev/input/event15"
+[  1048.587] (II) event15 - gpio-keys: is tagged by udev as: Keyboard
+[  1048.587] (II) event15 - gpio-keys: device is a keyboard
+[  1048.589] (II) event15 - gpio-keys: device removed
+[  1048.617] (**) Option "config_info" "udev:/sys/devices/platform/MSHW0028:00/gpio-keys.2.auto/input/input25/event15"
+[  1048.617] (II) XINPUT: Adding extended input device "gpio-keys" (type: KEYBOARD, id 15)
+[  1048.624] (II) event15 - gpio-keys: is tagged by udev as: Keyboard
+[  1048.624] (II) event15 - gpio-keys: device is a keyboard
+[  1048.629] (II) config/udev: Adding input device PC Speaker (/dev/input/event12)
+[  1048.629] (II) No input driver specified, ignoring this device.
+[  1048.629] (II) This device may have been added with another device file.
+[  1048.650] (II) config/udev: Adding input device Lid Switch (/dev/input/event14)
+[  1048.650] (II) No input driver specified, ignoring this device.
+[  1048.650] (II) This device may have been added with another device file.
+[  1048.706] (**) Microsoft Surface Type Cover Keyboard: Applying InputClass "libinput keyboard catchall"
+[  1048.706] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Keyboard'
+[  1048.706] (**) Microsoft Surface Type Cover Keyboard: always reports core events
+[  1048.706] (**) Option "Device" "/dev/input/event3"
+[  1048.706] (II) libinput: Microsoft Surface Type Cover Keyboard: is a virtual subdevice
+[  1048.707] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0003/input/input30/event3"
+[  1048.707] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Keyboard" (type: KEYBOARD, id 16)
+[  1059.819] (II) event13 - Video Bus: device removed
+[  1059.857] (II) event0  - Power Button: device removed
+[  1059.877] (II) event1  - Sleep Button: device removed
+[  1059.894] (II) event4  - Microsoft Surface Type Cover Mouse: device removed
+[  1059.913] (II) event6  - Microsoft Surface Type Cover Touchpad: device removed
+[  1059.940] (II) event10 - Surface3 SPI Capacitive TouchScreen: device removed
+[  1059.957] (II) event11 - Surface3 SPI Pen Input: device removed
+[  1059.973] (II) event2  - gpio-keys: device removed
+[  1059.990] (II) event15 - gpio-keys: device removed
+[  1060.007] (II) event3  - Microsoft Surface Type Cover Keyboard: device removed
+[  1060.033] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  1129.408] (II) config/udev: removing device Microsoft Surface Type Cover Keyboard
+[  1129.408] (II) UnloadModule: "libinput"
+[  1129.408] (II) config/udev: removing device Microsoft Surface Type Cover Keyboard
+[  1129.408] (II) UnloadModule: "libinput"
+[  1129.432] (II) config/udev: removing device Microsoft Surface Type Cover Mouse
+[  1129.432] (II) UnloadModule: "libinput"
+[  1129.481] (II) config/udev: removing device Microsoft Surface Type Cover Touchpad
+[  1129.481] (II) UnloadModule: "libinput"
+[  1172.758] (II) config/udev: Adding input device Microsoft Surface Type Cover Mouse (/dev/input/mouse0)
+[  1172.764] (II) No input driver specified, ignoring this device.
+[  1172.764] (II) This device may have been added with another device file.
+[  1172.769] (II) config/udev: Adding input device Microsoft Surface Type Cover Touchpad (/dev/input/mouse1)
+[  1172.769] (II) No input driver specified, ignoring this device.
+[  1172.769] (II) This device may have been added with another device file.
+[  1172.788] (II) config/udev: Adding input device Microsoft Surface Type Cover Keyboard (/dev/input/event3)
+[  1172.789] (**) Microsoft Surface Type Cover Keyboard: Applying InputClass "libinput keyboard catchall"
+[  1172.789] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Keyboard'
+[  1172.789] (**) Microsoft Surface Type Cover Keyboard: always reports core events
+[  1172.789] (**) Option "Device" "/dev/input/event3"
+[  1172.802] (II) event3  - Microsoft Surface Type Cover Keyboard: is tagged by udev as: Keyboard
+[  1172.802] (II) event3  - Microsoft Surface Type Cover Keyboard: device is a keyboard
+[  1172.804] (II) event3  - Microsoft Surface Type Cover Keyboard: device removed
+[  1172.818] (II) libinput: Microsoft Surface Type Cover Keyboard: needs a virtual subdevice
+[  1172.818] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0004/input/input38/event3"
+[  1172.818] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Keyboard" (type: MOUSE, id 9)
+[  1172.819] (**) Option "AccelerationScheme" "none"
+[  1172.819] (**) Microsoft Surface Type Cover Keyboard: (accel) selected scheme none/0
+[  1172.819] (**) Microsoft Surface Type Cover Keyboard: (accel) acceleration factor: 2.000
+[  1172.819] (**) Microsoft Surface Type Cover Keyboard: (accel) acceleration threshold: 4
+[  1172.819] (**) Microsoft Surface Type Cover Keyboard: Applying InputClass "libinput keyboard catchall"
+[  1172.820] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Keyboard'
+[  1172.820] (**) Microsoft Surface Type Cover Keyboard: always reports core events
+[  1172.820] (**) Option "Device" "/dev/input/event3"
+[  1172.820] (II) libinput: Microsoft Surface Type Cover Keyboard: is a virtual subdevice
+[  1172.820] (EE) libinput: Microsoft Surface Type Cover Keyboard: Parent device not available
+[  1172.834] (II) event3  - Microsoft Surface Type Cover Keyboard: is tagged by udev as: Keyboard
+[  1172.835] (II) event3  - Microsoft Surface Type Cover Keyboard: device is a keyboard
+[  1172.836] (II) event3  - Microsoft Surface Type Cover Keyboard: device removed
+[  1172.860] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0004/input/input38/event3"
+[  1172.860] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Keyboard" (type: KEYBOARD, id 10)
+[  1172.866] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event5)
+[  1172.866] (II) No input driver specified, ignoring this device.
+[  1172.866] (II) This device may have been added with another device file.
+[  1172.871] (II) config/udev: Adding input device Microsoft Surface Type Cover Mouse (/dev/input/event4)
+[  1172.871] (**) Microsoft Surface Type Cover Mouse: Applying InputClass "libinput pointer catchall"
+[  1172.871] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Mouse'
+[  1172.871] (**) Microsoft Surface Type Cover Mouse: always reports core events
+[  1172.871] (**) Option "Device" "/dev/input/event4"
+[  1172.890] (II) event4  - Microsoft Surface Type Cover Mouse: is tagged by udev as: Mouse
+[  1172.891] (II) event4  - Microsoft Surface Type Cover Mouse: device is a pointer
+[  1172.893] (II) event4  - Microsoft Surface Type Cover Mouse: device removed
+[  1172.920] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0004/input/input39/event4"
+[  1172.920] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Mouse" (type: MOUSE, id 11)
+[  1172.921] (**) Option "AccelerationScheme" "none"
+[  1172.921] (**) Microsoft Surface Type Cover Mouse: (accel) selected scheme none/0
+[  1172.922] (**) Microsoft Surface Type Cover Mouse: (accel) acceleration factor: 2.000
+[  1172.922] (**) Microsoft Surface Type Cover Mouse: (accel) acceleration threshold: 4
+[  1172.926] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event7)
+[  1172.927] (II) No input driver specified, ignoring this device.
+[  1172.927] (II) This device may have been added with another device file.
+[  1172.932] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event9)
+[  1172.933] (II) No input driver specified, ignoring this device.
+[  1172.933] (II) This device may have been added with another device file.
+[  1172.941] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event8)
+[  1172.942] (II) No input driver specified, ignoring this device.
+[  1172.942] (II) This device may have been added with another device file.
+[  1172.993] (II) config/udev: Adding input device Microsoft Surface Type Cover Touchpad (/dev/input/event6)
+[  1172.994] (**) Microsoft Surface Type Cover Touchpad: Applying InputClass "libinput touchpad catchall"
+[  1172.994] (**) Microsoft Surface Type Cover Touchpad: Applying InputClass "libinput touchpad catchall"
+[  1172.994] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Touchpad'
+[  1172.994] (**) Microsoft Surface Type Cover Touchpad: always reports core events
+[  1172.994] (**) Option "Device" "/dev/input/event6"
+[  1173.007] (II) event6  - Microsoft Surface Type Cover Touchpad: is tagged by udev as: Touchpad
+[  1173.017] (II) event6  - Microsoft Surface Type Cover Touchpad: device is a touchpad
+[  1173.017] (II) event6  - Microsoft Surface Type Cover Touchpad: device removed
+[  1173.028] (**) Option "Tapping" "on"
+[  1173.028] (**) Option "NaturalScrolling" "on"
+[  1173.035] (**) Option "MiddleEmulation" "on"
+[  1173.035] (**) Option "DisableWhileTyping" "off"
+[  1173.035] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0004/input/input41/event6"
+[  1173.036] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Touchpad" (type: TOUCHPAD, id 16)
+[  1173.057] (**) Option "AccelerationScheme" "none"
+[  1173.057] (**) Microsoft Surface Type Cover Touchpad: (accel) selected scheme none/0
+[  1173.058] (**) Microsoft Surface Type Cover Touchpad: (accel) acceleration factor: 2.000
+[  1173.058] (**) Microsoft Surface Type Cover Touchpad: (accel) acceleration threshold: 4
+[  2055.866] (II) config/udev: removing device Microsoft Surface Type Cover Keyboard
+[  2055.866] (II) UnloadModule: "libinput"
+[  2055.867] (II) config/udev: removing device Microsoft Surface Type Cover Keyboard
+[  2055.867] (II) UnloadModule: "libinput"
+[  2055.884] (II) config/udev: removing device Microsoft Surface Type Cover Mouse
+[  2055.884] (II) UnloadModule: "libinput"
+[  2055.930] (II) config/udev: removing device Microsoft Surface Type Cover Touchpad
+[  2055.931] (II) UnloadModule: "libinput"
+[  2097.730] (II) config/udev: Adding input device Microsoft Surface Type Cover Mouse (/dev/input/mouse0)
+[  2097.730] (II) No input driver specified, ignoring this device.
+[  2097.730] (II) This device may have been added with another device file.
+[  2097.738] (II) config/udev: Adding input device Microsoft Surface Type Cover Touchpad (/dev/input/mouse1)
+[  2097.738] (II) No input driver specified, ignoring this device.
+[  2097.738] (II) This device may have been added with another device file.
+[  2097.768] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event9)
+[  2097.768] (II) No input driver specified, ignoring this device.
+[  2097.768] (II) This device may have been added with another device file.
+[  2097.795] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event7)
+[  2097.796] (II) No input driver specified, ignoring this device.
+[  2097.796] (II) This device may have been added with another device file.
+[  2097.832] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event8)
+[  2097.833] (II) No input driver specified, ignoring this device.
+[  2097.833] (II) This device may have been added with another device file.
+[  2097.838] (II) config/udev: Adding input device Microsoft Surface Type Cover Mouse (/dev/input/event4)
+[  2097.838] (**) Microsoft Surface Type Cover Mouse: Applying InputClass "libinput pointer catchall"
+[  2097.838] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Mouse'
+[  2097.839] (**) Microsoft Surface Type Cover Mouse: always reports core events
+[  2097.839] (**) Option "Device" "/dev/input/event4"
+[  2097.852] (II) event4  - Microsoft Surface Type Cover Mouse: is tagged by udev as: Mouse
+[  2097.854] (II) event4  - Microsoft Surface Type Cover Mouse: device is a pointer
+[  2097.859] (II) event4  - Microsoft Surface Type Cover Mouse: device removed
+[  2097.880] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0005/input/input47/event4"
+[  2097.880] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Mouse" (type: MOUSE, id 9)
+[  2097.881] (**) Option "AccelerationScheme" "none"
+[  2097.881] (**) Microsoft Surface Type Cover Mouse: (accel) selected scheme none/0
+[  2097.881] (**) Microsoft Surface Type Cover Mouse: (accel) acceleration factor: 2.000
+[  2097.882] (**) Microsoft Surface Type Cover Mouse: (accel) acceleration threshold: 4
+[  2097.901] (II) config/udev: Adding input device Microsoft Surface Type Cover UNKNOWN (/dev/input/event5)
+[  2097.901] (II) No input driver specified, ignoring this device.
+[  2097.901] (II) This device may have been added with another device file.
+[  2097.906] (II) config/udev: Adding input device Microsoft Surface Type Cover Touchpad (/dev/input/event6)
+[  2097.906] (**) Microsoft Surface Type Cover Touchpad: Applying InputClass "libinput touchpad catchall"
+[  2097.906] (**) Microsoft Surface Type Cover Touchpad: Applying InputClass "libinput touchpad catchall"
+[  2097.906] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Touchpad'
+[  2097.906] (**) Microsoft Surface Type Cover Touchpad: always reports core events
+[  2097.907] (**) Option "Device" "/dev/input/event6"
+[  2097.919] (II) event6  - Microsoft Surface Type Cover Touchpad: is tagged by udev as: Touchpad
+[  2097.928] (II) event6  - Microsoft Surface Type Cover Touchpad: device is a touchpad
+[  2097.928] (II) event6  - Microsoft Surface Type Cover Touchpad: device removed
+[  2097.967] (**) Option "Tapping" "on"
+[  2097.967] (**) Option "NaturalScrolling" "on"
+[  2097.969] (**) Option "MiddleEmulation" "on"
+[  2097.969] (**) Option "DisableWhileTyping" "off"
+[  2097.970] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0005/input/input49/event6"
+[  2097.970] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Touchpad" (type: TOUCHPAD, id 10)
+[  2097.978] (**) Option "AccelerationScheme" "none"
+[  2097.979] (**) Microsoft Surface Type Cover Touchpad: (accel) selected scheme none/0
+[  2097.979] (**) Microsoft Surface Type Cover Touchpad: (accel) acceleration factor: 2.000
+[  2097.979] (**) Microsoft Surface Type Cover Touchpad: (accel) acceleration threshold: 4
+[  2097.983] (II) config/udev: Adding input device Microsoft Surface Type Cover Keyboard (/dev/input/event3)
+[  2097.984] (**) Microsoft Surface Type Cover Keyboard: Applying InputClass "libinput keyboard catchall"
+[  2097.984] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Keyboard'
+[  2097.984] (**) Microsoft Surface Type Cover Keyboard: always reports core events
+[  2097.984] (**) Option "Device" "/dev/input/event3"
+[  2097.993] (II) event3  - Microsoft Surface Type Cover Keyboard: is tagged by udev as: Keyboard
+[  2097.994] (II) event3  - Microsoft Surface Type Cover Keyboard: device is a keyboard
+[  2097.996] (II) event3  - Microsoft Surface Type Cover Keyboard: device removed
+[  2098.006] (II) libinput: Microsoft Surface Type Cover Keyboard: needs a virtual subdevice
+[  2098.006] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0005/input/input46/event3"
+[  2098.006] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Keyboard" (type: MOUSE, id 11)
+[  2098.007] (**) Option "AccelerationScheme" "none"
+[  2098.007] (**) Microsoft Surface Type Cover Keyboard: (accel) selected scheme none/0
+[  2098.007] (**) Microsoft Surface Type Cover Keyboard: (accel) acceleration factor: 2.000
+[  2098.007] (**) Microsoft Surface Type Cover Keyboard: (accel) acceleration threshold: 4
+[  2098.008] (**) Microsoft Surface Type Cover Keyboard: Applying InputClass "libinput keyboard catchall"
+[  2098.008] (II) Using input driver 'libinput' for 'Microsoft Surface Type Cover Keyboard'
+[  2098.008] (**) Microsoft Surface Type Cover Keyboard: always reports core events
+[  2098.008] (**) Option "Device" "/dev/input/event3"
+[  2098.008] (II) libinput: Microsoft Surface Type Cover Keyboard: is a virtual subdevice
+[  2098.008] (EE) libinput: Microsoft Surface Type Cover Keyboard: Parent device not available
+[  2098.023] (II) event3  - Microsoft Surface Type Cover Keyboard: is tagged by udev as: Keyboard
+[  2098.024] (II) event3  - Microsoft Surface Type Cover Keyboard: device is a keyboard
+[  2098.025] (II) event3  - Microsoft Surface Type Cover Keyboard: device removed
+[  2098.040] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/0003:045E:07DF.0005/input/input46/event3"
+[  2098.041] (II) XINPUT: Adding extended input device "Microsoft Surface Type Cover Keyboard" (type: KEYBOARD, id 16)

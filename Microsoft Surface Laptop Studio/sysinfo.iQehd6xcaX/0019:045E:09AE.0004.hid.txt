@@ -1,0 +1,63 @@
+Usage Page (Desktop),                   ; Generic desktop controls (01h)
+Usage (Keyboard),                       ; Keyboard (06h, application collection)
+Collection (Application),
+    Report ID (1),
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (8),
+    Usage Page (Keyboard),              ; Keyboard/keypad (07h)
+    Usage Minimum (KB Leftcontrol),     ; Keyboard left control (E0h, dynamic value)
+    Usage Maximum (KB Right GUI),       ; Keyboard right GUI (E7h, dynamic value)
+    Input (Variable),
+    Report Size (8),
+    Report Count (10),
+    Usage Minimum (None),               ; No event (00h, selector)
+    Usage Maximum (KB LANG2),           ; Keyboard LANG2 (91h, selector)
+    Logical Maximum (255),
+    Input,
+    Usage Page (Consumer),              ; Consumer (0Ch)
+    Usage (02C0h),
+    Collection (Logical),
+        Usage Minimum (02C1h),
+        Usage Maximum (02C6h),
+        Report Count (6),
+        Feature (Constant, Variable),
+    End Collection,
+    Usage Page (LED),                   ; LEDs (08h)
+    Usage Minimum (01h),
+    Usage Maximum (03h),
+    Report Size (1),
+    Report Count (3),
+    Logical Maximum (1),
+    Output (Variable),
+    Report Count (5),
+    Output (Constant),
+End Collection,
+Usage Page (Desktop),                   ; Generic desktop controls (01h)
+Usage (Sys Control),                    ; System control (80h, application collection)
+Collection (Application),
+    Report ID (91),
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (3),
+    Usage (97h),
+    Usage (98h),
+    Usage (99h),
+    Input (Variable),
+    Report Count (5),
+    Input (Constant),
+End Collection,
+Usage Page (Consumer),                  ; Consumer (0Ch)
+Usage (Consumer Control),               ; Consumer control (01h, application collection)
+Collection (Application),
+    Report ID (3),
+    Report Count (1),
+    Report Size (16),
+    Logical Minimum (0),
+    Logical Maximum (1023),
+    Usage Minimum (00h),
+    Usage Maximum (03FFh),
+    Input,
+End Collection

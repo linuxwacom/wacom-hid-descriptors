@@ -1,0 +1,30 @@
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keyboard),                   ; Keyboard (06h, application collection)
+Collection (Application),
+    Usage Page (LED),               ; LEDs (08h)
+    Usage Minimum (01h),
+    Usage Maximum (03h),
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (3),
+    Output (Variable),
+    Usage (4Bh),
+    Report Count (1),
+    Output (Variable),
+    Report Count (4),
+    Output (Constant),
+    Usage Page (Keyboard),          ; Keyboard/keypad (07h)
+    Usage Minimum (KB Leftcontrol), ; Keyboard left control (E0h, dynamic value)
+    Usage Maximum (KB Right GUI),   ; Keyboard right GUI (E7h, dynamic value)
+    Report Count (8),
+    Input (Variable),
+    Report Size (8),
+    Report Count (1),
+    Input (Constant),
+    Usage Minimum (None),           ; No event (00h, selector)
+    Usage Maximum (KB LANG2),       ; Keyboard LANG2 (91h, selector)
+    Logical Maximum (255),
+    Report Count (6),
+    Input,
+End Collection

@@ -1,0 +1,28 @@
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Mouse),                      ; Mouse (02h, application collection)
+Collection (Application),
+    Report ID (1),
+    Usage Page (Desktop),           ; Generic desktop controls (01h)
+    Collection (Physical),
+        Report Size (1),
+        Report Count (2),
+        Usage Page (Button),        ; Button (09h)
+        Usage Minimum (01h),
+        Usage Maximum (02h),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Input (Variable),
+        Report Count (6),
+        Input (Constant),
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Report Size (16),
+        Report Count (2),
+        Logical Minimum (-32768),
+        Logical Maximum (32767),
+        Input (Variable, Relative),
+        Report Count (1),
+        Input (Constant),
+    End Collection,
+End Collection

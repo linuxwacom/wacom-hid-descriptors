@@ -1,0 +1,1074 @@
+[     8.334] (--) Log file renamed from "/var/log/Xorg.pid-1991.log" to "/var/log/Xorg.0.log"
+[     8.335] 
+X.Org X Server 1.20.14
+X Protocol Version 11, Revision 0
+[     8.335] Build Operating System:  5.18.11-200.fc36.x86_64 
+[     8.335] Current Operating System: Linux HOSTNAME 5.19.14-302.rog.fc36.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Oct 10 09:01:27 UTC 2022 x86_64
+[     8.335] Kernel command line: BOOT_IMAGE=(hd0,gpt12)/boot/vmlinuz-5.19.14-302.rog.fc36.x86_64 root=UUID=2ebe53c1-1bb9-4a30-bcc4-59451c81f443 ro rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=0 rhgb quiet
+[     8.335] Build Date: 23 July 2022  12:00:00AM
+[     8.335] Build ID: xorg-x11-server 1.20.14-8.fc37 
+[     8.335] Current version of pixman: 0.40.0
+[     8.335] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     8.335] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     8.335] (==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov  6 15:14:03 2022
+[     8.336] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[     8.336] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     8.337] (==) ServerLayout "layout"
+[     8.337] (==) No screen section available. Using defaults.
+[     8.337] (**) |-->Screen "Default Screen Section" (0)
+[     8.338] (**) |   |-->Monitor "<default monitor>"
+[     8.338] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     8.338] (==) Automatically adding devices
+[     8.338] (==) Automatically enabling devices
+[     8.338] (==) Automatically adding GPU devices
+[     8.338] (==) Automatically binding GPU devices
+[     8.338] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     8.338] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[     8.338] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[     8.338] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     8.338] (II) Loader magic: 0x562009cd7a80
+[     8.338] (II) Module ABI versions:
+[     8.338] 	X.Org ANSI C Emulation: 0.4
+[     8.338] 	X.Org Video Driver: 24.1
+[     8.338] 	X.Org XInput driver : 24.1
+[     8.338] 	X.Org Server Extension : 10.0
+[     8.338] (++) using VT number 1
+
+[     8.339] (II) systemd-logind: took control of session /org/freedesktop/login1/session/c1
+[     8.340] (II) xfree86: Adding drm device (/dev/dri/card1)
+[     8.340] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 14 paused 0
+[     8.340] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     8.341] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 15 paused 0
+[     8.344] (--) PCI: (1@0:0:0) 10de:2523:1043:116d rev 161, Mem @ 0xfb000000/16777216, 0x7000000000/4294967296, 0x7100000000/33554432, I/O @ 0x0000f000/128, BIOS @ 0x????????/524288
+[     8.344] (--) PCI:*(9@0:0:0) 1002:1681:1043:116d rev 200, Mem @ 0x7810000000/268435456, 0x7820000000/2097152, 0xfc600000/524288, I/O @ 0x0000e000/256, BIOS @ 0x????????/65536
+[     8.344] (II) LoadModule: "glx"
+[     8.345] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[     8.349] (II) Module glx: vendor="X.Org Foundation"
+[     8.349] 	compiled for 1.20.14, module version = 1.0.0
+[     8.349] 	ABI class: X.Org Server Extension, version 10.0
+[     8.349] (II) Applying OutputClass "AMDgpu" to /dev/dri/card0
+[     8.349] 	loading driver: amdgpu
+[     8.349] (II) Applying OutputClass "nvidia" to /dev/dri/card1
+[     8.349] 	loading driver: nvidia
+[     8.349] (II) Applying OutputClass "nvidia" to /dev/dri/card1
+[     8.349] 	loading driver: nvidia
+[     8.450] (==) Matched amdgpu as autoconfigured driver 0
+[     8.451] (==) Matched ati as autoconfigured driver 1
+[     8.451] (==) Matched nvidia as autoconfigured driver 2
+[     8.451] (==) Matched nouveau as autoconfigured driver 3
+[     8.451] (==) Matched nv as autoconfigured driver 4
+[     8.451] (==) Matched modesetting as autoconfigured driver 5
+[     8.451] (==) Matched fbdev as autoconfigured driver 6
+[     8.451] (==) Matched vesa as autoconfigured driver 7
+[     8.451] (==) Assigned the driver to the xf86ConfigLayout
+[     8.451] (II) LoadModule: "amdgpu"
+[     8.451] (II) Loading /usr/lib64/xorg/modules/drivers/amdgpu_drv.so
+[     8.453] (II) Module amdgpu: vendor="X.Org Foundation"
+[     8.453] 	compiled for 1.20.14, module version = 22.0.0
+[     8.453] 	Module class: X.Org Video Driver
+[     8.453] 	ABI class: X.Org Video Driver, version 24.1
+[     8.453] (II) LoadModule: "ati"
+[     8.453] (II) Loading /usr/lib64/xorg/modules/drivers/ati_drv.so
+[     8.453] (II) Module ati: vendor="X.Org Foundation"
+[     8.453] 	compiled for 1.20.14, module version = 19.1.0
+[     8.454] 	Module class: X.Org Video Driver
+[     8.454] 	ABI class: X.Org Video Driver, version 24.1
+[     8.454] (II) LoadModule: "nvidia"
+[     8.455] (II) Loading /usr/lib64/xorg/modules/drivers/nvidia_drv.so
+[     8.460] (II) Module nvidia: vendor="NVIDIA Corporation"
+[     8.460] 	compiled for 1.6.99.901, module version = 1.0.0
+[     8.460] 	Module class: X.Org Video Driver
+[     8.460] (II) LoadModule: "nouveau"
+[     8.460] (II) Loading /usr/lib64/xorg/modules/drivers/nouveau_drv.so
+[     8.461] (II) Module nouveau: vendor="X.Org Foundation"
+[     8.461] 	compiled for 1.20.14, module version = 1.0.17
+[     8.461] 	Module class: X.Org Video Driver
+[     8.461] 	ABI class: X.Org Video Driver, version 24.1
+[     8.461] (II) LoadModule: "nv"
+[     8.461] (WW) Warning, couldn't open module nv
+[     8.461] (EE) Failed to load module "nv" (module does not exist, 0)
+[     8.461] (II) LoadModule: "modesetting"
+[     8.461] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[     8.462] (II) Module modesetting: vendor="X.Org Foundation"
+[     8.462] 	compiled for 1.20.14, module version = 1.20.14
+[     8.462] 	Module class: X.Org Video Driver
+[     8.462] 	ABI class: X.Org Video Driver, version 24.1
+[     8.462] (II) LoadModule: "fbdev"
+[     8.462] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[     8.462] (II) Module fbdev: vendor="X.Org Foundation"
+[     8.462] 	compiled for 1.20.14, module version = 0.5.0
+[     8.462] 	Module class: X.Org Video Driver
+[     8.462] 	ABI class: X.Org Video Driver, version 24.1
+[     8.462] (II) LoadModule: "vesa"
+[     8.462] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[     8.463] (II) Module vesa: vendor="X.Org Foundation"
+[     8.463] 	compiled for 1.20.14, module version = 2.5.0
+[     8.463] 	Module class: X.Org Video Driver
+[     8.463] 	ABI class: X.Org Video Driver, version 24.1
+[     8.463] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[     8.463] (II) NVIDIA dlloader X Driver  520.56.06  Thu Oct  6 21:29:26 UTC 2022
+[     8.463] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[     8.463] (II) NOUVEAU driver 
+[     8.463] (II) NOUVEAU driver for NVIDIA chipset families :
+[     8.463] 	RIVA TNT            (NV04)
+[     8.463] 	RIVA TNT2           (NV05)
+[     8.463] 	GeForce 256         (NV10)
+[     8.463] 	GeForce 2           (NV11, NV15)
+[     8.463] 	GeForce 4MX         (NV17, NV18)
+[     8.464] 	GeForce 3           (NV20)
+[     8.464] 	GeForce 4Ti         (NV25, NV28)
+[     8.464] 	GeForce FX          (NV3x)
+[     8.464] 	GeForce 6           (NV4x)
+[     8.464] 	GeForce 7           (G7x)
+[     8.464] 	GeForce 8           (G8x)
+[     8.464] 	GeForce 9           (G9x)
+[     8.464] 	GeForce GTX 2xx/3xx (GT2xx)
+[     8.464] 	GeForce GTX 4xx/5xx (GFxxx)
+[     8.464] 	GeForce GTX 6xx/7xx (GKxxx)
+[     8.464] 	GeForce GTX 9xx     (GMxxx)
+[     8.464] 	GeForce GTX 10xx    (GPxxx)
+[     8.464] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     8.464] (II) FBDEV: driver for framebuffer: fbdev
+[     8.464] (II) VESA: driver for VESA chipsets: vesa
+[     8.465] (WW) Falling back to old probe method for modesetting
+[     8.466] (WW) Falling back to old probe method for fbdev
+[     8.466] (II) Loading sub module "fbdevhw"
+[     8.466] (II) LoadModule: "fbdevhw"
+[     8.466] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[     8.466] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     8.466] 	compiled for 1.20.14, module version = 0.0.2
+[     8.466] 	ABI class: X.Org Video Driver, version 24.1
+[     8.466] (II) systemd-logind: releasing fd for 226:1
+[     8.467] (II) Loading sub module "fb"
+[     8.467] (II) LoadModule: "fb"
+[     8.467] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[     8.468] (II) Module fb: vendor="X.Org Foundation"
+[     8.468] 	compiled for 1.20.14, module version = 1.0.0
+[     8.468] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     8.468] (II) Loading sub module "wfb"
+[     8.468] (II) LoadModule: "wfb"
+[     8.468] (II) Loading /usr/lib64/xorg/modules/libwfb.so
+[     8.468] (II) Module wfb: vendor="X.Org Foundation"
+[     8.468] 	compiled for 1.20.14, module version = 1.0.0
+[     8.468] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     8.468] (II) Loading sub module "ramdac"
+[     8.468] (II) LoadModule: "ramdac"
+[     8.468] (II) Module "ramdac" already built-in
+[     9.305] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     9.305] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[     9.306] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[     9.306] (==) AMDGPU(0): Default visual is TrueColor
+[     9.306] (==) AMDGPU(0): RGB weight 888
+[     9.306] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[     9.306] (--) AMDGPU(0): Chipset: "Unknown AMD Radeon GPU" (ChipID = 0x1681)
+[     9.306] (II) Loading sub module "fb"
+[     9.306] (II) LoadModule: "fb"
+[     9.306] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[     9.306] (II) Module fb: vendor="X.Org Foundation"
+[     9.306] 	compiled for 1.20.14, module version = 1.0.0
+[     9.306] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     9.306] (II) Loading sub module "dri2"
+[     9.306] (II) LoadModule: "dri2"
+[     9.306] (II) Module "dri2" already built-in
+[     9.495] (II) Loading sub module "glamoregl"
+[     9.495] (II) LoadModule: "glamoregl"
+[     9.495] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
+[     9.499] (II) Module glamoregl: vendor="X.Org Foundation"
+[     9.499] 	compiled for 1.20.14, module version = 1.0.1
+[     9.499] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    10.892] (II) AMDGPU(0): glamor X acceleration enabled on REMBRANDT (rembrandt, LLVM 15.0.0, DRM 3.47, 5.19.14-302.rog.fc36.x86_64)
+[    10.892] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[    10.892] (==) AMDGPU(0): TearFree property default: auto
+[    10.892] (==) AMDGPU(0): VariableRefresh: disabled
+[    10.892] (==) AMDGPU(0): AsyncFlipSecondaries: disabled
+[    10.892] (II) AMDGPU(0): KMS Pageflipping: enabled
+[    10.893] (II) AMDGPU(0): Output eDP has no monitor section
+[    10.893] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[    10.894] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[    10.894] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[    10.894] (II) AMDGPU(0): Output DisplayPort-2 has no monitor section
+[    10.894] (II) AMDGPU(0): Output DisplayPort-3 has no monitor section
+[    10.894] (II) AMDGPU(0): Output DisplayPort-4 has no monitor section
+[    10.904] (WW) AMDGPU(0): 7 ZaphodHeads crtcs unavailable. Some outputs will stay off.
+[    10.905] (II) AMDGPU(0): EDID for output eDP
+[    10.905] (II) AMDGPU(0): Manufacturer: AUO  Model: c199  Serial#: 0
+[    10.905] (II) AMDGPU(0): Year: 2021  Week: 7
+[    10.905] (II) AMDGPU(0): EDID Version: 1.4
+[    10.905] (II) AMDGPU(0): Digital Display Input
+[    10.905] (II) AMDGPU(0): 8 bits per channel
+[    10.905] (II) AMDGPU(0): Digital interface is DisplayPort
+[    10.905] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 34  vert.: 22
+[    10.905] (II) AMDGPU(0): Gamma: 2.20
+[    10.905] (II) AMDGPU(0): No DPMS capabilities specified
+[    10.905] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 
+[    10.905] (II) AMDGPU(0): First detailed timing is preferred mode
+[    10.905] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    10.905] (II) AMDGPU(0): Display is continuous-frequency
+[    10.905] (II) AMDGPU(0): redX: 0.679 redY: 0.316   greenX: 0.258 greenY: 0.693
+[    10.905] (II) AMDGPU(0): blueX: 0.147 blueY: 0.052   whiteX: 0.313 whiteY: 0.329
+[    10.905] (II) AMDGPU(0): Manufacturer's mask: 0
+[    10.905] (II) AMDGPU(0): Supported detailed timing:
+[    10.905] (II) AMDGPU(0): clock: 282.8 MHz   Image Size:  344 x 215 mm
+[    10.905] (II) AMDGPU(0): h_active: 2560  h_sync: 2608  h_sync_end 2640 h_blank_end 2720 h_border: 0
+[    10.905] (II) AMDGPU(0): v_active: 1600  v_sync: 1610  v_sync_end 1620 v_blanking: 1732 v_border: 0
+[    10.905] (II) AMDGPU(0): Ranges: V min: 48 V max: 165 Hz, H min: 286 H max: 286 kHz, PixClock max 785 MHz
+[    10.905] (II) AMDGPU(0):  AUO
+[    10.905] (II) AMDGPU(0):  B160QAN02.Q
+[    10.905] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[    10.905] (II) AMDGPU(0): EDID (in hex):
+[    10.905] (II) AMDGPU(0): 	00ffffffffffff0006af99c100000000
+[    10.905] (II) AMDGPU(0): 	071f0104a522167803c2d5ad5142b125
+[    10.905] (II) AMDGPU(0): 	0d505400000001010101010101010101
+[    10.905] (II) AMDGPU(0): 	010101010101786e00a0a04084603020
+[    10.905] (II) AMDGPU(0): 	aa0058d710000018000000fd0c30a51f
+[    10.905] (II) AMDGPU(0): 	1f4e010a202020202020000000fe0041
+[    10.905] (II) AMDGPU(0): 	554f0a202020202020202020000000fe
+[    10.905] (II) AMDGPU(0): 	004231363051414e30322e51200a0166
+[    10.905] (II) AMDGPU(0): 	7013790000030114b62f0185ff099f00
+[    10.905] (II) AMDGPU(0): 	2f001f003f0683000900090000000000
+[    10.905] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.905] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.905] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.905] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.905] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.905] (II) AMDGPU(0): 	00000000000000000000000000002290
+[    10.905] (II) AMDGPU(0): Printing probed modes for output eDP
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x165.0  777.51  2560 2608 2640 2720  1600 1610 1620 1732 -hsync -vsync (285.8 kHz eP)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x60.0  282.80  2560 2608 2640 2720  1600 1610 1620 1732 -hsync -vsync (104.0 kHz eP)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x120.0  777.51  2560 2608 2640 2720  1600 2260 2270 2382 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x96.0  777.51  2560 2608 2640 2720  1600 2855 2865 2977 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x72.0  777.51  2560 2608 2640 2720  1600 3848 3858 3970 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x60.0  777.51  2560 2608 2640 2720  1600 4642 4652 4764 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x50.0  777.51  2560 2608 2640 2720  1600 5594 5604 5716 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "2560x1600"x48.0  777.51  2560 2608 2640 2720  1600 5833 5843 5955 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1920x1200"x165.0  777.51  1920 2608 2640 2720  1200 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1920x1080"x165.0  777.51  1920 2608 2640 2720  1080 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1600x1200"x165.0  777.51  1600 2608 2640 2720  1200 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1680x1050"x165.0  777.51  1680 2608 2640 2720  1050 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1280x1024"x165.0  777.51  1280 2608 2640 2720  1024 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1440x900"x165.0  777.51  1440 2608 2640 2720  900 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1280x800"x165.0  777.51  1280 2608 2640 2720  800 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1280x720"x165.0  777.51  1280 2608 2640 2720  720 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "1024x768"x165.0  777.51  1024 2608 2640 2720  768 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "800x600"x165.0  777.51  800 2608 2640 2720  600 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): Modeline "640x480"x165.0  777.51  640 2608 2640 2720  480 1610 1620 1732 -hsync -vsync (285.8 kHz e)
+[    10.905] (II) AMDGPU(0): EDID for output HDMI-A-0
+[    10.907] (II) AMDGPU(0): EDID for output DisplayPort-0
+[    10.907] (II) AMDGPU(0): Manufacturer: GBT  Model: 2800  Serial#: 16843009
+[    10.907] (II) AMDGPU(0): Year: 2021  Week: 49
+[    10.907] (II) AMDGPU(0): EDID Version: 1.4
+[    10.907] (II) AMDGPU(0): Digital Display Input
+[    10.907] (II) AMDGPU(0): 12 bits per channel
+[    10.907] (II) AMDGPU(0): Digital interface is DisplayPort
+[    10.907] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 63  vert.: 36
+[    10.907] (II) AMDGPU(0): Gamma: 2.20
+[    10.907] (II) AMDGPU(0): DPMS capabilities: StandBy Suspend Off
+[    10.907] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+[    10.907] (II) AMDGPU(0): First detailed timing is preferred mode
+[    10.907] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    10.907] (II) AMDGPU(0): Display is continuous-frequency
+[    10.907] (II) AMDGPU(0): redX: 0.670 redY: 0.312   greenX: 0.278 greenY: 0.660
+[    10.907] (II) AMDGPU(0): blueX: 0.155 blueY: 0.064   whiteX: 0.313 whiteY: 0.329
+[    10.907] (II) AMDGPU(0): Supported established timings:
+[    10.907] (II) AMDGPU(0): 640x480@60Hz
+[    10.907] (II) AMDGPU(0): 640x480@75Hz
+[    10.907] (II) AMDGPU(0): 800x600@60Hz
+[    10.907] (II) AMDGPU(0): 800x600@75Hz
+[    10.907] (II) AMDGPU(0): 1024x768@60Hz
+[    10.907] (II) AMDGPU(0): 1024x768@75Hz
+[    10.907] (II) AMDGPU(0): Manufacturer's mask: 0
+[    10.907] (II) AMDGPU(0): Supported standard timings:
+[    10.907] (II) AMDGPU(0): #0: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[    10.907] (II) AMDGPU(0): #4: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[    10.907] (II) AMDGPU(0): #5: hsize: 1440  vsize 900  refresh: 60  vid: 149
+[    10.907] (II) AMDGPU(0): #6: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+[    10.907] (II) AMDGPU(0): Supported detailed timing:
+[    10.907] (II) AMDGPU(0): clock: 567.0 MHz   Image Size:  697 x 392 mm
+[    10.907] (II) AMDGPU(0): h_active: 3840  h_sync: 3948  h_sync_end 4020 h_blank_end 4200 h_border: 0
+[    10.907] (II) AMDGPU(0): v_active: 2160  v_sync: 2168  v_sync_end 2178 v_blanking: 2250 v_border: 0
+[    10.907] (II) AMDGPU(0): Ranges: V min: 48 V max: 144 Hz, H min: 246 H max: 246 kHz, PixClock max 1345 MHz
+[    10.907] (II) AMDGPU(0): Monitor name: M28U
+[    10.907] (II) AMDGPU(0): Serial No: 21490B004712
+[    10.907] (II) AMDGPU(0): Supported detailed timing:
+[    10.907] (II) AMDGPU(0): clock: 235.4 MHz   Image Size:  697 x 392 mm
+[    10.907] (II) AMDGPU(0): h_active: 2560  h_sync: 2583  h_sync_end 2615 h_blank_end 2670 h_border: 0
+[    10.907] (II) AMDGPU(0): v_active: 1440  v_sync: 1457  v_sync_end 1465 v_blanking: 1471 v_border: 0
+[    10.907] (II) AMDGPU(0): Supported detailed timing:
+[    10.907] (II) AMDGPU(0): clock: 486.3 MHz   Image Size:  697 x 392 mm
+[    10.907] (II) AMDGPU(0): h_active: 2560  h_sync: 2578  h_sync_end 2610 h_blank_end 2660 h_border: 0
+[    10.907] (II) AMDGPU(0): v_active: 1440  v_sync: 1503  v_sync_end 1511 v_blanking: 1525 v_border: 0
+[    10.907] (II) AMDGPU(0): Supported detailed timing:
+[    10.907] (II) AMDGPU(0): clock: 326.6 MHz   Image Size:  697 x 392 mm
+[    10.907] (II) AMDGPU(0): h_active: 1920  h_sync: 1948  h_sync_end 1980 h_blank_end 2040 h_border: 0
+[    10.907] (II) AMDGPU(0): v_active: 1080  v_sync: 1099  v_sync_end 1107 v_blanking: 1113 v_border: 0
+[    10.907] (II) AMDGPU(0): Number of EDID sections to follow: 2
+[    10.907] (II) AMDGPU(0): EDID (in hex):
+[    10.907] (II) AMDGPU(0): 	00ffffffffffff001c54002801010101
+[    10.907] (II) AMDGPU(0): 	311f0104c53f2478fbb4e5ab4f47a927
+[    10.907] (II) AMDGPU(0): 	105054254a00d1c00101010101018180
+[    10.907] (II) AMDGPU(0): 	9500b30001017cdd0068f1705a806c48
+[    10.907] (II) AMDGPU(0): 	8a00b9882100001e000000fd003090f6
+[    10.907] (II) AMDGPU(0): 	f686010a202020202020000000fc004d
+[    10.907] (II) AMDGPU(0): 	3238550a2020202020202020000000ff
+[    10.907] (II) AMDGPU(0): 	003231343930423030343731320a028a
+[    10.907] (II) AMDGPU(0): 	02032f714903042f103f61765d202309
+[    10.907] (II) AMDGPU(0): 	1707830100006d1a0000020b3090000f
+[    10.907] (II) AMDGPU(0): 	661f661fe305c001e6060d0166661ff6
+[    10.907] (II) AMDGPU(0): 	5b006ea0a01f5017201804b988210000
+[    10.907] (II) AMDGPU(0): 	1ef5bd0064a0a055501220f80cb98821
+[    10.907] (II) AMDGPU(0): 	00001e967f8078703821401c203804b9
+[    10.907] (II) AMDGPU(0): 	882100001e0000000000000000000000
+[    10.907] (II) AMDGPU(0): 	00000000000000000000000000000070
+[    10.907] (II) AMDGPU(0): 	70123f000003013c5fe80004ff097700
+[    10.907] (II) AMDGPU(0): 	1b801f009f056600088007001ff00104
+[    10.907] (II) AMDGPU(0): 	ff0e4f0007801f006f08590045800700
+[    10.907] (II) AMDGPU(0): 	ceac0104ff0e9f002f801f006f087e00
+[    10.907] (II) AMDGPU(0): 	028004002c0000000000000000000000
+[    10.907] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.907] (II) AMDGPU(0): 	00000000000000000000000000000000
+[    10.907] (II) AMDGPU(0): 	00000000000000000000000000002c64
+[    10.907] (II) AMDGPU(0): Printing probed modes for output DisplayPort-0
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x60.0  567.00  3840 3948 4020 4200  2160 2168 2178 2250 +hsync +vsync (135.0 kHz eP)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x144.0  1270.08  3840 3848 3880 3920  2160 2230 2238 2250 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x120.0  1270.08  3840 3848 3880 3920  2160 2680 2688 2700 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x96.0  1270.08  3840 3848 3880 3920  2160 3355 3363 3375 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x72.0  1270.08  3840 3848 3880 3920  2160 4480 4488 4500 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x60.0  1270.08  3840 3848 3880 3920  2160 5380 5388 5400 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x50.0  1270.08  3840 3848 3880 3920  2160 6460 6468 6480 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x48.0  1270.08  3840 3848 3880 3920  2160 6730 6738 6750 +hsync +vsync (324.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x120.0  1188.00  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (270.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x119.9  1186.81  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (269.7 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x120.0  1097.75  3840 3888 3920 4000  2160 2163 2168 2287 +hsync +vsync (274.4 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x60.0  594.00  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (135.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x59.9  593.41  3840 4016 4104 4400  2160 2168 2178 2250 +hsync +vsync (134.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x24.0  297.00  3840 5116 5204 5500  2160 2168 2178 2250 +hsync +vsync (54.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "3840x2160"x24.0  296.70  3840 5116 5204 5500  2160 2168 2178 2250 +hsync +vsync (53.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "2560x1440"x143.9  594.88  2560 2588 2620 2680  1440 1449 1457 1543 +hsync +vsync (222.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "2560x1440"x119.9  486.29  2560 2578 2610 2660  1440 1503 1511 1525 +hsync +vsync (182.8 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "2560x1440"x59.9  235.42  2560 2583 2615 2670  1440 1457 1465 1471 +hsync +vsync (88.2 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1200"x60.0  567.00  1920 3948 4020 4200  1200 2168 2178 2250 +hsync +vsync (135.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x143.9  326.62  1920 1948 1980 2040  1080 1099 1107 1113 +hsync +vsync (160.1 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x120.0  297.00  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (135.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x119.9  296.70  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (134.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 -hsync -vsync (67.5 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1920x1080"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1600x1200"x60.0  567.00  1600 3948 4020 4200  1200 2168 2178 2250 +hsync +vsync (135.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1280x800"x60.0  567.00  1280 3948 4020 4200  800 2168 2178 2250 +hsync +vsync (135.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1280x720"x120.0  148.50  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (90.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1280x720"x119.9  148.35  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (89.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    10.907] (II) AMDGPU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    10.907] (II) AMDGPU(0): EDID for output DisplayPort-1
+[    10.907] (II) AMDGPU(0): EDID for output DisplayPort-2
+[    10.907] (II) AMDGPU(0): EDID for output DisplayPort-3
+[    10.907] (II) AMDGPU(0): EDID for output DisplayPort-4
+[    10.907] (II) AMDGPU(0): Output eDP connected
+[    10.907] (II) AMDGPU(0): Output HDMI-A-0 disconnected
+[    10.907] (II) AMDGPU(0): Output DisplayPort-0 connected
+[    10.907] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[    10.907] (II) AMDGPU(0): Output DisplayPort-2 disconnected
+[    10.907] (II) AMDGPU(0): Output DisplayPort-3 disconnected
+[    10.907] (II) AMDGPU(0): Output DisplayPort-4 disconnected
+[    10.907] (II) AMDGPU(0): Using spanning desktop for initial modes
+[    10.907] (II) AMDGPU(0): Output eDP using initial mode 2560x1600 +0+0
+[    10.907] (II) AMDGPU(0): Output DisplayPort-0 using initial mode 3840x2160 +2560+0
+[    10.907] (II) AMDGPU(0): mem size init: gart size :4cd779000 vram size: s:1b9ca000 visible:1b9ca000
+[    10.907] (==) AMDGPU(0): DPI set to (96, 96)
+[    10.907] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    10.907] (II) Loading sub module "ramdac"
+[    10.907] (II) LoadModule: "ramdac"
+[    10.908] (II) Module "ramdac" already built-in
+[    10.908] (==) NVIDIA(G0): Depth 24, (==) framebuffer bpp 32
+[    10.908] (==) NVIDIA(G0): RGB weight 888
+[    10.908] (==) NVIDIA(G0): Default visual is TrueColor
+[    10.908] (==) NVIDIA(G0): Using gamma correction (1.0, 1.0, 1.0)
+[    10.908] (**) Option "AllowNVIDIAGpuScreens"
+[    10.908] (II) Applying OutputClass "nvidia" options to /dev/dri/card1
+[    10.908] (II) Applying OutputClass "nvidia" options to /dev/dri/card1
+[    10.908] (**) NVIDIA(G0): Option "SLI" "Auto"
+[    10.908] (**) NVIDIA(G0): Option "BaseMosaic" "on"
+[    10.908] (**) NVIDIA(G0): Option "AllowEmptyInitialConfiguration" "true"
+[    10.908] (**) NVIDIA(G0): Option "AllowExternalGpus" "true"
+[    10.908] (WW) NVIDIA(G0): Invalid SLI option: 'Auto'; using single GPU rendering.
+[    10.908] (WW) NVIDIA(G0): Base Mosaic is available only on screen 0.  Disabling Base
+[    10.908] (WW) NVIDIA(G0):     Mosaic.
+[    10.908] (**) NVIDIA(G0): Enabling 2D acceleration
+[    10.908] (II) Loading sub module "glxserver_nvidia"
+[    10.908] (II) LoadModule: "glxserver_nvidia"
+[    10.908] (II) Loading /usr/lib64/xorg/modules/extensions/libglxserver_nvidia.so
+[    10.946] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    10.946] 	compiled for 1.6.99.901, module version = 1.0.0
+[    10.946] 	Module class: X.Org Server Extension
+[    10.946] (II) NVIDIA GLX Module  520.56.06  Thu Oct  6 21:26:26 UTC 2022
+[    10.948] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    10.969] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[    10.969] (--) NVIDIA(0):     DFP-0
+[    10.969] (--) NVIDIA(0):     DFP-1
+[    10.969] (--) NVIDIA(0):     DFP-2
+[    10.969] (--) NVIDIA(0):     DFP-3
+[    10.970] (II) NVIDIA(G0): NVIDIA GPU NVIDIA GeForce RTX 3050 Ti Laptop GPU (GA106-A) at
+[    10.970] (II) NVIDIA(G0):     PCI:1:0:0 (GPU-0)
+[    10.970] (--) NVIDIA(G0): Memory: 4194304 kBytes
+[    10.970] (--) NVIDIA(G0): VideoBIOS: 94.06.2b.00.60
+[    10.970] (II) NVIDIA(G0): Detected PCI Express Link width: 16X
+[    10.970] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    10.970] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    10.970] (--) NVIDIA(GPU-0): DFP-0: 2670.0 MHz maximum pixel clock
+[    10.970] (--) NVIDIA(GPU-0): 
+[    10.970] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    10.970] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    10.970] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    10.970] (--) NVIDIA(GPU-0): 
+[    10.970] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[    10.970] (--) NVIDIA(GPU-0): DFP-2: Internal DisplayPort
+[    10.970] (--) NVIDIA(GPU-0): DFP-2: 2670.0 MHz maximum pixel clock
+[    10.970] (--) NVIDIA(GPU-0): 
+[    10.970] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    10.970] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    10.970] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    10.970] (--) NVIDIA(GPU-0): 
+[    10.971] (II) NVIDIA(G0): Validated MetaModes:
+[    10.971] (II) NVIDIA(G0):     "NULL"
+[    10.971] (II) NVIDIA(G0): Virtual screen size determined to be 640 x 480
+[    10.971] (WW) NVIDIA(G0): Unable to get display device for DPI computation.
+[    10.971] (==) NVIDIA(G0): DPI set to (75, 75); computed from built-in default
+[    10.971] (II) UnloadModule: "nouveau"
+[    10.971] (II) Unloading nouveau
+[    10.971] (II) UnloadModule: "modesetting"
+[    10.971] (II) Unloading modesetting
+[    10.971] (II) UnloadModule: "fbdev"
+[    10.971] (II) Unloading fbdev
+[    10.971] (II) UnloadSubModule: "fbdevhw"
+[    10.971] (II) Unloading fbdevhw
+[    10.971] (II) UnloadModule: "vesa"
+[    10.971] (II) Unloading vesa
+[    10.972] (II) AMDGPU(0): [DRI2] Setup complete
+[    10.972] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[    10.972] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[    11.042] (II) AMDGPU(0): Front buffer pitch: 25600 bytes
+[    11.042] (II) AMDGPU(0): SYNC extension fences enabled
+[    11.042] (II) AMDGPU(0): Present extension enabled
+[    11.042] (==) AMDGPU(0): DRI3 enabled
+[    11.042] (==) AMDGPU(0): Backing store enabled
+[    11.042] (II) AMDGPU(0): Direct rendering enabled
+[    11.070] (II) AMDGPU(0): Use GLAMOR acceleration.
+[    11.070] (II) AMDGPU(0): Acceleration enabled
+[    11.070] (==) AMDGPU(0): DPMS enabled
+[    11.070] (==) AMDGPU(0): Silken mouse enabled
+[    11.071] (II) AMDGPU(0): Set up textured video (glamor)
+[    11.089] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[    11.089] (II) NVIDIA:     access.
+[    11.098] (II) NVIDIA(G0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[    11.098] (II) NVIDIA(G0):     may not be running or the "AcpidSocketPath" X
+[    11.098] (II) NVIDIA(G0):     configuration option may not be set correctly.  When the
+[    11.098] (II) NVIDIA(G0):     ACPI event daemon is available, the NVIDIA X driver will
+[    11.098] (II) NVIDIA(G0):     try to use it to receive ACPI event notifications.  For
+[    11.098] (II) NVIDIA(G0):     details, please see the "ConnectToAcpid" and
+[    11.098] (II) NVIDIA(G0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[    11.098] (II) NVIDIA(G0):     Config Options in the README.
+[    11.122] (II) NVIDIA(G0): Setting mode "NULL"
+[    11.130] (==) NVIDIA(G0): Disabling shared memory pixmaps
+[    11.130] (==) NVIDIA(G0): Backing store enabled
+[    11.130] (==) NVIDIA(G0): Silken mouse enabled
+[    11.130] (==) NVIDIA(G0): DPMS enabled
+[    11.130] (II) Loading sub module "dri2"
+[    11.130] (II) LoadModule: "dri2"
+[    11.130] (II) Module "dri2" already built-in
+[    11.130] (II) NVIDIA(G0): [DRI2] Setup complete
+[    11.130] (II) NVIDIA(G0): [DRI2]   VDPAU driver: nvidia
+[    11.130] (II) Initializing extension Generic Event Extension
+[    11.130] (II) Initializing extension SHAPE
+[    11.130] (II) Initializing extension MIT-SHM
+[    11.130] (II) Initializing extension XInputExtension
+[    11.130] (II) Initializing extension XTEST
+[    11.131] (II) Initializing extension BIG-REQUESTS
+[    11.131] (II) Initializing extension SYNC
+[    11.131] (II) Initializing extension XKEYBOARD
+[    11.131] (II) Initializing extension XC-MISC
+[    11.131] (II) Initializing extension SECURITY
+[    11.131] (II) Initializing extension XFIXES
+[    11.131] (II) Initializing extension RENDER
+[    11.131] (II) Initializing extension RANDR
+[    11.131] (II) Initializing extension COMPOSITE
+[    11.132] (II) Initializing extension DAMAGE
+[    11.132] (II) Initializing extension MIT-SCREEN-SAVER
+[    11.132] (II) Initializing extension DOUBLE-BUFFER
+[    11.132] (II) Initializing extension RECORD
+[    11.132] (II) Initializing extension DPMS
+[    11.132] (II) Initializing extension Present
+[    11.132] (II) Initializing extension DRI3
+[    11.132] (II) Initializing extension X-Resource
+[    11.132] (II) Initializing extension XVideo
+[    11.132] (II) Initializing extension XVideo-MotionCompensation
+[    11.132] (II) Initializing extension SELinux
+[    11.132] (II) SELinux: Disabled by boolean
+[    11.132] (II) Initializing extension GLX
+[    11.133] (II) Initializing extension GLX
+[    11.133] (II) Indirect GLX disabled.
+[    11.138] (II) AIGLX: Loaded and initialized radeonsi
+[    11.138] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    11.138] (II) Initializing extension XFree86-VidModeExtension
+[    11.138] (II) Initializing extension XFree86-DGA
+[    11.138] (II) Initializing extension DRI2
+[    11.138] (II) Initializing extension NV-GLX
+[    11.138] (II) Initializing extension NV-CONTROL
+[    11.139] (II) AMDGPU(0): Setting screen physical size to 1693 x 571
+[    11.220] (II) config/udev: Adding input device Video Bus (/dev/input/event14)
+[    11.220] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    11.221] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    11.221] (**) Video Bus: Applying InputClass "system-keyboard"
+[    11.221] (II) LoadModule: "libinput"
+[    11.221] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[    11.224] (II) Module libinput: vendor="X.Org Foundation"
+[    11.224] 	compiled for 1.20.14, module version = 1.2.1
+[    11.224] 	Module class: X.Org XInput Driver
+[    11.224] 	ABI class: X.Org XInput driver, version 24.1
+[    11.224] (II) Using input driver 'libinput' for 'Video Bus'
+[    11.226] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 48 paused 0
+[    11.226] (**) Video Bus: always reports core events
+[    11.226] (**) Option "Device" "/dev/input/event14"
+[    11.230] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[    11.230] (II) event14 - Video Bus: device is a keyboard
+[    11.231] (II) event14 - Video Bus: device removed
+[    11.231] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:25/LNXVIDEO:00/input/input14/event14"
+[    11.231] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[    11.231] (**) Option "xkb_layout" "us"
+[    11.231] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[    11.231] (II) event14 - Video Bus: device is a keyboard
+[    11.231] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    11.231] (II) No input driver specified, ignoring this device.
+[    11.231] (II) This device may have been added with another device file.
+[    11.232] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    11.232] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    11.232] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    11.232] (**) Power Button: Applying InputClass "system-keyboard"
+[    11.232] (II) Using input driver 'libinput' for 'Power Button'
+[    11.232] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 51 paused 0
+[    11.232] (**) Power Button: always reports core events
+[    11.232] (**) Option "Device" "/dev/input/event1"
+[    11.233] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    11.233] (II) event1  - Power Button: device is a keyboard
+[    11.233] (II) event1  - Power Button: device removed
+[    11.233] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    11.233] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    11.233] (**) Option "xkb_layout" "us"
+[    11.233] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    11.233] (II) event1  - Power Button: device is a keyboard
+[    11.234] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    11.234] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[    11.234] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    11.234] (**) Sleep Button: Applying InputClass "system-keyboard"
+[    11.234] (II) Using input driver 'libinput' for 'Sleep Button'
+[    11.234] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 52 paused 0
+[    11.234] (**) Sleep Button: always reports core events
+[    11.234] (**) Option "Device" "/dev/input/event2"
+[    11.235] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    11.235] (II) event2  - Sleep Button: device is a keyboard
+[    11.235] (II) event2  - Sleep Button: device removed
+[    11.235] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[    11.235] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[    11.235] (**) Option "xkb_layout" "us"
+[    11.235] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    11.235] (II) event2  - Sleep Button: device is a keyboard
+[    11.235] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event25)
+[    11.235] (II) No input driver specified, ignoring this device.
+[    11.235] (II) This device may have been added with another device file.
+[    11.236] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event26)
+[    11.236] (II) No input driver specified, ignoring this device.
+[    11.236] (II) This device may have been added with another device file.
+[    11.236] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event27)
+[    11.236] (II) No input driver specified, ignoring this device.
+[    11.236] (II) This device may have been added with another device file.
+[    11.236] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event28)
+[    11.236] (II) No input driver specified, ignoring this device.
+[    11.236] (II) This device may have been added with another device file.
+[    11.236] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event29)
+[    11.236] (II) No input driver specified, ignoring this device.
+[    11.236] (II) This device may have been added with another device file.
+[    11.236] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event24)
+[    11.236] (II) No input driver specified, ignoring this device.
+[    11.236] (II) This device may have been added with another device file.
+[    11.237] (II) config/udev: Adding input device Asus Keyboard (/dev/input/event4)
+[    11.237] (**) Asus Keyboard: Applying InputClass "evdev keyboard catchall"
+[    11.237] (**) Asus Keyboard: Applying InputClass "libinput keyboard catchall"
+[    11.237] (**) Asus Keyboard: Applying InputClass "system-keyboard"
+[    11.237] (II) Using input driver 'libinput' for 'Asus Keyboard'
+[    11.237] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 53 paused 0
+[    11.237] (**) Asus Keyboard: always reports core events
+[    11.237] (**) Option "Device" "/dev/input/event4"
+[    11.238] (II) event4  - Asus Keyboard: is tagged by udev as: Keyboard
+[    11.238] (II) event4  - Asus Keyboard: device is a keyboard
+[    11.238] (II) event4  - Asus Keyboard: device removed
+[    11.238] (II) libinput: Asus Keyboard: needs a virtual subdevice
+[    11.238] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb1/1-3/1-3:1.0/0003:0B05:19B6.0002/input/input28/event4"
+[    11.238] (II) XINPUT: Adding extended input device "Asus Keyboard" (type: MOUSE, id 9)
+[    11.238] (**) Option "AccelerationScheme" "none"
+[    11.238] (**) Asus Keyboard: (accel) selected scheme none/0
+[    11.238] (**) Asus Keyboard: (accel) acceleration factor: 2.000
+[    11.238] (**) Asus Keyboard: (accel) acceleration threshold: 4
+[    11.239] (II) event4  - Asus Keyboard: is tagged by udev as: Keyboard
+[    11.239] (II) event4  - Asus Keyboard: device is a keyboard
+[    11.239] (II) config/udev: Adding input device Asus Keyboard (/dev/input/event5)
+[    11.239] (**) Asus Keyboard: Applying InputClass "evdev keyboard catchall"
+[    11.239] (**) Asus Keyboard: Applying InputClass "libinput keyboard catchall"
+[    11.239] (**) Asus Keyboard: Applying InputClass "system-keyboard"
+[    11.239] (II) Using input driver 'libinput' for 'Asus Keyboard'
+[    11.240] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 54 paused 0
+[    11.240] (**) Asus Keyboard: always reports core events
+[    11.240] (**) Option "Device" "/dev/input/event5"
+[    11.240] (II) event5  - Asus Keyboard: is tagged by udev as: Keyboard
+[    11.240] (II) event5  - Asus Keyboard: device is a keyboard
+[    11.240] (II) event5  - Asus Keyboard: device removed
+[    11.240] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb1/1-3/1-3:1.2/0003:0B05:19B6.0006/input/input29/event5"
+[    11.240] (II) XINPUT: Adding extended input device "Asus Keyboard" (type: KEYBOARD, id 10)
+[    11.240] (**) Option "xkb_layout" "us"
+[    11.241] (II) event5  - Asus Keyboard: is tagged by udev as: Keyboard
+[    11.241] (II) event5  - Asus Keyboard: device is a keyboard
+[    11.242] (II) config/udev: Adding input device Asus Keyboard (/dev/input/event6)
+[    11.242] (**) Asus Keyboard: Applying InputClass "evdev pointer catchall"
+[    11.242] (**) Asus Keyboard: Applying InputClass "libinput pointer catchall"
+[    11.242] (II) Using input driver 'libinput' for 'Asus Keyboard'
+[    11.295] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 55 paused 0
+[    11.295] (**) Asus Keyboard: always reports core events
+[    11.295] (**) Option "Device" "/dev/input/event6"
+[    11.297] (II) event6  - Asus Keyboard: is tagged by udev as: Mouse
+[    11.297] (II) event6  - Asus Keyboard: device is a pointer
+[    11.297] (II) event6  - Asus Keyboard: device removed
+[    11.297] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb1/1-3/1-3:1.3/0003:0B05:19B6.0007/input/input30/event6"
+[    11.297] (II) XINPUT: Adding extended input device "Asus Keyboard" (type: MOUSE, id 11)
+[    11.297] (**) Option "AccelerationScheme" "none"
+[    11.297] (**) Asus Keyboard: (accel) selected scheme none/0
+[    11.297] (**) Asus Keyboard: (accel) acceleration factor: 2.000
+[    11.297] (**) Asus Keyboard: (accel) acceleration threshold: 4
+[    11.298] (II) event6  - Asus Keyboard: is tagged by udev as: Mouse
+[    11.298] (II) event6  - Asus Keyboard: device is a pointer
+[    11.299] (II) config/udev: Adding input device Asus Keyboard (/dev/input/mouse1)
+[    11.299] (II) No input driver specified, ignoring this device.
+[    11.299] (II) This device may have been added with another device file.
+[    11.300] (II) config/udev: Adding input device Dell Computer Corp Dell Universal Receiver (/dev/input/event3)
+[    11.300] (**) Dell Computer Corp Dell Universal Receiver: Applying InputClass "evdev keyboard catchall"
+[    11.300] (**) Dell Computer Corp Dell Universal Receiver: Applying InputClass "libinput keyboard catchall"
+[    11.300] (**) Dell Computer Corp Dell Universal Receiver: Applying InputClass "system-keyboard"
+[    11.300] (II) Using input driver 'libinput' for 'Dell Computer Corp Dell Universal Receiver'
+[    11.301] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 56 paused 0
+[    11.301] (**) Dell Computer Corp Dell Universal Receiver: always reports core events
+[    11.301] (**) Option "Device" "/dev/input/event3"
+[    11.303] (II) event3  - Dell Computer Corp Dell Universal Receiver: is tagged by udev as: Keyboard
+[    11.303] (II) event3  - Dell Computer Corp Dell Universal Receiver: device is a keyboard
+[    11.303] (II) event3  - Dell Computer Corp Dell Universal Receiver: device removed
+[    11.303] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.4/usb3/3-1/3-1:1.0/0003:413C:301C.0001/input/input3/event3"
+[    11.303] (II) XINPUT: Adding extended input device "Dell Computer Corp Dell Universal Receiver" (type: KEYBOARD, id 12)
+[    11.303] (**) Option "xkb_layout" "us"
+[    11.304] (II) event3  - Dell Computer Corp Dell Universal Receiver: is tagged by udev as: Keyboard
+[    11.304] (II) event3  - Dell Computer Corp Dell Universal Receiver: device is a keyboard
+[    11.305] (II) config/udev: Adding input device Dell Computer Corp Dell Universal Receiver Consumer Control (/dev/input/event8)
+[    11.305] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    11.305] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    11.305] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: Applying InputClass "system-keyboard"
+[    11.305] (II) Using input driver 'libinput' for 'Dell Computer Corp Dell Universal Receiver Consumer Control'
+[    11.306] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 57 paused 0
+[    11.306] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: always reports core events
+[    11.306] (**) Option "Device" "/dev/input/event8"
+[    11.307] (II) event8  - Dell Computer Corp Dell Universal Receiver Consumer Control: is tagged by udev as: Keyboard
+[    11.307] (II) event8  - Dell Computer Corp Dell Universal Receiver Consumer Control: device is a keyboard
+[    11.308] (II) event8  - Dell Computer Corp Dell Universal Receiver Consumer Control: device removed
+[    11.308] (II) libinput: Dell Computer Corp Dell Universal Receiver Consumer Control: needs a virtual subdevice
+[    11.308] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.4/usb3/3-1/3-1:1.1/0003:413C:301C.0003/input/input10/event8"
+[    11.308] (II) XINPUT: Adding extended input device "Dell Computer Corp Dell Universal Receiver Consumer Control" (type: MOUSE, id 13)
+[    11.308] (**) Option "AccelerationScheme" "none"
+[    11.308] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: (accel) selected scheme none/0
+[    11.308] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: (accel) acceleration factor: 2.000
+[    11.308] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: (accel) acceleration threshold: 4
+[    11.309] (II) event8  - Dell Computer Corp Dell Universal Receiver Consumer Control: is tagged by udev as: Keyboard
+[    11.309] (II) event8  - Dell Computer Corp Dell Universal Receiver Consumer Control: device is a keyboard
+[    11.310] (II) config/udev: Adding input device Dell Computer Corp Dell Universal Receiver System Control (/dev/input/event11)
+[    11.310] (**) Dell Computer Corp Dell Universal Receiver System Control: Applying InputClass "evdev keyboard catchall"
+[    11.310] (**) Dell Computer Corp Dell Universal Receiver System Control: Applying InputClass "libinput keyboard catchall"
+[    11.310] (**) Dell Computer Corp Dell Universal Receiver System Control: Applying InputClass "system-keyboard"
+[    11.310] (II) Using input driver 'libinput' for 'Dell Computer Corp Dell Universal Receiver System Control'
+[    11.310] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 58 paused 0
+[    11.311] (**) Dell Computer Corp Dell Universal Receiver System Control: always reports core events
+[    11.311] (**) Option "Device" "/dev/input/event11"
+[    11.312] (II) event11 - Dell Computer Corp Dell Universal Receiver System Control: is tagged by udev as: Keyboard
+[    11.312] (II) event11 - Dell Computer Corp Dell Universal Receiver System Control: device is a keyboard
+[    11.312] (II) event11 - Dell Computer Corp Dell Universal Receiver System Control: device removed
+[    11.312] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.4/usb3/3-1/3-1:1.1/0003:413C:301C.0003/input/input11/event11"
+[    11.312] (II) XINPUT: Adding extended input device "Dell Computer Corp Dell Universal Receiver System Control" (type: KEYBOARD, id 14)
+[    11.312] (**) Option "xkb_layout" "us"
+[    11.313] (II) event11 - Dell Computer Corp Dell Universal Receiver System Control: is tagged by udev as: Keyboard
+[    11.313] (II) event11 - Dell Computer Corp Dell Universal Receiver System Control: device is a keyboard
+[    11.314] (II) config/udev: Adding input device Dell Computer Corp Dell Universal Receiver Mouse (/dev/input/event7)
+[    11.314] (**) Dell Computer Corp Dell Universal Receiver Mouse: Applying InputClass "evdev pointer catchall"
+[    11.314] (**) Dell Computer Corp Dell Universal Receiver Mouse: Applying InputClass "libinput pointer catchall"
+[    11.314] (II) Using input driver 'libinput' for 'Dell Computer Corp Dell Universal Receiver Mouse'
+[    11.315] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 59 paused 0
+[    11.315] (**) Dell Computer Corp Dell Universal Receiver Mouse: always reports core events
+[    11.315] (**) Option "Device" "/dev/input/event7"
+[    11.316] (II) event7  - Dell Computer Corp Dell Universal Receiver Mouse: is tagged by udev as: Mouse
+[    11.316] (II) event7  - Dell Computer Corp Dell Universal Receiver Mouse: device is a pointer
+[    11.316] (II) event7  - Dell Computer Corp Dell Universal Receiver Mouse: device removed
+[    11.316] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.4/usb3/3-1/3-1:1.1/0003:413C:301C.0003/input/input9/event7"
+[    11.316] (II) XINPUT: Adding extended input device "Dell Computer Corp Dell Universal Receiver Mouse" (type: MOUSE, id 15)
+[    11.316] (**) Option "AccelerationScheme" "none"
+[    11.316] (**) Dell Computer Corp Dell Universal Receiver Mouse: (accel) selected scheme none/0
+[    11.316] (**) Dell Computer Corp Dell Universal Receiver Mouse: (accel) acceleration factor: 2.000
+[    11.316] (**) Dell Computer Corp Dell Universal Receiver Mouse: (accel) acceleration threshold: 4
+[    11.317] (II) event7  - Dell Computer Corp Dell Universal Receiver Mouse: is tagged by udev as: Mouse
+[    11.317] (II) event7  - Dell Computer Corp Dell Universal Receiver Mouse: device is a pointer
+[    11.318] (II) config/udev: Adding input device Dell Computer Corp Dell Universal Receiver Mouse (/dev/input/mouse0)
+[    11.318] (II) No input driver specified, ignoring this device.
+[    11.318] (II) This device may have been added with another device file.
+[    11.318] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event30)
+[    11.318] (II) No input driver specified, ignoring this device.
+[    11.318] (II) This device may have been added with another device file.
+[    11.319] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event31)
+[    11.319] (II) No input driver specified, ignoring this device.
+[    11.319] (II) This device may have been added with another device file.
+[    11.319] (II) config/udev: Adding input device USB2.0 HD UVC WebCam: USB2.0 HD (/dev/input/event12)
+[    11.319] (**) USB2.0 HD UVC WebCam: USB2.0 HD: Applying InputClass "evdev keyboard catchall"
+[    11.319] (**) USB2.0 HD UVC WebCam: USB2.0 HD: Applying InputClass "libinput keyboard catchall"
+[    11.319] (**) USB2.0 HD UVC WebCam: USB2.0 HD: Applying InputClass "system-keyboard"
+[    11.319] (II) Using input driver 'libinput' for 'USB2.0 HD UVC WebCam: USB2.0 HD'
+[    11.320] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 60 paused 0
+[    11.320] (**) USB2.0 HD UVC WebCam: USB2.0 HD: always reports core events
+[    11.320] (**) Option "Device" "/dev/input/event12"
+[    11.321] (II) event12 - USB2.0 HD UVC WebCam: USB2.0 HD: is tagged by udev as: Keyboard
+[    11.321] (II) event12 - USB2.0 HD UVC WebCam: USB2.0 HD: device is a keyboard
+[    11.321] (II) event12 - USB2.0 HD UVC WebCam: USB2.0 HD: device removed
+[    11.321] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:0a:00.0/usb5/5-1/5-1:1.0/input/input33/event12"
+[    11.321] (II) XINPUT: Adding extended input device "USB2.0 HD UVC WebCam: USB2.0 HD" (type: KEYBOARD, id 16)
+[    11.321] (**) Option "xkb_layout" "us"
+[    11.322] (II) event12 - USB2.0 HD UVC WebCam: USB2.0 HD: is tagged by udev as: Keyboard
+[    11.322] (II) event12 - USB2.0 HD UVC WebCam: USB2.0 HD: device is a keyboard
+[    11.323] (II) config/udev: Adding input device USB2.0 HD UVC WebCam: USB2.0 IR (/dev/input/event13)
+[    11.323] (**) USB2.0 HD UVC WebCam: USB2.0 IR: Applying InputClass "evdev keyboard catchall"
+[    11.323] (**) USB2.0 HD UVC WebCam: USB2.0 IR: Applying InputClass "libinput keyboard catchall"
+[    11.323] (**) USB2.0 HD UVC WebCam: USB2.0 IR: Applying InputClass "system-keyboard"
+[    11.323] (II) Using input driver 'libinput' for 'USB2.0 HD UVC WebCam: USB2.0 IR'
+[    11.324] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 61 paused 0
+[    11.324] (**) USB2.0 HD UVC WebCam: USB2.0 IR: always reports core events
+[    11.324] (**) Option "Device" "/dev/input/event13"
+[    11.325] (II) event13 - USB2.0 HD UVC WebCam: USB2.0 IR: is tagged by udev as: Keyboard
+[    11.325] (II) event13 - USB2.0 HD UVC WebCam: USB2.0 IR: device is a keyboard
+[    11.325] (II) event13 - USB2.0 HD UVC WebCam: USB2.0 IR: device removed
+[    11.325] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.3/0000:0a:00.0/usb5/5-1/5-1:1.2/input/input34/event13"
+[    11.325] (II) XINPUT: Adding extended input device "USB2.0 HD UVC WebCam: USB2.0 IR" (type: KEYBOARD, id 17)
+[    11.325] (**) Option "xkb_layout" "us"
+[    11.326] (II) event13 - USB2.0 HD UVC WebCam: USB2.0 IR: is tagged by udev as: Keyboard
+[    11.326] (II) event13 - USB2.0 HD UVC WebCam: USB2.0 IR: device is a keyboard
+[    11.327] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 (/dev/input/event15)
+[    11.327] (**) ELAN9008:00 04F3:2FC2: Applying InputClass "evdev touchscreen catchall"
+[    11.327] (**) ELAN9008:00 04F3:2FC2: Applying InputClass "libinput touchscreen catchall"
+[    11.327] (II) Using input driver 'libinput' for 'ELAN9008:00 04F3:2FC2'
+[    11.328] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 62 paused 0
+[    11.328] (**) ELAN9008:00 04F3:2FC2: always reports core events
+[    11.328] (**) Option "Device" "/dev/input/event15"
+[    11.328] (II) event15 - ELAN9008:00 04F3:2FC2: is tagged by udev as: Touchscreen
+[    11.329] (II) event15 - ELAN9008:00 04F3:2FC2: device is a touch device
+[    11.329] (II) event15 - ELAN9008:00 04F3:2FC2: device removed
+[    11.329] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN9008:00/0018:04F3:2FC2.000A/input/input17/event15"
+[    11.329] (II) XINPUT: Adding extended input device "ELAN9008:00 04F3:2FC2" (type: TOUCHSCREEN, id 18)
+[    11.329] (**) Option "AccelerationScheme" "none"
+[    11.329] (**) ELAN9008:00 04F3:2FC2: (accel) selected scheme none/0
+[    11.329] (**) ELAN9008:00 04F3:2FC2: (accel) acceleration factor: 2.000
+[    11.329] (**) ELAN9008:00 04F3:2FC2: (accel) acceleration threshold: 4
+[    11.330] (II) event15 - ELAN9008:00 04F3:2FC2: is tagged by udev as: Touchscreen
+[    11.330] (II) event15 - ELAN9008:00 04F3:2FC2: device is a touch device
+[    11.330] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 (/dev/input/mouse2)
+[    11.330] (II) No input driver specified, ignoring this device.
+[    11.330] (II) This device may have been added with another device file.
+[    11.331] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 UNKNOWN (/dev/input/event16)
+[    11.331] (II) No input driver specified, ignoring this device.
+[    11.331] (II) This device may have been added with another device file.
+[    11.331] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 UNKNOWN (/dev/input/event17)
+[    11.331] (II) No input driver specified, ignoring this device.
+[    11.331] (II) This device may have been added with another device file.
+[    11.332] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 Stylus (/dev/input/event18)
+[    11.332] (**) ELAN9008:00 04F3:2FC2 Stylus: Applying InputClass "evdev tablet catchall"
+[    11.332] (**) ELAN9008:00 04F3:2FC2 Stylus: Applying InputClass "libinput tablet catchall"
+[    11.332] (II) Using input driver 'libinput' for 'ELAN9008:00 04F3:2FC2 Stylus'
+[    11.332] (II) systemd-logind: got fd for /dev/input/event18 13:82 fd 63 paused 0
+[    11.332] (**) ELAN9008:00 04F3:2FC2 Stylus: always reports core events
+[    11.332] (**) Option "Device" "/dev/input/event18"
+[    11.333] (II) event18 - ELAN9008:00 04F3:2FC2 Stylus: is tagged by udev as: Tablet
+[    11.439] (II) event18 - ELAN9008:00 04F3:2FC2 Stylus: device is a tablet
+[    11.439] (II) event18 - ELAN9008:00 04F3:2FC2 Stylus: device removed
+[    11.439] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN9008:00/0018:04F3:2FC2.000A/input/input20/event18"
+[    11.439] (II) XINPUT: Adding extended input device "ELAN9008:00 04F3:2FC2 Stylus" (type: TABLET, id 19)
+[    11.440] (II) event18 - ELAN9008:00 04F3:2FC2 Stylus: is tagged by udev as: Tablet
+[    11.447] (II) event18 - ELAN9008:00 04F3:2FC2 Stylus: device is a tablet
+[    11.448] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 Stylus (/dev/input/mouse3)
+[    11.448] (II) No input driver specified, ignoring this device.
+[    11.448] (II) This device may have been added with another device file.
+[    11.448] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 UNKNOWN (/dev/input/event19)
+[    11.448] (II) No input driver specified, ignoring this device.
+[    11.448] (II) This device may have been added with another device file.
+[    11.448] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 UNKNOWN (/dev/input/event20)
+[    11.448] (II) No input driver specified, ignoring this device.
+[    11.448] (II) This device may have been added with another device file.
+[    11.448] (II) config/udev: Adding input device ELAN9008:00 04F3:2FC2 UNKNOWN (/dev/input/event21)
+[    11.448] (II) No input driver specified, ignoring this device.
+[    11.448] (II) This device may have been added with another device file.
+[    11.449] (II) config/udev: Adding input device ASUE120D:00 04F3:31FB Mouse (/dev/input/event22)
+[    11.449] (**) ASUE120D:00 04F3:31FB Mouse: Applying InputClass "evdev pointer catchall"
+[    11.449] (**) ASUE120D:00 04F3:31FB Mouse: Applying InputClass "libinput pointer catchall"
+[    11.449] (II) Using input driver 'libinput' for 'ASUE120D:00 04F3:31FB Mouse'
+[    11.449] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 65 paused 0
+[    11.449] (**) ASUE120D:00 04F3:31FB Mouse: always reports core events
+[    11.449] (**) Option "Device" "/dev/input/event22"
+[    11.450] (II) event22 - ASUE120D:00 04F3:31FB Mouse: is tagged by udev as: Mouse Pointingstick
+[    11.450] (II) event22 - ASUE120D:00 04F3:31FB Mouse: device is a pointer
+[    11.450] (II) event22 - ASUE120D:00 04F3:31FB Mouse: device removed
+[    11.450] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-ASUE120D:00/0018:04F3:31FB.0009/input/input26/event22"
+[    11.451] (II) XINPUT: Adding extended input device "ASUE120D:00 04F3:31FB Mouse" (type: MOUSE, id 20)
+[    11.451] (**) Option "AccelerationScheme" "none"
+[    11.451] (**) ASUE120D:00 04F3:31FB Mouse: (accel) selected scheme none/0
+[    11.451] (**) ASUE120D:00 04F3:31FB Mouse: (accel) acceleration factor: 2.000
+[    11.451] (**) ASUE120D:00 04F3:31FB Mouse: (accel) acceleration threshold: 4
+[    11.451] (II) event22 - ASUE120D:00 04F3:31FB Mouse: is tagged by udev as: Mouse Pointingstick
+[    11.451] (II) event22 - ASUE120D:00 04F3:31FB Mouse: device is a pointer
+[    11.452] (II) config/udev: Adding input device ASUE120D:00 04F3:31FB Mouse (/dev/input/mouse4)
+[    11.452] (II) No input driver specified, ignoring this device.
+[    11.452] (II) This device may have been added with another device file.
+[    11.452] (II) config/udev: Adding input device ASUE120D:00 04F3:31FB Touchpad (/dev/input/event23)
+[    11.452] (**) ASUE120D:00 04F3:31FB Touchpad: Applying InputClass "evdev touchpad catchall"
+[    11.452] (**) ASUE120D:00 04F3:31FB Touchpad: Applying InputClass "libinput touchpad catchall"
+[    11.452] (II) Using input driver 'libinput' for 'ASUE120D:00 04F3:31FB Touchpad'
+[    11.453] (II) systemd-logind: got fd for /dev/input/event23 13:87 fd 66 paused 0
+[    11.453] (**) ASUE120D:00 04F3:31FB Touchpad: always reports core events
+[    11.453] (**) Option "Device" "/dev/input/event23"
+[    11.453] (II) event23 - ASUE120D:00 04F3:31FB Touchpad: is tagged by udev as: Touchpad
+[    11.454] (II) event23 - ASUE120D:00 04F3:31FB Touchpad: device is a touchpad
+[    11.454] (II) event23 - ASUE120D:00 04F3:31FB Touchpad: device removed
+[    11.454] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:01/i2c-1/i2c-ASUE120D:00/0018:04F3:31FB.0009/input/input27/event23"
+[    11.454] (II) XINPUT: Adding extended input device "ASUE120D:00 04F3:31FB Touchpad" (type: TOUCHPAD, id 21)
+[    11.454] (**) Option "AccelerationScheme" "none"
+[    11.454] (**) ASUE120D:00 04F3:31FB Touchpad: (accel) selected scheme none/0
+[    11.454] (**) ASUE120D:00 04F3:31FB Touchpad: (accel) acceleration factor: 2.000
+[    11.454] (**) ASUE120D:00 04F3:31FB Touchpad: (accel) acceleration threshold: 4
+[    11.455] (II) event23 - ASUE120D:00 04F3:31FB Touchpad: is tagged by udev as: Touchpad
+[    11.455] (II) event23 - ASUE120D:00 04F3:31FB Touchpad: device is a touchpad
+[    11.455] (II) config/udev: Adding input device ASUE120D:00 04F3:31FB Touchpad (/dev/input/mouse5)
+[    11.455] (II) No input driver specified, ignoring this device.
+[    11.455] (II) This device may have been added with another device file.
+[    11.455] (II) config/udev: Adding input device Asus WMI hotkeys (/dev/input/event10)
+[    11.455] (**) Asus WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[    11.455] (**) Asus WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    11.455] (**) Asus WMI hotkeys: Applying InputClass "system-keyboard"
+[    11.455] (II) Using input driver 'libinput' for 'Asus WMI hotkeys'
+[    11.456] (II) systemd-logind: got fd for /dev/input/event10 13:74 fd 67 paused 0
+[    11.456] (**) Asus WMI hotkeys: always reports core events
+[    11.456] (**) Option "Device" "/dev/input/event10"
+[    11.457] (II) event10 - Asus WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    11.457] (II) event10 - Asus WMI hotkeys: device is a keyboard
+[    11.457] (II) event10 - Asus WMI hotkeys: device is a switch device
+[    11.457] (II) event10 - Asus WMI hotkeys: device removed
+[    11.457] (**) Option "config_info" "udev:/sys/devices/platform/asus-nb-wmi/input/input32/event10"
+[    11.457] (II) XINPUT: Adding extended input device "Asus WMI hotkeys" (type: KEYBOARD, id 22)
+[    11.457] (**) Option "xkb_layout" "us"
+[    11.458] (II) event10 - Asus WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    11.458] (II) event10 - Asus WMI hotkeys: device is a keyboard
+[    11.458] (II) event10 - Asus WMI hotkeys: device is a switch device
+[    11.458] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[    11.458] (II) No input driver specified, ignoring this device.
+[    11.458] (II) This device may have been added with another device file.
+[    11.479] (**) Asus Keyboard: Applying InputClass "evdev keyboard catchall"
+[    11.479] (**) Asus Keyboard: Applying InputClass "libinput keyboard catchall"
+[    11.479] (**) Asus Keyboard: Applying InputClass "system-keyboard"
+[    11.479] (II) Using input driver 'libinput' for 'Asus Keyboard'
+[    11.479] (II) systemd-logind: returning pre-existing fd for /dev/input/event4 13:68
+[    11.479] (**) Asus Keyboard: always reports core events
+[    11.479] (**) Option "Device" "/dev/input/event4"
+[    11.480] (II) libinput: Asus Keyboard: is a virtual subdevice
+[    11.480] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb1/1-3/1-3:1.0/0003:0B05:19B6.0002/input/input28/event4"
+[    11.480] (II) XINPUT: Adding extended input device "Asus Keyboard" (type: KEYBOARD, id 23)
+[    11.480] (**) Option "xkb_layout" "us"
+[    11.480] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: Applying InputClass "evdev keyboard catchall"
+[    11.480] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    11.480] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: Applying InputClass "system-keyboard"
+[    11.480] (II) Using input driver 'libinput' for 'Dell Computer Corp Dell Universal Receiver Consumer Control'
+[    11.480] (II) systemd-logind: returning pre-existing fd for /dev/input/event8 13:72
+[    11.480] (**) Dell Computer Corp Dell Universal Receiver Consumer Control: always reports core events
+[    11.480] (**) Option "Device" "/dev/input/event8"
+[    11.480] (II) libinput: Dell Computer Corp Dell Universal Receiver Consumer Control: is a virtual subdevice
+[    11.480] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.4/usb3/3-1/3-1:1.1/0003:413C:301C.0003/input/input10/event8"
+[    11.480] (II) XINPUT: Adding extended input device "Dell Computer Corp Dell Universal Receiver Consumer Control" (type: KEYBOARD, id 24)
+[    11.480] (**) Option "xkb_layout" "us"
+[    11.777] (II) AMDGPU(0): EDID vendor "AUO", prod id 49561
+[    11.777] (II) AMDGPU(0): Using EDID range info for horizontal sync
+[    11.777] (II) AMDGPU(0): Using EDID range info for vertical refresh
+[    11.777] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    11.777] (II) AMDGPU(0): Modeline "2560x1600"x0.0  282.80  2560 2608 2640 2720  1600 1610 1620 1732 -hsync -vsync (104.0 kHz eP)
+[    11.781] (II) AMDGPU(0): EDID vendor "AUO", prod id 49561
+[    11.781] (II) AMDGPU(0): Using hsync ranges from config file
+[    11.781] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    11.781] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    11.781] (II) AMDGPU(0): Modeline "2560x1600"x0.0  282.80  2560 2608 2640 2720  1600 1610 1620 1732 -hsync -vsync (104.0 kHz eP)
+[    11.783] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    11.783] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    11.783] (--) NVIDIA(GPU-0): DFP-0: 2670.0 MHz maximum pixel clock
+[    11.783] (--) NVIDIA(GPU-0): 
+[    11.783] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    11.783] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    11.783] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    11.783] (--) NVIDIA(GPU-0): 
+[    11.783] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[    11.783] (--) NVIDIA(GPU-0): DFP-2: Internal DisplayPort
+[    11.783] (--) NVIDIA(GPU-0): DFP-2: 2670.0 MHz maximum pixel clock
+[    11.783] (--) NVIDIA(GPU-0): 
+[    11.783] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    11.783] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    11.783] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    11.783] (--) NVIDIA(GPU-0): 
+[    13.153] (II) AMDGPU(0): EDID vendor "AUO", prod id 49561
+[    13.153] (II) AMDGPU(0): Using hsync ranges from config file
+[    13.153] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    13.153] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    13.153] (II) AMDGPU(0): Modeline "2560x1600"x0.0  282.80  2560 2608 2640 2720  1600 1610 1620 1732 -hsync -vsync (104.0 kHz eP)
+[    13.156] (II) AMDGPU(0): EDID vendor "AUO", prod id 49561
+[    13.156] (II) AMDGPU(0): Using hsync ranges from config file
+[    13.156] (II) AMDGPU(0): Using vrefresh ranges from config file
+[    13.156] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    13.156] (II) AMDGPU(0): Modeline "2560x1600"x0.0  282.80  2560 2608 2640 2720  1600 1610 1620 1732 -hsync -vsync (104.0 kHz eP)
+[    13.157] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    13.157] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    13.157] (--) NVIDIA(GPU-0): DFP-0: 2670.0 MHz maximum pixel clock
+[    13.157] (--) NVIDIA(GPU-0): 
+[    13.157] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    13.157] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    13.157] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    13.157] (--) NVIDIA(GPU-0): 
+[    13.157] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[    13.157] (--) NVIDIA(GPU-0): DFP-2: Internal DisplayPort
+[    13.157] (--) NVIDIA(GPU-0): DFP-2: 2670.0 MHz maximum pixel clock
+[    13.157] (--) NVIDIA(GPU-0): 
+[    13.157] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    13.157] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    13.157] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    13.157] (--) NVIDIA(GPU-0): 
+[    19.216] (**) Option "fd" "48"
+[    19.216] (II) event14 - Video Bus: device removed
+[    19.216] (**) Option "fd" "51"
+[    19.216] (II) event1  - Power Button: device removed
+[    19.217] (**) Option "fd" "52"
+[    19.217] (II) event2  - Sleep Button: device removed
+[    19.217] (**) Option "fd" "53"
+[    19.217] (**) Option "fd" "54"
+[    19.217] (II) event5  - Asus Keyboard: device removed
+[    19.217] (**) Option "fd" "55"
+[    19.217] (II) event6  - Asus Keyboard: device removed
+[    19.217] (**) Option "fd" "56"
+[    19.217] (II) event3  - Dell Computer Corp Dell Universal Receiver: device removed
+[    19.217] (**) Option "fd" "57"
+[    19.217] (**) Option "fd" "58"
+[    19.217] (II) event11 - Dell Computer Corp Dell Universal Receiver System Control: device removed
+[    19.217] (**) Option "fd" "59"
+[    19.217] (II) event7  - Dell Computer Corp Dell Universal Receiver Mouse: device removed
+[    19.218] (**) Option "fd" "60"
+[    19.218] (II) event12 - USB2.0 HD UVC WebCam: USB2.0 HD: device removed
+[    19.218] (**) Option "fd" "61"
+[    19.218] (II) event13 - USB2.0 HD UVC WebCam: USB2.0 IR: device removed
+[    19.218] (**) Option "fd" "62"
+[    19.218] (II) event15 - ELAN9008:00 04F3:2FC2: device removed
+[    19.218] (**) Option "fd" "63"
+[    19.218] (II) event18 - ELAN9008:00 04F3:2FC2 Stylus: device removed
+[    19.218] (**) Option "fd" "65"
+[    19.218] (II) event22 - ASUE120D:00 04F3:31FB Mouse: device removed
+[    19.218] (**) Option "fd" "66"
+[    19.218] (II) event23 - ASUE120D:00 04F3:31FB Touchpad: device removed
+[    19.218] (**) Option "fd" "67"
+[    19.218] (II) event10 - Asus WMI hotkeys: device removed
+[    19.219] (**) Option "fd" "53"
+[    19.219] (II) event4  - Asus Keyboard: device removed
+[    19.219] (**) Option "fd" "57"
+[    19.219] (II) event8  - Dell Computer Corp Dell Universal Receiver Consumer Control: device removed
+[    19.219] (II) AIGLX: Suspending AIGLX clients for VT switch
+[    19.267] (EE) AMDGPU(0): failed to set mode: Permission denied
+[    19.267] (EE) AMDGPU(0): failed to set mode: Permission denied
+[    19.268] (II) systemd-logind: got pause for 13:77
+[    19.268] (II) systemd-logind: got pause for 13:69
+[    19.268] (II) systemd-logind: got pause for 13:71
+[    19.268] (II) systemd-logind: got pause for 226:0
+[    19.268] (II) systemd-logind: got pause for 13:86
+[    19.268] (II) systemd-logind: got pause for 13:82
+[    19.268] (II) systemd-logind: got pause for 13:70
+[    19.268] (II) systemd-logind: got pause for 13:68
+[    19.268] (II) systemd-logind: got pause for 13:78
+[    19.268] (II) systemd-logind: got pause for 13:87
+[    19.268] (II) systemd-logind: got pause for 13:76
+[    19.268] (II) systemd-logind: got pause for 13:74
+[    19.268] (II) systemd-logind: got pause for 13:79
+[    19.268] (II) systemd-logind: got pause for 13:65
+[    19.268] (II) systemd-logind: got pause for 13:75
+[    19.268] (II) systemd-logind: got pause for 13:72
+[    19.268] (II) systemd-logind: got pause for 13:66
+[    19.268] (II) systemd-logind: got pause for 13:67
+[    25.128] (II) UnloadModule: "libinput"
+[    25.128] (II) systemd-logind: not releasing fd for 13:72, still in use
+[    25.128] (II) UnloadModule: "libinput"
+[    25.128] (II) systemd-logind: not releasing fd for 13:68, still in use
+[    25.128] (II) UnloadModule: "libinput"
+[    25.128] (II) systemd-logind: releasing fd for 13:74
+[    25.138] (II) UnloadModule: "libinput"
+[    25.138] (II) systemd-logind: releasing fd for 13:87
+[    25.147] (II) UnloadModule: "libinput"
+[    25.147] (II) systemd-logind: releasing fd for 13:86
+[    25.159] (II) UnloadModule: "libinput"
+[    25.159] (II) systemd-logind: releasing fd for 13:82
+[    25.174] (II) UnloadModule: "libinput"
+[    25.174] (II) systemd-logind: releasing fd for 13:79
+[    25.194] (II) UnloadModule: "libinput"
+[    25.194] (II) systemd-logind: releasing fd for 13:77
+[    25.209] (II) UnloadModule: "libinput"
+[    25.209] (II) systemd-logind: releasing fd for 13:76
+[    25.226] (II) UnloadModule: "libinput"
+[    25.226] (II) systemd-logind: releasing fd for 13:71
+[    25.240] (II) UnloadModule: "libinput"
+[    25.240] (II) systemd-logind: releasing fd for 13:75
+[    25.263] (II) UnloadModule: "libinput"
+[    25.263] (II) systemd-logind: releasing fd for 13:72
+[    25.276] (II) UnloadModule: "libinput"
+[    25.276] (II) systemd-logind: releasing fd for 13:67
+[    25.297] (II) UnloadModule: "libinput"
+[    25.297] (II) systemd-logind: releasing fd for 13:70
+[    25.316] (II) UnloadModule: "libinput"
+[    25.316] (II) systemd-logind: releasing fd for 13:69
+[    25.324] (II) UnloadModule: "libinput"
+[    25.324] (II) systemd-logind: releasing fd for 13:68
+[    25.342] (II) UnloadModule: "libinput"
+[    25.342] (II) systemd-logind: releasing fd for 13:66
+[    25.354] (II) UnloadModule: "libinput"
+[    25.354] (II) systemd-logind: releasing fd for 13:65
+[    25.365] (II) UnloadModule: "libinput"
+[    25.365] (II) systemd-logind: releasing fd for 13:78
+[    25.388] (WW) NVIDIA(G0): Failed to set the display configuration
+[    25.388] (WW) NVIDIA(G0):  - Setting a mode on head 0 failed: Insufficient permissions
+[    25.388] (WW) NVIDIA(G0):  - Setting a mode on head 1 failed: Insufficient permissions
+[    25.388] (WW) NVIDIA(G0):  - Setting a mode on head 2 failed: Insufficient permissions
+[    25.388] (WW) NVIDIA(G0):  - Setting a mode on head 3 failed: Insufficient permissions
+[    25.392] (II) NVIDIA(GPU-0): Deleting GPU-0
+[    25.394] (II) Server terminated successfully (0). Closing log file.

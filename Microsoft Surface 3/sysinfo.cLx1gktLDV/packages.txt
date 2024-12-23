@@ -1,0 +1,67 @@
+Name            : libwacom-surface
+Version         : 2.5.0-1
+Description     : Patched libwacom for Microsoft Surface devices
+Architecture    : x86_64
+URL             : https://github.com/linux-surface/libwacom
+Licenses        : MIT
+Groups          : None
+Provides        : libwacom=2.5.0
+Depends On      : glib2  systemd  libgudev
+Optional Deps   : python-libevdev: for libwacom-show-stylus
+Required By     : gnome-settings-daemon  libinput
+Optional For    : None
+Conflicts With  : libwacom
+Replaces        : None
+Installed Size  : 692.50 KiB
+Packager        : Unknown Packager
+Build Date      : Tue Nov  8 09:20:10 2022
+Install Date    : Tue Nov  8 09:23:02 2022
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : None
+
+Name            : libinput
+Version         : 1.21.0-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://gitlab.freedesktop.org/libinput
+Licenses        : custom:X11
+Groups          : None
+Provides        : None
+Depends On      : mtdev  systemd  libevdev  libwacom
+Optional Deps   : gtk4: libinput debug-gui [installed]
+                  python-pyudev: libinput measure
+                  python-libevdev: libinput measure
+Required By     : clutter  mutter  qt5-base  touchegg  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1066.97 KiB
+Packager        : Andreas Radke <andyrtr@HOSTNAME.org>
+Build Date      : Sun Jun 12 18:33:47 2022
+Install Date    : Fri Sep 30 14:32:37 2022
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.2.1-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : custom:MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 95.84 KiB
+Packager        : Andreas Radke <andyrtr@HOSTNAME.org>
+Build Date      : Mon Jan 24 14:44:53 2022
+Install Date    : Tue Nov  8 08:40:48 2022
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
