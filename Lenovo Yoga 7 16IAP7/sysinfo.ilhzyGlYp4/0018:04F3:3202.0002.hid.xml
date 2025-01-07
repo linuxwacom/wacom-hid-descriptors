@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_mouse<!-- Mouse (02h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>1</report_id>
+    <usage>desktop_pointer<!-- Pointer (01h, physical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage_page>button<!-- Button (09h) --></usage_page>
+      <usage_minimum>01</usage_minimum>
+      <usage_maximum>02</usage_maximum>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <report_size>1</report_size>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+      </input>
+      <report_count>6</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <logical_minimum>-127</logical_minimum>
+      <logical_maximum>127</logical_maximum>
+      <report_size>8</report_size>
+      <report_count>2</report_count>
+      <input>
+        <variable/>
+        <relative/>
+      </input>
+      <report_size>8</report_size>
+      <report_count>5</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+    </COLLECTION>
+    <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+    <usage>01</usage>
+    <report_id>14</report_id>
+    <usage>C5</usage>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>4</report_count>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+  <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+  <usage>01</usage>
+  <COLLECTION type="application">
+    <report_id>92</report_id>
+    <usage>01</usage>
+    <report_count>11</report_count>
+    <report_size>8</report_size>
+    <input>
+      <variable/>
+      <relative/>
+    </input>
+    <report_id>13</report_id>
+    <usage>C5</usage>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>4</report_count>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>12</report_id>
+    <usage>C6</usage>
+    <report_count>1280</report_count>
+    <report_size>8</report_size>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>11</report_id>
+    <usage>C7</usage>
+    <report_count>130</report_count>
+    <report_size>8</report_size>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_touchpad<!-- Touch pad (05h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>4</report_id>
+    <usage>digitizer_finger<!-- Finger (22h, logical collection) --></usage>
+    <COLLECTION type="logical">
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>1</logical_maximum>
+      <usage>digitizer_touch_valid<!-- Touch valid (47h, momentary control) --></usage>
+      <usage>digitizer_tip_switch<!-- Tip switch (42h, momentary control) --></usage>
+      <report_count>2</report_count>
+      <report_size>1</report_size>
+      <input>
+        <variable/>
+      </input>
+      <report_size>1</report_size>
+      <report_count>2</report_count>
+      <input>
+        <constant/>
+        <variable/>
+      </input>
+      <report_count>1</report_count>
+      <report_size>4</report_size>
+      <logical_maximum>15</logical_maximum>
+      <usage>digitizer_contact_identifier<!-- Contact identifier (51h, dynamic value) --></usage>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>4089</logical_maximum>
+      <report_size>16</report_size>
+      <unit_exponent>13</unit_exponent>
+      <unit>
+        <si_linear>
+          <centimeter/>
+        </si_linear>
+      </unit>
+      <usage>desktop_x<!-- X (30h, dynamic value) --></usage>
+      <physical_minimum>0</physical_minimum>
+      <physical_maximum>13200</physical_maximum>
+      <report_count>1</report_count>
+      <input>
+        <variable/>
+      </input>
+      <physical_maximum>7700</physical_maximum>
+      <logical_maximum>2416</logical_maximum>
+      <logical_maximum>2416</logical_maximum>
+      <usage>desktop_y<!-- Y (31h, dynamic value) --></usage>
+      <input>
+        <variable/>
+      </input>
+      <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>100</logical_maximum>
+      <report_count>3</report_count>
+    </COLLECTION>
+    <unit_exponent>12</unit_exponent>
+    <unit>
+      <si_linear>
+        <seconds/>
+      </si_linear>
+    </unit>
+    <physical_maximum>65535</physical_maximum>
+    <logical_maximum>65535</logical_maximum>
+    <report_size>16</report_size>
+    <report_count>1</report_count>
+    <usage>digitizer_scan_time<!-- Scan time (56h, dynamic value) --></usage>
+    <input>
+      <variable/>
+    </input>
+    <usage>digitizer_contact_count<!-- Contact count (54h, dynamic value) --></usage>
+    <logical_maximum>127</logical_maximum>
+    <report_count>1</report_count>
+    <report_size>8</report_size>
+    <input>
+      <variable/>
+    </input>
+    <usage_page>button<!-- Button (09h) --></usage_page>
+    <usage>01</usage>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>1</report_count>
+    <input>
+      <variable/>
+    </input>
+    <report_count>7</report_count>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+    <usage>C5</usage>
+    <report_size>8</report_size>
+    <report_count>2</report_count>
+    <input>
+      <constant/>
+      <variable/>
+    </input>
+    <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+    <report_id>2</report_id>
+    <usage>digitizer_contact_count_maximum<!-- Contact count maximum (55h, static value) --></usage>
+    <usage>digitizer_pad_type<!-- Pad type (59h, static flag) --></usage>
+    <report_size>4</report_size>
+    <report_count>2</report_count>
+    <logical_maximum>15</logical_maximum>
+    <feature>
+      <variable/>
+    </feature>
+    <report_id>7</report_id>
+    <usage>digitizer_latency_mode<!-- Latency mode (60h, dynamic flag) --></usage>
+    <report_size>1</report_size>
+    <report_count>1</report_count>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <feature>
+      <variable/>
+    </feature>
+    <report_count>15</report_count>
+    <feature>
+      <constant/>
+      <variable/>
+    </feature>
+    <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+    <usage_page>FF00<!-- FF00h, vendor-defined --></usage_page>
+    <report_id>6</report_id>
+    <usage>C5</usage>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>256</report_count>
+    <feature>
+      <variable/>
+    </feature>
+  </COLLECTION>
+  <usage_page>digitizer<!-- Digitizer (0Dh) --></usage_page>
+  <usage>digitizer_configuration<!-- Configuration (0Eh, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>3</report_id>
+    <usage>digitizer_finger<!-- Finger (22h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <usage>digitizer_device_mode<!-- Device input mode (52h, dynamic value) --></usage>
+      <logical_minimum>0</logical_minimum>
+      <logical_maximum>10</logical_maximum>
+      <report_size>16</report_size>
+      <report_count>1</report_count>
+      <feature>
+        <variable/>
+      </feature>
+    </COLLECTION>
+    <usage>digitizer_finger<!-- Finger (22h, logical collection) --></usage>
+    <COLLECTION type="physical">
+      <report_id>5</report_id>
+      <usage>digitizer_surface_switch<!-- Surface switch (57h, dynamic flag) --></usage>
+      <usage>digitizer_button_switch<!-- Button switch (58h, dynamic flag) --></usage>
+      <report_size>1</report_size>
+      <report_count>2</report_count>
+      <logical_maximum>1</logical_maximum>
+      <feature>
+        <variable/>
+      </feature>
+      <report_count>14</report_count>
+      <feature>
+        <constant/>
+        <variable/>
+      </feature>
+    </COLLECTION>
+  </COLLECTION>
+</descriptor>

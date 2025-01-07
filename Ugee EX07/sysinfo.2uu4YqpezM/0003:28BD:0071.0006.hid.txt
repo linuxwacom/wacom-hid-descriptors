@@ -1,0 +1,63 @@
+Usage Page (Digitizer),             ; Digitizer (0Dh)
+Usage (Digitizer),                  ; Digitizer (01h, application collection)
+Collection (Application),
+    Report ID (7),
+    Usage (Stylus),                 ; Stylus (20h, application collection, logical collection)
+    Collection (Physical),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Report Size (1),
+        Usage (Tip Switch),         ; Tip switch (42h, momentary control)
+        Usage (Barrel Switch),      ; Barrel switch (44h, momentary control)
+        Usage (Tablet Pick),        ; Tablet pick (46h, momentary control)
+        Report Count (3),
+        Input (Variable),
+        Report Count (3),
+        Input (Constant, Variable),
+        Usage (In Range),           ; In range (32h, momentary control)
+        Report Count (1),
+        Input (Variable),
+        Report Count (1),
+        Input (Constant, Variable),
+        Report Size (16),
+        Report Count (1),
+        Push,
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Unit (Inch),
+        Unit Exponent (-3),
+        Physical Minimum (0),
+        Usage (X),                  ; X (30h, dynamic value)
+        Logical Maximum (40640),
+        Physical Maximum (8000),
+        Input (Variable),
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Logical Maximum (25400),
+        Physical Maximum (5000),
+        Input (Variable),
+        Pop,
+        Usage (Tip Pressure),       ; Tip pressure (30h, dynamic value)
+        Logical Maximum (2047),
+        Input (Variable),
+    End Collection,
+End Collection,
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keypad),                     ; Keypad (07h, application collection)
+Collection (Application),
+    Report ID (6),
+    Usage Page (Digitizer),         ; Digitizer (0Dh)
+    Usage (Tablet Function Keys),   ; Tablet function keys (39h, logical collection)
+    Collection (Physical),
+        Usage Page (Button),        ; Button (09h)
+        Report Size (1),
+        Usage Minimum (03h),
+        Usage Maximum (06h),
+        Report Count (4),
+        Input (Variable),
+        Report Count (26),
+        Input (Constant, Variable),
+        Usage Minimum (01h),
+        Usage Maximum (02h),
+        Report Count (2),
+        Input (Variable),
+    End Collection,
+End Collection

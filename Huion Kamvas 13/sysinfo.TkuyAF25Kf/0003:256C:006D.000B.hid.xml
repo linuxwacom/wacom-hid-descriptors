@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_keyboard<!-- Keyboard (06h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>3</report_id>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_kb_leftcontrol<!-- Keyboard left control (E0h, dynamic value) --></usage_minimum>
+    <usage_maximum>keyboard_kb_right_gui<!-- Keyboard right GUI (E7h, dynamic value) --></usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>8</report_count>
+    <input>
+      <variable/>
+    </input>
+    <usage_page>keyboard<!-- Keyboard/keypad (07h) --></usage_page>
+    <usage_minimum>keyboard_none<!-- No event (00h, selector) --></usage_minimum>
+    <usage_maximum>FF</usage_maximum>
+    <logical_maximum>255</logical_maximum>
+    <report_size>8</report_size>
+    <report_count>6</report_count>
+    <input/>
+  </COLLECTION>
+  <usage_page>consumer<!-- Consumer (0Ch) --></usage_page>
+  <usage>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>4</report_id>
+    <usage_minimum>consumer_consumer_control<!-- Consumer control (01h, application collection) --></usage_minimum>
+    <usage_maximum>consumer_ac_distribute_vert<!-- AC distribute vertically (029Ch, selector) --></usage_maximum>
+    <logical_minimum>1</logical_minimum>
+    <logical_maximum>668</logical_maximum>
+    <report_count>1</report_count>
+    <report_size>16</report_size>
+    <input/>
+  </COLLECTION>
+  <usage_page>desktop<!-- Generic desktop controls (01h) --></usage_page>
+  <usage>desktop_sys_control<!-- System control (80h, application collection) --></usage>
+  <COLLECTION type="application">
+    <report_id>5</report_id>
+    <usage_minimum>desktop_sys_power_down<!-- System power down (81h, one-shot control) --></usage_minimum>
+    <usage_maximum>desktop_sys_wake_up<!-- System wake up (83h, one-shot control) --></usage_maximum>
+    <logical_minimum>0</logical_minimum>
+    <logical_maximum>1</logical_maximum>
+    <report_size>1</report_size>
+    <report_count>3</report_count>
+    <input>
+      <variable/>
+    </input>
+    <report_count>5</report_count>
+    <input>
+      <constant/>
+    </input>
+  </COLLECTION>
+</descriptor>

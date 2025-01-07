@@ -1,0 +1,956 @@
+[    14.928] (--) Log file renamed from "/var/log/Xorg.pid-1066.log" to "/var/log/Xorg.0.log"
+[    14.928] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[    14.928] Current Operating System: Linux HOSTNAME 6.0.10-arch2-1 #1 SMP PREEMPT_DYNAMIC Sat, 26 Nov 2022 16:51:18 +0000 x86_64
+[    14.928] Kernel command line: rw rd.luks.name=4aa6da74-af73-4212-82a6-09b41f54db0f=cryptUSERNAME USERNAME=/dev/mapper/cryptUSERNAME rd.luks.options=discard initrd=amd-ucode.img initrd=initramfs-linux.img nvidia-drm.modeset=1 bgrt_disable
+[    14.928]  
+[    14.928] Current version of pixman: 0.42.2
+[    14.928] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    14.928] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    14.928] (==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec  3 12:26:10 2022
+[    14.929] (==) Using config file: "/etc/X11/xorg.conf"
+[    14.929] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    14.929] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    14.929] (==) ServerLayout "Layout0"
+[    14.929] (**) |-->Screen "Screen0" (0)
+[    14.929] (**) |   |-->Monitor "Monitor0"
+[    14.929] (**) |   |-->Device "Device0"
+[    14.929] (**) |-->Input Device "Keyboard0"
+[    14.929] (**) |-->Input Device "Mouse0"
+[    14.929] (**) Option "Xinerama" "0"
+[    14.929] (==) Automatically adding devices
+[    14.929] (==) Automatically enabling devices
+[    14.929] (==) Automatically adding GPU devices
+[    14.929] (==) Automatically binding GPU devices
+[    14.929] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    14.929] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    14.929] 	Entry deleted from font path.
+[    14.930] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    14.930] 	Entry deleted from font path.
+[    14.930] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[    14.930] 	Entry deleted from font path.
+[    14.930] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[    14.930] 	Entry deleted from font path.
+[    14.930] (==) FontPath set to:
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF
+[    14.930] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    14.930] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[    14.930] (WW) Disabling Keyboard0
+[    14.930] (WW) Disabling Mouse0
+[    14.930] (II) Module ABI versions:
+[    14.930] 	X.Org ANSI C Emulation: 0.4
+[    14.930] 	X.Org Video Driver: 25.2
+[    14.930] 	X.Org XInput driver : 24.4
+[    14.930] 	X.Org Server Extension : 10.0
+[    14.931] (++) using VT number 1
+
+[    14.931] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    14.931] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    14.931] (II) Platform probe for /sys/devices/pci0000:00/0000:00:03.1/0000:07:00.0/drm/card0
+[    14.933] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/nvidia/xorg,/usr/lib/xorg/modules,/usr/lib/xorg/modules"
+[    14.935] (--) PCI:*(7@0:0:0) 10de:1e84:10de:139f rev 161, Mem @ 0xfb000000/16777216, 0xd0000000/268435456, 0xe0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[    14.935] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    14.935] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[    14.935] (II) LoadModule: "dbe"
+[    14.935] (II) Module "dbe" already built-in
+[    14.935] (II) LoadModule: "extmod"
+[    14.935] (II) Module "extmod" already built-in
+[    14.935] (II) LoadModule: "glx"
+[    14.936] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    14.941] (II) Module glx: vendor="X.Org Foundation"
+[    14.941] 	compiled for 1.21.1.4, module version = 1.0.0
+[    14.941] 	ABI class: X.Org Server Extension, version 10.0
+[    14.941] (II) LoadModule: "nvidia"
+[    14.941] (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+[    14.952] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    14.952] 	compiled for 1.6.99.901, module version = 1.0.0
+[    14.952] 	Module class: X.Org Video Driver
+[    14.952] (II) NVIDIA dlloader X Driver  520.56.06  Thu Oct  6 21:29:26 UTC 2022
+[    14.952] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    14.952] (II) Loading sub module "fb"
+[    14.952] (II) LoadModule: "fb"
+[    14.952] (II) Module "fb" already built-in
+[    14.952] (II) Loading sub module "wfb"
+[    14.952] (II) LoadModule: "wfb"
+[    14.952] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[    14.953] (II) Module wfb: vendor="X.Org Foundation"
+[    14.953] 	compiled for 1.21.1.4, module version = 1.0.0
+[    14.953] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    14.953] (II) Loading sub module "ramdac"
+[    14.953] (II) LoadModule: "ramdac"
+[    14.953] (II) Module "ramdac" already built-in
+[    14.954] (**) NVIDIA(0): Depth 24, (--) framebuffer bpp 32
+[    14.954] (==) NVIDIA(0): RGB weight 888
+[    14.954] (==) NVIDIA(0): Default visual is TrueColor
+[    14.954] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    14.954] (II) Applying OutputClass "nvidia" options to /dev/dri/card0
+[    14.954] (**) NVIDIA(0): Option "Stereo" "0"
+[    14.954] (**) NVIDIA(0): Option "nvidiaXineramaInfoOrder" "DFP-0"
+[    14.954] (**) NVIDIA(0): Option "SLI" "Off"
+[    14.954] (**) NVIDIA(0): Option "MultiGPU" "Off"
+[    14.954] (**) NVIDIA(0): Option "BaseMosaic" "off"
+[    14.954] (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration"
+[    14.954] (**) NVIDIA(0): Stereo disabled by request
+[    14.954] (**) NVIDIA(0): NVIDIA SLI disabled.
+[    14.954] (**) NVIDIA(0): NVIDIA Multi-GPU disabled.
+[    14.954] (**) NVIDIA(0): Option "MetaModes" "DP-0: nvidia-auto-select +0+0 {ForceCompositionPipeline=On}, HDMI-0: nvidia-auto-select +0+1080 {ForceCompositionPipeline=On}; DP-0: nvidia-auto-select +0+0, HDMI-0: nvidia-auto-select +0+1080; DP-0: 1600x900 +0+0, HDMI-0: nvidia-auto-select +0+900; DP-0: 1280x1024 +0+0, HDMI-0: nvidia-auto-select +0+1024; DP-0: 1280x1024_60 +0+0, HDMI-0: nvidia-auto-select +0+1024; DP-0: 1152x864 +0+0, HDMI-0: nvidia-auto-select +0+864; DP-0: 1024x768 +0+0, HDMI-0: nvidia-auto-select +0+768; DP-0: 1024x768_60 +0+0, HDMI-0: nvidia-auto-select +0+768; DP-0: 800x600 +0+0, HDMI-0: nvidia-auto-select +0+600; DP-0: 800x600_60 +0+0, HDMI-0: nvidia-auto-select +0+600; DP-0: 640x480 +0+0, HDMI-0: nvidia-auto-select +0+480; DP-0: 640x480_60 +0+0, HDMI-0: nvidia-auto-select +0+480; DP-0: nvidia-auto-select +0+0 {viewportin=1680x1050, viewportout=1728x1080+96+0}, HDMI-0: nvidia-auto-select +0+1050; DP-0: nvidia-auto-select +0+0 {viewportin=1440x900, viewportout=1728x1080+96+0}, HDMI-0: nvidia-auto-select +0+900; DP-0: nvidia-auto-se
+[    14.954] 
+[    14.954] (**) NVIDIA(0): Enabling 2D acceleration
+[    14.954] (II) Loading sub module "glxserver_nvidia"
+[    14.954] (II) LoadModule: "glxserver_nvidia"
+[    14.954] (II) Loading /usr/lib/nvidia/xorg/libglxserver_nvidia.so
+[    15.026] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    15.026] 	compiled for 1.6.99.901, module version = 1.0.0
+[    15.026] 	Module class: X.Org Server Extension
+[    15.026] (II) NVIDIA GLX Module  520.56.06  Thu Oct  6 21:26:26 UTC 2022
+[    15.026] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    15.027] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:7:0:0
+[    15.027] (--) NVIDIA(0):     DFP-0
+[    15.027] (--) NVIDIA(0):     DFP-1
+[    15.027] (--) NVIDIA(0):     DFP-2 (boot)
+[    15.027] (--) NVIDIA(0):     DFP-3
+[    15.027] (--) NVIDIA(0):     DFP-4
+[    15.027] (--) NVIDIA(0):     DFP-5
+[    15.027] (--) NVIDIA(0):     DFP-6
+[    15.028] (II) NVIDIA(0): NVIDIA GPU NVIDIA GeForce RTX 2070 SUPER (TU104-A) at
+[    15.028] (II) NVIDIA(0):     PCI:7:0:0 (GPU-0)
+[    15.028] (--) NVIDIA(0): Memory: 8388608 kBytes
+[    15.028] (--) NVIDIA(0): VideoBIOS: 90.04.76.00.55
+[    15.028] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[    15.028] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[    15.028] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[    15.028] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[    15.028] (--) NVIDIA(GPU-0): 
+[    15.030] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    15.030] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    15.030] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    15.030] (--) NVIDIA(GPU-0): 
+[    15.074] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[    15.074] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[    15.074] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[    15.074] (--) NVIDIA(GPU-0): 
+[    15.074] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    15.074] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[    15.074] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[    15.074] (--) NVIDIA(GPU-0): 
+[    15.074] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    15.074] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    15.074] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    15.074] (--) NVIDIA(GPU-0): 
+[    15.074] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    15.074] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    15.074] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    15.074] (--) NVIDIA(GPU-0): 
+[    15.074] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    15.074] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    15.074] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    15.074] (--) NVIDIA(GPU-0): 
+[    15.122] (II) NVIDIA(0): Validated MetaModes:
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0{ForceCompositionPipeline=On},HDMI-0:nvidia-auto-select+0+1080{ForceCompositionPipeline=On}"
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0,HDMI-0:nvidia-auto-select+0+1080"
+[    15.122] (II) NVIDIA(0):     "DP-0:1600x900+0+0,HDMI-0:nvidia-auto-select+0+900"
+[    15.122] (II) NVIDIA(0):     "DP-0:1280x1024+0+0,HDMI-0:nvidia-auto-select+0+1024"
+[    15.122] (II) NVIDIA(0):     "DP-0:1280x1024_60+0+0,HDMI-0:nvidia-auto-select+0+1024"
+[    15.122] (II) NVIDIA(0):     "DP-0:1152x864+0+0,HDMI-0:nvidia-auto-select+0+864"
+[    15.122] (II) NVIDIA(0):     "DP-0:1024x768+0+0,HDMI-0:nvidia-auto-select+0+768"
+[    15.122] (II) NVIDIA(0):     "DP-0:1024x768_60+0+0,HDMI-0:nvidia-auto-select+0+768"
+[    15.122] (II) NVIDIA(0):     "DP-0:800x600+0+0,HDMI-0:nvidia-auto-select+0+600"
+[    15.122] (II) NVIDIA(0):     "DP-0:800x600_60+0+0,HDMI-0:nvidia-auto-select+0+600"
+[    15.122] (II) NVIDIA(0):     "DP-0:640x480+0+0,HDMI-0:nvidia-auto-select+0+480"
+[    15.122] (II) NVIDIA(0):     "DP-0:640x480_60+0+0,HDMI-0:nvidia-auto-select+0+480"
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0{viewportin=1680x1050,viewportout=1728x1080+96+0},HDMI-0:nvidia-auto-select+0+1050"
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0{viewportin=1440x900,viewportout=1728x1080+96+0},HDMI-0:nvidia-auto-select+0+900"
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0{viewportin=1366x768,viewportout=1920x1079+0+0},HDMI-0:nvidia-auto-select+0+768"
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0{viewportin=1280x800,viewportout=1728x1080+96+0},HDMI-0:nvidia-auto-select+0+800"
+[    15.122] (II) NVIDIA(0):    
+[    15.122] (II) NVIDIA(0):     "DP-0:nvidia-auto-select+0+0{viewportin=1280x720},HDMI-0:nvidia-auto-select+0+720"
+[    15.122] (II) NVIDIA(0): Virtual screen size determined to be 1920 x 2160
+[    15.146] (--) NVIDIA(0): DPI set to (101, 101); computed from "UseEdidDpi" X config
+[    15.146] (--) NVIDIA(0):     option
+[    15.147] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[    15.147] (II) NVIDIA:     access.
+[    15.153] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[    15.153] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[    15.153] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[    15.153] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[    15.153] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[    15.153] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[    15.153] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[    15.153] (II) NVIDIA(0):     Config Options in the README.
+[    15.170] (II) NVIDIA(0): Setting mode "DP-0:nvidia-auto-select+0+0{ForceCompositionPipeline=On},HDMI-0:nvidia-auto-select+0+1080{ForceCompositionPipeline=On}"
+[    15.357] (==) NVIDIA(0): Disabling shared memory pixmaps
+[    15.357] (==) NVIDIA(0): Backing store enabled
+[    15.357] (==) NVIDIA(0): Silken mouse enabled
+[    15.357] (**) NVIDIA(0): DPMS enabled
+[    15.357] (II) Loading sub module "dri2"
+[    15.357] (II) LoadModule: "dri2"
+[    15.357] (II) Module "dri2" already built-in
+[    15.357] (II) NVIDIA(0): [DRI2] Setup complete
+[    15.357] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[    15.357] (II) Initializing extension Generic Event Extension
+[    15.357] (II) Initializing extension SHAPE
+[    15.358] (II) Initializing extension MIT-SHM
+[    15.358] (II) Initializing extension XInputExtension
+[    15.358] (II) Initializing extension XTEST
+[    15.358] (II) Initializing extension BIG-REQUESTS
+[    15.358] (II) Initializing extension SYNC
+[    15.358] (II) Initializing extension XKEYBOARD
+[    15.358] (II) Initializing extension XC-MISC
+[    15.358] (II) Initializing extension SECURITY
+[    15.358] (II) Initializing extension XFIXES
+[    15.358] (II) Initializing extension RENDER
+[    15.358] (II) Initializing extension RANDR
+[    15.358] (II) Initializing extension COMPOSITE
+[    15.358] (II) Initializing extension DAMAGE
+[    15.358] (II) Initializing extension MIT-SCREEN-SAVER
+[    15.358] (II) Initializing extension DOUBLE-BUFFER
+[    15.359] (II) Initializing extension RECORD
+[    15.359] (II) Initializing extension DPMS
+[    15.359] (II) Initializing extension Present
+[    15.359] (II) Initializing extension DRI3
+[    15.359] (II) Initializing extension X-Resource
+[    15.359] (II) Initializing extension XVideo
+[    15.359] (II) Initializing extension XVideo-MotionCompensation
+[    15.359] (II) Initializing extension GLX
+[    15.359] (II) Initializing extension GLX
+[    15.359] (II) Indirect GLX disabled.
+[    15.359] (II) GLX: Another vendor is already registered for screen 0
+[    15.359] (II) Initializing extension XFree86-VidModeExtension
+[    15.359] (II) Initializing extension XFree86-DGA
+[    15.359] (II) Initializing extension XFree86-DRI
+[    15.359] (II) Initializing extension DRI2
+[    15.359] (II) Initializing extension NV-GLX
+[    15.359] (II) Initializing extension NV-CONTROL
+[    15.359] (II) Initializing extension XINERAMA
+[    15.407] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    15.407] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    15.407] (II) LoadModule: "libinput"
+[    15.408] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    15.411] (II) Module libinput: vendor="X.Org Foundation"
+[    15.411] 	compiled for 1.21.1.3, module version = 1.2.1
+[    15.411] 	Module class: X.Org XInput Driver
+[    15.411] 	ABI class: X.Org XInput driver, version 24.4
+[    15.411] (II) Using input driver 'libinput' for 'Power Button'
+[    15.411] (**) Power Button: always reports core events
+[    15.411] (**) Option "Device" "/dev/input/event1"
+[    15.414] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    15.414] (II) event1  - Power Button: device is a keyboard
+[    15.414] (II) event1  - Power Button: device removed
+[    15.450] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    15.450] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    15.451] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    15.451] (II) event1  - Power Button: device is a keyboard
+[    15.452] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    15.452] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    15.452] (II) Using input driver 'libinput' for 'Power Button'
+[    15.452] (**) Power Button: always reports core events
+[    15.452] (**) Option "Device" "/dev/input/event0"
+[    15.452] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    15.452] (II) event0  - Power Button: device is a keyboard
+[    15.453] (II) event0  - Power Button: device removed
+[    15.491] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    15.491] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    15.491] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    15.491] (II) event0  - Power Button: device is a keyboard
+[    15.492] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pen (/dev/input/event12)
+[    15.492] (**) HUION Huion Tablet_GS1331 Pen: Applying InputClass "libinput tablet catchall"
+[    15.492] (**) HUION Huion Tablet_GS1331 Pen: Applying InputClass "Huion tablets with Wacom driver"
+[    15.492] (II) LoadModule: "wacom"
+[    15.492] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[    15.493] (II) Module wacom: vendor="X.Org Foundation"
+[    15.493] 	compiled for 1.21.1.4, module version = 1.1.0
+[    15.493] 	Module class: X.Org XInput Driver
+[    15.493] 	ABI class: X.Org XInput driver, version 24.4
+[    15.493] (II) Build version: 1.1.0
+[    15.493] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[    15.494] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Pen'
+[    15.494] (**) HUION Huion Tablet_GS1331 Pen: always reports core events
+[    15.494] (**) Option "Device" "/dev/input/event12"
+[    15.550] (II) wacom: HUION Huion Tablet_GS1331 Pen: type not specified, assuming 'stylus'.
+[    15.550] (II) wacom: HUION Huion Tablet_GS1331 Pen: other types will be automatically added.
+[    15.550] (--) wacom: HUION Huion Tablet_GS1331 Pen stylus: using pressure threshold of 851 for button 1
+[    15.551] (**) wacom: HUION Huion Tablet_GS1331 Pen stylus: panscroll is 0
+[    15.551] (**) wacom: HUION Huion Tablet_GS1331 Pen stylus: panscroll modified to 2600
+[    15.551] (--) wacom: HUION Huion Tablet_GS1331 Pen stylus: maxX=58752 maxY=33048 maxZ=8191 resX=200000 resY=200000  tilt=enabled
+[    15.551] (II) wacom: HUION Huion Tablet_GS1331 Pen stylus: hotplugging dependent devices.
+[    15.551] (II) wacom: HUION Huion Tablet_GS1331 Pen stylus: hotplugging completed.
+[    15.640] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.0/0003:256C:006D.0002/input/input17/event12"
+[    15.641] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Pen stylus" (type: STYLUS, id 8)
+[    15.641] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) keeping acceleration scheme 1
+[    15.641] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) acceleration profile 0
+[    15.641] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) acceleration factor: 2.000
+[    15.641] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) acceleration threshold: 4
+[    15.698] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pen (/dev/input/mouse3)
+[    15.698] (II) No input driver specified, ignoring this device.
+[    15.698] (II) This device may have been added with another device file.
+[    15.698] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pad (/dev/input/event13)
+[    15.698] (**) HUION Huion Tablet_GS1331 Pad: Applying InputClass "libinput tablet catchall"
+[    15.698] (**) HUION Huion Tablet_GS1331 Pad: Applying InputClass "Huion tablets with Wacom driver"
+[    15.698] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Pad'
+[    15.698] (**) HUION Huion Tablet_GS1331 Pad: always reports core events
+[    15.698] (**) Option "Device" "/dev/input/event13"
+[    15.698] (II) wacom: HUION Huion Tablet_GS1331 Pad: type not specified, assuming 'pad'.
+[    15.698] (II) wacom: HUION Huion Tablet_GS1331 Pad: other types will be automatically added.
+[    15.698] (**) wacom: HUION Huion Tablet_GS1331 Pad pad: panscroll is 0
+[    15.698] (**) wacom: HUION Huion Tablet_GS1331 Pad pad: panscroll modified to 1000
+[    15.698] (II) wacom: HUION Huion Tablet_GS1331 Pad pad: hotplugging dependent devices.
+[    15.698] (II) wacom: HUION Huion Tablet_GS1331 Pad pad: hotplugging completed.
+[    15.737] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.0/0003:256C:006D.0002/input/input18/event13"
+[    15.737] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Pad pad" (type: PAD, id 9)
+[    15.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) keeping acceleration scheme 1
+[    15.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) acceleration profile 0
+[    15.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) acceleration factor: 2.000
+[    15.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) acceleration threshold: 4
+[    15.738] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pad (/dev/input/js0)
+[    15.738] (II) No input driver specified, ignoring this device.
+[    15.738] (II) This device may have been added with another device file.
+[    15.739] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Touch Strip (/dev/input/event14)
+[    15.739] (**) HUION Huion Tablet_GS1331 Touch Strip: Applying InputClass "libinput tablet catchall"
+[    15.739] (**) HUION Huion Tablet_GS1331 Touch Strip: Applying InputClass "Huion tablets with Wacom driver"
+[    15.739] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Touch Strip'
+[    15.739] (**) HUION Huion Tablet_GS1331 Touch Strip: always reports core events
+[    15.739] (**) Option "Device" "/dev/input/event14"
+[    15.739] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip: type not specified, assuming 'pad'.
+[    15.739] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip: other types will be automatically added.
+[    15.739] (**) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: panscroll is 0
+[    15.739] (**) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: panscroll modified to 1000
+[    15.739] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: hotplugging dependent devices.
+[    15.739] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: hotplugging completed.
+[    15.787] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.0/0003:256C:006D.0002/input/input19/event14"
+[    15.787] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Touch Strip pad" (type: PAD, id 10)
+[    15.787] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) keeping acceleration scheme 1
+[    15.787] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) acceleration profile 0
+[    15.787] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) acceleration factor: 2.000
+[    15.787] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) acceleration threshold: 4
+[    15.788] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Touch Strip (/dev/input/js1)
+[    15.788] (II) No input driver specified, ignoring this device.
+[    15.788] (II) This device may have been added with another device file.
+[    15.789] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Dial (/dev/input/event15)
+[    15.789] (**) HUION Huion Tablet_GS1331 Dial: Applying InputClass "libinput keyboard catchall"
+[    15.789] (**) HUION Huion Tablet_GS1331 Dial: Applying InputClass "libinput tablet catchall"
+[    15.789] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1331 Dial'
+[    15.789] (**) HUION Huion Tablet_GS1331 Dial: always reports core events
+[    15.789] (**) Option "Device" "/dev/input/event15"
+[    15.790] (II) event15 - HUION Huion Tablet_GS1331 Dial: is tagged by udev as: Keyboard Tablet
+[    15.810] (EE) event15 - HUION Huion Tablet_GS1331 Dial: libinput bug: missing tablet capabilities: pen btn-stylus resolution. Ignoring this device.
+[    15.810] (II) event15 - HUION Huion Tablet_GS1331 Dial: device is a tablet
+[    15.864] (II) event15 - failed to create input device '/dev/input/event15'.
+[    15.864] (EE) libinput: HUION Huion Tablet_GS1331 Dial: Failed to create a device for /dev/input/event15
+[    15.864] (EE) PreInit returned 2 for "HUION Huion Tablet_GS1331 Dial"
+[    15.864] (II) UnloadModule: "libinput"
+[    15.865] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Dial (/dev/input/js2)
+[    15.865] (II) No input driver specified, ignoring this device.
+[    15.865] (II) This device may have been added with another device file.
+[    15.865] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Dial (/dev/input/mouse4)
+[    15.865] (II) No input driver specified, ignoring this device.
+[    15.865] (II) This device may have been added with another device file.
+[    15.866] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Stylus (/dev/input/event3)
+[    15.866] (**) HUION Huion Tablet_GS1331 Stylus: Applying InputClass "libinput tablet catchall"
+[    15.866] (**) HUION Huion Tablet_GS1331 Stylus: Applying InputClass "Huion tablets with Wacom driver"
+[    15.866] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Stylus'
+[    15.866] (**) HUION Huion Tablet_GS1331 Stylus: always reports core events
+[    15.866] (**) Option "Device" "/dev/input/event3"
+[    15.920] (II) wacom: HUION Huion Tablet_GS1331 Stylus: type not specified, assuming 'stylus'.
+[    15.920] (II) wacom: HUION Huion Tablet_GS1331 Stylus: other types will be automatically added.
+[    15.920] (--) wacom: HUION Huion Tablet_GS1331 Stylus stylus: using pressure threshold of 851 for button 1
+[    15.921] (**) wacom: HUION Huion Tablet_GS1331 Stylus stylus: panscroll is 0
+[    15.921] (**) wacom: HUION Huion Tablet_GS1331 Stylus stylus: panscroll modified to 1000
+[    15.921] (--) wacom: HUION Huion Tablet_GS1331 Stylus stylus: maxX=32767 maxY=32767 maxZ=8191 resX=0 resY=0  tilt=enabled
+[    15.921] (II) wacom: HUION Huion Tablet_GS1331 Stylus stylus: hotplugging dependent devices.
+[    15.921] (II) wacom: HUION Huion Tablet_GS1331 Stylus stylus: hotplugging completed.
+[    15.957] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.1/0003:256C:006D.0003/input/input14/event3"
+[    15.957] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Stylus stylus" (type: STYLUS, id 11)
+[    15.957] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) keeping acceleration scheme 1
+[    15.957] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) acceleration profile 0
+[    15.957] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) acceleration factor: 2.000
+[    15.957] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) acceleration threshold: 4
+[    16.014] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Stylus (/dev/input/mouse1)
+[    16.014] (II) No input driver specified, ignoring this device.
+[    16.014] (II) This device may have been added with another device file.
+[    16.015] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 (/dev/input/event4)
+[    16.015] (**) HUION Huion Tablet_GS1331: Applying InputClass "libinput touchscreen catchall"
+[    16.015] (**) HUION Huion Tablet_GS1331: Applying InputClass "libinput tablet catchall"
+[    16.015] (**) HUION Huion Tablet_GS1331: Applying InputClass "Huion tablets with Wacom driver"
+[    16.015] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331'
+[    16.015] (**) HUION Huion Tablet_GS1331: always reports core events
+[    16.015] (**) Option "Device" "/dev/input/event4"
+[    16.015] (II) wacom: HUION Huion Tablet_GS1331: type not specified, assuming 'touch'.
+[    16.015] (II) wacom: HUION Huion Tablet_GS1331: other types will be automatically added.
+[    16.015] (**) wacom: HUION Huion Tablet_GS1331 touch: panscroll is 0
+[    16.015] (**) wacom: HUION Huion Tablet_GS1331 touch: panscroll modified to 13
+[    16.015] (--) wacom: HUION Huion Tablet_GS1331 touch: maxX=32767 maxY=32767 maxZ=8191 resX=106000 resY=188000 
+[    16.015] (II) wacom: HUION Huion Tablet_GS1331 touch: hotplugging dependent devices.
+[    16.015] (II) wacom: HUION Huion Tablet_GS1331 touch: hotplugging completed.
+[    16.047] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.1/0003:256C:006D.0003/input/input15/event4"
+[    16.047] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 touch" (type: TOUCH, id 12)
+[    16.047] (**) HUION Huion Tablet_GS1331 touch: (accel) keeping acceleration scheme 1
+[    16.047] (**) HUION Huion Tablet_GS1331 touch: (accel) acceleration profile 0
+[    16.047] (**) HUION Huion Tablet_GS1331 touch: (accel) acceleration factor: 2.000
+[    16.047] (**) HUION Huion Tablet_GS1331 touch: (accel) acceleration threshold: 4
+[    16.048] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 (/dev/input/mouse2)
+[    16.048] (II) No input driver specified, ignoring this device.
+[    16.048] (II) This device may have been added with another device file.
+[    16.048] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event16)
+[    16.048] (II) No input driver specified, ignoring this device.
+[    16.048] (II) This device may have been added with another device file.
+[    16.048] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event17)
+[    16.048] (II) No input driver specified, ignoring this device.
+[    16.048] (II) This device may have been added with another device file.
+[    16.049] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event18)
+[    16.049] (II) No input driver specified, ignoring this device.
+[    16.049] (II) This device may have been added with another device file.
+[    16.049] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event19)
+[    16.049] (II) No input driver specified, ignoring this device.
+[    16.049] (II) This device may have been added with another device file.
+[    16.049] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event20)
+[    16.049] (II) No input driver specified, ignoring this device.
+[    16.049] (II) This device may have been added with another device file.
+[    16.049] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event21)
+[    16.049] (II) No input driver specified, ignoring this device.
+[    16.049] (II) This device may have been added with another device file.
+[    16.049] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=12 (/dev/input/event22)
+[    16.049] (II) No input driver specified, ignoring this device.
+[    16.049] (II) This device may have been added with another device file.
+[    16.050] (II) config/udev: Adding input device FiiO DigiHug USB Audio (/dev/input/event2)
+[    16.050] (**) FiiO DigiHug USB Audio: Applying InputClass "libinput keyboard catchall"
+[    16.050] (II) Using input driver 'libinput' for 'FiiO DigiHug USB Audio'
+[    16.050] (**) FiiO DigiHug USB Audio: always reports core events
+[    16.050] (**) Option "Device" "/dev/input/event2"
+[    16.051] (II) event2  - FiiO DigiHug USB Audio: is tagged by udev as: Keyboard
+[    16.051] (II) event2  - FiiO DigiHug USB Audio: device is a keyboard
+[    16.051] (II) event2  - FiiO DigiHug USB Audio: device removed
+[    16.130] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-2/5-2:1.0/0003:1852:7022.0001/input/input2/event2"
+[    16.130] (II) XINPUT: Adding extended input device "FiiO DigiHug USB Audio" (type: KEYBOARD, id 13)
+[    16.132] (II) event2  - FiiO DigiHug USB Audio: is tagged by udev as: Keyboard
+[    16.132] (II) event2  - FiiO DigiHug USB Audio: device is a keyboard
+[    16.133] (II) config/udev: Adding input device SEM USB Keyboard (/dev/input/event6)
+[    16.133] (**) SEM USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    16.133] (II) Using input driver 'libinput' for 'SEM USB Keyboard'
+[    16.133] (**) SEM USB Keyboard: always reports core events
+[    16.133] (**) Option "Device" "/dev/input/event6"
+[    16.135] (II) event6  - SEM USB Keyboard: is tagged by udev as: Keyboard
+[    16.135] (II) event6  - SEM USB Keyboard: device is a keyboard
+[    16.135] (II) event6  - SEM USB Keyboard: device removed
+[    16.160] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.1/5-4.1:1.0/0003:1A2C:0B2A.0005/input/input6/event6"
+[    16.160] (II) XINPUT: Adding extended input device "SEM USB Keyboard" (type: KEYBOARD, id 14)
+[    16.162] (II) event6  - SEM USB Keyboard: is tagged by udev as: Keyboard
+[    16.162] (II) event6  - SEM USB Keyboard: device is a keyboard
+[    16.163] (II) config/udev: Adding input device SEM USB Keyboard Consumer Control (/dev/input/event7)
+[    16.163] (**) SEM USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    16.163] (II) Using input driver 'libinput' for 'SEM USB Keyboard Consumer Control'
+[    16.163] (**) SEM USB Keyboard Consumer Control: always reports core events
+[    16.163] (**) Option "Device" "/dev/input/event7"
+[    16.165] (II) event7  - SEM USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[    16.165] (II) event7  - SEM USB Keyboard Consumer Control: device is a keyboard
+[    16.165] (II) event7  - SEM USB Keyboard Consumer Control: device removed
+[    16.214] (II) libinput: SEM USB Keyboard Consumer Control: needs a virtual subdevice
+[    16.214] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.1/5-4.1:1.1/0003:1A2C:0B2A.0006/input/input7/event7"
+[    16.214] (II) XINPUT: Adding extended input device "SEM USB Keyboard Consumer Control" (type: MOUSE, id 15)
+[    16.214] (**) Option "AccelerationScheme" "none"
+[    16.214] (**) SEM USB Keyboard Consumer Control: (accel) selected scheme none/0
+[    16.214] (**) SEM USB Keyboard Consumer Control: (accel) acceleration factor: 2.000
+[    16.214] (**) SEM USB Keyboard Consumer Control: (accel) acceleration threshold: 4
+[    16.215] (II) event7  - SEM USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[    16.216] (II) event7  - SEM USB Keyboard Consumer Control: device is a keyboard
+[    16.217] (II) config/udev: Adding input device SEM USB Keyboard System Control (/dev/input/event8)
+[    16.217] (**) SEM USB Keyboard System Control: Applying InputClass "libinput keyboard catchall"
+[    16.217] (II) Using input driver 'libinput' for 'SEM USB Keyboard System Control'
+[    16.217] (**) SEM USB Keyboard System Control: always reports core events
+[    16.217] (**) Option "Device" "/dev/input/event8"
+[    16.218] (II) event8  - SEM USB Keyboard System Control: is tagged by udev as: Keyboard
+[    16.218] (II) event8  - SEM USB Keyboard System Control: device is a keyboard
+[    16.218] (II) event8  - SEM USB Keyboard System Control: device removed
+[    16.267] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.1/5-4.1:1.1/0003:1A2C:0B2A.0006/input/input8/event8"
+[    16.267] (II) XINPUT: Adding extended input device "SEM USB Keyboard System Control" (type: KEYBOARD, id 16)
+[    16.269] (II) event8  - SEM USB Keyboard System Control: is tagged by udev as: Keyboard
+[    16.269] (II) event8  - SEM USB Keyboard System Control: device is a keyboard
+[    16.270] (II) config/udev: Adding input device Logitech G403 Prodigy Gaming Mouse (/dev/input/event9)
+[    16.270] (**) Logitech G403 Prodigy Gaming Mouse: Applying InputClass "libinput pointer catchall"
+[    16.270] (II) Using input driver 'libinput' for 'Logitech G403 Prodigy Gaming Mouse'
+[    16.270] (**) Logitech G403 Prodigy Gaming Mouse: always reports core events
+[    16.270] (**) Option "Device" "/dev/input/event9"
+[    16.325] (II) event9  - Logitech G403 Prodigy Gaming Mouse: is tagged by udev as: Mouse
+[    16.325] (II) event9  - Logitech G403 Prodigy Gaming Mouse: device set to 800 DPI
+[    16.325] (II) event9  - Logitech G403 Prodigy Gaming Mouse: device is a pointer
+[    16.325] (II) event9  - Logitech G403 Prodigy Gaming Mouse: device removed
+[    16.380] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.3/5-4.3:1.0/0003:046D:C083.0007/input/input9/event9"
+[    16.380] (II) XINPUT: Adding extended input device "Logitech G403 Prodigy Gaming Mouse" (type: MOUSE, id 17)
+[    16.381] (**) Option "AccelerationScheme" "none"
+[    16.381] (**) Logitech G403 Prodigy Gaming Mouse: (accel) selected scheme none/0
+[    16.381] (**) Logitech G403 Prodigy Gaming Mouse: (accel) acceleration factor: 2.000
+[    16.381] (**) Logitech G403 Prodigy Gaming Mouse: (accel) acceleration threshold: 4
+[    16.438] (II) event9  - Logitech G403 Prodigy Gaming Mouse: is tagged by udev as: Mouse
+[    16.438] (II) event9  - Logitech G403 Prodigy Gaming Mouse: device set to 800 DPI
+[    16.438] (II) event9  - Logitech G403 Prodigy Gaming Mouse: device is a pointer
+[    16.439] (II) config/udev: Adding input device Logitech G403 Prodigy Gaming Mouse (/dev/input/mouse0)
+[    16.439] (II) No input driver specified, ignoring this device.
+[    16.439] (II) This device may have been added with another device file.
+[    16.439] (II) config/udev: Adding input device Logitech G403 Prodigy Gaming Mouse Keyboard (/dev/input/event10)
+[    16.439] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[    16.439] (II) Using input driver 'libinput' for 'Logitech G403 Prodigy Gaming Mouse Keyboard'
+[    16.439] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: always reports core events
+[    16.439] (**) Option "Device" "/dev/input/event10"
+[    16.440] (II) event10 - Logitech G403 Prodigy Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[    16.440] (II) event10 - Logitech G403 Prodigy Gaming Mouse Keyboard: device is a keyboard
+[    16.440] (II) event10 - Logitech G403 Prodigy Gaming Mouse Keyboard: device removed
+[    16.460] (II) libinput: Logitech G403 Prodigy Gaming Mouse Keyboard: needs a virtual subdevice
+[    16.460] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.3/5-4.3:1.1/0003:046D:C083.0008/input/input10/event10"
+[    16.460] (II) XINPUT: Adding extended input device "Logitech G403 Prodigy Gaming Mouse Keyboard" (type: MOUSE, id 18)
+[    16.461] (**) Option "AccelerationScheme" "none"
+[    16.461] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: (accel) selected scheme none/0
+[    16.461] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: (accel) acceleration factor: 2.000
+[    16.461] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: (accel) acceleration threshold: 4
+[    16.462] (II) event10 - Logitech G403 Prodigy Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[    16.462] (II) event10 - Logitech G403 Prodigy Gaming Mouse Keyboard: device is a keyboard
+[    16.462] (II) config/udev: Adding input device Samson Technologies Samson GoMic (/dev/input/event11)
+[    16.462] (**) Samson Technologies Samson GoMic: Applying InputClass "libinput keyboard catchall"
+[    16.462] (II) Using input driver 'libinput' for 'Samson Technologies Samson GoMic'
+[    16.462] (**) Samson Technologies Samson GoMic: always reports core events
+[    16.462] (**) Option "Device" "/dev/input/event11"
+[    16.463] (II) event11 - Samson Technologies Samson GoMic: is tagged by udev as: Keyboard
+[    16.463] (II) event11 - Samson Technologies Samson GoMic: device is a keyboard
+[    16.463] (II) event11 - Samson Technologies Samson GoMic: device removed
+[    16.524] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.4/5-4.4:1.3/0003:17A0:0305.0009/input/input13/event11"
+[    16.524] (II) XINPUT: Adding extended input device "Samson Technologies Samson GoMic" (type: KEYBOARD, id 19)
+[    16.525] (II) event11 - Samson Technologies Samson GoMic: is tagged by udev as: Keyboard
+[    16.525] (II) event11 - Samson Technologies Samson GoMic: device is a keyboard
+[    16.525] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event23)
+[    16.525] (II) No input driver specified, ignoring this device.
+[    16.525] (II) This device may have been added with another device file.
+[    16.525] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event24)
+[    16.525] (II) No input driver specified, ignoring this device.
+[    16.525] (II) This device may have been added with another device file.
+[    16.525] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event25)
+[    16.525] (II) No input driver specified, ignoring this device.
+[    16.525] (II) This device may have been added with another device file.
+[    16.526] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event26)
+[    16.526] (II) No input driver specified, ignoring this device.
+[    16.526] (II) This device may have been added with another device file.
+[    16.526] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event27)
+[    16.526] (II) No input driver specified, ignoring this device.
+[    16.526] (II) This device may have been added with another device file.
+[    16.526] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event28)
+[    16.526] (II) No input driver specified, ignoring this device.
+[    16.526] (II) This device may have been added with another device file.
+[    16.526] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event29)
+[    16.526] (II) No input driver specified, ignoring this device.
+[    16.526] (II) This device may have been added with another device file.
+[    16.526] (II) config/udev: Adding input device PC Speaker (/dev/input/event5)
+[    16.526] (II) No input driver specified, ignoring this device.
+[    16.526] (II) This device may have been added with another device file.
+[    16.530] (**) HUION Huion Tablet_GS1331 Stylus eraser: Applying InputClass "libinput tablet catchall"
+[    16.530] (**) HUION Huion Tablet_GS1331 Stylus eraser: Applying InputClass "Huion tablets with Wacom driver"
+[    16.530] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Stylus eraser'
+[    16.530] (**) HUION Huion Tablet_GS1331 Stylus eraser: always reports core events
+[    16.530] (**) Option "Device" "/dev/input/event3"
+[    16.530] (**) Option "Type" "eraser"
+[    16.530] (**) wacom: HUION Huion Tablet_GS1331 Stylus eraser: panscroll is 1000
+[    16.530] (**) wacom: HUION Huion Tablet_GS1331 Stylus eraser: panscroll modified to 1000
+[    16.530] (--) wacom: HUION Huion Tablet_GS1331 Stylus eraser: maxX=32767 maxY=32767 maxZ=8191 resX=0 resY=0  tilt=enabled
+[    16.557] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.1/0003:256C:006D.0003/input/input14/event3"
+[    16.557] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Stylus eraser" (type: ERASER, id 20)
+[    16.557] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) keeping acceleration scheme 1
+[    16.557] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) acceleration profile 0
+[    16.557] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) acceleration factor: 2.000
+[    16.557] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) acceleration threshold: 4
+[    16.557] (**) SEM USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    16.557] (II) Using input driver 'libinput' for 'SEM USB Keyboard Consumer Control'
+[    16.557] (**) SEM USB Keyboard Consumer Control: always reports core events
+[    16.557] (**) Option "Device" "/dev/input/event7"
+[    16.557] (II) libinput: SEM USB Keyboard Consumer Control: is a virtual subdevice
+[    16.557] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.1/5-4.1:1.1/0003:1A2C:0B2A.0006/input/input7/event7"
+[    16.557] (II) XINPUT: Adding extended input device "SEM USB Keyboard Consumer Control" (type: KEYBOARD, id 21)
+[    16.557] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[    16.557] (II) Using input driver 'libinput' for 'Logitech G403 Prodigy Gaming Mouse Keyboard'
+[    16.557] (**) Logitech G403 Prodigy Gaming Mouse Keyboard: always reports core events
+[    16.557] (**) Option "Device" "/dev/input/event10"
+[    16.557] (II) libinput: Logitech G403 Prodigy Gaming Mouse Keyboard: is a virtual subdevice
+[    16.557] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb5/5-4/5-4.3/5-4.3:1.1/0003:046D:C083.0008/input/input10/event10"
+[    16.557] (II) XINPUT: Adding extended input device "Logitech G403 Prodigy Gaming Mouse Keyboard" (type: KEYBOARD, id 22)
+[    28.993] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[    28.993] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[    28.993] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[    28.993] (--) NVIDIA(GPU-0): 
+[    28.995] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    28.995] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    28.995] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    28.995] (--) NVIDIA(GPU-0): 
+[    29.038] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[    29.038] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[    29.038] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[    29.038] (--) NVIDIA(GPU-0): 
+[    29.038] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    29.038] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[    29.038] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[    29.038] (--) NVIDIA(GPU-0): 
+[    29.038] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    29.038] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    29.038] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    29.038] (--) NVIDIA(GPU-0): 
+[    29.038] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    29.038] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    29.038] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    29.038] (--) NVIDIA(GPU-0): 
+[    29.038] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    29.038] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    29.038] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    29.038] (--) NVIDIA(GPU-0): 
+[    29.716] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[    29.716] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[    29.716] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[    29.716] (--) NVIDIA(GPU-0): 
+[    29.718] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    29.718] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    29.718] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    29.718] (--) NVIDIA(GPU-0): 
+[    29.764] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[    29.764] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[    29.764] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[    29.764] (--) NVIDIA(GPU-0): 
+[    29.764] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    29.764] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[    29.764] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[    29.764] (--) NVIDIA(GPU-0): 
+[    29.764] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    29.764] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    29.764] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    29.764] (--) NVIDIA(GPU-0): 
+[    29.764] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    29.764] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    29.764] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    29.764] (--) NVIDIA(GPU-0): 
+[    29.764] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    29.764] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    29.764] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    29.764] (--) NVIDIA(GPU-0): 
+[    30.244] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[    30.244] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[    30.244] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[    30.244] (--) NVIDIA(GPU-0): 
+[    30.246] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    30.246] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    30.246] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    30.246] (--) NVIDIA(GPU-0): 
+[    30.289] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[    30.289] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[    30.289] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[    30.289] (--) NVIDIA(GPU-0): 
+[    30.289] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    30.289] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[    30.289] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[    30.289] (--) NVIDIA(GPU-0): 
+[    30.289] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    30.289] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    30.289] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    30.289] (--) NVIDIA(GPU-0): 
+[    30.289] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    30.289] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    30.289] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    30.289] (--) NVIDIA(GPU-0): 
+[    30.290] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    30.290] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    30.290] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    30.290] (--) NVIDIA(GPU-0): 
+[  4359.560] (EE) HUION Huion Tablet_GS1331 Pen stylus: Error reading wacom device : No such device
+[  4359.564] (II) config/udev: removing device HUION Huion Tablet_GS1331 Pen stylus
+[  4359.568] (II) UnloadModule: "wacom"
+[  4359.607] (EE) HUION Huion Tablet_GS1331 Pad pad: Error reading wacom device : No such device
+[  4359.609] (II) config/udev: removing device HUION Huion Tablet_GS1331 Pad pad
+[  4359.614] (II) UnloadModule: "wacom"
+[  4359.657] (EE) HUION Huion Tablet_GS1331 Touch Strip pad: Error reading wacom device : No such device
+[  4359.657] (II) config/udev: removing device HUION Huion Tablet_GS1331 Touch Strip pad
+[  4359.661] (II) UnloadModule: "wacom"
+[  4359.834] (EE) HUION Huion Tablet_GS1331 Stylus eraser: Error reading wacom device : No such device
+[  4359.835] (II) config/udev: removing device HUION Huion Tablet_GS1331 Stylus stylus
+[  4359.838] (II) UnloadModule: "wacom"
+[  4359.838] (II) config/udev: removing device HUION Huion Tablet_GS1331 Stylus eraser
+[  4359.841] (II) UnloadModule: "wacom"
+[  4359.913] (EE) HUION Huion Tablet_GS1331 touch: Error reading wacom device : No such device
+[  4359.914] (II) config/udev: removing device HUION Huion Tablet_GS1331 touch
+[  4359.917] (II) UnloadModule: "wacom"
+[  4364.803] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[  4364.803] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[  4364.803] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[  4364.803] (--) NVIDIA(GPU-0): 
+[  4364.852] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[  4364.852] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[  4364.852] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[  4364.852] (--) NVIDIA(GPU-0): 
+[  4367.243] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pad (/dev/input/js0)
+[  4367.243] (II) No input driver specified, ignoring this device.
+[  4367.243] (II) This device may have been added with another device file.
+[  4367.244] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Dial (/dev/input/js2)
+[  4367.244] (II) No input driver specified, ignoring this device.
+[  4367.244] (II) This device may have been added with another device file.
+[  4367.244] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pen (/dev/input/mouse1)
+[  4367.244] (II) No input driver specified, ignoring this device.
+[  4367.244] (II) This device may have been added with another device file.
+[  4367.245] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Dial (/dev/input/mouse2)
+[  4367.245] (II) No input driver specified, ignoring this device.
+[  4367.245] (II) This device may have been added with another device file.
+[  4367.245] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Touch Strip (/dev/input/js1)
+[  4367.245] (II) No input driver specified, ignoring this device.
+[  4367.245] (II) This device may have been added with another device file.
+[  4367.245] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Stylus (/dev/input/mouse3)
+[  4367.245] (II) No input driver specified, ignoring this device.
+[  4367.245] (II) This device may have been added with another device file.
+[  4367.246] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 (/dev/input/mouse4)
+[  4367.246] (II) No input driver specified, ignoring this device.
+[  4367.246] (II) This device may have been added with another device file.
+[  4367.343] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Dial (/dev/input/event13)
+[  4367.343] (**) HUION Huion Tablet_GS1331 Dial: Applying InputClass "libinput keyboard catchall"
+[  4367.343] (**) HUION Huion Tablet_GS1331 Dial: Applying InputClass "libinput tablet catchall"
+[  4367.343] (II) Using input driver 'libinput' for 'HUION Huion Tablet_GS1331 Dial'
+[  4367.343] (**) HUION Huion Tablet_GS1331 Dial: always reports core events
+[  4367.343] (**) Option "Device" "/dev/input/event13"
+[  4367.398] (II) event13 - HUION Huion Tablet_GS1331 Dial: is tagged by udev as: Keyboard Tablet
+[  4367.404] (EE) event13 - HUION Huion Tablet_GS1331 Dial: libinput bug: missing tablet capabilities: pen btn-stylus resolution. Ignoring this device.
+[  4367.405] (II) event13 - HUION Huion Tablet_GS1331 Dial: device is a tablet
+[  4367.473] (II) event13 - failed to create input device '/dev/input/event13'.
+[  4367.473] (EE) libinput: HUION Huion Tablet_GS1331 Dial: Failed to create a device for /dev/input/event13
+[  4367.473] (EE) PreInit returned 2 for "HUION Huion Tablet_GS1331 Dial"
+[  4367.473] (II) UnloadModule: "libinput"
+[  4367.474] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Stylus (/dev/input/event14)
+[  4367.474] (**) HUION Huion Tablet_GS1331 Stylus: Applying InputClass "libinput tablet catchall"
+[  4367.474] (**) HUION Huion Tablet_GS1331 Stylus: Applying InputClass "Huion tablets with Wacom driver"
+[  4367.474] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Stylus'
+[  4367.474] (**) HUION Huion Tablet_GS1331 Stylus: always reports core events
+[  4367.474] (**) Option "Device" "/dev/input/event14"
+[  4367.527] (II) wacom: HUION Huion Tablet_GS1331 Stylus: type not specified, assuming 'stylus'.
+[  4367.527] (II) wacom: HUION Huion Tablet_GS1331 Stylus: other types will be automatically added.
+[  4367.527] (--) wacom: HUION Huion Tablet_GS1331 Stylus stylus: using pressure threshold of 851 for button 1
+[  4367.527] (**) wacom: HUION Huion Tablet_GS1331 Stylus stylus: panscroll is 0
+[  4367.527] (**) wacom: HUION Huion Tablet_GS1331 Stylus stylus: panscroll modified to 1000
+[  4367.527] (--) wacom: HUION Huion Tablet_GS1331 Stylus stylus: maxX=32767 maxY=32767 maxZ=8191 resX=0 resY=0  tilt=enabled
+[  4367.527] (II) wacom: HUION Huion Tablet_GS1331 Stylus stylus: hotplugging dependent devices.
+[  4367.527] (II) wacom: HUION Huion Tablet_GS1331 Stylus stylus: hotplugging completed.
+[  4367.563] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.1/0003:256C:006D.000B/input/input39/event14"
+[  4367.563] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Stylus stylus" (type: STYLUS, id 8)
+[  4367.564] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) keeping acceleration scheme 1
+[  4367.564] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) acceleration profile 0
+[  4367.564] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) acceleration factor: 2.000
+[  4367.564] (**) HUION Huion Tablet_GS1331 Stylus stylus: (accel) acceleration threshold: 4
+[  4367.620] (**) HUION Huion Tablet_GS1331 Stylus eraser: Applying InputClass "libinput tablet catchall"
+[  4367.620] (**) HUION Huion Tablet_GS1331 Stylus eraser: Applying InputClass "Huion tablets with Wacom driver"
+[  4367.620] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Stylus eraser'
+[  4367.620] (**) HUION Huion Tablet_GS1331 Stylus eraser: always reports core events
+[  4367.620] (**) Option "Device" "/dev/input/event14"
+[  4367.620] (**) Option "Type" "eraser"
+[  4367.620] (**) wacom: HUION Huion Tablet_GS1331 Stylus eraser: panscroll is 1000
+[  4367.620] (**) wacom: HUION Huion Tablet_GS1331 Stylus eraser: panscroll modified to 1000
+[  4367.620] (--) wacom: HUION Huion Tablet_GS1331 Stylus eraser: maxX=32767 maxY=32767 maxZ=8191 resX=0 resY=0  tilt=enabled
+[  4367.643] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.1/0003:256C:006D.000B/input/input39/event14"
+[  4367.643] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Stylus eraser" (type: ERASER, id 9)
+[  4367.644] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) keeping acceleration scheme 1
+[  4367.644] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) acceleration profile 0
+[  4367.644] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) acceleration factor: 2.000
+[  4367.644] (**) HUION Huion Tablet_GS1331 Stylus eraser: (accel) acceleration threshold: 4
+[  4367.645] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pad (/dev/input/event4)
+[  4367.645] (**) HUION Huion Tablet_GS1331 Pad: Applying InputClass "libinput tablet catchall"
+[  4367.645] (**) HUION Huion Tablet_GS1331 Pad: Applying InputClass "Huion tablets with Wacom driver"
+[  4367.645] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Pad'
+[  4367.645] (**) HUION Huion Tablet_GS1331 Pad: always reports core events
+[  4367.645] (**) Option "Device" "/dev/input/event4"
+[  4367.700] (II) wacom: HUION Huion Tablet_GS1331 Pad: type not specified, assuming 'pad'.
+[  4367.700] (II) wacom: HUION Huion Tablet_GS1331 Pad: other types will be automatically added.
+[  4367.700] (**) wacom: HUION Huion Tablet_GS1331 Pad pad: panscroll is 0
+[  4367.700] (**) wacom: HUION Huion Tablet_GS1331 Pad pad: panscroll modified to 1000
+[  4367.700] (II) wacom: HUION Huion Tablet_GS1331 Pad pad: hotplugging dependent devices.
+[  4367.700] (II) wacom: HUION Huion Tablet_GS1331 Pad pad: hotplugging completed.
+[  4367.737] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.0/0003:256C:006D.000A/input/input36/event4"
+[  4367.737] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Pad pad" (type: PAD, id 10)
+[  4367.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) keeping acceleration scheme 1
+[  4367.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) acceleration profile 0
+[  4367.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) acceleration factor: 2.000
+[  4367.737] (**) HUION Huion Tablet_GS1331 Pad pad: (accel) acceleration threshold: 4
+[  4367.794] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Pen (/dev/input/event3)
+[  4367.794] (**) HUION Huion Tablet_GS1331 Pen: Applying InputClass "libinput tablet catchall"
+[  4367.794] (**) HUION Huion Tablet_GS1331 Pen: Applying InputClass "Huion tablets with Wacom driver"
+[  4367.794] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Pen'
+[  4367.794] (**) HUION Huion Tablet_GS1331 Pen: always reports core events
+[  4367.794] (**) Option "Device" "/dev/input/event3"
+[  4367.794] (II) wacom: HUION Huion Tablet_GS1331 Pen: type not specified, assuming 'stylus'.
+[  4367.794] (II) wacom: HUION Huion Tablet_GS1331 Pen: other types will be automatically added.
+[  4367.794] (--) wacom: HUION Huion Tablet_GS1331 Pen stylus: using pressure threshold of 851 for button 1
+[  4367.794] (**) wacom: HUION Huion Tablet_GS1331 Pen stylus: panscroll is 0
+[  4367.794] (**) wacom: HUION Huion Tablet_GS1331 Pen stylus: panscroll modified to 2600
+[  4367.794] (--) wacom: HUION Huion Tablet_GS1331 Pen stylus: maxX=58752 maxY=33048 maxZ=8191 resX=200000 resY=200000  tilt=enabled
+[  4367.794] (II) wacom: HUION Huion Tablet_GS1331 Pen stylus: hotplugging dependent devices.
+[  4367.794] (II) wacom: HUION Huion Tablet_GS1331 Pen stylus: hotplugging completed.
+[  4367.827] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.0/0003:256C:006D.000A/input/input35/event3"
+[  4367.827] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Pen stylus" (type: STYLUS, id 11)
+[  4367.827] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) keeping acceleration scheme 1
+[  4367.827] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) acceleration profile 0
+[  4367.827] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) acceleration factor: 2.000
+[  4367.827] (**) HUION Huion Tablet_GS1331 Pen stylus: (accel) acceleration threshold: 4
+[  4367.828] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 Touch Strip (/dev/input/event12)
+[  4367.828] (**) HUION Huion Tablet_GS1331 Touch Strip: Applying InputClass "libinput tablet catchall"
+[  4367.828] (**) HUION Huion Tablet_GS1331 Touch Strip: Applying InputClass "Huion tablets with Wacom driver"
+[  4367.828] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331 Touch Strip'
+[  4367.828] (**) HUION Huion Tablet_GS1331 Touch Strip: always reports core events
+[  4367.828] (**) Option "Device" "/dev/input/event12"
+[  4367.828] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip: type not specified, assuming 'pad'.
+[  4367.828] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip: other types will be automatically added.
+[  4367.828] (**) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: panscroll is 0
+[  4367.828] (**) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: panscroll modified to 1000
+[  4367.828] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: hotplugging dependent devices.
+[  4367.828] (II) wacom: HUION Huion Tablet_GS1331 Touch Strip pad: hotplugging completed.
+[  4367.867] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.0/0003:256C:006D.000A/input/input37/event12"
+[  4367.867] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 Touch Strip pad" (type: PAD, id 12)
+[  4367.867] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) keeping acceleration scheme 1
+[  4367.867] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) acceleration profile 0
+[  4367.867] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) acceleration factor: 2.000
+[  4367.867] (**) HUION Huion Tablet_GS1331 Touch Strip pad: (accel) acceleration threshold: 4
+[  4367.868] (II) config/udev: Adding input device HUION Huion Tablet_GS1331 (/dev/input/event15)
+[  4367.868] (**) HUION Huion Tablet_GS1331: Applying InputClass "libinput touchscreen catchall"
+[  4367.868] (**) HUION Huion Tablet_GS1331: Applying InputClass "libinput tablet catchall"
+[  4367.868] (**) HUION Huion Tablet_GS1331: Applying InputClass "Huion tablets with Wacom driver"
+[  4367.868] (II) Using input driver 'wacom' for 'HUION Huion Tablet_GS1331'
+[  4367.868] (**) HUION Huion Tablet_GS1331: always reports core events
+[  4367.868] (**) Option "Device" "/dev/input/event15"
+[  4367.868] (II) wacom: HUION Huion Tablet_GS1331: type not specified, assuming 'touch'.
+[  4367.868] (II) wacom: HUION Huion Tablet_GS1331: other types will be automatically added.
+[  4367.868] (**) wacom: HUION Huion Tablet_GS1331 touch: panscroll is 0
+[  4367.868] (**) wacom: HUION Huion Tablet_GS1331 touch: panscroll modified to 13
+[  4367.868] (--) wacom: HUION Huion Tablet_GS1331 touch: maxX=32767 maxY=32767 maxZ=8191 resX=106000 resY=188000 
+[  4367.868] (II) wacom: HUION Huion Tablet_GS1331 touch: hotplugging dependent devices.
+[  4367.868] (II) wacom: HUION Huion Tablet_GS1331 touch: hotplugging completed.
+[  4367.917] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-4/1-4:1.1/0003:256C:006D.000B/input/input40/event15"
+[  4367.917] (II) XINPUT: Adding extended input device "HUION Huion Tablet_GS1331 touch" (type: TOUCH, id 20)
+[  4367.917] (**) HUION Huion Tablet_GS1331 touch: (accel) keeping acceleration scheme 1
+[  4367.917] (**) HUION Huion Tablet_GS1331 touch: (accel) acceleration profile 0
+[  4367.917] (**) HUION Huion Tablet_GS1331 touch: (accel) acceleration factor: 2.000
+[  4367.917] (**) HUION Huion Tablet_GS1331 touch: (accel) acceleration threshold: 4
+[  4863.575] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[  4863.575] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[  4863.575] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[  4863.575] (--) NVIDIA(GPU-0): 
+[  4863.577] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[  4863.577] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[  4863.577] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[  4863.577] (--) NVIDIA(GPU-0): 
+[  4863.620] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[  4863.620] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[  4863.620] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[  4863.620] (--) NVIDIA(GPU-0): 
+[  4863.620] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[  4863.620] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[  4863.620] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[  4863.620] (--) NVIDIA(GPU-0): 
+[  4863.620] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[  4863.620] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[  4863.620] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[  4863.620] (--) NVIDIA(GPU-0): 
+[  4863.620] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[  4863.620] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[  4863.620] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[  4863.620] (--) NVIDIA(GPU-0): 
+[  4863.621] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[  4863.621] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[  4863.621] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[  4863.621] (--) NVIDIA(GPU-0): 
+[  4888.515] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[  4888.516] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[  4888.516] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[  4888.516] (--) NVIDIA(GPU-0): 
+[  4888.518] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[  4888.518] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[  4888.518] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[  4888.518] (--) NVIDIA(GPU-0): 
+[  4888.562] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[  4888.562] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[  4888.562] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[  4888.562] (--) NVIDIA(GPU-0): 
+[  4888.562] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[  4888.562] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[  4888.562] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[  4888.562] (--) NVIDIA(GPU-0): 
+[  4888.562] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[  4888.562] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[  4888.562] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[  4888.562] (--) NVIDIA(GPU-0): 
+[  4888.562] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[  4888.562] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[  4888.562] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[  4888.562] (--) NVIDIA(GPU-0): 
+[  4888.563] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[  4888.563] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[  4888.563] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[  4888.563] (--) NVIDIA(GPU-0): 
+[  5396.322] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): connected
+[  5396.322] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): Internal DisplayPort
+[  5396.322] (--) NVIDIA(GPU-0): DELL P2219H (DFP-0): 2660.0 MHz maximum pixel clock
+[  5396.322] (--) NVIDIA(GPU-0): 
+[  5396.324] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[  5396.324] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[  5396.325] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[  5396.325] (--) NVIDIA(GPU-0): 
+[  5396.368] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): connected
+[  5396.368] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): Internal TMDS
+[  5396.368] (--) NVIDIA(GPU-0): HAT Kamvas 13 (DFP-2): 165.0 MHz maximum pixel clock
+[  5396.368] (--) NVIDIA(GPU-0): 
+[  5396.368] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[  5396.368] (--) NVIDIA(GPU-0): DFP-3: Internal DisplayPort
+[  5396.368] (--) NVIDIA(GPU-0): DFP-3: 2660.0 MHz maximum pixel clock
+[  5396.368] (--) NVIDIA(GPU-0): 
+[  5396.368] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[  5396.368] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[  5396.368] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[  5396.368] (--) NVIDIA(GPU-0): 
+[  5396.368] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[  5396.368] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[  5396.368] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[  5396.368] (--) NVIDIA(GPU-0): 
+[  5396.368] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[  5396.368] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[  5396.368] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[  5396.368] (--) NVIDIA(GPU-0): 

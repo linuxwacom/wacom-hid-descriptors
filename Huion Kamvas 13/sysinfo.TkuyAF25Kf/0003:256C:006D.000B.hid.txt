@@ -1,0 +1,46 @@
+Usage Page (Desktop),                   ; Generic desktop controls (01h)
+Usage (Keyboard),                       ; Keyboard (06h, application collection)
+Collection (Application),
+    Report ID (3),
+    Usage Page (Keyboard),              ; Keyboard/keypad (07h)
+    Usage Minimum (KB Leftcontrol),     ; Keyboard left control (E0h, dynamic value)
+    Usage Maximum (KB Right GUI),       ; Keyboard right GUI (E7h, dynamic value)
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (8),
+    Input (Variable),
+    Usage Page (Keyboard),              ; Keyboard/keypad (07h)
+    Usage Minimum (None),               ; No event (00h, selector)
+    Usage Maximum (FFh),
+    Logical Maximum (255),
+    Report Size (8),
+    Report Count (6),
+    Input,
+End Collection,
+Usage Page (Consumer),                  ; Consumer (0Ch)
+Usage (Consumer Control),               ; Consumer control (01h, application collection)
+Collection (Application),
+    Report ID (4),
+    Usage Minimum (Consumer Control),   ; Consumer control (01h, application collection)
+    Usage Maximum (AC Distribute Vert), ; AC distribute vertically (029Ch, selector)
+    Logical Minimum (1),
+    Logical Maximum (668),
+    Report Count (1),
+    Report Size (16),
+    Input,
+End Collection,
+Usage Page (Desktop),                   ; Generic desktop controls (01h)
+Usage (Sys Control),                    ; System control (80h, application collection)
+Collection (Application),
+    Report ID (5),
+    Usage Minimum (Sys Power Down),     ; System power down (81h, one-shot control)
+    Usage Maximum (Sys Wake Up),        ; System wake up (83h, one-shot control)
+    Logical Minimum (0),
+    Logical Maximum (1),
+    Report Size (1),
+    Report Count (3),
+    Input (Variable),
+    Report Count (5),
+    Input (Constant),
+End Collection
