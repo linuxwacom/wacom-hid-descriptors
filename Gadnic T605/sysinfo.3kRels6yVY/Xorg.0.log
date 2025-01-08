@@ -1,0 +1,713 @@
+[    11.649] (--) Log file renamed from "/var/log/Xorg.pid-811.log" to "/var/log/Xorg.0.log"
+[    11.650] 
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+[    11.650] Build Operating System: Linux 6.1.0-20-amd64 x86_64 Debian
+[    11.650] Current Operating System: Linux HOSTNAME 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64
+[    11.650] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.19.0-27-amd64 USERNAME=UUID=c9298bbb-42cd-49e5-ab15-3408b9086ec7 ro quiet splash vga=788
+[    11.650] Build Date: 15 April 2024  11:30:14AM
+[    11.650] xorg-server 2:1.20.4-1+deb10u14 (https://www.debian.org/support) 
+[    11.650] Current version of pixman: 0.36.0
+[    11.650] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    11.650] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    11.650] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Dec 19 14:12:41 2024
+[    11.650] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    11.650] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    11.651] (==) No Layout section.  Using the first Screen section.
+[    11.651] (==) No screen section available. Using defaults.
+[    11.651] (**) |-->Screen "Default Screen Section" (0)
+[    11.651] (**) |   |-->Monitor "<default monitor>"
+[    11.651] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    11.651] (==) Automatically adding devices
+[    11.651] (==) Automatically enabling devices
+[    11.651] (==) Automatically adding GPU devices
+[    11.651] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    11.651] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    11.651] 	Entry deleted from font path.
+[    11.651] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[    11.651] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    11.651] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    11.651] (II) Loader magic: 0x55ac29118e20
+[    11.651] (II) Module ABI versions:
+[    11.651] 	X.Org ANSI C Emulation: 0.4
+[    11.651] 	X.Org Video Driver: 24.0
+[    11.651] 	X.Org XInput driver : 24.1
+[    11.651] 	X.Org Server Extension : 10.0
+[    11.652] (++) using VT number 7
+
+[    11.652] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    11.652] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    11.653] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[    11.656] (--) PCI:*(0@0:2:0) 8086:3185:1019:9840 rev 6, Mem @ 0xa0000000/16777216, 0x90000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[    11.656] (II) LoadModule: "glx"
+[    11.656] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    11.657] (II) Module glx: vendor="X.Org Foundation"
+[    11.657] 	compiled for 1.20.4, module version = 1.0.0
+[    11.657] 	ABI class: X.Org Server Extension, version 10.0
+[    11.657] (==) Matched modesetting as autoconfigured driver 0
+[    11.657] (==) Matched fbdev as autoconfigured driver 1
+[    11.657] (==) Matched vesa as autoconfigured driver 2
+[    11.657] (==) Assigned the driver to the xf86ConfigLayout
+[    11.657] (II) LoadModule: "modesetting"
+[    11.657] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    11.658] (II) Module modesetting: vendor="X.Org Foundation"
+[    11.658] 	compiled for 1.20.4, module version = 1.20.4
+[    11.658] 	Module class: X.Org Video Driver
+[    11.658] 	ABI class: X.Org Video Driver, version 24.0
+[    11.658] (II) LoadModule: "fbdev"
+[    11.658] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    11.658] (II) Module fbdev: vendor="X.Org Foundation"
+[    11.658] 	compiled for 1.20.0, module version = 0.5.0
+[    11.658] 	Module class: X.Org Video Driver
+[    11.658] 	ABI class: X.Org Video Driver, version 24.0
+[    11.658] (II) LoadModule: "vesa"
+[    11.658] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    11.658] (II) Module vesa: vendor="X.Org Foundation"
+[    11.658] 	compiled for 1.20.1, module version = 2.4.0
+[    11.658] 	Module class: X.Org Video Driver
+[    11.658] 	ABI class: X.Org Video Driver, version 24.0
+[    11.658] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    11.658] (II) FBDEV: driver for framebuffer: fbdev
+[    11.658] (II) VESA: driver for VESA chipsets: vesa
+[    11.663] (**) modeset(0): claimed PCI slot 0@0:2:0
+[    11.663] (II) modeset(0): using default device
+[    11.663] (WW) Falling back to old probe method for fbdev
+[    11.663] (II) Loading sub module "fbdevhw"
+[    11.663] (II) LoadModule: "fbdevhw"
+[    11.663] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    11.664] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    11.664] 	compiled for 1.20.4, module version = 0.0.2
+[    11.664] 	ABI class: X.Org Video Driver, version 24.0
+[    11.664] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    11.664] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    11.664] (==) modeset(0): RGB weight 888
+[    11.664] (==) modeset(0): Default visual is TrueColor
+[    11.664] (II) Loading sub module "glamoregl"
+[    11.664] (II) LoadModule: "glamoregl"
+[    11.664] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    11.674] (II) Module glamoregl: vendor="X.Org Foundation"
+[    11.674] 	compiled for 1.20.4, module version = 1.0.1
+[    11.674] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    11.746] (II) modeset(0): glamor X acceleration enabled on Mesa DRI Intel(R) UHD Graphics 600 (Geminilake 2x6) 
+[    11.746] (II) modeset(0): glamor initialized
+[    11.749] (II) modeset(0): Output eDP-1 has no monitor section
+[    11.751] (II) modeset(0): Output HDMI-1 has no monitor section
+[    11.754] (II) modeset(0): EDID for output eDP-1
+[    11.754] (II) modeset(0): Manufacturer: KDB  Model: 1130  Serial#: 0
+[    11.754] (II) modeset(0): Year: 2020  Week: 49
+[    11.754] (II) modeset(0): EDID Version: 1.4
+[    11.754] (II) modeset(0): Digital Display Input
+[    11.754] (II) modeset(0): 6 bits per channel
+[    11.754] (II) modeset(0): Digital interface is DisplayPort
+[    11.754] (II) modeset(0): Max Image Size [cm]: horiz.: 26  vert.: 14
+[    11.754] (II) modeset(0): Gamma: 2.20
+[    11.754] (II) modeset(0): No DPMS capabilities specified
+[    11.754] (II) modeset(0): Supported color encodings: RGB 4:4:4 
+[    11.754] (II) modeset(0): First detailed timing is preferred mode
+[    11.754] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[    11.754] (II) modeset(0): redX: 0.581 redY: 0.357   greenX: 0.348 greenY: 0.579
+[    11.754] (II) modeset(0): blueX: 0.163 blueY: 0.133   whiteX: 0.312 whiteY: 0.329
+[    11.754] (II) modeset(0): Manufacturer's mask: 0
+[    11.754] (II) modeset(0): Supported detailed timing:
+[    11.754] (II) modeset(0): clock: 72.3 MHz   Image Size:  256 x 144 mm
+[    11.754] (II) modeset(0): h_active: 1366  h_sync: 1406  h_sync_end 1438 h_blank_end 1526 h_border: 0
+[    11.754] (II) modeset(0): v_active: 768  v_sync: 773  v_sync_end 778 v_blanking: 790 v_border: 0
+[    11.754] (II) modeset(0):  KD116N2930A02
+[    11.754] (II) modeset(0): EDID (in hex):
+[    11.754] (II) modeset(0): 	00ffffffffffff002c82301100000000
+[    11.754] (II) modeset(0): 	311e0104951a0e7802e1c1945b599429
+[    11.754] (II) modeset(0): 	22505400000001010101010101010101
+[    11.754] (II) modeset(0): 	0101010101013e1c56a0500016302820
+[    11.754] (II) modeset(0): 	55000090100000180000000000000000
+[    11.754] (II) modeset(0): 	00000000000000000000000000000000
+[    11.754] (II) modeset(0): 	000000000000000000000000000000fe
+[    11.754] (II) modeset(0): 	004b443131364e3239333041303200f0
+[    11.755] (II) modeset(0): Printing probed modes for output eDP-1
+[    11.755] (II) modeset(0): Modeline "1366x768"x60.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[    11.755] (II) modeset(0): Modeline "1360x768"x59.8   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync (47.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "1360x768"x60.0   72.00  1360 1408 1440 1520  768 771 781 790 +hsync -vsync (47.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[    11.755] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[    11.755] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[    11.755] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[    11.755] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[    11.755] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[    11.755] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[    11.755] (II) modeset(0): Modeline "800x512"x120.3   51.56  800 800 828 832  512 512 514 515 doublescan +hsync +vsync (62.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[    11.755] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "720x450"x119.8   53.25  720 760 836 952  450 451 454 467 doublescan -hsync +vsync (55.9 kHz d)
+[    11.755] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[    11.755] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[    11.755] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "680x384"x119.6   42.38  680 716 784 888  384 385 390 399 doublescan -hsync +vsync (47.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "680x384"x119.9   36.00  680 704 720 760  384 385 390 395 doublescan +hsync -vsync (47.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "576x432"x120.1   40.81  576 608 668 760  432 432 434 447 doublescan -hsync +vsync (53.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[    11.755] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[    11.755] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[    11.755] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[    11.755] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[    11.755] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[    11.755] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[    11.755] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[    11.755] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[    11.755] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[    11.755] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[    11.757] (II) modeset(0): EDID for output HDMI-1
+[    11.757] (II) modeset(0): Output eDP-1 connected
+[    11.757] (II) modeset(0): Output HDMI-1 disconnected
+[    11.757] (II) modeset(0): Using exact sizes for initial modes
+[    11.757] (II) modeset(0): Output eDP-1 using initial mode 1366x768 +0+0
+[    11.757] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    11.757] (==) modeset(0): DPI set to (96, 96)
+[    11.757] (II) Loading sub module "fb"
+[    11.757] (II) LoadModule: "fb"
+[    11.757] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    11.758] (II) Module fb: vendor="X.Org Foundation"
+[    11.758] 	compiled for 1.20.4, module version = 1.0.0
+[    11.758] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    11.758] (II) UnloadModule: "fbdev"
+[    11.758] (II) Unloading fbdev
+[    11.758] (II) UnloadSubModule: "fbdevhw"
+[    11.758] (II) Unloading fbdevhw
+[    11.758] (II) UnloadModule: "vesa"
+[    11.758] (II) Unloading vesa
+[    11.771] (==) modeset(0): Backing store enabled
+[    11.771] (==) modeset(0): Silken mouse enabled
+[    11.810] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    11.810] (==) modeset(0): DPMS enabled
+[    11.811] (II) modeset(0): [DRI2] Setup complete
+[    11.811] (II) modeset(0): [DRI2]   DRI driver: i965
+[    11.811] (II) modeset(0): [DRI2]   VDPAU driver: i965
+[    11.811] (II) Initializing extension Generic Event Extension
+[    11.812] (II) Initializing extension SHAPE
+[    11.812] (II) Initializing extension MIT-SHM
+[    11.812] (II) Initializing extension XInputExtension
+[    11.813] (II) Initializing extension XTEST
+[    11.814] (II) Initializing extension BIG-REQUESTS
+[    11.814] (II) Initializing extension SYNC
+[    11.814] (II) Initializing extension XKEYBOARD
+[    11.815] (II) Initializing extension XC-MISC
+[    11.815] (II) Initializing extension SECURITY
+[    11.815] (II) Initializing extension XFIXES
+[    11.816] (II) Initializing extension RENDER
+[    11.816] (II) Initializing extension RANDR
+[    11.817] (II) Initializing extension COMPOSITE
+[    11.817] (II) Initializing extension DAMAGE
+[    11.817] (II) Initializing extension MIT-SCREEN-SAVER
+[    11.818] (II) Initializing extension DOUBLE-BUFFER
+[    11.818] (II) Initializing extension RECORD
+[    11.819] (II) Initializing extension DPMS
+[    11.819] (II) Initializing extension Present
+[    11.819] (II) Initializing extension DRI3
+[    11.820] (II) Initializing extension X-Resource
+[    11.820] (II) Initializing extension XVideo
+[    11.820] (II) Initializing extension XVideo-MotionCompensation
+[    11.820] (II) Initializing extension SELinux
+[    11.820] (II) SELinux: Disabled on system
+[    11.820] (II) Initializing extension GLX
+[    11.828] (II) AIGLX: Loaded and initialized i965
+[    11.828] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    11.828] (II) Initializing extension XFree86-VidModeExtension
+[    11.828] (II) Initializing extension XFree86-DGA
+[    11.828] (II) Initializing extension XFree86-DRI
+[    11.828] (II) Initializing extension DRI2
+[    11.840] (II) modeset(0): Damage tracking initialized
+[    11.840] (II) modeset(0): Setting screen physical size to 361 x 203
+[    11.912] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[    11.912] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    11.912] (**) Video Bus: Applying InputClass "system-keyboard"
+[    11.912] (II) LoadModule: "libinput"
+[    11.912] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    11.919] (II) Module libinput: vendor="X.Org Foundation"
+[    11.919] 	compiled for 1.20.4, module version = 0.28.2
+[    11.919] 	Module class: X.Org XInput Driver
+[    11.919] 	ABI class: X.Org XInput driver, version 24.1
+[    11.919] (II) Using input driver 'libinput' for 'Video Bus'
+[    11.919] (**) Video Bus: always reports core events
+[    11.919] (**) Option "Device" "/dev/input/event4"
+[    11.920] (**) Option "_source" "server/udev"
+[    11.925] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[    11.925] (II) event4  - Video Bus: device is a keyboard
+[    11.925] (II) event4  - Video Bus: device removed
+[    11.958] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input4/event4"
+[    11.958] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 6)
+[    11.958] (**) Option "xkb_model" "pc105"
+[    11.958] (**) Option "xkb_layout" "latam"
+[    11.990] (II) event4  - Video Bus: is tagged by udev as: Keyboard
+[    11.990] (II) event4  - Video Bus: device is a keyboard
+[    11.991] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[    11.991] (II) No input driver specified, ignoring this device.
+[    11.991] (II) This device may have been added with another device file.
+[    11.991] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    11.991] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    11.991] (**) Power Button: Applying InputClass "system-keyboard"
+[    11.991] (II) Using input driver 'libinput' for 'Power Button'
+[    11.991] (**) Power Button: always reports core events
+[    11.991] (**) Option "Device" "/dev/input/event3"
+[    11.991] (**) Option "_source" "server/udev"
+[    11.992] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    11.992] (II) event3  - Power Button: device is a keyboard
+[    11.992] (II) event3  - Power Button: device removed
+[    12.010] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input3/event3"
+[    12.010] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    12.010] (**) Option "xkb_model" "pc105"
+[    12.010] (**) Option "xkb_layout" "latam"
+[    12.013] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    12.013] (II) event3  - Power Button: device is a keyboard
+[    12.014] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    12.015] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    12.015] (**) Sleep Button: Applying InputClass "system-keyboard"
+[    12.015] (II) Using input driver 'libinput' for 'Sleep Button'
+[    12.015] (**) Sleep Button: always reports core events
+[    12.015] (**) Option "Device" "/dev/input/event2"
+[    12.015] (**) Option "_source" "server/udev"
+[    12.017] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    12.017] (II) event2  - Sleep Button: device is a keyboard
+[    12.017] (II) event2  - Sleep Button: device removed
+[    12.034] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[    12.034] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[    12.034] (**) Option "xkb_model" "pc105"
+[    12.034] (**) Option "xkb_layout" "latam"
+[    12.037] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    12.037] (II) event2  - Sleep Button: device is a keyboard
+[    12.038] (II) config/udev: Adding drm device (/dev/dri/card0)
+[    12.038] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    12.038] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[    12.038] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event9)
+[    12.038] (II) No input driver specified, ignoring this device.
+[    12.038] (II) This device may have been added with another device file.
+[    12.039] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event10)
+[    12.039] (II) No input driver specified, ignoring this device.
+[    12.039] (II) This device may have been added with another device file.
+[    12.039] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event11)
+[    12.039] (II) No input driver specified, ignoring this device.
+[    12.039] (II) This device may have been added with another device file.
+[    12.039] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event12)
+[    12.039] (II) No input driver specified, ignoring this device.
+[    12.039] (II) This device may have been added with another device file.
+[    12.040] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event13)
+[    12.040] (II) No input driver specified, ignoring this device.
+[    12.040] (II) This device may have been added with another device file.
+[    12.040] (II) config/udev: Adding input device USB 2M Camera: USB 2M Camera (/dev/input/event8)
+[    12.040] (**) USB 2M Camera: USB 2M Camera: Applying InputClass "libinput keyboard catchall"
+[    12.040] (**) USB 2M Camera: USB 2M Camera: Applying InputClass "system-keyboard"
+[    12.040] (II) Using input driver 'libinput' for 'USB 2M Camera: USB 2M Camera'
+[    12.040] (**) USB 2M Camera: USB 2M Camera: always reports core events
+[    12.040] (**) Option "Device" "/dev/input/event8"
+[    12.040] (**) Option "_source" "server/udev"
+[    12.042] (II) event8  - USB 2M Camera: USB 2M Camera: is tagged by udev as: Keyboard
+[    12.042] (II) event8  - USB 2M Camera: USB 2M Camera: device is a keyboard
+[    12.042] (II) event8  - USB 2M Camera: USB 2M Camera: device removed
+[    12.078] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-1/1-1:1.0/input/input11/event8"
+[    12.078] (II) XINPUT: Adding extended input device "USB 2M Camera: USB 2M Camera" (type: KEYBOARD, id 9)
+[    12.078] (**) Option "xkb_model" "pc105"
+[    12.078] (**) Option "xkb_layout" "latam"
+[    12.081] (II) event8  - USB 2M Camera: USB 2M Camera: is tagged by udev as: Keyboard
+[    12.081] (II) event8  - USB 2M Camera: USB 2M Camera: device is a keyboard
+[    12.083] (II) config/udev: Adding input device C-Media Electronics Inc. USB Advanced Audio Device (/dev/input/event5)
+[    12.083] (**) C-Media Electronics Inc. USB Advanced Audio Device: Applying InputClass "libinput keyboard catchall"
+[    12.083] (**) C-Media Electronics Inc. USB Advanced Audio Device: Applying InputClass "system-keyboard"
+[    12.083] (II) Using input driver 'libinput' for 'C-Media Electronics Inc. USB Advanced Audio Device'
+[    12.083] (**) C-Media Electronics Inc. USB Advanced Audio Device: always reports core events
+[    12.083] (**) Option "Device" "/dev/input/event5"
+[    12.083] (**) Option "_source" "server/udev"
+[    12.085] (II) event5  - C-Media Electronics Inc. USB Advanced Audio Device: is tagged by udev as: Keyboard
+[    12.085] (II) event5  - C-Media Electronics Inc. USB Advanced Audio Device: device is a keyboard
+[    12.085] (II) event5  - C-Media Electronics Inc. USB Advanced Audio Device: device removed
+[    12.126] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-8/1-8:1.3/0003:0D8C:025A.0002/input/input5/event5"
+[    12.126] (II) XINPUT: Adding extended input device "C-Media Electronics Inc. USB Advanced Audio Device" (type: KEYBOARD, id 10)
+[    12.126] (**) Option "xkb_model" "pc105"
+[    12.126] (**) Option "xkb_layout" "latam"
+[    12.130] (II) event5  - C-Media Electronics Inc. USB Advanced Audio Device: is tagged by udev as: Keyboard
+[    12.130] (II) event5  - C-Media Electronics Inc. USB Advanced Audio Device: device is a keyboard
+[    12.132] (II) config/udev: Adding input device TPD1019:00 093A:0255 Touchpad (/dev/input/event6)
+[    12.132] (**) TPD1019:00 093A:0255 Touchpad: Applying InputClass "libinput touchpad catchall"
+[    12.132] (**) TPD1019:00 093A:0255 Touchpad: Applying InputClass "touchpad catchall"
+[    12.132] (**) TPD1019:00 093A:0255 Touchpad: Applying InputClass "Default clickpad buttons"
+[    12.132] (**) TPD1019:00 093A:0255 Touchpad: Applying InputClass "SF20GM7 Touchpad Device"
+[    12.132] (II) Using input driver 'libinput' for 'TPD1019:00 093A:0255 Touchpad'
+[    12.132] (**) TPD1019:00 093A:0255 Touchpad: always reports core events
+[    12.132] (**) Option "Device" "/dev/input/event6"
+[    12.132] (**) Option "_source" "server/udev"
+[    12.221] (II) event6  - TPD1019:00 093A:0255 Touchpad: is tagged by udev as: Touchpad
+[    12.223] (EE) event6  - TPD1019:00 093A:0255 Touchpad: kernel bug: clickpad advertising right button
+[    12.226] (II) event6  - TPD1019:00 093A:0255 Touchpad: device is a touchpad
+[    12.226] (II) event6  - TPD1019:00 093A:0255 Touchpad: device removed
+[    12.266] (**) Option "Tapping" "True"
+[    12.267] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:17.1/i2c_designware.5/i2c-10/i2c-TPD1019:00/0018:093A:0255.0001/input/input9/event6"
+[    12.267] (II) XINPUT: Adding extended input device "TPD1019:00 093A:0255 Touchpad" (type: TOUCHPAD, id 11)
+[    12.271] (**) Option "AccelerationScheme" "none"
+[    12.271] (**) TPD1019:00 093A:0255 Touchpad: (accel) selected scheme none/0
+[    12.271] (**) TPD1019:00 093A:0255 Touchpad: (accel) acceleration factor: 2.000
+[    12.271] (**) TPD1019:00 093A:0255 Touchpad: (accel) acceleration threshold: 4
+[    12.341] (II) event6  - TPD1019:00 093A:0255 Touchpad: is tagged by udev as: Touchpad
+[    12.343] (EE) event6  - TPD1019:00 093A:0255 Touchpad: kernel bug: clickpad advertising right button
+[    12.346] (II) event6  - TPD1019:00 093A:0255 Touchpad: device is a touchpad
+[    12.347] (II) config/udev: Adding input device TPD1019:00 093A:0255 Touchpad (/dev/input/mouse0)
+[    12.347] (**) TPD1019:00 093A:0255 Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[    12.349] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[    12.349] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    12.349] (**) AT Translated Set 2 keyboard: Applying InputClass "system-keyboard"
+[    12.349] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    12.349] (**) AT Translated Set 2 keyboard: always reports core events
+[    12.349] (**) Option "Device" "/dev/input/event0"
+[    12.349] (**) Option "_source" "server/udev"
+[    12.351] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    12.351] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[    12.351] (II) event0  - AT Translated Set 2 keyboard: device removed
+[    12.366] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[    12.366] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 12)
+[    12.366] (**) Option "xkb_model" "pc105"
+[    12.366] (**) Option "xkb_layout" "latam"
+[    12.368] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    12.369] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[    12.370] (II) config/udev: Adding input device PC Speaker (/dev/input/event7)
+[    12.371] (II) No input driver specified, ignoring this device.
+[    12.371] (II) This device may have been added with another device file.
+[    48.998] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[    48.998] (II) modeset(0): Printing DDC gathered Modelines:
+[    48.998] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[    50.302] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[    50.303] (II) modeset(0): Printing DDC gathered Modelines:
+[    50.303] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  2705.607] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/mouse3)
+[  2705.609] (II) No input driver specified, ignoring this device.
+[  2705.609] (II) This device may have been added with another device file.
+[  2705.640] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/mouse2)
+[  2705.640] (II) No input driver specified, ignoring this device.
+[  2705.640] (II) This device may have been added with another device file.
+[  2705.647] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse (/dev/input/mouse1)
+[  2705.647] (II) No input driver specified, ignoring this device.
+[  2705.647] (II) This device may have been added with another device file.
+[  2705.680] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard (/dev/input/event18)
+[  2705.680] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: Applying InputClass "libinput keyboard catchall"
+[  2705.680] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: Applying InputClass "system-keyboard"
+[  2705.680] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard'
+[  2705.680] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: always reports core events
+[  2705.680] (**) Option "Device" "/dev/input/event18"
+[  2705.680] (**) Option "_source" "server/udev"
+[  2705.682] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: is tagged by udev as: Keyboard
+[  2705.682] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device is a keyboard
+[  2705.682] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device removed
+[  2705.698] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0004/input/input21/event18"
+[  2705.698] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard" (type: KEYBOARD, id 13)
+[  2705.698] (**) Option "xkb_model" "pc105"
+[  2705.698] (**) Option "xkb_layout" "latam"
+[  2705.698] (WW) Option "xkb_variant" requires a string value
+[  2705.698] (WW) Option "xkb_options" requires a string value
+[  2705.711] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: is tagged by udev as: Keyboard
+[  2705.711] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device is a keyboard
+[  2705.715] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event17)
+[  2705.715] (II) No input driver specified, ignoring this device.
+[  2705.715] (II) This device may have been added with another device file.
+[  2705.716] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control (/dev/input/event20)
+[  2705.716] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2705.716] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "system-keyboard"
+[  2705.716] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control'
+[  2705.716] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: always reports core events
+[  2705.716] (**) Option "Device" "/dev/input/event20"
+[  2705.716] (**) Option "_source" "server/udev"
+[  2705.718] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: is tagged by udev as: Keyboard
+[  2705.718] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device is a keyboard
+[  2705.718] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device removed
+[  2705.738] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: needs a virtual subdevice
+[  2705.738] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0004/input/input23/event20"
+[  2705.738] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control" (type: MOUSE, id 14)
+[  2705.741] (**) Option "AccelerationScheme" "none"
+[  2705.742] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: (accel) selected scheme none/0
+[  2705.742] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: (accel) acceleration factor: 2.000
+[  2705.742] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: (accel) acceleration threshold: 4
+[  2705.744] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: is tagged by udev as: Keyboard
+[  2705.744] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device is a keyboard
+[  2705.746] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2705.746] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "system-keyboard"
+[  2705.746] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control'
+[  2705.746] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: always reports core events
+[  2705.746] (**) Option "Device" "/dev/input/event20"
+[  2705.746] (**) Option "_source" "_driver/libinput"
+[  2705.746] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: is a virtual subdevice
+[  2705.746] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0004/input/input23/event20"
+[  2705.746] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control" (type: KEYBOARD, id 15)
+[  2705.746] (**) Option "xkb_model" "pc105"
+[  2705.746] (**) Option "xkb_layout" "latam"
+[  2705.746] (WW) Option "xkb_variant" requires a string value
+[  2705.746] (WW) Option "xkb_options" requires a string value
+[  2705.749] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event19)
+[  2705.749] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: Applying InputClass "libinput tablet catchall"
+[  2705.749] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet'
+[  2705.749] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: always reports core events
+[  2705.749] (**) Option "Device" "/dev/input/event19"
+[  2705.749] (**) Option "_source" "server/udev"
+[  2705.751] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  2705.763] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: tablet 'SZ PING-IT INC.  [T605] Driver Inside Tablet' unknown to libwacom
+[  2705.763] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  2705.763] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device removed
+[  2705.802] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0004/input/input22/event19"
+[  2705.802] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet" (type: TABLET, id 16)
+[  2705.807] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  2705.817] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: tablet 'SZ PING-IT INC.  [T605] Driver Inside Tablet' unknown to libwacom
+[  2705.818] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  2705.820] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse (/dev/input/event15)
+[  2705.820] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: Applying InputClass "libinput pointer catchall"
+[  2705.820] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse'
+[  2705.820] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: always reports core events
+[  2705.821] (**) Option "Device" "/dev/input/event15"
+[  2705.821] (**) Option "_source" "server/udev"
+[  2705.882] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: is tagged by udev as: Mouse
+[  2705.882] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device is a pointer
+[  2705.883] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device removed
+[  2705.922] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.1/0003:08F2:6811.0003/input/input18/event15"
+[  2705.922] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse" (type: MOUSE, id 17)
+[  2705.927] (**) Option "AccelerationScheme" "none"
+[  2705.930] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: (accel) selected scheme none/0
+[  2705.930] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: (accel) acceleration factor: 2.000
+[  2705.930] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: (accel) acceleration threshold: 4
+[  2705.994] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: is tagged by udev as: Mouse
+[  2705.994] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device is a pointer
+[  2706.000] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event14)
+[  2706.000] (II) No input driver specified, ignoring this device.
+[  2706.000] (II) This device may have been added with another device file.
+[  2706.002] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event16)
+[  2706.002] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: Applying InputClass "libinput tablet catchall"
+[  2706.002] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet'
+[  2706.002] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: always reports core events
+[  2706.002] (**) Option "Device" "/dev/input/event16"
+[  2706.002] (**) Option "_source" "server/udev"
+[  2706.003] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  2706.012] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: tablet 'SZ PING-IT INC.  [T605] Driver Inside Tablet' unknown to libwacom
+[  2706.013] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  2706.013] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device removed
+[  2706.050] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.1/0003:08F2:6811.0003/input/input19/event16"
+[  2706.050] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet" (type: TABLET, id 18)
+[  2706.057] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  2706.072] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: tablet 'SZ PING-IT INC.  [T605] Driver Inside Tablet' unknown to libwacom
+[  2706.073] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  2727.767] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet: needs a virtual subdevice
+[  2727.767] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): Applying InputClass "libinput tablet catchall"
+[  2727.767] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0)'
+[  2727.767] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): always reports core events
+[  2727.767] (**) Option "Device" "/dev/input/event19"
+[  2727.767] (**) Option "_source" "_driver/libinput"
+[  2727.767] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): is a virtual subdevice
+[  2727.767] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0004/input/input22/event19"
+[  2727.767] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0)" (type: STYLUS, id 19)
+[  2727.767] (**) Option "AccelerationScheme" "none"
+[  2727.768] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): (accel) selected scheme none/0
+[  2727.768] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): (accel) acceleration factor: 2.000
+[  2727.768] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): (accel) acceleration threshold: 4
+[  3081.732] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  3081.733] (II) modeset(0): Printing DDC gathered Modelines:
+[  3081.733] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  3081.842] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  3081.842] (II) modeset(0): Printing DDC gathered Modelines:
+[  3081.842] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  3541.702] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse
+[  3541.702] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device removed
+[  3541.739] (II) UnloadModule: "libinput"
+[  3541.740] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet
+[  3541.740] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device removed
+[  3541.755] (II) UnloadModule: "libinput"
+[  3541.825] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard
+[  3541.825] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device removed
+[  3541.854] (II) UnloadModule: "libinput"
+[  3541.860] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet
+[  3541.868] (II) UnloadModule: "libinput"
+[  3541.869] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0)
+[  3541.869] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device removed
+[  3541.897] (II) UnloadModule: "libinput"
+[  3541.904] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control
+[  3541.912] (II) UnloadModule: "libinput"
+[  3541.912] (II) config/udev: removing device SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control
+[  3541.912] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device removed
+[  3541.948] (II) UnloadModule: "libinput"
+[  3546.759] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/mouse3)
+[  3546.759] (II) No input driver specified, ignoring this device.
+[  3546.759] (II) This device may have been added with another device file.
+[  3546.764] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse (/dev/input/mouse1)
+[  3546.765] (II) No input driver specified, ignoring this device.
+[  3546.765] (II) This device may have been added with another device file.
+[  3546.782] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/mouse2)
+[  3546.782] (II) No input driver specified, ignoring this device.
+[  3546.782] (II) This device may have been added with another device file.
+[  3546.806] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard (/dev/input/event18)
+[  3546.806] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: Applying InputClass "libinput keyboard catchall"
+[  3546.806] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: Applying InputClass "system-keyboard"
+[  3546.806] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard'
+[  3546.806] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: always reports core events
+[  3546.806] (**) Option "Device" "/dev/input/event18"
+[  3546.806] (**) Option "_source" "server/udev"
+[  3546.808] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: is tagged by udev as: Keyboard
+[  3546.808] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device is a keyboard
+[  3546.808] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device removed
+[  3546.818] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0006/input/input28/event18"
+[  3546.818] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard" (type: KEYBOARD, id 13)
+[  3546.818] (**) Option "xkb_model" "pc105"
+[  3546.818] (**) Option "xkb_layout" "latam"
+[  3546.818] (WW) Option "xkb_variant" requires a string value
+[  3546.818] (WW) Option "xkb_options" requires a string value
+[  3546.825] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: is tagged by udev as: Keyboard
+[  3546.825] (II) event18 - SZ PING-IT INC.  [T605] Driver Inside Tablet Keyboard: device is a keyboard
+[  3546.830] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event19)
+[  3546.830] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: Applying InputClass "libinput tablet catchall"
+[  3546.830] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet'
+[  3546.830] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: always reports core events
+[  3546.830] (**) Option "Device" "/dev/input/event19"
+[  3546.830] (**) Option "_source" "server/udev"
+[  3546.831] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  3546.854] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: failed to initialize libwacom context.
+[  3546.854] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  3546.854] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device removed
+[  3546.898] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0006/input/input29/event19"
+[  3546.898] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet" (type: TABLET, id 14)
+[  3546.905] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  3546.917] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: failed to initialize libwacom context.
+[  3546.917] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  3546.919] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse (/dev/input/event15)
+[  3546.919] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: Applying InputClass "libinput pointer catchall"
+[  3546.919] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse'
+[  3546.919] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: always reports core events
+[  3546.919] (**) Option "Device" "/dev/input/event15"
+[  3546.919] (**) Option "_source" "server/udev"
+[  3546.982] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: is tagged by udev as: Mouse
+[  3546.982] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device is a pointer
+[  3546.982] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device removed
+[  3547.014] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.1/0003:08F2:6811.0005/input/input25/event15"
+[  3547.014] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse" (type: MOUSE, id 15)
+[  3547.018] (**) Option "AccelerationScheme" "none"
+[  3547.022] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: (accel) selected scheme none/0
+[  3547.023] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: (accel) acceleration factor: 2.000
+[  3547.023] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: (accel) acceleration threshold: 4
+[  3547.084] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: is tagged by udev as: Mouse
+[  3547.084] (II) event15 - SZ PING-IT INC.  [T605] Driver Inside Tablet Mouse: device is a pointer
+[  3547.090] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control (/dev/input/event20)
+[  3547.090] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  3547.090] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "system-keyboard"
+[  3547.090] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control'
+[  3547.090] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: always reports core events
+[  3547.090] (**) Option "Device" "/dev/input/event20"
+[  3547.090] (**) Option "_source" "server/udev"
+[  3547.093] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: is tagged by udev as: Keyboard
+[  3547.093] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device is a keyboard
+[  3547.093] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device removed
+[  3547.106] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: needs a virtual subdevice
+[  3547.106] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0006/input/input30/event20"
+[  3547.106] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control" (type: MOUSE, id 16)
+[  3547.109] (**) Option "AccelerationScheme" "none"
+[  3547.111] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: (accel) selected scheme none/0
+[  3547.111] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: (accel) acceleration factor: 2.000
+[  3547.111] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: (accel) acceleration threshold: 4
+[  3547.114] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: is tagged by udev as: Keyboard
+[  3547.114] (II) event20 - SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: device is a keyboard
+[  3547.116] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  3547.116] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: Applying InputClass "system-keyboard"
+[  3547.116] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control'
+[  3547.116] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: always reports core events
+[  3547.116] (**) Option "Device" "/dev/input/event20"
+[  3547.116] (**) Option "_source" "_driver/libinput"
+[  3547.117] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control: is a virtual subdevice
+[  3547.117] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0006/input/input30/event20"
+[  3547.117] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Consumer Control" (type: KEYBOARD, id 17)
+[  3547.117] (**) Option "xkb_model" "pc105"
+[  3547.117] (**) Option "xkb_layout" "latam"
+[  3547.117] (WW) Option "xkb_variant" requires a string value
+[  3547.117] (WW) Option "xkb_options" requires a string value
+[  3547.120] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event17)
+[  3547.120] (II) No input driver specified, ignoring this device.
+[  3547.120] (II) This device may have been added with another device file.
+[  3547.121] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event14)
+[  3547.121] (II) No input driver specified, ignoring this device.
+[  3547.121] (II) This device may have been added with another device file.
+[  3547.121] (II) config/udev: Adding input device SZ PING-IT INC.  [T605] Driver Inside Tablet (/dev/input/event16)
+[  3547.121] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: Applying InputClass "libinput tablet catchall"
+[  3547.121] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet'
+[  3547.121] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet: always reports core events
+[  3547.121] (**) Option "Device" "/dev/input/event16"
+[  3547.121] (**) Option "_source" "server/udev"
+[  3547.123] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  3547.128] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: failed to initialize libwacom context.
+[  3547.128] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  3547.128] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device removed
+[  3547.162] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.1/0003:08F2:6811.0005/input/input26/event16"
+[  3547.162] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet" (type: TABLET, id 18)
+[  3547.168] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: is tagged by udev as: Tablet
+[  3547.179] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: failed to initialize libwacom context.
+[  3547.179] (II) event16 - SZ PING-IT INC.  [T605] Driver Inside Tablet: device is a tablet
+[  3577.552] (II) event19 - SZ PING-IT INC.  [T605] Driver Inside Tablet: Failed to initialize libwacom context.
+[  3577.552] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet: needs a virtual subdevice
+[  3577.552] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): Applying InputClass "libinput tablet catchall"
+[  3577.552] (II) Using input driver 'libinput' for 'SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0)'
+[  3577.552] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): always reports core events
+[  3577.552] (**) Option "Device" "/dev/input/event19"
+[  3577.552] (**) Option "_source" "_driver/libinput"
+[  3577.552] (II) libinput: SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): is a virtual subdevice
+[  3577.552] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.0/usb1/1-6/1-6:1.2/0003:08F2:6811.0006/input/input29/event19"
+[  3577.552] (II) XINPUT: Adding extended input device "SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0)" (type: STYLUS, id 19)
+[  3577.553] (**) Option "AccelerationScheme" "none"
+[  3577.553] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): (accel) selected scheme none/0
+[  3577.553] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): (accel) acceleration factor: 2.000
+[  3577.553] (**) SZ PING-IT INC.  [T605] Driver Inside Tablet Pen (0): (accel) acceleration threshold: 4
+[  3802.231] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  3802.231] (II) modeset(0): Printing DDC gathered Modelines:
+[  3802.231] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  3806.206] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  3806.206] (II) modeset(0): Printing DDC gathered Modelines:
+[  3806.206] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  3858.638] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  3858.638] (II) modeset(0): Printing DDC gathered Modelines:
+[  3858.638] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  4009.561] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  4009.561] (II) modeset(0): Printing DDC gathered Modelines:
+[  4009.561] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
+[  4165.748] (II) modeset(0): EDID vendor "KDB", prod id 4400
+[  4165.748] (II) modeset(0): Printing DDC gathered Modelines:
+[  4165.748] (II) modeset(0): Modeline "1366x768"x0.0   72.30  1366 1406 1438 1526  768 773 778 790 -hsync -vsync (47.4 kHz eP)
