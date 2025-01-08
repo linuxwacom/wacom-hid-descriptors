@@ -1,0 +1,83 @@
+Usage Page (Digitizer),             ; Digitizer (0Dh)
+Usage (Digitizer),                  ; Digitizer (01h, application collection)
+Collection (Application),
+    Report ID (2),
+    Usage (Stylus),                 ; Stylus (20h, application collection, logical collection)
+    Collection (Physical),
+        Usage (Tip Switch),         ; Tip switch (42h, momentary control)
+        Usage (Barrel Switch),      ; Barrel switch (44h, momentary control)
+        Usage (Tablet Pick),        ; Tablet pick (46h, momentary control)
+        Report Size (1),
+        Report Count (3),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Input (Variable),
+        Report Count (2),
+        Input (Constant, Variable),
+        Usage (In Range),           ; In range (32h, momentary control)
+        Report Count (1),
+        Input (Variable),
+        Report Count (2),
+        Input (Constant, Variable),
+        Report Size (16),
+        Report Count (1),
+        Physical Minimum (0),
+        Push,
+        Usage Page (Desktop),       ; Generic desktop controls (01h)
+        Usage (X),                  ; X (30h, dynamic value)
+        Unit (Inch),
+        Unit Exponent (13),
+        Logical Maximum (50800),
+        Physical Maximum (10000),
+        Input (Variable),
+        Usage (Y),                  ; Y (31h, dynamic value)
+        Logical Maximum (30480),
+        Physical Maximum (6000),
+        Input (Variable),
+        Pop,
+        Usage (Tip Pressure),       ; Tip pressure (30h, dynamic value)
+        Physical Maximum (0),
+        Logical Maximum (8191),
+        Report Size (13),
+        Report Count (1),
+        Input (Variable),
+        Report Size (1),
+        Report Count (3),
+        Input (Constant),
+        Usage (X Tilt),             ; X tilt (3Dh, dynamic value)
+        Physical Minimum (-61),
+        Physical Maximum (60),
+        Logical Minimum (-61),
+        Logical Maximum (60),
+        Report Size (8),
+        Report Count (1),
+        Input (Variable),
+        Usage (Y Tilt),             ; Y tilt (3Eh, dynamic value)
+        Physical Minimum (-61),
+        Physical Maximum (60),
+        Logical Minimum (-61),
+        Logical Maximum (60),
+        Input (Variable),
+    End Collection,
+End Collection,
+Usage Page (Desktop),               ; Generic desktop controls (01h)
+Usage (Keypad),                     ; Keypad (07h, application collection)
+Collection (Application),
+    Report ID (247),
+    Usage Page (Digitizer),         ; Digitizer (0Dh)
+    Usage (Tablet Function Keys),   ; Tablet function keys (39h, logical collection)
+    Collection (Physical),
+        Report Size (1),
+        Report Count (8),
+        Input (Constant),
+        Usage Page (Button),        ; Button (09h)
+        Usage Minimum (01h),
+        Usage Maximum (08h),
+        Report Count (10),
+        Logical Minimum (0),
+        Logical Maximum (1),
+        Input (Variable),
+        Report Count (70),
+        Input (Constant),
+    End Collection,
+End Collection
