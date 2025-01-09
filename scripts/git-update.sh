@@ -1,22 +1,24 @@
 #!/bin/bash
 
-#
-# Extract a sysinfo archive into a directory suitable for commit and
-# auto-generate a tablet definition file.
-#
-# Usage: 
-#     git-update.sh <archive> <--url=<post> | --nourl> [--oem=<name>] [--product=<name>]
-#
-# archive           Path to the sysinfo archive to be processed
-# --url=<post>      Link to the post which produced this archive
-# --nourl           Explicitly do not reference a public sysinfo posting
-# --oem=<name>      Override the OEM name contained in machine.txt
-# --product=<name>  Override the product name contained in machine.txt
-#
-
 set -e
 
 SCRIPTDIR=$(dirname $(readlink -f "$0"))
+
+usage() {
+    cat <<EOF
+ Extract a sysinfo archive into a directory suitable for commit and
+ auto-generate a tablet definition file.
+
+ Usage: 
+     git-update.sh <archive> <--url=<post> | --nourl> [--oem=<name>] [--product=<name>]
+
+ archive           Path to the sysinfo archive to be processed
+ --url=<post>      Link to the post which produced this archive
+ --nourl           Explicitly do not reference a public sysinfo posting
+ --oem=<name>      Override the OEM name contained in machine.txt
+ --product=<name>  Override the product name contained in machine.txt
+EOF
+}
 
 ####################
 # Dependency check
@@ -30,6 +32,13 @@ fi
 ####################
 # Argument parsing
 #
+if [[ $# -lt 2 ]]; then
+  echo "ERROR: Required arguments missing."
+  echo
+  usage
+  exit 1
+fi
+
 for arg in "${@}"; do
   case $arg in
     --url=*) ISSUE_URL="${arg#*=}"; shift;;
@@ -49,6 +58,8 @@ if [[ -n "${NOURL}" ]]; then
   ISSUE_URL="From private bug report"
 elif [[ -z "${ISSUE_URL}" ]]; then
   echo "ERROR: The --url=<issue> parameter is required."
+  echo
+  usage
   exit 1
 elif [[ "${ISSUE_URL}" != *"github"* ]]; then
   echo "ERROR: This script can only handle Github issues."
