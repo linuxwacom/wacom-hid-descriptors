@@ -19,6 +19,15 @@ set -e
 SCRIPTDIR=$(dirname $(readlink -f "$0"))
 
 ####################
+# Dependency check
+#
+if ! command -v hidrd-convert 2>&1 > /dev/null; then
+  echo "ERROR: Could not find required 'hidrd-convert' tool. Check your distro packages or"
+  echo "install from source: https://github.com/DIGImend/hidrd"
+  exit 1
+fi
+
+####################
 # Argument parsing
 #
 for arg in "${@}"; do
