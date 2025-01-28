@@ -10,11 +10,12 @@ usage() {
  auto-generate a tablet definition file.
 
  Usage: 
-     git-update.sh <archive> <--url=<post> | --nourl> [--oem=<name>] [--product=<name>]
+     git-update.sh <archive> <--url=<post> | --nourl> [--username=<name>] [--oem=<name>] [--product=<name>]
 
  archive           Path to the sysinfo archive to be processed
  --url=<post>      Link to the post which produced this archive
  --nourl           Explicitly do not reference a public sysinfo posting
+ --username=<name> Set the Github username of the source
  --oem=<name>      Override the OEM name contained in machine.txt
  --product=<name>  Override the product name contained in machine.txt
 EOF
@@ -43,6 +44,7 @@ for arg in "${@}"; do
   case $arg in
     --url=*) ISSUE_URL="${arg#*=}"; shift;;
     --nourl) NOURL=1; shift;;
+    --username=*) SOURCE_USERNAME="${arg#*=}"; shift;;
     --oem=*) OEM="${arg#*=}"; shift;;
     --product=*) PRODUCT="${arg#*=}"; shift;;
     *) ARCHIVE=$(readlink -f "${arg}"); shift;;
@@ -169,16 +171,19 @@ if [[ ! -f "README" ]]; then
 fi
 
 if [[ -z "${NOURL}" ]]; then
-  ANCHOR="#${ISSUE_URL#*#}"
-  if [[ "$ANCHOR" = "#${ISSUE_URL}" ]]; then
-    USERNAME=$(curl "${ISSUE_URL}" | sed -En 's!.*>([^<]*)</a>\s+opened this issue.*!\1!p' | head -n1)
-  else
-    USERNAME=$(curl "${ISSUE_URL}" | grep -C10 "$ANCHOR" | sed -En 's!^.+>([^<]+)</a>$!\1!p' | head -n1)
+  if [[ -z "${SOURCE_USERNAME}" ]]; then
+    ANCHOR="#${ISSUE_URL#*#}"
+    if [[ "$ANCHOR" = "#${ISSUE_URL}" ]]; then
+      SOURCE_USERNAME=$(curl "${ISSUE_URL}" | sed -En 's!^.+"issue-body-header-author">([^<]+).+$!\1!p' | head -n1)
+    else
+      echo "Error: Unable to find username in source URL. Please provide --username argument."
+      exit 1
+    fi
   fi
-  USER_URL="https://github.com/${USERNAME}"
+  USER_URL="https://github.com/${SOURCE_USERNAME}"
   cat <<-EOF >> README
 	* ${IDENT}
-	  ${USERNAME} [${USER_URL}]
+	  ${SOURCE_USERNAME} [${USER_URL}]
 	  ${ISSUE_URL}
 	  ${ARCHIVE_DATE}
 	
