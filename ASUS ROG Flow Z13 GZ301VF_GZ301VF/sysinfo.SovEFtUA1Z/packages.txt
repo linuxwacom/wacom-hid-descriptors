@@ -1,0 +1,69 @@
+Name            : libwacom
+Version         : 2.14.0-1
+Description     : Library to identify Wacom tablets and their features
+Architecture    : x86_64
+URL             : https://github.com/linuxwacom/libwacom/wiki
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : glib2  libevdev  libgudev  glibc
+Optional Deps   : python-libevdev: for libwacom-show-stylus
+                  python-pyudev: for libwacom-show-stylus
+Required By     : libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1461.99 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Thu Dec  5 17:06:15 2024
+Install Date    : Sun Jan 12 16:38:24 2025
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : libinput
+Version         : 1.27.1-1
+Description     : Input device management and event handling library
+Architecture    : x86_64
+URL             : https://gitlab.freedesktop.org/libinput/libinput
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : mtdev  libevdev  libwacom  systemd-libs  glibc
+Optional Deps   : gtk4: libinput debug-gui [installed]
+                  python-pyudev: libinput measure
+                  python-libevdev: libinput measure
+                  python-yaml: used by various tools
+Required By     : kwin  libinput-gestures  qt5-base  qt6-base  rog-control-center  xf86-input-libinput
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1162.57 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Mon Jan  6 09:11:44 2025
+Install Date    : Sun Jan 12 16:38:24 2025
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
+
+Name            : xf86-input-libinput
+Version         : 1.5.0-1
+Description     : Generic input driver for the X.Org server based on libinput
+Architecture    : x86_64
+URL             : http://xorg.freedesktop.org/
+Licenses        : MIT
+Groups          : xorg-drivers
+Provides        : None
+Depends On      : libinput  glibc
+Optional Deps   : None
+Required By     : xorg-server
+Optional For    : None
+Conflicts With  : xorg-server<1.19.0  X-ABI-XINPUT_VERSION<24  X-ABI-XINPUT_VERSION>=25
+Replaces        : None
+Installed Size  : 103.13 KiB
+Packager        : Andreas Radke <andyrtr@archlinux.org>
+Build Date      : Tue Oct 15 14:44:40 2024
+Install Date    : Mon Jan 13 19:24:01 2025
+Install Reason  : Installed as a dependency for another package
+Install Script  : No
+Validated By    : Signature
