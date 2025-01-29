@@ -181,21 +181,26 @@ if [[ -z "${NOURL}" ]]; then
     fi
   fi
   USER_URL="https://github.com/${SOURCE_USERNAME}"
-  cat <<-EOF >> README
+  SOURCE_INFO=$(cat <<-EOF
 	* ${IDENT}
 	  ${SOURCE_USERNAME} [${USER_URL}]
 	  ${ISSUE_URL}
 	  ${ARCHIVE_DATE}
 	
 	EOF
+    )
 else
-  cat <<-EOF >> README
+  SOURCE_INFO=$(cat <<-EOF
 	* ${IDENT}
 	  ${ISSUE_URL}
 	  ${ARCHIVE_DATE}
 	
 	EOF
+    )
 fi
+echo "Attributing data as:"
+echo "$SOURCE_INFO"
+echo "$SOURCE_INFO" >> README
 
 echo "Generated '$(pwd)/README'"
 
