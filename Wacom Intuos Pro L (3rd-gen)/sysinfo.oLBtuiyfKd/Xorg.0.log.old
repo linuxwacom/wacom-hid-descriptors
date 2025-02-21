@@ -1,0 +1,732 @@
+[    35.382] (--) Log file renamed from "/var/log/Xorg.pid-2903.log" to "/var/log/Xorg.0.log"
+[    35.383] 
+X.Org X Server 1.21.1.4
+X Protocol Version 11, Revision 0
+[    35.383] Current Operating System: Linux HOSTNAME 5.19.0-50-generic #50-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 10 18:24:29 UTC 2023 x86_64
+[    35.383] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.19.0-50-generic USERNAME=UUID=fe6b03fb-8e31-4a85-8da8-bc4891d4df69 ro quiet splash
+[    35.383] xorg-server 2:21.1.4-2ubuntu1.7~22.04.1 (For technical support please see http://www.ubuntu.com/support) 
+[    35.383] Current version of pixman: 0.40.0
+[    35.383] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    35.383] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    35.383] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Aug  3 15:02:48 2023
+[    35.383] (==) Using config file: "/etc/X11/xorg.conf"
+[    35.383] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    35.384] (==) ServerLayout "Layout0"
+[    35.384] (**) |-->Screen "Screen0" (0)
+[    35.384] (**) |   |-->Monitor "Monitor0"
+[    35.384] (**) |   |-->Device "Device0"
+[    35.384] (**) |-->Input Device "Keyboard0"
+[    35.384] (**) |-->Input Device "Mouse0"
+[    35.384] (==) Automatically adding devices
+[    35.384] (==) Automatically enabling devices
+[    35.384] (==) Automatically adding GPU devices
+[    35.384] (==) Automatically binding GPU devices
+[    35.384] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    35.384] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    35.384] 	Entry deleted from font path.
+[    35.384] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    35.384] 	Entry deleted from font path.
+[    35.384] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    35.384] 	Entry deleted from font path.
+[    35.385] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    35.385] 	Entry deleted from font path.
+[    35.385] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    35.385] 	Entry deleted from font path.
+[    35.385] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[    35.385] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    35.385] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[    35.385] (WW) Disabling Keyboard0
+[    35.385] (WW) Disabling Mouse0
+[    35.385] (II) Loader magic: 0x55791a339020
+[    35.385] (II) Module ABI versions:
+[    35.385] 	X.Org ANSI C Emulation: 0.4
+[    35.385] 	X.Org Video Driver: 25.2
+[    35.385] 	X.Org XInput driver : 24.4
+[    35.385] 	X.Org Server Extension : 10.0
+[    35.385] (++) using VT number 2
+
+[    35.385] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[    35.387] (--) PCI:*(10@0:0:0) 10de:2203:1043:8874 rev 161, Mem @ 0xfb000000/16777216, 0xd0000000/268435456, 0xe0000000/33554432, I/O @ 0x0000f000/128, BIOS @ 0x????????/131072
+[    35.388] (II) LoadModule: "glx"
+[    35.388] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    35.389] (II) Module glx: vendor="X.Org Foundation"
+[    35.389] 	compiled for 1.21.1.4, module version = 1.0.0
+[    35.389] 	ABI class: X.Org Server Extension, version 10.0
+[    35.389] (II) LoadModule: "nvidia"
+[    35.389] (WW) Warning, couldn't open module nvidia
+[    35.389] (EE) Failed to load module "nvidia" (module does not exist, 0)
+[    35.505] (==) Matched nouveau as autoconfigured driver 0
+[    35.505] (==) Matched modesetting as autoconfigured driver 1
+[    35.505] (==) Matched fbdev as autoconfigured driver 2
+[    35.505] (==) Matched vesa as autoconfigured driver 3
+[    35.505] (==) Assigned the driver to the xf86ConfigLayout
+[    35.505] (II) LoadModule: "nouveau"
+[    35.506] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[    35.506] (II) Module nouveau: vendor="X.Org Foundation"
+[    35.506] 	compiled for 1.21.1.3, module version = 1.0.17
+[    35.506] 	Module class: X.Org Video Driver
+[    35.506] 	ABI class: X.Org Video Driver, version 25.2
+[    35.506] (II) LoadModule: "modesetting"
+[    35.506] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    35.507] (II) Module modesetting: vendor="X.Org Foundation"
+[    35.507] 	compiled for 1.21.1.4, module version = 1.21.1
+[    35.507] 	Module class: X.Org Video Driver
+[    35.507] 	ABI class: X.Org Video Driver, version 25.2
+[    35.507] (II) LoadModule: "fbdev"
+[    35.507] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    35.507] (II) Module fbdev: vendor="X.Org Foundation"
+[    35.507] 	compiled for 1.21.1.3, module version = 0.5.0
+[    35.507] 	Module class: X.Org Video Driver
+[    35.507] 	ABI class: X.Org Video Driver, version 25.2
+[    35.507] (II) LoadModule: "vesa"
+[    35.507] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    35.507] (II) Module vesa: vendor="X.Org Foundation"
+[    35.507] 	compiled for 1.21.1.3, module version = 2.5.0
+[    35.507] 	Module class: X.Org Video Driver
+[    35.507] 	ABI class: X.Org Video Driver, version 25.2
+[    35.507] (II) NOUVEAU driver Date:   Sat Jan 23 12:24:42 2021 -0500
+[    35.507] (II) NOUVEAU driver for NVIDIA chipset families :
+[    35.507] 	RIVA TNT            (NV04)
+[    35.507] 	RIVA TNT2           (NV05)
+[    35.507] 	GeForce 256         (NV10)
+[    35.507] 	GeForce 2           (NV11, NV15)
+[    35.507] 	GeForce 4MX         (NV17, NV18)
+[    35.508] 	GeForce 3           (NV20)
+[    35.508] 	GeForce 4Ti         (NV25, NV28)
+[    35.508] 	GeForce FX          (NV3x)
+[    35.508] 	GeForce 6           (NV4x)
+[    35.508] 	GeForce 7           (G7x)
+[    35.508] 	GeForce 8           (G8x)
+[    35.508] 	GeForce 9           (G9x)
+[    35.508] 	GeForce GTX 2xx/3xx (GT2xx)
+[    35.508] 	GeForce GTX 4xx/5xx (GFxxx)
+[    35.508] 	GeForce GTX 6xx/7xx (GKxxx)
+[    35.508] 	GeForce GTX 9xx     (GMxxx)
+[    35.508] 	GeForce GTX 10xx    (GPxxx)
+[    35.508] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    35.508] (II) FBDEV: driver for framebuffer: fbdev
+[    35.508] (II) VESA: driver for VESA chipsets: vesa
+[    35.624] (EE) [drm] Failed to open DRM device for pci:0000:0a:00.0: -19
+[    35.624] (EE) open /dev/dri/card0: No such file or directory
+[    35.624] (WW) Falling back to old probe method for modesetting
+[    35.624] (EE) open /dev/dri/card0: No such file or directory
+[    35.624] (II) Loading sub module "fbdevhw"
+[    35.624] (II) LoadModule: "fbdevhw"
+[    35.624] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    35.625] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    35.625] 	compiled for 1.21.1.4, module version = 0.0.2
+[    35.625] 	ABI class: X.Org Video Driver, version 25.2
+[    35.625] (EE) Unable to find a valid framebuffer device
+[    35.625] (WW) Falling back to old probe method for fbdev
+[    35.625] (II) Loading sub module "fbdevhw"
+[    35.625] (II) LoadModule: "fbdevhw"
+[    35.625] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    35.625] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    35.625] 	compiled for 1.21.1.4, module version = 0.0.2
+[    35.625] 	ABI class: X.Org Video Driver, version 25.2
+[    35.625] (II) FBDEV(2): using default device
+[    35.625] vesa: Refusing to run on UEFI
+[    35.625] (EE) Screen 0 deleted because of no matching config section.
+[    35.625] (II) UnloadModule: "modesetting"
+[    35.625] (EE) Screen 0 deleted because of no matching config section.
+[    35.625] (II) UnloadModule: "fbdev"
+[    35.625] (II) UnloadSubModule: "fbdevhw"
+[    35.625] (**) FBDEV(0): Depth 24, (--) framebuffer bpp 32
+[    35.625] (==) FBDEV(0): RGB weight 888
+[    35.625] (==) FBDEV(0): Default visual is TrueColor
+[    35.625] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[    35.625] (II) FBDEV(0): hardware: EFI VGA (video memory: 8100kB)
+[    35.625] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[    35.625] (II) FBDEV(0): checking modes against framebuffer device...
+[    35.625] (II) FBDEV(0): checking modes against monitor...
+[    35.625] (II) FBDEV(0): Virtual size is 1920x1080 (pitch 1920)
+[    35.625] (**) FBDEV(0):  Built-in mode "current": 207.4 MHz, 85.3 kHz, 77.2 Hz
+[    35.625] (II) FBDEV(0): Modeline "current"x0.0  207.38  1920 1952 2192 2432  1080 1084 1088 1104 -hsync -vsync -csync (85.3 kHz b)
+[    35.625] (==) FBDEV(0): DPI set to (96, 96)
+[    35.625] (II) Loading sub module "fb"
+[    35.625] (II) LoadModule: "fb"
+[    35.625] (II) Module "fb" already built-in
+[    35.625] (**) FBDEV(0): using shadow framebuffer
+[    35.625] (II) Loading sub module "shadow"
+[    35.625] (II) LoadModule: "shadow"
+[    35.625] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[    35.625] (II) Module shadow: vendor="X.Org Foundation"
+[    35.625] 	compiled for 1.21.1.4, module version = 1.1.0
+[    35.625] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    35.625] (II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+[    35.626] (==) FBDEV(0): Backing store enabled
+[    35.626] (**) FBDEV(0): DPMS enabled
+[    35.626] (II) Initializing extension Generic Event Extension
+[    35.626] (II) Initializing extension SHAPE
+[    35.627] (II) Initializing extension MIT-SHM
+[    35.627] (II) Initializing extension XInputExtension
+[    35.627] (II) Initializing extension XTEST
+[    35.627] (II) Initializing extension BIG-REQUESTS
+[    35.627] (II) Initializing extension SYNC
+[    35.627] (II) Initializing extension XKEYBOARD
+[    35.627] (II) Initializing extension XC-MISC
+[    35.627] (II) Initializing extension SECURITY
+[    35.627] (II) Initializing extension XFIXES
+[    35.627] (II) Initializing extension RENDER
+[    35.627] (II) Initializing extension RANDR
+[    35.627] (II) Initializing extension COMPOSITE
+[    35.627] (II) Initializing extension DAMAGE
+[    35.627] (II) Initializing extension MIT-SCREEN-SAVER
+[    35.627] (II) Initializing extension DOUBLE-BUFFER
+[    35.627] (II) Initializing extension RECORD
+[    35.627] (II) Initializing extension DPMS
+[    35.628] (II) Initializing extension Present
+[    35.628] (II) Initializing extension DRI3
+[    35.628] (II) Initializing extension X-Resource
+[    35.628] (II) Initializing extension XVideo
+[    35.628] (II) Initializing extension XVideo-MotionCompensation
+[    35.628] (II) Initializing extension SELinux
+[    35.628] (II) SELinux: Disabled on system
+[    35.628] (II) Initializing extension GLX
+[    35.628] (II) AIGLX: Screen 0 is not DRI2 capable
+[    35.694] (II) IGLX: Loaded and initialized swrast
+[    35.694] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    35.694] (II) Initializing extension XFree86-VidModeExtension
+[    35.694] (II) Initializing extension XFree86-DGA
+[    35.695] (II) Initializing extension XFree86-DRI
+[    35.695] (II) Initializing extension DRI2
+[    35.717] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    35.717] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    35.717] (II) LoadModule: "libinput"
+[    35.717] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    35.718] (II) Module libinput: vendor="X.Org Foundation"
+[    35.718] 	compiled for 1.20.14, module version = 1.2.1
+[    35.718] 	Module class: X.Org XInput Driver
+[    35.718] 	ABI class: X.Org XInput driver, version 24.1
+[    35.718] (II) Using input driver 'libinput' for 'Power Button'
+[    35.718] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 24 paused 0
+[    35.718] (**) Power Button: always reports core events
+[    35.719] (**) Option "Device" "/dev/input/event1"
+[    35.723] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    35.723] (II) event1  - Power Button: device is a keyboard
+[    35.723] (II) event1  - Power Button: device removed
+[    35.723] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    35.723] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    35.723] (**) Option "xkb_model" "pc105"
+[    35.723] (**) Option "xkb_layout" "us"
+[    35.723] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    35.723] (II) event1  - Power Button: device is a keyboard
+[    35.724] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    35.724] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    35.724] (II) Using input driver 'libinput' for 'Power Button'
+[    35.724] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 27 paused 0
+[    35.724] (**) Power Button: always reports core events
+[    35.724] (**) Option "Device" "/dev/input/event0"
+[    35.724] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    35.724] (II) event0  - Power Button: device is a keyboard
+[    35.724] (II) event0  - Power Button: device removed
+[    35.724] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    35.724] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    35.724] (**) Option "xkb_model" "pc105"
+[    35.724] (**) Option "xkb_layout" "us"
+[    35.725] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    35.725] (II) event0  - Power Button: device is a keyboard
+[    35.725] (II) config/udev: Adding input device Wacom Cintiq 16 Pen (/dev/input/event2)
+[    35.725] (**) Wacom Cintiq 16 Pen: Applying InputClass "libinput tablet catchall"
+[    35.725] (**) Wacom Cintiq 16 Pen: Applying InputClass "Wacom USB tablet class"
+[    35.725] (**) Wacom Cintiq 16 Pen: Applying InputClass "Wacom tablet class"
+[    35.725] (II) LoadModule: "wacom"
+[    35.725] (II) Loading /usr/lib/xorg/modules/input/wacom_drv.so
+[    35.726] (II) Module wacom: vendor="X.Org Foundation"
+[    35.726] 	compiled for 1.21.1.3, module version = 1.0.0
+[    35.726] 	Module class: X.Org XInput Driver
+[    35.726] 	ABI class: X.Org XInput driver, version 24.4
+[    35.726] (II) Build version: 1.0.0
+[    35.726] (II) wacom: Driver for Wacom graphics tablets: PenPartner, Graphire,
+	Graphire2 4x5, Graphire2 5x7, Graphire3 4x5, Graphire3 6x8,
+	Graphire4 4x5, Graphire4 6x8, BambooFun 4x5, BambooFun 6x8,
+	Bamboo1 Medium, Graphire4 6x8 BlueTooth, CTL-460, CTH-461, CTL-660,
+	CTL-461/S, Bamboo Touch, CTH-460/K, CTH-461/S, CTH-661/S1, CTH-461/L,
+	CTH-661/L, Intuos 4x5, Intuos 6x8, Intuos 9x12, Intuos 12x12,
+	Intuos 12x18, PTU600, PL400, PL500, PL600, PL600SX, PL550, PL800,
+	PL700, PL510, PL710, DTI520, DTF720, DTF720a, DTF521, DTU1931,
+	DTU2231, DTU1631, DTH1152, DTH1152, DTK2451, DTH2452, DTH2452,
+	Wacom One Pen Display 13, Intuos2 4x5, Intuos2 6x8, Intuos2 9x12,
+	Intuos2 12x12, Intuos2 12x18, Intuos2 6x8 , Volito, PenStation,
+	Volito2 4x5, Volito2 2x3, PenPartner2, Bamboo, Bamboo1, Bamboo1 4x6,
+	Bamboo1 5x8, Intuos3 4x5, Intuos3 6x8, Intuos3 9x12, Intuos3 12x12,
+	Intuos3 12x19, Intuos3 6x11, Intuos3 4x6, Intuos4 4x6, Intuos4 6x9,
+	Intuos4 8x13, Intuos4 12x19, Intuos4 WL USB Endpoint,
+	Intuos4 WL Bluetooth Endpoint, Intuos5 touch S, Intuos5 touch M,
+	Intuos5 touch L, Intuos5 S, Intuos5 M, Intuos Pro S, Intuos Pro M,
+	Intuos Pro L, Cintiq 21UX, Cintiq 20WSX, Cintiq 12WX, Cintiq 21UX2,
+	Cintiq 24HD, Cintiq 22HD, Cintiq 24HD touch (EMR digitizer),
+	Cintiq 13HD, DTK2241, DTH2242, Cintiq 22HDT, Cintiq 27QHDT,
+	Cintiq 27QHDT, Mobilestudio Pro 13, MobileStudio Pro 16,
+	MobileStudio Pro 13, MobileStudio Pro 16, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq 13 FHD Pro,
+	Cintiq 16 UHD Pro, Cintiq Pro 24, Cintiq Pro 32, Cintiq Pro 24,
+	Mobilestudio Pro 13, MobileStudio Pro 16, MobileStudio Pro 13,
+	MobileStudio Pro 16, MobileStudio Pro 16, MobileStudio Pro 16,
+	TabletPC 0x90, TabletPC 0x93, TabletPC 0x97, TabletPC 0x9A,
+	CapPlus  0x9F, TabletPC 0xE2, TabletPC 0xE3, TabletPC 0xE5,
+	TabletPC 0xE6, TabletPC 0xEC, TabletPC 0xED, TabletPC 0xEF,
+	TabletPC 0x100, TabletPC 0x101, TabletPC 0x10D, TabletPC 0x116,
+	TabletPC 0x12C, TabletPC 0x4001, TabletPC 0x4004, TabletPC 0x5000,
+	TabletPC 0x5002, usb:172f:0024, usb:172f:0025, usb:172f:0026,
+	usb:172f:0027, usb:172f:0028, usb:172f:0030, usb:172f:0031,
+	usb:172f:0032, usb:172f:0033, usb:172f:0034, usb:172f:0035,
+	usb:172f:0036, usb:172f:0037, usb:172f:0038, usb:172f:0039,
+	usb:172f:0051, usb:172f:0052, usb:172f:0053, usb:172f:0054,
+	usb:172f:0055, usb:172f:0056, usb:172f:0057, usb:172f:0058,
+	usb:172f:0500, usb:172f:0501, usb:172f:0502, usb:172f:0503,
+	usb:1b96:0001, usb:17ef:6004
+[    35.727] (II) Using input driver 'wacom' for 'Wacom Cintiq 16 Pen'
+[    35.787] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 28 paused 0
+[    35.787] (**) Wacom Cintiq 16 Pen: always reports core events
+[    35.787] (**) Option "Device" "/dev/input/event2"
+[    35.787] (II) wacom: Wacom Cintiq 16 Pen: type not specified, assuming 'stylus'.
+[    35.787] (II) wacom: Wacom Cintiq 16 Pen: other types will be automatically added.
+[    35.787] (--) wacom: Wacom Cintiq 16 Pen stylus: using pressure threshold of 851 for button 1
+[    35.787] (**) wacom: Wacom Cintiq 16 Pen stylus: panscroll is 0
+[    35.787] (**) wacom: Wacom Cintiq 16 Pen stylus: panscroll modified to 2600
+[    35.787] (--) wacom: Wacom Cintiq 16 Pen stylus: maxX=69232 maxY=39118 maxZ=8191 resX=200000 resY=200000  tilt=enabled
+[    35.787] (II) wacom: Wacom Cintiq 16 Pen stylus: hotplugging dependent devices.
+[    35.787] (II) wacom: Wacom Cintiq 16 Pen stylus: hotplugging completed.
+[    35.787] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.1/usb1/1-3/1-3.1/1-3.1:1.0/0003:056A:0390.0001/input/input5/event2"
+[    35.787] (II) XINPUT: Adding extended input device "Wacom Cintiq 16 Pen stylus" (type: STYLUS, id 8)
+[    35.787] (**) Wacom Cintiq 16 Pen stylus: (accel) keeping acceleration scheme 1
+[    35.787] (**) Wacom Cintiq 16 Pen stylus: (accel) acceleration profile 0
+[    35.787] (**) Wacom Cintiq 16 Pen stylus: (accel) acceleration factor: 2.000
+[    35.787] (**) Wacom Cintiq 16 Pen stylus: (accel) acceleration threshold: 4
+[    35.787] (II) config/udev: Adding input device Wacom Cintiq 16 Pen (/dev/input/mouse0)
+[    35.787] (II) No input driver specified, ignoring this device.
+[    35.787] (II) This device may have been added with another device file.
+[    35.788] (II) config/udev: Adding input device Wacom Intuos BT M Pen (/dev/input/event19)
+[    35.788] (**) Wacom Intuos BT M Pen: Applying InputClass "libinput tablet catchall"
+[    35.788] (**) Wacom Intuos BT M Pen: Applying InputClass "Wacom USB tablet class"
+[    35.788] (**) Wacom Intuos BT M Pen: Applying InputClass "Wacom tablet class"
+[    35.788] (II) Using input driver 'wacom' for 'Wacom Intuos BT M Pen'
+[    35.847] (II) systemd-logind: got fd for /dev/input/event19 13:83 fd 29 paused 0
+[    35.847] (**) Wacom Intuos BT M Pen: always reports core events
+[    35.847] (**) Option "Device" "/dev/input/event19"
+[    35.847] (II) wacom: Wacom Intuos BT M Pen: type not specified, assuming 'stylus'.
+[    35.847] (II) wacom: Wacom Intuos BT M Pen: other types will be automatically added.
+[    35.847] (--) wacom: Wacom Intuos BT M Pen stylus: using pressure threshold of 851 for button 1
+[    35.847] (**) wacom: Wacom Intuos BT M Pen stylus: panscroll is 0
+[    35.847] (**) wacom: Wacom Intuos BT M Pen stylus: panscroll modified to 1300
+[    35.847] (--) wacom: Wacom Intuos BT M Pen stylus: maxX=21600 maxY=13500 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    35.847] (II) wacom: Wacom Intuos BT M Pen stylus: hotplugging dependent devices.
+[    35.847] (II) wacom: Wacom Intuos BT M Pen stylus: hotplugging completed.
+[    35.847] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.1/3-2.2.1.4/3-2.2.1.4.3/3-2.2.1.4.3:1.0/0003:056A:03C7.000A/input/input34/event19"
+[    35.847] (II) XINPUT: Adding extended input device "Wacom Intuos BT M Pen stylus" (type: STYLUS, id 9)
+[    35.847] (**) Wacom Intuos BT M Pen stylus: (accel) keeping acceleration scheme 1
+[    35.847] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration profile 0
+[    35.847] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration factor: 2.000
+[    35.847] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration threshold: 4
+[    35.848] (II) config/udev: Adding input device Wacom Intuos BT M Pen (/dev/input/mouse2)
+[    35.848] (II) No input driver specified, ignoring this device.
+[    35.848] (II) This device may have been added with another device file.
+[    35.849] (II) config/udev: Adding input device Wacom Intuos BT M Pad (/dev/input/event20)
+[    35.849] (**) Wacom Intuos BT M Pad: Applying InputClass "libinput tablet catchall"
+[    35.849] (**) Wacom Intuos BT M Pad: Applying InputClass "Wacom USB tablet class"
+[    35.849] (**) Wacom Intuos BT M Pad: Applying InputClass "Wacom tablet class"
+[    35.849] (II) Using input driver 'wacom' for 'Wacom Intuos BT M Pad'
+[    35.849] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 30 paused 0
+[    35.849] (**) Wacom Intuos BT M Pad: always reports core events
+[    35.849] (**) Option "Device" "/dev/input/event20"
+[    35.850] (II) wacom: Wacom Intuos BT M Pad: type not specified, assuming 'pad'.
+[    35.850] (II) wacom: Wacom Intuos BT M Pad: other types will be automatically added.
+[    35.850] (**) wacom: Wacom Intuos BT M Pad pad: panscroll is 0
+[    35.850] (**) wacom: Wacom Intuos BT M Pad pad: panscroll modified to 1000
+[    35.850] (II) wacom: Wacom Intuos BT M Pad pad: hotplugging dependent devices.
+[    35.850] (II) wacom: Wacom Intuos BT M Pad pad: hotplugging completed.
+[    35.850] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.1/3-2.2.1.4/3-2.2.1.4.3/3-2.2.1.4.3:1.0/0003:056A:03C7.000A/input/input36/event20"
+[    35.850] (II) XINPUT: Adding extended input device "Wacom Intuos BT M Pad pad" (type: PAD, id 10)
+[    35.850] (**) Wacom Intuos BT M Pad pad: (accel) keeping acceleration scheme 1
+[    35.850] (**) Wacom Intuos BT M Pad pad: (accel) acceleration profile 0
+[    35.850] (**) Wacom Intuos BT M Pad pad: (accel) acceleration factor: 2.000
+[    35.850] (**) Wacom Intuos BT M Pad pad: (accel) acceleration threshold: 4
+[    35.851] (II) config/udev: Adding input device Wacom Intuos BT M Pad (/dev/input/js0)
+[    35.851] (II) No input driver specified, ignoring this device.
+[    35.851] (II) This device may have been added with another device file.
+[    35.852] (II) config/udev: Adding input device Dell Dell USB Keyboard (/dev/input/event3)
+[    35.852] (**) Dell Dell USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    35.852] (II) Using input driver 'libinput' for 'Dell Dell USB Keyboard'
+[    35.852] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 31 paused 0
+[    35.852] (**) Dell Dell USB Keyboard: always reports core events
+[    35.852] (**) Option "Device" "/dev/input/event3"
+[    35.854] (II) event3  - Dell Dell USB Keyboard: is tagged by udev as: Keyboard
+[    35.854] (II) event3  - Dell Dell USB Keyboard: device is a keyboard
+[    35.854] (II) event3  - Dell Dell USB Keyboard: device removed
+[    35.854] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.2/3-2.2.2:1.0/0003:413C:2003.0005/input/input8/event3"
+[    35.854] (II) XINPUT: Adding extended input device "Dell Dell USB Keyboard" (type: KEYBOARD, id 11)
+[    35.854] (**) Option "xkb_model" "pc105"
+[    35.854] (**) Option "xkb_layout" "us"
+[    35.856] (II) event3  - Dell Dell USB Keyboard: is tagged by udev as: Keyboard
+[    35.856] (II) event3  - Dell Dell USB Keyboard: device is a keyboard
+[    35.857] (II) config/udev: Adding input device 1080P Webcam: 1080P Webcam (/dev/input/event21)
+[    35.857] (**) 1080P Webcam: 1080P Webcam: Applying InputClass "libinput keyboard catchall"
+[    35.857] (II) Using input driver 'libinput' for '1080P Webcam: 1080P Webcam'
+[    35.857] (II) systemd-logind: got fd for /dev/input/event21 13:85 fd 32 paused 0
+[    35.857] (**) 1080P Webcam: 1080P Webcam: always reports core events
+[    35.857] (**) Option "Device" "/dev/input/event21"
+[    35.858] (II) event21 - 1080P Webcam: 1080P Webcam: is tagged by udev as: Keyboard
+[    35.858] (II) event21 - 1080P Webcam: 1080P Webcam: device is a keyboard
+[    35.859] (II) event21 - 1080P Webcam: 1080P Webcam: device removed
+[    35.859] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.3/3-2.2.3:1.0/input/input37/event21"
+[    35.859] (II) XINPUT: Adding extended input device "1080P Webcam: 1080P Webcam" (type: KEYBOARD, id 12)
+[    35.859] (**) Option "xkb_model" "pc105"
+[    35.859] (**) Option "xkb_layout" "us"
+[    35.860] (II) event21 - 1080P Webcam: 1080P Webcam: is tagged by udev as: Keyboard
+[    35.860] (II) event21 - 1080P Webcam: 1080P Webcam: device is a keyboard
+[    35.861] (II) config/udev: Adding input device Logitech G604  (/dev/input/event22)
+[    35.861] (**) Logitech G604 : Applying InputClass "libinput pointer catchall"
+[    35.861] (**) Logitech G604 : Applying InputClass "libinput keyboard catchall"
+[    35.861] (II) Using input driver 'libinput' for 'Logitech G604 '
+[    35.862] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 33 paused 0
+[    35.862] (**) Logitech G604 : always reports core events
+[    35.862] (**) Option "Device" "/dev/input/event22"
+[    35.863] (II) event22 - Logitech G604 : is tagged by udev as: Keyboard Mouse
+[    35.864] (II) event22 - Logitech G604 : device is a pointer
+[    35.864] (II) event22 - Logitech G604 : device is a keyboard
+[    35.864] (II) event22 - Logitech G604 : device removed
+[    35.864] (II) libinput: Logitech G604 : needs a virtual subdevice
+[    35.864] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.4/3-2.2.4:1.2/0003:046D:C539.0008/0003:046D:4085.0009/input/input38/event22"
+[    35.864] (II) XINPUT: Adding extended input device "Logitech G604 " (type: MOUSE, id 13)
+[    35.864] (**) Option "AccelerationScheme" "none"
+[    35.864] (**) Logitech G604 : (accel) selected scheme none/0
+[    35.864] (**) Logitech G604 : (accel) acceleration factor: 2.000
+[    35.864] (**) Logitech G604 : (accel) acceleration threshold: 4
+[    35.866] (II) event22 - Logitech G604 : is tagged by udev as: Keyboard Mouse
+[    35.866] (II) event22 - Logitech G604 : device is a pointer
+[    35.866] (II) event22 - Logitech G604 : device is a keyboard
+[    35.867] (II) config/udev: Adding input device Logitech G604  (/dev/input/mouse1)
+[    35.867] (II) No input driver specified, ignoring this device.
+[    35.867] (II) This device may have been added with another device file.
+[    35.867] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event5)
+[    35.867] (II) No input driver specified, ignoring this device.
+[    35.867] (II) This device may have been added with another device file.
+[    35.867] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event6)
+[    35.867] (II) No input driver specified, ignoring this device.
+[    35.867] (II) This device may have been added with another device file.
+[    35.868] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event7)
+[    35.868] (II) No input driver specified, ignoring this device.
+[    35.868] (II) This device may have been added with another device file.
+[    35.868] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event8)
+[    35.868] (II) No input driver specified, ignoring this device.
+[    35.868] (II) This device may have been added with another device file.
+[    35.868] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event9)
+[    35.868] (II) No input driver specified, ignoring this device.
+[    35.868] (II) This device may have been added with another device file.
+[    35.869] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event10)
+[    35.869] (II) No input driver specified, ignoring this device.
+[    35.869] (II) This device may have been added with another device file.
+[    35.869] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=12 (/dev/input/event11)
+[    35.869] (II) No input driver specified, ignoring this device.
+[    35.869] (II) This device may have been added with another device file.
+[    35.869] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event12)
+[    35.869] (II) No input driver specified, ignoring this device.
+[    35.869] (II) This device may have been added with another device file.
+[    35.869] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event13)
+[    35.869] (II) No input driver specified, ignoring this device.
+[    35.870] (II) This device may have been added with another device file.
+[    35.870] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event14)
+[    35.870] (II) No input driver specified, ignoring this device.
+[    35.870] (II) This device may have been added with another device file.
+[    35.870] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event15)
+[    35.870] (II) No input driver specified, ignoring this device.
+[    35.870] (II) This device may have been added with another device file.
+[    35.870] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event16)
+[    35.870] (II) No input driver specified, ignoring this device.
+[    35.870] (II) This device may have been added with another device file.
+[    35.871] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event17)
+[    35.871] (II) No input driver specified, ignoring this device.
+[    35.871] (II) This device may have been added with another device file.
+[    35.871] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event18)
+[    35.871] (II) No input driver specified, ignoring this device.
+[    35.871] (II) This device may have been added with another device file.
+[    35.871] (II) config/udev: Adding input device Eee PC WMI hotkeys (/dev/input/event4)
+[    35.871] (**) Eee PC WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    35.871] (II) Using input driver 'libinput' for 'Eee PC WMI hotkeys'
+[    35.872] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 34 paused 0
+[    35.872] (**) Eee PC WMI hotkeys: always reports core events
+[    35.872] (**) Option "Device" "/dev/input/event4"
+[    35.872] (II) event4  - Eee PC WMI hotkeys: is tagged by udev as: Keyboard
+[    35.872] (II) event4  - Eee PC WMI hotkeys: device is a keyboard
+[    35.873] (II) event4  - Eee PC WMI hotkeys: device removed
+[    35.873] (**) Option "config_info" "udev:/sys/devices/platform/eeepc-wmi/input/input9/event4"
+[    35.873] (II) XINPUT: Adding extended input device "Eee PC WMI hotkeys" (type: KEYBOARD, id 14)
+[    35.873] (**) Option "xkb_model" "pc105"
+[    35.873] (**) Option "xkb_layout" "us"
+[    35.873] (II) event4  - Eee PC WMI hotkeys: is tagged by udev as: Keyboard
+[    35.873] (II) event4  - Eee PC WMI hotkeys: device is a keyboard
+[    35.878] (**) Wacom Cintiq 16 Pen eraser: Applying InputClass "libinput tablet catchall"
+[    35.878] (**) Wacom Cintiq 16 Pen eraser: Applying InputClass "Wacom USB tablet class"
+[    35.878] (**) Wacom Cintiq 16 Pen eraser: Applying InputClass "Wacom tablet class"
+[    35.878] (II) Using input driver 'wacom' for 'Wacom Cintiq 16 Pen eraser'
+[    35.878] (II) systemd-logind: returning pre-existing fd for /dev/input/event2 13:66
+[    35.878] (**) Wacom Cintiq 16 Pen eraser: always reports core events
+[    35.878] (**) Option "Device" "/dev/input/event2"
+[    35.878] (**) Option "Type" "eraser"
+[    35.878] (**) wacom: Wacom Cintiq 16 Pen eraser: panscroll is 2600
+[    35.878] (**) wacom: Wacom Cintiq 16 Pen eraser: panscroll modified to 2600
+[    35.878] (--) wacom: Wacom Cintiq 16 Pen eraser: maxX=69232 maxY=39118 maxZ=8191 resX=200000 resY=200000  tilt=enabled
+[    35.878] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.1/usb1/1-3/1-3.1/1-3.1:1.0/0003:056A:0390.0001/input/input5/event2"
+[    35.878] (II) XINPUT: Adding extended input device "Wacom Cintiq 16 Pen eraser" (type: ERASER, id 15)
+[    35.879] (**) Wacom Cintiq 16 Pen eraser: (accel) keeping acceleration scheme 1
+[    35.879] (**) Wacom Cintiq 16 Pen eraser: (accel) acceleration profile 0
+[    35.879] (**) Wacom Cintiq 16 Pen eraser: (accel) acceleration factor: 2.000
+[    35.879] (**) Wacom Cintiq 16 Pen eraser: (accel) acceleration threshold: 4
+[    35.879] (**) Logitech G604 : Applying InputClass "libinput pointer catchall"
+[    35.879] (**) Logitech G604 : Applying InputClass "libinput keyboard catchall"
+[    35.879] (II) Using input driver 'libinput' for 'Logitech G604 '
+[    35.879] (II) systemd-logind: returning pre-existing fd for /dev/input/event22 13:86
+[    35.879] (**) Logitech G604 : always reports core events
+[    35.879] (**) Option "Device" "/dev/input/event22"
+[    35.879] (II) libinput: Logitech G604 : is a virtual subdevice
+[    35.879] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.4/3-2.2.4:1.2/0003:046D:C539.0008/0003:046D:4085.0009/input/input38/event22"
+[    35.879] (II) XINPUT: Adding extended input device "Logitech G604 " (type: KEYBOARD, id 16)
+[    35.879] (**) Option "xkb_model" "pc105"
+[    35.879] (**) Option "xkb_layout" "us"
+[    37.579] (EE) Wacom Intuos BT M Pad pad: Error reading wacom device : No such device
+[    37.581] (II) config/udev: removing device Wacom Intuos BT M Pad pad
+[    37.582] (II) UnloadModule: "wacom"
+[    37.582] (II) systemd-logind: releasing fd for 13:84
+[    37.654] (EE) Wacom Intuos BT M Pen stylus: Error reading wacom device : No such device
+[    37.655] (II) config/udev: removing device Wacom Intuos BT M Pen stylus
+[    37.656] (II) UnloadModule: "wacom"
+[    37.656] (II) systemd-logind: releasing fd for 13:83
+[    37.827] (II) config/udev: Adding input device Wacom Intuos BT M Pen (/dev/input/mouse2)
+[    37.827] (II) No input driver specified, ignoring this device.
+[    37.827] (II) This device may have been added with another device file.
+[    37.827] (II) config/udev: Adding input device Wacom Intuos BT M Pad (/dev/input/js0)
+[    37.828] (II) No input driver specified, ignoring this device.
+[    37.828] (II) This device may have been added with another device file.
+[    37.906] (II) config/udev: Adding input device Wacom Intuos BT M Pad (/dev/input/event20)
+[    37.906] (**) Wacom Intuos BT M Pad: Applying InputClass "libinput tablet catchall"
+[    37.906] (**) Wacom Intuos BT M Pad: Applying InputClass "Wacom USB tablet class"
+[    37.906] (**) Wacom Intuos BT M Pad: Applying InputClass "Wacom tablet class"
+[    37.906] (II) Using input driver 'wacom' for 'Wacom Intuos BT M Pad'
+[    37.967] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 30 paused 0
+[    37.967] (**) Wacom Intuos BT M Pad: always reports core events
+[    37.967] (**) Option "Device" "/dev/input/event20"
+[    37.967] (II) wacom: Wacom Intuos BT M Pad: type not specified, assuming 'pad'.
+[    37.967] (II) wacom: Wacom Intuos BT M Pad: other types will be automatically added.
+[    37.967] (**) wacom: Wacom Intuos BT M Pad pad: panscroll is 0
+[    37.967] (**) wacom: Wacom Intuos BT M Pad pad: panscroll modified to 1000
+[    37.967] (II) wacom: Wacom Intuos BT M Pad pad: hotplugging dependent devices.
+[    37.967] (II) wacom: Wacom Intuos BT M Pad pad: hotplugging completed.
+[    37.967] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.1/3-2.2.1.4/3-2.2.1.4.3/3-2.2.1.4.3:1.0/0003:056A:03C7.000B/input/input41/event20"
+[    37.967] (II) XINPUT: Adding extended input device "Wacom Intuos BT M Pad pad" (type: PAD, id 9)
+[    37.967] (**) Wacom Intuos BT M Pad pad: (accel) keeping acceleration scheme 1
+[    37.967] (**) Wacom Intuos BT M Pad pad: (accel) acceleration profile 0
+[    37.967] (**) Wacom Intuos BT M Pad pad: (accel) acceleration factor: 2.000
+[    37.967] (**) Wacom Intuos BT M Pad pad: (accel) acceleration threshold: 4
+[    37.968] (II) config/udev: Adding input device Wacom Intuos BT M Pen (/dev/input/event19)
+[    37.968] (**) Wacom Intuos BT M Pen: Applying InputClass "libinput tablet catchall"
+[    37.968] (**) Wacom Intuos BT M Pen: Applying InputClass "Wacom USB tablet class"
+[    37.968] (**) Wacom Intuos BT M Pen: Applying InputClass "Wacom tablet class"
+[    37.968] (II) Using input driver 'wacom' for 'Wacom Intuos BT M Pen'
+[    37.968] (II) systemd-logind: got fd for /dev/input/event19 13:83 fd 49 paused 0
+[    37.968] (**) Wacom Intuos BT M Pen: always reports core events
+[    37.968] (**) Option "Device" "/dev/input/event19"
+[    37.968] (II) wacom: Wacom Intuos BT M Pen: type not specified, assuming 'stylus'.
+[    37.968] (II) wacom: Wacom Intuos BT M Pen: other types will be automatically added.
+[    37.968] (--) wacom: Wacom Intuos BT M Pen stylus: using pressure threshold of 851 for button 1
+[    37.968] (**) wacom: Wacom Intuos BT M Pen stylus: panscroll is 0
+[    37.968] (**) wacom: Wacom Intuos BT M Pen stylus: panscroll modified to 1300
+[    37.968] (--) wacom: Wacom Intuos BT M Pen stylus: maxX=21600 maxY=13500 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    37.969] (II) wacom: Wacom Intuos BT M Pen stylus: hotplugging dependent devices.
+[    37.969] (II) wacom: Wacom Intuos BT M Pen stylus: hotplugging completed.
+[    37.969] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.1/3-2.2.1.4/3-2.2.1.4.3/3-2.2.1.4.3:1.0/0003:056A:03C7.000B/input/input39/event19"
+[    37.969] (II) XINPUT: Adding extended input device "Wacom Intuos BT M Pen stylus" (type: STYLUS, id 10)
+[    37.969] (**) Wacom Intuos BT M Pen stylus: (accel) keeping acceleration scheme 1
+[    37.969] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration profile 0
+[    37.969] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration factor: 2.000
+[    37.969] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration threshold: 4
+[    50.759] (EE) Wacom Intuos BT M Pad pad: Error reading wacom device : No such device
+[    50.761] (II) config/udev: removing device Wacom Intuos BT M Pad pad
+[    50.762] (II) UnloadModule: "wacom"
+[    50.762] (II) systemd-logind: releasing fd for 13:84
+[    50.871] (EE) Wacom Intuos BT M Pen stylus: Error reading wacom device : No such device
+[    50.872] (II) config/udev: removing device Wacom Intuos BT M Pen stylus
+[    50.873] (II) UnloadModule: "wacom"
+[    50.873] (II) systemd-logind: releasing fd for 13:83
+[    51.050] (II) event3  - Dell Dell USB Keyboard: device removed
+[    51.051] (II) config/udev: removing device Dell Dell USB Keyboard
+[    51.051] (**) Option "fd" "31"
+[    51.052] (II) UnloadModule: "libinput"
+[    51.052] (II) systemd-logind: releasing fd for 13:67
+[    51.271] (II) event21 - 1080P Webcam: 1080P Webcam: device removed
+[    51.272] (II) config/udev: removing device 1080P Webcam: 1080P Webcam
+[    51.272] (**) Option "fd" "32"
+[    51.272] (II) UnloadModule: "libinput"
+[    51.272] (II) systemd-logind: releasing fd for 13:85
+[    51.426] (II) event22 - Logitech G604 : device removed
+[    51.427] (II) config/udev: removing device Logitech G604 
+[    51.427] (**) Option "fd" "33"
+[    51.428] (II) UnloadModule: "libinput"
+[    51.428] (II) systemd-logind: not releasing fd for 13:86, still in use
+[    51.428] (II) config/udev: removing device Logitech G604 
+[    51.428] (**) Option "fd" "33"
+[    51.429] (II) UnloadModule: "libinput"
+[    51.429] (II) systemd-logind: releasing fd for 13:86
+[    65.665] (II) config/udev: Adding input device Dell Dell USB Keyboard (/dev/input/event3)
+[    65.665] (**) Dell Dell USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    65.665] (II) Using input driver 'libinput' for 'Dell Dell USB Keyboard'
+[    65.665] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 31 paused 0
+[    65.665] (**) Dell Dell USB Keyboard: always reports core events
+[    65.665] (**) Option "Device" "/dev/input/event3"
+[    65.666] (II) event3  - Dell Dell USB Keyboard: is tagged by udev as: Keyboard
+[    65.667] (II) event3  - Dell Dell USB Keyboard: device is a keyboard
+[    65.667] (II) event3  - Dell Dell USB Keyboard: device removed
+[    65.667] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.2/3-2.2.2:1.0/0003:413C:2003.000C/input/input42/event3"
+[    65.667] (II) XINPUT: Adding extended input device "Dell Dell USB Keyboard" (type: KEYBOARD, id 9)
+[    65.667] (**) Option "xkb_model" "pc105"
+[    65.667] (**) Option "xkb_layout" "us"
+[    65.667] (WW) Option "xkb_variant" requires a string value
+[    65.667] (WW) Option "xkb_options" requires a string value
+[    65.668] (II) event3  - Dell Dell USB Keyboard: is tagged by udev as: Keyboard
+[    65.668] (II) event3  - Dell Dell USB Keyboard: device is a keyboard
+[    65.700] (II) config/udev: Adding input device 1080P Webcam: 1080P Webcam (/dev/input/event19)
+[    65.700] (**) 1080P Webcam: 1080P Webcam: Applying InputClass "libinput keyboard catchall"
+[    65.700] (II) Using input driver 'libinput' for '1080P Webcam: 1080P Webcam'
+[    65.700] (II) systemd-logind: got fd for /dev/input/event19 13:83 fd 32 paused 0
+[    65.700] (**) 1080P Webcam: 1080P Webcam: always reports core events
+[    65.700] (**) Option "Device" "/dev/input/event19"
+[    65.701] (II) event19 - 1080P Webcam: 1080P Webcam: is tagged by udev as: Keyboard
+[    65.701] (II) event19 - 1080P Webcam: 1080P Webcam: device is a keyboard
+[    65.701] (II) event19 - 1080P Webcam: 1080P Webcam: device removed
+[    65.701] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.3/3-2.2.3:1.0/input/input43/event19"
+[    65.701] (II) XINPUT: Adding extended input device "1080P Webcam: 1080P Webcam" (type: KEYBOARD, id 10)
+[    65.702] (**) Option "xkb_model" "pc105"
+[    65.702] (**) Option "xkb_layout" "us"
+[    65.702] (WW) Option "xkb_variant" requires a string value
+[    65.702] (WW) Option "xkb_options" requires a string value
+[    65.702] (II) event19 - 1080P Webcam: 1080P Webcam: is tagged by udev as: Keyboard
+[    65.702] (II) event19 - 1080P Webcam: 1080P Webcam: device is a keyboard
+[    65.716] (II) config/udev: Adding input device Logitech G604  (/dev/input/mouse2)
+[    65.716] (II) No input driver specified, ignoring this device.
+[    65.716] (II) This device may have been added with another device file.
+[    65.805] (II) config/udev: Adding input device Logitech G604  (/dev/input/event22)
+[    65.805] (**) Logitech G604 : Applying InputClass "libinput pointer catchall"
+[    65.805] (**) Logitech G604 : Applying InputClass "libinput keyboard catchall"
+[    65.805] (II) Using input driver 'libinput' for 'Logitech G604 '
+[    65.805] (II) systemd-logind: got fd for /dev/input/event22 13:86 fd 33 paused 0
+[    65.805] (**) Logitech G604 : always reports core events
+[    65.805] (**) Option "Device" "/dev/input/event22"
+[    65.806] (II) event22 - Logitech G604 : is tagged by udev as: Keyboard Mouse
+[    65.806] (II) event22 - Logitech G604 : device is a pointer
+[    65.806] (II) event22 - Logitech G604 : device is a keyboard
+[    65.806] (II) event22 - Logitech G604 : device removed
+[    65.806] (II) libinput: Logitech G604 : needs a virtual subdevice
+[    65.806] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.4/3-2.2.4:1.2/0003:046D:C539.000F/0003:046D:4085.0010/input/input47/event22"
+[    65.806] (II) XINPUT: Adding extended input device "Logitech G604 " (type: MOUSE, id 11)
+[    65.807] (**) Option "AccelerationScheme" "none"
+[    65.807] (**) Logitech G604 : (accel) selected scheme none/0
+[    65.807] (**) Logitech G604 : (accel) acceleration factor: 2.000
+[    65.807] (**) Logitech G604 : (accel) acceleration threshold: 4
+[    65.807] (II) event22 - Logitech G604 : is tagged by udev as: Keyboard Mouse
+[    65.807] (II) event22 - Logitech G604 : device is a pointer
+[    65.807] (II) event22 - Logitech G604 : device is a keyboard
+[    65.808] (**) Logitech G604 : Applying InputClass "libinput pointer catchall"
+[    65.808] (**) Logitech G604 : Applying InputClass "libinput keyboard catchall"
+[    65.808] (II) Using input driver 'libinput' for 'Logitech G604 '
+[    65.808] (II) systemd-logind: returning pre-existing fd for /dev/input/event22 13:86
+[    65.808] (**) Logitech G604 : always reports core events
+[    65.808] (**) Option "Device" "/dev/input/event22"
+[    65.808] (II) libinput: Logitech G604 : is a virtual subdevice
+[    65.808] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.4/3-2.2.4:1.2/0003:046D:C539.000F/0003:046D:4085.0010/input/input47/event22"
+[    65.808] (II) XINPUT: Adding extended input device "Logitech G604 " (type: KEYBOARD, id 12)
+[    65.808] (**) Option "xkb_model" "pc105"
+[    65.808] (**) Option "xkb_layout" "us"
+[    65.808] (WW) Option "xkb_variant" requires a string value
+[    65.808] (WW) Option "xkb_options" requires a string value
+[    65.989] (II) config/udev: Adding input device Wacom Intuos BT M Pen (/dev/input/mouse1)
+[    65.989] (II) No input driver specified, ignoring this device.
+[    65.989] (II) This device may have been added with another device file.
+[    65.991] (II) config/udev: Adding input device Wacom Intuos BT M Pad (/dev/input/js0)
+[    65.991] (II) No input driver specified, ignoring this device.
+[    65.991] (II) This device may have been added with another device file.
+[    66.101] (II) config/udev: Adding input device Wacom Intuos BT M Pen (/dev/input/event20)
+[    66.101] (**) Wacom Intuos BT M Pen: Applying InputClass "libinput tablet catchall"
+[    66.101] (**) Wacom Intuos BT M Pen: Applying InputClass "Wacom USB tablet class"
+[    66.101] (**) Wacom Intuos BT M Pen: Applying InputClass "Wacom tablet class"
+[    66.102] (II) Using input driver 'wacom' for 'Wacom Intuos BT M Pen'
+[    66.159] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 38 paused 0
+[    66.159] (**) Wacom Intuos BT M Pen: always reports core events
+[    66.159] (**) Option "Device" "/dev/input/event20"
+[    66.159] (II) wacom: Wacom Intuos BT M Pen: type not specified, assuming 'stylus'.
+[    66.159] (II) wacom: Wacom Intuos BT M Pen: other types will be automatically added.
+[    66.159] (--) wacom: Wacom Intuos BT M Pen stylus: using pressure threshold of 851 for button 1
+[    66.159] (**) wacom: Wacom Intuos BT M Pen stylus: panscroll is 0
+[    66.159] (**) wacom: Wacom Intuos BT M Pen stylus: panscroll modified to 1300
+[    66.159] (--) wacom: Wacom Intuos BT M Pen stylus: maxX=21600 maxY=13500 maxZ=4095 resX=100000 resY=100000  tilt=enabled
+[    66.159] (II) wacom: Wacom Intuos BT M Pen stylus: hotplugging dependent devices.
+[    66.159] (II) wacom: Wacom Intuos BT M Pen stylus: hotplugging completed.
+[    66.159] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.1/3-2.2.1.4/3-2.2.1.4.3/3-2.2.1.4.3:1.0/0003:056A:03C7.0012/input/input48/event20"
+[    66.159] (II) XINPUT: Adding extended input device "Wacom Intuos BT M Pen stylus" (type: STYLUS, id 13)
+[    66.159] (**) Wacom Intuos BT M Pen stylus: (accel) keeping acceleration scheme 1
+[    66.159] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration profile 0
+[    66.159] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration factor: 2.000
+[    66.159] (**) Wacom Intuos BT M Pen stylus: (accel) acceleration threshold: 4
+[    66.160] (II) config/udev: Adding input device Wacom Intuos BT M Pad (/dev/input/event21)
+[    66.160] (**) Wacom Intuos BT M Pad: Applying InputClass "libinput tablet catchall"
+[    66.160] (**) Wacom Intuos BT M Pad: Applying InputClass "Wacom USB tablet class"
+[    66.160] (**) Wacom Intuos BT M Pad: Applying InputClass "Wacom tablet class"
+[    66.160] (II) Using input driver 'wacom' for 'Wacom Intuos BT M Pad'
+[    66.161] (II) systemd-logind: got fd for /dev/input/event21 13:85 fd 49 paused 0
+[    66.161] (**) Wacom Intuos BT M Pad: always reports core events
+[    66.161] (**) Option "Device" "/dev/input/event21"
+[    66.161] (II) wacom: Wacom Intuos BT M Pad: type not specified, assuming 'pad'.
+[    66.161] (II) wacom: Wacom Intuos BT M Pad: other types will be automatically added.
+[    66.161] (**) wacom: Wacom Intuos BT M Pad pad: panscroll is 0
+[    66.161] (**) wacom: Wacom Intuos BT M Pad pad: panscroll modified to 1000
+[    66.161] (II) wacom: Wacom Intuos BT M Pad pad: hotplugging dependent devices.
+[    66.161] (II) wacom: Wacom Intuos BT M Pad pad: hotplugging completed.
+[    66.161] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.2/0000:02:00.0/0000:03:08.0/0000:07:00.3/usb3/3-2/3-2.2/3-2.2.1/3-2.2.1.4/3-2.2.1.4.3/3-2.2.1.4.3:1.0/0003:056A:03C7.0012/input/input50/event21"
+[    66.161] (II) XINPUT: Adding extended input device "Wacom Intuos BT M Pad pad" (type: PAD, id 16)
+[    66.161] (**) Wacom Intuos BT M Pad pad: (accel) keeping acceleration scheme 1
+[    66.161] (**) Wacom Intuos BT M Pad pad: (accel) acceleration profile 0
+[    66.161] (**) Wacom Intuos BT M Pad pad: (accel) acceleration factor: 2.000
+[    66.161] (**) Wacom Intuos BT M Pad pad: (accel) acceleration threshold: 4
+[   208.983] (**) Option "fd" "24"
+[   208.983] (II) event1  - Power Button: device removed
+[   208.983] (**) Option "fd" "27"
+[   208.983] (II) event0  - Power Button: device removed
+[   208.983] (**) Option "fd" "34"
+[   208.983] (II) event4  - Eee PC WMI hotkeys: device removed
+[   208.983] (**) Option "fd" "31"
+[   208.983] (II) event3  - Dell Dell USB Keyboard: device removed
+[   208.984] (**) Option "fd" "32"
+[   208.984] (II) event19 - 1080P Webcam: 1080P Webcam: device removed
+[   208.984] (**) Option "fd" "33"
+[   208.984] (**) Option "fd" "33"
+[   208.984] (II) event22 - Logitech G604 : device removed
+[   208.984] (II) UnloadModule: "wacom"
+[   208.984] (II) systemd-logind: releasing fd for 13:85
+[   209.126] (II) UnloadModule: "wacom"
+[   209.126] (II) systemd-logind: releasing fd for 13:84
+[   209.178] (II) UnloadModule: "libinput"
+[   209.178] (II) systemd-logind: not releasing fd for 13:86, still in use
+[   209.178] (II) UnloadModule: "libinput"
+[   209.178] (II) systemd-logind: releasing fd for 13:86
+[   209.206] (II) UnloadModule: "libinput"
+[   209.206] (II) systemd-logind: releasing fd for 13:83
+[   209.247] (II) UnloadModule: "libinput"
+[   209.247] (II) systemd-logind: releasing fd for 13:67
+[   209.247] (II) UnloadModule: "wacom"
+[   209.247] (II) systemd-logind: not releasing fd for 13:66, still in use
+[   209.247] (II) UnloadModule: "libinput"
+[   209.247] (II) systemd-logind: releasing fd for 13:68
+[   209.247] (II) UnloadModule: "wacom"
+[   209.247] (II) systemd-logind: releasing fd for 13:66
+[   209.247] (II) UnloadModule: "libinput"
+[   209.247] (II) systemd-logind: releasing fd for 13:64
+[   209.248] (II) UnloadModule: "libinput"
+[   209.248] (II) systemd-logind: releasing fd for 13:65
+[   209.249] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[   209.249] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[   209.250] (II) Server terminated successfully (0). Closing log file.
